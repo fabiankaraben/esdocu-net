@@ -1,0 +1,30 @@
+{
+  "index": {
+    "title": "Inicio",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "contacto": {
+    "title": "Contacto ↗",
+    "type": "page",
+    "href": "mailto:hola.esdocu@gmail.com",
+    "newWindow": true
+  },
+  "aviso-legal": {
+    "title": "Aviso legal",
+    "type": "page",
+    "display": "hidden"
+  },
+  "politica-de-cookies": {
+    "title": "Políticas de Cookies",
+    "type": "page",
+    "display": "hidden"
+  },
+  "politica-de-privacidad": {
+    "title": "Política de Privacidad",
+    "type": "page",
+    "display": "hidden"
+  }
+}
