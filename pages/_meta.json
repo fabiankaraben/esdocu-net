@@ -6,6 +6,24 @@
       "layout": "raw"
     }
   },
+  "bootstrap": {
+    "title": "Bootstrap",
+    "type": "page"
+  },
+  "docs": {
+    "title": "Documentaciones",
+    "type": "menu",
+    "items": {
+      "b51": {
+        "title": "Bootstrap v5.1",
+        "href": "/bootstrap/5.1"
+      },
+      "b52": {
+        "title": "Bootstrap v5.3",
+        "href": "/bootstrap/5.3/getting-started/introduction"
+      }
+    }
+  },
   "contacto": {
     "title": "Contacto ↗",
     "type": "page",

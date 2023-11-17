@@ -89,7 +89,7 @@ const config: DocsThemeConfig = {
 
     let props = {}
 
-    props['titleTemplate'] = route !== '/' ? '%s – Esdocu Documentaciones' : frontMatter.title
+    props['titleTemplate'] = route !== '/' ? '%s · Esdocu' : frontMatter.title
 
     props['description'] = frontMatter.description ?? null
     props['noindex'] = frontMatter.noindex ?? false
