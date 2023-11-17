@@ -1,3 +1,22 @@
 {
-  "overview": "t"
+  "api": "API",
+  "background": "Background",
+  "borders": "Bordes",
+  "colors": "Colores",
+  "display": "Display",
+  "flex": "Flex",
+  "float": "Float",
+  "interactions": "Interacciones",
+  "link": "Enlace",
+  "object-fit": "Ajuste de objeto",
+  "opacity": "Opacidad",
+  "overflow": "Overflow",
+  "position": "Posición",
+  "shadows": "Sombras",
+  "sizing": "Tamaños",
+  "spacing": "Espaciado",
+  "text": "Texto",
+  "vertical-align": "Alineación vertical",
+  "visibility": "Visibilidad",
+  "z-index": "Z-index"
 }

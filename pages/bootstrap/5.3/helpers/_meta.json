@@ -1,3 +1,14 @@
 {
-  "overview": "t"
+  "clearfix": "Clearfix",
+  "color-background": "Color y fondo",
+  "colored-links": "Enlaces de colores",
+  "focus-ring": "Anillo de enfoque",
+  "icon-link": "Enlace de ícono",
+  "position": "Posición",
+  "ratio": "Ratio",
+  "stacks": "Stacks",
+  "stretched-link": "Enlace estirado",
+  "text-truncation": "Truncamiento de texto",
+  "vertical-rule": "Regla vertical",
+  "visually-hidden": "Visualmente oculto"
 }

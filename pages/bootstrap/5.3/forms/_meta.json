@@ -1,3 +1,11 @@
 {
-  "overview": "t"
+  "overview": "Descripción general",
+  "form-control": "Controles de formularios",
+  "select": "Select",
+  "checks-radios": "Checks y radios",
+  "range": "Rango",
+  "input-group": "Grupo de entradas",
+  "floating-labels": "Etiquetas flotantes",
+  "layout": "Layout",
+  "validation": "Validación"
 }

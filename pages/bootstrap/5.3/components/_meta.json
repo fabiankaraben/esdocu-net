@@ -1,3 +1,26 @@
 {
-  "overview": "t"
+  "accordion": "Acordeón",
+  "alerts": "Alertas",
+  "badge": "Insignias",
+  "breadcrumb": "Breadcrumb",
+  "buttons": "Botones",
+  "button-group": "Grupo de botones",
+  "card": "Tarjetas",
+  "carousel": "Carrusel",
+  "close-button": "Botón cerrar",
+  "collapse": "Collapse",
+  "dropdowns": "Desplegables",
+  "list-group": "Grupo de lista",
+  "modal": "Modal",
+  "navbar": "Barra de navegación",
+  "navs-tabs": "Navegación y pestañas",
+  "offcanvas": "Offcanvas",
+  "pagination": "Paginación",
+  "placeholders": "Marcadores de posición",
+  "popovers": "Popovers",
+  "progress": "Progreso",
+  "scrollspy": "Scrollspy",
+  "spinners": "Spinners",
+  "toasts": "Toasts",
+  "tooltips": "Tooltips"
 }

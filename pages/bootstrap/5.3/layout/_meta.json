@@ -1,3 +1,10 @@
 {
-  "overview": "t"
+  "breakpoints": "Puntos de interrupción",
+  "containers": "Contenedores",
+  "grid": "Grid",
+  "columns": "Columnas",
+  "gutters": "Gutters",
+  "utilities": "Utilidades",
+  "z-index": "Z-index",
+  "css-grid": "CSS Grid"
 }
