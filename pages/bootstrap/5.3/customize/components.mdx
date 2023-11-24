@@ -2,6 +2,8 @@
 title: Componentes · Bootstrap en Español v5.3
 description: Aprende cómo y por qué construimos casi todos nuestros componentes de manera responsive y con clases base y modificadoras.
 ---
+import { DemoIframe } from '@components/demo-iframe'
+
 # Componentes
 
 Aprende cómo y por qué construimos casi todos nuestros componentes de manera responsive y con clases base y modificadoras.
@@ -114,13 +116,17 @@ Crear el tuyo propio [#creating-your-own]
 
 Te animamos a que adoptes estas pautas cuando construyas con Bootstrap para crear tus propios componentes. Nosotros mismos hemos ampliado este enfoque a los componentes personalizados en nuestra documentación y ejemplos. Los componentes como nuestros callouts se construyen igual que los componentes proporcionados, con clases base y modificadoras.
 
+<DemoIframe path="/demos/bootstrap/5.3/customize/components/creating-your-own-1.html">
     ```html filename="HTML"
-    <div class="callout">...</div>
+    <div class="bd-callout">
+        <strong>Esto es un aviso.</strong> Lo creamos personalizado para nuestros documentación para que nuestros
+        mensajes se destaquen. Tiene tres variantes mediante clases de modificadores.
+    </div>
     ```
-
-[Ver Demo online](https://getbootstrap.com/docs/5.3/customize/components/#creating-your-own)
+</DemoIframe>
 
 En tu CSS, tendrías algo como lo siguiente donde la mayor parte del estilo se realiza a través de `.callout`. Luego, los estilos únicos entre cada variante se controlan mediante una clase modificadora.
+
     ```css filename="CSS"
     // Base class
     .callout {}
@@ -133,4 +139,16 @@ En tu CSS, tendrías algo como lo siguiente donde la mayor parte del estilo se r
 
 Para las leyendas, ese estilo único es solo un `border-left-color`. Cuando combinas esa clase base con una de esas clases modificadoras, obtienes tu familia completa de componentes:
 
-[Ver Demo online](https://getbootstrap.com/docs/5.3/customize/components/#creating-your-own)
+<DemoIframe path="/demos/bootstrap/5.3/customize/components/creating-your-own-2.html">
+    ```html filename="HTML"
+    <div class="bd-callout bd-callout-info">
+        <strong>Esta es una leyenda informativa.</strong> Texto de ejemplo para mostrarlo en acción.
+    </div>
+    <div class="bd-callout bd-callout-warning">
+        <strong>Esta es una leyenda de advertencia.</strong> Texto de ejemplo para mostrarlo en acción.
+    </div>
+    <div class="bd-callout bd-callout-danger">
+        <strong>Esta es una advertencia de peligro.</strong> Texto de ejemplo para mostrarlo en acción.
+    </div>
+    ```
+</DemoIframe>

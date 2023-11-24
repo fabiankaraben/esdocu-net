@@ -3,6 +3,7 @@ title: Color · Bootstrap en Español v5.3
 description: Bootstrap está respaldado por un extenso sistema de colores que tematiza nuestros estilos y componentes. Esto permite una personalización y extensión más completas para cualquier proyecto.
 ---
 import { Callout } from 'nextra/components'
+import { DemoIframe } from '@components/demo-iframe'
 
 # Color
 
@@ -64,13 +65,13 @@ Los colores que terminan en `-rgb` proporcionan los valores `red, green, blue` p
 
 Se puede acceder a estos nuevos colores a través de variables CSS y clases de utilidad, como `--bs-primary-bg-subtle` y `.bg-primary-subtle`: te permite componer tus propias reglas CSS con las variables o aplicar estilos rápidamente a través de clases. Las utilidades se crean con las variables CSS asociadas al color y, dado que personalizamos esas variables CSS para el modo oscuro, también se adaptan al modo de color de forma predeterminada.
 
+<DemoIframe path="/demos/bootstrap/5.3/customize/color/using-the-new-colors.html">
     ```html filename="HTML"
     <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-      Example element with utilities
+        Ejemplo de elemento con utilidades
     </div>
     ```
-
-[Ver demo](https://getbootstrap.com/docs/5.3/customize/color/#using-the-new-colors)
+</DemoIframe>
 
 ### Colores del tema [#theme-colors]
 

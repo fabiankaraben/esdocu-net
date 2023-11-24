@@ -3,6 +3,7 @@ title: Modos de color · Bootstrap en Español v5.3
 description: Bootstrap ahora admite modos de color o temas a partir de la versión 5.3.0. Explora nuestro modo de color claro predeterminado y el nuevo modo oscuro, o crea el tuyo propio usando nuestros estilos como plantilla.
 ---
 import { Callout } from 'nextra/components'
+import { DemoIframe } from '@components/demo-iframe'
 
 # Modos de color
 
@@ -27,37 +28,43 @@ Ejemplo [#example]
 
 Por ejemplo, para cambiar el modo de color de un menú desplegable, agrega `data-bs-theme="light"` o `data-bs-theme="dark"` al padre `.dropdown`. Ahora, sin importar el modo de color global, estos menús desplegables se mostrarán con el valor del tema especificado.
 
+<DemoIframe path="/demos/bootstrap/5.3/customize/color-modes/example.html">
     ```html filename="HTML"
     <div class="dropdown" data-bs-theme="light">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight" data-bs-toggle="dropdown" aria-expanded="false">
-        Default dropdown
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-        <li><a class="dropdown-item active" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Menú desplegable predeterminado
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight" style="">
+            <li><a class="dropdown-item active" href="#">Acción</a></li>
+            <li><a class="dropdown-item" href="#">Acción</a></li>
+            <li><a class="dropdown-item" href="#">Otra acción</a></li>
+            <li><a class="dropdown-item" href="#">Algo más aquí.</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+        </ul>
     </div>
-    
+
     <div class="dropdown" data-bs-theme="dark">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark" data-bs-toggle="dropdown" aria-expanded="false">
-        Dark dropdown
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
-        <li><a class="dropdown-item active" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Separated link</a></li>
-      </ul>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonDark"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Menú desplegable oscuro
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonDark">
+            <li><a class="dropdown-item active" href="#">Acción</a></li>
+            <li><a class="dropdown-item" href="#">Acción</a></li>
+            <li><a class="dropdown-item" href="#">Otra acción</a></li>
+            <li><a class="dropdown-item" href="#">Algo más aquí.</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+        </ul>
     </div>
     ```
-
-[Ver la Demo online](https://getbootstrap.com/docs/5.3/customize/color-modes/#example)
+</DemoIframe>
 
 Cómo funciona. [#how-it-works]
 -------------------------------
@@ -157,6 +164,7 @@ Si bien el caso de uso principal para los modos de color es el modo claro y oscu
 Por ejemplo, puedes crear un “tema blue” con el selector `data-bs-theme="blue"`. En tu archivo Sass o CSS personalizado, agrega el nuevo selector y sobrescribe cualquier variable CSS global o componente según sea necesario. Si estás usando Sass, también puedes usar las funciones de Sass dentro de tus sobrescrituras de variables CSS.
 
 [site/assets/scss/_content.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/site/assets/scss/_content.scss)
+
     ```scss filename="site/assets/scss/_content.scss"
     [data-bs-theme="blue"] {
       --bs-body-color: var(--bs-white);
@@ -183,14 +191,13 @@ Por ejemplo, puedes crear un “tema blue” con el selector `data-bs-theme="blu
     }
     ```
 
-    [Ver Demo online](https://getbootstrap.com/docs/5.3/customize/color-modes/#custom-color-modes)    
-
-    ```
+<DemoIframe path="/demos/bootstrap/5.3/customize/color-modes/custom-color-modes.html">
+    ```html filename="HTML"
     <div data-bs-theme="blue">
       ...
     </div>
     ```
-    
+</DemoIframe>    
 
 JavaScript [#javascript]
 ----------------------------------------------------------
