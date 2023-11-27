@@ -1,6 +1,6 @@
 ---
 title: Sombras · Bootstrap en Español v5.3
-description: 
+description: Agrega o elimina sombras a elementos con utilidades de sombra box-shadow.
 ---
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
@@ -8,3 +8,50 @@ import { Callout } from 'nextra/components'
 # Sombras
 
 Agrega o elimina sombras a elementos con utilidades de sombra box-shadow.
+
+Ejemplos [#examples]
+---------------------
+
+Si bien las sombras en los componentes están deshabilitadas de forma predeterminada en Bootstrap y se pueden habilitar a través de `$enable-shadows`, también puedes agregar o eliminar rápidamente una sombra con nuestras clases de utilidad `box-shadow`. Incluye soporte para `.shadow-none` y tres tamaños predeterminados (que tienen variables asociadas para coincidir).
+
+<DemoIframe path="/demos/bootstrap/5.3/utilities/shadows/examples.html">
+    ```html filename="HTML"
+    <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">Sin sombra</div>
+    <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Sombra pequeña</div>
+    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Sombra regular</div>
+    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Sombra más grande</div>
+    ```
+</DemoIframe>
+
+CSS [#css]
+-----------
+
+### Variables Sass [#sass-variables]
+
+[scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+    ```scss filename="scss/_variables.scss"
+    $box-shadow:                  0 .5rem 1rem rgba($black, .15);
+    $box-shadow-sm:               0 .125rem .25rem rgba($black, .075);
+    $box-shadow-lg:               0 1rem 3rem rgba($black, .175);
+    $box-shadow-inset:            inset 0 1px 2px rgba($black, .075);
+    ```
+
+### API de utilidades de Sass [#sass-utilities-api]
+
+Las utilidades Shadow se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/docs/5.3/utilities/api/#using-the-api)
+
+[scss/_utilities.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_utilities.scss)
+
+    ```scss filename="scss/_utilities.scss"
+    "shadow": (
+      property: box-shadow,
+      class: shadow,
+      values: (
+        null: var(--#{$prefix}box-shadow),
+        sm: var(--#{$prefix}box-shadow-sm),
+        lg: var(--#{$prefix}box-shadow-lg),
+        none: none,
+      )
+    ),
+    ```
