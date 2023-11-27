@@ -10,7 +10,7 @@ import { Callout } from 'nextra/components'
 Documentación y ejemplos para usar barras de progreso personalizadas de Bootstrap que admiten barras apiladas, fondos animados y etiquetas de texto.
 
 <Callout type="info" emoji="">
-**Nuevo marcado en v5.3.0:** Hemos dejado de utilizar la estructura HTML anterior para las barras de progreso y la reemplazamos por una más accesible. La estructura anterior seguirá funcionando hasta la v6. [Mira los cambios en nuestra guía de migración.](/docs/5.3/migration/#improved-markup-for-progress-bars)
+**Nuevo marcado en v5.3.0:** Hemos dejado de utilizar la estructura HTML anterior para las barras de progreso y la reemplazamos por una más accesible. La estructura anterior seguirá funcionando hasta la v6. [Mira los cambios en nuestra guía de migración.](https://getbootstrap.com/docs/5.3/migration/#improved-markup-for-progress-bars)
 </Callout>
 
 Cómo funciona. [#how-it-works]
@@ -51,7 +51,7 @@ Tamaño de barra [#bar-sizing]
 
 ### Ancho [#width]
 
-Bootstrap proporciona un puñado de [utilidades para configurar el ancho](/docs/5.3/utilities/sizing/). Dependiendo de tus necesidades, estos pueden ayudarte a configurar rápidamente el ancho de la `.progress-bar`.
+Bootstrap proporciona un puñado de [utilidades para configurar el ancho](/bootstrap/5.3/utilities/sizing/). Dependiendo de tus necesidades, estos pueden ayudarte a configurar rápidamente el ancho de la `.progress-bar`.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/progress/width.html">
     ```html filename="HTML"
@@ -89,7 +89,7 @@ Agrega etiquetas a tus barras de progreso colocando texto dentro de la `.progres
     ```
 </DemoIframe>
 
-Ten en cuenta que, de forma predeterminada, el contenido dentro de `.progress-bar` se controla con `overflow: hidden`, por lo que no desborde fuera de la barra. Si tu barra de progreso es más corta que tu etiqueta, el contenido estará limitado y puede volverse ilegible. Para cambiar este comportamiento, puedes utilizar `.overflow-visible` de las [utilidades de desbordamiento](/docs/5.3/utilities/overflow/), pero asegúrate de definir también un [color de texto](/docs/5.3/utilities/colors/#colors) explícito para que el texto siga siendo legible. Sin embargo, ten en cuenta que actualmente este enfoque no tiene en cuenta los [modos de color](/docs/5.3/customize/color-modes/).
+Ten en cuenta que, de forma predeterminada, el contenido dentro de `.progress-bar` se controla con `overflow: hidden`, por lo que no desborde fuera de la barra. Si tu barra de progreso es más corta que tu etiqueta, el contenido estará limitado y puede volverse ilegible. Para cambiar este comportamiento, puedes utilizar `.overflow-visible` de las [utilidades de desbordamiento](/bootstrap/5.3/utilities/overflow/), pero asegúrate de definir también un [color de texto](/bootstrap/5.3/utilities/colors/#colors) explícito para que el texto siga siendo legible. Sin embargo, ten en cuenta que actualmente este enfoque no tiene en cuenta los [modos de color](/bootstrap/5.3/customize/color-modes/).
 
 <DemoIframe path="/demos/bootstrap/5.3/components/progress/labels-2.html">
     ```html filename="HTML"
@@ -124,10 +124,10 @@ Usa clases de utilidades en segundo plano para cambiar la apariencia de las barr
 </DemoIframe>
 
 <Callout type="info" emoji="">
-**Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/docs/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
+**Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 </Callout>
 
-Si agregas etiquetas a las barras de progreso con un color de fondo personalizado, asegúrate de establecer también un [color del texto](/docs/5.3/utilities/colors/#colors), para que las etiquetas sigan siendo legibles y tengan suficiente contraste.
+Si agregas etiquetas a las barras de progreso con un color de fondo personalizado, asegúrate de establecer también un [color del texto](/bootstrap/5.3/utilities/colors/#colors), para que las etiquetas sigan siendo legibles y tengan suficiente contraste.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/progress/backgrounds-2.html">
     ```html filename="HTML"
@@ -146,7 +146,7 @@ Si agregas etiquetas a las barras de progreso con un color de fondo personalizad
     ```
 </DemoIframe>
 
-Como alternativa, puedes usar las nuevas clases auxiliares combinadas [color y fondo](/docs/5.3/helpers/color-background/).
+Como alternativa, puedes usar las nuevas clases auxiliares combinadas [color y fondo](/bootstrap/5.3/helpers/color-background/).
 
 <DemoIframe path="/demos/bootstrap/5.3/components/progress/backgrounds-3.html">
     ```html filename="HTML"

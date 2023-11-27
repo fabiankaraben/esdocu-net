@@ -12,7 +12,7 @@ Establece un color de fondo con un color de primer plano que contraste.
 Descripción general [#overview]
 --------------------------------
 
-Los ayudantes de color y fondo combinan el poder de nuestras [`.text-*` (utilidades)](/docs/5.3/utilities/colors/) y [`.bg-*` (utilidades)](/docs/5.3/utilities/background/) en una clase. Usando nuestra función Sass `color-contrast()`, determinamos automáticamente un `color` de contraste para un `background-color` particular.
+Los ayudantes de color y fondo combinan el poder de nuestras [`.text-*` (utilidades)](/bootstrap/5.3/utilities/colors/) y [`.bg-*` (utilidades)](/bootstrap/5.3/utilities/background/) en una clase. Usando nuestra función Sass `color-contrast()`, determinamos automáticamente un `color` de contraste para un `background-color` particular.
 
 <Callout type="warning" emoji="">
 **¡Atención!** Actualmente no hay soporte para una función `color-contrast` nativa de CSS, por lo que usamos la nuestra a través de Sass. Esto significa que personalizar los colores de nuestro tema mediante variables CSS puede causar problemas de contraste de color con estas utilidades.
@@ -32,13 +32,13 @@ Los ayudantes de color y fondo combinan el poder de nuestras [`.text-*` (utilida
 </DemoIframe>
 
 <Callout type="info" emoji="">
-**Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/docs/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
+**Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 </Callout>
 
 Con componentes [#with-components]
 -----------------------------------
 
-Úsalos en lugar de las clases combinadas `.text-*` y `.bg-*` , como en [insignias](/docs/5.3/components/badge/#background-colors):
+Úsalos en lugar de las clases combinadas `.text-*` y `.bg-*` , como en [insignias](/bootstrap/5.3/components/badge/#background-colors):
 
 <DemoIframe path="/demos/bootstrap/5.3/helpers/color-background/with-components-1.html">
     ```html filename="HTML"
@@ -47,7 +47,7 @@ Con componentes [#with-components]
     ```
 </DemoIframe>
 
-O en [tarjetas](/docs/5.3/components/card/#background-and-color):
+O en [tarjetas](/bootstrap/5.3/components/card/#background-and-color):
 
 <DemoIframe path="/demos/bootstrap/5.3/helpers/color-background/with-components-2.html">
     ```html filename="HTML"

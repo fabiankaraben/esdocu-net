@@ -88,7 +88,7 @@ Uso [#usage]
 
 ### Activa el modo oscuro [#enable-dark-mode]
 
-Habilita el modo de color oscuro integrado en todo tu proyecto agregando el atributo `data-bs-theme="dark"` al elemento `<html>`. Esto aplicará el modo de color oscuro a todos los componentes y elementos, excepto aquellos con un atributo `data-bs-theme` específico aplicado. Aprovechando la [plantilla de inicio rápido](/docs/5.3/getting-started/introduction/#quick-start):
+Habilita el modo de color oscuro integrado en todo tu proyecto agregando el atributo `data-bs-theme="dark"` al elemento `<html>`. Esto aplicará el modo de color oscuro a todos los componentes y elementos, excepto aquellos con un atributo `data-bs-theme` específico aplicado. Aprovechando la [plantilla de inicio rápido](/bootstrap/5.3/getting-started/introduction/#quick-start):
     ```html filename="HTML"
     <!doctype html>
     <html lang="en" data-bs-theme="dark">
@@ -291,7 +291,7 @@ Aquí tienes un vistazo al [JavaScript](https://esdocu.dev/javascript) que lo im
 Agregar colores al tema [#adding-theme-colors]
 -----------------------------------------------
 
-Agregar un nuevo color en `$theme-colors` no es suficiente para algunos de nuestros componentes como las [alertas](/docs/5.3/components/alerts/) y [grupo de listas](/docs/5.3/components/list-group/). También se deben definir nuevos colores en `$theme-colors-text`, `$theme-colors-bg-subtle` y `$theme-colors-border-subtle` para el tema light (claro); pero también en `$theme-colors-text-dark`, `$theme-colors-bg-subtle-dark` y `$theme-colors-border-subtle-dark` para el tema dark (oscuro).
+Agregar un nuevo color en `$theme-colors` no es suficiente para algunos de nuestros componentes como las [alertas](/bootstrap/5.3/components/alerts/) y [grupo de listas](/bootstrap/5.3/components/list-group/). También se deben definir nuevos colores en `$theme-colors-text`, `$theme-colors-bg-subtle` y `$theme-colors-border-subtle` para el tema light (claro); pero también en `$theme-colors-text-dark`, `$theme-colors-bg-subtle-dark` y `$theme-colors-border-subtle-dark` para el tema dark (oscuro).
 
 Este es un proceso manual porque Sass no puede generar sus propias variables Sass a partir de una variable o mapa existente. En futuras versiones de Bootstrap, revisaremos esta configuración para reducir la duplicación.
     ```javascript filename="JavaScript"

@@ -26,7 +26,7 @@ Variables CSS [#css-variables]
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
 
-Con v5.1.1, estandarizamos nuestros `@import` requeridos en todos nuestros paquetes de CSS (incluido `bootstrap.css`, `bootstrap-reboot.css` y `bootstrap-grid.css`) para incluir `_root.scss`. Esto agrega variables CSS de nivel `:root` a todos los paquetes, independientemente de cuántas de ellas se utilicen en ese paquete. En última instancia, Bootstrap 5 seguirá viendo más [variables CSS](/docs/5.3/customize/css-variables/) agregadas con el tiempo, para proporcionar más personalización en tiempo real sin la necesidad de siempre recompilar Sass. Nuestro enfoque es tomar nuestras variables Sass fuente y transformarlas en variables CSS. De esa manera, incluso si no usas variables CSS, aún tienes todo el poder de Sass. **Esto todavía está en progreso y llevará tiempo implementarlo por completo.**
+Con v5.1.1, estandarizamos nuestros `@import` requeridos en todos nuestros paquetes de CSS (incluido `bootstrap.css`, `bootstrap-reboot.css` y `bootstrap-grid.css`) para incluir `_root.scss`. Esto agrega variables CSS de nivel `:root` a todos los paquetes, independientemente de cuántas de ellas se utilicen en ese paquete. En última instancia, Bootstrap 5 seguirá viendo más [variables CSS](/bootstrap/5.3/customize/css-variables/) agregadas con el tiempo, para proporcionar más personalización en tiempo real sin la necesidad de siempre recompilar Sass. Nuestro enfoque es tomar nuestras variables Sass fuente y transformarlas en variables CSS. De esa manera, incluso si no usas variables CSS, aún tienes todo el poder de Sass. **Esto todavía está en progreso y llevará tiempo implementarlo por completo.**
 
 Por ejemplo, considera estas variables CSS `:root` para estilos `<body>` comunes:
 
@@ -305,7 +305,7 @@ Para indicar resultados de muestra de un programa usa la etiqueta `<samp>`.
 Tablas [#tables]
 -----------------
 
-Las tablas se ajustan ligeramente para diseñar `<caption>`, contraer bordes y garantizar una `text-align` consistente en todas partes. Los cambios adicionales para bordes, relleno y más vienen [con `.table` (clase)](/docs/5.3/content/tables/) .
+Las tablas se ajustan ligeramente para diseñar `<caption>`, contraer bordes y garantizar una `text-align` consistente en todas partes. Los cambios adicionales para bordes, relleno y más vienen [con `.table` (clase)](/bootstrap/5.3/content/tables/) .
 
 <DemoIframe path="/demos/bootstrap/5.3/content/reboot/tables.html">
     ```html filename="HTML"
@@ -457,4 +457,4 @@ HTML5 agrega [un nuevo atributo global llamado `[hidden]`](https://developer.moz
 
 Dado que `[hidden]` no es compatible con los métodos de jQuery `$(...).hide()` y `$(...).show()`, no respaldamos específicamente `[hidden]` sobre otras técnicas para administrar la `display` de elementos.
 
-Para simplemente alternar la visibilidad de un elemento, es decir, su `display` no se modifica y el elemento aún puede afectar el flujo del documento, usa [la clase `.invisible`,](/docs/5.3/utilities/visibility/) en su lugar.
+Para simplemente alternar la visibilidad de un elemento, es decir, su `display` no se modifica y el elemento aún puede afectar el flujo del documento, usa [la clase `.invisible`,](/bootstrap/5.3/utilities/visibility/) en su lugar.

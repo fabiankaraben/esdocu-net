@@ -27,11 +27,11 @@ Cosas que debes saber al usar el complemento de tooltips:
 ¿Tienes todo eso? Genial, veamos cómo funcionan con algunos ejemplos.
 
 <Callout type="info" emoji="">
-De forma predeterminada, este componente utiliza el desinfectante de contenido integrado, que elimina cualquier elemento HTML que no esté permitido explícitamente. Consulta la [sección de desinfectante en nuestra documentación de JavaScript](/docs/5.3/getting-started/javascript/#sanitizer) para obtener más detalles.
+De forma predeterminada, este componente utiliza el desinfectante de contenido integrado, que elimina cualquier elemento HTML que no esté permitido explícitamente. Consulta la [sección de desinfectante en nuestra documentación de JavaScript](/bootstrap/5.3/getting-started/javascript/#sanitizer) para obtener más detalles.
 </Callout>
 
 <Callout type="info" emoji="">
-El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/docs/5.3/getting-started/accessibility/#reduced-motion).
+El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
 Ejemplos [#examples]
@@ -252,7 +252,7 @@ Ten en cuenta que, por motivos de seguridad, las opciones `sanitize`, `sanitizeF
 
 | Nombre | Tipo | Predeterminado | Descripción |
 | --- | --- | --- | --- |
-| `allowList` | object | [Valor predeterminado](/docs/5.3/getting-started/javascript/#sanitizer) | Objeto que contiene atributos y etiquetas permitidos. |
+| `allowList` | object | [Valor predeterminado](/bootstrap/5.3/getting-started/javascript/#sanitizer) | Objeto que contiene atributos y etiquetas permitidos. |
 | `animation` | boolean | `true` | Aplica una transición de desvanecimiento CSS a tooltips. |
 | `boundary` | string, element | `'clippingParents'` | Límite de restricción de desbordamiento de tooltips (se aplica solo al modificador preventOverflow de Popper). De forma predeterminada, es `'clippingParents'` y puede aceptar una referencia HTMLElement (solo a través de [JavaScript](https://esdocu.dev/javascript)). Para obtener más información, consulta la [documentación de detectOverflow](https://popper.js.org/docs/v2/utils/detect-overflow/#boundary) de Popper. |
 | `container` | string, element, false | `false` | Agrega tooltips a un elemento específico. Ejemplo: `container: 'body'`. Esta opción es particularmente útil porque te permite colocar tooltips en el flujo del documento cerca del elemento desencadenante, lo que evitará que los tooltips se alejen del elemento desencadenante durante el cambio de tamaño de la ventana. |
@@ -291,7 +291,7 @@ Las opciones para tooltips individuales también se pueden especificar mediante 
 ### Métodos [#methods]
 
 <Callout type="error" emoji="">
-**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/docs/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
+**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/bootstrap/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
 </Callout>
 
 | Método | Descripción |

@@ -16,14 +16,14 @@ Esto es lo que necesitas saber antes de comenzar con la barra de navegación:
 
 * Las barras de navegación requieren un ajuste `.navbar` con `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` para un colapsamiento responsive y clases de [esquema de colores](#color-schemes) .
 * Las barras de navegación y sus contenidos son fluid de forma predeterminada. Cambia el [contenedor](#containers) para limitar su ancho horizontal de diferentes maneras.
-* Usa nuestro [espaciado](/docs/5.3/utilities/spacing/) y clases [flex](/docs/5.3/utilities/flex/) de utilidad para controlar el espaciado y la alineación dentro de las barras de navegación.
+* Usa nuestro [espaciado](/bootstrap/5.3/utilities/spacing/) y clases [flex](/bootstrap/5.3/utilities/flex/) de utilidad para controlar el espaciado y la alineación dentro de las barras de navegación.
 * Las barras de navegación responden de manera predeterminada, pero puedes modificarlas fácilmente para cambiar eso. El comportamiento responsive depende de nuestro complemento Collapse [JavaScript](https://esdocu.dev/javascript).
 * Asegura la accesibilidad usando un elemento `<nav>` o, si usas un elemento más genérico como un `<div>`, agrega un `role="navigation"` a cada barra de navegación para identificarla explícitamente como una región emblemática para los usuarios de tecnologías de asistencia.
 * Indica el elemento actual usando `aria-current="page"` para la página actual o `aria-current="true"` para el elemento actual en un conjunto.
 * **Nuevo en v5.2.0:** las barras de navegación pueden tener un tema con variables CSS que tienen como ámbito la clase base `.navbar`. `.navbar-light` ha quedado obsoleto y `.navbar-dark` se ha reescrito para sobrescribir las variables CSS en lugar de agregar estilos adicionales.
 
 <Callout type="info" emoji="">
-El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/docs/5.3/getting-started/accessibility/#reduced-motion).
+El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
 Contenido soportado [#supported-content]
@@ -87,7 +87,7 @@ Aquí tienes un ejemplo de todos los subcomponentes incluidos en una barra de na
     ```
 </DemoIframe>
 
-Este ejemplo usa las clases de utilidad [fondo](/docs/5.3/utilities/background/) (`bg-body-tertiary`) y [espaciado](/docs/5.3/utilities/spacing/) (`me-auto`, `mb-2`, `mb-lg-0`, `me-2`).
+Este ejemplo usa las clases de utilidad [fondo](/bootstrap/5.3/utilities/background/) (`bg-body-tertiary`) y [espaciado](/bootstrap/5.3/utilities/spacing/) (`me-auto`, `mb-2`, `mb-lg-0`, `me-2`).
 
 ### Marca [#brand]
 
@@ -124,7 +124,7 @@ Puedes reemplazar el texto dentro de `.navbar-brand` con un `<img>`.
     <nav class="navbar bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+                <img src="/bootstrap/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
             </a>
         </div>
     </nav>
@@ -140,7 +140,7 @@ También puedes hacer uso de algunas utilidades adicionales para agregar una ima
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                <img src="/bootstrap/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
                     class="d-inline-block align-text-top">
                 Bootstrap
             </a>
@@ -270,7 +270,7 @@ Coloca varios controles y componentes de formulario dentro de una barra de naveg
     ```
 </DemoIframe>
 
-Los elementos secundarios inmediatos de `.navbar` usan diseño flex y por defecto serán `justify-content: space-between`. Utiliza [utilidades flex](/docs/5.3/utilities/flex/) adicionales según sea necesario para ajustar este comportamiento.
+Los elementos secundarios inmediatos de `.navbar` usan diseño flex y por defecto serán `justify-content: space-between`. Utiliza [utilidades flex](/bootstrap/5.3/utilities/flex/) adicionales según sea necesario para ajustar este comportamiento.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/navbar/forms-2.html">
     ```html filename="HTML"
@@ -367,7 +367,7 @@ Esquemas de colores [#color-schemes]
 -------------------------------------
 
 <Callout type="warning" emoji="">
-**Nuevas barras de navegación oscuras en v5.3.0 —** Hemos dejado de usar `.navbar-dark` en favor del nuevo `data-bs-theme="dark"`. Agrega `data-bs-theme="dark"` al `.navbar` para habilitar un modo de color específico del componente. [Obtén más información sobre nuestros modos de color.](/docs/5.3/customize/color-modes/)
+**Nuevas barras de navegación oscuras en v5.3.0 —** Hemos dejado de usar `.navbar-dark` en favor del nuevo `data-bs-theme="dark"`. Agrega `data-bs-theme="dark"` al `.navbar` para habilitar un modo de color específico del componente. [Obtén más información sobre nuestros modos de color.](/bootstrap/5.3/customize/color-modes/)
 
 * * *
 
@@ -424,7 +424,7 @@ Usa cualquiera de los contenedores responsive para cambiar el ancho de presentac
 Ubicación [#placement]
 -----------------------
 
-Utiliza nuestras [utilidades de posición](/docs/5.3/utilities/position/) para colocar barras de navegación en posiciones no estáticas. Elige entre fijo en la parte superior, fijo en la parte inferior, pegado en la parte superior (se desplaza con la página hasta que llega a la parte superior y luego permanece allí) o pegado en la parte inferior (se desplaza con la página hasta que llega al final y luego permanece allí).
+Utiliza nuestras [utilidades de posición](/bootstrap/5.3/utilities/position/) para colocar barras de navegación en posiciones no estáticas. Elige entre fijo en la parte superior, fijo en la parte inferior, pegado en la parte superior (se desplaza con la página hasta que llega a la parte superior y luego permanece allí) o pegado en la parte inferior (se desplaza con la página hasta que llega al final y luego permanece allí).
 
 Las barras de navegación fijas usan `position: fixed`, lo que significa que se extraen del flujo normal del DOM y pueden requerir CSS personalizado (por ejemplo, relleno `padding-top` en `<body>`) para evitar la superposición con otros elementos.
 
@@ -673,7 +673,7 @@ Cuando hagas esto, te recomendamos incluir [JavaScript](https://esdocu.dev/javas
 
 ### Offcanvas [#offcanvas]
 
-Transforma tu barra de navegación desplegable y contraíble en un cajón offcanvas con el [componente offcanvas](/docs/5.3/components/offcanvas/). Ampliamos los estilos predeterminados offcanvas y utilizamos nuestras clases `.navbar-expand-*` para crear una barra lateral de navegación dinámica y flexible.
+Transforma tu barra de navegación desplegable y contraíble en un cajón offcanvas con el [componente offcanvas](/bootstrap/5.3/components/offcanvas/). Ampliamos los estilos predeterminados offcanvas y utilizamos nuestras clases `.navbar-expand-*` para crear una barra lateral de navegación dinámica y flexible.
 
 En el siguiente ejemplo, para crear una barra de navegación offcanvas que siempre esté colapsada en todos los puntos de interrupción, omite la clase `.navbar-expand-*` por completo.
 

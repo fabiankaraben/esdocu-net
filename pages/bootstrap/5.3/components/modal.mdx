@@ -18,7 +18,7 @@ Antes de comenzar con el componente modal de Bootstrap, asegúrate de leer lo si
 * Al hacer clic en el “fondo” detrás del modal, se cerrará automáticamente el modal.
 * Bootstrap solo admite una ventana modal a la vez. Los modales anidados no son compatibles porque creemos que son malas experiencias para el usuario.
 * Los modales usan `position: fixed`, lo que a veces puede ser un poco particular en cuanto a su representación. Siempre que sea posible, coloca tu HTML modal en una posición de nivel superior para evitar posibles interferencias de otros elementos. Probablemente tendrás problemas al anidar un `.modal` dentro de otro elemento fijo.
-* Una vez más, debido a la `position: fixed`, existen algunas advertencias sobre el uso de modales en dispositivos móviles. [Consulta nuestra documentación de soporte del navegador](/docs/5.3/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile) para obtener más detalles.
+* Una vez más, debido a la `position: fixed`, existen algunas advertencias sobre el uso de modales en dispositivos móviles. [Consulta nuestra documentación de soporte del navegador](/bootstrap/5.3/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile) para obtener más detalles.
 * Debido a cómo HTML5 define su semántica, [el `autofocus` (atributo HTML)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus) no tiene ningún efecto en los modales de Bootstrap. Para lograr el mismo efecto, utiliza [JavaScript](https://esdocu.dev/javascript) personalizado:
 
     ```javascript filename="JavaScript"
@@ -31,7 +31,7 @@ Antes de comenzar con el componente modal de Bootstrap, asegúrate de leer lo si
     ```
 
 <Callout type="info" emoji="">
-El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/docs/5.3/getting-started/accessibility/#reduced-motion).
+El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
 Sigue leyendo para ver demostraciones y pautas de uso.
@@ -66,7 +66,7 @@ A continuación se muestra un ejemplo modal _estático_ (lo que significa que su
 </DemoIframe>
 
 <Callout type="info" emoji="">
-En el ejemplo estático anterior, usamos `<h5>`, para evitar problemas con la jerarquía de encabezados en la página de documentación. Estructuralmente, sin embargo, un diálogo modal representa su propio documento/contexto separado, por lo que `.modal-title` idealmente debería ser un `<h1>`. Si es necesario, puedes utilizar las [utilidades de tamaño de fuente](/docs/5.3/utilities/text/#font-size) para controlar la apariencia del título. Todos los siguientes ejemplos en vivo utilizan este enfoque.
+En el ejemplo estático anterior, usamos `<h5>`, para evitar problemas con la jerarquía de encabezados en la página de documentación. Estructuralmente, sin embargo, un diálogo modal representa su propio documento/contexto separado, por lo que `.modal-title` idealmente debería ser un `<h1>`. Si es necesario, puedes utilizar las [utilidades de tamaño de fuente](/bootstrap/5.3/utilities/text/#font-size) para controlar la apariencia del título. Todos los siguientes ejemplos en vivo utilizan este enfoque.
 </Callout>
 
 ### Demostración en vivo [#live-demo]
@@ -169,7 +169,7 @@ Agrega `.modal-dialog-centered` a `.modal-dialog` para centrar verticalmente el 
 
 ### Tooltips y ventanas emergentes [#tooltips-and-popovers]
 
-[Tooltips](/docs/5.3/components/tooltips/) y [popovers](/docs/5.3/components/popovers/) se pueden colocar dentro de modales según sea necesario. Cuando se cierran los modales, cualquier tooltips y ventanas emergentes también se descartan automáticamente.
+[Tooltips](/bootstrap/5.3/components/tooltips/) y [popovers](/bootstrap/5.3/components/popovers/) se pueden colocar dentro de modales según sea necesario. Cuando se cierran los modales, cualquier tooltips y ventanas emergentes también se descartan automáticamente.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/modal/tooltips-and-popovers.html">
     ```html filename="HTML"
@@ -589,7 +589,7 @@ El objeto de configuración final es el resultado combinado de `data-bs-config`,
 ### Métodos [#methods]
 
 <Callout type="error" emoji="️">
-**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/docs/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
+**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/bootstrap/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
 </Callout>
 
 #### Opciones de paso [#passing-options]

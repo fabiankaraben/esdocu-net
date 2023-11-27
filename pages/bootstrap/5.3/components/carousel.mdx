@@ -21,7 +21,7 @@ Cómo funciona. [#how-it-works]
 * Los carruseles anidados no son compatibles. También debes tener en cuenta que los carruseles en general a menudo pueden causar problemas de usabilidad y accesibilidad.
     
 <Callout type="info" emoji="">
-El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/docs/5.3/getting-started/accessibility/#reduced-motion).
+El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
 Ejemplos básicos [#basic-examples]
@@ -137,7 +137,7 @@ Puedes agregar indicadores al carrusel, junto con los controles anterior/siguien
 
 ### Subtítulos [#captions]
 
-Puedes agregar títulos a tus diapositivas con el elemento `.carousel-caption` dentro de cualquier `.carousel-item`. Se pueden ocultar fácilmente en viewports más pequeñas, como se muestra a continuación, con [utilidades de visualización](/docs/5.3/utilities/display/) opcionales. Los ocultamos inicialmente con `.d-none` y los recuperamos en dispositivos de tamaño mediano con `.d-md-block`.
+Puedes agregar títulos a tus diapositivas con el elemento `.carousel-caption` dentro de cualquier `.carousel-item`. Se pueden ocultar fácilmente en viewports más pequeñas, como se muestra a continuación, con [utilidades de visualización](/bootstrap/5.3/utilities/display/) opcionales. Los ocultamos inicialmente con `.d-none` y los recuperamos en dispositivos de tamaño mediano con `.d-md-block`.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/carousel/captions.html">
     ```html filename="HTML"
@@ -667,7 +667,7 @@ El objeto de configuración final es el resultado combinado de `data-bs-config`,
 
 ### Métodos [#methods]
 
-**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/docs/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
+**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/bootstrap/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
 
 Puedes crear una instancia de carrusel con el constructor de carrusel y pasar cualquier opción adicional. Por ejemplo, para inicializar manualmente un carrusel de reproducción automática (suponiendo que no esté usando el atributo `data-bs-ride="carousel"` en el marcado en sí) con un intervalo específico y con la compatibilidad táctil deshabilitada, puedes usar:
 

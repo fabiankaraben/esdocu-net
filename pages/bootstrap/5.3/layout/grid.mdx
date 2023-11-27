@@ -43,15 +43,15 @@ Cómo funciona [#how-it-works]
 
 Desglosándolo, así es como se integra el sistema de grilla:
 
-* **Nuestra grilla admite [seis puntos de interrupción responsive](/docs/5.3/layout/breakpoints/).** Los puntos de interrupción se basan en la `min-width` media queries, lo que significa que afectan ese punto de interrupción y todos los que están por encima de él (por ejemplo, `.col-sm-4` se aplica a `sm`, `md`, `lg`, `xl` y `xxl`). Esto significa que puedes controlar el tamaño y el comportamiento del contenedor y la columna según cada punto de interrupción.
+* **Nuestra grilla admite [seis puntos de interrupción responsive](/bootstrap/5.3/layout/breakpoints/).** Los puntos de interrupción se basan en la `min-width` media queries, lo que significa que afectan ese punto de interrupción y todos los que están por encima de él (por ejemplo, `.col-sm-4` se aplica a `sm`, `md`, `lg`, `xl` y `xxl`). Esto significa que puedes controlar el tamaño y el comportamiento del contenedor y la columna según cada punto de interrupción.
     
 * **Los contenedores centran y rellenan horizontalmente su contenido.** Utiliza `.container` para un ancho de píxel responsive, `.container-fluid` para un ancho de `width: 100%` en todas los viewports y dispositivos, o un contenedor responsive (por ejemplo, `.container-md`) para una combinación de anchos fluidos y de píxeles.
     
-* **Las filas son envoltorios para las columnas.** Cada columna tiene un `padding` horizontal (llamado gutter) para controlar el espacio entre ellas. Este `padding` luego se contrarresta en las filas con márgenes negativos para garantizar que el contenido de las columnas esté visualmente alineado hacia el lado izquierdo. Las filas también admiten clases modificadoras para [aplicar uniformemente el tamaño de las columnas](#row-columns) y [clases de gutter](/docs/5.3/layout/gutters/) para cambiar el espaciado de su contenido.
+* **Las filas son envoltorios para las columnas.** Cada columna tiene un `padding` horizontal (llamado gutter) para controlar el espacio entre ellas. Este `padding` luego se contrarresta en las filas con márgenes negativos para garantizar que el contenido de las columnas esté visualmente alineado hacia el lado izquierdo. Las filas también admiten clases modificadoras para [aplicar uniformemente el tamaño de las columnas](#row-columns) y [clases de gutter](/bootstrap/5.3/layout/gutters/) para cambiar el espaciado de su contenido.
     
 * **Las columnas son increíblemente flexibles.** Hay 12 columnas de plantilla disponibles por fila, lo que te permite crear diferentes combinaciones de elementos que abarcan cualquier número de columnas. Las clases de columnas indican el número de columnas de plantilla que se abarcan (por ejemplo, `col-4` abarca cuatro). Los `width` se establecen en porcentajes para que siempre tengas el mismo tamaño relativo.
     
-* **Los gutters también son responsive y personalizables.** [Las clases de gutters están disponibles](/docs/5.3/layout/gutters/) en todos los puntos de interrupción, con todos los mismos tamaños. como nuestro [espaciado de margin y padding](/docs/5.3/utilities/spacing/). Cambia los gutteres horizontales con clases `.gx-*`, los gutteres verticales con `.gy-*` o todos los gutteres con clases `.g-*`. `.g-0` también está disponible para eliminar gutters.
+* **Los gutters también son responsive y personalizables.** [Las clases de gutters están disponibles](/bootstrap/5.3/layout/gutters/) en todos los puntos de interrupción, con todos los mismos tamaños. como nuestro [espaciado de margin y padding](/bootstrap/5.3/utilities/spacing/). Cambia los gutteres horizontales con clases `.gx-*`, los gutteres verticales con `.gy-*` o todos los gutteres con clases `.g-*`. `.g-0` también está disponible para eliminar gutters.
     
 * **Las variables, mapas y mixins de Sass alimentan la grilla.** Si no deseas utilizar las clases de grilla predefinidas en Bootstrap, puedes usar nuestro [código fuente de Grid en Sass](#sass-variables) para crear el tuyo propio con un marcado más semántico. También incluimos algunas propiedades personalizadas de CSS para consumir estas variables Sass para brindarte una flexibilidad aún mayor.
     
@@ -78,9 +78,9 @@ Como se señaló anteriormente, cada uno de estos puntos de interrupción tiene 
 | Prefijo de clase | `.col-` | `.col-sm-` | `.col-md-` | `.col-lg-` | `.col-xl-` | `.col-xxl-` |
 | \# de columnas | 12  |     |     |     |     |     |
 | Ancho del gutter | 1.5rem (.75rem a izquierda y derecha) |     |     |     |     |     |
-| Gutters personalizados | [Sí](/docs/5.3/layout/gutters/) |     |     |     |     |     |
+| Gutters personalizados | [Sí](/bootstrap/5.3/layout/gutters/) |     |     |     |     |     |
 | Anidable | [Sí](#nesting) |     |     |     |     |     |
-| Orden de columnas | [Sí](/docs/5.3/layout/columns/#reordering) |     |     |     |     |     |
+| Orden de columnas | [Sí](/bootstrap/5.3/layout/columns/#reordering) |     |     |     |     |     |
 
 Columnas auto-layout [#auto-layout-columns]
 --------------------------------------------

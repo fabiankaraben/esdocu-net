@@ -15,7 +15,7 @@ Cómo funciona. [#how-it-works]
 El complemento [JavaScript](https://esdocu.dev/javascript) para contraer se utiliza para mostrar y ocultar contenido. Los botones o anclajes se utilizan como activadores que se asignan a elementos específicos que alterna. Colapsar un elemento animará el `height` desde su valor actual a `0`. Dado cómo CSS maneja las animaciones, no puedes usar `padding` en un elemento `.collapse`. En su lugar, utiliza la clase como elemento envolvente independiente.
 
 <Callout type="info" emoji="">
-El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/docs/5.3/getting-started/accessibility/#reduced-motion).
+El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
 Ejemplo [#example]
@@ -53,7 +53,7 @@ Generalmente, recomendamos usar un `<button>` con el atributo `data-bs-target`. 
 Horizontal [#horizontal]
 -------------------------
 
-El complemento de colapso admite el colapso horizontal. Agrea la clase modificadora `.collapse-horizontal` para realizar la transición del `width` en lugar de `height` y establece un `width` en el elemento hijo inmediato. Siéntete libre de escribir tu propio Sass personalizado, usar estilos en línea o usar nuestras [utilidades de ancho](/docs/5.3/utilities/sizing/).
+El complemento de colapso admite el colapso horizontal. Agrea la clase modificadora `.collapse-horizontal` para realizar la transición del `width` en lugar de `height` y establece un `width` en el elemento hijo inmediato. Siéntete libre de escribir tu propio Sass personalizado, usar estilos en línea o usar nuestras [utilidades de ancho](/bootstrap/5.3/utilities/sizing/).
 
 <Callout type="info" emoji="">
 Ten en cuenta que, si bien el siguiente ejemplo tiene un `min-height` configurado para evitar repintados excesivos en nuestra documentación, esto no es un requisito explícito. **Solo se requiere el `width` en el elemento secundario.**
@@ -180,7 +180,7 @@ Estas clases se pueden encontrar en `_transitions.scss`.
 
 Simplemente agrega `data-bs-toggle="collapse"` y un `data-bs-target` al elemento para asignar automáticamente control de uno o más elementos plegables. El atributo `data-bs-target` acepta un selector CSS al que aplicar el colapso. Asegúrate de agregar la clase `collapse` al elemento plegable. Si deseas que se abra de forma predeterminada, agrega la clase adicional `show`.
 
-Para agregar administración de grupos tipo acordeón a un área plegable, agrega el atributo de datos `data-bs-parent="#selector"`. Consulta la [página del acordeón](/docs/5.3/components/accordion/) para obtener más información.
+Para agregar administración de grupos tipo acordeón a un área plegable, agrega el atributo de datos `data-bs-parent="#selector"`. Consulta la [página del acordeón](/bootstrap/5.3/components/accordion/) para obtener más información.
 
 ### Vía [JavaScript](https://esdocu.dev/javascript) [#via-javascript]
 
@@ -207,7 +207,7 @@ El objeto de configuración final es el resultado combinado de `data-bs-config`,
 ### Métodos [#methods]
 
 <Callout type="error" emoji="️">
-**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/docs/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
+**Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/bootstrap/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)
 </Callout>
 
 Activa tu contenido como un elemento plegable. Acepta opciones opcionales `object`.
