@@ -1,6 +1,6 @@
 ---
 title: Regla vertical · Bootstrap en Español v5.3
-description: 
+description: Usa el asistente de regla vertical personalizado para crear divisores verticales como el elemento <hr>.
 ---
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
@@ -8,3 +8,62 @@ import { Callout } from 'nextra/components'
 # Regla vertical
 
 Utiliza el asistente de regla vertical personalizado para crear divisores verticales como el elemento `<hr>`.
+
+Cómo funciona. [#how-it-works]
+-------------------------------
+
+Las reglas verticales están inspiradas en el elemento `<hr>` , lo que te permite crear divisores verticales en diseños comunes. Tienen el mismo estilo que los elementos `<hr>`:
+
+* Miden `1px` de ancho
+* Tienen `min-height` de `1em`
+* Su color se establece mediante `currentColor` y `opacity`
+
+Personalízalos con estilos adicionales según sea necesario.
+
+Ejemplo [#example]
+-------------------
+
+<DemoIframe path="/demos/bootstrap/5.3/helpers/vertical-rule/example-1.html">
+    ```html filename="HTML"
+    <div class="vr"></div>
+    ```
+</DemoIframe>
+
+Las reglas verticales escalan su altura en diseños flex:
+
+<DemoIframe path="/demos/bootstrap/5.3/helpers/vertical-rule/example-2.html">
+    ```html filename="HTML"
+    <div class="d-flex" style="height: 200px;">
+        <div class="vr"></div>
+    </div>
+    ```
+</DemoIframe>
+
+Con pilas [#with-stacks]
+-------------------------
+
+También se pueden usar en [pilas](/docs/5.3/helpers/stacks/):
+
+<DemoIframe path="/demos/bootstrap/5.3/helpers/vertical-rule/with-stacks.html">
+    ```html filename="HTML"
+    <div class="hstack gap-3">
+        <div class="p-2">Primer elemento</div>
+        <div class="p-2 ms-auto">Segundo elemento</div>
+        <div class="vr"></div>
+        <div class="p-2">Tercer elemento</div>
+    </div>
+    ```
+</DemoIframe>
+
+CSS [#css]
+-----------
+
+### Variables Sass [#sass-variables]
+
+Personaliza la variable Sass de regla vertical para cambiar su ancho.
+
+[scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+    ```scss filename="scss/_variables.scss"
+    $vr-border-width:             var(--#{$prefix}border-width);
+    ```
