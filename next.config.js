@@ -95,11 +95,6 @@ module.exports = withNextra({
         destination: '/bootstrap/5.3/extend/approach',
         permanent: true,
       },
-      {
-        source: '/bootstrap/5.3/about',
-        destination: '/bootstrap/5.3/about/overview',
-        permanent: true,
-      },
     ];
   },
 })
