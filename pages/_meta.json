@@ -21,6 +21,12 @@
       }
     }
   },
+  "cursos": {
+    "title": "Cursos ↗",
+    "type": "page",
+    "href": "https://esdocu.dev",
+    "newWindow": true
+  },
   "contacto": {
     "title": "Contacto ↗",
     "type": "page",
