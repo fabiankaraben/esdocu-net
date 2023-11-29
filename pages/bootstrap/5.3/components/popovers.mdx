@@ -125,8 +125,8 @@ Puedes personalizar la apariencia de los popovers usando [variables CSS](#variab
 <DemoIframe path="/demos/bootstrap/5.3/components/popovers/custom-popovers.html">
     ```html filename="HTML"
     <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right"
-        data-bs-custom-class="custom-popover" data-bs-title="Custom popover"
-        data-bs-content="This popover is themed via CSS variables.">
+        data-bs-custom-class="custom-popover" data-bs-title="Popover personalizado"
+        data-bs-content="Este popover tiene un tema a través de variables CSS.">
         Popover personalizado
     </button>
     ```
@@ -158,7 +158,7 @@ Utiliza el disparador `focus` para descartar ventanas emergentes en el siguiente
 
 ### Elementos deshabilitados [#disabled-elements]
 
-Los elementos con el atributo `disabled` no son interassets, lo que significa que los usuarios no pueden pasar el cursor sobre ellos ni hacer clic en ellos para activar una ventana emergente (o un tooltips). Como solución alternativa, querrás activar la ventana emergente desde un contenedor `<div>` o `<span>`, idealmente enfocado desde el teclado usando `tabindex="0"`.
+Los elementos con el atributo `disabled` no son interactivos, lo que significa que los usuarios no pueden pasar el cursor sobre ellos ni hacer clic en ellos para activar una ventana emergente (o un tooltips). Como solución alternativa, querrás activar la ventana emergente desde un contenedor `<div>` o `<span>`, idealmente enfocado desde el teclado usando `tabindex="0"`.
 
 Para los activadores de ventana emergente deshabilitados, también puedes preferir `data-bs-trigger="hover focus"` para que la ventana emergente aparezca como retroalimentación visual inmediata para tus usuarios ya que es posible que no intenten _hacer clic_ en un elemento deshabilitado.
 

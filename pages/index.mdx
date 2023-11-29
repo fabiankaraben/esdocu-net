@@ -14,7 +14,7 @@ import Image from 'next/image'
                 <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-3">
                     ¿QUÉ ES ESDOCU DOCS?
                 </h2>
-                <p className="mb-12 leading-relaxed">Claramente aprender inglés es la mejor opción, pero eso puede demorar años. Para trabajar necesitamos inmediatamente documentaciones en español, documentaciones están o estarán en Esdocu DOCS.</p>
+                <p className="mb-12 leading-relaxed">Claramente aprender inglés es la mejor opción, pero eso puede demorar años. Para trabajar necesitamos inmediatamente documentaciones en español que están o estarán en Esdocu DOCS.</p>
                 <div className="flex justify-center">
                     <Link href="/bootstrap/5.3/getting-started/introduction" className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         <span className="sm:hidden">Docs de Bootstrap</span>
@@ -222,9 +222,94 @@ import Image from 'next/image'
                         </div>
                     </div>
                 </div>
+                <div className="flex flex-wrap w-full mt-20 mb-10 flex-col items-center text-center">
+                    <h3 className="sm:text-3xl text-2xl font-medium title-font my-6 text-gray-900 dark:text-white">
+                        Algunos de los componentes de Bootstrap
+                    </h3>
+                </div>
+                <div className="flex flex-wrap -m-4">
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                        <div className="border border-gray-200 dark:border-gray-700 dark:border-opacity-75 p-6 rounded-lg">
+                            <Image width={400} height={150} loading="lazy" className="w-full shadow-xl border mb-7 object-cover object-center rounded" alt="D" src="/assets/home/alert-component.png"/>
+                            <h3 className="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">Alertas</h3>
+                            <p className="leading-relaxed text-base">Proporciona mensajes de retroalimentación contextuales para las acciones típicas del usuario con los útiles y flexibles mensajes de alerta disponibles.</p>
+                            <Link href="/bootstrap/5.3/components/alerts" className="text-indigo-500 dark:text-indigo-400 inline-flex items-center mt-3">
+                                Ir a esta página
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                        <div className="border border-gray-200 dark:border-gray-700 dark:border-opacity-75 p-6 rounded-lg">
+                            <Image width={400} height={150} loading="lazy" className="w-full shadow-xl border mb-7 object-cover object-center rounded" alt="D" src="/assets/home/accordion-component.png"/>
+                            <h3 className="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">Acordeón</h3>
+                            <p className="leading-relaxed text-base">Construye acordeones que se expanden o contraen verticalmente con cada interacción de usuario en combinación con nuestro complemento Collapse.</p>
+                            <Link href="/bootstrap/5.3/components/accordion" className="text-indigo-500 dark:text-indigo-400 inline-flex items-center mt-3">
+                                Ir a esta página
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                        <div className="border border-gray-200 dark:border-gray-700 dark:border-opacity-75 p-6 rounded-lg">
+                            <Image width={400} height={150} loading="lazy" className="w-full shadow-xl border mb-7 object-cover object-center rounded" alt="D" src="/assets/home/button-component.png"/>
+                            <h3 className="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">Botones</h3>
+                            <p className="leading-relaxed text-base">Usa los estilos de botones personalizados de Bootstrap para acciones en formularios, cuadros de diálogo y más con soporte para múltiples tamaños, estados y más.</p>
+                            <Link href="/bootstrap/5.3/components/buttons" className="text-indigo-500 dark:text-indigo-400 inline-flex items-center mt-3">
+                                Ir a esta página
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                        <div className="border border-gray-200 dark:border-gray-700 dark:border-opacity-75 p-6 rounded-lg">
+                            <Image width={400} height={150} loading="lazy" className="w-full shadow-xl border mb-7 object-cover object-center rounded" alt="D" src="/assets/home/dropdowns-component.png"/>
+                            <h3 className="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">Desplegables</h3>
+                            <p className="leading-relaxed text-base">Alterna superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable de Bootstrap. Se alternan haciendo clic, no al pasar el cursor.</p>
+                            <Link href="/bootstrap/5.3/components/dropdowns" className="text-indigo-500 dark:text-indigo-400 inline-flex items-center mt-3">
+                                Ir a esta página
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                        <div className="border border-gray-200 dark:border-gray-700 dark:border-opacity-75 p-6 rounded-lg">
+                            <Image width={400} height={150} loading="lazy" className="w-full shadow-xl border mb-7 object-cover object-center rounded" alt="D" src="/assets/home/modal-component.png"/>
+                            <h3 className="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">Modal</h3>
+                            <p className="leading-relaxed text-base">Usa el complemento modal JavaScript de Bootstrap para agregar cuadros de diálogo a tu sitio para lightboxes, notificaciones de usuario o contenido completamente personalizado.</p>
+                            <Link href="/bootstrap/5.3/components/modal" className="text-indigo-500 dark:text-indigo-400 inline-flex items-center mt-3">
+                                Ir a esta página
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="xl:w-1/3 md:w-1/2 p-4">
+                        <div className="border border-gray-200 dark:border-gray-700 dark:border-opacity-75 p-6 rounded-lg">
+                            <Image width={400} height={150} loading="lazy" className="w-full shadow-xl border mb-7 object-cover object-center rounded" alt="D" src="/assets/home/popover-component.png"/>
+                            <h3 className="text-lg text-gray-900 dark:text-white font-medium title-font mb-2">Popovers</h3>
+                            <p className="leading-relaxed text-base">Documentación y ejemplos para agregar ventanas emergentes de Bootstrap, como las que se encuentran en iOS, a cualquier elemento de tu sitio.</p>
+                            <Link href="/bootstrap/5.3/components/popovers" className="text-indigo-500 dark:text-indigo-400 inline-flex items-center mt-3">
+                                Ir a esta página
+                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
                 <div className="flex flex-wrap w-full mt-10 flex-col items-center text-center">
                     <p className="lg:w-4/5 xl:w-2/3 w-full leading-relaxed text-gray-500 dark:text-white">Estas son solo algunas de las páginas de la documentación.</p>
-                </div>
+                </div>                
                 <div className="flex justify-center">
                     <Link href="/bootstrap/5.3/getting-started/introduction" className="inline-flex items-center mx-auto mt-12 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         Ir a la docs de Bootstrap
