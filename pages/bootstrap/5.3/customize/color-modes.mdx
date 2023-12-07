@@ -111,6 +111,8 @@ Habilita el modo de color oscuro integrado en todo tu proyecto agregando el atri
 
 Bootstrap aún no viene con un selector de modo de color incorporado, pero puedes usar el de nuestra propia documentación si lo deseas. [Obtén más información en la sección JavaScript.](#javascript)
 
+<ContentSuggestion />
+
 ### Construyendo con Sass [#building-with-sass]
 
 Nuestra nueva opción de modo oscuro está disponible para todos los usuarios de Bootstrap, pero se controla mediante atributos de datos en lugar de media queries y no alterna automáticamente el modo de color de tu proyecto. Puedes desactivar nuestro modo oscuro por completo a través de Sass cambiando `$enable-dark-mode` a `false`.
@@ -297,6 +299,8 @@ Agregar colores al tema [#adding-theme-colors]
 
 Agregar un nuevo color en `$theme-colors` no es suficiente para algunos de nuestros componentes como las [alertas](/bootstrap/5.3/components/alerts/) y [grupo de listas](/bootstrap/5.3/components/list-group/). También se deben definir nuevos colores en `$theme-colors-text`, `$theme-colors-bg-subtle` y `$theme-colors-border-subtle` para el tema light (claro); pero también en `$theme-colors-text-dark`, `$theme-colors-bg-subtle-dark` y `$theme-colors-border-subtle-dark` para el tema dark (oscuro).
 
+<ContentSuggestion />
+
 Este es un proceso manual porque Sass no puede generar sus propias variables Sass a partir de una variable o mapa existente. En futuras versiones de Bootstrap, revisaremos esta configuración para reducir la duplicación.
     ```javascript filename="JavaScript"
     // Required
@@ -475,7 +479,8 @@ Las variables CSS para nuestro modo de color oscuro se generan parcialmente a pa
     $accordion-button-icon-dark:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
     $accordion-button-active-icon-dark:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color-dark}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
     ```
-    
+
+<ContentSuggestion />    
 
 ### Sass mixins [#sass-mixins]
 

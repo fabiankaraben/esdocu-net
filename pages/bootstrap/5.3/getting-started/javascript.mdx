@@ -110,6 +110,8 @@ A partir de Bootstrap 5.2.0, todos los componentes admiten un atributo de datos 
 
 El objeto de configuración final es el resultado combinado de `data-bs-config`, `data-bs-` y `js object` donde el último valor-clave dado sobrescribe los demás.
 
+<ContentSuggestion />
+
 ## Selectores [#selectors]
 
 Usamos los métodos nativos `querySelector` y `querySelectorAll` para consultar elementos DOM por razones de rendimiento, por lo que debes usar [selectores válidos](https://www.w3.org/TR/CSS21/syndata.html#value-def-identifier). Si utilizas selectores especiales como `collapse:Example`, asegúrate de evitarlos.
@@ -214,6 +216,8 @@ Puedes cambiar la configuración predeterminada de un complemento modificando el
 // changes default for the modal plugin's `keyboard` option to false
 bootstrap.Modal.Default.keyboard = false 
 ```
+
+<ContentSuggestion />
 
 ## Métodos y propiedades. [#methods-and-properties]
 
@@ -327,6 +331,8 @@ Lo mismo ocurre con nuestros otros componentes.
 ### No conflict [#no-conflict]
 
 A veces es necesario usar complementos Bootstrap con otros marcos de UI. En estas circunstancias, ocasionalmente pueden ocurrir colisiones de espacios de nombres. Si esto sucede, puedes llamar a `.noConflict` en el complemento cuyo valor deseas revertir.
+
+<ContentSuggestion />
 
 ```javascript filename="JavaScript"
 const bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value

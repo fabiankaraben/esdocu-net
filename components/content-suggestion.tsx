@@ -2,59 +2,106 @@ import type { ReactElement } from 'react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-type ContentSuggestionProps = {
-  num: number
-}
+type ContentSuggestionProps = {}
 
-let nums = []
+let usedArticlesIdx = []
 
-export function ContentSuggestion({
-  num,
-}: ContentSuggestionProps): ReactElement {
-
-  function randomInt(min: number, max: number): number {
-    return Math.floor((Math.random() * ((max + 1) - min) + min))
-  }
+export function ContentSuggestion({ }: ContentSuggestionProps): ReactElement {
 
   const articles = [
     {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
       title: 'Variables en JavaScript',
       description: 'Una variable es una ubicación con nombre para almacenar datos en la memoria de la computadora.',
       url: 'https://esdocu.dev/javascript/variables',
     },
     {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
       title: 'Operadores básicos en JavaScript',
       description: 'En esta lección, exploraremos los diferentes tipos de operadores en JavaScript.',
       url: 'https://esdocu.dev/javascript/operadores-basicos',
     },
     {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
       title: 'Funciones en JavaScript',
       description: 'Las funciones son una forma de agrupar código que se puede reutilizar o ejecutar tantas veces como sea necesario.',
       url: 'https://esdocu.dev/javascript/funciones',
     },
-    // {
-    //   title: '',
-    //   description: '',
-    //   url: '',
-    // },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Arrays en JavaScript',
+      description: 'En JavaScript, usamos arrays para almacenar múltiples valores en una sola variable.',
+      url: 'https://esdocu.dev/javascript/arrays',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Funciones de orden superior y Callbacks en JavaScript',
+      description: 'Analizamos las funciones que tomen otras funciones como argumentos o las utilicen como valores de retorno.',
+      url: 'https://esdocu.dev/javascript/funciones-orden-superior',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Objetos en JavaScript',
+      description: 'Con los objetos de JavaScript, puedes agrupar datos relacionados en una sola variable.',
+      url: 'https://esdocu.dev/javascript/objetos',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Declaraciones condicionales en JavaScript',
+      description: 'Las declaraciones condicionales se utilizan para controlar el flujo de un programa.',
+      url: 'https://esdocu.dev/javascript/condicionales',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Bucles en JavaScript',
+      description: 'Hacer un bucle en programación significa repetir un proceso hasta que se cumpla una condición.',
+      url: 'https://esdocu.dev/javascript/bucles',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'El Modelo de Objetos de Documento (DOM) en JavaScript',
+      description: 'El Modelo de Objetos de Documento (DOM) es una representación orientada a objetos de una página web.',
+      url: 'https://esdocu.dev/javascript/dom',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Cómo incluir JavaScript en un archivo HTML',
+      description: 'A medida que comenzamos a trabajar con páginas web y DOM, necesitaremos incluir JavaScript en nuestros archivos HTML.',
+      url: 'https://esdocu.dev/javascript/javascript-en-html',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Eventos del navegador con JavaScript',
+      description: 'Los eventos del navegador son acciones que ocurren en el navegador y que suelen ser iniciadas por el usuario.',
+      url: 'https://esdocu.dev/javascript/eventos-del-navegador',
+    },
+    {
+      heading: 'DE NUESTRO CURSO DE JAVASCRIPT',
+      title: 'Programación Asincrónica con JavaScript',
+      description: 'JavaScript asincrónico es un concepto esencial en el desarrollo web moderno, que te permite ejecutar tareas de larga duración sin bloquear el hilo principal de la UI.',
+      url: 'https://esdocu.dev/javascript/asincronico',
+    },
   ]
 
+  function randomInt(min: number, max: number): number {
+    return Math.floor((Math.random() * ((max + 1) - min) + min))
+  }
+
   function getArticle() {
-    if (nums.length >= articles.length) nums = []
+    if (usedArticlesIdx.length >= articles.length) usedArticlesIdx = []
     let randNum = -1
     while (randNum === -1) {
       let newNum = randomInt(0, articles.length - 1)
-      if (!nums.includes(newNum)) {
+      if (!usedArticlesIdx.includes(newNum)) {
         randNum = newNum
-        nums.push(newNum)
-        console.log(num + ': ' + nums)
+        usedArticlesIdx.push(newNum)
       }
     }
 
     return articles[randNum]
   }
 
-  const [article, setArticle] = useState({ title: '', description: '', url: '' })
+  const [article, setArticle] = useState({ heading: '', title: '', description: '', url: '' })
 
   useEffect(() => {
     setArticle(getArticle)
@@ -63,7 +110,7 @@ export function ContentSuggestion({
   return (
     <div className="mt-8 px-4 py-5 border-l-4 border-green-600 bg-green-600 bg-opacity-5">
       <p className="text-xs text-green-600 tracking-widest font-medium title-font mb-2">
-        DE NUESTRO <strong>CURSO DE JAVASCRIPT</strong>
+        {article.heading}
       </p>
       <Link href={article.url} target="_blank" className="title-font sm:text-2xl text-xl mb-3 font-medium text-gray-900 dark:text-white">
         {article.title}

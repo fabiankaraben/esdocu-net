@@ -109,6 +109,8 @@ Alineado a la derecha con `.justify-content-end`:
     ```
 </DemoIframe>
 
+<ContentSuggestion />
+
 ### Vertical [#vertical]
 
 Apila tu navegación cambiando la dirección del elemento flexible con la utilidad `.flex-column`. ¿Necesitas apilarlos en algunas viewports pero no en otras? Utiliza las versiones responsive (por ejemplo, `.flex-sm-column`).
@@ -190,6 +192,8 @@ Toma el mismo HTML, pero usa `.nav-pills` en su lugar:
     </ul>
     ```
 </DemoIframe>
+
+<ContentSuggestion />
 
 ### Subrayado [#underline]
 
@@ -306,6 +310,8 @@ Respecto a la accesibilidad [#regarding-accessibility]
 Si estás usando navs para proporcionar una barra de navegación, asegúrate de agregar un `role="navigation"` al contenedor padre más lógico del `<ul>`, o envuelve un elemento `<nav>` alrededor de toda la navegación. No agregues el rol al `<ul>` en sí, ya que esto evitaría que las tecnologías de asistencia lo anuncien como una lista real.
 
 Ten en cuenta que las barras de navegación, incluso si están diseñadas visualmente como pestañas con la clase `.nav-tabs`, **no** deben darse `role="tablist"`, `role="tab"` o `role="tabpanel"`. Estos solo son apropiados para interfaces dinámicas con pestañas, como se describe en el [patrón de pestañas de la Guía de prácticas de creación de ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel/). Consulta [comportamiento de JavaScript](#javascript-behavior) para interfaces dinámicas con pestañas en esta sección para ver un ejemplo. El atributo `aria-current` no es necesario en interfaces dinámicas con pestañas ya que nuestro [JavaScript](https://esdocu.dev/javascript) maneja el estado seleccionado agregando `aria-selected="true"` en la pestaña activa.
+
+<ContentSuggestion />
 
 Usar menús desplegables [#using-dropdowns]
 -------------------------------------------
@@ -471,6 +477,8 @@ Comportamiento de [JavaScript](https://esdocu.dev/javascript) [#javascript-behav
 -------------------------------------------------------------------------------------
 
 Utiliza el complemento [JavaScript](https://esdocu.dev/javascript) de pestañas (inclúyelo individualmente o mediante el archivo `bootstrap.js` compilado) para ampliar nuestras pestañas y píldoras de navegación para crear paneles con pestañas de paneles con contenido local.
+
+<ContentSuggestion />
 
 <DemoIframe path="/demos/bootstrap/5.3/components/navs-tabs/javascript-behavior-1.html">
     ```html filename="HTML"
@@ -638,6 +646,8 @@ Puedes activar pestañas individuales de varias maneras:
     bootstrap.Tab.getInstance(triggerFirstTabEl).show() // Select first tab
     ```
 
+<ContentSuggestion />
+
 ### Efecto desvanecimiento [#fade-effect]
 
 Para hacer que las pestañas aparezcan gradualmente, agrega `.fade` a cada `.tab-pane`. El primer panel de pestañas también debe tener `.show` para que el contenido inicial sea visible.
@@ -697,3 +707,5 @@ Si ninguna pestaña ya estaba activa, entonces los eventos `hide.bs.tab` y `hidd
       event.relatedTarget // previous active tab
     })
     ```
+
+<ContentSuggestion />

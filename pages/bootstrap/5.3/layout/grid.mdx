@@ -125,6 +125,8 @@ Por ejemplo, aquí hay dos diseños de cuadrícula que se aplican a cada disposi
 
 El diseño automático para las columnas de la cuadrícula Flexbox también significa que puedes establecer el ancho de una columna y hacer que las columnas hermanas cambien de tamaño automáticamente a su alrededor. Puedes utilizar clases de cuadrícula predefinidas (como se muestra a continuación), combinaciones de cuadrícula o anchos en línea. Ten en cuenta que las otras columnas cambiarán de tamaño sin importar el ancho de la columna central.
 
+<ContentSuggestion />
+
 <DemoIframe path="/demos/bootstrap/5.3/layout/grid/setting-one-column-width.html">
     ```html filename="HTML"
     <div class="container text-center">
@@ -236,6 +238,8 @@ Usando un único conjunto de clases `.col-sm-*`, puedes crear un sistema de cuad
 ### Mezclar y combinar [#mix-and-match]
 
 ¿No quieres que tus columnas simplemente se apilen en algunos niveles de la cuadrícula? Utiliza una combinación de diferentes clases para cada nivel según sea necesario. Ve el ejemplo a continuación para tener una mejor idea de cómo funciona todo.
+
+<ContentSuggestion />
 
 <DemoIframe path="/demos/bootstrap/5.3/layout/grid/mix-and-match.html">
     ```html filename="HTML"
@@ -364,6 +368,8 @@ Anidamiento [#nesting]
 -----------------------
 
 Para anidar tu contenido con la cuadrícula predeterminada, agrega un nuevo `.row` y un conjunto de columnas `.col-sm-*` dentro de una columna `.col-sm-*` existente. Las filas anidadas deben incluir un conjunto de columnas que sumen 12 o menos (no es necesario que utilices las 12 columnas disponibles).
+
+<ContentSuggestion />
 
 <DemoIframe path="/demos/bootstrap/5.3/layout/grid/nesting.html">
     ```html filename="HTML"
@@ -529,3 +535,5 @@ Más allá de las columnas mismas, también puedes personalizar el número de ni
     ```    
 
 Al realizar cambios en las variables o mapas de Sass, deberás guardar los cambios y volver a compilarlos. Al hacerlo, se generará un nuevo conjunto de clases de cuadrícula predefinidas para anchos de columna, desplazamientos y ordenamiento. Las utilidades de visibilidad responsive también se actualizarán para utilizar puntos de interrupción personalizados. Asegúrate de establecer los valores de la cuadrícula en `px` (no en `rem`, `em` o `%`).
+
+<ContentSuggestion />

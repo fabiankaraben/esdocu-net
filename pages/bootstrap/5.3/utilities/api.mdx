@@ -140,6 +140,8 @@ Salida:
     .o-100 { opacity: 1 !important; }
     ```
 
+<ContentSuggestion />
+
 Si `class: null`, genera clases para cada una de las claves `values`:
 
     ```scss filename="SCSS"
@@ -327,6 +329,8 @@ Salida:
     }
     ```
 
+<ContentSuggestion />
+
 ### Imprimir [#print]
 
 Habilitar la opción `print`, **también** generará clases de utilidad para impresión, que solo se aplican dentro de `@media print { ... }` (media query).
@@ -469,6 +473,8 @@ Puedes habilitar clases responsive para un conjunto existente de utilidades que 
     
     @import "bootstrap/scss/utilities/api";
     ```
+
+<ContentSuggestion />
 
 Esto ahora generará variaciones responsive de `.border` y `.border-0` para cada punto de interrupción. El CSS generado se verá así:
 
@@ -628,3 +634,5 @@ Salida:
     ```
 
 Esto no genera nada en RTL, gracias a [la directiva de control `remove` RTLCSS](https://rtlcss.com/learn/usage-guide/control-directives/#remove).
+
+<ContentSuggestion />

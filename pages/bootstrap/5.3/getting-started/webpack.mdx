@@ -140,6 +140,8 @@ En la siguiente y última sección de esta guía, configuraremos los cargadores 
 
 Importar Bootstrap a Webpack requiere los cargadores que instalamos en la primera sección. Los instalamos con npm, pero ahora es necesario configurar Webpack para usarlos.
 
+<ContentSuggestion />
+
 1.  **Configura los cargadores en `webpack.config.js`.** Tu archivo de configuración ahora está completo y debe coincidir con el siguiente fragmento. La única parte nueva aquí es la sección `module`.
     ```javascript filename="JavaScript"
     'use strict'
@@ -245,6 +247,8 @@ npm install --save-dev mini-css-extract-plugin
 
 Luego crea una instancia y usa el complemento en la configuración de Webpack:
 
+<ContentSuggestion />
+
 ```diff filename="Diff"
 --- a/webpack.config.js
 +++ b/webpack.config.js
@@ -324,3 +328,5 @@ Después de ejecutar `npm run build` nuevamente, encontrarás los archivos SVG e
 * * *
 
 _¿Ves algo incorrecto o desactualizado aquí? [abre un issue en GitHub](https://github.com/twbs/bootstrap/issues/new/choose). ¿Necesitas ayuda para solucionar problemas? [Buscar o iniciar una discusión](https://github.com/twbs/bootstrap/discussions) en GitHub._
+
+<ContentSuggestion />

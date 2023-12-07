@@ -135,6 +135,8 @@ Consulta [nuestra documentación de mapas y bucles de Sass](/bootstrap/5.3/custo
 
 Todos los colores de Bootstrap están disponibles como variables Sass y un mapa Sass en el archivo `scss/_variables.scss`. Para evitar un aumento en el tamaño de los archivos, no creamos clases de texto o color de fondo para cada una de estas variables. En su lugar, elegimos un subconjunto de estos colores para una [paleta de tema](#theme-colors).
 
+<ContentSuggestion />
+
 Asegúrate de controlar las relaciones de contraste mientras personalizas los colores. Como se muestra a continuación, hemos agregado tres relaciones de contraste a cada uno de los colores principales: una para los colores actuales de la muestra, otra para el blanco y otra para el negro.
 
 <div className="mt-8 mb-2 p-3 rounded-md font-bold bg-[#0d6efd] text-white">
@@ -552,6 +554,8 @@ Bootstrap no incluye las utilidades `color` y `background-color` para cada varia
 1.  Para comenzar, asegúrate de haber importado nuestras funciones, variables, mixins y utilidades.
 2.  Utiliza nuestra función `map-merge-multiple()` para fusionar rápidamente varios mapas de Sass en un nuevo mapa.
 3.  Combina este nuevo mapa combinado para ampliar cualquier utilidad con un nombre de clase `{color}-{level}`.
+
+<ContentSuggestion />
 
 Aquí tienes un ejemplo que genera utilidades de color de texto (por ejemplo, `.text-purple-500`) siguiendo los pasos anteriores.
     ```scss filename="SCSS"
