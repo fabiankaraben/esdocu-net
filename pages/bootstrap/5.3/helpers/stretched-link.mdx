@@ -2,12 +2,16 @@
 title: Enlace estirado · Bootstrap en Español v5.3
 description: Haz que se pueda hacer clic en cualquier elemento HTML o componente Bootstrap &quot;estirando&quot; un enlace anidado a través de CSS.
 ---
+import { MainBanner } from '@components/main-banner'
+import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
 # Enlace estirado
 
 Haz que se pueda hacer clic en cualquier elemento HTML o componente Bootstrap "estirando" un enlace anidado a través de CSS.
+
+<MainBanner />
 
 Agrega `.stretched-link` a un enlace para que sea [bloque contenedor](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) en el que se puede hacer clic mediante un pseudoelemento `::after`. En la mayoría de los casos, esto significa que se puede hacer clic en un elemento con `position: relative;` que contiene un enlace con la clase `.stretched-link`. Ten en cuenta [cómo funciona `position` (CSS)](https://www.w3.org/TR/CSS21/visuren.html#propdef-position), `.stretched-link` no se puede mezclar con la mayoría de los elementos de la tabla.
 
