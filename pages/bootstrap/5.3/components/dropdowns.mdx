@@ -16,14 +16,14 @@ Alterna superposiciones contextuales para mostrar listas de enlaces y más con e
 Descripción general [#overview]
 --------------------------------
 
-Los menús desplegables son superposiciones contextuales alternables para mostrar listas de enlaces y más. Se vuelven interactivos con el complemento [JavaScript](https://esdocu.dev/javascript) desplegable Bootstrap incluido. Se alternan haciendo clic, no al pasar el cursor; esta es [una decisión de diseño intencional](https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns/).
+Los menús desplegables son superposiciones contextuales alternables para mostrar listas de enlaces y más. Se vuelven interactivos con el complemento [JavaScript](https://esdocu.dev/javascript) desplegable Bootstrap incluido. Se alternan haciendo clic, no al pasar el cursor; esta es [una decisión de diseño intencional](https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns).
 
-Los menús desplegables se basan en una biblioteca de terceros, [Popper](https://popper.js.org/), que proporciona posicionamiento dinámico y detección de viewport. Asegúrate de incluir [popper.min.js](https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js) antes del [JavaScript](https://esdocu.dev/javascript) de Bootstrap o usa `bootstrap.bundle.min.js` / `bootstrap.bundle.js` que contiene Popper. Sin embargo, Popper no se utiliza para posicionar menús desplegables en las barras de navegación, ya que no se requiere posicionamiento dinámico.
+Los menús desplegables se basan en una biblioteca de terceros, [Popper](https://popper.js.org), que proporciona posicionamiento dinámico y detección de viewport. Asegúrate de incluir [popper.min.js](https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js) antes del [JavaScript](https://esdocu.dev/javascript) de Bootstrap o usa `bootstrap.bundle.min.js` / `bootstrap.bundle.js` que contiene Popper. Sin embargo, Popper no se utiliza para posicionar menús desplegables en las barras de navegación, ya que no se requiere posicionamiento dinámico.
 
 Accesibilidad [#accessibility]
 -------------------------------
 
-Es estándar [WAI ARIA](https://www.w3.org/TR/wai-aria/) define un [`role="menu"` widget](https://www.w3.org/TR/wai-aria/#menu), pero esto es específico de menús similares a aplicaciones que activan acciones o funciones. Los menús ARIA solo pueden contener elementos de menú, elementos de menú de casilla de verificación, elementos de menú de botones de opción, grupos de botones de opción y submenús.
+Es estándar [WAI ARIA](https://www.w3.org/TR/wai-aria) define un [`role="menu"` widget](https://www.w3.org/TR/wai-aria/#menu), pero esto es específico de menús similares a aplicaciones que activan acciones o funciones. Los menús ARIA solo pueden contener elementos de menú, elementos de menú de casilla de verificación, elementos de menú de botones de opción, grupos de botones de opción y submenús.
 
 Los menús desplegables de Bootstrap, por otro lado, están diseñados para ser genéricos y aplicables a una variedad de situaciones y estructuras de marcado. Por ejemplo, es posible crear menús desplegables que contengan entradas y controles de formulario adicionales, como campos de búsqueda o formularios de inicio de sesión. Por este motivo, Bootstrap no espera (ni agrega automáticamente) ninguno de los atributos `role` y `aria-` necesarios para menús verdaderamente ARIA. Los autores deberán incluir ellos mismos estos atributos más específicos.
 
@@ -849,7 +849,7 @@ Separa grupos de elementos de menú relacionados con un divisor.
 
 ### Texto [#text]
 
-Coloca cualquier texto de formato libre dentro de un menú desplegable con texto y usa [utilidades de espaciado](/bootstrap/5.3/utilities/spacing/). Ten en cuenta que probablemente necesitarás estilos de tamaño adicionales para limitar el ancho del menú.
+Coloca cualquier texto de formato libre dentro de un menú desplegable con texto y usa [utilidades de espaciado](/bootstrap/5.3/utilities/spacing). Ten en cuenta que probablemente necesitarás estilos de tamaño adicionales para limitar el ancho del menú.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/dropdowns/text.html">
     ```html filename="HTML"
@@ -866,7 +866,7 @@ Coloca cualquier texto de formato libre dentro de un menú desplegable con texto
 
 ### Formularios [#forms]
 
-Coloca un formulario dentro de un menú desplegable, o conviértelo en un menú desplegable, y usa [utilidades de margen o relleno.](/bootstrap/5.3/utilities/spacing/) para darle el espacio negativo que necesitas.
+Coloca un formulario dentro de un menú desplegable, o conviértelo en un menú desplegable, y usa [utilidades de margen o relleno.](/bootstrap/5.3/utilities/spacing) para darle el espacio negativo que necesitas.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/dropdowns/forms-1.html">
     ```html filename="HTML"
@@ -1295,7 +1295,7 @@ El objeto de configuración final es el resultado combinado de `data-bs-config`,
 | `display` | string | `'dynamic'` | De forma predeterminada, usamos Popper para el posicionamiento dinámico. Desactiva esto con `static`. |
 | `offset` | array, string, function | `[0, 2]` | Desplazamiento del menú desplegable con respecto a su objetivo. Puedes pasar una cadena en atributos de datos con valores separados por comas como: `data-bs-offset="10,20"`. Cuando se usa una función para determinar el desplazamiento, se llama con un objeto que contiene la ubicación del popper, la referencia y los rectificadores del popper como primer argumento. El nodo DOM del elemento desencadenante se pasa como segundo argumento. La función debe devolver una matriz con dos números: [skidding](https://popper.js.org/docs/v2/modifiers/offset/#skidding-1), [distance](https://popper.js.org/docs/v2/modifiers/offset/#distance-1). Para obtener más información, consulta la [documentación de offset](https://popper.js.org/docs/v2/modifiers/offset/#options)de Popper. |
 | `popperConfig` | null, object, function | `null` | Para cambiar la configuración predeterminada de Popper de Bootstrap, consulta [Configuración de Popper](https://popper.js.org/docs/v2/constructors/#options). Cuando se usa una función para crear la configuración de Popper, se llama con un objeto que contiene la configuración de Popper predeterminada de Bootstrap. Te ayuda a utilizar y fusionar el valor predeterminado con tu propia configuración. La función debe devolver un objeto de configuración para Popper. |
-| `reference` | string, element, object | `'toggle'` | Elemento de referencia del menú desplegable. Acepta los valores de `'toggle'`, `'parent'`, una referencia HTMLElement o un objeto que proporciona `getBoundingClientRect`. Para obtener más información, consulta la [documentación del constructor](https://popper.js.org/docs/v2/constructors/#createpopper) y [documentación de elementos virtuales](https://popper.js.org/docs/v2/virtual-elements/). |
+| `reference` | string, element, object | `'toggle'` | Elemento de referencia del menú desplegable. Acepta los valores de `'toggle'`, `'parent'`, una referencia HTMLElement o un objeto que proporciona `getBoundingClientRect`. Para obtener más información, consulta la [documentación del constructor](https://popper.js.org/docs/v2/constructors/#createpopper) y [documentación de elementos virtuales](https://popper.js.org/docs/v2/virtual-elements). |
 
 #### Usar la función con `popperConfig` [#using-function-with-popperconfig]
 

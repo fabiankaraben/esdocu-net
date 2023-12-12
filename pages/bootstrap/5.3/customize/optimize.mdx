@@ -115,9 +115,9 @@ _Se necesita ayuda con esta sección, considera abrir un PR. ¡Gracias!_
 Si bien no tenemos un ejemplo prediseñado para usar [PurgeCSS](https://github.com/FullHuman/purgecss) con Bootstrap, hay algunos artículos y tutoriales útiles que la comunidad ha escrito. Aquí tienes algunas opciones:
 
 * [https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772](https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772)
-* [https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/](https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/)
+* [https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/](https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks)
 
-Por último, este [artículo de CSS Tricks sobre CSS no utilizado](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/) muestra cómo utilizar PurgeCSS y otras herramientas similares.
+Por último, este [artículo de CSS Tricks sobre CSS no utilizado](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site) muestra cómo utilizar PurgeCSS y otras herramientas similares.
 
 Minify y gzip [#minify-and-gzip]
 ---------------------------------
@@ -131,7 +131,7 @@ Archivos sin bloqueo [#non-blocking-files]
 
 Si bien minimizar y usar compresión puede parecer suficiente, hacer que tus archivos no bloqueen también es un gran paso para que tu sitio esté bien optimizado y sea lo suficientemente rápido.
 
-Si estás utilizando un complemento [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) en Google Chrome, es posible que hayas tropezado con FCP. La métrica [First Contentful Paint](https://web.dev/fcp/) mide el tiempo desde que la página comienza a cargarse hasta que cualquier parte del contenido de la página se muestra en la pantalla.
+Si estás utilizando un complemento [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) en Google Chrome, es posible que hayas tropezado con FCP. La métrica [First Contentful Paint](https://web.dev/fcp) mide el tiempo desde que la página comienza a cargarse hasta que cualquier parte del contenido de la página se muestra en la pantalla.
 
 Puedes mejorar FCP posponiendo [JavaScript](https://esdocu.dev/javascript) o CSS no críticos. ¿Qué significa eso? Simplemente, [JavaScript](https://esdocu.dev/javascript) u hojas de estilo que no necesitan estar presentes en la primera pintura de tu página deben marcarse con los atributos `async` o `defer`.
 
@@ -139,12 +139,12 @@ Esto asegura que los recursos menos importantes se carguen más tarde y no bloqu
 
 Si quieres aprender más sobre esto, ya hay muchos artículos excelentes al respecto:
 
-* [https://web.dev/render-blocking-resources/](https://web.dev/render-blocking-resources/)
-* [https://web.dev/defer-non-critical-css/](https://web.dev/defer-non-critical-css/)
+* [https://web.dev/render-blocking-resources/](https://web.dev/render-blocking-resources)
+* [https://web.dev/defer-non-critical-css/](https://web.dev/defer-non-critical-css)
 
 Usa siempre HTTPS [#always-use-https]
 --------------------------------------
 
-Tu sitio web solo debe estar disponible a través de conexiones HTTPS en producción. HTTPS mejora la seguridad, la privacidad y la disponibilidad de todos los sitios, y [no existe el tráfico web no confidencial](https://https.cio.gov/everything/). Los pasos para configurar tu sitio web para que funcione exclusivamente a través de HTTPS varían ampliamente dependiendo de su arquitectura y proveedor de alojamiento web y, por lo tanto, están fuera del alcance de esta documentación.
+Tu sitio web solo debe estar disponible a través de conexiones HTTPS en producción. HTTPS mejora la seguridad, la privacidad y la disponibilidad de todos los sitios, y [no existe el tráfico web no confidencial](https://https.cio.gov/everything). Los pasos para configurar tu sitio web para que funcione exclusivamente a través de HTTPS varían ampliamente dependiendo de su arquitectura y proveedor de alojamiento web y, por lo tanto, están fuera del alcance de esta documentación.
 
 Los sitios servidos a través de HTTPS también deben acceder a todas las hojas de estilo, scripts y otros activos a través de conexiones HTTPS. De lo contrario, enviarás a los usuarios [contenido activo mixto](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content), lo que generará vulnerabilidades potenciales en las que un sitio puede verse comprometido al alterar una dependencia. Esto puede provocar problemas de seguridad y mostrar advertencias en el navegador a los usuarios. Ya sea que obtengas Bootstrap desde una CDN o lo proporciones tú mismo, asegúrate de acceder solo a través de conexiones HTTPS.

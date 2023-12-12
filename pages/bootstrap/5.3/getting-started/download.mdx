@@ -36,13 +36,13 @@ Si necesitas nuestro conjunto completo de [herramientas de compilación](/bootst
 
 ## Ejemplos [#examples]
 
-Si deseas descargar y examinar nuestros [ejemplos](https://getbootstrap.com/docs/5.3/examples/), puedes tomar los ejemplos ya creados:
+Si deseas descargar y examinar nuestros [ejemplos](https://getbootstrap.com/docs/5.3/examples), puedes tomar los ejemplos ya creados:
 
 [Descargar ejemplos](https://github.com/twbs/bootstrap/releases/download/v5.3.2/bootstrap-5.3.2-examples.zip)
 
 ## CDN vía jsDelivr [#cdn-via-jsdelivr]
 
-Salta la descarga con [jsDelivr](https://www.jsdelivr.com/) para entregar la versión en caché del CSS y JS compilado de Bootstrap a tu proyecto.
+Salta la descarga con [jsDelivr](https://www.jsdelivr.com) para entregar la versión en caché del CSS y JS compilado de Bootstrap a tu proyecto.
 
 ```html filename="HTML"
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -58,7 +58,7 @@ Si estás usando nuestro JavaScript compilado y prefieres incluir Popper por sep
 
 ### CDN alternativas [#alternative-cdns]
 
-Recomendamos [jsDelivr](https://www.jsdelivr.com/) y lo usamos nosotros mismos en nuestra documentación. Sin embargo, en algunos casos, como en algunos países o entornos específicos, es posible que necesites utilizar otros proveedores de CDN como [cdnjs](https://cdnjs.com/) o [unpkg](https://unpkg.com/).
+Recomendamos [jsDelivr](https://www.jsdelivr.com) y lo usamos nosotros mismos en nuestra documentación. Sin embargo, en algunos casos, como en algunos países o entornos específicos, es posible que necesites utilizar otros proveedores de CDN como [cdnjs](https://cdnjs.com) o [unpkg](https://unpkg.com).
 
 Encontrarás los mismos archivos en estos proveedores de CDN, aunque con diferentes URL. Con cdnjs, puedes [usar este enlace directo al paquete Bootstrap](https://cdnjs.com/libraries/bootstrap) para copiar y pegar fragmentos HTML listos para usar para cada archivo dist desde cualquier versión de Bootstrap.
 
@@ -66,7 +66,7 @@ Encontrarás los mismos archivos en estos proveedores de CDN, aunque con diferen
     Si los hashes SRI difieren para un archivo determinado, no debes usar los archivos de ese CDN, porque significa que el archivo fue modificado por otra persona.
 </Callout>
 
-Ten en cuenta que debes comparar hashes de la misma longitud, ej. `sha384` con `sha384`, de lo contrario se espera que sean diferentes. Como tal, puedes utilizar una herramienta en línea como [SRI Hash Generator](https://www.srihash.org/) para asegurarte de que los hashes sean los mismos para un archivo determinado. Alternativamente, suponiendo que tengas OpenSSL instalado, puedes lograr lo mismo desde la CLI, por ejemplo:
+Ten en cuenta que debes comparar hashes de la misma longitud, ej. `sha384` con `sha384`, de lo contrario se espera que sean diferentes. Como tal, puedes utilizar una herramienta en línea como [SRI Hash Generator](https://www.srihash.org) para asegurarte de que los hashes sean los mismos para un archivo determinado. Alternativamente, suponiendo que tengas OpenSSL instalado, puedes lograr lo mismo desde la CLI, por ejemplo:
 
 ```shell filename="Terminal"
 openssl dgst -sha384 -binary bootstrap.min.js | openssl base64 -A
@@ -90,7 +90,7 @@ npm install bootstrap@5.3.2
 
 El `package.json` de Bootstrap contiene algunos metadatos adicionales bajo las siguientes claves:
 
-- `sass` - ruta al archivo fuente principal [Sass](https://sass-lang.com/) de Bootstrap
+- `sass` - ruta al archivo fuente principal [Sass](https://sass-lang.com) de Bootstrap
 - `style` - ruta al CSS no minificado de Bootstrap que se ha compilado usando la configuración predeterminada (sin personalización)
 
 <Callout type="info" emoji="">
@@ -107,7 +107,7 @@ yarn add bootstrap@5.3.2
 
 ### RubyGems [#rubygems]
 
-Instala Bootstrap en tus aplicaciones Ruby usando [Bundler](https://bundler.io/) (recomendado) y [RubyGems](https://rubygems.org/) agregando la siguiente línea a tu [Gemfile](https://bundler.io/gemfile):
+Instala Bootstrap en tus aplicaciones Ruby usando [Bundler](https://bundler.io) (recomendado) y [RubyGems](https://rubygems.org) agregando la siguiente línea a tu [Gemfile](https://bundler.io/gemfile):
 
 ```ruby filename="Ruby"
 gem 'bootstrap', '~> 5.3.2'
@@ -123,7 +123,7 @@ gem install bootstrap -v 5.3.2
 
 ### Composer [#composer]
 
-También puedes instalar y administrar Sass y JavaScript de Bootstrap usando [Composer](https://getcomposer.org/):
+También puedes instalar y administrar Sass y JavaScript de Bootstrap usando [Composer](https://getcomposer.org):
 
 ```shell filename="Terminal"
 composer require twbs/bootstrap:5.3.2
@@ -131,7 +131,7 @@ composer require twbs/bootstrap:5.3.2
 
 ### NuGet [#nuget]
 
-Si desarrollas en .NET Framework, también puedes instalar y administrar el [CSS](https://www.nuget.org/packages/bootstrap/) o [Sass](https://www.nuget.org/packages/bootstrap.sass/) y JavaScript de Bootstrap usando [NuGet](https://www.nuget.org/). Los proyectos más nuevos deben usar [libman](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/) u otro método, ya que NuGet está diseñado para código compilado, no para assets de frontend.
+Si desarrollas en .NET Framework, también puedes instalar y administrar el [CSS](https://www.nuget.org/packages/bootstrap) o [Sass](https://www.nuget.org/packages/bootstrap.sass) y JavaScript de Bootstrap usando [NuGet](https://www.nuget.org). Los proyectos más nuevos deben usar [libman](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman) u otro método, ya que NuGet está diseñado para código compilado, no para assets de frontend.
 
 ```powershell filename="PowerShell"
 Install-Package bootstrap

@@ -169,7 +169,7 @@ Puedes apilar toasts envolviéndolos en un recipiente para toasts, lo que agrega
 
 ### Contenido personalizado [#custom-content]
 
-Personaliza tus notificaciones eliminando subcomponentes, modificándolos con [utilidades](/bootstrap/5.3/utilities/api/) o agregando tu propio marcado. Aquí hemos creado un toast más simple eliminando el `.toast-header` predeterminado y agregando un ícono oculto personalizado de [iconos de Bootstrap](https://icons.getbootstrap.com/) y usando algunas [utilidades de flexbox](/bootstrap/5.3/utilities/flex/) para ajustar el diseño.
+Personaliza tus notificaciones eliminando subcomponentes, modificándolos con [utilidades](/bootstrap/5.3/utilities/api) o agregando tu propio marcado. Aquí hemos creado un toast más simple eliminando el `.toast-header` predeterminado y agregando un ícono oculto personalizado de [iconos de Bootstrap](https://icons.getbootstrap.com) y usando algunas [utilidades de flexbox](/bootstrap/5.3/utilities/flex) para ajustar el diseño.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/toasts/custom-content-1.html">
     ```html filename="HTML"
@@ -202,7 +202,7 @@ Alternativamente, también puedes agregar controles y componentes adicionales a 
 
 ### Esquemas de colores [#color-schemes]
 
-A partir del ejemplo anterior, puedes crear diferentes combinaciones de colores de toasts con nuestras utilidades de [color](/bootstrap/5.3/utilities/colors/) y [fondo](/bootstrap/5.3/utilities/background/). Aquí agregamos `.text-bg-primary` a `.toast` y luego agregamos `.btn-close-white` a nuestro botón de cerrar. Para obtener un borde nítido, eliminamos el borde predeterminado con `.border-0`.
+A partir del ejemplo anterior, puedes crear diferentes combinaciones de colores de toasts con nuestras utilidades de [color](/bootstrap/5.3/utilities/colors) y [fondo](/bootstrap/5.3/utilities/background). Aquí agregamos `.text-bg-primary` a `.toast` y luego agregamos `.btn-close-white` a nuestro botón de cerrar. Para obtener un borde nítido, eliminamos el borde predeterminado con `.border-0`.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/toasts/color-schemes.html">
     ```html filename="HTML"
@@ -343,7 +343,7 @@ También puedes usar las utilidades de Flexbox para alinear las tostadas horizon
 Accesibilidad [#accessibility]
 -------------------------------
 
-Los toast están destinados a ser pequeñas interrupciones para tus visitantes o usuarios, por lo que, para ayudar a aquellos con lectores de pantalla y tecnologías de asistencia similares, debes envolver tus toast en un [`aria-live` (región)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions). Los lectores de pantalla anuncian automáticamente los cambios en las regiones activas (como la inyección/actualización de un componente del sistema) sin necesidad de mover el enfoque del usuario ni interrumpirlo de otro modo. Además, incluye `aria-atomic="true"` para garantizar que todo el toast se anuncie siempre como una única unidad (atómica), en lugar de simplemente anunciar lo que se cambió (lo que podría generar problemas si solo actualizas parte del contenido del toast, o si se muestras el mismo contenido del toast en un momento posterior). Si la información necesaria es importante para el proceso, p.e. para obtener una lista de errores en un formulario, utiliza el [componente de alerta](/bootstrap/5.3/components/alerts/) en lugar de toast.
+Los toast están destinados a ser pequeñas interrupciones para tus visitantes o usuarios, por lo que, para ayudar a aquellos con lectores de pantalla y tecnologías de asistencia similares, debes envolver tus toast en un [`aria-live` (región)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions). Los lectores de pantalla anuncian automáticamente los cambios en las regiones activas (como la inyección/actualización de un componente del sistema) sin necesidad de mover el enfoque del usuario ni interrumpirlo de otro modo. Además, incluye `aria-atomic="true"` para garantizar que todo el toast se anuncie siempre como una única unidad (atómica), en lugar de simplemente anunciar lo que se cambió (lo que podría generar problemas si solo actualizas parte del contenido del toast, o si se muestras el mismo contenido del toast en un momento posterior). Si la información necesaria es importante para el proceso, p.e. para obtener una lista de errores en un formulario, utiliza el [componente de alerta](/bootstrap/5.3/components/alerts) en lugar de toast.
 
 Ten en cuenta que la región en vivo debe estar presente en el marcado _antes_ de que se genere o actualice el toast. Si generas dinámicamente ambos al mismo tiempo y los inyectas en la página, generalmente no serán anunciados por las tecnologías de asistencia.
 

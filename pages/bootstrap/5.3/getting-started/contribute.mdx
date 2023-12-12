@@ -15,11 +15,11 @@ Ayuda a desarrollar Bootstrap con nuestra documentación, scripts y tests.
 
 ## Configuración de herramientas [#tooling-setup]
 
-Bootstrap usa [scripts npm](https://docs.npmjs.com/misc/scripts/) para crear la documentación y compilar los archivos fuente. Nuestro [package.json](https://github.com/twbs/bootstrap/blob/v5.3.2/package.json) alberga estos scripts para compilar código, ejecutar pruebas y más. Estos no están pensados para su uso fuera de nuestro repositorio y documentación.
+Bootstrap usa [scripts npm](https://docs.npmjs.com/misc/scripts) para crear la documentación y compilar los archivos fuente. Nuestro [package.json](https://github.com/twbs/bootstrap/blob/v5.3.2/package.json) alberga estos scripts para compilar código, ejecutar pruebas y más. Estos no están pensados para su uso fuera de nuestro repositorio y documentación.
 
 Para usar nuestro sistema de compilación y ejecutar nuestra documentación localmente, necesitarás una copia de los archivos fuente de Bootstrap y Node. Sigue estos pasos y deberías estar listo para rockear:
 
-1.  [Descarga e instala Node.js](https://nodejs.org/en/download/), que usamos para administrar nuestras dependencias.
+1.  [Descarga e instala Node.js](https://nodejs.org/en/download), que usamos para administrar nuestras dependencias.
 2.  Descarga las [fuentes de Bootstrap](https://github.com/twbs/bootstrap/archive/v5.3.2.zip) o bifurca y clona el [repositorio de Bootstrap](https://github.com/twbs/bootstrap).
 3.  Navega al directorio raíz `/bootstrap` y ejecuta `npm install` para instalar nuestras dependencias locales enumeradas en [package.json](https://github.com/twbs/bootstrap/blob/v5.3.2/package.json).
 
@@ -32,7 +32,7 @@ Nuestro [package.json](https://github.com/twbs/bootstrap/blob/v5.3.2/package.jso
 | Tarea | Descripción |
 | --- | --- |
 | `npm start` | Compila CSS y [JavaScript](https://esdocu.dev/javascript), crea la documentación e inicia un servidor local. |
-| `npm run dist` | Crea el directorio `dist/` con archivos compilados. Utiliza [Sass](https://sass-lang.com/), [Autoprefixer](https://github.com/postcss/autoprefixer) y [terser](https://github.com/terser/terser). |
+| `npm run dist` | Crea el directorio `dist/` con archivos compilados. Utiliza [Sass](https://sass-lang.com), [Autoprefixer](https://github.com/postcss/autoprefixer) y [terser](https://github.com/terser/terser). |
 | `npm test` | Ejecuta tests localmente después de ejecutar `npm run dist` |
 | `npm run docs-serve` | Compila y ejecuta la documentación localmente. |
 
@@ -54,7 +54,7 @@ Mantenemos la lista de navegadores compatibles con Autoprefixer en un archivo se
 
 ## RTLCSS [#rtlcss]
 
-Bootstrap usa [RTLCSS](https://rtlcss.com/) para procesar CSS compilado y convertirlos a RTL, básicamente reemplazando las propiedades que reconocen la dirección horizontal (por ejemplo `padding-left`) con su opuesto. Nos permite escribir nuestro CSS solo una vez y realizar ajustes menores usando las directivas de RTLCSS [control](https://rtlcss.com/learn/usage-guide/control-directives/) y [value](https://rtlcss.com/learn/usage-guide/value-directives/).
+Bootstrap usa [RTLCSS](https://rtlcss.com) para procesar CSS compilado y convertirlos a RTL, básicamente reemplazando las propiedades que reconocen la dirección horizontal (por ejemplo `padding-left`) con su opuesto. Nos permite escribir nuestro CSS solo una vez y realizar ajustes menores usando las directivas de RTLCSS [control](https://rtlcss.com/learn/usage-guide/control-directives) y [value](https://rtlcss.com/learn/usage-guide/value-directives).
 
 <ContentSuggestion />
 
@@ -66,7 +66,7 @@ La ejecución de nuestra documentación localmente requiere el uso de Hugo, que 
 2.  Desde el directorio raíz `/bootstrap` ejecuta `npm run docs-serve` en la línea de comando.
 3.  Abre `http://localhost:9001/` en tu navegador y listo.
 
-Aprende más sobre el uso de Hugo leyendo su [documentación](https://gohugo.io/documentation/).
+Aprende más sobre el uso de Hugo leyendo su [documentación](https://gohugo.io/documentation).
 
 ## Solución de problemas [#troubleshooting]
 

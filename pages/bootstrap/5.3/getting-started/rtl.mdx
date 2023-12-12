@@ -15,9 +15,9 @@ Aprende cómo habilitar la compatibilidad con texto de derecha a izquierda en Bo
 
 ## Familiarízate [#get-familiar]
 
-Recomendamos familiarizarte con Bootstrap primero leyendo nuestra [página de introducción para comenzar](/bootstrap/5.3/getting-started/introduction/). Una vez que lo hayas leído, continúa leyendo aquí para saber cómo habilitar RTL.
+Recomendamos familiarizarte con Bootstrap primero leyendo nuestra [página de introducción para comenzar](/bootstrap/5.3/getting-started/introduction). Una vez que lo hayas leído, continúa leyendo aquí para saber cómo habilitar RTL.
 
-Quizás también quieras leer sobre [el proyecto RTLCSS](https://rtlcss.com/), ya que impulsa nuestro enfoque de RTL.
+Quizás también quieras leer sobre [el proyecto RTLCSS](https://rtlcss.com), ya que impulsa nuestro enfoque de RTL.
 
 <Callout type="warning" emoji="">
 **La función RTL de Bootstrap aún es experimental** y evolucionará según los comentarios de los usuarios. ¿Viste algo o tienes alguna mejora que sugerir? [Abre un issue](https://github.com/twbs/bootstrap/issues/new/choose), nos encantaría conocer tus ideas.
@@ -76,7 +76,7 @@ Empieza con uno de nuestros varios [ejemplos RTL](https://getbootstrap.com/docs/
 
 Nuestro enfoque para crear soporte RTL en Bootstrap viene con dos decisiones importantes que afectan la forma en que escribimos y usamos nuestro CSS:
 
-1.  **Primero, decidimos construirlo con el proyecto [RTLCSS](https://rtlcss.com/).** Esto nos brinda algunas características poderosas para administrar cambios y sobrescrituras al pasar de LTR a RTL. También nos permite crear dos versiones de Bootstrap a partir de una base de código.
+1.  **Primero, decidimos construirlo con el proyecto [RTLCSS](https://rtlcss.com).** Esto nos brinda algunas características poderosas para administrar cambios y sobrescrituras al pasar de LTR a RTL. También nos permite crear dos versiones de Bootstrap a partir de una base de código.
     
 2.  **En segundo lugar, hemos cambiado el nombre de un puñado de clases direccionales para adoptar un enfoque de propiedades lógicas.** La mayoría de ustedes ya han interactuado con propiedades lógicas gracias a nuestras utilidades flex: reemplazan las propiedades de dirección como `left` y `right` a favor de `start` y `end`. Eso hace que los nombres y valores de las clases sean apropiados para LTR y RTL sin ningún costo adicional.
     
@@ -87,11 +87,11 @@ Trabajar con RTL, a través de nuestro Sass fuente o CSS compilado, no debería 
 
 ## Personalizar desde la fuente [#customize-from-source]
 
-Cuando se trata de [personalización](/bootstrap/5.3/customize/sass/), la forma preferida es aprovechar variables, mapas, y mixins. Este enfoque funciona igual para RTL, incluso si se procesa posteriormente a partir de los archivos compilados, gracias a [cómo funciona RTLCSS](https://rtlcss.com/learn/getting-started/why-rtlcss/).
+Cuando se trata de [personalización](/bootstrap/5.3/customize/sass), la forma preferida es aprovechar variables, mapas, y mixins. Este enfoque funciona igual para RTL, incluso si se procesa posteriormente a partir de los archivos compilados, gracias a [cómo funciona RTLCSS](https://rtlcss.com/learn/getting-started/why-rtlcss).
 
 ### Valores RTL personalizados [#custom-rtl-values]
 
-Usando la [directivas de valor RTLCSS](https://rtlcss.com/learn/usage-guide/value-directives/), puedes hacer que una variable genere un valor diferente para RTL. Por ejemplo, para disminuir el peso de `$font-weight-bold` en todo el código base, puedes usar la sintaxis `/*rtl: {value}*/`:
+Usando la [directivas de valor RTLCSS](https://rtlcss.com/learn/usage-guide/value-directives), puedes hacer que una variable genere un valor diferente para RTL. Por ejemplo, para disminuir el peso de `$font-weight-bold` en todo el código base, puedes usar la sintaxis `/*rtl: {value}*/`:
     ```scss filename="SCSS"
     $font-weight-bold: 700 #{/* rtl:600 */} !default;
     ```
@@ -141,7 +141,7 @@ Por ejemplo, para cambiar de la fuente `Helvetica Neue` para LTR a `Helvetica Ne
 
 ### LTR y RTL al mismo tiempo [#ltr-and-rtl-at-the-same-time]
 
-¿Necesitas LTR y RTL en la misma página? Gracias a [RTLCSS String Maps](https://rtlcss.com/learn/usage-guide/string-map/), esto es bastante sencillo. Envuelve tus `@import` con una clase y establece una regla de cambio de nombre personalizada para RTLCSS:
+¿Necesitas LTR y RTL en la misma página? Gracias a [RTLCSS String Maps](https://rtlcss.com/learn/usage-guide/string-map), esto es bastante sencillo. Envuelve tus `@import` con una clase y establece una regla de cambio de nombre personalizada para RTLCSS:
     ```scss filename="SCSS"
     /* rtl:begin:options: {
       "autoRename": true,
@@ -168,7 +168,7 @@ Después de ejecutar Sass y luego RTLCSS, cada selector en tus archivos CSS tend
 **Casos extremos y limitaciones conocidas** a considerar cuando se trabaja con una implementación combinada de LTR y RTL:
 
 1.  Al cambiar `.ltr` y `.rtl`, asegúrate de agregar los atributos `dir` y `lang` en consecuencia.
-2.  Cargar ambos archivos puede ser un verdadero cuello de botella en el rendimiento: considera algo de [optimización](/bootstrap/5.3/customize/optimize/) y tal vez intentes [carga uno de esos archivos de forma asincrónica](https://www.filamentgroup.com/lab/load-css-simpler/).
+2.  Cargar ambos archivos puede ser un verdadero cuello de botella en el rendimiento: considera algo de [optimización](/bootstrap/5.3/customize/optimize) y tal vez intentes [carga uno de esos archivos de forma asincrónica](https://www.filamentgroup.com/lab/load-css-simpler).
 3.  Anidar estilos de esta manera evitará que nuestro mixin `form-validation-state()` funcione según lo previsto, por lo que requerirá que lo modifiques un poco por tu cuenta. [Ver #31223](https://github.com/twbs/bootstrap/issues/31223).
 </Callout>
 
@@ -178,7 +178,7 @@ El [separador de breadcrumb](/bootstrap/5.3/components/breadcrumb/ "Página toda
 
 ## Recursos adicionales [#additional-resources]
 
-* [RTLCSS](https://rtlcss.com/)
+* [RTLCSS](https://rtlcss.com)
 * [Estilo en RTL 101](https://rtlstyling.com/posts/rtl-styling)
 
 <ContentSuggestion />

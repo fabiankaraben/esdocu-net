@@ -89,7 +89,7 @@ Con las dependencias instaladas y nuestra carpeta de proyecto lista para que com
     
     Estamos incluyendo un poco de estilo Bootstrap aquí con el `div class="container"` y `<button>` para que podamos ver cuándo Parcel carga el CSS de Bootstrap.
     
-    Parcel detectará automáticamente que estamos usando Sass e instalará el [complemento Sass de Parcel](https://parceljs.org/languages/sass/) para apoyarlo. Sin embargo, si lo deseas, también puedes ejecutar manualmente `npm i --save-dev @parcel/transformer-sass`.
+    Parcel detectará automáticamente que estamos usando Sass e instalará el [complemento Sass de Parcel](https://parceljs.org/languages/sass) para apoyarlo. Sin embargo, si lo deseas, también puedes ejecutar manualmente `npm i --save-dev @parcel/transformer-sass`.
     
 2.  **Agrega los scripts Parcel npm.** Abre el `package.json` y agrega el siguiente script `start` al objeto `scripts`. Usaremos este script para iniciar nuestro servidor de desarrollo de Parcel y renderizar el archivo HTML que creamos después de compilarlo en el directorio `dist`.
     ```json filename="JSON"
@@ -140,7 +140,7 @@ Importar Bootstrap a Parcel requiere dos importaciones, una a nuestro `styles.sc
     import { Tooltip, Toast, Popover } from 'bootstrap'
     ```
     
-    _[Lee nuestra documentación de JavaScript](/bootstrap/5.3/getting-started/javascript/) para obtener más información sobre cómo usar los complementos de Bootstrap._
+    _[Lee nuestra documentación de JavaScript](/bootstrap/5.3/getting-started/javascript) para obtener más información sobre cómo usar los complementos de Bootstrap._
     
 3.  **¡Y listo! 🎉** Con el código fuente Sass y JS de Bootstrap completamente cargados, tu servidor de desarrollo local ahora debería verse así.
     

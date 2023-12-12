@@ -57,7 +57,7 @@ Generalmente, recomendamos usar un `<button>` con el atributo `data-bs-target`. 
 Horizontal [#horizontal]
 -------------------------
 
-El complemento de colapso admite el colapso horizontal. Agrea la clase modificadora `.collapse-horizontal` para realizar la transición del `width` en lugar de `height` y establece un `width` en el elemento hijo inmediato. Siéntete libre de escribir tu propio Sass personalizado, usar estilos en línea o usar nuestras [utilidades de ancho](/bootstrap/5.3/utilities/sizing/).
+El complemento de colapso admite el colapso horizontal. Agrea la clase modificadora `.collapse-horizontal` para realizar la transición del `width` en lugar de `height` y establece un `width` en el elemento hijo inmediato. Siéntete libre de escribir tu propio Sass personalizado, usar estilos en línea o usar nuestras [utilidades de ancho](/bootstrap/5.3/utilities/sizing).
 
 <Callout type="info" emoji="">
 Ten en cuenta que, si bien el siguiente ejemplo tiene un `min-height` configurado para evitar repintados excesivos en nuestra documentación, esto no es un requisito explícito. **Solo se requiere el `width` en el elemento secundario.**
@@ -131,7 +131,7 @@ Asegúrate de agregar `aria-expanded` al elemento de control. Este atributo tran
 
 Si tu elemento de control apunta a un único elemento plegable, es decir, el atributo `data-bs-target` apunta a un selector `id`, debes agregar el atributo `aria-controls` al elemento de control, que contiene el `id` del elemento plegable. Los lectores de pantalla modernos y tecnologías de asistencia similares utilizan este atributo para proporcionar a los usuarios accesos directos adicionales para navegar directamente al elemento plegable.
 
-Ten en cuenta que la implementación actual de Bootstrap no cubre las diversas interacciones de teclado _opcionales_ descritas en [Patrón de acordeón de la Guía de prácticas de creación de ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/), deberás incluirlos tú mismo con [JavaScript](https://esdocu.dev/javascript) personalizado.
+Ten en cuenta que la implementación actual de Bootstrap no cubre las diversas interacciones de teclado _opcionales_ descritas en [Patrón de acordeón de la Guía de prácticas de creación de ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion), deberás incluirlos tú mismo con [JavaScript](https://esdocu.dev/javascript) personalizado.
 
 CSS [#css]
 -----------
@@ -186,7 +186,7 @@ Estas clases se pueden encontrar en `_transitions.scss`.
 
 Simplemente agrega `data-bs-toggle="collapse"` y un `data-bs-target` al elemento para asignar automáticamente control de uno o más elementos plegables. El atributo `data-bs-target` acepta un selector CSS al que aplicar el colapso. Asegúrate de agregar la clase `collapse` al elemento plegable. Si deseas que se abra de forma predeterminada, agrega la clase adicional `show`.
 
-Para agregar administración de grupos tipo acordeón a un área plegable, agrega el atributo de datos `data-bs-parent="#selector"`. Consulta la [página del acordeón](/bootstrap/5.3/components/accordion/) para obtener más información.
+Para agregar administración de grupos tipo acordeón a un área plegable, agrega el atributo de datos `data-bs-parent="#selector"`. Consulta la [página del acordeón](/bootstrap/5.3/components/accordion) para obtener más información.
 
 ### Vía [JavaScript](https://esdocu.dev/javascript) [#via-javascript]
 

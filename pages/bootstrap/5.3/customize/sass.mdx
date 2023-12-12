@@ -95,7 +95,7 @@ Con esa configuración implementada, puedes comenzar a modificar cualquiera de l
 Compilando [#compiling]
 ------------------------
 
-Para poder usar tu código Sass personalizado como CSS en el navegador, necesitas un compilador Sass. Sass se envía como un paquete CLI, pero también puedes compilarlo con otras herramientas de compilación como [Gulp](https://gulpjs.com/) o [Webpack](https://webpack.js.org/), o con aplicaciones GUI. Algunos IDE también tienen compiladores Sass integrados o como extensiones descargables.
+Para poder usar tu código Sass personalizado como CSS en el navegador, necesitas un compilador Sass. Sass se envía como un paquete CLI, pero también puedes compilarlo con otras herramientas de compilación como [Gulp](https://gulpjs.com) o [Webpack](https://webpack.js.org), o con aplicaciones GUI. Algunos IDE también tienen compiladores Sass integrados o como extensiones descargables.
 
 Nos gusta usar la CLI para compilar nuestro Sass, pero puedes usar el método que prefieras. Desde la línea de comando, ejecuta lo siguiente:
     ```shell filename="Terminal"
@@ -109,7 +109,7 @@ Nos gusta usar la CLI para compilar nuestro Sass, pero puedes usar el método qu
 Obtén más información sobre tus opciones en [sass-lang.com/install](https://sass-lang.com/install) y [compilando con VS Code](https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css).
 
 <Callout type="info" emoji="">
-**¿Utilizas Bootstrap con otra herramienta de compilación?** Considera leer nuestras guías para compilar con [Webpack](/bootstrap/5.3/getting-started/webpack/), [Parcel](/bootstrap/5.3/getting-started/parcel/) o [Vite](/bootstrap/5.3/getting-started/vite/). También tenemos demostraciones listas para producción en [nuestro repositorio de ejemplos en GitHub](https://github.com/twbs/examples).
+**¿Utilizas Bootstrap con otra herramienta de compilación?** Considera leer nuestras guías para compilar con [Webpack](/bootstrap/5.3/getting-started/webpack), [Parcel](/bootstrap/5.3/getting-started/parcel) o [Vite](/bootstrap/5.3/getting-started/vite). También tenemos demostraciones listas para producción en [nuestro repositorio de ejemplos en GitHub](https://github.com/twbs/examples).
 </Callout>
 
 <ContentSuggestion />
@@ -282,7 +282,7 @@ En la práctica, llamarías a la función y pasarías los parámetros de color y
 
 ### Contraste de color [#color-contrast]
 
-Para cumplir con las [Pautas de Accesibilidad al Contenido Web (WCAG)](https://www.w3.org/TR/WCAG/), los autores **deben** proporcionar un [contraste de color del texto mínimo de 4.5:1](https://www.w3.org/TR/WCAG/#contrast-minimum) y un [contraste de color sin texto mínimo de 3:1](https://www.w3.org/TR/WCAG/#non-text-contrast), con muy pocas excepciones.
+Para cumplir con las [Pautas de Accesibilidad al Contenido Web (WCAG)](https://www.w3.org/TR/WCAG), los autores **deben** proporcionar un [contraste de color del texto mínimo de 4.5:1](https://www.w3.org/TR/WCAG/#contrast-minimum) y un [contraste de color sin texto mínimo de 3:1](https://www.w3.org/TR/WCAG/#non-text-contrast), con muy pocas excepciones.
 
 Para ayudar con esto, incluimos la función `color-contrast` en Bootstrap. Utiliza el [algoritmo de relación de contraste WCAG](https://www.w3.org/TR/WCAG/#dfn-contrast-ratio) para calcular umbrales de contraste basados en [luminancia relativa](https://www.w3.org/TR/WCAG/#dfn-relative-luminance) en un espacio de color `sRGB` para devolver automáticamente un color de contraste claro (`#fff`), oscuro (`#212529`) o negro (`#000`) según el color base especificado. Esta función es especialmente útil para mixins o bucles en los que generas varias clases.
 
@@ -360,7 +360,7 @@ Nuestro directorio `scss/mixins/` tiene un montón de mixins que potencian parte
 
 ### Esquemas de colores [#color-schemes]
 
-Hay disponible una combinación abreviada para la media query `prefers-color-scheme` compatible con `light`, `dark` y esquemas de color personalizados. Consulta [la documentación de modos de color](/bootstrap/5.3/customize/color-modes/) para obtener información sobre nuestra combinación de modos de color.
+Hay disponible una combinación abreviada para la media query `prefers-color-scheme` compatible con `light`, `dark` y esquemas de color personalizados. Consulta [la documentación de modos de color](/bootstrap/5.3/customize/color-modes) para obtener información sobre nuestra combinación de modos de color.
 
 [scss/mixins/_color-scheme.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/mixins/_color-scheme.scss)
     ```scss filename="SCSS"

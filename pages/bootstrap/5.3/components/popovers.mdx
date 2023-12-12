@@ -18,8 +18,8 @@ Descripción general [#overview]
 
 Cosas que debes saber al usar el complemento popover:
 
-* Los popovers dependen de la biblioteca de terceros [Popper](https://popper.js.org/) para su posicionamiento. Debes incluir [popper.min.js](https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js) antes de `bootstrap.js`, o utiliza un `bootstrap.bundle.min.js` que contenga Popper.
-* Los popovers requieren el [complemento popover](/bootstrap/5.3/components/popovers/) como dependencia.
+* Los popovers dependen de la biblioteca de terceros [Popper](https://popper.js.org) para su posicionamiento. Debes incluir [popper.min.js](https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js) antes de `bootstrap.js`, o utiliza un `bootstrap.bundle.min.js` que contenga Popper.
+* Los popovers requieren el [complemento popover](/bootstrap/5.3/components/popovers) como dependencia.
 * Los popovers son opcionales por motivos de rendimiento, por lo que **debes inicializarlos tú mismo**.
 * Los valores `title` y `content` de longitud cero nunca mostrarán una ventana emergente.
 * Especifica `container: 'body'` para evitar problemas de renderizado en componentes más complejos (como nuestros grupos de entrada, grupos de botones, etc.).
@@ -98,7 +98,7 @@ Cuando tienes algunos estilos en un elemento padre que interfieren con una venta
     })
     ```
 
-Otra situación en la que querrás establecer un `container` personalizado explícito son los popovers dentro de un [diálogo modal](/bootstrap/5.3/components/modal/), para asegurarte de que la ventana emergente en sí se agregue al modal. Esto es particularmente importante para los popovers que contienen elementos interactivos: los cuadros de diálogo modales atraparán el foco, por lo que, a menos que el popover sea un elemento secundario del modal, los usuarios no podrán enfocar ni activar estos elementos interactivos.
+Otra situación en la que querrás establecer un `container` personalizado explícito son los popovers dentro de un [diálogo modal](/bootstrap/5.3/components/modal), para asegurarte de que la ventana emergente en sí se agregue al modal. Esto es particularmente importante para los popovers que contienen elementos interactivos: los cuadros de diálogo modales atraparán el foco, por lo que, a menos que el popover sea un elemento secundario del modal, los usuarios no podrán enfocar ni activar estos elementos interactivos.
 
     ```javascript filename="JavaScript"
     const popover = new bootstrap.Popover('.example-popover', {

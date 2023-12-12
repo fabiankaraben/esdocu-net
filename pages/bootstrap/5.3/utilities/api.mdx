@@ -27,7 +27,7 @@ El mapa `$utilities` contiene todas nuestras utilidades y luego se fusiona con t
 | [`local-vars`](#local-css-variables) | Opcional | null | Mapa de variables CSS locales a generar además de las reglas CSS. |
 | [`state`](#states) | Opcional | null | Lista de variantes de pseudoclases (por ejemplo, `:hover` o `:focus`) para generar. |
 | [`responsive`](#responsive) | Opcional | `false` | Booleano que indica si se deben generar clases responsive. |
-| `rfs` | Opcional | `false` | Booleano para habilitar el [rescalado fluid con RFS](/bootstrap/5.3/getting-started/rfs/). |
+| `rfs` | Opcional | `false` | Booleano para habilitar el [rescalado fluid con RFS](/bootstrap/5.3/getting-started/rfs). |
 | [`print`](#print) | Opcional | `false` | Booleano que indica si es necesario generar clases de impresión. |
 | `rtl` | Opcional | `true` | Booleano que indica si la utilidad debe mantenerse en RTL. |
 
@@ -92,7 +92,7 @@ Como una lista, como con las [`text-decoration` (utilidades)](/bootstrap/5.3/uti
     values: none underline line-through
     ```
 
-Como mapa, como con las [`opacity` (utilidades)](/bootstrap/5.3/utilities/opacity/):
+Como mapa, como con las [`opacity` (utilidades)](/bootstrap/5.3/utilities/opacity):
 
     ```scss filename="SCSS"
     values: (
@@ -104,7 +104,7 @@ Como mapa, como con las [`opacity` (utilidades)](/bootstrap/5.3/utilities/opacit
     )
     ```
 
-Como una variable Sass que establece la lista o mapa, como en nuestra [`position` (utilidades)](/bootstrap/5.3/utilities/position/):
+Como una variable Sass que establece la lista o mapa, como en nuestra [`position` (utilidades)](/bootstrap/5.3/utilities/position):
 
     ```scss filename="SCSS"
     values: $position-values
@@ -261,7 +261,7 @@ Salida:
 
 ### Responsive [#responsive]
 
-Agrega el booleano `responsive` para generar utilidades responsive (por ejemplo, `.opacity-md-25`) en [todos los puntos de interrupción](/bootstrap/5.3/layout/breakpoints/).
+Agrega el booleano `responsive` para generar utilidades responsive (por ejemplo, `.opacity-md-25`) en [todos los puntos de interrupción](/bootstrap/5.3/layout/breakpoints).
 
     ```scss filename="SCSS"
     $utilities: (
