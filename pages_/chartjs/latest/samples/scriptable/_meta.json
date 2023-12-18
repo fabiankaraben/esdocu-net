@@ -1,0 +1,8 @@
+{
+    "bar": "Bar Chart",
+    "bubble": "Bubble Chart",
+    "line": "Line Chart",
+    "pie": "Pie Chart",
+    "polar": "Polar Area Chart",
+    "radar": "Radar Chart"
+}

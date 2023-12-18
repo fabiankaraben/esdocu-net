@@ -95,6 +95,31 @@ module.exports = withNextra({
         destination: '/bootstrap/5.3/extend/approach',
         permanent: true,
       },
+      {
+        source: '/chartjs',
+        destination: '/chartjs/latest',
+        permanent: true,
+      },
+      {
+        source: '/chartjs/latest/general',
+        destination: '/chartjs/latest/general/data-structures',
+        permanent: true,
+      },
+      {
+        source: '/chartjs/latest/charts',
+        destination: '/chartjs/latest/charts/line',
+        permanent: true,
+      },
+      {
+        source: '/chartjs/latest/migration',
+        destination: '/chartjs/latest/migration/v4-migration',
+        permanent: true,
+      },
+      {
+        source: '/chartjs/latest/samples',
+        destination: '/chartjs/latest/samples/information',
+        permanent: true,
+      },
     ];
   },
 })

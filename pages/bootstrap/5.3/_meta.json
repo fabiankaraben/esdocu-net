@@ -1,4 +1,8 @@
 {
+  "-- docs": {
+    "title": "Docs de Bootstrap v5.3",
+    "type": "separator"
+  },
   "getting-started": "Primeros pasos",
   "customize": "Personalizar",
   "layout": "Layout",

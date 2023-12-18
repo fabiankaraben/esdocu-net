@@ -1,0 +1,11 @@
+{
+    "area": "Area Chart",
+    "bar": "Bar Chart",
+    "bubble": "Bubble Chart",
+    "doughnut": "Doughnut and Pie Charts",
+    "line": "Line Chart",
+    "mixed": "Mixed Chart Types",
+    "polar": "Polar Area Chart",
+    "radar": "Radar Chart",
+    "scatter": "Scatter Chart"
+}

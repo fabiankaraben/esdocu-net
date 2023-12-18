@@ -1,0 +1,10 @@
+{
+    "linear-min-max": "Linear Scale - Min-Max",
+    "linear-min-max-suggested": "Linear Scale - Suggested Min-Max",
+    "linear-step-size": "Linear Scale - Step Size",
+    "log": "Log Scale",
+    "stacked": "Stacked Linear / Category",
+    "time-line": "Time Scale",
+    "time-max-span": "Time Scale - Max Span",
+    "time-combo": "Time Scale - Combo Chart"
+}

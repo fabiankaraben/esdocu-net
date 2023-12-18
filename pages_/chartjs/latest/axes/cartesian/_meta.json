@@ -1,0 +1,8 @@
+{
+    "index": "Cartesian Axes",
+    "category": "Category Axis",
+    "linear": "Linear Axis",
+    "logarithmic": "Logarithmic Axis",
+    "time": "Time Cartesian Axis",
+    "timeseries": "Time Series Axis"
+}

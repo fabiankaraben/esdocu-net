@@ -1,0 +1,15 @@
+{
+  "-- docs": {
+    "title": "Docs de Chart.js",
+    "type": "separator"
+  },
+  "index": "Bienvenida a Chart.js",
+  "getting-started": "Empezando",
+  "general": "General",
+  "configuration": "Configuración",
+  "charts": "Tipos de gráficos",
+  "axes": "Ejes",
+  "developers": "Desarrolladores",
+  "migration": "Migración",
+  "samples": "Ejemplos"
+}

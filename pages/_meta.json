@@ -11,6 +11,11 @@
     "type": "page",
     "display": "hidden"
   },
+  "momentjs": {
+    "title": "Moment.js",
+    "type": "page",
+    "display": "hidden"
+  },
   "docs": {
     "title": "Documentaciones",
     "type": "menu",
@@ -18,6 +23,10 @@
       "bootstrap-v53": {
         "title": "Bootstrap v5.3",
         "href": "/bootstrap/5.3/getting-started/introduction"
+      },
+      "momentjs": {
+        "title": "Moment.js",
+        "href": "/momentjs/use-it"
       }
     }
   },
