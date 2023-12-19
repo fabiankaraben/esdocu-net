@@ -17,20 +17,24 @@ Si deseas probar los códigos de muestra a continuación, simplemente abre la co
 
 ## Instalar Moment en Node.js [#node-js]
 
+Puedes instalar Moment.js en tu proyecto Node.js ejecutando el siguiente comando:
+
 ```
 npm install moment
 ```
 
-```javascript
+Posteriormente en los archivos que necesites utilizar Moment.js puedes hacerlo con estas líneas de código JavaScript:
+
+```javascript filename="JavaScript"
 var moment = require('moment'); // require
 moment().format(); 
 ```
 
-O en la sintaxis de ES6:
+O bien en la sintaxis de ES6:
 
  {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 import moment from 'moment';
 moment().format();
 ```
@@ -41,6 +45,8 @@ Se eliminará en la próxima versión principal.
 Si también deseas incluir *Moment Timezone*, consulta la [documentación separada de Moment Timezone para Node.js](https://momentjs.com/timezone/docs/#/use-it/node-js) con ejemplos.
 
 ## Moment en el Navegador web [#browser]
+
+Si tu preferencia es utilizar Moment.js directamente en el navegador web, puedes hacerlo añadiendo el paquete `moment.js` previamente descargado o bien utilizando uno de los CDNs disponibles:
 
 ```html
 <script src="moment.js"></script>
@@ -53,7 +59,7 @@ Si también deseas incluir *Moment Timezone*, consulta la [documentación separa
 
 ## Instalar Moment con Bower [#bower]
 
-[bower](https://bower.io)
+Otra opción disponible es [Bower](https://bower.io). Puedes instalar Moment.js en tu proyecto utilizando Bower de la siguiente manera:
 
 ```
 bower install --save moment
@@ -144,7 +150,7 @@ __Nota:__ A partir de la versión **2.9.0**, moment se exporta como un módulo a
 
 ## Instalar Moment con NuGet [#nuget]
 
-[NuGet](https://www.nuget.org) / [Moment.js](https://www.nuget.org/packages/Moment.js)
+Si tu proyecto es en .NET puedes instalar Moment.js utilizando [NuGet](https://www.nuget.org) instalando particularmente el paquete [Moment.js](https://www.nuget.org/packages/Moment.js) de la siguiente manera:
 
 ```
 Install-Package Moment.js
@@ -152,8 +158,7 @@ Install-Package Moment.js
 
 ## Instalar Moment con Meteor [#meteor]
 
-[meteor](https://www.meteor.com) / [atmosphere](https://atmospherejs.com)
-/ [momentjs:moment](https://atmospherejs.com/momentjs/moment)
+Para utilizar Moment.js en [Meteor](https://www.meteor.com) utilizando el paquete disponible en [Atmosphere](https://atmospherejs.com), específicamente el paquete [momentjs:moment](https://atmospherejs.com/momentjs/moment). La instalación se realiza con el siguiente comando:
 
 ```
 meteor add momentjs:moment
