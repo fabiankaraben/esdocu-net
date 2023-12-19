@@ -155,7 +155,7 @@ Mon, 06 Mar 2017 21:22:23 +0000
 
 El analizador (parser) también confirma que el día de la semana (cuando se incluye) es coherente con la fecha.
 
-## String + Format [#string-format]
+## Pasar Cadena + Formato [#string-format]
 
 ```javascript filename="Firma del método"
 moment(String, String);
@@ -192,7 +192,7 @@ moment('24/12/2019 09:15:00', "DD MM YYYY hh:mm:ss", true);
 
 Los tokens de análisis (parsing) son similares a los tokens de formato utilizados en `moment#format`.
 
-### Year, month, and day tokens
+### Tokens de año, mes y día
 
 *Los tokens distinguen entre mayúsculas y minúsculas.*
 
@@ -286,7 +286,7 @@ moment("2010-10-20 4:30",       "YYYY-MM-DD HH:mm");   // Analizado como 4:30 lo
 moment("2010-10-20 4:30 +0000", "YYYY-MM-DD HH:mm Z"); // Analizado como 4:30 UTC
 ```
 
-### Fichas relacionadas con el año de la era
+### Tokens relacionados con el año de la era
 
 *Los tokens distinguen entre mayúsculas y minúsculas.*
 
@@ -302,7 +302,7 @@ moment("2010-10-20 4:30 +0000", "YYYY-MM-DD HH:mm Z"); // Analizado como 4:30 UT
 
 El soporte de era se agregó en **2.25.0**. Los tokens/API todavía están cambiando.
 
-### Notas y trampas
+### Notas y trucos
 
 Si el moment resultante de la entrada analizada no existe, `moment#isValid` devolverá falso.
 
@@ -371,7 +371,7 @@ moment("123", "hmm").format("HH:mm") === "01:23"
 moment("1234", "hmm").format("HH:mm") === "12:34"
 ```
 
-## Cadena + Formatos [#string-formats]
+## Pasar una Cadena + Formatos [#string-formats]
 
 ```javascript filename="Firma del método"
 moment(String, String[], String, Boolean);
@@ -437,7 +437,7 @@ A partir de la versión **2.20.0**, los siguientes formatos HTML5 están disponi
 | `WEEK`                     | `GGGG-[W]WW`              | 2017-W50                |`<input type="week" />` |
 | `MONTH`                    | `YYYY-MM`                 | 2017-12                 |`<input type="month" />` |
 
-## Objecto [#object]
+## Pasar un Objecto JavaScript [#object]
 
 ```javascript filename="Firma del método"
 moment({unit: value, ...});
@@ -464,7 +464,7 @@ Los valores de cadena (como se muestran en la última línea) se admiten desde l
 
 Ten en cuenta que, al igual que `moment(Array)` y `new Date(year, month, date)`, los meses están indexados desde `0`.
 
-## Timestamp de Unix (milisegundos) [#unix-timestamp-milliseconds]
+## Desde Timestamp de Unix (milisegundos) [#unix-timestamp-milliseconds]
 
 ```javascript filename="Firma del método"
 moment(Number);
@@ -478,7 +478,7 @@ var day = moment(1318781876406);
 
 **Nota**: ECMAScript llama a esto [Valor de tiempo (Time Value)](https://www.ecma-international.org/ecma-262/6.0/#sec-time-values-and-time-range)
 
-## Timestamp de Unix (segundos) [#unix-timestamp]
+## Desde Timestamp de Unix (segundos) [#unix-timestamp]
 
 ```javascript filename="Firma del método"
 moment.unix(Number)
@@ -502,7 +502,7 @@ var day = moment.unix(1318781876.721);
 var day = moment.unix(1318781876).utc();
 ```
 
-## Date [#date]
+## Pasar un objeto Date [#date]
 
 ```javascript filename="Firma del método"
 moment(Date);
@@ -517,7 +517,7 @@ var dayWrapper = moment(day);
 
 Esto clona el objeto `Date`; cambios adicionales en el objeto `Date` no afectarán el `Moment`, y viceversa.
 
-## Array [#array]
+## Pasar un Array [#array]
 
 ```javascript filename="Firma del método"
 moment(Number[]);
@@ -557,7 +557,7 @@ moment([2010, 10, 31]).isValid(); // false (no es un día real)
 moment([2010, 1, 29]).isValid();  // false (no es un año real)
 ```
 
-## ASP.NET JSON Date [#asp-net-json-date]
+## Pasar un ASP.NET JSON Date [#asp-net-json-date]
 
 ```javascript filename="Firma del método"
 moment(String);
@@ -571,7 +571,7 @@ Si se pasa una cadena que coincide con este formato, se analizará correctamente
 moment("/Date(1198908717056-0700)/"); // 2007-12-28T23:11:57.056-07:00
 ```
 
-## Moment Clone [#moment-clone]
+## Clonar un objeto Moment [#moment-clone]
 
 ```javascript filename="Firma del método"
 moment(Moment);
@@ -597,7 +597,7 @@ a.year(2000);
 b.year(); // 2012
 ```
 
-## UTC [#utc]
+## El modo UTC [#utc]
 
 ```javascript filename="Firma del método"
 moment.utc();
@@ -657,7 +657,7 @@ a.local();
 a.hours(); // 0 PST
 ```
 
-## parseZone [#parse-zone]
+## El método `parseZone` [#parse-zone]
 
 ```javascript filename="Firma del método"
 moment.parseZone()
@@ -692,7 +692,7 @@ var s = "2013-01-01T00:00:00-13:00";
 moment(s).utcOffset(s);
 ```
 
-## Validación [#is-valid]
+## Validación de un objeto Moment [#is-valid]
 
 ```javascript filename="Firma del método"
 moment().isValid();
@@ -749,7 +749,7 @@ El valor de retorno tiene el siguiente significado:
 
 **Nota:** En caso de que haya varias unidades incorrectas, se devuelve la primera (porque la validez de los días puede depender del mes, por ejemplo).
 
-### Momentos no válidos
+### Moments no válidos
 
 Si un momento no es válido, se comporta como un `NaN` en operaciones de punto flotante.
 
