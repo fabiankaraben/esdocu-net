@@ -6,7 +6,7 @@ import { MainBanner } from '@components/main-banner'
 import { ContentSuggestion } from '@components/content-suggestion'
 import { Callout } from 'nextra/components'
 
-# JavaScript
+# Utilización de JavaScript en Bootstrap
 
 Dale vida a Bootstrap con nuestros complementos de JavaScript opcionales. Obtén más información sobre cada complemento, nuestras opciones de API programática y de datos, y más.
 
@@ -18,11 +18,11 @@ Los complementos se pueden incluir individualmente (usando el `js/dist/*.js` ind
 
 Si usas un paquete (Webpack, Parcel, Vite…), puedes usar archivos `/js/dist/*.js` que estén preparados para UMD.
 
-## Uso con frameworks [JavaScript](https://esdocu.dev/javascript) [#usage-with-javascript-frameworks]
+## Uso con frameworks JavaScript [#usage-with-javascript-frameworks]
 
-Si bien Bootstrap CSS se puede usar con cualquier framework, **Bootstrap [JavaScript](https://esdocu.dev/javascript) no es totalmente compatible con frameworks de [JavaScript](https://esdocu.dev/javascript) como React, Vue y Angular** que se suponen completos conocedores del DOM. Tanto Bootstrap como el framework pueden intentar mutar el mismo elemento DOM, lo que genera errores como menús desplegables que se atascan en la posición "open".
+Si bien Bootstrap CSS se puede usar con cualquier framework, **Bootstrap JavaScript no es totalmente compatible con frameworks de JavaScript como React, Vue y Angular** que se suponen completos conocedores del DOM. Tanto Bootstrap como el framework pueden intentar mutar el mismo elemento DOM, lo que genera errores como menús desplegables que se atascan en la posición "open".
 
-Una mejor alternativa para quienes usan este tipo de frameworks es usar un paquete específico del framework **en lugar de** el [JavaScript](https://esdocu.dev/javascript) Bootstrap. Estas son algunas de las opciones más populares:
+Una mejor alternativa para quienes usan este tipo de frameworks es usar un paquete específico del framework **en lugar de** el JavaScript Bootstrap. Estas son algunas de las opciones más populares:
 
 * React: [React Bootstrap](https://react-bootstrap.github.io)
     <Callout type="info" emoji="">
@@ -49,7 +49,7 @@ Proporcionamos una versión de Bootstrap creada como `ESM` (`bootstrap.esm.js` y
 </script>
 ```
 
-En comparación con los paquetes JS, usar ESM en el navegador requiere que uses la ruta completa y el nombre del archivo en lugar del nombre del módulo. [Lee más sobre los módulos JS en el navegador.](https://v8.dev/features/modules#specifiers) Por eso usamos `'bootstrap.esm.min.js'` en lugar de `'bootstrap'` arriba. Sin embargo, esto se complica aún más por nuestra dependencia de Popper, que importa Popper a nuestro [JavaScript](https://esdocu.dev/javascript) de esta manera:
+En comparación con los paquetes JS, usar ESM en el navegador requiere que uses la ruta completa y el nombre del archivo en lugar del nombre del módulo. [Lee más sobre los módulos JS en el navegador.](https://v8.dev/features/modules#specifiers) Por eso usamos `'bootstrap.esm.min.js'` en lugar de `'bootstrap'` arriba. Sin embargo, esto se complica aún más por nuestra dependencia de Popper, que importa Popper a nuestro JavaScript de esta manera:
 
 ```javascript filename="JavaScript"
 import * as Popper from "@popperjs/core"
@@ -102,9 +102,9 @@ Nuestros menús desplegables, ventanas emergentes popovers tooltips también dep
 
 ## Atributos de datos [#data-attributes]
 
-Casi todos los complementos de Bootstrap se pueden habilitar y configurar solo a través de HTML con atributos de datos (nuestra forma preferida de usar la funcionalidad de [JavaScript](https://esdocu.dev/javascript)). Asegúrate de **usar solo un conjunto de atributos de datos en un solo elemento** (por ejemplo, no puedes activar un tooltip y un modal desde el mismo botón).
+Casi todos los complementos de Bootstrap se pueden habilitar y configurar solo a través de HTML con atributos de datos (nuestra forma preferida de usar la funcionalidad de JavaScript). Asegúrate de **usar solo un conjunto de atributos de datos en un solo elemento** (por ejemplo, no puedes activar un tooltip y un modal desde el mismo botón).
 
-Como las opciones se pueden pasar a través de atributos de datos o [JavaScript](https://esdocu.dev/javascript), puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
+Como las opciones se pueden pasar a través de atributos de datos o JavaScript, puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
 
 A partir de Bootstrap 5.2.0, todos los componentes admiten un atributo de datos **experimental** reservado `data-bs-config` que puede albergar datos simples de configuración del componente como una cadena JSON. Cuando un elemento tiene los atributos `data-bs-config='{"delay":0, "title":123}'` y `data-bs-title="456"`, el valor final de `title` será `456` y los atributos de datos separados sobrescribirán los valores proporcionados en `data-bs-config`. Además, los atributos de datos existentes pueden albergar valores JSON como `data-bs-delay='{"show":0,"hide":150}'`.
 
@@ -339,7 +339,7 @@ const bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previo
 $.fn.bootstrapBtn = bootstrapButton // give $().bootstrapBtn the Bootstrap functionality
 ```
 
-Bootstrap no admite oficialmente bibliotecas de [JavaScript](https://esdocu.dev/javascript) de terceros como Prototype o jQuery UI. A pesar de `.noConflict` y los eventos con espacios de nombres, es posible que haya problemas de compatibilidad que debas solucionar por tu cuenta.
+Bootstrap no admite oficialmente bibliotecas de JavaScript de terceros como Prototype o jQuery UI. A pesar de `.noConflict` y los eventos con espacios de nombres, es posible que haya problemas de compatibilidad que debas solucionar por tu cuenta.
 
 ### Eventos JQuery [#jquery-events]
 
@@ -353,4 +353,4 @@ $('#myTab a').on('shown.bs.tab', () => {
 
 ## JavaScript deshabilitado [#disabled-javascript]
 
-Los complementos de Bootstrap no tienen un respaldo especial cuando [JavaScript](https://esdocu.dev/javascript) está deshabilitado. Si te importa la experiencia del usuario en este caso, utiliza [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) para explicar la situación (y cómo volver a habilitar [JavaScript](https://esdocu.dev/javascript)) a tus usuarios y/o agregar sus propias alternativas personalizadas.
+Los complementos de Bootstrap no tienen un respaldo especial cuando JavaScript está deshabilitado. Si te importa la experiencia del usuario en este caso, utiliza [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) para explicar la situación (y cómo volver a habilitar JavaScript) a tus usuarios y/o agregar sus propias alternativas personalizadas.

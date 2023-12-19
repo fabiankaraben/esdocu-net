@@ -7,7 +7,7 @@ import { MainBanner } from '@components/main-banner'
 import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 
-# Formularios
+# Uso de Formularios en Bootstrap
 
 Ejemplos y pautas de uso para estilos de control de formularios, opciones de diseño y componentes personalizados para crear una amplia variedad de formularios.
 
@@ -112,14 +112,14 @@ Si ninguno de estos está presente, las tecnologías de asistencia pueden recurr
 
 Al usar contenido visualmente oculto (`.visually-hidden`, `aria-label` e incluso contenido `placeholder`, que desaparece una vez que un campo de formulario tiene contenido) beneficiará a los usuarios de tecnología de asistencia, la falta de texto de etiqueta visible aún puede ser problemático para ciertos usuarios. Por lo general, el mejor enfoque es algún tipo de etiqueta visible, tanto por motivos de accesibilidad como de usabilidad.
 
-CSS [#css]
+Personalización del CSS [#css]
 -----------
 
 <ContentSuggestion />
 
 Muchas variables de formulario se configuran a nivel general para ser reutilizadas y ampliadas por componentes de formulario individuales. Los verás con mayor frecuencia como variables `$input-btn-*` y `$input-*`.
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 `$input-btn-*` son variables globales compartidas entre nuestros [botones](/bootstrap/5.3/components/buttons) y nuestros componentes de formulario. Los encontrará frecuentemente reasignados como valores a otras variables específicas de componentes.
 

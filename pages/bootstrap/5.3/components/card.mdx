@@ -7,18 +7,15 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Tarjetas
+# El componente Tarjeta de Bootstrap
 
 Las tarjetas de Bootstrap proporcionan un contenedor de contenido flexible y extensible con múltiples variantes y opciones.
 
 <MainBanner />
 
-Acerca de [#about]
--------------------
-
 Una **tarjeta** es un contenedor de contenido flexible y extensible. Incluye opciones para encabezados y pies de página, una amplia variedad de contenido, colores de fondo contextuales y potentes opciones de visualización. Si estás familiarizado con Bootstrap 3, las tarjetas reemplazan nuestros paneles, wells y thumbnails. Una funcionalidad similar a esos componentes está disponible como clases modificadoras para tarjetas.
 
-Ejemplo [#example]
+Ejemplo del componente Tarjeta [#example]
 -------------------
 
 Las tarjetas se crean con la menor cantidad de marcas y estilos posibles, pero aun así logran ofrecer un montón de control y personalización. Construidos con flexbox, ofrecen una fácil alineación y se combinan bien con otros componentes de Bootstrap. No tienen `margin` de forma predeterminada, así que utiliza [utilidades de espaciado](/bootstrap/5.3/utilities/spacing) según sea necesario.
@@ -45,7 +42,7 @@ A continuación se muestra un ejemplo de una tarjeta básica con contenido mixto
     ```
 </DemoIframe>
 
-Tipos de contenido [#content-types]
+Tipos de contenido en una Tarjeta [#content-types]
 ------------------------------------
 
 Las tarjetas admiten una amplia variedad de contenido, incluidas imágenes, texto, grupos de listas, enlaces y más. A continuación se muestran ejemplos de lo que se admite.
@@ -256,7 +253,7 @@ Agrega un encabezado y/o pie de página opcional dentro de una tarjeta.
     ```
 </DemoIframe>
 
-Tamaños [#sizing]
+Tamaños del componente Tarjeta [#sizing]
 ------------------
 
 Las tarjetas no asumen ningún `width` específico para comenzar, por lo que tendrán un ancho 100% a menos que se indique lo contrario. Puede cambiar esto según sea necesario con CSS personalizado, clases de cuadrícula, mixins Sass de cuadrícula o utilidades.
@@ -337,7 +334,7 @@ Usa CSS personalizado en tus hojas de estilo o como estilos en línea para estab
     ```
 </DemoIframe>
 
-Alineación de texto [#text-alignment]
+Alineación de texto del componente Tarjeta [#text-alignment]
 --------------------------------------
 
 Puedes cambiar rápidamente la alineación del texto de cualquier tarjeta, en su totalidad o en partes específicas, con nuestras [clases de alineación de texto](/bootstrap/5.3/utilities/text/#text-alignment).
@@ -373,7 +370,7 @@ Puedes cambiar rápidamente la alineación del texto de cualquier tarjeta, en su
     ```
 </DemoIframe>
 
-Navegación [#navigation]
+Navegación en el componente Tarjeta [#navigation]
 -------------------------
 
 Agrega algo de navegación al encabezado (o bloque) de una tarjeta con los [componentes de navegación](/bootstrap/5.3/components/navs-tabs) de Bootstrap.
@@ -430,7 +427,7 @@ Agrega algo de navegación al encabezado (o bloque) de una tarjeta con los [comp
     ```
 </DemoIframe>
 
-Imágenes [#images-1]
+Imágenes en el componente Tarjeta [#images-1]
 ---------------------
 
 Las tarjetas incluyen algunas opciones para trabajar con imágenes. Elige entre agregar "caps de imagen" en cualquiera de los extremos de una tarjeta, superponer imágenes con el contenido de la tarjeta o simplemente incrustar la imagen en una tarjeta.
@@ -504,7 +501,7 @@ Convierte una imagen en el fondo de una tarjeta y superpón el texto de tu tarje
 Ten en cuenta que el contenido no debe ser más grande que la altura de la imagen. Si el contenido es más grande que la imagen, el contenido se mostrará fuera de la imagen.
 </Callout>
 
-Horizontal [#horizontal]
+Tarjetas horizontales [#horizontal]
 -------------------------
 
 Utilizando una combinación de clases de cuadrícula y utilidades, las tarjetas se pueden hacer horizontales de una manera responsive y compatible con dispositivos móviles. En el siguiente ejemplo, eliminamos los márgenes de la cuadrícula con `.g-0` y usamos las clases `.col-md-*` para hacer que la tarjeta sea horizontal en el punto de interrupción `md`. Es posible que se necesiten más ajustes dependiendo del contenido de tu tarjeta.
@@ -623,7 +620,7 @@ Establece un `background-color` con un `color` de primer plano contrastante con 
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 </Callout>
 
-### Borde [#border]
+### Bordes del componente Tarjeta [#border]
 
 Usa [utilidades de borde](/bootstrap/5.3/utilities/borders) para cambiar solo el `border-color` de una tarjeta. Ten en cuenta que puedes colocar clases `.text-{color}` en la `.card` principal o en un subconjunto del contenido de la tarjeta como se muestra a continuación.
 
@@ -1133,14 +1130,14 @@ Al igual que con los grupos de tarjetas, los pies de página de las tarjetas se 
     ```
 </DemoIframe>
 
-### Masonry [#masonry]
+### Conseguir el comportamiento Masonry [#masonry]
 
 En `v4` utilizamos una técnica exclusiva de CSS para imitar el comportamiento de [Columnas tipo Masonry](https://masonry.desandro.com), pero esta técnica tenía muchos [efectos secundarios](https://github.com/twbs/bootstrap/pull/28922) desagradables. Si deseas tener este tipo de diseño en `v5` puedes utilizar el complemento Masonry. **Masonry no está incluido en Bootstrap**, pero hemos creado un [ejemplo de demostración](https://getbootstrap.com/docs/5.3/examples/masonry) para ayudarle a comenzar.
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -1171,7 +1168,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las tarjetas
     --#{$prefix}card-group-margin: #{$card-group-margin};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

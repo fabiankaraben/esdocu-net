@@ -7,7 +7,7 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { Callout } from 'nextra/components'
 import { DemoIframe } from '@components/demo-iframe'
 
-# Modos de color
+# Los Modos de color en Bootstrap
 
 Bootstrap ahora admite modos de color o temas a partir de la versión 5.3.0. Explora nuestro modo de color claro predeterminado y el nuevo modo oscuro, o crea el tuyo propio usando nuestros estilos como plantilla.
 
@@ -70,7 +70,7 @@ Por ejemplo, para cambiar el modo de color de un menú desplegable, agrega `data
     ```
 </DemoIframe>
 
-Cómo funciona. [#how-it-works]
+Cómo funciona [#how-it-works]
 -------------------------------
 
 * Como se muestra arriba, los estilos de modo de color están controlados por el atributo `data-bs-theme`. Este atributo se puede aplicar al elemento `<html>`, o a cualquier otro elemento o componente Bootstrap. Si se aplica al elemento `<html>`, se aplicará a todo. Si se aplica a un componente o elemento, su ámbito será ese componente o elemento específico.
@@ -210,7 +210,7 @@ JavaScript [#javascript]
 
 Para permitir a los visitantes o usuarios alternar modos de color, necesitarás crear un elemento de alternancia para controlar el atributo `data-bs-theme` en el elemento raíz, `<html>`. Hemos creado un conmutador en nuestra documentación que inicialmente se remite al modo de color actual del sistema del usuario, pero proporciona una opción para sobrescribirlo y elegir un modo de color específico.
 
-Aquí tienes un vistazo al [JavaScript](https://esdocu.dev/javascript) que lo impulsa. No dudes en inspeccionar nuestra propia barra de navegación de documentación para ver cómo se implementa utilizando HTML y CSS desde nuestros propios componentes. Se sugiere incluir [JavaScript](https://esdocu.dev/javascript) en la parte superior de su página para reducir el posible parpadeo de la pantalla durante la recarga de tu sitio. Ten en cuenta que si decides utilizar media queries para tus modos de color, es posible que debas modificar o eliminar tu [JavaScript](https://esdocu.dev/javascript) si prefiere un control implícito.
+Aquí tienes un vistazo al JavaScript que lo impulsa. No dudes en inspeccionar nuestra propia barra de navegación de documentación para ver cómo se implementa utilizando HTML y CSS desde nuestros propios componentes. Se sugiere incluir JavaScript en la parte superior de su página para reducir el posible parpadeo de la pantalla durante la recarga de tu sitio. Ten en cuenta que si decides utilizar media queries para tus modos de color, es posible que debas modificar o eliminar tu JavaScript si prefiere un control implícito.
     ```javascript filename="JavaScript"
     /*!
      * Color mode toggler for Bootstrap's docs (https://getbootstrap.com)
@@ -344,10 +344,10 @@ Este es un proceso manual porque Sass no puede generar sus propias variables Sas
     // etc
     ```
 
-CSS [#css]
+Personalización del CSS [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 Docenas de variables CSS de nivel raíz se repiten como sobrescrituras para el modo oscuro. Estos tienen como ámbito el selector de modo de color, que por defecto es `data-bs-theme` pero [se puede configurar](#building-with-sass) para usar un `prefers-color-scheme` media query. Utiliza estas variables como guía para generar tus propios modos de color nuevos.
 
@@ -403,7 +403,7 @@ Docenas de variables CSS de nivel raíz se repiten como sobrescrituras para el m
     --#{$prefix}form-invalid-border-color: #{$form-invalid-border-color-dark};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 Las variables CSS para nuestro modo de color oscuro se generan parcialmente a partir de variables Sass específicas del modo oscuro en `_variables-dark.scss`. Esto también incluye algunas sobrescrituras personalizadas para cambiar los colores de los SVG incrustados utilizados en todos nuestros componentes.
 

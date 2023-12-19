@@ -7,13 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Barra de navegación
+# El componente Barra de navegación de Bootstrap
 
 Documentación y ejemplos para el potente encabezado de navegación responsive de Bootstrap, la barra de navegación. Incluye soporte para marca, navegación y más, incluido soporte para nuestro complemento collapse.
 
 <MainBanner />
 
-Cómo funciona. [#how-it-works]
+Cómo funciona el componente Barra de navegación [#how-it-works]
 -------------------------------
 
 Esto es lo que necesitas saber antes de comenzar con la barra de navegación:
@@ -21,7 +21,7 @@ Esto es lo que necesitas saber antes de comenzar con la barra de navegación:
 * Las barras de navegación requieren un ajuste `.navbar` con `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` para un colapsamiento responsive y clases de [esquema de colores](#color-schemes) .
 * Las barras de navegación y sus contenidos son fluid de forma predeterminada. Cambia el [contenedor](#containers) para limitar su ancho horizontal de diferentes maneras.
 * Usa nuestro [espaciado](/bootstrap/5.3/utilities/spacing) y clases [flex](/bootstrap/5.3/utilities/flex) de utilidad para controlar el espaciado y la alineación dentro de las barras de navegación.
-* Las barras de navegación responden de manera predeterminada, pero puedes modificarlas fácilmente para cambiar eso. El comportamiento responsive depende de nuestro complemento Collapse [JavaScript](https://esdocu.dev/javascript).
+* Las barras de navegación responden de manera predeterminada, pero puedes modificarlas fácilmente para cambiar eso. El comportamiento responsive depende de nuestro complemento Collapse JavaScript.
 * Asegura la accesibilidad usando un elemento `<nav>` o, si usas un elemento más genérico como un `<div>`, agrega un `role="navigation"` a cada barra de navegación para identificarla explícitamente como una región emblemática para los usuarios de tecnologías de asistencia.
 * Indica el elemento actual usando `aria-current="page"` para la página actual o `aria-current="true"` para el elemento actual en un conjunto.
 * **Nuevo en v5.2.0:** las barras de navegación pueden tener un tema con variables CSS que tienen como ámbito la clase base `.navbar`. `.navbar-light` ha quedado obsoleto y `.navbar-dark` se ha reescrito para sobrescribir las variables CSS en lugar de agregar estilos adicionales.
@@ -373,7 +373,7 @@ Mezcla y combina con otros componentes y utilidades según sea necesario.
 
 <ContentSuggestion />
 
-Esquemas de colores [#color-schemes]
+Esquemas de colores del componente Barra de navegación [#color-schemes]
 -------------------------------------
 
 <Callout type="warning" emoji="">
@@ -402,7 +402,7 @@ Los temas de la barra de navegación son más fáciles que nunca gracias a la co
     ```
 </DemoIframe>
 
-Contenedores [#containers]
+Contenedores para el componente Barra de navegación [#containers]
 ---------------------------
 
 Aunque no es obligatorio, puedes envolver una barra de navegación en un `.container` para centrarla en una página, aunque ten en cuenta que aún se requiere un contenedor interno. O puedes agregar un contenedor dentro de `.navbar` para centrar solo el contenido de una [barra de navegación superior fija o estática](#placement).
@@ -431,7 +431,7 @@ Usa cualquiera de los contenedores responsive para cambiar el ancho de presentac
     ```
 </DemoIframe>
 
-Ubicación [#placement]
+Ubicación del componente Barra de navegación [#placement]
 -----------------------
 
 Utiliza nuestras [utilidades de posición](/bootstrap/5.3/utilities/position) para colocar barras de navegación en posiciones no estáticas. Elige entre fijo en la parte superior, fijo en la parte inferior, pegado en la parte superior (se desplaza con la página hasta que llega a la parte superior y luego permanece allí) o pegado en la parte inferior (se desplaza con la página hasta que llega al final y luego permanece allí).
@@ -488,7 +488,7 @@ Las barras de navegación fijas usan `position: fixed`, lo que significa que se 
     ```
 </DemoIframe>
 
-Desplazamiento [#scrolling]
+Desplazamiento del contenido del componente Barra de navegación [#scrolling]
 ----------------------------
 
 Agrega `.navbar-nav-scroll` a un `.navbar-nav` (u otro subcomponente de la barra de navegación) para habilitar la vertical desplazándose dentro del contenido alternable de una barra de navegación contraída. De forma predeterminada, el desplazamiento se inicia en `75vh` (o el 75% de la altura del viewport), pero puedes sobrescribirlo con la propiedad personalizada CSS local `--bs-navbar-height` o estilos personalizados. En viewports más grandes, cuando se expande la barra de navegación, el contenido aparecerá como aparece en la barra de navegación predeterminada.
@@ -681,7 +681,7 @@ A veces quieres usar el complemento de colapso para activar un elemento contened
     ```
 </DemoIframe>
 
-Cuando hagas esto, te recomendamos incluir [JavaScript](https://esdocu.dev/javascript) adicional para mover el foco mediante programación al contenedor cuando se abra. De lo contrario, los usuarios de teclados y de tecnologías de asistencia probablemente tendrán dificultades para encontrar el contenido recién revelado, especialmente si el contenedor que se abrió aparece _antes_ del conmutador en la estructura del documento. También recomendamos asegurarse de que el conmutador tenga el atributo `aria-controls`, apuntando al `id` del contenedor de contenido. En teoría, esto permite a los usuarios de tecnología de asistencia saltar directamente desde el conmutador al contenedor que controla, pero actualmente la compatibilidad con esto es bastante irregular.
+Cuando hagas esto, te recomendamos incluir JavaScript adicional para mover el foco mediante programación al contenedor cuando se abra. De lo contrario, los usuarios de teclados y de tecnologías de asistencia probablemente tendrán dificultades para encontrar el contenido recién revelado, especialmente si el contenedor que se abrió aparece _antes_ del conmutador en la estructura del documento. También recomendamos asegurarse de que el conmutador tenga el atributo `aria-controls`, apuntando al `id` del contenedor de contenido. En teoría, esto permite a los usuarios de tecnología de asistencia saltar directamente desde el conmutador al contenedor que controla, pero actualmente la compatibilidad con esto es bastante irregular.
 
 ### Offcanvas [#offcanvas]
 
@@ -807,10 +807,10 @@ Cuando uses offcanvas en una barra de navegación oscura, ten en cuenta que es p
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -871,7 +871,7 @@ La personalización a través de variables CSS se puede ver en la clase `.navbar
     --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-dark-toggler-icon-bg)};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 Variables para todas las barras de navegación:
 
@@ -926,7 +926,7 @@ Variables para la [barra de navegación oscura](#color-schemes):
 
 <ContentSuggestion />
 
-### Sass loops [#sass-loops]
+### Bucles Sass del componente [#sass-loops]
 
 [Clases de expansión/contraer de la barra de navegación responsive](#responsive-behaviors) (por ejemplo, `.navbar-expand-lg`) se combinan con el mapa `$breakpoints` y se generan a través de un bucle en `scss/_navbar.scss`.
 

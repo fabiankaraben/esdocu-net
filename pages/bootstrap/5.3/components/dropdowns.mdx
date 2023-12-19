@@ -7,20 +7,20 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Desplegables
+# El componente Desplegable de Bootstrap
 
 Alterna superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable de Bootstrap.
 
 <MainBanner />
 
-Descripción general [#overview]
+Descripción general del componente Desplegable [#overview]
 --------------------------------
 
-Los menús desplegables son superposiciones contextuales alternables para mostrar listas de enlaces y más. Se vuelven interactivos con el complemento [JavaScript](https://esdocu.dev/javascript) desplegable Bootstrap incluido. Se alternan haciendo clic, no al pasar el cursor; esta es [una decisión de diseño intencional](https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns).
+Los menús desplegables son superposiciones contextuales alternables para mostrar listas de enlaces y más. Se vuelven interactivos con el complemento JavaScript desplegable Bootstrap incluido. Se alternan haciendo clic, no al pasar el cursor; esta es [una decisión de diseño intencional](https://markdotto.com/2012/02/27/bootstrap-explained-dropdowns).
 
-Los menús desplegables se basan en una biblioteca de terceros, [Popper](https://popper.js.org), que proporciona posicionamiento dinámico y detección de viewport. Asegúrate de incluir [popper.min.js](https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js) antes del [JavaScript](https://esdocu.dev/javascript) de Bootstrap o usa `bootstrap.bundle.min.js` / `bootstrap.bundle.js` que contiene Popper. Sin embargo, Popper no se utiliza para posicionar menús desplegables en las barras de navegación, ya que no se requiere posicionamiento dinámico.
+Los menús desplegables se basan en una biblioteca de terceros, [Popper](https://popper.js.org), que proporciona posicionamiento dinámico y detección de viewport. Asegúrate de incluir [popper.min.js](https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js) antes del JavaScript de Bootstrap o usa `bootstrap.bundle.min.js` / `bootstrap.bundle.js` que contiene Popper. Sin embargo, Popper no se utiliza para posicionar menús desplegables en las barras de navegación, ya que no se requiere posicionamiento dinámico.
 
-Accesibilidad [#accessibility]
+Accesibilidad del componente Desplegable [#accessibility]
 -------------------------------
 
 Es estándar [WAI ARIA](https://www.w3.org/TR/wai-aria) define un [`role="menu"` widget](https://www.w3.org/TR/wai-aria/#menu), pero esto es específico de menús similares a aplicaciones que activan acciones o funciones. Los menús ARIA solo pueden contener elementos de menú, elementos de menú de casilla de verificación, elementos de menú de botones de opción, grupos de botones de opción y submenús.
@@ -29,7 +29,7 @@ Los menús desplegables de Bootstrap, por otro lado, están diseñados para ser 
 
 Sin embargo, Bootstrap agrega soporte integrado para la mayoría de las interacciones estándar del menú del teclado, como la capacidad de moverse a través de elementos `.dropdown-item` individuales usando el teclas del cursor y cierre el menú con la tecla Esc.
 
-Ejemplos [#examples]
+Ejemplos del componente Desplegable [#examples]
 ---------------------
 
 Envuelve el menú desplegable (tu botón o enlace) y el menú desplegable dentro de `.dropdown`, u otro elemento que declare `position: relative;`. Lo ideal sería utilizar un elemento `<button>` como activador del menú desplegable, pero el complemento también funcionará con elementos `<a>`. Los ejemplos que se muestran aquí utilizan elementos semánticos `<ul>` cuando corresponde, pero se admite el marcado personalizado.
@@ -267,7 +267,7 @@ Usamos esta clase adicional para reducir el `padding` horizontal a cada lado del
     ```
 </DemoIframe>
 
-Tamaños [#sizing]
+Tamaños del componente Desplegable [#sizing]
 ------------------
 
 Los menús desplegables de botones funcionan con botones de todos los tamaños, incluidos los botones desplegables predeterminados y divididos.
@@ -410,7 +410,7 @@ Y ponerlo en uso en una barra de navegación:
     ```
 </DemoIframe>
 
-Direcciones [#directions]
+Direcciones del componente Desplegable [#directions]
 --------------------------
 
 <Callout type="info" emoji="">
@@ -585,7 +585,7 @@ Activa menús desplegables a la izquierda de los elementos agregando `.dropstart
     ```
 </DemoIframe>
 
-Elementos del menú [#menu-items]
+Elementos del menú desplegable [#menu-items]
 ---------------------------------
 
 Puedes usar elementos `<a>` o `<button>` como elementos desplegables.
@@ -647,7 +647,7 @@ Agrega `.disabled` a los elementos en el menú desplegable para **mostrarlos com
     ```
 </DemoIframe>
 
-Alineación del menú [#menu-alignment]
+Alineación del menú desplegable [#menu-alignment]
 --------------------------------------
 
 De forma predeterminada, un menú desplegable se coloca automáticamente al 100% desde la parte superior y a lo largo del lado izquierdo de su padre. Puedes cambiar esto con las clases direccionales `.drop*`, pero también puedes controlarlas con clases modificadoras adicionales.
@@ -810,7 +810,7 @@ Tomando la mayoría de las opciones que se muestran arriba, aquí tienes una peq
     ```
 </DemoIframe>
 
-Contenido del menú [#menu-content]
+Contenido del menú desplegable [#menu-content]
 -----------------------------------
 
 ### Encabezados [#headers]
@@ -933,7 +933,7 @@ Coloca un formulario dentro de un menú desplegable, o conviértelo en un menú 
     ```
 </DemoIframe>
 
-Opciones desplegables [#dropdown-options]
+Opciones del componente Desplegable [#dropdown-options]
 ------------------------------------------
 
 Usa `data-bs-offset` o `data-bs-reference` para cambiar la ubicación del menú desplegable.
@@ -1028,10 +1028,10 @@ De forma predeterminada, el menú desplegable se cierra al hacer clic dentro o f
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -1096,7 +1096,7 @@ La personalización a través de variables CSS se puede ver en la clase `.dropdo
     --#{$prefix}dropdown-header-color: #{$dropdown-dark-header-color};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 Variables para todos los menús desplegables:
 
@@ -1167,7 +1167,7 @@ Variables para los signos de intercalación (carets) basados en CSS que indican 
     $caret-spacing:               $caret-width * .85;
     ```
 
-### Sass mixins [#sass-mixins]
+### Mixins Sass del componente [#sass-mixins]
 
 Los mixins se usan para generar los carets basados en CSS y se pueden encontrar en `scss/mixins/_caret.scss`.
 
@@ -1243,10 +1243,10 @@ Los mixins se usan para generar los carets basados en CSS y se pueden encontrar 
     }
     ```
 
-Uso [#usage]
+Uso del componente Desplegable [#usage]
 -------------
 
-A través de atributos de datos o [JavaScript](https://esdocu.dev/javascript), el complemento desplegable alterna el contenido oculto (menús desplegables) alternando la clase `.show` en el `.dropdown-menu`. El atributo `data-bs-toggle="dropdown"` se utiliza para cerrar menús desplegables a nivel de aplicación, por lo que es una buena idea usarlo siempre.
+A través de atributos de datos o JavaScript, el complemento desplegable alterna el contenido oculto (menús desplegables) alternando la clase `.show` en el `.dropdown-menu`. El atributo `data-bs-toggle="dropdown"` se utiliza para cerrar menús desplegables a nivel de aplicación, por lo que es una buena idea usarlo siempre.
 
 <Callout type="info" emoji="">
 En dispositivos táctiles, abrir un menú desplegable agrega controladores `mouseover` vacíos a los elementos secundarios inmediatos del elemento `<body>`. Este truco ciertamente feo es necesario para solucionar una [peculiaridad en la delegación de eventos de iOS](https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub), que de lo contrario, evitaría que un toque en cualquier lugar fuera del menú desplegable active el código que cierra el menú desplegable. Una vez que se cierra el menú desplegable, estos controladores `mouseover` vacíos adicionales se eliminan.
@@ -1267,13 +1267,13 @@ Agrega `data-bs-toggle="dropdown"` a un enlace o botón para alternar un menú d
     </div>
     ```
 
-### Vía [JavaScript](https://esdocu.dev/javascript) [#via-javascript]
+### Vía JavaScript [#via-javascript]
 
 <Callout type="warning" emoji="">
-Los menús desplegables deben tener `data-bs-toggle="dropdown"` en su elemento desencadenante, independientemente de si llamas a tu menú desplegable a través de [JavaScript](https://esdocu.dev/javascript) o usas la API de datos.
+Los menús desplegables deben tener `data-bs-toggle="dropdown"` en su elemento desencadenante, independientemente de si llamas a tu menú desplegable a través de JavaScript o usas la API de datos.
 </Callout>
 
-Llama a los menús desplegables a través de [JavaScript](https://esdocu.dev/javascript):
+Llama a los menús desplegables a través de JavaScript:
 
     ```javascript filename="JavaScript"
     const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
@@ -1282,7 +1282,7 @@ Llama a los menús desplegables a través de [JavaScript](https://esdocu.dev/jav
 
 ### Opciones [#options]
 
-Como las opciones se pueden pasar a través de atributos de datos o [JavaScript](https://esdocu.dev/javascript), puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
+Como las opciones se pueden pasar a través de atributos de datos o JavaScript, puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
 
 A partir de Bootstrap 5.2.0, todos los componentes admiten un atributo de datos **experimental** reservado `data-bs-config` que puede albergar datos simples de configuración del componente como una cadena JSON. Cuando un elemento tiene los atributos `data-bs-config='{"delay":0, "title":123}'` y `data-bs-title="456"`, el valor final de `title` será `456` y los atributos de datos separados sobrescribirán los valores proporcionados en `data-bs-config`. Además, los atributos de datos existentes pueden albergar valores JSON como `data-bs-delay='{"show":0,"hide":150}'`.
 
@@ -1291,7 +1291,7 @@ El objeto de configuración final es el resultado combinado de `data-bs-config`,
 | Nombre | Tipo | Predeterminado | Descripción |
 | --- | --- | --- | --- |
 | `autoClose` | boolean, string | `true` | Configura el comportamiento de cierre automático del menú desplegable:<br /><br />* `true` \- el menú desplegable se cerrará al hacer clic fuera o dentro del menú desplegable.<br />* `false` \- el menú desplegable se cerrará haciendo clic en el botón de alternancia y llamando manualmente al método `hide` o `toggle`. (Tampoco se cerrará presionando la tecla Esc)<br />* `'inside'` \- el menú desplegable se cerrará (solo) al hacer clic dentro del menú desplegable.<br />* `'outside'` \- el menú desplegable se cerrará (solo) al hacer clic fuera del menú desplegable.<br /><br />Nota: el menú desplegable siempre se puede cerrar con la tecla Esc. |
-| `boundary` | string, element | `'clippingParents'` | Límite de restricción de desbordamiento del menú desplegable (se aplica solo al modificador preventOverflow de Popper). Por defecto es `clippingParents` y puede aceptar una referencia HTMLElement (solo a través de [JavaScript](https://esdocu.dev/javascript)). Para obtener más información, consulta la [documentación de detectOverflow](https://popper.js.org/docs/v2/utils/detect-overflow/#boundary) de Popper. |
+| `boundary` | string, element | `'clippingParents'` | Límite de restricción de desbordamiento del menú desplegable (se aplica solo al modificador preventOverflow de Popper). Por defecto es `clippingParents` y puede aceptar una referencia HTMLElement (solo a través de JavaScript). Para obtener más información, consulta la [documentación de detectOverflow](https://popper.js.org/docs/v2/utils/detect-overflow/#boundary) de Popper. |
 | `display` | string | `'dynamic'` | De forma predeterminada, usamos Popper para el posicionamiento dinámico. Desactiva esto con `static`. |
 | `offset` | array, string, function | `[0, 2]` | Desplazamiento del menú desplegable con respecto a su objetivo. Puedes pasar una cadena en atributos de datos con valores separados por comas como: `data-bs-offset="10,20"`. Cuando se usa una función para determinar el desplazamiento, se llama con un objeto que contiene la ubicación del popper, la referencia y los rectificadores del popper como primer argumento. El nodo DOM del elemento desencadenante se pasa como segundo argumento. La función debe devolver una matriz con dos números: [skidding](https://popper.js.org/docs/v2/modifiers/offset/#skidding-1), [distance](https://popper.js.org/docs/v2/modifiers/offset/#distance-1). Para obtener más información, consulta la [documentación de offset](https://popper.js.org/docs/v2/modifiers/offset/#options)de Popper. |
 | `popperConfig` | null, object, function | `null` | Para cambiar la configuración predeterminada de Popper de Bootstrap, consulta [Configuración de Popper](https://popper.js.org/docs/v2/constructors/#options). Cuando se usa una función para crear la configuración de Popper, se llama con un objeto que contiene la configuración de Popper predeterminada de Bootstrap. Te ayuda a utilizar y fusionar el valor predeterminado con tu propia configuración. La función debe devolver un objeto de configuración para Popper. |

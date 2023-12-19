@@ -7,16 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Spinners
+# El componente Spinner de Bootstrap
 
 Indica el estado de carga de un componente o página con controles giratorios Bootstrap, construidos completamente con HTML, CSS y sin JavaScript.
 
 <MainBanner />
 
-Acerca de [#about]
--------------------
-
-Los “spinners” de Bootstrap se pueden usar para mostrar el estado de carga en tus proyectos. Están creados únicamente con HTML y CSS, lo que significa que no necesitas [JavaScript](https://esdocu.dev/javascript) para crearlos. Sin embargo, necesitarás algo de [JavaScript](https://esdocu.dev/javascript) personalizado para alternar su visibilidad. Su apariencia, alineación y tamaño se pueden personalizar fácilmente con nuestras increíbles clases de utilidad.
+Los “spinners” de Bootstrap se pueden usar para mostrar el estado de carga en tus proyectos. Están creados únicamente con HTML y CSS, lo que significa que no necesitas JavaScript para crearlos. Sin embargo, necesitarás algo de JavaScript personalizado para alternar su visibilidad. Su apariencia, alineación y tamaño se pueden personalizar fácilmente con nuestras increíbles clases de utilidad.
 
 Por motivos de accesibilidad, cada cargador aquí incluye `role="status"` y un `<span class="visually-hidden">Loading...</span>`.
 
@@ -24,7 +21,7 @@ Por motivos de accesibilidad, cada cargador aquí incluye `role="status"` y un `
 El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
-Border spinner [#border-spinner]
+Estilo de solo bordes del componente Spinner [#border-spinner]
 ---------------------------------
 
 Usa los controles giratorios de borde para obtener un indicador de carga liviano.
@@ -74,7 +71,7 @@ El spinner de borde usa `currentColor` para su `border-color`, lo que significa 
 **¿Por qué no utilizar las utilidades `border-color`?** Cada spinner de borde especifica un borde `transparent` para al menos un lado, por lo que `.border-{color}` sobrescribirían eso.
 </Callout>
 
-Growing spinner [#growing-spinner]
+Estilo Growing spinner [#growing-spinner]
 -----------------------------------
 
 Si no te apetece un spinner de bordes, cambia al spinner de crecimiento. Si bien técnicamente no gira, ¡crece repetidamente!
@@ -120,7 +117,7 @@ Una vez más, esta ruleta está construida con `currentColor`, por lo que puedes
     ```
 </DemoIframe>
 
-Alineación [#alignment]
+Alineación del componente Spinner [#alignment]
 ------------------------
 
 Los spinners en Bootstrap están construidos con `rem`s, `currentColor` y `display: inline-flex`. Esto significa que se les puede cambiar el tamaño, el color y la alineación rápidamente.
@@ -188,7 +185,7 @@ Usa [utilidades flexbox](/bootstrap/5.3/utilities/flex), [utilidades flotantes](
     ```
 </DemoIframe>
 
-Tamaño [#size]
+Tamaño del componente Spinner [#size]
 ---------------
 
 Agrega `.spinner-border-sm` y `.spinner-grow-sm` para crear un spinner más pequeño que se pueda usar rápidamente dentro de otros componentes.
@@ -219,7 +216,7 @@ O usa CSS personalizado o estilos en línea para cambiar las dimensiones según 
     ```
 </DemoIframe>
 
-Botones [#buttons]
+Usar componentes Spinner en botones [#buttons]
 -------------------
 
 Usa spinners dentro de los botones para indicar que una acción se está procesando o teniendo lugar actualmente. También puedes cambiar el texto del spinner y utilizar el texto del botón según sea necesario.
@@ -250,12 +247,12 @@ Usa spinners dentro de los botones para indicar que una acción se está procesa
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
 <ContentSuggestion />
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -297,7 +294,7 @@ Para ambos spinners, se utilizan pequeñas clases modificadoras de spinners para
     --#{$prefix}spinner-border-width: #{$spinner-border-width-sm};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

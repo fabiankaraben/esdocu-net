@@ -7,13 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Acordeón
+# El componente Acordeón de Bootstrap
 
 Construye acordeones que se contraen verticalmente en combinación con nuestro complemento Collapse JavaScript.
 
 <MainBanner />
 
-Cómo funciona. [#how-it-works]
+Cómo funciona el componente Acordeón [#how-it-works]
 -------------------------------
 
 El acordeón usa [collapse](/bootstrap/5.3/components/collapse) internamente para hacerlo plegable. Para representar un acordeón expandido, agrega la clase `.open` en `.accordion`.
@@ -22,7 +22,7 @@ El acordeón usa [collapse](/bootstrap/5.3/components/collapse) internamente par
 El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
-Ejemplo [#example]
+Ejemplo del componente Acordeón [#example]
 -------------------
 
 Haz clic en los acordeones a continuación para expandir/contraer el contenido del acordeón.
@@ -85,7 +85,7 @@ Haz clic en los acordeones a continuación para expandir/contraer el contenido d
     ```
 </DemoIframe>
 
-### Flush [#flush]
+### Las clases Flush [#flush]
 
 Agrega `.accordion-flush` para eliminar algunos bordes y esquinas redondeadas para representar los acordeones de borde a borde con su contenedor principal.
 
@@ -138,7 +138,7 @@ Agrega `.accordion-flush` para eliminar algunos bordes y esquinas redondeadas pa
     ```
 </DemoIframe>
 
-### Siempre abierto [#always-open]
+### Acordeón siempre abierto [#always-open]
 
 Omite el atributo `data-bs-parent` en cada `.accordion-collapse` para que los elementos del acordeón permanezcan abiertos cuando se abre otro elemento.
 
@@ -200,17 +200,17 @@ Omite el atributo `data-bs-parent` en cada `.accordion-collapse` para que los el
     ```
 </DemoIframe>
 
-Accesibilidad [#accessibility]
+Accesibilidad del componente Acordeón [#accessibility]
 -------------------------------
 
 Lee la [sección de accesibilidad de collapse](/bootstrap/5.3/components/collapse/#accessibility) para obtener más información.
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
 <ContentSuggestion />
 
-### Variables [#variables]
+### Variables Sass del componente Acordeón [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -243,7 +243,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los acordeon
     --#{$prefix}accordion-active-bg: #{$accordion-button-active-bg};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
     ```scss filename="scss/_variables.scss"

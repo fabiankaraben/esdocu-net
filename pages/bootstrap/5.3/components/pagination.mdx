@@ -6,14 +6,11 @@ import { MainBanner } from '@components/main-banner'
 import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 
-# Paginación
+# El componente de Paginación de Bootstrap
 
 Documentación y ejemplos para mostrar la paginación para indicar que existe una serie de contenido relacionado en varias páginas.
 
 <MainBanner />
-
-Descripción general [#overview]
---------------------------------
 
 Utilizamos un gran bloque de enlaces conectados para nuestra paginación, lo que hace que los enlaces sean difíciles de pasar por alto y fácilmente escalables, y al mismo tiempo proporcionamos grandes áreas de impacto. La paginación se construye con elementos HTML de lista para que los lectores de pantalla puedan anunciar la cantidad de enlaces disponibles. Utiliza un elemento envolvente `<nav>` para identificarlo como una sección de navegación para lectores de pantalla y otras tecnologías de asistencia.
 
@@ -33,7 +30,7 @@ Además, como las páginas probablemente tengan más de una sección de navegaci
     ```
 </DemoIframe>
 
-Trabajar con íconos [#working-with-icons]
+Trabajar con íconos en el componente de Paginación [#working-with-icons]
 ------------------------------------------
 
 ¿Quieres usar un ícono o símbolo en lugar de texto para algunos enlaces de paginación? Asegúrate de proporcionar compatibilidad adecuada con el lector de pantalla con los atributos `aria`.
@@ -65,7 +62,7 @@ Estados deshabilitados y activos [#disabled-and-active-states]
 
 Los enlaces de paginación se pueden personalizar para diferentes circunstancias. Utiliza `.disabled` para enlaces en los que no se puedes hacer clic y `.active` para indicar la página actual.
 
-Mientras que la clase `.disabled` usa `pointer-events: none` para _intentar_ deshabilitar el enlace funcionalidad de `<a>`s, esa propiedad CSS aún no está estandarizada y no tiene en cuenta la navegación con el teclado. Como tal, siempre debes agregar `tabindex="-1"` en los enlaces deshabilitados y usar [JavaScript](https://esdocu.dev/javascript) personalizado para deshabilitar completamente su funcionalidad.
+Mientras que la clase `.disabled` usa `pointer-events: none` para _intentar_ deshabilitar el enlace funcionalidad de `<a>`s, esa propiedad CSS aún no está estandarizada y no tiene en cuenta la navegación con el teclado. Como tal, siempre debes agregar `tabindex="-1"` en los enlaces deshabilitados y usar JavaScript personalizado para deshabilitar completamente su funcionalidad.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/pagination/disabled-and-active-states-1.html">
     ```html filename="HTML"
@@ -111,7 +108,7 @@ Opcionalmente, puedes cambiar los anclajes activos o deshabilitados por `<span>`
 
 <ContentSuggestion />
 
-Tamaños [#sizing]
+Tamaños del componente de Paginación [#sizing]
 ------------------
 
 ¿Te apetece una paginación más grande o más pequeña? Agrega `.pagination-lg` o `.pagination-sm` para tamaños adicionales.
@@ -144,7 +141,7 @@ Tamaños [#sizing]
     ```
 </DemoIframe>
 
-Alineación [#alignment]
+Alineación del componente de Paginación [#alignment]
 ------------------------
 
 Cambiar la alineación de los componentes de paginación con [utilidades flexbox](/bootstrap/5.3/utilities/flex). Por ejemplo, con `.justify-content-center`:
@@ -187,10 +184,10 @@ O con `.justify-content-end`:
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -222,7 +219,7 @@ Como parte del enfoque en evolución de variables CSS de Bootstrap, la paginaci�
     --#{$prefix}pagination-disabled-border-color: #{$pagination-disabled-border-color};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -268,7 +265,7 @@ Como parte del enfoque en evolución de variables CSS de Bootstrap, la paginaci�
 
 <ContentSuggestion />
 
-### Sass mixins [#sass-mixins]
+### Mixins Sass del componente [#sass-mixins]
 
 [scss/mixins/_pagination.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/mixins/_pagination.scss)
 

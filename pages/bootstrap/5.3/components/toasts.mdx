@@ -7,16 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Toasts
+# El componente Toast de Bootstrap
 
 Notificaciones push a tus visitantes con un toast, un mensaje de alerta liviano y fácilmente personalizable.
 
 <MainBanner />
 
 Los toast son notificaciones livianas diseñadas para imitar las notificaciones automáticas que se han popularizado en los sistemas operativos móviles y de escritorio. Están construidos con flexbox, por lo que son fáciles de alinear y colocar.
-
-Descripción general [#overview]
---------------------------------
 
 Cosas que debes saber al usar el complemento toast:
 
@@ -27,7 +24,7 @@ Cosas que debes saber al usar el complemento toast:
 El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
-Ejemplos [#examples]
+Ejemplos del componente Toast [#examples]
 ---------------------
 
 ### Básico [#basic]
@@ -86,7 +83,7 @@ Haz clic en el botón de abajo para mostrar un toast (ubicado con nuestras utili
     ```
 </DemoIframe>
 
-Utilizamos el siguiente [JavaScript](https://esdocu.dev/javascript) para activar nuestra demostración de toast en vivo:
+Utilizamos el siguiente JavaScript para activar nuestra demostración de toast en vivo:
 
 [site/assets/js/snippets.js](https://github.com/twbs/bootstrap/blob/v5.3.2/site/assets/js/snippets.js)
 
@@ -219,7 +216,7 @@ A partir del ejemplo anterior, puedes crear diferentes combinaciones de colores 
     ```
 </DemoIframe>
 
-Ubicación [#placement]
+Ubicación del componente Toast [#placement]
 -----------------------
 
 Coloca toast con CSS personalizado cuando los necesites. La parte superior derecha se utiliza a menudo para notificaciones, al igual que la parte superior central. Si solo vas a mostrar un toast a la vez, coloca los estilos de posicionamiento directamente en `.toast`.
@@ -340,7 +337,7 @@ También puedes usar las utilidades de Flexbox para alinear las tostadas horizon
     ```
 </DemoIframe>
 
-Accesibilidad [#accessibility]
+Accesibilidad del componente Toast [#accessibility]
 -------------------------------
 
 Los toast están destinados a ser pequeñas interrupciones para tus visitantes o usuarios, por lo que, para ayudar a aquellos con lectores de pantalla y tecnologías de asistencia similares, debes envolver tus toast en un [`aria-live` (región)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions). Los lectores de pantalla anuncian automáticamente los cambios en las regiones activas (como la inyección/actualización de un componente del sistema) sin necesidad de mover el enfoque del usuario ni interrumpirlo de otro modo. Además, incluye `aria-atomic="true"` para garantizar que todo el toast se anuncie siempre como una única unidad (atómica), en lugar de simplemente anunciar lo que se cambió (lo que podría generar problemas si solo actualizas parte del contenido del toast, o si se muestras el mismo contenido del toast en un momento posterior). Si la información necesaria es importante para el proceso, p.e. para obtener una lista de errores en un formulario, utiliza el [componente de alerta](/bootstrap/5.3/components/alerts) en lugar de toast.
@@ -380,12 +377,12 @@ Cuando uses `autohide: false`, debes agregar un botón de cierre para permitir a
 
 Si bien técnicamente es posible agregar controles enfocables/accionables (como botones o enlaces adicionales) en tu notificación, debes evitar hacerlo para ocultar automáticamente las notificaciones. Incluso si le das al toast un [`delay` tiempo de espera](#options), a los usuarios de teclados y tecnologías de asistencia puede resultarles difícil llegar al toast a tiempo para tomar medidas ( ya que los toast no reciben foco cuando se muestran). Si es absolutamente necesario tener controles adicionales, le recomendamos utilizar un toast con `autohide: false`.
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
 <ContentSuggestion />
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -412,7 +409,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los toast ah
     --#{$prefix}toast-header-border-color: #{$toast-header-border-color};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -434,10 +431,10 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los toast ah
     $toast-header-border-color:         $toast-border-color;
     ```
 
-Uso [#usage]
+Uso del componente Toast [#usage]
 -------------
 
-Inicializar toast mediante [JavaScript](https://esdocu.dev/javascript):
+Inicializar toast mediante JavaScript:
 
     ```javascript filename="JavaScript"
     const toastElList = document.querySelectorAll('.toast')
@@ -460,7 +457,7 @@ o en un botón **fuera del toast** usando el `data-bs-target` adicional como se 
 
 ### Opciones [#options]
 
-Como las opciones se pueden pasar a través de atributos de datos o [JavaScript](https://esdocu.dev/javascript), puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
+Como las opciones se pueden pasar a través de atributos de datos o JavaScript, puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
 
 A partir de Bootstrap 5.2.0, todos los componentes admiten un atributo de datos **experimental** reservado `data-bs-config` que puede albergar datos simples de configuración del componente como una cadena JSON. Cuando un elemento tiene los atributos `data-bs-config='{"delay":0, "title":123}'` y `data-bs-title="456"`, el valor final de `title` será `456` y los atributos de datos separados sobrescribirán los valores proporcionados en `data-bs-config`. Además, los atributos de datos existentes pueden albergar valores JSON como `data-bs-delay='{"show":0,"hide":150}'`.
 

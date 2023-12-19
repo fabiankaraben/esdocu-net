@@ -7,13 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Navs y pestañas
+# Componentes de Navs y pestañas de Bootstrap
 
 Documentación y ejemplos sobre cómo usar los componentes de navegación incluidos en Bootstrap.
 
 <MainBanner />
 
-Navegación base [#base-nav]
+Navegación base del componente [#base-nav]
 ----------------------------
 
 La navegación disponible en Bootstrap comparte marcas y estilos generales, desde la clase base `.nav` hasta los estados activo y deshabilitado. Intercambia clases de modificadores para cambiar entre cada estilo.
@@ -58,7 +58,7 @@ Las clases se utilizan en todo momento, por lo que tu marcado puede ser súper f
     ```
 </DemoIframe>
 
-Estilos disponibles [#available-styles]
+Estilos disponibles para el componente [#available-styles]
 ----------------------------------------
 
 Cambiar el estilo del componente `.nav` con modificadores y utilidades. Mezcla y combina según sea necesario o crea el tuyo propio.
@@ -309,7 +309,7 @@ Respecto a la accesibilidad [#regarding-accessibility]
 
 Si estás usando navs para proporcionar una barra de navegación, asegúrate de agregar un `role="navigation"` al contenedor padre más lógico del `<ul>`, o envuelve un elemento `<nav>` alrededor de toda la navegación. No agregues el rol al `<ul>` en sí, ya que esto evitaría que las tecnologías de asistencia lo anuncien como una lista real.
 
-Ten en cuenta que las barras de navegación, incluso si están diseñadas visualmente como pestañas con la clase `.nav-tabs`, **no** deben darse `role="tablist"`, `role="tab"` o `role="tabpanel"`. Estos solo son apropiados para interfaces dinámicas con pestañas, como se describe en el [patrón de pestañas de la Guía de prácticas de creación de ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel). Consulta [comportamiento de JavaScript](#javascript-behavior) para interfaces dinámicas con pestañas en esta sección para ver un ejemplo. El atributo `aria-current` no es necesario en interfaces dinámicas con pestañas ya que nuestro [JavaScript](https://esdocu.dev/javascript) maneja el estado seleccionado agregando `aria-selected="true"` en la pestaña activa.
+Ten en cuenta que las barras de navegación, incluso si están diseñadas visualmente como pestañas con la clase `.nav-tabs`, **no** deben darse `role="tablist"`, `role="tab"` o `role="tabpanel"`. Estos solo son apropiados para interfaces dinámicas con pestañas, como se describe en el [patrón de pestañas de la Guía de prácticas de creación de ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel). Consulta [comportamiento de JavaScript](#javascript-behavior) para interfaces dinámicas con pestañas en esta sección para ver un ejemplo. El atributo `aria-current` no es necesario en interfaces dinámicas con pestañas ya que nuestro JavaScript maneja el estado seleccionado agregando `aria-selected="true"` en la pestaña activa.
 
 <ContentSuggestion />
 
@@ -380,10 +380,10 @@ Agrega menús desplegables con un poco más de HTML y el [complemento JavaScript
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -441,7 +441,7 @@ En la clase modificadora `.nav-underline`:
     --#{$prefix}nav-underline-link-active-color: #{$nav-underline-link-active-color};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -473,10 +473,10 @@ En la clase modificadora `.nav-underline`:
     $nav-underline-link-active-color:   var(--#{$prefix}emphasis-color);
     ```
 
-Comportamiento de [JavaScript](https://esdocu.dev/javascript) [#javascript-behavior]
+Comportamiento JavaScript del componente [#javascript-behavior]
 -------------------------------------------------------------------------------------
 
-Utiliza el complemento [JavaScript](https://esdocu.dev/javascript) de pestañas (inclúyelo individualmente o mediante el archivo `bootstrap.js` compilado) para ampliar nuestras pestañas y píldoras de navegación para crear paneles con pestañas de paneles con contenido local.
+Utiliza el complemento JavaScript de pestañas (inclúyelo individualmente o mediante el archivo `bootstrap.js` compilado) para ampliar nuestras pestañas y píldoras de navegación para crear paneles con pestañas de paneles con contenido local.
 
 <ContentSuggestion />
 
@@ -580,19 +580,19 @@ Y con pastillas verticales. Idealmente, para pestañas verticales, también debe
 
 Interfaces dinámicas con pestañas, como se describe en las [Prácticas de Creación de Patrón de pestañas de ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabpanel), requiere `role="tablist"`, `role="tab"`, `role="tabpanel"` y adicionales atributos `aria-` para transmitir su estructura, funcionalidad y estado actual a los usuarios de tecnologías de asistencia (como lectores de pantalla). Como práctica recomendada, recomendamos utilizar elementos `<button>` para las pestañas, ya que son controles que desencadenan un cambio dinámico, en lugar de enlaces que navegan a una nueva página o ubicación.
 
-De acuerdo con el patrón ARIA Authoring Practices, solo la pestaña actualmente activa recibe el foco del teclado. Cuando se inicializa el complemento [JavaScript](https://esdocu.dev/javascript), establecerá `tabindex="-1"` en todos los controles de pestañas inactivas. Una vez que la pestaña actualmente activa tiene el foco, las teclas del cursor activan la pestaña anterior/siguiente. Las teclas Inicio y Fin activan la primera y la última pestaña, respectivamente. El complemento cambiará el [roving `tabindex`](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface) en consecuencia. Sin embargo, ten en cuenta que el complemento [JavaScript](https://esdocu.dev/javascript) no distingue entre listas de pestañas horizontales y verticales cuando se trata de interacciones con las teclas del cursor: independientemente de la orientación de la lista de pestañas, tanto el cursor arriba _como_ izquierdo van a la pestaña anterior y abajo _y_ el cursor derecho va a la siguiente pestaña.
+De acuerdo con el patrón ARIA Authoring Practices, solo la pestaña actualmente activa recibe el foco del teclado. Cuando se inicializa el complemento JavaScript, establecerá `tabindex="-1"` en todos los controles de pestañas inactivas. Una vez que la pestaña actualmente activa tiene el foco, las teclas del cursor activan la pestaña anterior/siguiente. Las teclas Inicio y Fin activan la primera y la última pestaña, respectivamente. El complemento cambiará el [roving `tabindex`](https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface) en consecuencia. Sin embargo, ten en cuenta que el complemento JavaScript no distingue entre listas de pestañas horizontales y verticales cuando se trata de interacciones con las teclas del cursor: independientemente de la orientación de la lista de pestañas, tanto el cursor arriba _como_ izquierdo van a la pestaña anterior y abajo _y_ el cursor derecho va a la siguiente pestaña.
 
 <Callout type="warning" emoji="">
-En general, para facilitar la navegación con el teclado, se recomienda hacer que los paneles de pestañas también sean enfocables, a menos que el primer elemento que contenga contenido significativo dentro del panel de pestañas ya sea enfocable. El complemento de [JavaScript](https://esdocu.dev/javascript) no intenta manejar este aspecto; cuando corresponda, deberás hacer que tus paneles de pestañas sean enfocables explícitamente agregando `tabindex="0"` en tu marcado.
+En general, para facilitar la navegación con el teclado, se recomienda hacer que los paneles de pestañas también sean enfocables, a menos que el primer elemento que contenga contenido significativo dentro del panel de pestañas ya sea enfocable. El complemento de JavaScript no intenta manejar este aspecto; cuando corresponda, deberás hacer que tus paneles de pestañas sean enfocables explícitamente agregando `tabindex="0"` en tu marcado.
 </Callout>
 
 <Callout type="error" emoji="️">
-El complemento [JavaScript](https://esdocu.dev/javascript) con pestañas **no** admite interfaces con pestañas que contengan menús desplegables, ya que causan problemas de usabilidad y accesibilidad. Desde una perspectiva de usabilidad, el hecho de que el elemento desencadenante de la pestaña que se muestra actualmente no sea visible inmediatamente (ya que está dentro del menú desplegable cerrado) puede causar confusión. Desde el punto de vista de la accesibilidad, actualmente no existe una forma sensata de asignar este tipo de construcción a un patrón WAI ARIA estándar, lo que significa que no puede hacerse comprensible fácilmente para los usuarios de tecnologías de asistencia.
+El complemento JavaScript con pestañas **no** admite interfaces con pestañas que contengan menús desplegables, ya que causan problemas de usabilidad y accesibilidad. Desde una perspectiva de usabilidad, el hecho de que el elemento desencadenante de la pestaña que se muestra actualmente no sea visible inmediatamente (ya que está dentro del menú desplegable cerrado) puede causar confusión. Desde el punto de vista de la accesibilidad, actualmente no existe una forma sensata de asignar este tipo de construcción a un patrón WAI ARIA estándar, lo que significa que no puede hacerse comprensible fácilmente para los usuarios de tecnologías de asistencia.
 </Callout>
 
 ### Usar atributos de datos [#using-data-attributes]
 
-Puedes activar una pestaña o píldora de navegación sin escribir ningún [JavaScript](https://esdocu.dev/javascript) simplemente especificando `data-bs-toggle="tab"` o `data-bs-toggle="pill"` en un elemento. Utiliza estos atributos de datos en `.nav-tabs` o `.nav-pills`.
+Puedes activar una pestaña o píldora de navegación sin escribir ningún JavaScript simplemente especificando `data-bs-toggle="tab"` o `data-bs-toggle="pill"` en un elemento. Utiliza estos atributos de datos en `.nav-tabs` o `.nav-pills`.
 
     ```html filename="HTML"
     <!-- Nav tabs -->
@@ -620,9 +620,9 @@ Puedes activar una pestaña o píldora de navegación sin escribir ningún [Java
     </div>
     ```
 
-### Vía [JavaScript](https://esdocu.dev/javascript) [#via-javascript]
+### Vía JavaScript [#via-javascript]
 
-Habilita las pestañas a través de [JavaScript](https://esdocu.dev/javascript) (cada pestaña debe activarse individualmente):
+Habilita las pestañas a través de JavaScript (cada pestaña debe activarse individualmente):
 
     ```javascript filename="JavaScript"
     const triggerTabList = document.querySelectorAll('#myTab button')

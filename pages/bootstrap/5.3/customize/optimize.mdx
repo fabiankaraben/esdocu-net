@@ -6,7 +6,7 @@ import { MainBanner } from '@components/main-banner'
 import { ContentSuggestion } from '@components/content-suggestion'
 import { Callout } from 'nextra/components'
 
-# Optimizar
+# Formas de Optimizar la utilización de Bootstrap
 
 Mantén tus proyectos ágiles, responsive y mantenibles para que puedas ofrecer la mejor experiencia y concentrarte en trabajos más importantes.
 
@@ -72,9 +72,9 @@ Si no estás usando un componente, coméntalo o elimínalo por completo. Por eje
 JavaScript optimizado [#lean-javascript]
 --------------------------------------------------------------------------
 
-El [JavaScript](https://esdocu.dev/javascript) de Bootstrap incluye todos los componentes de nuestros archivos dist primarios (`bootstrap.js` y `bootstrap.min.js`), e incluso nuestra dependencia principal (Popper) con nuestros archivos de paquete (`bootstrap.bundle.js` y `bootstrap.bundle.min.js`). Mientras personalizas a través de Sass, asegúrate de eliminar el JavaScript relacionado.
+El JavaScript de Bootstrap incluye todos los componentes de nuestros archivos dist primarios (`bootstrap.js` y `bootstrap.min.js`), e incluso nuestra dependencia principal (Popper) con nuestros archivos de paquete (`bootstrap.bundle.js` y `bootstrap.bundle.min.js`). Mientras personalizas a través de Sass, asegúrate de eliminar el JavaScript relacionado.
 
-Por ejemplo, suponiendo que estás usando tu propio paquete de [JavaScript](https://esdocu.dev/javascript) como Webpack, Parcel o Vite, solo importarás el JavaScript que planeas usar. En el siguiente ejemplo, mostramos cómo incluir simplemente nuestro JavaScript modal:
+Por ejemplo, suponiendo que estás usando tu propio paquete de JavaScript como Webpack, Parcel o Vite, solo importarás el JavaScript que planeas usar. En el siguiente ejemplo, mostramos cómo incluir simplemente nuestro JavaScript modal:
     ```javascript filename="JavaScript"
     // Import just what we need
     
@@ -92,7 +92,7 @@ Por ejemplo, suponiendo que estás usando tu propio paquete de [JavaScript](http
     // import 'bootstrap/js/dist/tooltip';
     ```
 
-De esta manera, no incluirás ningún [JavaScript](https://esdocu.dev/javascript) que no pretendas utilizar para componentes como botones, carruseles e tooltips. Si estás importando menús desplegables, tooltips o ventanas emergentes, asegúrate de incluir la dependencia de Popper en tu archivo `package.json`.
+De esta manera, no incluirás ningún JavaScript que no pretendas utilizar para componentes como botones, carruseles e tooltips. Si estás importando menús desplegables, tooltips o ventanas emergentes, asegúrate de incluir la dependencia de Popper en tu archivo `package.json`.
 
 <Callout type="info" emoji="">
 **¡Atención!** Los archivos en `bootstrap/js/dist` usan la **exportación predeterminada**. Para usarlos, haz lo siguiente:
@@ -133,7 +133,7 @@ Si bien minimizar y usar compresión puede parecer suficiente, hacer que tus arc
 
 Si estás utilizando un complemento [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) en Google Chrome, es posible que hayas tropezado con FCP. La métrica [First Contentful Paint](https://web.dev/fcp) mide el tiempo desde que la página comienza a cargarse hasta que cualquier parte del contenido de la página se muestra en la pantalla.
 
-Puedes mejorar FCP posponiendo [JavaScript](https://esdocu.dev/javascript) o CSS no críticos. ¿Qué significa eso? Simplemente, [JavaScript](https://esdocu.dev/javascript) u hojas de estilo que no necesitan estar presentes en la primera pintura de tu página deben marcarse con los atributos `async` o `defer`.
+Puedes mejorar FCP posponiendo JavaScript o CSS no críticos. ¿Qué significa eso? Simplemente, JavaScript u hojas de estilo que no necesitan estar presentes en la primera pintura de tu página deben marcarse con los atributos `async` o `defer`.
 
 Esto asegura que los recursos menos importantes se carguen más tarde y no bloqueen la primera pintura. Por otro lado, los recursos críticos se pueden incluir como scripts o estilos en línea.
 

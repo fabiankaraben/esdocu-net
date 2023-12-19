@@ -7,13 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Grupo de lista
+# El componente Grupo de lista de Bootstrap
 
 Los grupos de listas son un componente flexible y poderoso para mostrar una serie de contenidos. Modifícalos y amplíalos para admitir casi cualquier contenido que contenga.
 
 <MainBanner />
 
-Ejemplo básico [#basic-example]
+Ejemplo básico delcomponente Grupo de lista [#basic-example]
 --------------------------------
 
 El grupo de listas más básico es una lista desordenada con elementos de lista y las clases adecuadas. Aprovecha las opciones que aparecen a continuación o con su propio CSS según sea necesario.
@@ -30,7 +30,7 @@ El grupo de listas más básico es una lista desordenada con elementos de lista 
     ```
 </DemoIframe>
 
-Elementos activos [#active-items]
+Elementos activos del componente Grupo de lista [#active-items]
 ----------------------------------
 
 Agrega `.active` a un `.list-group-item` para indicar la selección activa actual.
@@ -47,10 +47,10 @@ Agrega `.active` a un `.list-group-item` para indicar la selección activa actua
     ```
 </DemoIframe>
 
-Elementos deshabilitados [#disabled-items]
+Elementos deshabilitados del componente Grupo de lista [#disabled-items]
 -------------------------------------------
 
-Agrega `.disabled` a un `.list-group-item` para que _parezca_ deshabilitado. Ten en cuenta que algunos elementos con `.disabled` también requerirán [JavaScript](https://esdocu.dev/javascript) personalizado para deshabilitar completamente sus eventos de clic (por ejemplo, enlaces).
+Agrega `.disabled` a un `.list-group-item` para que _parezca_ deshabilitado. Ten en cuenta que algunos elementos con `.disabled` también requerirán JavaScript personalizado para deshabilitar completamente sus eventos de clic (por ejemplo, enlaces).
 
 <DemoIframe path="/demos/bootstrap/5.3/components/list-group/disabled-items.html">
     ```html filename="HTML"
@@ -64,7 +64,7 @@ Agrega `.disabled` a un `.list-group-item` para que _parezca_ deshabilitado. Ten
     ```
 </DemoIframe>
 
-Enlaces y botones [#links-and-buttons]
+Enlaces y botones del componente Grupo de lista [#links-and-buttons]
 ---------------------------------------
 
 Usa `<a>`s o `<button>`s para crear un grupo de lista de elementos _accionables_ con estados hover, disabled y active agregando `.list-group-item-action`. Separamos estas pseudoclases para garantizar que los grupos de listas formados por elementos no interactivos (como `<li>`s o `<div>`s) no proporcionen posibilidades un clic o toque.
@@ -105,7 +105,7 @@ Con `<button>`s, también puedes hacer uso del atributo `disabled` en lugar de l
 
 <ContentSuggestion />
 
-Flush [#flush]
+Las clases Flush [#flush]
 ---------------
 
 Agrega `.list-group-flush` para eliminar algunos bordes y esquinas redondeadas para representar los elementos del grupo de listas de borde a borde en un contenedor padre (por ejemplo, tarjetas).
@@ -122,7 +122,7 @@ Agrega `.list-group-flush` para eliminar algunos bordes y esquinas redondeadas p
     ```
 </DemoIframe>
 
-Numerado [#numbered]
+Numerado en el componente Grupo de lista [#numbered]
 ---------------------
 
 Agrega la clase modificadora `.list-group-numbered` (y opcionalmente usa un elemento `<ol>`) para optar por elementos de grupo de lista numerados. Los números se generan mediante CSS (a diferencia del estilo predeterminado del navegador `<ol>`) para una mejor ubicación dentro de los elementos del grupo de listas y para permitir una mejor personalización.
@@ -169,7 +169,7 @@ Estos también funcionan muy bien con contenido personalizado.
     ```
 </DemoIframe>
 
-Horizontal [#horizontal]
+Componente Grupo de lista horizontal [#horizontal]
 -------------------------
 
 Agrega `.list-group-horizontal` para cambiar el diseño de los elementos del grupo de lista de vertical a horizontal en todos los puntos de interrupción. Alternativamente, elige una variante responsive `.list-group-horizontal-{sm|md|lg|xl|xxl}` para hacer un grupo de listas horizontal comenzando en el `min-width`. Actualmente **los grupos de listas horizontales no se pueden combinar con grupos de listas al ras.**
@@ -213,7 +213,7 @@ Agrega `.list-group-horizontal` para cambiar el diseño de los elementos del gru
 
 <ContentSuggestion />
 
-Variantes [#variants]
+Variantes de estilo del componente Grupo de lista [#variants]
 ----------------------
 
 <Callout type="info" emoji="">
@@ -262,7 +262,7 @@ Las clases contextuales también funcionan con `.list-group-item-action` para el
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 </Callout>
 
-Con insignias [#with-badges]
+Grupo de listas con insignias [#with-badges]
 -----------------------------
 
 Agrega insignias a cualquier elemento del grupo de lista para mostrar recuentos no leídos, actividad y más con la ayuda de algunas [utilidades](/bootstrap/5.3/utilities/flex).
@@ -391,10 +391,10 @@ Puedes usar `.stretched-link` en `<label>`s para hacer que se pueda hacer clic e
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -423,7 +423,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los grupos d
     --#{$prefix}list-group-active-border-color: #{$list-group-active-border-color};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -458,7 +458,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los grupos d
 
 <ContentSuggestion />
 
-### Sass mixins [#sass-mixins]
+### Mixins Sass del componente [#sass-mixins]
 
 <br/>
 <span className="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
@@ -490,7 +490,7 @@ Se usa en combinación con `$theme-colors` para generar las [clases variantes co
     }
     ```
 
-### Sass loops [#sass-loops]
+### Bucles Sass del componente [#sass-loops]
 
 Bucle que genera las clases modificadoras con una sobrescritura de variables CSS.
 
@@ -518,10 +518,10 @@ Bucle que genera las clases modificadoras con una sobrescritura de variables CSS
     }
     ```
 
-Comportamiento de [JavaScript](https://esdocu.dev/javascript) [#javascript-behavior]
+Comportamiento JavaScript del componente [#javascript-behavior]
 -------------------------------------------------------------------------------------
 
-Utiliza el complemento [JavaScript](https://esdocu.dev/javascript) de pestañas (inclúyelo individualmente o mediante el archivo `bootstrap.js` compilado) para ampliar nuestro grupo de listas y crear paneles con pestañas de contenido local.
+Utiliza el complemento JavaScript de pestañas (inclúyelo individualmente o mediante el archivo `bootstrap.js` compilado) para ampliar nuestro grupo de listas y crear paneles con pestañas de contenido local.
 
 <DemoIframe path="/demos/bootstrap/5.3/components/list-group/javascript-behavior.html">
     ```html filename="HTML"
@@ -576,7 +576,7 @@ Utiliza el complemento [JavaScript](https://esdocu.dev/javascript) de pestañas 
 
 ### Usar atributos de datos [#using-data-attributes]
 
-Puedes activar la navegación de un grupo de listas sin escribir ningún [JavaScript](https://esdocu.dev/javascript) simplemente especificando `data-bs-toggle="list"` o en un elemento. Utiliza estos atributos de datos en `.list-group-item`.
+Puedes activar la navegación de un grupo de listas sin escribir ningún JavaScript simplemente especificando `data-bs-toggle="list"` o en un elemento. Utiliza estos atributos de datos en `.list-group-item`.
 
     ```html filename="HTML"
     <div role="tabpanel">
@@ -598,9 +598,9 @@ Puedes activar la navegación de un grupo de listas sin escribir ningún [JavaSc
     </div>
     ```
 
-### Vía [JavaScript](https://esdocu.dev/javascript) [#via-javascript]
+### Vía JavaScript [#via-javascript]
 
-Habilita el elemento de la lista con tabulaciones a través de [JavaScript](https://esdocu.dev/javascript) (cada elemento de la lista debe activarse individualmente):
+Habilita el elemento de la lista con tabulaciones a través de JavaScript (cada elemento de la lista debe activarse individualmente):
 
     ```javascript filename="JavaScript"
     const triggerTabList = document.querySelectorAll('#myTab a')

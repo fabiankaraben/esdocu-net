@@ -7,7 +7,7 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Validación
+# Validación de formularios en Bootstrap
 
 Brinda comentarios valiosos y prácticos a tus usuarios con la validación de formularios HTML5, a través de comportamientos predeterminados del navegador o estilos personalizados y JavaScript.
 
@@ -17,7 +17,7 @@ Brinda comentarios valiosos y prácticos a tus usuarios con la validación de fo
 Somos conscientes de que actualmente los estilos de validación personalizados y los tooltips del lado del cliente no son accesibles, ya que no están expuestos a tecnologías de asistencia. Mientras trabajamos en una solución, recomendamos utilizar la opción del lado del servidor o el método de validación del navegador predeterminado.
 </Callout>
 
-Cómo funciona. [#how-it-works]
+Cómo funciona [#how-it-works]
 -------------------------------
 
 Así es como funciona la validación de formularios con Bootstrap:
@@ -26,17 +26,17 @@ Así es como funciona la validación de formularios con Bootstrap:
 * Bootstrap aplica los estilos `:invalid` y `:valid` a la clase padre `.was-validated`, generalmente se aplica al `<form>`. De lo contrario, cualquier campo obligatorio sin un valor aparecerá como no válido al cargar la página. De esta manera, puedes elegir cuándo activarlos (normalmente después de intentar enviar el formulario).
 * Para restablecer la apariencia del formulario (por ejemplo, en el caso de envíos de formularios dinámicos usando Ajax), elimina la clase `.was-validated` del `<form>` nuevamente después del envío.
 * Como alternativa, se pueden usar las clases `.is-invalid` y `.is-valid` en lugar de las pseudoclases para [validación del lado del servidor](#server-side). No requieren una clase padre `.was-validated`.
-* Debido a limitaciones en el funcionamiento de CSS, no podemos (actualmente) aplicar estilos a un `<label>` que viene antes de un control de formulario en el DOM sin la ayuda de [JavaScript](https://esdocu.dev/javascript) personalizado.
-* Todos los navegadores modernos admiten [API de validación de restricciones](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api), una serie de métodos [JavaScript](https://esdocu.dev/javascript) para validar controles de formulario.
+* Debido a limitaciones en el funcionamiento de CSS, no podemos (actualmente) aplicar estilos a un `<label>` que viene antes de un control de formulario en el DOM sin la ayuda de JavaScript personalizado.
+* Todos los navegadores modernos admiten [API de validación de restricciones](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#the-constraint-validation-api), una serie de métodos JavaScript para validar controles de formulario.
 * Los feedback pueden utilizar los [valores predeterminados del navegador](#browser-defaults) (diferentes para cada navegador y sin estilo mediante CSS) o nuestros estilos de feedback personalizados con HTML y CSS adicionales.
-* Puedes proporcionar mensajes de validez personalizados con `setCustomValidity` en [JavaScript](https://esdocu.dev/javascript).
+* Puedes proporcionar mensajes de validez personalizados con `setCustomValidity` en JavaScript.
 
 Con eso en mente, considera las siguientes demostraciones de nuestros estilos de validación de formularios personalizados, clases opcionales del lado del servidor y valores predeterminados del navegador.
 
 Estilos personalizados [#custom-styles]
 ----------------------------------------
 
-Para mensajes de validación de formularios Bootstrap personalizados, necesitarás agregar el atributo booleano `novalidate` a tu `<form>`. Esto deshabilita los tooltips de comentarios predeterminados del navegador, pero aún proporciona acceso a las API de validación de formularios en [JavaScript](https://esdocu.dev/javascript). Intenta enviar el formulario a continuación; nuestro [JavaScript](https://esdocu.dev/javascript) interceptará el botón de enviar y te transmitirá sus comentarios. Al intentar enviar, verás los estilos `:invalid` y `:valid` aplicados a tus controles de formulario.
+Para mensajes de validación de formularios Bootstrap personalizados, necesitarás agregar el atributo booleano `novalidate` a tu `<form>`. Esto deshabilita los tooltips de comentarios predeterminados del navegador, pero aún proporciona acceso a las API de validación de formularios en JavaScript. Intenta enviar el formulario a continuación; nuestro JavaScript interceptará el botón de enviar y te transmitirá sus comentarios. Al intentar enviar, verás los estilos `:invalid` y `:valid` aplicados a tus controles de formulario.
 
 Los estilos de comentarios personalizados aplican colores, bordes, estilos de enfoque e íconos de fondo personalizados para comunicar mejor los comentarios. Los iconos de fondo para `<select>`s solo están disponibles con `.form-select`, y no con `.form-control`.
 
@@ -135,9 +135,9 @@ Los estilos de comentarios personalizados aplican colores, bordes, estilos de en
 Valores predeterminados del navegador [#browser-defaults]
 ----------------------------------------------------------
 
-¿No te interesan los mensajes de validación personalizados o escribir [JavaScript](https://esdocu.dev/javascript) para cambiar el comportamiento de los formularios? Todo bien, puedes usar los valores predeterminados del navegador. Intenta enviar el formulario a continuación. Dependiendo de gu navegador y sistema operativo, verás un estilo de comentarios ligeramente diferente.
+¿No te interesan los mensajes de validación personalizados o escribir JavaScript para cambiar el comportamiento de los formularios? Todo bien, puedes usar los valores predeterminados del navegador. Intenta enviar el formulario a continuación. Dependiendo de gu navegador y sistema operativo, verás un estilo de comentarios ligeramente diferente.
 
-Si bien estos estilos de comentarios no se pueden diseñar con CSS, aún puedes personalizar el texto de los comentarios a través de [JavaScript](https://esdocu.dev/javascript).
+Si bien estos estilos de comentarios no se pueden diseñar con CSS, aún puedes personalizar el texto de los comentarios a través de JavaScript.
 
 <DemoIframe path="/demos/bootstrap/5.3/forms/validation/browser-defaults.html">
     ```html filename="HTML"
@@ -398,10 +398,10 @@ Si el diseño de tu formulario lo permite, puedes intercambiar las clases `.{val
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.3.0</span>
@@ -419,7 +419,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los formular
 
 Estas variables también son adaptables al modo de color, lo que significa que cambian de color mientras están en modo oscuro.
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

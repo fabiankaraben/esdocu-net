@@ -7,7 +7,7 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Progreso
+# El componente Progress de Bootstrap
 
 Documentación y ejemplos para usar barras de progreso personalizadas de Bootstrap que admiten barras apiladas, fondos animados y etiquetas de texto.
 
@@ -17,7 +17,7 @@ Documentación y ejemplos para usar barras de progreso personalizadas de Bootstr
 
 <MainBanner />
 
-Cómo funciona. [#how-it-works]
+Cómo funciona el componente Progress [#how-it-works]
 -------------------------------
 
 Los componentes de progreso se construyen con dos elementos HTML, algo de CSS para establecer el ancho y algunos atributos. No utilizamos [el elemento HTML5 `<progress>`,](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress) lo que garantiza que puedas apilar barras de progreso, animarlas y colocar etiquetas de texto sobre ellas.
@@ -50,7 +50,7 @@ Junta todo eso y tendrás los siguientes ejemplos.
     ```
 </DemoIframe>
 
-Tamaño de barra [#bar-sizing]
+Tamaño de la barra del componente Progress [#bar-sizing]
 ------------------------------
 
 ### Ancho [#width]
@@ -82,7 +82,7 @@ Solo estableces un valor de `height` en el contenedor `.progress`, por lo que si
 
 <ContentSuggestion />
 
-Etiquetas [#labels]
+Etiquetas en el componente Progress [#labels]
 --------------------
 
 Agrega etiquetas a tus barras de progreso colocando texto dentro de la `.progress-bar`.
@@ -107,7 +107,7 @@ Ten en cuenta que, de forma predeterminada, el contenido dentro de `.progress-ba
     ```
 </DemoIframe>
 
-Fondos [#backgrounds]
+Personalizar el fondo del componente Progress [#backgrounds]
 ----------------------
 
 Usa clases de utilidades en segundo plano para cambiar la apariencia de las barras de progreso individuales.
@@ -162,7 +162,7 @@ Como alternativa, puedes usar las nuevas clases auxiliares combinadas [color y f
     ```
 </DemoIframe>
 
-Varias barras [#multiple-bars]
+Usar varios componente Progress [#multiple-bars]
 -------------------------------
 
 Puedes incluir múltiples componentes de progreso dentro de un contenedor con `.progress-stacked` para crear una única barra de progreso apilada. Ten en cuenta que en este caso, el estilo para establecer el ancho visual de la barra de progreso _debe_ aplicarse a los elementos `.progress`, en lugar de `.progress-bar`s.
@@ -185,7 +185,7 @@ Puedes incluir múltiples componentes de progreso dentro de un contenedor con `.
 
 <ContentSuggestion />
 
-Rayado [#striped]
+Estilo rayado en el componente Progress [#striped]
 ------------------
 
 Agrega `.progress-bar-striped` a cualquier `.progress-bar` para aplicar una franja mediante un degradado CSS sobre el color de fondo de la barra de progreso.
@@ -210,7 +210,7 @@ Agrega `.progress-bar-striped` a cualquier `.progress-bar` para aplicar una fran
     ```
 </DemoIframe>
 
-Rayas animadas [#animated-stripes]
+Rayas animadas en el componente Progress [#animated-stripes]
 -----------------------------------
 
 El degradado rayado también se puede animar. Añade `.progress-bar-animated` a `.progress-bar` para animar las franjas de derecha a izquierda mediante animaciones CSS3.
@@ -223,10 +223,10 @@ El degradado rayado también se puede animar. Añade `.progress-bar-animated` a 
     ```
 </DemoIframe>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -246,7 +246,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las barras d
     --#{$prefix}progress-bar-transition: #{$progress-bar-transition};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

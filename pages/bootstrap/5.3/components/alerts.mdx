@@ -7,13 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Alertas
+# El componente Alerta de Bootstrap
 
 Proporciona mensajes de retroalimentación contextuales para las acciones típicas del usuario con los útiles y flexibles mensajes de alerta disponibles.
 
 <MainBanner />
 
-Ejemplos [#examples]
+Ejemplos del componente Alerta [#examples]
 ---------------------
 
 Las alertas están disponibles para cualquier longitud de texto, así como un botón de cierre opcional. Para lograr un estilo adecuado, utiliza una de las ocho clases contextuales **obligatorias** (por ejemplo, `.alert-success`). Para el cierre en línea, utiliza el [complemento JavaScript de alertas](#dismissing).
@@ -55,7 +55,7 @@ Las alertas están disponibles para cualquier longitud de texto, así como un bo
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 </Callout>
 
-### Ejemplo en vivo [#live-example]
+### Ejemplo en vivo del componente [#live-example]
 
 Haz clic en el botón a continuación para mostrar una alerta (inicialmente oculta con estilos en línea), luego deséchala (y destrúyela) con el botón de cierre incorporado.
 
@@ -66,7 +66,7 @@ Haz clic en el botón a continuación para mostrar una alerta (inicialmente ocul
     ```
 </DemoIframe>
 
-Utilizamos el siguiente [JavaScript](https://esdocu.dev/javascript) para activar nuestra demostración de alerta en vivo:
+Utilizamos el siguiente JavaScript para activar nuestra demostración de alerta en vivo:
 
 [site/assets/js/snippets.js](https://github.com/twbs/bootstrap/blob/v5.3.2/site/assets/js/snippets.js)
 
@@ -92,7 +92,7 @@ Utilizamos el siguiente [JavaScript](https://esdocu.dev/javascript) para activar
     }
     ```
 
-### Color del enlace [#link-color]
+### Color de enlaces en el contenido [#link-color]
 
 Utiliza la clase de utilidad `.alert-link` para proporcionar rápidamente enlaces de colores coincidentes dentro de cualquier alerta.
 
@@ -135,7 +135,7 @@ Utiliza la clase de utilidad `.alert-link` para proporcionar rápidamente enlace
     ```
 </DemoIframe>
 
-### Contenido adicional [#additional-content]
+### Agregar contenido adicional [#additional-content]
 
 Las alertas también pueden contener elementos HTML adicionales como encabezados, párrafos y divisores.
 
@@ -152,7 +152,7 @@ Las alertas también pueden contener elementos HTML adicionales como encabezados
     ```
 </DemoIframe>
 
-### Íconos [#icons]
+### Agregar íconos al contenido [#icons]
 
 Del mismo modo, puedes usar [utilidades flexbox](/bootstrap/5.3/utilities/flex) y [Bootstrap Icons](https://icons.getbootstrap.com) para crear alertas con iconos. Dependiendo de tus íconos y contenido, es posible que desees agregar más utilidades o estilos personalizados.
 
@@ -231,13 +231,13 @@ Del mismo modo, puedes usar [utilidades flexbox](/bootstrap/5.3/utilities/flex) 
 
 <ContentSuggestion />
 
-### Descartando [#dismissing]
+### Cómo cerrar (descargar) un Alert [#dismissing]
 
-Usando el complemento [JavaScript](https://esdocu.dev/javascript) de alerta, es posible descartar cualquier alerta en línea. Así es cómo:
+Usando el complemento JavaScript de alerta, es posible descartar cualquier alerta en línea. Así es cómo:
 
-* Asegúrate de haber cargado el complemento de alerta o el [JavaScript](https://esdocu.dev/javascript) Bootstrap compilado.
+* Asegúrate de haber cargado el complemento de alerta o el JavaScript Bootstrap compilado.
 * Agrega un [botón de cerrar](/bootstrap/5.3/components/close-button) y la clase `.alert-dismissible`, que agrega padding adicional a la derecha de la alerta y coloca el botón de cierre.
-* En el botón de cerrar, agrega el atributo `data-bs-dismiss="alert"`, que activa la funcionalidad de [JavaScript](https://esdocu.dev/javascript). Asegúrate de utilizar el elemento `<button>` para lograr un comportamiento adecuado en todos los dispositivos.
+* En el botón de cerrar, agrega el atributo `data-bs-dismiss="alert"`, que activa la funcionalidad de JavaScript. Asegúrate de utilizar el elemento `<button>` para lograr un comportamiento adecuado en todos los dispositivos.
 * Para animar las alertas cuando las descartes, asegúrate de agregar las clases `.fade` y `.show`.
 
 Puedes ver esto en acción con una demostración en vivo:
@@ -252,13 +252,13 @@ Puedes ver esto en acción con una demostración en vivo:
 </DemoIframe>
 
 <Callout type="warning" emoji="">
-Cuando se descarta una alerta, el elemento se elimina por completo de la estructura de la página. Si un usuario del teclado descarta la alerta usando el botón de cerrar, su atención se perderá repentinamente y, dependiendo del navegador, se restablecerá al inicio de la página/documento. Por este motivo, recomendamos incluir [JavaScript](https://esdocu.dev/javascript) adicional que escuche el evento `closed.bs.alert` y establezcas mediante programación `focus()` en la ubicación más adecuada de la página. Si planeas mover el foco a un elemento no interactivo que normalmente no recibe el foco, asegúrate de agregar `tabindex="-1"` al elemento.
+Cuando se descarta una alerta, el elemento se elimina por completo de la estructura de la página. Si un usuario del teclado descarta la alerta usando el botón de cerrar, su atención se perderá repentinamente y, dependiendo del navegador, se restablecerá al inicio de la página/documento. Por este motivo, recomendamos incluir JavaScript adicional que escuche el evento `closed.bs.alert` y establezcas mediante programación `focus()` en la ubicación más adecuada de la página. Si planeas mover el foco a un elemento no interactivo que normalmente no recibe el foco, asegúrate de agregar `tabindex="-1"` al elemento.
 </Callout>
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -279,7 +279,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las alertas 
     --#{$prefix}alert-link-color: inherit;
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -293,7 +293,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las alertas 
     $alert-dismissible-padding-r:   $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
     ```
 
-### Sass mixins [#sass-mixins]
+### Mixins Sass del componente [#sass-mixins]
 
 <br/>
 <span className="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
@@ -320,7 +320,7 @@ Se usa en combinación con `$theme-colors` para crear clases de modificadores co
     ```
     
 
-### Sass loops [#sass-loops]
+### Bucles Sass del componente [#sass-loops]
 
 Bucle que genera las clases modificadoras con el mixin `alert-variant()`.
 
@@ -340,7 +340,7 @@ Bucle que genera las clases modificadoras con el mixin `alert-variant()`.
 
 <ContentSuggestion />
 
-Comportamiento de [JavaScript](https://esdocu.dev/javascript) [#javascript-behavior]
+Comportamiento JavaScript del componente [#javascript-behavior]
 -------------------------------------------------------------------------------------
 
 ### Inicializar [#initialize]

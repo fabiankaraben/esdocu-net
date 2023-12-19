@@ -6,7 +6,7 @@ import { MainBanner } from '@components/main-banner'
 import { ContentSuggestion } from '@components/content-suggestion'
 import { Callout } from 'nextra/components'
 
-# Bootstrap y Vite
+# Instalación de Bootstrap usando Vite
 
 La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de Bootstrap en tu proyecto usando Vite.
 
@@ -48,7 +48,7 @@ Ahora que tenemos todas las dependencias necesarias instaladas y configuradas, p
 
 ## Estructura del proyecto. [#project-structure]
 
-Ya creamos la carpeta `my-project` e inicializamos npm. Ahora también crearemos nuestra carpeta `src`, hoja de estilo y archivo [JavaScript](https://esdocu.dev/javascript) para completar la estructura del proyecto. Ejecuta lo siguiente desde `my-project` o crea manualmente la carpeta y la estructura de archivos que se muestran a continuación.
+Ya creamos la carpeta `my-project` e inicializamos npm. Ahora también crearemos nuestra carpeta `src`, hoja de estilo y archivo JavaScript para completar la estructura del proyecto. Ejecuta lo siguiente desde `my-project` o crea manualmente la carpeta y la estructura de archivos que se muestran a continuación.
     ```shell filename="Terminal"
     mkdir {src,src/js,src/scss}
     touch src/index.html src/js/main.js src/scss/styles.scss vite.config.js
@@ -74,7 +74,7 @@ En este punto, todo está en el lugar correcto, pero Vite no funcionará porque 
 
 Con las dependencias instaladas y nuestra carpeta de proyecto lista para que comencemos a codificar, ahora podemos configurar Vite y ejecutar nuestro proyecto localmente.
 
-1.  **Abre `vite.config.js` en tu editor.** Como está en blanco, necesitaremos agregar algo de configuración para que podamos iniciar nuestro servidor. Esta parte de la configuración le dice a Vite dónde buscar el [JavaScript](https://esdocu.dev/javascript) de nuestro proyecto y cómo debe comportarse el servidor de desarrollo (extrayendo de la carpeta `src` con hot reload).
+1.  **Abre `vite.config.js` en tu editor.** Como está en blanco, necesitaremos agregar algo de configuración para que podamos iniciar nuestro servidor. Esta parte de la configuración le dice a Vite dónde buscar el JavaScript de nuestro proyecto y cómo debe comportarse el servidor de desarrollo (extrayendo de la carpeta `src` con hot reload).
         ```javascript filename="JavaScript"
         const path = require('path')
         
@@ -129,7 +129,7 @@ Con las dependencias instaladas y nuestra carpeta de proyecto lista para que com
     
     ![Vite dev server running](/bootstrap/5.3/assets/img/guides/vite-dev-server.png)
 
-En la siguiente y última sección de esta guía, importaremos todo el CSS y [JavaScript](https://esdocu.dev/javascript) de Bootstrap.
+En la siguiente y última sección de esta guía, importaremos todo el CSS y JavaScript de Bootstrap.
 
 <ContentSuggestion />
 
@@ -143,7 +143,7 @@ En la siguiente y última sección de esta guía, importaremos todo el CSS y [Ja
     
     _También puedes importar nuestras hojas de estilo individualmente si lo deseas. [Lee nuestra documentación de importación de Sass](/bootstrap/5.3/customize/sass/#importing) para obtener más detalles._
     
-2.  **A continuación cargamos el CSS e importamos el [JavaScript](https://esdocu.dev/javascript) de Bootstrap.** Agrega lo siguiente a `src/js/main.js` para cargar el CSS e importa todo el JS de Bootstrap. Popper se importará automáticamente a través de Bootstrap.
+2.  **A continuación cargamos el CSS e importamos el JavaScript de Bootstrap.** Agrega lo siguiente a `src/js/main.js` para cargar el CSS e importa todo el JS de Bootstrap. Popper se importará automáticamente a través de Bootstrap.
         ```javascript filename="JavaScript"
         // Import our custom CSS
         import '../scss/styles.scss'
@@ -152,7 +152,7 @@ En la siguiente y última sección de esta guía, importaremos todo el CSS y [Ja
         import * as bootstrap from 'bootstrap'
         ```
     
-    También puedes importar complementos de [JavaScript](https://esdocu.dev/javascript) individualmente según sea necesario para mantener bajos los tamaños de los paquetes:
+    También puedes importar complementos de JavaScript individualmente según sea necesario para mantener bajos los tamaños de los paquetes:
         ```javascript filename="JavaScript"
         import Alert from 'bootstrap/js/dist/alert';
         

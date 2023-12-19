@@ -7,13 +7,13 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Breadcrumb
+# El componente Breadcrumb de Bootstrap
 
 Indica la ubicación de la página actual dentro de una jerarquía de navegación que agrega automáticamente separadores mediante CSS.
 
 <MainBanner />
 
-Ejemplo [#example]
+Ejemplo del componente Breadcrumb [#example]
 -------------------
 
 Usa una lista ordenada o desordenada con elementos de lista vinculados para crear una ruta de navegación con un estilo mínimo. Utiliza nuestras utilidades para agregar estilos adicionales según lo desees.
@@ -43,7 +43,7 @@ Usa una lista ordenada o desordenada con elementos de lista vinculados para crea
     ```
 </DemoIframe>
 
-Divisores [#dividers]
+Divisores entre elementos del Breadcrumb [#dividers]
 ----------------------
 
 Los divisores se agregan automáticamente en CSS a través de [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) y [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content). Se pueden cambiar modificando una propiedad personalizada CSS local `--bs-breadcrumb-divider`, o mediante la variable Sass `$breadcrumb-divider` y `$breadcrumb-divider-flipped` para su contraparte RTL, si es necesario. Utilizamos de forma predeterminada nuestra variable Sass, que se establece como alternativa a la propiedad personalizada. De esta manera, obtienes un divisor global que puedes sobrescribir sin tener que volver a compilar CSS en ningún momento.
@@ -103,19 +103,19 @@ También puedes eliminar la configuración del divisor `--bs-breadcrumb-divider:
     $breadcrumb-divider: none;
     ```
 
-Accesibilidad [#accessibility]
+Accesibilidad del componente Breadcrumb [#accessibility]
 -------------------------------
 
 Dado que las breadcrumbs proporcionan navegación, es una buena idea agregar una etiqueta significativa como `aria-label="breadcrumb"` para describir el tipo de navegación proporcionada en el elemento `<nav>`, además de aplicar un `aria-current="page"` al último elemento del conjunto para indicar que representa la página actual.
 
 Para obtener más información, consulta la [Guía de prácticas de creación de breadcrumbs de ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb).
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
 <ContentSuggestion />
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -136,7 +136,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las rutas de
     --#{$prefix}breadcrumb-item-active-color: #{$breadcrumb-active-color};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

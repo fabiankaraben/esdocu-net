@@ -8,7 +8,7 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Interacciones
+# Uso de las utilidades de Interacciones en Bootstrap
 
 Clases de utilidad que cambian la forma en que los usuarios interactúan con los contenidos de un sitio web.
 
@@ -40,14 +40,14 @@ Bootstrap proporciona las clases `.pe-none` y `.pe-auto` para evitar o agregar i
     ```
 </DemoIframe>
 
-La clase `.pe-none` (y la propiedad CSS `pointer-events` que establece) solo previene las interacciones con un puntero (ratón, lápiz óptico, touch). Los enlaces y controles con `.pe-none` son, de forma predeterminada, aún enfocables y procesables para los usuarios del teclado. Para garantizar que estén completamente neutralizados incluso para los usuarios de teclado, es posible que debas agregar atributos adicionales como `tabindex="-1"` (para evitar que reciban el foco del teclado) y `aria-disabled="true"` (para transmitir el hecho de que están efectivamente deshabilitados para tecnologías de asistencia) y posiblemente usar [JavaScript](https://esdocu.dev/javascript) para evitar por completo que sean procesables.
+La clase `.pe-none` (y la propiedad CSS `pointer-events` que establece) solo previene las interacciones con un puntero (ratón, lápiz óptico, touch). Los enlaces y controles con `.pe-none` son, de forma predeterminada, aún enfocables y procesables para los usuarios del teclado. Para garantizar que estén completamente neutralizados incluso para los usuarios de teclado, es posible que debas agregar atributos adicionales como `tabindex="-1"` (para evitar que reciban el foco del teclado) y `aria-disabled="true"` (para transmitir el hecho de que están efectivamente deshabilitados para tecnologías de asistencia) y posiblemente usar JavaScript para evitar por completo que sean procesables.
 
 Si es posible, la solución más sencilla es:
 
 * Para controles de formulario, agrega el atributo HTML `disabled`.
 * Para enlaces, elimina el atributo `href`, convirtiéndolo en un enlace ancla o marcador de posición no interactivo.
 
-CSS [#css]
+Personalización del CSS [#css]
 -----------
 
 <ContentSuggestion />

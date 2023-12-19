@@ -7,18 +7,18 @@ import { ContentSuggestion } from '@components/content-suggestion'
 import { DemoIframe } from '@components/demo-iframe'
 import { Callout } from 'nextra/components'
 
-# Offcanvas
+# El componente Offcanvas de Bootstrap
 
 Crea barras laterales ocultas en tu proyecto para navegación, carritos de compras y más con algunas clases y nuestro complemento JavaScript.
 
 <MainBanner />
 
-Cómo funciona [#how-it-works]
+Cómo funciona el componente Offcanvas [#how-it-works]
 -------------------------------
 
-Offcanvas es un componente de la barra lateral que se puede alternar mediante [JavaScript](https://esdocu.dev/javascript) para que aparezca desde el borde izquierdo, derecho, superior o inferior del viewport. Los botones o anclajes se utilizan como activadores que se adjuntan a elementos específicos que alterna, y los atributos `data` se utilizan para invocar nuestro [JavaScript](https://esdocu.dev/javascript).
+Offcanvas es un componente de la barra lateral que se puede alternar mediante JavaScript para que aparezca desde el borde izquierdo, derecho, superior o inferior del viewport. Los botones o anclajes se utilizan como activadores que se adjuntan a elementos específicos que alterna, y los atributos `data` se utilizan para invocar nuestro JavaScript.
 
-* Offcanvas comparte parte del mismo código [JavaScript](https://esdocu.dev/javascript) que los modales. Conceptualmente son bastante similares, pero son complementos separados.
+* Offcanvas comparte parte del mismo código JavaScript que los modales. Conceptualmente son bastante similares, pero son complementos separados.
 * Del mismo modo, algunas variables [fuente Sass](#sass-variables) para los estilos y dimensiones de offcanvas se heredan de las variables del modal.
 * Cuando se muestra, offcanvas incluye un fondo predeterminado en el que se puede hacer clic para ocultar el offcanvas.
 * Similar a los modales, solo se puede mostrar un lienzo a la vez.
@@ -29,7 +29,7 @@ Offcanvas es un componente de la barra lateral que se puede alternar mediante [J
 El efecto de animación de este componente depende de la media query `prefers-reduced-motion`. Consulta la [sección de movimiento reducido de nuestra documentación de accesibilidad](/bootstrap/5.3/getting-started/accessibility/#reduced-motion).
 </Callout>
 
-Ejemplos [#examples]
+Ejemplos del componente Offcanvas [#examples]
 ---------------------
 
 ### Componentes Offcanvas [#offcanvas-components]
@@ -52,7 +52,7 @@ A continuación se muestra un ejemplo offcanvas que se muestra de forma predeter
 
 ### Demostración en vivo [#live-demo]
 
-Utiliza los siguientes botones para mostrar y ocultar un elemento offcanvas mediante [JavaScript](https://esdocu.dev/javascript) que alterna la clase `.show` en un elemento con la clase `.offcanvas`.
+Utiliza los siguientes botones para mostrar y ocultar un elemento offcanvas mediante JavaScript que alterna la clase `.show` en un elemento con la clase `.offcanvas`.
 
 * `.offcanvas` oculta contenido (predeterminado)
 * `.offcanvas.show` muestra contenido
@@ -164,7 +164,7 @@ Cuando el fondo está configurado como estático, el offcanvas no se cerrará al
     ```
 </DemoIframe>
 
-Dark offcanvas [#dark-offcanvas]
+Versión Dark del componente Offcanvas [#dark-offcanvas]
 ---------------------------------
 
 <span className="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
@@ -192,7 +192,7 @@ Cambia la apariencia de los lienzos con utilidades para que coincidan mejor con 
     ```
 </DemoIframe>
 
-Responsive [#responsive]
+Comportamiento responsive del componente [#responsive]
 -------------------------
 
 <br/>
@@ -229,7 +229,7 @@ Las clases responsive offcanvas están disponibles para cada punto de interrupci
 * `.offcanvas-xl`
 * `.offcanvas-xxl`
 
-Ubicación [#placement]
+Ubicación del componente Offcanvas [#placement]
 -----------------------
 
 No hay una ubicación predeterminada para los componentes offcanvas, por lo que debes agregar una de las clases modificadoras a continuación.
@@ -291,15 +291,15 @@ Prueba los ejemplos superior, derecho e inferior a continuación.
 
 <ContentSuggestion />
 
-Accesibilidad [#accessibility]
+Accesibilidad del componente Offcanvas [#accessibility]
 -------------------------------
 
-Dado que el panel offcanvas es conceptualmente un cuadro de diálogo modal, asegúrate de agregar `aria-labelledby="..."`, que hace referencia al título de offcanvas, a `.offcanvas`. Ten en cuenta que no necesitas agregar `role="dialog"` ya que ya lo agregamos a través de [JavaScript](https://esdocu.dev/javascript).
+Dado que el panel offcanvas es conceptualmente un cuadro de diálogo modal, asegúrate de agregar `aria-labelledby="..."`, que hace referencia al título de offcanvas, a `.offcanvas`. Ten en cuenta que no necesitas agregar `role="dialog"` ya que ya lo agregamos a través de JavaScript.
 
-CSS [#css]
+Personalización del CSS del componente [#css]
 -----------
 
-### Variables [#variables]
+### Variables Sass del componente [#variables]
 
 <br/>
 <span className="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
@@ -323,7 +323,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, offcanvas ah
     --#{$prefix}offcanvas-title-line-height: #{$offcanvas-title-line-height};
     ```
 
-### Variables Sass [#sass-variables]
+### Variables Sass generales relacionadas [#sass-variables]
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -343,7 +343,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, offcanvas ah
     $offcanvas-backdrop-opacity:        $modal-backdrop-opacity;
     ```
 
-Uso [#usage]
+Uso del componente Offcanvas [#usage]
 -------------
 
 El complemento offcanvas utiliza algunas clases y atributos para manejar el trabajo pesado:
@@ -355,7 +355,7 @@ El complemento offcanvas utiliza algunas clases y atributos para manejar el trab
 * `.offcanvas-top` oculta el offcanvas en la parte superior
 * `.offcanvas-bottom` oculta el offcanvas en la parte inferior
 
-Agrega un botón para descartar (cerrar) con el atributo `data-bs-dismiss="offcanvas"`, que activa la funcionalidad de [JavaScript](https://esdocu.dev/javascript). Asegúrate de utilizar el elemento `<button>` para lograr un comportamiento adecuado en todos los dispositivos.
+Agrega un botón para descartar (cerrar) con el atributo `data-bs-dismiss="offcanvas"`, que activa la funcionalidad de JavaScript. Asegúrate de utilizar el elemento `<button>` para lograr un comportamiento adecuado en todos los dispositivos.
 
 ### Vía atributos de datos [#via-data-attributes]
 
@@ -392,7 +392,7 @@ Habilitar manualmente con:
 
 ### Opciones [#options]
 
-Como las opciones se pueden pasar a través de atributos de datos o [JavaScript](https://esdocu.dev/javascript), puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
+Como las opciones se pueden pasar a través de atributos de datos o JavaScript, puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
 
 A partir de Bootstrap 5.2.0, todos los componentes admiten un atributo de datos **experimental** reservado `data-bs-config` que puede albergar datos simples de configuración del componente como una cadena JSON. Cuando un elemento tiene los atributos `data-bs-config='{"delay":0, "title":123}'` y `data-bs-title="456"`, el valor final de `title` será `456` y los atributos de datos separados sobrescribirán los valores proporcionados en `data-bs-config`. Además, los atributos de datos existentes pueden albergar valores JSON como `data-bs-delay='{"show":0,"hide":150}'`.
 
