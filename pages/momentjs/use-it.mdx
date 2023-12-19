@@ -166,9 +166,13 @@ meteor add momentjs:moment
 
 ## Usar Moment con Browserify [#browserify]
 
+Puedes también instalar Moment.js para utilizarlo con [Browserify](https://browserify.org/). El primer paso es la instalación:
+
 ```sh npm2yarn
 npm install moment
 ```
+
+Luego puedes utilizar Moment.js en los archivos que necesites:
 
 ```javascript filename="JavaScript"
 var moment = require('moment');
@@ -202,9 +206,13 @@ console.log(moment.locale()); // cs
 
 ## Usar Moment con Webpack [#webpack]
 
+Con [webpack](https://webpack.js.org/) también es posible utilizar Moment.js. Primero realizas la instalación con npm:
+
 ```sh npm2yarn
 npm install moment
 ```
+
+Luego lo utilizas en tu código de la siguiente manera:
 
 ```javascript filename="JavaScript"
 var moment = require('moment');
@@ -249,13 +257,13 @@ Importar y utilizar en tu archivo Typecript:
 
 {/* <!-- skip-example --> */}
 
-```javascript filename="JavaScript"
+```typescript filename="TypeScript"
 const moment = require('moment');
 
 let now = moment().format('LLLL');
 ```
 
-**Nota:** Si tienes problemas para importar moment
+**Nota:** Si tienes problemas para importar moment:
 
 Para _TypeScript 2.x_ intenta agregar `"moduleResolution": "node"` en `compilerOptions` en tu archivo `tsconfig.json`
 
@@ -263,7 +271,7 @@ Para _TypeScript 1.x_ intenta agregar `"allowSyntheticDefaultImports": true` en 
 
 {/* <!-- skip-example --> */}
 
-```javascript filename="JavaScript"
+```typescript filename="TypeScript"
 import moment from 'moment';
 ```
 
@@ -273,7 +281,7 @@ Para utilizar `moment.locale`, primero debes importar el idioma al que se dirige
 
 {/* <!-- skip-example --> */}
 
-```javascript filename="JavaScript"
+```typescript filename="TypeScript"
 import * as moment from 'moment';
 import 'moment/locale/pt-br';
 
