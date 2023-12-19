@@ -16,7 +16,7 @@ moment().format(String);
 
 Esta es la opción de visualización más sólida. Toma una cadena de tokens y los reemplaza con sus valores correspondientes.
 
-```javascript
+```javascript filename="JavaScript"
 moment().format();                                // "2014-09-08T08:02:17-05:00" (ISO 8601, no fractional seconds)
 moment().format("dddd, MMMM Do YYYY, h:mm:ss a"); // "Sunday, February 14th 2010, 3:25:50 pm"
 moment().format("ddd, hA");                       // "Sun, 3PM"
@@ -123,7 +123,7 @@ Hay variaciones de mayúsculas y minúsculas en los mismos formatos. La versión
 
 Para escapar caracteres en cadenas de formato, puedes colocar los caracteres entre corchetes.
 
-```javascript
+```javascript filename="JavaScript"
 moment().format('[today] dddd'); // 'today Sunday'
 ```
 
@@ -147,7 +147,7 @@ En ciertos casos, una zona horaria local (como `Atlantic/Reykjavik`) puede tener
 
 Cambiar el valor de `moment.defaultFormat` solo afectará el formato y no afectará el análisis. Por ejemplo:
 
-```javascript
+```javascript filename="JavaScript"
 moment.defaultFormat = "DD.MM.YYYY HH:mm";
 // parse con .toDate()
 moment('20.07.2018 09:19').toDate() // Invalid date
@@ -164,13 +164,13 @@ moment().fromNow(Boolean);
 
 Una forma común de mostrar el tiempo es manejada por `moment#fromNow`. A esto a veces se le llama tiempo atrás o tiempo relativo.
 
-```javascript
+```javascript filename="JavaScript"
 moment([2007, 0, 29]).fromNow(); // 4 years ago
 ```
 
 Si pasas `true`, puedes obtener el valor sin el sufijo.
 
-```javascript
+```javascript filename="JavaScript"
 moment([2007, 0, 29]).fromNow();     // 4 years ago
 moment([2007, 0, 29]).fromNow(true); // 4 years
 ```
@@ -207,7 +207,7 @@ moment().from(Moment|String|Number|Date|Array, Boolean);
 
 Es posible que desees mostrar un moment en relación con un tiempo distinto al actual. En ese caso, puedes usar `moment#from`.
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment([2007, 0, 28]);
 var b = moment([2007, 0, 29]);
 a.from(b) // "a day ago"
@@ -215,7 +215,7 @@ a.from(b) // "a day ago"
 
 El primer parámetro es cualquier cosa que puedas pasar a `moment()` o a un `Moment` existente.
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment([2007, 0, 28]);
 var b = moment([2007, 0, 29]);
 a.from(b);                     // "a day ago"
@@ -226,7 +226,7 @@ a.from("2007-01-29");          // "a day ago"
 
 Al igual que `moment#fromNow`, pasar `true` como segundo parámetro devuelve un valor sin el sufijo. Esto es útil siempre que necesites tener un período de tiempo legible por humanos.
 
-```javascript
+```javascript filename="JavaScript"
 var start = moment([2007, 0, 5]);
 var end   = moment([2007, 0, 10]);
 end.from(start);       // "in 5 days"
@@ -249,13 +249,13 @@ Esto es similar a [`moment.fromNow`](/momentjs/displaying#fromnow), pero proporc
 Esto es similar a [`moment.to`](/momentjs/displaying#to), pero está en mayúsculas y minúsculas especiales para el moment actual. Utiliza `moment.to`, si deseas controlar los dos puntos finales del intervalo.
 
 
-```javascript
+```javascript filename="JavaScript"
 moment([2007, 0, 29]).toNow(); // in 4 years
 ```
 
 Si pasas `true`, puedes obtener el valor sin el prefijo.
 
-```javascript
+```javascript filename="JavaScript"
 moment([2007, 0, 29]).toNow();     // in 4 years
 moment([2007, 0, 29]).toNow(true); // 4 years
 ```

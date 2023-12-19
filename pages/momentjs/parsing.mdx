@@ -33,7 +33,7 @@ moment({});
 
 Para obtener la fecha y hora actuales, simplemente llama a `moment()` sin parámetros.
 
-```javascript
+```javascript filename="JavaScript"
 var now = moment();
 ```
 
@@ -53,7 +53,7 @@ moment(String);
 
 Al crear un moment a partir de una cadena, primero verificamos si la cadena coincide con los formatos conocidos [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), luego verificamos si la cadena coincide con [RFC 2822 de Fecha y hora](https://tools.ietf.org/html/rfc2822#section-3.3) antes de pasar al comportamiento por defecto de `new Date(string)` si no se encuentra un formato conocido.
 
-```javascript
+```javascript filename="JavaScript"
 var day = moment("1995-12-25");
 ```
 
@@ -122,7 +122,7 @@ Si se incluye una parte de tiempo, también se puede incluir un desplazamiento d
 
 Si una cadena no coincide con ninguno de los formatos anteriores y no se puede analizar con `Date.parse`, `moment#isValid` devolverá falso.
 
-```javascript
+```javascript filename="JavaScript"
 moment("una fecha no real").isValid(); // false
 ```
 
@@ -167,26 +167,26 @@ moment(String, String, String, Boolean);
 
 Si conoces el formato de una cadena de entrada, puedes usarlo para analizar un moment.
 
-```javascript
+```javascript filename="JavaScript"
 moment("12-25-1995", "MM-DD-YYYY");
 ```
 
 El parser ignora los caracteres no alfanuméricos de forma predeterminada, por lo que los siguientes ejemplos devolverán lo mismo.
 
-```javascript
+```javascript filename="JavaScript"
 moment("12-25-1995", "MM-DD-YYYY");
 moment("12/25/1995", "MM-DD-YYYY");
 ```
 
 Es posible que obtengas resultados inesperados al analizar tanto la fecha como la hora. Es posible que el siguiente ejemplo no se analice como esperaba:
 
-```javascript
+```javascript filename="JavaScript"
 moment('24/12/2019 09:15:00', "DD MM YYYY hh:mm:ss");
 ```
 
 Puedes utilizar el modo estricto, que identificará el error de análisis y establecerá el objeto Moment como no válido:
 
-```javascript
+```javascript filename="JavaScript"
 moment('24/12/2019 09:15:00', "DD MM YYYY hh:mm:ss", true);
 ```
 
@@ -281,7 +281,7 @@ Por ejemplo, `.12` siempre es 120 milisegundos; pasar `SS` no hará que se inter
 
 A menos que especifiques un desplazamiento de zona horaria, el análisis de una cadena creará una fecha en la zona horaria actual.
 
-```js
+```javascript filename="JavaScript"
 moment("2010-10-20 4:30",       "YYYY-MM-DD HH:mm");   // Analizado como 4:30 local time
 moment("2010-10-20 4:30 +0000", "YYYY-MM-DD HH:mm Z"); // Analizado como 4:30 UTC
 ```
@@ -306,7 +306,7 @@ El soporte de era se agregó en **2.25.0**. Los tokens/API todavía están cambi
 
 Si el moment resultante de la entrada analizada no existe, `moment#isValid` devolverá falso.
 
-```js
+```javascript filename="JavaScript"
 moment("2010 13",           "YYYY MM").isValid();     // false (no es un mes real)
 moment("2010 11 31",        "YYYY MM DD").isValid();  // false (no es un día real)
 moment("2010 2 29",         "YYYY MM DD").isValid();  // false (no es un año bisiesto)
@@ -315,7 +315,7 @@ moment("2010 notamonth 29", "YYYY MMM DD").isValid(); // false (no es un nombre 
 
 A partir de la versión **2.0.0**, se puede pasar una clave local como tercer parámetro a `moment()` y `moment.utc()`.
 
-```js
+```javascript filename="JavaScript"
 moment('2012 juillet', 'YYYY MMM', 'fr');
 moment('2012 July',    'YYYY MMM', 'en');
 moment('2012 July',    'YYYY MMM', ['qj', 'en']);
@@ -325,19 +325,19 @@ El analizador de Moment es muy indulgente y esto puede provocar un comportamient
 
 Por ejemplo, se puede observar el siguiente comportamiento:
 
-```javascript
+```javascript filename="JavaScript"
 moment('2016 is a date', 'YYYY-MM-DD').isValid() // true, 2016 fue considerado
 ```
 
 Antes de **2.13.0**, el analizador mostraba el siguiente comportamiento. Esto ha sido corregido.
 
-```javascript
+```javascript filename="JavaScript"
 moment('I am spartacus', 'h:hh A').isValid();     // true - 'am' se toma como una 'A' flag.
 ```
 
 A partir de la versión **2.3.0**, puedes especificar un valor booleano para el último argumento para que Moment utilice un análisis estricto. El análisis estricto requiere que el formato y la entrada coincidan exactamente, *incluidos los delimitadores*.
 
-```javascript
+```javascript filename="JavaScript"
 moment('It is 2012-05-25', 'YYYY-MM-DD').isValid();       // true
 moment('It is 2012-05-25', 'YYYY-MM-DD', true).isValid(); // false
 moment('2012-05-25',       'YYYY-MM-DD', true).isValid(); // true
@@ -346,7 +346,7 @@ moment('2012.05.25',       'YYYY-MM-DD', true).isValid(); // false
 
 Puedes utilizar tanto la configuración regional (locale) como el modo estricto.
 
-```javascript
+```javascript filename="JavaScript"
 moment('2012-10-14', 'YYYY-MM-DD', 'fr', true);
 ```
 
@@ -356,7 +356,7 @@ El análisis estricto suele ser la mejor opción de análisis. Para obtener más
 
 De forma predeterminada, se supone que los años de dos dígitos por encima de 68 pertenecen a la década de 1900 y los años de 68 o menos pertenecen a la década de 2000. Esto se puede cambiar reemplazando el método `moment.parseTwoDigitYear`. El único argumento de este método es una cadena que contiene los dos años ingresados por el usuario y debe devolver el año como un número entero.
 
-```javascript
+```javascript filename="JavaScript"
 moment.parseTwoDigitYear = function(yearString) {
     return parseInt(yearString) + 2000;
 }
@@ -366,7 +366,7 @@ moment.parseTwoDigitYear = function(yearString) {
 
 Desde la versión **2.11.0** se admite el análisis de `hmm`, `Hmm`, `hmmss` y `Hmmss`:
 
-```javascript
+```javascript filename="JavaScript"
 moment("123", "hmm").format("HH:mm") === "01:23"
 moment("1234", "hmm").format("HH:mm") === "12:34"
 ```
@@ -381,7 +381,7 @@ Si no conoces el formato exacto de una cadena de entrada, pero sabes que podría
 
 Esto es lo mismo que [Cadena + Formato](/momentjs/parsing#string-format), solo que intentará hacer coincidir la entrada con múltiples formatos.
 
-```js
+```javascript filename="JavaScript"
 moment("12-25-1995", ["MM-DD-YYYY", "YYYY-MM-DD"]);
 ```
 
@@ -391,14 +391,14 @@ A partir de la versión **2.3.0**, Moment utiliza algunas heurísticas simples p
   * Prefiere formatos que analicen más cadena que menos y usen más formato que menos, es decir, prefiere un análisis más estricto.
   * Prefiere formatos anteriores en el array que posteriores.
 
-```js
+```javascript filename="JavaScript"
 moment("29-06-1995", ["MM-DD-YYYY", "DD-MM", "DD-MM-YYYY"]); // utiliza el último formato
 moment("05-06-1995", ["MM-DD-YYYY", "DD-MM-YYYY"]);          // utiliza el primer formato
 ```
 
 También puedes especificar un argumento local y estricto. Funcionan igual que el caso de formato único.
 
-```js
+```javascript filename="JavaScript"
 moment("29-06-1995", ["MM-DD-YYYY", "DD-MM-YYYY"], 'fr');       // utiliza la configuración regional 'fr'
 moment("29-06-1995", ["MM-DD-YYYY", "DD-MM-YYYY"], true);       // utiliza análisis estricto
 moment("05-06-1995", ["MM-DD-YYYY", "DD-MM-YYYY"], 'fr', true); // utiliza la configuración regional 'fr' y un análisis estricto
@@ -418,7 +418,7 @@ moment(String, [..., moment.ISO_8601, ...], [String], [Boolean]);
 
 Para especificar el análisis iso-8601, utiliza la constante `moment.ISO_8601`.
 
-```javascript
+```javascript filename="JavaScript"
 moment("2010-01-01T05:06:07", moment.ISO_8601);
 moment("2010-01-01T05:06:07", ["YYYY", moment.ISO_8601]);
 ```
@@ -443,7 +443,7 @@ A partir de la versión **2.20.0**, los siguientes formatos HTML5 están disponi
 moment({unit: value, ...});
 ```
 
-```javascript
+```javascript filename="JavaScript"
 moment({ hour:15, minute:10 });
 moment({ y    :2010, M     :3, d   :5, h    :15, m      :10, s      :3, ms          :123});
 moment({ year :2010, month :3, day :5, hour :15, minute :10, second :3, millisecond :123});
@@ -472,7 +472,7 @@ moment(Number);
 
 De manera similar a `new Date(Number)`, puedes crear un momento pasando un valor entero que represente el número de *milisegundos* desde la época Unix (1 de enero de 1970 a las 12 a. m. UTC).
 
-```javascript
+```javascript filename="JavaScript"
 var day = moment(1318781876406);
 ```
 
@@ -486,19 +486,19 @@ moment.unix(Number)
 
 Para crear un moment a partir de una marca de tiempo de Unix (*segundos* desde la época de Unix), usa `moment.unix(Number)`.
 
-```javascript
+```javascript filename="JavaScript"
 var day = moment.unix(1318781876);
 ```
 
 Esto se implementa como `moment(timestamp * 1000)`, por lo que se incluyen segundos parciales en la marca de tiempo de entrada.
 
-```javascript
+```javascript filename="JavaScript"
 var day = moment.unix(1318781876.721);
 ```
 
 **Nota:** A pesar de que las marcas de tiempo de Unix están basadas en UTC, esta función crea un objeto moment en modo *local*. Si necesitas UTC, luego llama a `.utc()`, como en:
 
-```javascript
+```javascript filename="JavaScript"
 var day = moment.unix(1318781876).utc();
 ```
 
@@ -510,7 +510,7 @@ moment(Date);
 
 Puedes crear un `Moment` con un objeto `Date` nativo de Javascript preexistente.
 
-```javascript
+```javascript filename="JavaScript"
 var day = new Date(2011, 9, 16);
 var dayWrapper = moment(day);
 ```
@@ -527,13 +527,13 @@ Puedes crear un moment con una serie de números que reflejen los parámetros pa
 
 `[year, month, day, hour, minute, second, millisecond]`
 
-```javascript
+```javascript filename="JavaScript"
 moment([2010, 1, 14, 15, 25, 50, 125]); // February 14th, 3:25:50.125 PM
 ```
 
 Cualquier valor posterior al año es opcional y, de forma predeterminada, será el número más bajo posible.
 
-```javascript
+```javascript filename="JavaScript"
 moment([2010]);        // January 1st
 moment([2010, 6]);     // July 1st
 moment([2010, 6, 10]); // July 10th
@@ -541,7 +541,7 @@ moment([2010, 6, 10]); // July 10th
 
 La construcción con un array creará una fecha en la zona horaria actual. Para crear una fecha a partir de un array en UTC, usa `moment.utc(Number[])`.
 
-```javascript
+```javascript filename="JavaScript"
 moment.utc([2010, 1, 14, 15, 25, 50, 125]);
 ```
 
@@ -551,7 +551,7 @@ Esto suele ser causa de frustración, especialmente con los meses, ¡así que to
 
 Si la fecha representada por el array no existe, `moment#isValid` devolverá falso.
 
-```javascript
+```javascript filename="JavaScript"
 moment([2010, 12]).isValid();     // false (no es un mes real)
 moment([2010, 10, 31]).isValid(); // false (no es un día real)
 moment([2010, 1, 29]).isValid();  // false (no es un año real)
@@ -567,7 +567,7 @@ Microsoft Web API devuelve fechas JSON en el formato ISO-8601 adecuado de forma 
 
 Si se pasa una cadena que coincide con este formato, se analizará correctamente.
 
-```javascript
+```javascript filename="JavaScript"
 moment("/Date(1198908717056-0700)/"); // 2007-12-28T23:11:57.056-07:00
 ```
 
@@ -581,7 +581,7 @@ Todos los moments son mutables. Si quieres un clon de un moment, puedes hacerlo 
 
 Llamar a `moment()` en un moment lo clonará.
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment([2012]);
 var b = moment(a);
 a.year(2000);
@@ -590,7 +590,7 @@ b.year(); // 2012
 
 Además, puedes llamar a `moment#clone` para clonar un moment.
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment([2012]);
 var b = a.clone();
 a.year(2000);
@@ -622,21 +622,21 @@ Esto nos lleva a una característica interesante de Moment.js, el modo UTC.
 
 Mientras estés en modo UTC, todos los métodos de visualización se mostrarán en hora UTC en lugar de en hora local.
 
-```javascript
+```javascript filename="JavaScript"
 moment().format();     // 2013-02-04T10:35:24-08:00
 moment.utc().format(); // 2013-02-04T18:35:24+00:00
 ```
 
 Además, mientras estés en modo UTC, todos los getters y setters utilizarán internamente los métodos `Date#getUTC*` y `Date#setUTC*` en lugar de los métodos `Date#get*` y `Date#set*`.
 
-```javascript
+```javascript filename="JavaScript"
 moment.utc().seconds(30).valueOf() === new Date().setUTCSeconds(30);
 moment.utc().seconds()   === new Date().getUTCSeconds();
 ```
 
 Es importante tener en cuenta que, aunque las visualizaciones anteriores difieren, ambas son el mismo momento en el tiempo.
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment();
 var b = moment.utc();
 a.format();  // 2013-02-04T10:35:24-08:00
@@ -650,7 +650,7 @@ Cualquier moment creado con `moment.utc()` estará en modo UTC, y cualquier mome
 Para cambiar de UTC a la hora local, puede utilizar [moment#utc](/momentjs/manipulating#utc) o [moment#local](/momentjs/manipulating#local).
 
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment.utc([2011, 0, 1, 8]);
 a.hours(); // 8 UTC
 a.local();
@@ -670,7 +670,7 @@ moment.parseZone(String, String, String, Boolean)
 
 Las funciones de análisis de cadenas de Moment como `moment(string)` y `moment.utc(string)` aceptan información de desplazamiento si se proporciona, pero convierten el objeto Moment resultante a hora local o UTC. Por el contrario, `moment.parseZone()` analiza la cadena pero mantiene el objeto Moment resultante en una zona horaria con desplazamiento fijo con el desplazamiento proporcionado en la cadena.
 
-```javascript
+```javascript filename="JavaScript"
 moment.parseZone("2013-01-01T00:00:00-13:00").utcOffset(); // -780 ("-13:00" en minutos totales)
 moment.parseZone('2013 01 01 05 -13:00', 'YYYY MM DD HH ZZ').utcOffset(); // -780  ("-13:00" en minutos totales)
 moment.parseZone('2013-01-01-13:00', ['DD MM YYYY ZZ', 'YYYY MM DD ZZ']).utcOffset(); // -780  ("-13:00" en minutos totales);
@@ -678,7 +678,7 @@ moment.parseZone('2013-01-01-13:00', ['DD MM YYYY ZZ', 'YYYY MM DD ZZ']).utcOffs
 
 También te permite pasar argumentos locales y estrictos.
 
-```javascript
+```javascript filename="JavaScript"
 moment.parseZone("2013 01 01 -13:00", 'YYYY MM DD ZZ', true).utcOffset(); // -780  ("-13:00" en minutos totales)
 moment.parseZone("2013-01-01-13:00", 'YYYY MM DD ZZ', true).utcOffset(); // NaN (no pasa el chequeo estricto)
 moment.parseZone("2013 01 01 -13:00", 'YYYY MM DD ZZ', 'fr', true).utcOffset(); // -780 (con argumentos locale y estrictos)
@@ -687,7 +687,7 @@ moment.parseZone("2013 01 01 -13:00", ['DD MM YYYY ZZ', 'YYYY MM DD ZZ'], 'fr', 
 
 `moment.parseZone` es equivalente a analizar la cadena y usar `moment#utcOffset` para analizar la zona.
 
-```javascript
+```javascript filename="JavaScript"
 var s = "2013-01-01T00:00:00-13:00";
 moment(s).utcOffset(s);
 ```
@@ -700,7 +700,7 @@ moment().isValid();
 
 Moment aplica reglas de inicialización más estrictas que el constructor `Date`.
 
-```js
+```javascript filename="JavaScript"
 new Date(2013, 25, 14).toString(); // "Sat Feb 14 2015 00:00:00 GMT-0500 (EST)"
 moment([2015, 25, 35]).format();   // 'Invalid date'
 ```
@@ -731,7 +731,7 @@ Además, si el Moment se analiza en modo estricto, estas banderas deben estar va
 
 Además, puedes utilizar `moment#invalidAt` para determinar qué unidad de fecha se desbordó.
 
-```javascript
+```javascript filename="JavaScript"
 var m = moment("2011-10-10T10:20:90");
 m.isValid(); // false
 m.invalidAt(); // 5 for seconds
@@ -821,7 +821,7 @@ Después de crear un objeto moment, se puede acceder a todas las entradas con el
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 moment("2013-01-02", "YYYY-MM-DD", true).creationData() === {
     input: "2013-01-02",
     format: "YYYY-MM-DD",
@@ -841,13 +841,13 @@ Puedes crear un objeto moment especificando solo algunas de las unidades, y el r
 
 Por defecto el momento actual, cuando no se pasa nada:
 
-```javascript
+```javascript filename="JavaScript"
 moment();  // fecha y hora actual
 ```
 
 Por defecto es hoy, cuando solo pasan horas, minutos, segundos y milisegundos:
 
-```javascript
+```javascript filename="JavaScript"
 moment(5, "HH");  // hoy, 5:00:00.000
 moment({hour: 5});  // hoy, 5:00:00.000
 moment({hour: 5, minute: 10});  // hoy, 5:10.00.000
@@ -857,14 +857,14 @@ moment({hour: 5, minute: 10, seconds: 20, milliseconds: 300});  // hoy, 5:10.20.
 
 Valores por defecto para mes y año, cuando solo se pasan días y unidades más pequeñas:
 
-```javascript
+```javascript filename="JavaScript"
 moment(5, "DD");  // este mes, 5to día del mes
 moment("4 05:06:07", "DD hh:mm:ss");  // este mes, 4to día del mes, 05:06:07.000
 ```
 
 Valores por defecto para año, si no se especifica el año:
 
-```javascript
+```javascript filename="JavaScript"
 moment(3, "MM");  // este año, tercer mes (marzo)
 moment("Apr 4 05:06:07", "MMM DD hh:mm:ss");  // este año, 4 de abril, 05:06:07.000
 ```

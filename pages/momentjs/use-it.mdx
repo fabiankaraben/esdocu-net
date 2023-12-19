@@ -19,7 +19,7 @@ Si deseas probar los códigos de muestra a continuación, simplemente abre la co
 
 Puedes instalar Moment.js en tu proyecto Node.js ejecutando el siguiente comando:
 
-```
+```sh npm2yarn
 npm install moment
 ```
 
@@ -48,7 +48,7 @@ Si también deseas incluir *Moment Timezone*, consulta la [documentación separa
 
 Si tu preferencia es utilizar Moment.js directamente en el navegador web, puedes hacerlo añadiendo el paquete `moment.js` previamente descargado o bien utilizando uno de los CDNs disponibles:
 
-```html
+```html filename="HTML"
 <script src="moment.js"></script>
 <script>
 	moment().format();
@@ -61,7 +61,7 @@ Si tu preferencia es utilizar Moment.js directamente en el navegador web, puedes
 
 Otra opción disponible es [Bower](https://bower.io). Puedes instalar Moment.js en tu proyecto utilizando Bower de la siguiente manera:
 
-```
+```sh filename="Terminal"
 bower install --save moment
 ```
 
@@ -75,7 +75,7 @@ Para empezar, es posible que hayas adquirido *moment* a través de *bower* o *no
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 requirejs.config({
   packages: [{
     name: 'moment',
@@ -91,7 +91,7 @@ Con la configuración anterior, puedes requerir el núcleo con `moment` y el loc
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 // Solo necesita el core o núcleo.
 define(['moment'], function (moment) {
 	console.log(moment().format('LLLL'));  // 'Friday, June 24, 2016 1:42 AM'
@@ -130,7 +130,7 @@ Moment seguirá creando un `moment` global, que es útil para complementos y otr
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 require.config({
     config: {
         moment: {
@@ -152,32 +152,32 @@ __Nota:__ A partir de la versión **2.9.0**, moment se exporta como un módulo a
 
 Si tu proyecto es en .NET puedes instalar Moment.js utilizando [NuGet](https://www.nuget.org) instalando particularmente el paquete [Moment.js](https://www.nuget.org/packages/Moment.js) de la siguiente manera:
 
-```
+```sh filename="Terminal"
 Install-Package Moment.js
 ```
 
 ## Instalar Moment con Meteor [#meteor]
 
-Para utilizar Moment.js en [Meteor](https://www.meteor.com) utilizando el paquete disponible en [Atmosphere](https://atmospherejs.com), específicamente el paquete [momentjs:moment](https://atmospherejs.com/momentjs/moment). La instalación se realiza con el siguiente comando:
+Para instalar Moment.js con [Meteor](https://www.meteor.com) utilizando el paquete disponible en [Atmosphere](https://atmospherejs.com), específicamente el paquete [momentjs:moment](https://atmospherejs.com/momentjs/moment). La instalación se realiza con el siguiente comando:
 
-```
+```sh filename="Terminal"
 meteor add momentjs:moment
 ```
 
 ## Usar Moment con Browserify [#browserify]
 
-```
+```sh npm2yarn
 npm install moment
 ```
 
-```javascript
+```javascript filename="JavaScript"
 var moment = require('moment');
 moment().format();
 ```
 
 **Nota:** Hay un error que impide que se cargue `moment.locale`.
 
-```javascript
+```javascript filename="JavaScript"
 var moment = require('moment');
 moment.locale('cs');
 console.log(moment.locale()); // en
@@ -185,7 +185,7 @@ console.log(moment.locale()); // en
 
 Utiliza la siguiente solución
 
-```javascript
+```javascript filename="JavaScript"
 var moment = require('moment');
 require('moment/locale/cs');
 console.log(moment.locale()); // cs
@@ -193,7 +193,7 @@ console.log(moment.locale()); // cs
 
 Para incluir todas las configuraciones regionales
 
-```javascript
+```javascript filename="JavaScript"
 var moment = require('moment');
 require("moment/min/locales.min");
 moment.locale('cs');
@@ -202,11 +202,11 @@ console.log(moment.locale()); // cs
 
 ## Usar Moment con Webpack [#webpack]
 
-```
+```sh npm2yarn
 npm install moment
 ```
 
-```javascript
+```javascript filename="JavaScript"
 var moment = require('moment');
 moment().format();
 ```
@@ -215,7 +215,7 @@ moment().format();
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 // webpack.config.js
 const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 
@@ -241,7 +241,7 @@ A partir de la versión **2.13.0**, Moment incluye un archivo de definición par
 
 Instalar a través de NPM:
 
-```
+```sh npm2yarn
 npm install moment
 ```
 
@@ -249,7 +249,7 @@ Importar y utilizar en tu archivo Typecript:
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 const moment = require('moment');
 
 let now = moment().format('LLLL');
@@ -263,7 +263,7 @@ Para _TypeScript 1.x_ intenta agregar `"allowSyntheticDefaultImports": true` en 
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 import moment from 'moment';
 ```
 
@@ -273,7 +273,7 @@ Para utilizar `moment.locale`, primero debes importar el idioma al que se dirige
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 import * as moment from 'moment';
 import 'moment/locale/pt-br';
 
@@ -291,7 +291,7 @@ Luego impórtalo a tu página.
 
 {/* <!-- skip-example --> */}
 
-```js
+```html filename="HTML"
 <script src="system.js"></script>
 <script>
   System.config({
@@ -306,7 +306,7 @@ Si necesitas que moment se cargue como global, puedes hacerlo con la configuraci
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 System.config({
   meta: {
     'moment': { format: 'global' }
@@ -318,7 +318,7 @@ Alternativamente, para proporcionar Moment como global solo para una dependencia
 
 {/* <!-- skip-example --> */}
 
-```javascript
+```javascript filename="JavaScript"
 System.config({
   meta: {
     'path/to/global-file.js': {

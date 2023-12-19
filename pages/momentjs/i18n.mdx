@@ -31,7 +31,7 @@ Para cargar una configuración regional, pasa la clave y los valores de cadena a
 
 Se pueden encontrar más detalles sobre cada una de las partes del paquete local en la sección [personalización](/momentjs/customization).
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('fr', {
     months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
     monthsShort : 'janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.'.split('_'),
@@ -98,7 +98,7 @@ Los detalles sobre `week.dow` y `week.doy` se pueden encontrar en la sección [p
 
 Una vez que cargues una configuración regional, se convierte en la configuración regional activa. Para cambiar las configuraciones regionales activas, simplemente llama a `moment.locale` con la clave de una configuración regional cargada.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('fr');
 moment(1316116057189).fromNow(); // il y a une heure
 moment.locale('en');
@@ -109,7 +109,7 @@ A partir de **2.21.0**, Moment anunciará mediante `console.warn` si la configur
 
 A partir de **2.8.0**, cambiar la configuración regional (locale) global no afecta las instancias existentes.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('fr');
 var m = moment(1316116057189);
 m.fromNow(); // il y a une heure
@@ -121,26 +121,26 @@ moment(1316116057189).fromNow(); // an hour ago
 
 `moment.locale` devuelve la configuración regional utilizada. Esto es útil porque Moment no cambiará las configuraciones regionales si no conoce la que tú especificas.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('fr'); // 'fr'
 moment.locale('tq'); // 'fr'
 ```
 
 También puedes especificar una lista de configuraciones regionales y Moment usará la primera para la que tenga localizaciones.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale(['tq', 'fr']); // 'fr'
 ```
 
 Moment también probará las subcadenas del especificador de configuración regional (locale) desde la más específica hasta la menos específica hasta que encuentre una configuración regional que conozca. Esto es útil cuando se proporciona a Moment una cadena de configuración regional extraída del entorno del usuario, como `window.navigator.language`.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('en-nz'); // 'en'
 ```
 
 Finalmente, Moment buscará de forma inteligente en una serie de configuraciones regionales y sus subcadenas.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale(['en-nz', 'en-au']); // 'en-au', not 'en'
 ```
 
@@ -171,7 +171,7 @@ moment().lang(String|String[]|Boolean);
 
 Una configuración regional global puede ser problemática cuando se pasan moments que pueden necesitar ser formateados en una configuración regional diferente.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('en'); // por defecto la configuración regional es inglés
 var localLocale = moment();
 
@@ -194,7 +194,7 @@ moment().format('LLLL'); // Domingo 15 Julio 2012 11:01
 
 Si llamas a `moment#locale` sin parámetros, obtendrás la configuración regional que se usaría en ese momento.
 
-```javascript
+```javascript filename="JavaScript"
 var fr = moment().locale('fr');
 fr.localeData().months(moment([2012, 0])) // "janvier"
 fr.locale('en');

@@ -7,7 +7,7 @@ description: Moment.js es muy fácil de personalizar. En general, debes crear un
 
 Moment.js es muy fácil de personalizar. En general, debes crear una configuración regional con tus personalizaciones.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('en-my-settings', {
     // customizations.
 });
@@ -16,7 +16,7 @@ moment.locale('en-my-settings', {
 Puedes eliminar una configuración regional previamente definida pasando `null` como segundo argumento.
 La configuración regional eliminada ya no estará disponible para su uso.
 
-```javascript
+```javascript filename="JavaScript"
 moment.locale('fr'); // 'fr'
 moment.locale('en'); // 'en'
 moment.locale('fr', null);
@@ -25,7 +25,7 @@ moment.locale('fr'); // 'en'
 
 A partir de **2.12.0** es posible crear una configuración regional (locale) que herede de una configuración regional padre.
 
-```javascript
+```javascript filename="JavaScript"
 moment.defineLocale('en-foo', {
   parentLocale: 'en',
   /* */
@@ -36,7 +36,7 @@ Las propiedades que no se especifican en la configuración regional se heredará
 
 A partir de **2.16.0** es posible definir una configuración regional con un padre que no se ha definido ni cargado.
 
-```javascript
+```javascript filename="JavaScript"
 moment.defineLocale('fakeLocale', {parentLocale:'xyz'})
 ```
 
@@ -44,7 +44,7 @@ A partir de **2.21.0**, al intentar crear un moment con la configuración region
 
 A partir de **2.12.0** también es posible actualizar las propiedades de una configuración regional.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
   /**/
 });
@@ -54,7 +54,7 @@ Todas las propiedades especificadas se actualizarán, mientras que otras permane
 
 Para revertir una actualización utiliza:
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', null);
 ```
 
@@ -102,7 +102,7 @@ moment.lang('en', {
 
 `Locale#months` debe ser un array de los nombres de los meses.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     months : [
         "January", "February", "March", "April", "May", "June", "July",
@@ -113,7 +113,7 @@ moment.updateLocale('en', {
 
 Si necesitas más procesamiento para calcular el nombre del mes (por ejemplo, si hay diferente gramática para diferentes formatos), `Locale#months` puede ser una función con la siguiente firma. Siempre debería devolver el nombre de un mes.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     months : function (momentToFormat, format) {
         // momentToFormat es el momento en el que se está formateando 
@@ -129,7 +129,7 @@ moment.updateLocale('en', {
 
 A partir de la versión **2.11.0** los meses también pueden ser un objeto, especificando las formas `standalone` y `format` (nominativo y acusativo). La expresión regular que se ejecuta en el formato para comprobar si se debe utilizar el formato `format` es `/D[oD]?(\[[^\[\]]*\]|\s+)+MMMM?/`. A partir de la versión **2.14.0** se puede especificar uno diferente con la clave `isFormat`.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     months : {
          format: 'sausio_vasario_kovo_balandžio_gegužės_birželio_liepos_rugpjūčio_rugsėjo_spalio_lapkričio_gruodžio'.split('_'),
@@ -181,7 +181,7 @@ moment.lang('en', {
 
 `Locale#monthsShort` debe ser un array de abreviaturas de meses.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     monthsShort : [
         "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -192,7 +192,7 @@ moment.updateLocale('en', {
 
 Al igual que `Locale#months`, `Locale#monthsShort` también puede ser una función de devolución de llamada.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     monthsShort : function (momentToFormat, format) {
         if (/^MMMM/.test(format)) {
@@ -206,7 +206,7 @@ moment.updateLocale('en', {
 
 **Nota:** A partir de la versión **2.11.0**, al igual que `Locale#months`, `Locale#monthsShort` puede ser un objeto con casos `standalone` y `format`.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     monthsShort : {
         format: 'янв_фев_мар_апр_мая_июня_июля_авг_сен_окт_ноя_дек'.split('_'),
@@ -259,7 +259,7 @@ moment.lang('en', {
 
 `Locale#weekdays` debe ser un array de los nombres de los días de la semana.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     weekdays : [
         "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -269,7 +269,7 @@ moment.updateLocale('en', {
 
 `Locale#weekdays` también puede ser una función de devolución de llamada.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     weekdays : function (momentToFormat, format) {
         return weekdays[momentToFormat.day()];
@@ -279,7 +279,7 @@ moment.updateLocale('en', {
 
 **Nota:** Desde la versión **2.11.0** también se pueden pasar casos de format/standalone. `isFormat` se usará contra la cadena de formato completo para determinar qué formato usar.
 
-```javascript
+```javascript filename="JavaScript"
 moment.updateLocale('en', {
     weekdays : {
         standalone: 'Воскресенье_Понедельник_Вторник_Среда_Четверг_Пятница_Суббота'.split('_'),

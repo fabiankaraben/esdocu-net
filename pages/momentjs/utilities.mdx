@@ -16,7 +16,7 @@ moment.normalizeUnits(String);
 
 Muchas de las funciones de Moment permiten al invocador pasar alias para enumeraciones de unidades. Por ejemplo, todos los `get`s siguientes son equivalentes.
 
-```javascript
+```javascript filename="JavaScript"
 var m = moment();
 m.get('y');
 m.get('year');
@@ -25,7 +25,7 @@ m.get('years');
 
 Si estás ampliando la biblioteca, es posible que desees acceder a las instalaciones de Moment para alinear mejor tu funcionalidad con la de Moment.
 
-```javascript
+```javascript filename="JavaScript"
 moment.normalizeUnits('y');      // 'year'
 moment.normalizeUnits('Y');      // 'year'
 moment.normalizeUnits('year');   // 'year'
@@ -41,7 +41,7 @@ moment.invalid(Object);
 
 Puedes crear tus propios objetos Moment no válidos, lo cual resulta útil para crear tu propio analizador (parser).
 
-```javascript
+```javascript filename="JavaScript"
 var m = moment.invalid();
 m.isValid();                      // false
 m.format();                       // 'Invalid date'
@@ -50,7 +50,7 @@ m.parsingFlags().userInvalidated; // true
 
 `invalid` también acepta un objeto que especifica qué indicadores de análisis establecer. Esto *no* establecerá el indicador de análisis `userInvalidated` a menos que sea una de las propiedades especificadas.
 
-```javascript
+```javascript filename="JavaScript"
 var m = moment.invalid({invalidMonth: 'Actober'});
 m.parsingFlags().invalidMonth; // 'Actober'
 ```

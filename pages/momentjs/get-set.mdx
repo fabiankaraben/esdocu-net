@@ -12,14 +12,14 @@ Llamar a estos métodos sin parámetros actúa como un getter y llamarlos con un
 Estos se asignan a la función correspondiente en el objeto nativo `Date`.
 
 
-```javascript
+```javascript filename="JavaScript"
 moment().seconds(30).valueOf() === new Date().setSeconds(30);
 moment().seconds() === new Date().getSeconds();
 ```
 
 Si estás en [modo UTC](/momentjs/manipulating#utc), se asignarán al equivalente UTC.
 
-```javascript
+```javascript filename="JavaScript"
 moment.utc().seconds(30).valueOf() === new Date().setUTCSeconds(30);
 moment.utc().seconds() === new Date().getUTCSeconds();
 ```
@@ -125,7 +125,7 @@ Si el valor dado es de `0` a `6`, la fecha resultante estará dentro de la seman
 
 Si se excede el rango, aumentará a la siguiente semana.
 
-```javascript
+```javascript filename="JavaScript"
 moment().day(-7); // el domingo pasado (0 - 7)
 moment().day(0); // este domingo (0)
 moment().day(7); // próximo domingo (0 + 7)
@@ -137,7 +137,7 @@ moment().day(24); // 3 miércoles desde ahora (3 + 7 + 7 + 7)
 
 A partir de **2.1.0**, también se admite el nombre de un día. Esto se analiza en el locale actual del moment.
 
-```javascript
+```javascript filename="JavaScript"
 moment().day("Sunday");
 moment().day("Monday");
 ```
@@ -156,7 +156,7 @@ Si el domingo es el primer día de la semana, `moment().weekday(0)` será el dom
 
 Al igual que con el `moment#day`, si se excede el rango, aumentará a la siguiente semana.
 
-```javascript
+```javascript filename="JavaScript"
 // cuando el lunes es el primer día de la semana
 moment().weekday(-7); // el lunes pasado
 moment().weekday(7); // el próximo lunes
@@ -176,14 +176,14 @@ Obtiene o establece el [día de la semana ISO](https://en.wikipedia.org/wiki/ISO
 
 Al igual que con `moment#day`, si se excede el rango, aumentará a la siguiente semana.
 
-```javascript
+```javascript filename="JavaScript"
 moment().isoWeekday(1); // Monday
 moment().isoWeekday(7); // Sunday
 ```
 
 También se admite un nombre de día. Esto se analiza en el locale actual del moment.
 
-```javascript
+```javascript filename="JavaScript"
 moment().isoWeekday("Sunday");
 moment().isoWeekday("Monday");
 ```
@@ -252,7 +252,7 @@ Acepta números del `0` al `11`. Si se excede el rango, aumentará el año.
 
 A partir de **2.1.0**, también se admite el nombre de un mes. Esto se analiza en el locale actual del moment.
 
-```javascript
+```javascript filename="JavaScript"
 moment().month("January");
 moment().month("Feb");
 ```
@@ -261,7 +261,7 @@ Antes de la versión **2.1.0**, si en un moment cambiaban los meses y el nuevo m
 
 A partir de la versión **2.1.0**, esto se modificó para limitarse al final del mes objetivo.
 
-```javascript
+```javascript filename="JavaScript"
 // antes de 2.1.0
 moment([2012, 0, 31]).month(1).format("YYYY-MM-DD"); // 2012-03-02
 // después de 2.1.0
@@ -281,7 +281,7 @@ moment().quarters(Number);
 
 Obtiene el número de cuarto del año (trimestre) (1 a 4).
 
-```javascript
+```javascript filename="JavaScript"
 moment('2013-01-01T00:00:00.000').quarter() // 1
 moment('2013-04-01T00:00:00.000').subtract(1, 'ms').quarter() // 1
 moment('2013-04-01T00:00:00.000').quarter() // 2
@@ -294,7 +294,7 @@ moment('2014-01-01T00:00:00.000').subtract(1, 'ms').quarter() // 4
 
 Establece el cuarto (1 a 4).
 
-```javascript
+```javascript filename="JavaScript"
 moment('2013-01-01T00:00:00.000').quarter(2) // '2013-04-01T00:00:00.000'
 moment('2013-02-05T05:06:07.000').quarter(2).format() // '2013-05-05T05:06:07-07:00'
 ```
@@ -366,7 +366,7 @@ moment().get('millisecond');
 
 Getter de cadena. En general
 
-```javascript
+```javascript filename="JavaScript"
 moment().get(unit) === moment()[unit]()
 ```
 
@@ -381,7 +381,7 @@ moment().set(Object(String, Int));
 
 Setter genérico, que acepta la unidad como primer argumento y el valor como segundo:
 
-```javascript
+```javascript filename="JavaScript"
 moment().set('year', 2013);
 moment().set('month', 3);  // Abril
 moment().set('date', 1);
@@ -408,7 +408,7 @@ Devuelve el máximo (futuro más lejano) de las instancias del moment dado.
 
 Por ejemplo:
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment().subtract(1, 'day');
 var b = moment().add(1, 'day');
 moment.max(a, b);  // b
@@ -424,7 +424,7 @@ Sin argumentos, la función devuelve una instancia de moment con la hora actual.
 
 A partir de la versión **2.10.5**, si un moment no válido es uno de los argumentos, el resultado es un moment no válido.
 
-```javascript
+```javascript filename="JavaScript"
 moment.max(moment(), moment.invalid()).isValid() === false
 moment.max(moment.invalid(), moment()).isValid() === false
 moment.max([moment(), moment.invalid()]).isValid() === false
@@ -442,7 +442,7 @@ Devuelve el mínimo (el pasado más lejano) de las instancias del moment dado.
 
 Por ejemplo:
 
-```javascript
+```javascript filename="JavaScript"
 var a = moment().subtract(1, 'day');
 var b = moment().add(1, 'day');
 moment.min(a, b);  // a
@@ -453,7 +453,7 @@ Sin argumentos, la función devuelve una instancia de moment con la hora actual.
 
 A partir de la versión **2.10.5**, si un moment no válido es uno de los argumentos, el resultado es un moment no válido.
 
-```javascript
+```javascript filename="JavaScript"
 moment.min(moment(), moment.invalid()).isValid() === false
 moment.min(moment.invalid(), moment()).isValid() === false
 moment.min([moment(), moment.invalid()]).isValid() === false

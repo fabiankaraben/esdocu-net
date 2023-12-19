@@ -23,13 +23,13 @@ Si estás utilizando fechas de automatización OLE en .NET, consulta `moment-msd
 
 Convierte un `moment` en una fecha OA:
 
-```javascript
+```javascript filename="JavaScript"
 moment().toOADate(); // un número de coma flotante
 ```
 
 O convierte una fecha OA en un `moment`:
 
-```javascript
+```javascript filename="JavaScript"
 moment.fromOADate(41493); // Wed Aug 07 2013 00:00:00 GMT-0600 (MDT)
 ```
 
@@ -45,7 +45,7 @@ Si deseas trabajar con `java.text.DateFormat`, puedes utilizar este complemento.
 
 Por ejemplo,
 
-```javascript
+```javascript filename="JavaScript"
 moment("2013-12-24 14:30").formatWithJDF("dd.MM.yyyy");  // devuelve la fecha formateada "24.12.2013"
 moment().toJDFString("DD.MM.YYYY");  // devuelve el patrón de formato Java "dd.MM.yyyy"
 ```
@@ -75,7 +75,7 @@ El repositorio está ubicado en [github.com/rotaready/moment-range](https://gith
 
 Otro complemento de rango es la biblioteca `Twix` de Isaac Cambron. Tiene muchas características relacionadas con el rango y se destaca al formatear rangos de manera legible. Por ejemplo,
 
-```javascript
+```javascript filename="JavaScript"
 var t = moment("1/25/1982 9:30 AM").twix("1/25/1982 1:30 PM");
 t.isCurrent(); // false
 t.count('minutes'); // 241
@@ -101,19 +101,19 @@ npm install moment-precise-range-plugin
 
 El complemento [Precise Range](https://codebox.org.uk/pages/moment-date-range-plugin), escrito por [Rob Dawson](https://github.com/codebox), se puede utilizar para mostrar representaciones exactas y legibles por humanos de rangos de fecha/hora:
 
-```javascript
+```javascript filename="JavaScript"
 moment("2014-01-01 12:00:00").preciseDiff("2015-03-04 16:05:06");
  // 1 year 2 months 3 days 4 hours 5 minutes 6 seconds
 ```
 
-```javascript
+```javascript filename="JavaScript"
 moment.preciseDiff("2014-01-01 12:00:00", "2014-04-20 12:00:00");
 // 3 months 19 days
 ```
 
 Para obtener los valores numéricos sin formato en lugar de una cadena, pasa el valor `true` como tercer argumento del método:
 
-```javascript
+```javascript filename="JavaScript"
 moment.preciseDiff(m1, m2, true); 
 // {years : 0, months : 1, days : 2, hours : 3, minutes : 4, seconds : 5, firstDateWasLater : false}
 ```
@@ -132,13 +132,13 @@ Llamar al método `isocalendar` en un moment devolverá un array como el siguien
 
 `[year, week_of_year, day_of_week, minutes_since_midnight]`
 
-```javascript
+```javascript filename="JavaScript"
 moment().isocalendar(); // [2012, 8, 5, 870]
 ```
 
 También puedes reconstruir un moment a partir de un array isocalendaria.
 
-```javascript
+```javascript filename="JavaScript"
 moment.fromIsocalendar([2011, 51, 5, 870]).format('LLLL');
 // "Friday, December 23 2011 2:30 PM"
 ```
@@ -155,7 +155,7 @@ Si deseas trabajar con el sistema de calendario Jalaali (Jalali, persa, Khorshid
 
 Cuando se instale, envolverá el objeto `moment` y moment podrá formatear y analizar años y meses de Jalaali. Aquí hay un breve ejemplo:
 
-```js
+```javascript filename="JavaScript"
 var m = moment('1360/5/26', 'jYYYY/jM/jD'); // Parse a Jalaali date.
 m.format('jYYYY/jM/jD [is] YYYY/M/D'); // 1360/5/26 is 1981/8/17
 ```
