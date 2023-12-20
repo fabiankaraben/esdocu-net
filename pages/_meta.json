@@ -16,6 +16,11 @@
     "type": "page",
     "display": "hidden"
   },
+  "luxon": {
+    "title": "Luxon",
+    "type": "page",
+    "display": "hidden"
+  },
   "docs": {
     "title": "Documentaciones",
     "type": "menu",
@@ -27,6 +32,10 @@
       "momentjs": {
         "title": "Moment.js",
         "href": "/momentjs/use-it"
+      },
+      "luxon": {
+        "title": "Luxon",
+        "href": "/luxon"
       }
     }
   },

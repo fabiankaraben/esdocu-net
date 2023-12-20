@@ -1,0 +1,219 @@
+---
+title: Luxon, características y guía de instalación · Luxon en Español
+description: Luxon es una biblioteca para manejar fechas y horas en JavaScript. Luxon proporciona diferentes compilaciones para diferentes entornos JS.
+---
+
+# Luxon, características e instalación
+
+## ¿Qué es Luxon y para qué se utiliza?
+
+Luxon es una biblioteca para manejar fechas y horas en JavaScript.
+
+```javascript filename="JavaScript"
+DateTime.now().setZone('America/New_York').minus({weeks:1}).endOf('day').toISO();
+```
+
+### Características [#features]
+
+  * Una buena API para trabajar con fechas y horas
+  * Soporte para intervalos (desde el momento x hasta el momento y)
+  * Soporte para duraciones (14 días, 5 minutos, 33 segundos)
+  * [Análisis (parsing)](/luxon/parsing) y [Formato](/luxon/formatting) fechas, intervalos y duraciones
+  * [Internacionalización](/luxon/intl) de cadenas usando la API Intl
+  * Operaciones [matemáticas](/luxon/math) detalladas e inequívocas
+  * Manejo integrado de [zonas horarias](/luxon/zones)
+  * Soporte parcial para múltiples [sistemas de calendario](/luxon/calendars)
+ 
+  Para obtener más información, consulta la documentación a la izquierda, incluidas las [docs de API](https://moment.github.io/luxon/api-docs)
+
+### Primeros pasos con Luxon [#getting-started]
+ 
+   * [Demo](https://moment.github.io/luxon/demo/global.html)
+   * Lee el [tour rápido](/luxon/tour)
+   * Explora los tópicos de documentación a la izquierda
+   * Lee la [documentación de API](https://moment.github.io/luxon/api-docs)
+
+Logotipo de [John Dalziel](https://github.com/crashposition)
+
+## Guía de instalación [#install]
+
+Luxon proporciona diferentes compilaciones para diferentes entornos JS. Consulta a continuación un enlace al correcto e instrucciones sobre cómo usarlo. Luxon es compatible con todas las plataformas modernas, pero consulta [la matriz de plataformas soportadas](/luxon#matrix) para obtener detalles adicionales.
+
+### Configuración básica del navegador [#basic-browser-setup]
+
+- [Descarga completa](https://moment.github.io/luxon/global/luxon.js)
+- [Descarga minificada](https://moment.github.io/luxon/global/luxon.min.js)
+
+También puedes cargar los archivos desde un [CDN](https://www.jsdelivr.com/package/npm/luxon).
+
+Simplemente incluye Luxon en una etiqueta `script`. Puedes acceder a sus diversas clases a través de la instancia global `luxon`.
+
+```html filename="HTML"
+<script src="luxon.js"></script>
+```
+
+Es posible que desees asignar un alias a las clases que utilizas:
+
+```javascript filename="JavaScript"
+var DateTime = luxon.DateTime;
+```
+
+### Node.js [#nodejs]
+
+Soporte para Node.js 6+. Instalar a través de NPM:
+
+```sh npm2yarn
+npm install --save luxon
+```
+
+```javascript filename="JavaScript"
+const { DateTime } = require("luxon");
+```
+
+Si deseas trabajar con locales, necesitas soporte de ICU:
+
+  1. **Para Node.js 13+, viene integrado, no es necesario realizar ninguna acción**
+  2. Para versiones anteriores de Node.js (solo se admite 12), debes instalarlo tú mismo:
+     1. Instala un build de Node.js con ICU completo incorporado, como a través de nvm: `nvm install <version> -s --with-intl=full-icu --download=all` o brew: `brew install node --con-uci`
+     2. Instala los datos de la UCI externamente y apúntalos con Node.js. Las instrucciones sobre cómo hacerlo se encuentran a continuación.
+
+Las instrucciones para usar full-icu como paquete son un poco confusas. Node.js no puede descubrir automáticamente que lo has instalado, por lo que debes indicarle dónde encontrar los datos, de esta manera:
+
+```sh npm2yarn
+npm install full-icu
+node --icu-data-dir=./node_modules/full-icu
+```
+
+También puedes apuntar a los datos con una variable de entorno, como esta:
+
+```
+NODE_ICU_DATA="$(pwd)/node_modules/full-icu" node
+```
+
+### AMD (System.js, RequireJS, etc) [#amd-systemjs-requirejs-etc]
+
+- [Descarga completa](https://moment.github.io/luxon/amd/luxon.js)
+- [Descarga minificada](https://moment.github.io/luxon/amd/luxon.min.js)
+
+```javascript filename="JavaScript"
+requirejs(["luxon"], function(luxon) {
+  //...
+});
+```
+
+### ES6 [#es6]
+
+- [Descarga completa](https://moment.github.io/luxon/es6/luxon.js)
+- [Descarga minificada](https://moment.github.io/luxon/es6/luxon.min.js)
+
+```javascript filename="JavaScript"
+import { DateTime } from "luxon";
+```
+
+### Webpack [#webpack]
+
+```sh npm2yarn
+npm install --save luxon
+```
+
+```javascript filename="JavaScript"
+import { DateTime } from "luxon";
+```
+
+### Types [#types]
+
+There are third-party typing files for Flow (via [flow-typed](https://github.com/flowtype/flow-typed)) and TypeScript (via [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)).
+
+For Flow, use:
+
+Hay archivos de escritura de terceros para Flow (a través de [flow-typed](https://github.com/flowtype/flow-typed)) y TypeScript (a través de [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)).
+
+Para Flow, utiliza:
+
+```sh filename="Terminal"
+flow-typed install luxon
+```
+
+Para TypeScript, utiliza:
+
+```sh npm2yarn
+npm install --save-dev @types/luxon
+```
+
+### React Native [#react-native]
+
+React Native >=0.70 funciona bien desde el primer momento. Las versiones anteriores de React Native para Android (o si desactivas Hermes) no incluyen soporte Intl de forma predeterminada, que necesitas para [muchas de las funciones de Luxon](/luxon#matrix).
+
+Para React Native >=0.60, debes configurar el tipo de compilación de jsc en `android/app/build.gradle`:
+
+```diff filename="Diff"
+-def jscFlavor = 'org.webkit:android-jsc:+'
++def jscFlavor = 'org.webkit:android-jsc-intl:+'
+```
+
+Para versiones aún más antiguas de React Native, puedes usar [jsc-android-buildscripts](https://github.com/SoftwareMansion/jsc-android-buildscripts) para solucionarlo.
+
+
+## Matriz de plataformas soportadas [#matrix]
+
+Esta sección cubre qué plataformas son compatibles con Luxon y qué advertencias se aplican a ellas.
+
+### Soporte oficial [#official-support]
+
+Luxon admite oficialmente las dos últimas versiones de los principales navegadores, con algunas salvedades. La siguiente tabla muestra cuáles de las funciones que no son compatibles universalmente están disponibles en qué entornos.
+
+
+| Browser                                | Versions | Intl relative time formatting |
+| -------------------------------------- | -------- | :---------------------------: |
+| Chrome                                 | >= 73    | ✓                             |
+| Firefox                                | >= 65    | ✓                             |
+| Edge                                   | >= 79    | ✓                             |
+|                                        | 18       | ✗                             |
+| Safari                                 | >= 14    | ✓                             |
+|                                        | 13       | ✗                             |
+| iOS Safari (números de versión de iOS) | >= 14    | ✓                             |
+| Node                                   | >= 12    | ✓                             |
+
+- Esas capacidades se explican en las siguientes secciones, junto con las posibles opciones de polyfill.
+- "c/ICU" se refiere a proporcionar a Node datos de la UCI. Consulta la [instalación](/luxon#node) para obtener instrucciones
+
+### Efectos de las funciones faltantes [#effects-of-missing-features]
+
+**Si las plataformas a las que te diriges tienen todas las casillas de arriba marcadas, ignora esta sección**.
+
+En la tabla de soporte anterior, puedes ver que a algunos entornos les faltan capacidades. En la versión actual de Luxon, sólo hay una característica parcialmente compatible, por lo que actualmente es bastante simple. (Las versiones anteriores de Luxon eran compatibles con navegadores más antiguos, por lo que hubo advertencias matizadas sobre las características. Las versiones más nuevas agregarán más advertencias a medida que estén disponibles nuevas capacidades del navegador y Luxon las aproveche si están presentes).
+
+1. **Formato de hora relativa**. La compatibilidad de Luxon con el formato de hora relativa (por ejemplo, `DateTime#toRelative` y `DateTime#toRelativeCalendar`) depende de Intl.RelativeTimeFormat. Luxon volverá a utilizar el inglés si falta esa capacidad.
+
+Si el navegador carece de estas capacidades, Luxon hace todo lo posible:
+
+| Característica                         | Soporte total  |  Sin formato de hora relativa |
+| -------------------------------------- | -------------- |  ---------------------------- |
+| La mayoría de las cosas                | OK             |  OK                           |
+| `DateTime#toRelative` en en-US         | OK             |  OK                           |
+| `DateTime#toRelative` en otros locales | Utiliza inglés |  Utiliza inglés               |
+
+### Plataformas más antiguas [#older-platforms]
+
+- **Lo más probable es que funcionen las versiones anteriores de Chrome y Firefox**. Es solo que solo soportamos oficialmente las dos últimas versiones. A medida que accedes a versiones anteriores de estos navegadores, las capacidades faltantes enumeradas anteriormente comienzan a aplicarse a ellos. (por ejemplo, Firefox comenzó a soportar `formatToParts` en la versión 51 y zonas horarias en la versión 52). No lo he mencionado porque es complicado, Luxon no los respalda oficialmente y, por lo tanto, nadie los administra.
+- **Las versiones anteriores de IE** probablemente no funcionarán en absoluto.
+- **Las versiones anteriores de Node** probablemente no funcionarán sin volver a compilar Luxon con un destino de Node diferente. En cuyo caso funcionarán aunque falten algunas funciones.
+
+### Otras plataformas [#other-platforms]
+
+Si la plataforma a la que te diriges no está en la lista y no estás seguro de qué advertencias se aplican, puedes verificar qué piezas son compatibles:
+
+```javascript filename="JavaScript"
+Info.features(); //=> { relative: false }
+```
+
+Notas específicas sobre otras plataformas:
+
+- **React Native \<0.70 en (específicamente) Android** no incluye compatibilidad con Intl de forma predeterminada, por lo que todas las capacidades anteriores que pueden faltar no están disponibles. Para solucionar este problema en React Native >=0.60, debes configurar el tipo de compilación de jsc en `android/app/build.gradle`:
+
+```diff filename="Diff"
+-def jscFlavor = 'org.webkit:android-jsc:+'
++def jscFlavor = 'org.webkit:android-jsc-intl:+'
+```
+
+Para versiones aún más antiguas de React Native, puede usar [jsc-android-buildscripts](https://github.com/SoftwareMansion/jsc-android-buildscripts) para solucionarlo.

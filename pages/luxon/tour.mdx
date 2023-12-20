@@ -1,0 +1,224 @@
+---
+title: Un recorrido de inicio rápido por Luxon · Luxon en Español
+description: Luxon proporciona una interfaz sencilla y completa para el trabajo con fechas y horas en JavaScript. Vamos a hablar sobre esa interfaz.
+---
+
+# Un recorrido rápido por Luxon
+
+Luxon es una biblioteca que facilita el trabajo con fechas y horas en JavaScript. Si lo deseas, sumarlos y restarlos, formatearlos y analizarlos, hacerles preguntas difíciles, etc., Luxon proporciona una interfaz mucho más sencilla y completa que los tipos nativos que envuelve. Vamos a hablar sobre el subconjunto más útil de esa interfaz.
+
+Esto será un poco rápido, pero ten en cuenta que la documentación de la API contiene la información completa, así que si deseas saber más, no dudes en [profundizar en ella](https://moment.github.io/luxon/api-docs/index.html).
+
+## Tu primer DateTime [#your-first-datetime]
+
+La clase más importante en Luxon es `DateTime`. Un `DateTime` representa un milisegundo específico en el tiempo, junto con una zona horaria y una locale (configuración regional). Aquí tienes uno que representa el 15 de mayo de 2017 a las 8:30 de la mañana:
+
+```javascript filename="JavaScript"
+const dt = DateTime.local(2017, 5, 15, 8, 30);
+```
+
+`DateTime.local` toma cualquier número de argumentos, hasta milisegundos (los meses están indexados desde `1`). Debajo, esto es similar a un objeto `Date` de JavaScript. Pero lo hemos decorado con muchos métodos útiles.
+
+## Creación de un DateTime [#creating-a-datetime]
+
+Hay muchas formas de crear un `DateTime` analizando cadenas o construyéndolas a partir de partes. Ya has visto uno, `DateTime.local()`, pero hablemos de tres más.
+
+### Obtener la fecha y hora actuales [#get-the-current-date-and-time]
+
+Para obtener la hora actual, simplemente haz esto:
+
+```javascript filename="JavaScript"
+const now = DateTime.now();
+```
+
+Esto es realmente el equivalente a llamar a `DateTime.local()` sin argumentos, pero es un poco más claro.
+
+### Crear un DateTime a partir de un objeto [#create-from-an-object]
+
+La forma más poderosa de crear una instancia de `DateTime` es proporcionar un objeto que contenga toda la información:
+
+```javascript filename="JavaScript"
+dt = DateTime.fromObject({day: 22, hour: 12 }, { zone: 'America/Los_Angeles', numberingSystem: 'beng'})
+```
+
+No te preocupes demasiado por las propiedades que aún no comprendes; El punto es que puedas establecer todos los atributos de un `DateTime` cuando lo creas. Una cosa a tener en cuenta en el ejemplo es que simplemente configuramos el día y la hora; el año y el mes se establecen de forma predeterminada en el actual y los minutos, segundos y milisegundos se establecen en `0`.
+
+### Analizar desde ISO 8601 [#parse-from-iso-8601]
+
+Luxon tiene muchas capacidades de análisis, pero la más importante es analizar cadenas [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), porque son más o menos el formato estándar para fechas y tiempos. Utiliza `DateTime.fromISO`.
+
+
+```javascript filename="JavaScript"
+DateTime.fromISO("2017-05-15")          //=> May 15, 2017 at midnight
+DateTime.fromISO("2017-05-15T08:30:00") //=> May 15, 2017 at 8:30
+```
+
+Puedes analizar muchos otros formatos, incluidos [los tuyos personalizados](/luxon/parsing).
+
+## Conociendo tu instancia DateTime [#getting-to-know-your-datetime-instance]
+
+Ahora que hemos creado algunos *DateTimes*, veamos qué podemos pedirle.
+
+### El método `toString` [#tostring]
+
+Lo primero que queremos ver es el `DateTime` como una cadena. Luxon devuelve cadenas ISO 8601:
+
+```javascript filename="JavaScript"
+DateTime.now().toString(); //=> '2017-09-14T03:20:34.091-04:00'
+```
+
+### Acceder a los componentes [#getting-at-components]
+
+Podemos acceder a los componentes del tiempo individualmente a través de sus getters. Por ejemplo:
+
+```javascript filename="JavaScript"
+dt = DateTime.now();
+dt.year     //=> 2017
+dt.month    //=> 9
+dt.day      //=> 14
+dt.second   //=> 47
+dt.weekday  //=> 4
+```
+
+### Otros accesorios divertidos [#other-fun-accessors]
+
+```javascript filename="JavaScript"
+dt.zoneName     //=> 'America/New_York'
+dt.offset       //=> -240
+dt.daysInMonth  //=> 30
+```
+
+¡Hay muchos más!
+
+## Formatear tu DateTime [#formatting-your-datetime]
+
+Es posible que desees enviar tu `DateTime` a una cadena para que una máquina o un humano la lea. Luxon tiene muchas herramientas para esto, pero dos de ellas son las más importantes. Si deseas formatear una cadena legible por humanos, usa `toLocaleString`:
+
+```javascript filename="JavaScript"
+dt.toLocaleString()      //=> '9/14/2017'
+dt.toLocaleString(DateTime.DATETIME_MED) //=> 'September 14, 3:21 AM'
+```
+
+Esto funciona bien en diferentes locales (idiomas) al permitir que el navegador determine en qué orden van las diferentes partes y cómo puntuarlas.
+
+Si deseas que otro programa lea la cadena, es casi seguro que desees utilizar `toISO`:
+
+```javascript filename="JavaScript"
+dt.toISO() //=> '2017-09-14T03:21:47.070-04:00'
+```
+
+También se admiten formatos personalizados. Consulta [formato](/luxon/formatting).
+
+## Transformando tu DateTime [#transforming-your-datetime]
+
+### Inmutabilidad [#immutability]
+
+Los objetos Luxon son inmutables. Eso significa que no puedes modificarlos directamente, sólo crear copias modificadas. A lo largo de la documentación, utilizamos términos como "alterar", "cambiar" y "establecer" de manera vaga, pero ten la seguridad de que nos referimos a "crear una nueva instancia con propiedades diferentes".
+
+### Matemáticas [#math]
+
+Esto es más fácil de mostrar que de decir. Todas estas llamadas devuelven nuevas instancias de `DateTime`:
+
+```javascript filename="JavaScript"
+var dt = DateTime.now();
+dt.plus({ hours: 3, minutes: 2 });
+dt.minus({ days: 7 });
+dt.startOf('day');
+dt.endOf('hour');
+```
+
+### El método `set` [#set]
+
+Puedes crear nuevas instancias sobrescribiendo propiedades específicas:
+
+```javascript filename="JavaScript"
+var dt = DateTime.now();
+dt.set({hour: 3}).hour   //=> 3
+```
+
+## Capacidades Intl [#intl]
+
+Luxon proporciona varias capacidades Intl diferentes, pero la más importante es el formateo:
+
+```javascript filename="JavaScript"
+var dt = DateTime.now();
+var f = {month: 'long', day: 'numeric'};
+dt.setLocale('fr').toLocaleString(f)      //=> '14 septembre'
+dt.setLocale('en-GB').toLocaleString(f)   //=> '14 September'
+dt.setLocale('en-US').toLocaleString(f)  //=> 'September 14'
+```
+
+La clase `Info` de Luxon también puede enumerar meses o días laborables para diferentes regiones (locales):
+
+```javascript filename="JavaScript"
+Info.months('long', {locale: 'fr'}) //=> [ 'janvier', 'février', 'mars', 'avril', ... ]
+```
+
+## Zonas horarias [#time-zones]
+
+Luxon admite zonas horarias. Hay toda una [gran sección](/luxon/zones) al respecto. Pero brevemente, puedes crear DateTimes en zonas específicas y incluso cambiar sus zonas:
+
+```javascript filename="JavaScript"
+DateTime.fromObject({}, {zone: 'America/Los_Angeles'}); // now, but expressed in LA's local time
+DateTime.now().setZone("America/Los_Angeles"); // same
+```
+
+Luxon también admite UTC directamente:
+
+```javascript filename="JavaScript"
+DateTime.utc(2017, 5, 15);
+DateTime.utc(); // now, in UTC time zone
+DateTime.now().toUTC();
+DateTime.utc().toLocal();
+```
+
+## Duraciones [#durations]
+
+La clase `Duration` representa una cantidad de tiempo como "2 horas y 7 minutos". Los creas así:
+
+```javascript filename="JavaScript"
+var dur = Duration.fromObject({ hours: 2, minutes: 7 });
+```
+
+Se pueden sumar o restar de DateTimes de esta manera:
+
+```javascript filename="JavaScript"
+dt.plus(dur);
+```
+
+Tienen también getters como los DateTimes:
+
+```javascript filename="JavaScript"
+dur.hours   //=> 2
+dur.minutes //=> 7
+dur.seconds //=> 0
+```
+
+Y algunas otras cosas útiles:
+
+```javascript filename="JavaScript"
+dur.as('seconds') //=> 7620
+dur.toObject()    //=> { hours: 2, minutes: 7 }
+dur.toISO()       //=> 'PT2H7M'
+```
+
+También puedes formatearlos, negarlos y normalizarlos. Aprende todo en la documentación de la API para [Duration](https://moment.github.io/luxon/api-docs/index.html#duration).
+
+## Intervalos [#intervals]
+
+Los intervalos son un período de tiempo específico, como "entre ahora y la medianoche". En realidad, son un contenedor para dos DateTimes que forman sus puntos finales. Esto es lo que puedes hacer con ellos:
+
+```javascript filename="JavaScript"
+now = DateTime.now();
+later = DateTime.local(2020, 10, 12);
+i = Interval.fromDateTimes(now, later);
+
+i.length()                             //=> 97098768468
+i.length('years')                //=> 3.0762420239726027
+i.contains(DateTime.local(2019))       //=> true
+
+i.toISO()       //=> '2017-09-14T04:07:11.532-04:00/2020-10-12T00:00:00.000-04:00'
+i.toString()    //=> '[2017-09-14T04:07:11.532-04:00 – 2020-10-12T00:00:00.000-04:00)
+```
+
+Los intervalos se pueden dividir en intervalos más pequeños, realizar operaciones similares a asignaciones con otros intervalos y algunas otras funciones útiles. Consulta la documentación de la API para [Interval](https://moment.github.io/luxon/api-docs/index.html#interval).

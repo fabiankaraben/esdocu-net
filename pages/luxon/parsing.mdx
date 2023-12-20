@@ -16,7 +16,7 @@ Luxon is not an NLP tool and isn't suitable for all date parsing jobs. But it ca
 
 Luxon supports a wide range of valid ISO 8601 formats through the `fromISO` method.
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromISO("2016-05-25");
 ```
 
@@ -51,13 +51,13 @@ All of these are parsable by `fromISO`:
 
 - In addition, all the times support offset arguments like "Z" and "+06:00".
 - Missing lower-order values are always set to the minimum possible value; i.e. it always parses to a full DateTime. For example, "2016-05-25" parses to midnight of that day. "2016-05" parses to the first of the month, etc.
-- The time is parsed as a local time if no offset is specified, but see the method docs to see your options, and also check out [time zone docs](zones) for more details.
+- The time is parsed as a local time if no offset is specified, but see the method docs to see your options, and also check out [time zone docs](/luxon/zones) for more details.
 
 ### HTTP and RFC2822
 
 Luxon also provides parsing for strings formatted according to RFC 2822 and the HTTP header specs (RFC 850 and 1123):
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromRFC2822("Tue, 01 Nov 2016 13:23:12 +0630");
 DateTime.fromHTTP("Sunday, 06-Nov-94 08:49:37 GMT");
 DateTime.fromHTTP("Sun, 06 Nov 1994 08:49:37 GMT");
@@ -67,7 +67,7 @@ DateTime.fromHTTP("Sun, 06 Nov 1994 08:49:37 GMT");
 
 Luxon accepts SQL dates, times, and datetimes, via `fromSQL`:
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromSQL("2017-05-15");
 DateTime.fromSQL("2017-05-15 09:24:15");
 DateTime.fromSQL("09:24:15");
@@ -79,7 +79,7 @@ It works similarly to `fromISO`, so see above for additional notes.
 
 Luxon can parse numerical [Unix timestamps](https://en.wikipedia.org/wiki/Unix_time):
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromMillis(1542674993410);
 DateTime.fromSeconds(1542674993);
 ```
@@ -108,7 +108,7 @@ Sometimes, though, you get a string from some legacy system in some terrible ad-
 
 See `DateTime.fromFormat` for the method signature. A brief example:
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromFormat("May 25 1982", "LLLL dd yyyy");
 ```
 
@@ -116,11 +116,11 @@ DateTime.fromFormat("May 25 1982", "LLLL dd yyyy");
 
 Luxon supports parsing internationalized strings:
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromFormat("mai 25 1982", "LLLL dd yyyy", { locale: "fr" });
 ```
 
-Note, however, that Luxon derives the list of strings that can match, say, "LLLL" (and their meaning) by introspecting the environment's Intl implementation. Thus the exact strings may in some cases be environment-specific. You also need the Intl API available on the target platform (see the [support matrix](matrix)).
+Note, however, that Luxon derives the list of strings that can match, say, "LLLL" (and their meaning) by introspecting the environment's Intl implementation. Thus the exact strings may in some cases be environment-specific. You also need the Intl API available on the target platform (see the [support matrix](/luxon#matrix)).
 
 ### Limitations
 
@@ -140,7 +140,7 @@ There are two kinds of things that can go wrong when parsing a string: a) you ma
 
 For example, here the code is using "MMMM" where "MMM" was needed. You can see the regex Luxon uses and see that it didn't match anything:
 
-```js
+```javascript filename="JavaScript"
 > DateTime.fromFormatExplain("Aug 6 1982", "MMMM d yyyy")
 
 { input: 'Aug 6 1982',
@@ -158,15 +158,15 @@ For example, here the code is using "MMMM" where "MMM" was needed. You can see t
 
 If you parse something and get an invalid date, the debugging steps are slightly different. Here, we're attempting to parse August 32nd, which doesn't exist:
 
-```js
+```javascript filename="JavaScript"
 var d = DateTime.fromFormat("August 32 1982", "MMMM d yyyy");
 d.isValid; //=> false
 d.invalidReason; //=> 'day out of range'
 ```
 
-For more on validity and how to debug it, see [validity](validity). You may find more comprehensive tips there. But as it applies specifically to `fromFormat`, again try `fromFormatExplain`:
+For more on validity and how to debug it, see [validity](/luxon/validity). You may find more comprehensive tips there. But as it applies specifically to `fromFormat`, again try `fromFormatExplain`:
 
-```js
+```javascript filename="JavaScript"
 > DateTime.fromFormatExplain("August 32 1982", "MMMM d yyyy")
 
 { input: 'August 32 1982',
@@ -186,7 +186,7 @@ Because Luxon was able to parse the string without difficulty, the output is a l
 
 ### Table of tokens
 
-(Examples below given for `2014-08-06T13:07:04.054` considered as a local time in America/New_York). Note that many tokens supported by the [formatter](formatting) are **not** supported by the parser.
+(Examples below given for `2014-08-06T13:07:04.054` considered as a local time in America/New_York). Note that many tokens supported by the [formatter](/luxon/formatting) are **not** supported by the parser.
 
 | Standalone token | Format token | Description                                                    | Example                     |
 | ---------------- | ------------ | ----------------------------------------------------------------- | --------------------------- |

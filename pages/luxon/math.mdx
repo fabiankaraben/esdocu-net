@@ -13,7 +13,7 @@ This page covers some oddball topics related to date and time math, which has so
 
 Math with dates and times can be unintuitive to programmers. If it's Feb 13, 2017 and I say "in exactly one month", you know I mean March 13. Exactly one month after that is April 13. But because February is a shorter month than March, that means we added a different amount of time in each case. On the other hand, if I said "30 days from February 13", you'd try to figure out what day that landed on in March. Here it is in Luxon:
 
-```js
+```javascript filename="JavaScript"
 DateTime.local(2017, 2, 13).plus({ months: 1 }).toISODate() //=> '2017-03-13'
 
 DateTime.local(2017, 2, 13).plus({ days: 30 }).toISODate() //=> '2017-03-15'
@@ -53,7 +53,7 @@ The practical effect of leaps seconds are quite limited:
 
 It's best not to think of calendar math as requiring arcane checks on the lengths of intervening periods. Instead, think of them as **adjusting that unit directly and keeping lower order date components constant**. Let's go back to the Feb 13 + 1 month example. If you didn't have Luxon, you would do something like this to accomplish that:
 
-```js
+```javascript filename="JavaScript"
 var d = new Date('2017-02-13')
 d.setMonth(d.getMonth() + 1)
 d.toLocaleString() //=> '3/13/2017, 12:00:00 AM'
@@ -63,9 +63,9 @@ And under the covers, that's more or less what Luxon does too. It doesn't boil t
 
 ### DSTs
 
-There's a whole section about this in the [time zones documentation](zones.md?id=math-across-dsts). But here's a quick example (Spring Forward is early on March 12 in my time zone):
+There's a whole section about this in the [time zones documentation](/luxon/zones#math-across-dsts). But here's a quick example (Spring Forward is early on March 12 in my time zone):
 
-```js
+```javascript filename="JavaScript"
 var start = DateTime.local(2017, 3, 11, 10);
 start.hour                          //=> 10, just for comparison
 start.plus({days: 1}).hour          //=> 10, stayed the same
@@ -82,13 +82,13 @@ Time math is different. In time math, we're just adjusting the clock, adding or 
 
 It's possible to do math with multiple units:
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromISO('2017-05-15').plus({months: 2, days: 6}).toISODate(); //=> '2017-07-21'
 ```
 
 This isn't as simple as it looks. For example, what should you expect this to do?
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromISO('2017-04-30').plus({months: 1, days: 1}).toISODate();
 ```
 
@@ -96,7 +96,7 @@ If the day is added first, we'll get an intermediate value of May 1. Adding a mo
 
 Luxon has a simple rule for this: **math is done from highest order to lowest order**. So the result of the example above is May 31. This rule isn't logically necessary, but it does seem to reflect what people mean. Of course, Luxon can't enforce this rule if you do the math in separate operations:
 
-```js
+```javascript filename="JavaScript"
 DateTime.fromISO('2017-04-30').plus({days: 1}).plus({months: 1}).toISODate() //=> '2017-06-01'
 ```
 
@@ -106,20 +106,20 @@ It's not a coincidence that Luxon's interface makes it awkward to do this wrong.
 
 DateTime implements `#valueOf` to return the epoch timestamp, so you can compare DateTimes with `<`, `>`, `<=`, and `>=`. That lets you find out if one DateTime is after or before another DateTime.
 
-```js
+```javascript filename="JavaScript"
 d1 < d2 // is d1 before d2?
 ```
 
 However, be aware that `===` compares object identity, which is not a useful concept in a library with immutable types. Use `#equals` to compare both the time and additional metadata, such as the locale and time zone. If you're only interested in checking the equality of the timestamps, you can use:
 
-```js
+```javascript filename="JavaScript"
 d1.toMillis() === d2.toMillis() // are d1 and d2 the same instant in time?
 +d1 === +d2 // same test, using object coercion
 ```
 
 You may also use `#hasSame` to make more subtle comparisons:
 
-```js
+```javascript filename="JavaScript"
 d1.hasSame(d2, 'year');   // both DateTimes have the same calendar year
 d1.hasSame(d2, 'day');    // both DateTimes have the same calendar day (which implies they also have the same calendar year and month)
 ```
@@ -128,7 +128,7 @@ Note that these are checking against the calendar. For example, if `d1` is in 20
 
 If you'd like to compare using a specific unit, you can achieve this by combining `#startOf` and the `#valueOf` comparisons above.
 
-```js
+```javascript filename="JavaScript"
 var d1 = DateTime.fromISO('2017-04-30');
 var d2 = DateTime.fromISO('2017-04-01');
 
@@ -146,7 +146,7 @@ d2.startOf('day') < d1.startOf('day')     //=> true
 
 Here's some very basic stuff to get us going:
 
-```js
+```javascript filename="JavaScript"
 var dur = Duration.fromObject({ days: 3, hours: 6})
 
 // examine it
@@ -166,7 +166,7 @@ DateTime.fromISO("2017-05-15").plus(dur).toISO() //=> '2017-05-18T06:00:00.000-0
 
 You can subtract one time from another to find out how much time there is between them. Luxon's `DateTime.diff` method does this and it returns a Duration. For example:
 
-```js
+```javascript filename="JavaScript"
 var end = DateTime.fromISO('2017-03-13');
 var start = DateTime.fromISO('2017-02-13');
 
@@ -176,14 +176,14 @@ diffInMonths.toObject(); //=> { months: 1 }
 
 Notice we had to pick the unit to keep track of the diff in. The default is milliseconds:
 
-```js
+```javascript filename="JavaScript"
 var diff = end.diff(start);
 diff.toObject() //=> { milliseconds: 2415600000 }
 ```
 
 Finally, you can diff using multiple units:
 
-```js
+```javascript filename="JavaScript"
 var end = DateTime.fromISO('2017-03-13');
 var start = DateTime.fromISO('2017-02-11');
 end.diff(start, ['months', 'days']).toObject() //=> { months: 1, days: 2 }
@@ -196,7 +196,7 @@ Durations represent bundles of time with specific units, but Luxon allows you to
  * `shiftTo` returns a new Duration denominated in the specified units.
  * `as` converts the duration to just that unit and returns its value
 
-```js
+```javascript filename="JavaScript"
 var dur = Duration.fromObject({ months: 4, weeks: 2, days: 6 })
 
 dur.as('days')                            //=> 140
@@ -222,13 +222,13 @@ These are always true and you can roll them up and down with consistency (e.g. `
 
 These should match your intuition and for most purposes they work well. But they're not just wrong; they're not even self-consistent:
 
-```js
+```javascript filename="JavaScript"
 Duration.fromObject({ years:1 }).shiftTo('months').shiftTo('days').as('years') //=> 0.9863013698630136
 ```
 
 This is because 12 * 30 != 365. These errors can be annoying, but they can also cause significant issues if the errors accumulate:
 
-```js
+```javascript filename="JavaScript"
 var dur = Duration.fromObject({ years: 50000 });
 DateTime.now().plus(dur.shiftTo('milliseconds')).year //=> 51984
 DateTime.now().plus(dur).year                         //=> 52017
@@ -246,7 +246,7 @@ You can see why these are irritating to work with, which is why they're not the 
 
 Luxon methods that create Durations de novo accept an option called `conversionAccuracy`. You can set it to "casual" or "longterm". It's a property of the Duration itself, so any conversions you do use the rule you've picked, and any new Durations you derive from it will retain that property.
 
-```js
+```javascript filename="JavaScript"
 Duration.fromObject({ years: 23 }, { conversionAccuracy: 'longterm' });
 Duration.fromISO('PY23', { conversionAccuracy: 'longterm' });
 
@@ -255,7 +255,7 @@ end.diff(start, 'days', { conversionAccuracy: 'longterm' })
 
 You can also create an accurate Duration out of an existing one:
 
-```js
+```javascript filename="JavaScript"
 var pedanticDuration = casualDuration.reconfigure({ conversionAccuracy: 'longterm' });
 ```
 
@@ -267,7 +267,7 @@ These Durations will do their conversions differently.
 Be careful of converting between units. It's easy to lose information. Let's say we converted a diff into days:
 
 
-```js
+```javascript filename="JavaScript"
 var end = DateTime.fromISO('2017-03-13');
 var start = DateTime.fromISO('2017-02-13');
 
@@ -277,7 +277,7 @@ diffInMonths.as('days'); //=> 30
 
 That's our conversion between months and days (you could also do a longterm-accurate conversion; it wouldn't fix the issue ahead). But this isn't the number of days between February 13 and March 13!
 
-```js
+```javascript filename="JavaScript"
 var diffInDays = end.diff(start, 'days');
 diffInDays.toObject(); //=> { days: 28 }
 ```
@@ -285,7 +285,7 @@ diffInDays.toObject(); //=> { days: 28 }
 It's important to remember that diffs are Duration objects, and a Duration is just a dumb pile of time units our computation spat out. Unlike an Interval, a Duration doesn't "remember" what the inputs to the diff were. So we lost some information converting between units. This mistake is really common when rolling up:
 
 
-```js
+```javascript filename="JavaScript"
 var diff = end.diff(start); // default unit is milliseconds
 
 // wtf, that's not a month!
@@ -297,14 +297,14 @@ diff.shiftTo('hours').as('days'); //=> 27.958333333333332
 
 Normally you won't run into this problem if you think clearly about what you want to do with a diff. Specifically, make sure you diff in the units you actually want to use. Then Luxon knows to answer the question you really want to ask.
 
-```js
+```javascript filename="JavaScript"
 var monthsDiff = end.diff(start, "months");
 var daysDiff = end.diff(start, "days");
 ```
 
 But sometimes you really do want an object that represents the subtraction itself, not the result. `Intervals` can help. Intervals are mostly used to keep track of ranges of time, but they make for "anchored" diffs too. For example:
 
-```js
+```javascript filename="JavaScript"
 var end = DateTime.fromISO('2017-03-13');
 var start = DateTime.fromISO('2017-02-13');
 var i = Interval.fromDateTimes(start, end);
@@ -315,14 +315,14 @@ i.length('months')      //=> 1
 
 Because the Interval stores its endpoints and computes `length` on the fly, it retakes the diff each time you query it. Of course, precisely because an Interval *isn't* an abstract bundle of time, it can't be used in places where Durations can. For example, you can't add them to DateTime via `plus()` because Luxon wouldn't know what units to do the math in (see "Calendar vs time math" above). But you can convert the interval into a Duration by picking the units:
 
-```js
+```javascript filename="JavaScript"
 i.toDuration('months').toObject(); //=> { months: 1 }
 i.toDuration('days').toObject(); //=> { days: 28 }
 ```
 
 You can even pick multiple units:
 
-```js
+```javascript filename="JavaScript"
 end = DateTime.fromISO('2018-05-25');
 i = start.until(end);
 i.toDuration(['years', 'months', 'days']).toObject(); //=> { years: 1, months: 3, days: 12 }

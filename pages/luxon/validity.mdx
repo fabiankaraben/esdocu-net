@@ -11,14 +11,14 @@ One of the most irritating aspects of programming with time is that it's possibl
 
 Unless you've asked Luxon to throw an exception when it creates an invalid DateTime (see more on that below), it will fail silently, creating an instance that doesn't know how to do anything. You can check validity with `isValid`:
 
-```js
+```javascript filename="JavaScript"
 > var dt = DateTime.fromObject({ month: 6, day: 400 });
 dt.isValid //=> false
 ```
 
 All of the methods or getters that return primitives return degenerate ones:
 
-```js
+```javascript filename="JavaScript"
 dt.year; //=>  NaN
 dt.toString(); //=> 'Invalid DateTime'
 dt.toObject(); //=> {}
@@ -26,7 +26,7 @@ dt.toObject(); //=> {}
 
 Methods that return other Luxon objects will return invalid ones:
 
-```js
+```javascript filename="JavaScript"
 dt.plus({ days: 4 }).isValid; //=> false
 ```
 
@@ -41,7 +41,7 @@ The most common way to do that is to over- or underflow some unit:
 
 But there are other ways to do it:
 
-```js
+```javascript filename="JavaScript"
 // specify a time zone that doesn't exist
 DateTime.now().setZone("America/Blorp").isValid; //=> false
 
@@ -51,7 +51,7 @@ DateTime.fromObject({ year: 2017, month: 5, day: 25, weekday: 3 }).isValid; //=>
 
 Note that some other kinds of mistakes throw, based on our judgment that they are more likely programmer errors than data issues:
 
-```js
+```javascript filename="JavaScript"
 DateTime.now().set({ blorp: 7 }); //=> kerplosion
 ```
 
@@ -63,7 +63,7 @@ Because DateTimes fail silently, they can be a pain to debug. Luxon has some fea
 
 Invalid DateTime objects are happy to tell you why they're invalid. `invalidReason` will give you a consistent error code you can use, whereas `invalidExplanation` will spell it out
 
-```js
+```javascript filename="JavaScript"
 var dt = DateTime.now().setZone("America/Blorp");
 dt.invalidReason; //=>  'unsupported zone'
 dt.invalidExplanation; //=> 'the zone "America/Blorp" is not supported'
@@ -73,7 +73,7 @@ dt.invalidExplanation; //=> 'the zone "America/Blorp" is not supported'
 
 You can make Luxon throw whenever it creates an invalid DateTime. The message will combine `invalidReason` and `invalidExplanation`:
 
-```js
+```javascript filename="JavaScript"
 Settings.throwOnInvalid = true;
 DateTime.now().setZone("America/Blorp"); //=> Error: Invalid DateTime: unsupported zone: the zone "America/Blorp" is not supported
 ```
@@ -84,7 +84,7 @@ You can of course leave this on in production too, but be sure to try/catch it a
 
 Durations can be invalid too. The easiest way to get one is to diff an invalid DateTime.
 
-```js
+```javascript filename="JavaScript"
 DateTime.local(2017, 28).diffNow().isValid; //=> false
 ```
 
