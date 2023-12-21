@@ -40,10 +40,9 @@ const logo = (
 )
 
 const theMoneytizerCMP = (
-  <div dangerouslySetInnerHTML={{
+  <script type="text/javascript" async={true} dangerouslySetInnerHTML={{
     __html: `
-        <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
-        <script type="text/javascript" async=true>
+        // <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
         (function() {
           var host = 'www.themoneytizer.com';
           var element = document.createElement('script');
@@ -202,8 +201,7 @@ const theMoneytizerCMP = (
             var uspInterval = setInterval(checkIfUspIsReady, 6000);
           }
         })();
-        </script>
-        <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+        // <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
         `,
   }}
   />
@@ -242,7 +240,6 @@ const footer = (
         <div className="hidden sm:block">Documentaciones sobre Desarrollo de Software</div>
       </div>
     </div>
-    {theMoneytizerCMP}
   </>
 );
 
@@ -314,6 +311,8 @@ const config: DocsThemeConfig = {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5376430835440290"
           crossOrigin="anonymous"
         ></script>
+
+        {theMoneytizerCMP}
       </>
     )
   },
