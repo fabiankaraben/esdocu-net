@@ -42,7 +42,6 @@ const logo = (
 const theMoneytizerCMP = (
   <script type="text/javascript" async={true} dangerouslySetInnerHTML={{
     __html: `
-        // <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
         (function() {
           var host = 'www.themoneytizer.com';
           var element = document.createElement('script');
@@ -201,7 +200,6 @@ const theMoneytizerCMP = (
             var uspInterval = setInterval(checkIfUspIsReady, 6000);
           }
         })();
-        // <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
         `,
   }}
   />
@@ -306,6 +304,12 @@ const config: DocsThemeConfig = {
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
+
+        {/* <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5376430835440290"
+          crossOrigin="anonymous"
+        ></script> */}
       </>
     )
   },
