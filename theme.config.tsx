@@ -40,9 +40,11 @@ const logo = (
 )
 
 const theMoneytizerCMP = (
-  <script type="text/javascript" async={true}
-    dangerouslySetInnerHTML={{
-      __html: `
+  <>
+    {/* <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) --> */}
+    <script type="text/javascript" async={true}
+      dangerouslySetInnerHTML={{
+        __html: `
 (function() {
   var host = 'www.themoneytizer.com';
   var element = document.createElement('script');
@@ -202,8 +204,10 @@ const theMoneytizerCMP = (
   }
 })();
 `,
-    }}
-  />
+      }}
+    />
+    {/* <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) --> */}
+  </>
 )
 
 const footer = (
