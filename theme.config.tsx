@@ -277,6 +277,7 @@ const config: DocsThemeConfig = {
 
     return (
       <>
+        {theMoneytizerCMP}
         <meta name="msapplication-TileColor" content="#fff" />
         <meta name="theme-color" content="#fff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -311,8 +312,6 @@ const config: DocsThemeConfig = {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5376430835440290"
           crossOrigin="anonymous"
         ></script>
-
-        {theMoneytizerCMP}
       </>
     )
   },
