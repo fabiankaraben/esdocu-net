@@ -305,9 +305,6 @@ const config: DocsThemeConfig = {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
 
-        <div id="120346-6"><script src="//ads.themoneytizer.com/s/gen.js?type=6"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=120346&formatId=6"></script></div>
-        <div id="120346-11"><script src="//ads.themoneytizer.com/s/gen.js?type=11"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=120346&formatId=11"></script></div>
-
         {/* <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5376430835440290"
