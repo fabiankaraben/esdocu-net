@@ -16,6 +16,8 @@ outputs:
 disableKinds:
   - taxonomy
 
+disableHugoGeneratorInject: true
+
 defaultContentLanguage: es
 # languages:
 #   en:
