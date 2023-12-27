@@ -71,6 +71,8 @@ Si bien `<button>` es el control recomendado para un menú desplegable, puede ha
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 La mejor parte es que también puedes hacer esto con cualquier variante de botón:
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/dropdowns/single-button-3.html" >}}
@@ -159,6 +161,8 @@ La mejor parte es que también puedes hacer esto con cualquier variante de botó
 {{< bootstrap/content-suggestion >}}
 
 ### Botones divididos {#split-button}
+
+{{< content-ads/middle-banner-2 >}}
 
 De manera similar, crea menús desplegables de botones divididos con prácticamente el mismo marcado que los menús desplegables de un solo botón, pero con la adición de `.dropdown-toggle-split` para lograr un espaciado adecuado alrededor del cursor (caret) desplegable.
 
@@ -268,6 +272,8 @@ Usamos esta clase adicional para reducir el `padding` horizontal a cada lado del
 Tamaños del componente Desplegable {#sizing}
 ------------------
 
+{{< content-ads/middle-banner-3 >}}
+
 Los menús desplegables de botones funcionan con botones de todos los tamaños, incluidos los botones desplegables predeterminados y divididos.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/dropdowns/sizing-1.html" >}}
@@ -350,6 +356,8 @@ Menús desplegables oscuros {#dark-dropdowns}
 <br/>
 <span class="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
 
+{{< content-ads/middle-banner-4 >}}
+
 Opta por menús desplegables más oscuros para que coincidan con una barra de navegación oscura o un estilo personalizado agregando `.dropdown-menu-dark` a un `.dropdown-menu`. No se requieren cambios en los elementos desplegables.
 
 {{< callout type="warning" emoji="" >}}
@@ -417,6 +425,8 @@ Direcciones del componente Desplegable {#directions}
 
 ### Centrado {#centered}
 
+{{< content-ads/middle-banner-5 >}}
+
 Haz que el menú desplegable esté centrado debajo del interruptor con `.dropdown-center` en el elemento padre.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/dropdowns/centered.html" >}}
@@ -478,6 +488,8 @@ Activa menús desplegables encima de los elementos agregando `.dropup` al elemen
 {{< /demo-iframe >}}
 
 ### Dropup centrado {#dropup-centered}
+
+{{< content-ads/middle-banner-6 >}}
 
 Haz que el menú desplegable esté centrado encima del interruptor con `.dropup-center` en el elemento principal.
 
@@ -543,6 +555,8 @@ Activa menús desplegables a la derecha de los elementos agregando `.dropend` al
 
 ### Dropstart {#dropstart}
 
+{{< content-ads/middle-banner-7 >}}
+
 Activa menús desplegables a la izquierda de los elementos agregando `.dropstart` al elemento principal.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/dropdowns/dropstart.html" >}}
@@ -603,6 +617,8 @@ Puedes usar elementos `<a>` o `<button>` como elementos desplegables.
 </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-8 >}}
 
 También puedes crear elementos desplegables no interactivos con `.dropdown-item-text`. Siéntete libre de diseñar aún más con CSS personalizado o utilidades de texto.
 
@@ -673,6 +689,8 @@ Agrega `.dropdown-menu-end` a un `.dropdown-menu` para alinear a la derecha el m
 {{< /demo-iframe >}}
 
 ### Alineación responsive {#responsive-alignment}
+
+{{< content-ads/middle-banner-9 >}}
 
 Si quieres usar alineación responsive, deshabilita el posicionamiento dinámico agregando el atributo `data-bs-display="static"` y usa las clases de variación responsive.
 

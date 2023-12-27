@@ -72,6 +72,8 @@ El spinner de borde usa `currentColor` para su `border-color`, lo que significa 
 Estilo Growing spinner {#growing-spinner}
 -----------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Si no te apetece un spinner de bordes, cambia al spinner de crecimiento. Si bien técnicamente no gira, ¡crece repetidamente!
 
 {{< bootstrap/content-suggestion >}}
@@ -121,6 +123,8 @@ Alineación del componente Spinner {#alignment}
 Los spinners en Bootstrap están construidos con `rem`s, `currentColor` y `display: inline-flex`. Esto significa que se les puede cambiar el tamaño, el color y la alineación rápidamente.
 
 ### Margen {#margin}
+
+{{< content-ads/middle-banner-2 >}}
 
 Usa [utilidades de margen](/bootstrap/5.3/utilities/spacing) como `.m-5` para facilitar el espaciado.
 
@@ -172,6 +176,8 @@ Usa [utilidades flexbox](/bootstrap/5.3/utilities/flex), [utilidades flotantes](
 {{< /demo-iframe >}}
 
 #### Alinear texto {#text-align}
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/spinners/text-align.html" >}}
 ```html {filename="HTML"}
@@ -254,6 +260,8 @@ Personalización del CSS del componente {#css}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
+
+{{< content-ads/middle-banner-4 >}}
 
 Como parte del enfoque de evolución de variables CSS de Bootstrap, los spinners ahora usan variables CSS locales en `.spinner-border` y `.spinner-grow` para una personalización mejorada en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
 

@@ -59,6 +59,8 @@ Trabajar con íconos en el componente de Paginación {#working-with-icons}
 Estados deshabilitados y activos {#disabled-and-active-states}
 ---------------------------------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Los enlaces de paginación se pueden personalizar para diferentes circunstancias. Utiliza `.disabled` para enlaces en los que no se puedes hacer clic y `.active` para indicar la página actual.
 
 Mientras que la clase `.disabled` usa `pointer-events: none` para _intentar_ deshabilitar el enlace funcionalidad de `<a>`s, esa propiedad CSS aún no está estandarizada y no tiene en cuenta la navegación con el teclado. Como tal, siempre debes agregar `tabindex="-1"` en los enlaces deshabilitados y usar JavaScript personalizado para deshabilitar completamente su funcionalidad.
@@ -109,6 +111,8 @@ Opcionalmente, puedes cambiar los anclajes activos o deshabilitados por `<span>`
 
 Tamaños del componente de Paginación {#sizing}
 ------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 ¿Te apetece una paginación más grande o más pequeña? Agrega `.pagination-lg` o `.pagination-sm` para tamaños adicionales.
 
@@ -162,6 +166,8 @@ Cambiar la alineación de los componentes de paginación con [utilidades flexbox
 </nav>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 O con `.justify-content-end`:
 
@@ -219,6 +225,8 @@ Como parte del enfoque en evolución de variables CSS de Bootstrap, la paginaci�
 ```
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-4 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

@@ -71,6 +71,8 @@ Estilos outlined del componente Grupo de botones {#outlined-styles}
 Grupos de casillas de verificación y botones de opción {#checkbox-and-radio-button-groups}
 -------------------------------------------------------------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Combina botones de casilla de verificación y radio con forma de [botones de alternancia](/bootstrap/5.3/forms/checks-radios) en un grupo de botones de apariencia perfecta.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/checkbox-and-radio-button-groups-1.html" >}}
@@ -166,6 +168,8 @@ Siéntete libre de mezclar grupos de entrada con grupos de botones en tus barras
 Tamaños del componente Grupo de botones {#sizing}
 ------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 En lugar de aplicar clases de tamaño de botones a cada botón de un grupo, simplemente agrega `.btn-group-*` a cada `.btn-group`, incluyendo cada uno cuando se anidan varios grupos.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/sizing.html" >}}
@@ -217,6 +221,8 @@ Coloca un `.btn-group` dentro de otro `.btn-group` cuando quieras menús despleg
 
 Variación vertical del componente Grupo de botones {#vertical-variation}
 -----------------------------------------
+
+{{< content-ads/middle-banner-3 >}}
 
 Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de horizontalmente. **Aquí no se admiten menús desplegables de botones divididos.**
 
@@ -277,6 +283,8 @@ Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de hori
     </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/vertical-variation-3.html" >}}
 ```html {filename="HTML"}

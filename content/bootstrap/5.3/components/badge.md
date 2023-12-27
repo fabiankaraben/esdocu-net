@@ -61,6 +61,8 @@ Usa utilidades para modificar un `.badge` y posicionarlo en la esquina de un enl
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 También puedes reemplazar la clase `.badge` con algunas utilidades más sin contar para un indicador más genérico.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/badge/positioned-2.html" >}}
@@ -105,6 +107,8 @@ Establece un `background-color` con un `color` de primer plano contrastante con 
 Insignias de pastillas {#pill-badges}
 --------------------------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 Utiliza la clase de utilidad `.rounded-pill` para hacer insignias más redondeadas con un `border-radius` más grande.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/badge/pill-badges.html" >}}
@@ -142,6 +146,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las insignia
 ```
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-3 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

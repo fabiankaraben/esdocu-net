@@ -65,6 +65,8 @@ Bootstrap proporciona un puñado de [utilidades para configurar el ancho](/boots
 
 ### Altura {#height}
 
+{{< content-ads/middle-banner-1 >}}
+
 Solo estableces un valor de `height` en el contenedor `.progress`, por lo que si cambias ese valor, el `.progress-bar` cambiará automáticamente de tamaño en consecuencia.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/progress/height.html" >}}
@@ -131,6 +133,8 @@ Usa clases de utilidades en segundo plano para cambiar la apariencia de las barr
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 {{< /callout >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 Si agregas etiquetas a las barras de progreso con un color de fondo personalizado, asegúrate de establecer también un [color del texto](/bootstrap/5.3/utilities/colors/#colors), para que las etiquetas sigan siendo legibles y tengan suficiente contraste.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/progress/backgrounds-2.html" >}}
@@ -186,6 +190,8 @@ Puedes incluir múltiples componentes de progreso dentro de un contenedor con `.
 Estilo rayado en el componente Progress {#striped}
 ------------------
 
+{{< content-ads/middle-banner-3 >}}
+
 Agrega `.progress-bar-striped` a cualquier `.progress-bar` para aplicar una franja mediante un degradado CSS sobre el color de fondo de la barra de progreso.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/progress/striped.html" >}}
@@ -228,6 +234,8 @@ Personalización del CSS del componente {#css}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
+
+{{< content-ads/middle-banner-4 >}}
 
 Como parte del enfoque de variables CSS en evolución de Bootstrap, las barras de progreso ahora usan variables CSS locales en `.progress` para una personalización mejorada en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
 

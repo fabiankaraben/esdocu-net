@@ -55,6 +55,8 @@ Generalmente, recomendamos usar un `<button>` con el atributo `data-bs-target`. 
 Componente Collapse horizontal {#horizontal}
 -------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 El complemento de colapso admite el colapso horizontal. Agrea la clase modificadora `.collapse-horizontal` para realizar la transición del `width` en lugar de `height` y establece un `width` en el elemento hijo inmediato. Siéntete libre de escribir tu propio Sass personalizado, usar estilos en línea o usar nuestras [utilidades de ancho](/bootstrap/5.3/utilities/sizing).
 
 {{< callout type="info" emoji="" >}}
@@ -125,6 +127,8 @@ Un elemento `<button>` o `<a>` puede mostrar y ocultar múltiples elementos haci
 Accesibilidad del componente Collapse {#accessibility}
 -------------------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 Asegúrate de agregar `aria-expanded` al elemento de control. Este atributo transmite explícitamente el estado actual del elemento plegable vinculado al control a lectores de pantalla y tecnologías de asistencia similares. Si el elemento plegable está cerrado de forma predeterminada, el atributo del elemento de control debe tener un valor de `aria-expanded="false"`. Si has configurado el elemento plegable para que se abra de forma predeterminada usando la clase `show`, configura `aria-expanded="true"` en el control. El complemento alternará automáticamente este atributo en el control en función de si el elemento plegable se ha abierto o cerrado (a través de JavaScript, o porque el usuario activó otro elemento de control también vinculado al mismo elemento plegable). Si el elemento HTML del elemento de control no es un botón (por ejemplo, un `<a>` o `<div>`), el atributo `role="button"` debe agregarse al elemento.
 
 Si tu elemento de control apunta a un único elemento plegable, es decir, el atributo `data-bs-target` apunta a un selector `id`, debes agregar el atributo `aria-controls` al elemento de control, que contiene el `id` del elemento plegable. Los lectores de pantalla modernos y tecnologías de asistencia similares utilizan este atributo para proporcionar a los usuarios accesos directos adicionales para navegar directamente al elemento plegable.
@@ -182,6 +186,8 @@ Estas clases se pueden encontrar en `_transitions.scss`.
 
 ### Vía atributos de datos {#via-data-attributes}
 
+{{< content-ads/middle-banner-3 >}}
+
 Simplemente agrega `data-bs-toggle="collapse"` y un `data-bs-target` al elemento para asignar automáticamente control de uno o más elementos plegables. El atributo `data-bs-target` acepta un selector CSS al que aplicar el colapso. Asegúrate de agregar la clase `collapse` al elemento plegable. Si deseas que se abra de forma predeterminada, agrega la clase adicional `show`.
 
 Para agregar administración de grupos tipo acordeón a un área plegable, agrega el atributo de datos `data-bs-parent="#selector"`. Consulta la [página del acordeón](/bootstrap/5.3/components/accordion) para obtener más información.
@@ -234,6 +240,8 @@ const bsCollapse = new bootstrap.Collapse('#myCollapse', {
 | `toggle`              | Cambia un elemento plegable para mostrarlo u ocultarlo. **Vuelve a la persona que llama antes de que el elemento plegable se haya mostrado u ocultado** (es decir, antes de que el evento `shown.bs.collapse` o `hidden.bs.collapse` ocurra). |
 
 ### Eventos {#events}
+
+{{< content-ads/middle-banner-4 >}}
 
 La clase de colapso de Bootstrap expone algunos eventos para conectarse a la funcionalidad de colapso.
 

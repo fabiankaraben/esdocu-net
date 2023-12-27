@@ -86,6 +86,8 @@ Haz clic en los acordeones a continuación para expandir/contraer el contenido d
 
 ### Las clases Flush {#flush}
 
+{{< content-ads/middle-banner-1 >}}
+
 Agrega `.accordion-flush` para eliminar algunos bordes y esquinas redondeadas para representar los acordeones de borde a borde con su contenedor principal.
 
 {{< bootstrap/content-suggestion >}}
@@ -138,6 +140,8 @@ Agrega `.accordion-flush` para eliminar algunos bordes y esquinas redondeadas pa
 {{< /demo-iframe >}}
 
 ### Acordeón siempre abierto {#always-open}
+
+{{< content-ads/middle-banner-2 >}}
 
 Omite el atributo `data-bs-parent` en cada `.accordion-collapse` para que los elementos del acordeón permanezcan abiertos cuando se abre otro elemento.
 
@@ -202,6 +206,8 @@ Omite el atributo `data-bs-parent` en cada `.accordion-collapse` para que los el
 Accesibilidad del componente Acordeón {#accessibility}
 -------------------------------
 
+{{< content-ads/middle-banner-3 >}}
+
 Lee la [sección de accesibilidad de collapse](/bootstrap/5.3/components/collapse/#accessibility) para obtener más información.
 
 Personalización del CSS del componente {#css}
@@ -245,6 +251,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los acordeon
 
 ### Variables Sass generales relacionadas {#sass-variables}
 
+{{< bootstrap/content-suggestion >}}
+
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
 ```scss {filename="scss/_variables.scss"}
@@ -281,6 +289,5 @@ $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 ```
 
-{{< bootstrap/content-suggestion >}}
 
 {{< content-ads/bottom-banner >}}

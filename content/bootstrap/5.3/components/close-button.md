@@ -63,6 +63,8 @@ Personalización del CSS del componente {#css}
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.3.0</span>
 
+{{< content-ads/middle-banner-1 >}}
+
 Como parte del enfoque de variables CSS en evolución de Bootstrap, el botón de cierre ahora usa variables CSS locales en `.btn-close` para una personalización mejorada en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
 
 [scss/_close.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_close.scss)

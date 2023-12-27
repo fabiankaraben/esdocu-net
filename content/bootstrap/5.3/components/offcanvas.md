@@ -98,6 +98,8 @@ Puedes usar un enlace con el atributo `href`, o un botón con el atributo `data-
 
 ### Desplazamiento del body {#body-scrolling}
 
+{{< content-ads/middle-banner-1 >}}
+
 El desplazamiento del elemento `<body>` está deshabilitado cuando un offcanvas y su fondo son visibles. Utiliza el atributo `data-bs-scroll` para habilitar el desplazamiento de `<body>`.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/offcanvas/body-scrolling.html" >}}
@@ -139,6 +141,8 @@ También puedes habilitar el desplazamiento de `<body>` con un fondo visible.
 {{< /demo-iframe >}}
 
 ### Fondo estático {#static-backdrop}
+
+{{< content-ads/middle-banner-2 >}}
 
 Cuando el fondo está configurado como estático, el offcanvas no se cerrará al hacer clic fuera de él.
 
@@ -195,6 +199,8 @@ Comportamiento responsive del componente {#responsive}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
+
+{{< content-ads/middle-banner-3 >}}
 
 Las clases responsive offcanvas ocultan el contenido fuera del viewport desde un punto de interrupción específico hacia abajo. Por encima de ese punto de interrupción, el contenido se comportará como de costumbre. Por ejemplo, `.offcanvas-lg` oculta el contenido en un offcanvas debajo del punto de interrupción `lg`, pero muestra el contenido encima del punto de interrupción `lg`.
 
@@ -271,6 +277,8 @@ Prueba los ejemplos superior, derecho e inferior a continuación.
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/offcanvas/placement-3.html" >}}
 ```html {filename="HTML"}
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Alternar offcanvas inferior</button>
@@ -322,6 +330,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, offcanvas ah
 ```
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-5 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -380,6 +390,8 @@ Si bien se admiten ambas formas de descartar un offcanvas, ten en cuenta que des
 {{< /callout >}}
 
 ### Vía JavaScript {#via-javascript}
+
+{{< content-ads/middle-banner-6 >}}
 
 Habilitar manualmente con:
 

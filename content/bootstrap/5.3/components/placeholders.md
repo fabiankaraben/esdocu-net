@@ -61,6 +61,8 @@ En el siguiente ejemplo, tomamos un componente de tarjeta típico y lo recreamos
 Cómo funciona el componente Marcador de posición {#how-it-works}
 -------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Crea marcadores de posición con la clase `.placeholder` y una clase de columna de cuadrícula (por ejemplo, `.col-6`) para establecer el `width`. Pueden reemplazar el texto dentro de un elemento o agregarse como una clase modificadora a un componente existente.
 
 Aplicamos estilos adicionales a los `.btn` mediante `::before` para garantizar que la `height` sea respetado. Puedes ampliar este patrón para otras situaciones según sea necesario, o agregar un `&nbsp;` dentro del elemento para reflejar la altura cuando el texto real se representa en su lugar.
@@ -112,6 +114,8 @@ De forma predeterminada, el `placeholder` usa `currentColor`. Esto se puede sobr
 {{< /demo-iframe >}}
 
 ### Tamaños {#sizing}
+
+{{< content-ads/middle-banner-2 >}}
 
 El tamaño de los `.placeholder`se basa en el estilo tipográfico del elemento principal. Personalízalos con modificadores de tamaño: `.placeholder-lg`, `.placeholder-sm` o `.placeholder-xs`.
 

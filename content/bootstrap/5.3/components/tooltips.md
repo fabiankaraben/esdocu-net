@@ -50,6 +50,8 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 ### Tooltips en enlaces {#tooltips-on-links}
 
+{{< content-ads/middle-banner-1 >}}
+
 Coloca el cursor sobre los enlaces a continuación para ver tooltips:
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/tooltips/tooltips-on-links.html" >}}
@@ -100,6 +102,8 @@ Puedes personalizar la apariencia de los tooltips usando [variables CSS](#variab
 
 ### Direcciones {#directions}
 
+{{< content-ads/middle-banner-2 >}}
+
 Coloca el cursor sobre los botones a continuación para ver las cuatro direcciones de tooltips: arriba, derecha, abajo e izquierda. Las instrucciones se reflejan cuando se usa Bootstrap en RTL.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/tooltips/directions-1.html" >}}
@@ -149,6 +153,8 @@ Personalización del CSS del componente {#css}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
+
+{{< content-ads/middle-banner-3 >}}
 
 Como parte del enfoque de variables CSS en evolución de Bootstrap, los tooltips ahora usan variables CSS locales en `.tooltip` para mejorar la personalización en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
 
@@ -201,6 +207,8 @@ const exampleEl = document.getElementById('example')
 const tooltip = new bootstrap.Tooltip(exampleEl, options)
 ```
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< callout type="warning" emoji="" >}}
 Los tooltips intentan cambiar automáticamente las posiciones cuando un contenedor principal tiene `overflow: auto` o `overflow: scroll`, pero aún conservan el posicionamiento original. Establece [`boundary` (opción)](https://popper.js.org/docs/v2/modifiers/flip/#boundary) (para el modificador de inversión usando la opción `popperConfig`) a cualquier HTMLElement para sobrescribir el valor predeterminado, `'clippingParents'`, como `document.body`:
 
@@ -247,6 +255,8 @@ Los elementos con el atributo `disabled` no son interactivos, lo que significa q
 {{< bootstrap/content-suggestion >}}
 
 ### Opciones {#options}
+
+{{< content-ads/middle-banner-5 >}}
 
 Como las opciones se pueden pasar a través de atributos de datos o JavaScript, puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
 
@@ -297,6 +307,8 @@ const tooltip = new bootstrap.Tooltip(element, {
 ```
 
 ### Métodos {#methods}
+
+{{< content-ads/middle-banner-6 >}}
 
 {{< callout type="error" emoji="" >}}
 **Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/bootstrap/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)

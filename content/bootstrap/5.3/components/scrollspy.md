@@ -70,6 +70,8 @@ Desplázate por el área debajo de la barra de navegación y observa cómo cambi
 
 ### Navegación anidada {#nested-nav}
 
+{{< content-ads/middle-banner-1 >}}
+
 Scrollspy también funciona con `.nav` anidados. Si un `.nav` anidado está `.active`, sus padres también estarán `.active`. Desplázate por el área junto a la barra de navegación y observa cómo cambia la clase activa.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/scrollspy/nested-nav.html" >}}
@@ -133,6 +135,8 @@ Scrollspy también funciona con `.nav` anidados. Si un `.nav` anidado está `.ac
 
 ### Grupo de lista {#list-group}
 
+{{< content-ads/middle-banner-2 >}}
+
 Scrollspy también funciona con `.list-group`. Desplázate por el área junto al grupo de la lista y observa cómo cambia la clase activa.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/scrollspy/list-group.html" >}}
@@ -176,6 +180,8 @@ Scrollspy también funciona con `.list-group`. Desplázate por el área junto al
 {{< /demo-iframe >}}
 
 ### Anclajes simples {#simple-anchors}
+
+{{< content-ads/middle-banner-3 >}}
 
 Scrollspy no se limita a componentes de nav y grupos de listas, por lo que funcionará en cualquier elemento de anclaje `<a>` en el documento actual. Desplázate por el área y observa cómo cambia la clase `.active`.
 
@@ -230,6 +236,8 @@ Scrollspy no se limita a componentes de nav y grupos de listas, por lo que funci
 
 Elementos de destino no visibles {#non-visible-elements}
 ----------------------------------------------
+
+{{< content-ads/middle-banner-4 >}}
 
 Los elementos de destino que no son visibles se ignorarán y sus elementos de nav correspondientes no recibirán una clase `.active` .Las instancias de Scrollspy inicializadas en un contenedor no visible ignorarán todos los elementos de destino. Utiliza el método `refresh` para comprobar si hay elementos observables una vez que el contenedor se vuelva visible.
 

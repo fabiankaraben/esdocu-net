@@ -55,6 +55,8 @@ Las alertas están disponibles para cualquier longitud de texto, así como un bo
 
 ### Ejemplo en vivo del componente {#live-example}
 
+{{< content-ads/middle-banner-1 >}}
+
 Haz clic en el botón a continuación para mostrar una alerta (inicialmente oculta con estilos en línea), luego deséchala (y destrúyela) con el botón de cierre incorporado.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/alerts/live-example.html" >}}
@@ -134,6 +136,8 @@ Utiliza la clase de utilidad `.alert-link` para proporcionar rápidamente enlace
 {{< /demo-iframe >}}
 
 ### Agregar contenido adicional {#additional-content}
+
+{{< content-ads/middle-banner-2 >}}
 
 Las alertas también pueden contener elementos HTML adicionales como encabezados, párrafos y divisores.
 
@@ -231,6 +235,8 @@ Del mismo modo, puedes usar [utilidades flexbox](/bootstrap/5.3/utilities/flex) 
 
 ### Cómo cerrar (descargar) un Alert {#dismissing}
 
+{{< content-ads/middle-banner-3 >}}
+
 Usando el complemento JavaScript de alerta, es posible descartar cualquier alerta en línea. Así es cómo:
 
 * Asegúrate de haber cargado el complemento de alerta o el JavaScript Bootstrap compilado.
@@ -278,6 +284,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las alertas 
 ```
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-4 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -340,6 +348,8 @@ Bucle que genera las clases modificadoras con el mixin `alert-variant()`.
 Comportamiento JavaScript del componente {#javascript-behavior}
 -------------------------------------------------------------------------------------
 
+{{< content-ads/middle-banner-5 >}}
+
 ### Inicializar {#initialize}
 
 Inicializar elementos como alertas
@@ -396,6 +406,8 @@ alert.close()
 {{< bootstrap/content-suggestion >}}
 
 ### Eventos {#events}
+
+{{< content-ads/middle-banner-6 >}}
 
 El complemento de alerta de Bootstrap expone algunos eventos para conectarse a la funcionalidad de alerta.
 
