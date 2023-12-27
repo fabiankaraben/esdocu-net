@@ -10,7 +10,7 @@ noindex: true
 
 Establece un color de fondo con un color de primer plano que contraste.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Descripción general {#overview}
 --------------------------------
@@ -50,6 +50,8 @@ Con componentes {#with-components}
 ```
 {{< /demo-iframe >}}
 
+{{< bootstrap/content-suggestion >}}
+
 O en [tarjetas](/bootstrap/5.3/components/card/#background-and-color):
 
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/color-background/with-components-2.html" >}}
@@ -71,4 +73,4 @@ O en [tarjetas](/bootstrap/5.3/components/card/#background-and-color):
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

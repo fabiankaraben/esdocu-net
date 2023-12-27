@@ -10,7 +10,7 @@ noindex: true
 
 Aprende cómo habilitar la compatibilidad con texto de derecha a izquierda en Bootstrap en nuestro layout, componentes y utilidades.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Familiarízate {#get-familiar}
 
@@ -177,6 +177,8 @@ Después de ejecutar Sass y luego RTLCSS, cada selector en tus archivos CSS tend
 3.  Anidar estilos de esta manera evitará que nuestro mixin `form-validation-state()` funcione según lo previsto, por lo que requerirá que lo modifiques un poco por tu cuenta. [Ver #31223](https://github.com/twbs/bootstrap/issues/31223).
 {{< /callout >}}
 
+{{< bootstrap/content-suggestion >}}
+
 ## El caso del breadcrumb {#the-breadcrumb-case}
 
 El [separador de breadcrumb](/bootstrap/5.3/components/breadcrumb/ "Página todavía no traducida") es el único caso que requiere una variable completamente nueva, concretamente `$breadcrumb-divider-flipped`, cuyo valor predeterminado es `$breadcrumb-divider`.
@@ -186,4 +188,4 @@ El [separador de breadcrumb](/bootstrap/5.3/components/breadcrumb/ "Página toda
 * [RTLCSS](https://rtlcss.com)
 * [Estilo en RTL 101](https://rtlstyling.com/posts/rtl-styling)
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

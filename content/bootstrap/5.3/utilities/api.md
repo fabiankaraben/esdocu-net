@@ -10,7 +10,7 @@ prev: /bootstrap/5.3/helpers/visually-hidden
 
 La API de utilidad es una herramienta basada en Sass para generar clases de utilidad.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Las utilidades Bootstrap se generan con nuestra API de utilidades y se pueden usar para modificar o ampliar nuestro conjunto predeterminado de clases de utilidades a través de Sass. Nuestra API de utilidad se basa en una serie de mapas y funciones de Sass para generar familias de clases con varias opciones. Si no estás familiarizado con los mapas de Sass, lee la [documentación oficial de Sass](https://sass-lang.com/documentation/values/maps) para comenzar.
 
@@ -621,6 +621,8 @@ $utilities: (
 );
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 Salida:
 
 ```css {filename="CSS"}
@@ -634,4 +636,4 @@ Salida:
 
 Esto no genera nada en RTL, gracias a [la directiva de control `remove` RTLCSS](https://rtlcss.com/learn/usage-guide/control-directives/#remove).
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

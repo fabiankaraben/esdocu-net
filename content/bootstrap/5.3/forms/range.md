@@ -10,7 +10,7 @@ noindex: true
 
 Utiliza nuestras entradas de rango personalizada para lograr un estilo consistente en todos los navegadores y una personalización integrada.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Descripción general {#overview}
 --------------------------------
@@ -89,3 +89,5 @@ $form-range-thumb-active-bg:               tint-color($component-active-bg, 70%)
 $form-range-thumb-disabled-bg:             var(--#{$prefix}secondary-color);
 $form-range-thumb-transition:              background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 ```
+
+{{< content-ads/bottom-banner >}}

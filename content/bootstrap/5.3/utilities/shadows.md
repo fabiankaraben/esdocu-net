@@ -10,7 +10,7 @@ noindex: true
 
 Agrega o elimina sombras a elementos con utilidades de sombra box-shadow.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplos {#examples}
 ---------------------
@@ -40,6 +40,8 @@ $box-shadow-lg:               0 1rem 3rem rgba($black, .175);
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075);
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### API de utilidades de Sass {#sass-utilities-api}
 
 Las utilidades Shadow se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
@@ -59,4 +61,4 @@ Las utilidades Shadow se declaran en nuestra API de utilidades en `scss/_utiliti
 ),
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

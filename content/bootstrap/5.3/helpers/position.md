@@ -10,7 +10,7 @@ noindex: true
 
 Usa estos ayudantes para configurar rápidamente la posición de un elemento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Fijo parte superior {#fixed-top}
 ---------------------------------
@@ -61,6 +61,8 @@ Coloca un elemento en la parte inferior del viewport, de borde a borde, pero sol
 <div class="sticky-bottom">...</div>
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 Pegajoso responsive inferior {#responsive-sticky-bottom}
 ---------------------------------------------------------
 
@@ -74,4 +76,4 @@ También existen variaciones responsive para la utilidad `.sticky-bottom`.
 <div class="sticky-xxl-bottom">Stick to the bottom on viewports sized XXL (extra-extra-large) or wider</div>
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

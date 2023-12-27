@@ -9,7 +9,7 @@ description: Un componente de presentación de diapositivas para recorrer elemen
 
 Un componente de presentación de diapositivas para recorrer elementos (imágenes o diapositivas de texto) como un carrusel.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Carrusel {#how-it-works}
 -------------------------------
@@ -727,3 +727,5 @@ myCarousel.addEventListener('slide.bs.carousel', event => {
     // do something...
 })
 ```
+
+{{< content-ads/bottom-banner >}}

@@ -10,9 +10,11 @@ noindex: true
 
 Personaliza rápidamente Bootstrap con variables integradas para alternar fácilmente las preferencias globales de CSS para controlar el estilo y el comportamiento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Personaliza Bootstrap con nuestro archivo de variables personalizadas incorporado y alterna fácilmente las preferencias globales de CSS con las nuevas variables `$enable-*` Sass. Sobrescribe el valor de una variable y vuelve a compilar con `npm run test` según sea necesario.
+
+{{< bootstrap/content-suggestion >}}
 
 Puedes encontrar y personalizar estas variables para opciones globales clave en el archivo `scss/_variables.scss` de Bootstrap.
 
@@ -36,4 +38,4 @@ Puedes encontrar y personalizar estas variables para opciones globales clave en 
 | `$enable-important-utilities`  | `true` (predeterminado) o `false`              | Habilita el sufijo `!important` en clases de utilidad.                                                                                                                                                                                      |
 | `$enable-smooth-scroll`        | `true` (predeterminado) o `false`              | Aplica `scroll-behavior: smooth` globalmente, excepto para los usuarios que solicitan movimiento reducido a través de [`prefers-reduced-motion` media query](/bootstrap/5.3/getting-started/accessibility/#reduced-motion)                  |
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

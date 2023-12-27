@@ -9,7 +9,7 @@ description: Proporciona mensajes de retroalimentación contextuales para las ac
 
 Proporciona mensajes de retroalimentación contextuales para las acciones típicas del usuario con los útiles y flexibles mensajes de alerta disponibles.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplos del componente Alerta {#examples}
 ---------------------
@@ -393,6 +393,8 @@ const alert = bootstrap.Alert.getOrCreateInstance('#myAlert')
 alert.close()
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### Eventos {#events}
 
 El complemento de alerta de Bootstrap expone algunos eventos para conectarse a la funcionalidad de alerta.
@@ -411,4 +413,4 @@ myAlert.addEventListener('closed.bs.alert', event => {
 })
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

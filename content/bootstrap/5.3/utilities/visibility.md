@@ -10,7 +10,7 @@ noindex: true
 
 Controla la visibilidad de los elementos, sin modificar su visualización, con utilidades de visibilidad.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Establece la `visibility` de los elementos con nuestras utilidades de visibilidad. Estas clases de utilidad no modifican el valor `display` en absoluto y no afectan el diseño: los elementos `.invisible` aún ocupan espacio en la página.
 
@@ -38,6 +38,8 @@ Aplica `.visible` o `.invisible` según sea necesario.
 Personalización del CSS {#css}
 -----------
 
+{{< bootstrap/content-suggestion >}}
+
 ### API de utilidades de Sass {#sass-utilities-api}
 
 Las utilidades de visibilidad se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
@@ -55,4 +57,4 @@ Las utilidades de visibilidad se declaran en nuestra API de utilidades en `scss/
 ),
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

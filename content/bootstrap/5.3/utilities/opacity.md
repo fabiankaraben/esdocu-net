@@ -10,7 +10,7 @@ noindex: true
 
 Controla la opacidad de los elementos.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 La propiedad `opacity` establece el nivel de opacidad de un elemento. El nivel de opacidad describe el nivel de transparencia, donde `1` no es transparente en absoluto, `.5` es 50% visible y `0` es completamente transparente.
 
@@ -28,6 +28,8 @@ Establece la `opacity` de un elemento usando las utilidades `.opacity-{value}`.
 
 Personalización del CSS {#css}
 -----------
+
+{{< bootstrap/content-suggestion >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
 
@@ -48,4 +50,4 @@ Las utilidades de opacidad se declaran en nuestra API de utilidades en `scss/_ut
 ),
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

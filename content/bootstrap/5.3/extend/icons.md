@@ -11,7 +11,7 @@ noindex: true
 
 Orientación y sugerencias para usar bibliotecas de íconos externas con Bootstrap.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Si bien Bootstrap no incluye un conjunto de íconos predeterminado, tenemos nuestra propia biblioteca de íconos completa llamada Bootstrap Icons. Siéntete libre de usarlos o cualquier otro ícono configurado en tu proyecto. Hemos incluido detalles para los íconos Bootstrap y otros conjuntos de íconos preferidos a continuación.
 
@@ -51,3 +51,5 @@ Si bien no los hemos probado nosotros mismos, parecen prometedores y ofrecen mú
 * [Icons8](https://icons8.com)
 * [icofont](https://icofont.com)
 * [Tabler Icons](https://tabler-icons.io)
+
+{{< content-ads/bottom-banner >}}

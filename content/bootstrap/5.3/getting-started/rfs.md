@@ -10,7 +10,7 @@ noindex: true
 
 El motor de cambio de tamaño de Bootstrap escala de manera responsive las propiedades CSS comunes para utilizar mejor el espacio disponible en las ventanas gráficas y los dispositivos.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## ¿Qué es RFS? {#what-is-rfs}
 
@@ -92,3 +92,5 @@ En este ejemplo, utilizamos uno de los [mixins de puntos de interrupción respon
 ## Documentación extendida {#extended-documentation}
 
 RFS es un proyecto separado bajo la organización Bootstrap. Puedes encontrar más información sobre RFS y su configuración en su [repositorio de GitHub](https://github.com/twbs/rfs/tree/v10.0.0).
+
+{{< content-ads/bottom-banner >}}

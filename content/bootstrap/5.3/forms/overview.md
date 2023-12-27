@@ -11,7 +11,7 @@ noindex: true
 
 Ejemplos y pautas de uso para estilos de control de formularios, opciones de diseño y componentes personalizados para crear una amplia variedad de formularios.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 | <span class="mx-16">Tópico</span>                               | Descripción                                                                                                                       |
 | --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -148,3 +148,5 @@ $input-btn-font-size-lg:      $font-size-lg;
 
 $input-btn-border-width:      var(--#{$prefix}border-width);
 ```
+
+{{< content-ads/bottom-banner >}}

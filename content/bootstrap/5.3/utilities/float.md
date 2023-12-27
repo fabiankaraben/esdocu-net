@@ -10,7 +10,7 @@ noindex: true
 
 Alterna la flotación de cualquier elemento, a través de cualquier punto de interrupción, usando nuestras utilidades flotantes responsive.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Descripción general {#overview}
 --------------------------------
@@ -85,3 +85,5 @@ Las utilidades flotantes se declaran en nuestra API de utilidades en `scss/_util
   )
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

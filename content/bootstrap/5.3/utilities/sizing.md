@@ -10,7 +10,7 @@ noindex: true
 
 Haz fácilmente un elemento tan ancho o tan alto con nuestras utilidades de ancho y alto.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Relativo al padre {#relative-to-the-parent}
 --------------------------------------------
@@ -134,3 +134,5 @@ Las utilidades de tamaño se declaran en nuestra API de utilidades en `scss/_uti
   values: (100: 100vh)
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

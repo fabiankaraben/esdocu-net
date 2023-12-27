@@ -9,7 +9,7 @@ description: Alterna superposiciones contextuales para mostrar listas de enlaces
 
 Alterna superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable de Bootstrap.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Descripción general del componente Desplegable {#overview}
 --------------------------------
@@ -1338,3 +1338,5 @@ myDropdown.addEventListener('show.bs.dropdown', event => {
     // do something...
 })
 ```
+
+{{< content-ads/bottom-banner >}}

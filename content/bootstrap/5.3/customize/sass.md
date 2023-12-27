@@ -11,7 +11,7 @@ Utiliza nuestros archivos fuente Sass para aprovechar variables, mapas, mixins y
 
 Utiliza nuestros archivos fuente Sass para aprovechar variables, mapas, mixins y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Estructura de archivos {#file-structure}
 -----------------------------------------
@@ -399,3 +399,5 @@ Hay disponible una combinación abreviada para la media query `prefers-color-sch
   }
 }
 ```
+
+{{< content-ads/bottom-banner >}}

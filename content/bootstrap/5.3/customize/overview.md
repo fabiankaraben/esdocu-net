@@ -11,7 +11,7 @@ prev: /bootstrap/5.3/getting-started/contribute
 
 Aprende a crear temas, personalizar y ampliar Bootstrap con Sass, una gran cantidad de opciones globales, un sistema de color expansivo y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 | <span class="mx-14">Tópico</span>                           | Descripción                                                                                                      |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -56,3 +56,5 @@ Varios componentes de Bootstrap incluyen SVG integrados en nuestro CSS para dise
 * [Menús de selección](/bootstrap/5.3/forms/select)
 
 Basado en la [conversación comunitaria](https://github.com/twbs/bootstrap/issues/25394), algunas opciones para abordar esto en tu propia base de código incluye [reemplazar las URL con assets alojados localmente](/bootstrap/5.3/getting-started/webpack/#extracting-svg-files), eliminar las imágenes y usar imágenes en línea (no es posible en todos los componentes) y modificando tu CSP. Nuestra recomendación es revisar cuidadosamente tus propias políticas de seguridad y decidir cuál es el mejor camino a seguir, si es necesario.
+
+{{< content-ads/bottom-banner >}}

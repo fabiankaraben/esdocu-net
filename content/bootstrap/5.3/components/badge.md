@@ -9,7 +9,7 @@ description: Documentación y ejemplos para insignias, nuestro componente de eti
 
 Documentación y ejemplos para insignias, nuestro componente de etiquetado y recuento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplos del componente Insignia {#examples}
 ---------------------
@@ -153,3 +153,5 @@ $badge-padding-y:                   .35em;
 $badge-padding-x:                   .65em;
 $badge-border-radius:               var(--#{$prefix}border-radius);
 ```
+
+{{< content-ads/bottom-banner >}}

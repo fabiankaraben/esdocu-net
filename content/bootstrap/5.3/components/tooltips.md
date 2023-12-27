@@ -10,7 +10,7 @@ next: /bootstrap/5.3/helpers/clearfix
 
 Documentación y ejemplos para agregar tooltips Bootstrap personalizados con CSS y JavaScript usando CSS3 para animaciones y atributos de datos para el almacenamiento de títulos local.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cosas que debes saber al usar el complemento de tooltips:
 
@@ -327,6 +327,8 @@ tooltip.setContent({ '.tooltip-inner': 'another title' })
 El método `setContent` acepta un argumento `object`, donde cada clave de propiedad es un selector `string` válido dentro de la plantilla de tooltips, y cada valor de propiedad relacionado puede ser `string` | `element` | `function` | `null`
 {{< /callout >}}
 
+{{< bootstrap/content-suggestion >}}
+
 ### Eventos {#events}
 
 | Evento                | Descripción                                                                                                                  |
@@ -348,4 +350,4 @@ myTooltipEl.addEventListener('hidden.bs.tooltip', () => {
 tooltip.hide()
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

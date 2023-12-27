@@ -11,7 +11,7 @@ noindex: true
 
 Aprende sobre los principios rectores, las estrategias y las técnicas utilizadas para crear y mantener Bootstrap para que puedas personalizarlo y ampliarlo tú mismo más fácilmente.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Si bien las páginas de introducción brindan un recorrido introductorio por el proyecto y lo que ofrece, este documento se centra en _por qué_ hacemos las cosas que hacemos en Bootstrap. Explica nuestra filosofía de construir en la web para que otros puedan aprender de nosotros, contribuir con nosotros y ayudarnos a mejorar.
 
@@ -100,3 +100,5 @@ Convenciones de código {#code-conventions}
 Usamos [Stylelint](https://stylelint.io) para hacer cumplir estos estándares y más en nuestro Sass/CSS. [Nuestra configuración personalizada de Stylelint](https://github.com/twbs/stylelint-config-twbs-bootstrap) es de código abierto y está disponible para que otros la usen y amplíen.
 
 Usamos [vnu-jar](https://www.npmjs.com/package/vnu-jar) para aplicar HTML estándar y semántico, así como detectar errores comunes.
+
+{{< content-ads/bottom-banner >}}

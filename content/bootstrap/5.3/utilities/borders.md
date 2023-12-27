@@ -9,7 +9,7 @@ description: Usa utilidades de bordes para diseñar rápidamente el borde y el r
 
 Usa utilidades de bordes para diseñar rápidamente el borde y el radio del borde de un elemento. Ideal para imágenes, botones o cualquier otro elemento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Borde {#border}
 ----------------
@@ -537,3 +537,5 @@ Las utilidades de borde se declaran en nuestra API de utilidades en `scss/_utili
   )
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

@@ -9,7 +9,7 @@ description: Usa estas utilidades abreviadas para configurar rápidamente la pos
 
 Usa estas utilidades abreviadas para configurar rápidamente la posición de un elemento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Valores de posición {#position-values}
 ---------------------------------------
@@ -207,3 +207,5 @@ Las utilidades de posición se declaran en nuestra API de utilidades en `scss/_u
     )
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

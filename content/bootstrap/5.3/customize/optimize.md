@@ -10,7 +10,7 @@ next: /bootstrap/5.3/layout/breakpoints
 
 Mantén tus proyectos ágiles, responsive y mantenibles para que puedas ofrecer la mejor experiencia y concentrarte en trabajos más importantes.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Importaciones Sass optimizadas {#lean-sass-imports}
 ----------------------------------------------------
@@ -151,3 +151,5 @@ Usa siempre HTTPS {#always-use-https}
 Tu sitio web solo debe estar disponible a través de conexiones HTTPS en producción. HTTPS mejora la seguridad, la privacidad y la disponibilidad de todos los sitios, y [no existe el tráfico web no confidencial](https://https.cio.gov/everything). Los pasos para configurar tu sitio web para que funcione exclusivamente a través de HTTPS varían ampliamente dependiendo de su arquitectura y proveedor de alojamiento web y, por lo tanto, están fuera del alcance de esta documentación.
 
 Los sitios servidos a través de HTTPS también deben acceder a todas las hojas de estilo, scripts y otros activos a través de conexiones HTTPS. De lo contrario, enviarás a los usuarios [contenido activo mixto](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content), lo que generará vulnerabilidades potenciales en las que un sitio puede verse comprometido al alterar una dependencia. Esto puede provocar problemas de seguridad y mostrar advertencias en el navegador a los usuarios. Ya sea que obtengas Bootstrap desde una CDN o lo proporciones tú mismo, asegúrate de acceder solo a través de conexiones HTTPS.
+
+{{< content-ads/bottom-banner >}}

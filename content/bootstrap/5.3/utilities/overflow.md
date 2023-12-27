@@ -10,7 +10,7 @@ noindex: true
 
 Usa estas utilidades abreviadas para configurar rápidamente cómo el contenido desborda un elemento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Overflow {#overflow}
 ---------------------
@@ -61,6 +61,8 @@ Personalización del CSS {#css}
 
 Las utilidades de desbordamiento se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 
+{{< bootstrap/content-suggestion >}}
+
 [scss/_utilities.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_utilities.scss)
 
 ```scss {filename="scss/_utilities.scss"}
@@ -78,4 +80,4 @@ Las utilidades de desbordamiento se declaran en nuestra API de utilidades en `sc
 ),
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

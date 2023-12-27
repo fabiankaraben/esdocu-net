@@ -9,7 +9,7 @@ description: Utiliza nuestra poderosa grilla flexbox para dispositivos móviles 
 
 Utiliza nuestra poderosa grilla flexbox para dispositivos móviles para crear diseños de todas las formas y tamaños gracias a un sistema de doce columnas, seis niveles responsive predeterminados, variables y mixins Sass, y docenas de clases predefinidas.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo {#example}
 -------------------
@@ -515,6 +515,8 @@ $grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### Niveles de cuadrícula {#grid-tiers}
 
 Más allá de las columnas mismas, también puedes personalizar el número de niveles de la cuadrícula. Si quisieras solo cuatro niveles de cuadrícula, actualizarías `$grid-breakpoints` y `$container-max-widths` a algo como esto:
@@ -536,4 +538,4 @@ $container-max-widths: (
 
 Al realizar cambios en las variables o mapas de Sass, deberás guardar los cambios y volver a compilarlos. Al hacerlo, se generará un nuevo conjunto de clases de cuadrícula predefinidas para anchos de columna, desplazamientos y ordenamiento. Las utilidades de visibilidad responsive también se actualizarán para utilizar puntos de interrupción personalizados. Asegúrate de establecer los valores de la cuadrícula en `px` (no en `rem`, `em` o `%`).
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

@@ -10,7 +10,7 @@ noindex: true
 
 Un botón de cierre genérico para descartar contenido como modales y alertas.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo del componente Botón cerrar {#example}
 -------------------
@@ -98,3 +98,5 @@ $btn-close-focus-opacity:    1;
 $btn-close-disabled-opacity: .25;
 $btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%);
 ``` 
+
+{{< content-ads/bottom-banner >}}

@@ -11,7 +11,7 @@ noindex: true
 
 Borra rápida y fácilmente el contenido flotante dentro de un contenedor agregando una utilidad clearfix.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Borra fácilmente los `float` agregando `.clearfix` **al elemento padre**. También se puede utilizar como mixin.
 
@@ -35,6 +35,8 @@ El código fuente del mixin:
 }
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 Usa el mixin en SCSS:
 
 ```scss {filename="SCSS"}
@@ -56,4 +58,4 @@ El siguiente ejemplo muestra cómo se puede usar clearfix. Sin clearfix, el div 
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

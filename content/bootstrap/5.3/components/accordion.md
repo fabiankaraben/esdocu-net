@@ -10,7 +10,7 @@ prev: /bootstrap/5.3/forms/validation
 
 Construye acordeones que se contraen verticalmente en combinación con nuestro complemento Collapse JavaScript.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Acordeón {#how-it-works}
 -------------------------------
@@ -282,3 +282,5 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 ```
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/bottom-banner >}}

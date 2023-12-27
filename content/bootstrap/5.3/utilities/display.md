@@ -10,7 +10,7 @@ noindex: true
 
 Alterna de manera rápida y responsive el valor de visualización de los componentes y más con nuestras utilidades de visualización. Incluye soporte para algunos de los valores más comunes, así como algunos extras para controlar la visualización al imprimir.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona {#how-it-works}
 -------------------------------
@@ -142,3 +142,5 @@ Las utilidades de visualización se declaran en nuestra API de utilidades en `sc
     values: inline inline-block block grid inline-grid table table-row table-cell flex inline-flex none
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

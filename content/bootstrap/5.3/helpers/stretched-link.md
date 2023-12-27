@@ -10,7 +10,7 @@ noindex: true
 
 Haz que se pueda hacer clic en cualquier elemento HTML o componente Bootstrap "estirando" un enlace anidado a través de CSS.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Agrega `.stretched-link` a un enlace para que sea [bloque contenedor](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block) en el que se puede hacer clic mediante un pseudoelemento `::after`. En la mayoría de los casos, esto significa que se puede hacer clic en un elemento con `position: relative;` que contiene un enlace con la clase `.stretched-link`. Ten en cuenta [cómo funciona `position` (CSS)](https://www.w3.org/TR/CSS21/visuren.html#propdef-position), `.stretched-link` no se puede mezclar con la mayoría de los elementos de la tabla.
 
@@ -86,6 +86,8 @@ Identificar el bloque contenedor {#identifying-the-containing-block}
 
 Si el enlace extendido no parece funcionar, el [bloque contenedor](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block) probablemente será la causa. Las siguientes propiedades CSS convertirán a un elemento en el bloque contenedor:
 
+{{< bootstrap/content-suggestion >}}
+
 * Un valor de `position` distinto de `static`
 * Un valor de `transform` o `perspective` distinto de `none`
 * Un valor `will-change` de `transform` o `perspective`
@@ -117,4 +119,4 @@ Si el enlace extendido no parece funcionar, el [bloque contenedor](https://devel
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

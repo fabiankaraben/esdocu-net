@@ -10,7 +10,7 @@ prev: /bootstrap/5.3/layout/css-grid
 
 Reboot, una colección de cambios de CSS específicos de elementos en un solo archivo, el inicio de Bootstrap para proporcionar una línea de base elegante, consistente y simple sobre la cual construir.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Reboot se basa en Normalize, proporcionando muchos elementos HTML con estilos un tanto obstinados usando solo selectores de elementos. El estilo adicional se realiza solo con clases. Por ejemplo, reiniciamos algunos estilos `<table>` para obtener una línea base más simple y luego proporcionamos `.table`, `.table-bordered` y más.
 
@@ -465,3 +465,5 @@ HTML5 agrega [un nuevo atributo global llamado `[hidden]`](https://developer.moz
 Dado que `[hidden]` no es compatible con los métodos de jQuery `$(...).hide()` y `$(...).show()`, no respaldamos específicamente `[hidden]` sobre otras técnicas para administrar la `display` de elementos.
 
 Para simplemente alternar la visibilidad de un elemento, es decir, su `display` no se modifica y el elemento aún puede afectar el flujo del documento, usa [la clase `.invisible`,](/bootstrap/5.3/utilities/visibility) en su lugar.
+
+{{< content-ads/bottom-banner >}}

@@ -15,7 +15,7 @@ La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de Bootstrap en 
 **¿Quieres ir hasta el final?** Descarga el código fuente y la demostración funcional de esta guía desde el repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/parcel). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index) pero no ejecutarlo porque Parcel actualmente no es compatible allí.
 {{< /callout >}}
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Configuración {#setup}
 
@@ -151,3 +151,5 @@ Ahora puedes comenzar a agregar cualquier componente Bootstrap que quieras usar.
 * * *
 
 _¿Ves algo incorrecto o desactualizado aquí? [abre un issue en GitHub](https://github.com/twbs/bootstrap/issues/new/choose). ¿Necesitas ayuda para solucionar problemas? [Buscar o iniciar una discusión](https://github.com/twbs/bootstrap/discussions) en GitHub._
+
+{{< content-ads/bottom-banner >}}

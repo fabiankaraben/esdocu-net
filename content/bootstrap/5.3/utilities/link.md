@@ -9,7 +9,7 @@ description: Las utilidades de enlace se utilizan para estilizar tus anchors y a
 
 Las utilidades de enlace se utilizan para estilizar tus anchors y ajustar su color, opacidad, desplazamiento de subrayado, color de subrayado y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Opacidad del enlace {#link-opacity}
 ------------------------------------
@@ -184,3 +184,5 @@ Las utilidades de enlace se declaran en nuestra API de utilidades en `scss/_util
   ),
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

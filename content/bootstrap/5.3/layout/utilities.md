@@ -10,7 +10,7 @@ noindex: true
 
 Para un desarrollo responsive y compatible con dispositivos móviles más rápido, Bootstrap incluye docenas de clases de utilidad para mostrar, ocultar, alinear y espaciar contenido.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cambiando `display` {#changing-display}
 ----------------------------------------
@@ -24,6 +24,8 @@ Bootstrap está construido con flexbox, pero no se ha cambiado el `display` de c
 
 Si necesitas agregar `display: flex` a un elemento, hazlo con `.d-flex` o uno de las variantes responsive (por ejemplo `.d-sm-flex`). Necesitarás esta clase o valor `display` para permitir el uso de nuestras [utilidades flexbox](/bootstrap/5.3/utilities/flex) adicionales para dimensionar, alinear, espaciar y más.
 
+{{< bootstrap/content-suggestion >}}
+
 Margen y relleno {#margin-and-padding}
 ---------------------------------------
 
@@ -34,4 +36,4 @@ Alterna `visibility` {#toggle-visibility}
 
 Cuando no es necesario alternar `display`, puedes alternar `visibility` de un elemento con nuestras [utilidades de visibilidad](/bootstrap/5.3/utilities/visibility). Los elementos invisibles seguirán afectando el diseño de la página, pero están visualmente ocultos para los visitantes.
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

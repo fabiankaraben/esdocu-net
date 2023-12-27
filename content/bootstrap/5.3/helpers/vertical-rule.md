@@ -10,7 +10,7 @@ noindex: true
 
 Utiliza el asistente de regla vertical personalizado para crear divisores verticales como el elemento `<hr>`.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona {#how-it-works}
 -------------------------------
@@ -58,6 +58,8 @@ También se pueden usar en [pilas](/bootstrap/5.3/helpers/stacks):
 ```
 {{< /demo-iframe >}}
 
+{{< bootstrap/content-suggestion >}}
+
 Personalización del CSS {#css}
 -----------
 
@@ -71,4 +73,4 @@ Personaliza la variable Sass de regla vertical para cambiar su ancho.
 $vr-border-width:             var(--#{$prefix}border-width);
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

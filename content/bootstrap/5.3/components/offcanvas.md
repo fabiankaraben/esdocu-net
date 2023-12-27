@@ -9,7 +9,7 @@ description: Crea barras laterales ocultas en tu proyecto para navegación, carr
 
 Crea barras laterales ocultas en tu proyecto para navegación, carritos de compras y más con algunas clases y nuestro complemento JavaScript.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Offcanvas {#how-it-works}
 -------------------------------
@@ -444,3 +444,5 @@ myOffcanvas.addEventListener('hidden.bs.offcanvas', event => {
     // do something...
 })
 ```
+
+{{< content-ads/bottom-banner >}}

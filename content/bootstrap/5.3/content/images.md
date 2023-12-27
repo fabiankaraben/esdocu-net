@@ -10,7 +10,7 @@ noindex: true
 
 Documentación y ejemplos para optar por imágenes para que tengan un comportamiento responsive (para que nunca sean más anchas que sus padres) y agregarles estilos livianos, todo a través de clases.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Imágenes responsive {#responsive-images}
 -----------------------------------------
@@ -93,3 +93,5 @@ $thumbnail-border-color:            var(--#{$prefix}border-color);
 $thumbnail-border-radius:           var(--#{$prefix}border-radius);
 $thumbnail-box-shadow:              var(--#{$prefix}box-shadow-sm);
 ```
+
+{{< content-ads/bottom-banner >}}

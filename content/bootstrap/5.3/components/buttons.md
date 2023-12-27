@@ -9,7 +9,7 @@ description: Usa los estilos de botones personalizados de Bootstrap para accione
 
 Usa los estilos de botones personalizados de Bootstrap para acciones en formularios, cuadros de diálogo y más con soporte para múltiples tamaños, estados y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Clase base de Botones {#base-class}
 -------------------------
@@ -466,6 +466,8 @@ Hay tres combinaciones para botones: combinación de botón y variante de contor
 }
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### Bucles Sass del componente {#sass-loops}
 
 Las variantes de botones (para botones regulares y de contorno) usan sus respectivos mixins con nuestro mapa `$theme-colors` para generar las clases modificadoras en `scss/_buttons.scss`.
@@ -506,4 +508,4 @@ Las variantes de botones (para botones regulares y de contorno) usan sus respect
 }
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

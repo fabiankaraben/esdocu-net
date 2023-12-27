@@ -9,7 +9,7 @@ description: Documentación y ejemplos de utilidades de texto comunes para contr
 
 Documentación y ejemplos de utilidades de texto comunes para controlar la alineación, el ajuste, el peso y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Alineación de texto {#text-alignment}
 --------------------------------------
@@ -259,6 +259,8 @@ $theme-colors-text: (
 );
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### API de utilidades de Sass {#sass-utilities-api}
 
 Las utilidades de fuentes y texto se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
@@ -340,4 +342,4 @@ Las utilidades de fuentes y texto se declaran en nuestra API de utilidades en `s
 ),
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

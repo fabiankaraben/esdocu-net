@@ -10,7 +10,7 @@ next: /bootstrap/5.3/components/accordion
 
 Brinda comentarios valiosos y prácticos a tus usuarios con la validación de formularios HTML5, a través de comportamientos predeterminados del navegador o estilos personalizados y JavaScript.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 {{< callout type="warning" emoji="" >}}
 Somos conscientes de que actualmente los estilos de validación personalizados y los tooltips del lado del cliente no son accesibles, ya que no están expuestos a tecnologías de asistencia. Mientras trabajamos en una solución, recomendamos utilizar la opción del lado del servidor o el método de validación del navegador predeterminado.
@@ -656,3 +656,5 @@ Se utiliza para iterar sobre los valores del mapa `$form-validation-states` para
 ### Personalización {#customizing}
 
 Los estados de validación se pueden personalizar a través de Sass con el mapa `$form-validation-states`. Ubicado en nuestro archivo `_variables.scss`, este mapa Sass es cómo generamos los estados de validación predeterminados `valid`/`invalid`. Se incluye un mapa anidado para personalizar el color, el icono, el color del tooltips y la sombra de enfoque de cada estado. Si bien los navegadores no admiten otros estados, aquellos que usan estilos personalizados pueden agregar fácilmente comentarios a formularios más complejos.
+
+{{< content-ads/bottom-banner >}}

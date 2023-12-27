@@ -10,7 +10,7 @@ noindex: true
 
 Cambia fácilmente la alineación vertical de los elementos en línea, bloque en línea, tabla en línea y celda de tabla.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cambiar la alineación de elementos con utilidades de [`vertical-alignment`](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align). Ten en cuenta que la alineación vertical solo afecta a los elementos en línea, en bloque en línea, en tabla en línea y en celdas de tabla.
 
@@ -68,3 +68,5 @@ Las utilidades de alineación vertical se declaran en nuestra API de utilidades 
     values: baseline top middle bottom text-bottom text-top
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

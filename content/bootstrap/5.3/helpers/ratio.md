@@ -10,7 +10,7 @@ noindex: true
 
 Usa pseudoelementos generados para hacer que un elemento mantenga la relación de aspecto que elijas. Perfecto para manejar de manera responsive incrustaciones de videos o presentaciones de diapositivas según el ancho del elemento principal.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Acerca de {#about}
 -------------------
@@ -109,3 +109,5 @@ $aspect-ratios: (
     "21x9": calc(9 / 21 * 100%)
 );
 ```
+
+{{< content-ads/bottom-banner >}}

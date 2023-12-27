@@ -9,7 +9,7 @@ description: Bootstrap está respaldado por un extenso sistema de colores que te
 
 Bootstrap está respaldado por un extenso sistema de colores que tematiza nuestros estilos y componentes. Esto permite una personalización y extensión más completas para cualquier proyecto.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Colores {#colors}
 ------------------
@@ -591,3 +591,5 @@ $utilities: map-merge(
 ```    
 
 Esto generará nuevas utilidades `.text-{color}-{level}` para cada color y nivel. También puedes hacer lo mismo con cualquier otro servicio público y propiedad.
+
+{{< content-ads/bottom-banner >}}

@@ -9,7 +9,7 @@ description: Crea casillas de verificación y radios consistentes en todos los n
 
 Crea casillas de verificación y radios consistentes en todos los navegadores y dispositivos con nuestro componente de verificación completamente reescrito.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Las casillas de verificación y radios predeterminadas del navegador se reemplazan con la ayuda de `.form-check`, una serie de clases para ambos tipos de entrada que mejora el diseño y el comportamiento de tus elementos HTML, que proporcionan una mayor personalización y coherencia entre navegadores. Las casillas de verificación sirven para seleccionar una o varias opciones en una lista, mientras que las radios sirven para seleccionar una opción entre muchas.
 
@@ -441,3 +441,5 @@ $form-switch-checked-color:       $component-active-color;
 $form-switch-checked-bg-image:    url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-checked-color}'/></svg>");
 $form-switch-checked-bg-position: right center;
 ```
+
+{{< content-ads/bottom-banner >}}

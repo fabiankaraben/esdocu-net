@@ -12,7 +12,7 @@ Una breve descripción de las características y limitaciones de Bootstrap para 
 
 Bootstrap proporciona un sencillo marco de estilos listos para usar, herramientas de layout y componentes interactivos, lo que permite a los desarrolladores crear sitios web y aplicaciones que son visualmente atractivos, funcionalmente ricos y accesibles por defecto.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Descripción general y limitaciones {#overview-and-limitations}
 
@@ -68,3 +68,5 @@ En navegadores que admiten `prefers-reduced-motion`, y donde el usuario _no_ ha 
 * [Microsoft Accessibility Insights](https://accessibilityinsights.io)
 * [Deque Axe testing tools](https://www.deque.com/axe)
 * [Introducción a la Accesibilidad Web](https://www.w3.org/WAI/fundamentals/accessibility-intro)
+
+{{< content-ads/bottom-banner >}}

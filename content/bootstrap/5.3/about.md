@@ -11,7 +11,7 @@ noindex: true
 
 Aprende más sobre el equipo que mantiene Bootstrap, cómo y por qué comenzó el proyecto y cómo involucrarte.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Equipo {#team}
 ---------------
@@ -31,9 +31,11 @@ Con Bootstrap 4, una vez más reescribimos el proyecto para tener en cuenta dos 
 
 Nuestra última versión, Bootstrap 5, se enfoca en mejorar el código base de la versión 4 con la menor cantidad de cambios importantes posibles. Mejoramos las características y componentes existentes, eliminamos la compatibilidad con navegadores más antiguos, eliminamos jQuery para JavaScript normal y adoptamos tecnologías más amigables para el futuro, como propiedades personalizadas de CSS, como parte de nuestras herramientas.
 
+{{< bootstrap/content-suggestion >}}
+
 Involúcrate {#get-involved}
 ----------------------------
 
 Participa en el desarrollo de Bootstrap [abriendo un issue](https://github.com/twbs/bootstrap/issues/new/choose) o enviando un pull request. Lee nuestras [directrices de contribución](https://github.com/twbs/bootstrap/blob/v5.3.2/.github/CONTRIBUTING.md) para obtener información sobre cómo desarrollamos.
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

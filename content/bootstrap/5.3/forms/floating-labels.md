@@ -9,7 +9,7 @@ description: Crea etiquetas de formulario bellamente simples que floten sobre tu
 
 Crea etiquetas de formulario bellamente simples que floten sobre tus campos de entrada.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo {#example}
 -------------------
@@ -212,6 +212,8 @@ Cuando trabajes con el sistema de cuadrícula Bootstrap, asegúrate de colocar l
 Personalización del CSS {#css}
 -----------
 
+{{< bootstrap/content-suggestion >}}
+
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
@@ -230,4 +232,4 @@ $form-floating-label-disabled-color:    $gray-600;
 $form-floating-transition:              opacity .1s ease-in-out, transform .1s ease-in-out;
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

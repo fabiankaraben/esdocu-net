@@ -10,7 +10,7 @@ noindex: true
 
 Los gutteres son el relleno entre tus columnas, que se utilizan para espaciar y alinear de manera responsive el contenido en el sistema de cuadrícula de Bootstrap.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funcionan {#how-they-work}
 --------------------------------
@@ -173,6 +173,8 @@ En la práctica, así es como se ve. Ten en cuenta que puedes continuar usando e
 ```
 {{< /demo-iframe >}}
 
+{{< bootstrap/content-suggestion >}}
+
 Cambia los gutters {#change-the-gutters}
 -----------------------------------------
 
@@ -190,4 +192,4 @@ $gutters: (
 );
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

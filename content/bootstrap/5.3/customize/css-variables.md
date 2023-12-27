@@ -9,7 +9,7 @@ description: Usa las propiedades personalizadas de CSS de Bootstrap para un dise
 
 Usa las propiedades personalizadas de CSS de Bootstrap para un diseño y desarrollo rápidos y con visión de futuro.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Bootstrap incluye muchas [propiedades personalizadas de CSS (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) en su CSS compilado para personalización en tiempo real sin necesidad de recompilar Sass. Estos proporcionan un fácil acceso a los valores de uso común, como los colores de nuestro tema, los puntos de interrupción y las pilas de fuentes principales cuando se trabaja en el inspector de tu navegador, una zona de pruebas de código o la creación de prototipos en general.
 
@@ -274,3 +274,5 @@ Puntos de interrupción de la cuadrícula {#grid-breakpoints}
 ------------------------------------------------------------
 
 Aunque incluimos nuestros puntos de interrupción de cuadrícula como variables CSS (excepto `xs`), ten en cuenta que las **variables CSS no funcionan en media queries**. Esto está diseñado en la especificación CSS para variables, pero puede cambiar en los próximos años con soporte para variables `env()`. Consulta [esta respuesta de Stack Overflow](https://stackoverflow.com/a/47212942) para obtener algunos enlaces útiles. Mientras tanto, puedes utilizar estas variables en otras situaciones de CSS, así como en tu JavaScript.
+
+{{< content-ads/bottom-banner >}}

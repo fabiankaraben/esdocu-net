@@ -15,7 +15,7 @@ La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de Bootstrap en 
 **¿Quieres ir hasta el final?** Descarga el código fuente y la demostración funcional de esta guía desde el repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/vite). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index) para editarlo en vivo.
 {{< /callout >}}
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Configuración {#setup}
 
@@ -172,3 +172,5 @@ En la siguiente y última sección de esta guía, importaremos todo el CSS y Jav
 * * *
 
 _¿Ves algo incorrecto o desactualizado aquí? [abre un issue en GitHub](https://github.com/twbs/bootstrap/issues/new/choose). ¿Necesitas ayuda para solucionar problemas? [Buscar o iniciar una discusión](https://github.com/twbs/bootstrap/discussions) en GitHub._
+
+{{< content-ads/bottom-banner >}}

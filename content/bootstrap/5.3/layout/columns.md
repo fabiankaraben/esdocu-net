@@ -9,7 +9,7 @@ description: Aprende a modificar columnas con un puñado de opciones de alineaci
 
 Aprende a modificar columnas con un puñado de opciones de alineación, orden y desplazamiento gracias a nuestro sistema de cuadrícula flexbox. Además, aprende cómo usar clases de columnas para administrar anchos de elementos que no son de cuadrícula.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 {{< callout type="info" emoji="" >}}
 **¡Atención!** Asegúrate de [leer la página de cuadrícula](/bootstrap/5.3/layout/grid) antes de profundizar en cómo modificar y personalizar las columnas de tu cuadrícula.
@@ -363,6 +363,8 @@ Las clases `.col-*` también se pueden usar fuera de un `.row` para darle a un e
 ```
 {{< /demo-iframe >}}
 
+{{< bootstrap/content-suggestion >}}
+
 Las clases se pueden usar junto con utilidades para crear imágenes flotantes responsive. Asegúrate de envolver el contenido en un contenedor [`.clearfix`](/bootstrap/5.3/helpers/clearfix) para borrar el flotante si el texto es más corto.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/layout/columns/standalone-column-classes-2.html" >}}
@@ -398,4 +400,4 @@ Las clases se pueden usar junto con utilidades para crear imágenes flotantes re
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

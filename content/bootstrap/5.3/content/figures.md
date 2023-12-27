@@ -11,7 +11,7 @@ noindex: true
 
 Documentación y ejemplos para mostrar imágenes y texto relacionados con el componente de figura en Bootstrap.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cada vez que necesites mostrar un contenido, como una imagen con un título opcional, considera usar una `<figure>`.
 
@@ -40,6 +40,8 @@ Alinear el título de la figura es fácil con nuestras [utilidades de texto](/bo
 Personalización del CSS {#css}
 -----------
 
+{{< bootstrap/content-suggestion >}}
+
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
@@ -49,4 +51,4 @@ $figure-caption-font-size:          $small-font-size;
 $figure-caption-color:              var(--#{$prefix}secondary-color);
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

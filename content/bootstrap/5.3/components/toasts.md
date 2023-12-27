@@ -9,7 +9,7 @@ description: Notificaciones push a tus visitantes con un toast, un mensaje de al
 
 Notificaciones push a tus visitantes con un toast, un mensaje de alerta liviano y fácilmente personalizable.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Los toast son notificaciones livianas diseñadas para imitar las notificaciones automáticas que se han popularizado en los sistemas operativos móviles y de escritorio. Están construidos con flexbox, por lo que son fáciles de alinear y colocar.
 
@@ -482,6 +482,8 @@ El objeto de configuración final es el resultado combinado de `data-bs-config`,
 | `isShown`             | Devuelve un valor booleano según el estado de visibilidad del toast.                                                                                                                                                                                                                                                                    |
 | `show`                | Revela el toast de un elemento. **Vuelve al punto de la llamada antes de que se haya mostrado el toast** (es decir, antes de que ocurra el evento `shown.bs.toast`). Tienes que llamar manualmente a este método; en su lugar, tu toast no se mostrará.                                                                                 |
 
+{{< bootstrap/content-suggestion >}}
+
 ### Eventos {#events}
 
 | Evento            | Descripción                                                                         |
@@ -498,4 +500,5 @@ myToastEl.addEventListener('hidden.bs.toast', () => {
 })
 ```
 
-{{< bootstrap/content-suggestion >}}
+
+{{< content-ads/bottom-banner >}}

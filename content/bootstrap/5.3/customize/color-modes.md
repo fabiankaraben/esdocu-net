@@ -12,7 +12,7 @@ Bootstrap ahora admite modos de color o temas a partir de la versión 5.3.0. Exp
 <br />
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.3.0</span>
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 {{< callout type="info" emoji="" >}}
 **¡Pruébalo tú mismo!** Descarga el código fuente y la demostración funcional para usar Bootstrap con Stylelint y los modos de color del repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/color-modes). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index).
@@ -515,3 +515,5 @@ Los estilos para el modo oscuro y cualquier modo de color personalizado que cree
   }
 }
 ```
+
+{{< content-ads/bottom-banner >}}

@@ -9,7 +9,7 @@ description: Documentación y ejemplos para tipografía de Bootstrap, incluidas 
 
 Documentación y ejemplos para tipografía de Bootstrap, incluidas configuraciones globales, encabezados, cuerpo de texto, listas y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Configuración global {#global-settings}
 ----------------------------------------
@@ -392,3 +392,5 @@ $mark-bg:                     $yellow-100;
 ### Sass mixins {#sass-mixins}
 
 No hay mixins dedicados para tipografía, pero Bootstrap usa [Tamaño de fuente responsive (RFS)](/bootstrap/5.3/getting-started/rfs).
+
+{{< content-ads/bottom-banner >}}

@@ -9,7 +9,7 @@ description: Administra rápidamente el diseño, la alineación y el tamaño de 
 
 Administra rápidamente el diseño, la alineación y el tamaño de las columnas de la cuadrícula, la navegación, los componentes y más con un conjunto completo de utilidades flex responsive. Para implementaciones más complejas, puede ser necesario CSS personalizado.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Habilitar comportamientos flex {#enable-flex-behaviors}
 --------------------------------------------------------
@@ -737,3 +737,5 @@ Las utilidades de Flexbox se declaran en nuestra API de utilidades en `scss/_uti
     ),
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

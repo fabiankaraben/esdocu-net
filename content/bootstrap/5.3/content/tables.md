@@ -9,7 +9,7 @@ description: Documentación y ejemplos para el diseño de tablas (dado su uso fr
 
 Documentación y ejemplos para el diseño de tablas (dado su uso frecuente en complementos de JavaScript) con Bootstrap.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Descripción general {#overview}
 --------------------------------
@@ -755,3 +755,5 @@ $table-variants: (
 
 * Las variables de factor (`$table-striped-bg-factor`, `$table-active-bg-factor` y `$table-hover-bg-factor`) se utilizan para determinar el contraste en las variantes de la tabla.
 * Aparte de las variantes claro y oscuro de tabla, los colores del tema se aclaran con la variable `$table-bg-scale`.
+
+{{< content-ads/bottom-banner >}}

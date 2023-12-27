@@ -9,7 +9,7 @@ description: Bootstrap incluye una amplia gama de clases de utilidad responsive 
 
 Bootstrap incluye una amplia gama de clases de utilidad responsive de margen, relleno y espacio gap para modificar la apariencia de un elemento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Margen y relleno {#margin-and-padding}
 ---------------------------------------
@@ -176,6 +176,8 @@ $spacers: (
 
 Las utilidades de espaciado se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 
+{{< bootstrap/content-suggestion >}}
+
 [scss/_utilities.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_utilities.scss)
 
 ```scss {filename="scss/_utilities.scss"}
@@ -328,4 +330,4 @@ Las utilidades de espaciado se declaran en nuestra API de utilidades en `scss/_u
 ),
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

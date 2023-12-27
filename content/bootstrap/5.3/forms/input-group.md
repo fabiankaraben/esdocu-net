@@ -9,7 +9,7 @@ description: Extiende fácilmente los controles de formulario agregando texto, b
 
 Extiende fácilmente los controles de formulario agregando texto, botones o grupos de botones a ambos lados de las entradas de texto, selects personalizados y entradas de archivos personalizados.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo básico {#basic-example}
 --------------------------------
@@ -368,6 +368,8 @@ Los grupos de entradas incluyen soporte para selects personalizados y entradas d
 Personalización del CSS {#css}
 -----------
 
+{{< bootstrap/content-suggestion >}}
+
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
@@ -381,4 +383,4 @@ $input-group-addon-bg:                  var(--#{$prefix}tertiary-bg);
 $input-group-addon-border-color:        $input-border-color;
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

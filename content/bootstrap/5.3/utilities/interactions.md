@@ -10,7 +10,7 @@ noindex: true
 
 Clases de utilidad que cambian la forma en que los usuarios interactúan con los contenidos de un sitio web.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Selección de texto {#text-selection}
 -------------------------------------
@@ -67,3 +67,5 @@ Las utilidades de interacción se declaran en nuestra API de utilidades en `scss
   values: none auto,
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

@@ -10,7 +10,7 @@ next: /bootstrap/5.3/content/reboot
 
 Aprende cómo habilitar, usar y personalizar nuestro sistema de diseño layout alternativo creado en CSS Grid con ejemplos y fragmentos de código.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 El sistema de cuadrícula predeterminado de Bootstrap representa la culminación de más de una década de técnicas de diseño CSS, probadas por millones de personas. Pero también se creó sin muchas de las características y técnicas modernas de CSS que vemos en navegadores como el nuevo CSS Grid.
 
@@ -295,6 +295,8 @@ Por eso, puedes tener diferentes `gap` verticales y horizontales, que pueden tom
 ```
 {{< /demo-iframe >}}
 
+{{< bootstrap/content-suggestion >}}
+
 Sass {#sass}
 -------------
 
@@ -314,4 +316,4 @@ Por ejemplo, puedes aumentar el número de columnas y cambiar el tamaño del esp
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

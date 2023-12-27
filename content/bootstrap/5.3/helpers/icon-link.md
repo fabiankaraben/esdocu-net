@@ -10,7 +10,7 @@ noindex: true
 
 Crea rápidamente hipervínculos estilizados con íconos Bootstrap u otros íconos.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 El componente auxiliar de vínculo de ícono modifica nuestros estilos de vínculo predeterminados para mejorar su apariencia y alinear rápidamente cualquier combinación de ícono y texto. La alineación se establece mediante el estilo Flexbox en línea y un valor de `gap` predeterminado. Estilizamos el subrayado con un desplazamiento y color personalizados. Los iconos se ajustan automáticamente a `1em` para que coincidan mejor con el `font-size` del texto asociado.
 
@@ -129,3 +129,4 @@ Modifica los enlaces de los íconos con cualquiera de [nuestras utilidades de en
 ```
 {{< /demo-iframe >}}
     
+{{< content-ads/bottom-banner >}}

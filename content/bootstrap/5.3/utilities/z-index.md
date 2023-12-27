@@ -11,7 +11,7 @@ noindex: true
 
 Utiliza nuestras utilidades z-index de bajo nivel para cambiar rápidamente el nivel de pila de un elemento o componente.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo {#example}
 -------------------
@@ -65,6 +65,8 @@ $zindex-levels: (
 );
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### API de utilidades de Sass {#sass-utilities-api}
 
 Las utilidades de posición se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
@@ -79,4 +81,4 @@ Las utilidades de posición se declaran en nuestra API de utilidades en `scss/_u
 )
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

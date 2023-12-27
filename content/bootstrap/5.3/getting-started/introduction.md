@@ -9,7 +9,7 @@ description: Bootstrap es un conjunto de herramientas de interfaz potente y repl
 
 Bootstrap es un conjunto de herramientas de interfaz potente y repleto de funciones. Construye cualquier cosa, desde el prototipo hasta la producción, en minutos.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Inicio rápido {#quick-start}
 
@@ -165,3 +165,5 @@ Mantente actualizado sobre el desarrollo de Bootstrap y comunícate con la comun
 - Los desarrolladores deben usar la palabra clave `bootstrap` en paquetes que modifican o agregan funcionalidad a Bootstrap cuando se distribuyen a través de [npm](https://www.npmjs.com/search?q=keywords:bootstrap) o mecanismos de entrega similares para una máxima visibilidad.
 
 También puedes seguir a [@getbootstrap en Twitter](https://twitter.com/getbootstrap) para conocer los últimos chismes y fantásticos vídeos musicales.
+
+{{< content-ads/bottom-banner >}}

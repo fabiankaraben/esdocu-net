@@ -9,7 +9,7 @@ description: Actualiza los controles de formularios textuales como <input>s y <t
 
 Otorga a controles de texto como `<input>`s y `<textarea>`s una actualización con estilos, tamaños, estados de enfoque personalizados y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo {#example}
 -------------------
@@ -294,6 +294,8 @@ $form-label-font-weight:                null;
 $form-label-color:                      null;
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
 ```scss {filename="scss/_variables.scss"}
@@ -314,4 +316,4 @@ $form-file-button-bg:             var(--#{$prefix}tertiary-bg);
 $form-file-button-hover-bg:       var(--#{$prefix}secondary-bg);
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

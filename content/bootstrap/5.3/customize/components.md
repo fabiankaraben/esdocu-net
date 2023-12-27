@@ -9,7 +9,7 @@ description: Aprende cómo y por qué construimos casi todos nuestros componente
 
 Aprende cómo y por qué construimos casi todos nuestros componentes de manera responsive y con clases base y modificadoras.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Clases base {#base-classes}
 ----------------------------
@@ -161,3 +161,5 @@ Para las leyendas, ese estilo único es solo un `border-left-color`. Cuando comb
     </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/bottom-banner >}}

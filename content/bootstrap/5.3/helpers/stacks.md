@@ -10,7 +10,7 @@ noindex: true
 
 Ayudantes que se basan en nuestras utilidades flexbox para hacer que el diseño de componentes sea más rápido y más fácil que nunca.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Las pilas ofrecen un atajo para aplicar una serie de propiedades de flexbox para crear diseños rápida y fácilmente en Bootstrap. Todo el crédito por el concepto y la implementación es para el [proyecto Pylon](https://almonk.github.io/pylon) de código abierto.
 
@@ -123,3 +123,5 @@ Personalización del CSS {#css}
     align-self: stretch;
 }
 ```
+
+{{< content-ads/bottom-banner >}}

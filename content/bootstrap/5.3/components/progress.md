@@ -13,7 +13,7 @@ Documentación y ejemplos para usar barras de progreso personalizadas de Bootstr
 **Nuevo marcado en v5.3.0:** Hemos dejado de utilizar la estructura HTML anterior para las barras de progreso y la reemplazamos por una más accesible. La estructura anterior seguirá funcionando hasta la v6. [Mira los cambios en nuestra guía de migración.](https://getbootstrap.com/docs/5.3/migration/#improved-markup-for-progress-bars)
 {{< /callout >}}
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Progress {#how-it-works}
 -------------------------------
@@ -275,3 +275,5 @@ Se utiliza para crear animaciones CSS para `.progress-bar-animated`. Incluido en
     }
 }
 ```
+
+{{< content-ads/bottom-banner >}}

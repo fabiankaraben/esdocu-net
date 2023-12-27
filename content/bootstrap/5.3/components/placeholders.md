@@ -9,7 +9,7 @@ description: Usa marcadores de posición de carga para tus componentes o página
 
 Usa marcadores de posición de carga para tus componentes o páginas para indicar que es posible que aún se esté cargando algo.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Los marcadores de posición se pueden utilizar para mejorar la experiencia de tu aplicación. Están creados únicamente con HTML y CSS, lo que significa que no necesitas JavaScript para crearlos. Sin embargo, necesitarás algo de JavaScript personalizado para alternar su visibilidad. Su apariencia, color y tamaño se pueden personalizar fácilmente con nuestras clases de utilidades.
 
@@ -143,6 +143,8 @@ Anima marcadores de posición con `.placeholder-glow` o `.placeholder-wave` para
 Personalización del CSS del componente {#css}
 -----------
 
+{{< bootstrap/content-suggestion >}}
+
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
@@ -152,4 +154,4 @@ $placeholder-opacity-max:           .5;
 $placeholder-opacity-min:           .2;
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

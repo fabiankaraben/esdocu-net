@@ -10,9 +10,11 @@ noindex: true
 
 Truncar largas cadenas de texto con puntos suspensivos.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Para contenido más extenso, puedes agregar una clase `.text-truncate` para truncar el texto con puntos suspensivos. **Requiere `display: inline-block` o `display: block`.**
+
+{{< bootstrap/content-suggestion >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/text-truncation/index.html" >}}
 ```html {filename="HTML"}
@@ -30,4 +32,4 @@ Para contenido más extenso, puedes agregar una clase `.text-truncate` para trun
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

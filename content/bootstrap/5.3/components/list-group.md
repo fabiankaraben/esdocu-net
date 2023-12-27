@@ -9,7 +9,7 @@ description: Los grupos de listas son un componente flexible y poderoso para mos
 
 Los grupos de listas son un componente flexible y poderoso para mostrar una serie de contenidos. Modifícalos y amplíalos para admitir casi cualquier contenido que contenga.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo básico delcomponente Grupo de lista {#basic-example}
 --------------------------------
@@ -685,3 +685,5 @@ tabElms.forEach(tabElm => {
     })
 })
 ```
+
+{{< content-ads/bottom-banner >}}

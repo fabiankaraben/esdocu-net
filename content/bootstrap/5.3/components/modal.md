@@ -9,7 +9,7 @@ description: Usa el complemento modal JavaScript de Bootstrap para agregar cuadr
 
 Usa el complemento modal JavaScript de Bootstrap para agregar cuadros de diálogo a tu sitio para lightboxes, notificaciones de usuario o contenido completamente personalizado.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Modal {#how-it-works}
 -------------------------------
@@ -621,6 +621,8 @@ const myModal = new bootstrap.Modal('#myModal', {
 | `show`                | Abre manualmente un modal. **Vuelve al punto de la llamada antes de que el modal se haya mostrado realmente** (es decir, antes de que ocurra el evento `shown.bs.modal`). Además, puedes pasar un elemento DOM como argumento que se puede recibir en los eventos modales (como la propiedad `relatedTarget`). (es decir, `const modalToggle = document.getElementById('toggleMyModal'); myModal.show(modalToggle)`. |
 | `toggle`              | Conmuta manualmente un modal. **Vuelve al punto de la llamada antes de que el modal se haya mostrado u oculto** (es decir, antes del evento `shown.bs.modal` o `hidden.bs.modal`).                                                                                                                                                                                                                                   |
 
+{{< bootstrap/content-suggestion >}}
+
 ### Eventos {#events}
 
 La clase modal de Bootstrap expone algunos eventos para conectarse a la funcionalidad modal. Todos los eventos modales se activan en el propio modal (es decir, en el `<div class="modal">`).
@@ -640,4 +642,4 @@ myModalEl.addEventListener('hidden.bs.modal', event => {
 })
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

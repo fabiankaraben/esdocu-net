@@ -9,7 +9,7 @@ description: Documentación y ejemplos para el potente encabezado de navegación
 
 Documentación y ejemplos para el potente encabezado de navegación responsive de Bootstrap, la barra de navegación. Incluye soporte para marca, navegación y más, incluido soporte para nuestro complemento collapse.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Barra de navegación {#how-it-works}
 -------------------------------
@@ -1001,3 +1001,5 @@ $navbar-dark-brand-hover-color:     $navbar-dark-active-color;
     }
 }
 ```
+
+{{< content-ads/bottom-banner >}}

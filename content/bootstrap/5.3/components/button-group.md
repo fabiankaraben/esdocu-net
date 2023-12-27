@@ -9,7 +9,7 @@ description: Agrupa una serie de botones en una sola línea o apílalos en una c
 
 Agrupa una serie de botones en una sola línea o apílalos en una columna vertical.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo básico del componente Grupo de botones {#basic-example}
 --------------------------------
@@ -291,4 +291,4 @@ Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de hori
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

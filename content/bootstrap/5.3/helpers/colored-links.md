@@ -10,7 +10,7 @@ noindex: true
 
 Enlaces de colores con estados de desplazamiento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Colores de enlace {#link-colors}
 ---------------------------------
@@ -47,6 +47,8 @@ Utilidades de enlace {#link-utilities}
 
 Los enlaces de colores también pueden modificarse mediante nuestras [utilidades de enlaces](/bootstrap/5.3/utilities/link).
 
+{{< bootstrap/content-suggestion >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/colored-links/link-utilities.html" >}}
 ```html {filename="HTML"}
     <p><a href="#" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Enlace principal</a></p>
@@ -61,4 +63,4 @@ Los enlaces de colores también pueden modificarse mediante nuestras [utilidades
 ```
 {{< /demo-iframe >}}
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

@@ -9,7 +9,7 @@ description: Documentación y ejemplos para mostrar la paginación para indicar 
 
 Documentación y ejemplos para mostrar la paginación para indicar que existe una serie de contenido relacionado en varias páginas.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Utilizamos un gran bloque de enlaces conectados para nuestra paginación, lo que hace que los enlaces sean difíciles de pasar por alto y fácilmente escalables, y al mismo tiempo proporcionamos grandes áreas de impacto. La paginación se construye con elementos HTML de lista para que los lectores de pantalla puedan anunciar la cantidad de enlaces disponibles. Utiliza un elemento envolvente `<nav>` para identificarlo como una sección de navegación para lectores de pantalla y otras tecnologías de asistencia.
 
@@ -276,3 +276,5 @@ $pagination-border-radius-lg:       var(--#{$prefix}border-radius-lg);
     --#{$prefix}pagination-border-radius: #{$border-radius};
 }
 ```
+
+{{< content-ads/bottom-banner >}}

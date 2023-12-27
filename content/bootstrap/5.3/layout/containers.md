@@ -10,7 +10,7 @@ noindex: true
 
 Los contenedores son un componente fundamental de Bootstrap que contiene, rellena y alinea tu contenido dentro de un dispositivo o viewport determinado.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funcionan {#how-they-work}
 --------------------------------
@@ -93,6 +93,8 @@ $container-max-widths: (
 
 Para obtener más información y ejemplos sobre cómo modificar nuestros mapas y variables de Sass, consulta la [sección de Sass de la documentación de Grid (cuadrícula)](/bootstrap/5.3/layout/grid/#css).
 
+{{< bootstrap/content-suggestion >}}
+
 ### Sass mixins {#sass-mixins}
 
 Además de personalizar el Sass, también puedes crear tus propios contenedores con nuestro mixin Sass.
@@ -113,4 +115,4 @@ Además de personalizar el Sass, también puedes crear tus propios contenedores 
 }
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

@@ -9,7 +9,7 @@ description: Documentación y ejemplos sobre cómo usar los componentes de naveg
 
 Documentación y ejemplos sobre cómo usar los componentes de navegación incluidos en Bootstrap.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Navegación base del componente {#base-nav}
 ----------------------------
@@ -689,6 +689,8 @@ Cuando se muestra una nueva pestaña, los eventos se activan en el siguiente ord
 3.  `hidden.bs.tab` (en la pestaña activa anterior, la misma que para el evento `hide.bs.tab`)
 4.  `shown.bs.tab` (en la pestaña recién mostrada recién activa, la misma que para el evento `show.bs.tab`)
 
+{{< bootstrap/content-suggestion >}}
+
 Si ninguna pestaña ya estaba activa, entonces los eventos `hide.bs.tab` y `hidden.bs.tab` no se activarán.
 
 | Tipo de evento  | Descripción                                                                                                                                                                                                                                                                          |
@@ -706,4 +708,4 @@ tabEl.addEventListener('shown.bs.tab', event => {
 })
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

@@ -11,7 +11,7 @@ next: /bootstrap/5.3/customize/overview
 
 Ayuda a desarrollar Bootstrap con nuestra documentación, scripts y tests.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Configuración de herramientas {#tooling-setup}
 
@@ -71,3 +71,5 @@ Aprende más sobre el uso de Hugo leyendo su [documentación](https://gohugo.io/
 ## Solución de problemas {#troubleshooting}
 
 Si tienes problemas con la instalación de dependencias, desinstala todas las versiones de dependencias anteriores (globales y locales). Luego, vuelve a ejecutar `npm install`.
+
+{{< content-ads/bottom-banner >}}

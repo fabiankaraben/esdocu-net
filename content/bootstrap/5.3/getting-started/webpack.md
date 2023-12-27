@@ -15,7 +15,7 @@ La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de Bootstrap en 
 **¿Quieres ir hasta el final?** Descarga el código fuente y la demostración funcional de esta guía desde el repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/webpack). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index) para editarlo en vivo.
 {{< /callout >}}
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Configuración {#setup}
 
@@ -300,6 +300,8 @@ Después de ejecutar `npm run build` nuevamente, habrá un nuevo archivo `dist/m
 
 El CSS de Bootstrap incluye múltiples referencias a archivos SVG a través de URI `data:` en línea. Si defines una Política de seguridad de contenido para tu proyecto que bloquea los URI `data:` para imágenes, estos archivos SVG no se cargarán. Puedes solucionar este problema extrayendo los archivos SVG en línea utilizando la función de módulos de assets de Webpack.
 
+{{< bootstrap/content-suggestion >}}
+
 Configura Webpack para extraer archivos SVG en línea como este:
 
 ```diff {filename="Diff"}
@@ -328,4 +330,4 @@ Después de ejecutar `npm run build` nuevamente, encontrarás los archivos SVG e
 
 _¿Ves algo incorrecto o desactualizado aquí? [abre un issue en GitHub](https://github.com/twbs/bootstrap/issues/new/choose). ¿Necesitas ayuda para solucionar problemas? [Buscar o iniciar una discusión](https://github.com/twbs/bootstrap/discussions) en GitHub._
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

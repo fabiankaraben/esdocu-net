@@ -10,7 +10,7 @@ noindex: true
 
 Aprende sobre los navegadores y dispositivos, desde los modernos hasta los antiguos, que son compatibles con Bootstrap, incluidas las peculiaridades y errores conocidos de cada uno.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Navegadores compatibles {#supported-browsers}
 
@@ -89,3 +89,5 @@ Para brindar la mejor experiencia posible a navegadores antiguos y con errores, 
 Estas advertencias de validación no importan en la práctica ya que la parte sin hacks de nuestro CSS se valida completamente y las partes con hacks no interfieren con el funcionamiento adecuado de la parte sin hacks, por lo tanto por qué ignoramos deliberadamente estas advertencias particulares.
 
 Nuestros documentos HTML también tienen algunas advertencias de validación de HTML triviales e intrascendentes debido a nuestra inclusión de una solución alternativa para [cierto error de Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=654072).
+
+{{< content-ads/bottom-banner >}}

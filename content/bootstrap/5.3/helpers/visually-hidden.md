@@ -11,7 +11,7 @@ noindex: true
 
 Usa estos ayudantes para ocultar elementos visualmente pero mantenlos accesibles para las tecnologías de asistencia.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Oculta visualmente un elemento y al mismo tiempo permite que esté expuesto a tecnologías de asistencia (como lectores de pantalla) con `.visually-hidden`. Utiliza `.visually-hidden-focusable` para ocultar visualmente un elemento de forma predeterminada, pero para mostrarlo cuando está enfocado (por ejemplo, por un usuario que solo usa el teclado). `.visually-hidden-focusable` también se puede aplicar a un contenedor; gracias a `:focus-within`, el contenedor se mostrará cuando cualquier elemento hijo del contenedor reciba el foco.
 
@@ -22,6 +22,8 @@ Oculta visualmente un elemento y al mismo tiempo permite que esté expuesto a te
     <div class="visually-hidden-focusable">Un contenedor con un <a href="#">elemento enfocable</a>.</div>
 ```
 {{< /demo-iframe >}}
+
+{{< bootstrap/content-suggestion >}}
 
 Tanto `visually-hidden` como `visually-hidden-focusable` también se pueden usar como mixins.
 
@@ -37,4 +39,4 @@ Tanto `visually-hidden` como `visually-hidden-focusable` también se pueden usar
 }
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

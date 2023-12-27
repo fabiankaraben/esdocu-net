@@ -10,7 +10,7 @@ prev: /bootstrap/5.3/customize/optimize
 
 Los puntos de interrupción son anchos personalizables que determinan cómo se comporta tu diseño responsive en todos los tamaños de dispositivos o viewports en Bootstrap.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Conceptos básicos {#core-concepts}
 -----------------------------------
@@ -176,6 +176,8 @@ Por ejemplo, `@include media-breakpoint-only(md) { ... }` dará como resultado:
 @media (min-width: 768px) and (max-width: 991.98px) { ... }
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### Entre puntos de interrupción {#between-breakpoints}
 
 De manera similar, las media queries pueden abarcar múltiples anchos de puntos de interrupción:
@@ -192,4 +194,4 @@ Lo cual resulta en:
 @media (min-width: 768px) and (max-width: 1199.98px) { ... }
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

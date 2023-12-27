@@ -10,7 +10,7 @@ noindex: true
 
 Utiliza las utilidades de ajuste de objetos para modificar el contenido de un [elemento reemplazado](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element), como un `<img>` o `<video>`, debe cambiarse de tamaño para que se ajuste a su contenedor.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona {#how-it-works}
 -------------------------------
@@ -92,3 +92,5 @@ Las utilidades de ajuste de objetos se declaran en nuestra API de utilidades en 
   )
 ),
 ```
+
+{{< content-ads/bottom-banner >}}

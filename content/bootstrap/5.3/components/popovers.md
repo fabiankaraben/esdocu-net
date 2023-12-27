@@ -9,7 +9,7 @@ description: Documentación y ejemplos para agregar ventanas emergentes de Boots
 
 Documentación y ejemplos para agregar ventanas emergentes de Bootstrap, como las que se encuentran en iOS, a cualquier elemento de tu sitio.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cosas que debes saber al usar el complemento popover:
 
@@ -343,6 +343,8 @@ myPopover.setContent({
 El método `setContent` acepta un argumento `object`, donde cada clave de propiedad es un selector `string` válido dentro de la plantilla emergente, y cada valor de propiedad relacionado puede ser `string` | `element` | `function` | `null`
 {{< /callout >}}
 
+{{< bootstrap/content-suggestion >}}
+
 ### Eventos {#events}
 
 | Evento                | Descripción                                                                                                                           |
@@ -360,4 +362,4 @@ myPopoverTrigger.addEventListener('hidden.bs.popover', () => {
 })
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

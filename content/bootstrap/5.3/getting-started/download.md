@@ -9,7 +9,7 @@ description: Descarga Bootstrap para obtener el CSS y JavaScript compilados, el 
 
 Descarga Bootstrap para obtener el CSS y JavaScript compilados, el código fuente, o inclúyelo con tus administradores de paquetes favoritos como npm, RubyGems y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## CSS y JS compilados. {#compiled-css-and-js}
 
@@ -139,3 +139,5 @@ Install-Package bootstrap
 ```powershell {filename="PowerShell"}
 Install-Package bootstrap.sass
 ```
+
+{{< content-ads/bottom-banner >}}

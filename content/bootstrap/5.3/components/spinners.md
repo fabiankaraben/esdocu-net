@@ -9,7 +9,7 @@ description: Indica el estado de carga de un componente o página con controles 
 
 Indica el estado de carga de un componente o página con controles giratorios Bootstrap, construidos completamente con HTML, CSS y sin JavaScript.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Los “spinners” de Bootstrap se pueden usar para mostrar el estado de carga en tus proyectos. Están creados únicamente con HTML y CSS, lo que significa que no necesitas JavaScript para crearlos. Sin embargo, necesitarás algo de JavaScript personalizado para alternar su visibilidad. Su apariencia, alineación y tamaño se pueden personalizar fácilmente con nuestras increíbles clases de utilidad.
 
@@ -308,6 +308,8 @@ $spinner-height-sm:       $spinner-width-sm;
 $spinner-border-width-sm: .2em;
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### Fotogramas clave {#keyframes}
 
 Se utiliza para crear animaciones CSS para nuestros spinners. Incluido en `scss/_spinners.scss`.
@@ -334,4 +336,4 @@ Se utiliza para crear animaciones CSS para nuestros spinners. Incluido en `scss/
 }
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

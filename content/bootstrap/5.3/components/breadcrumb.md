@@ -9,7 +9,7 @@ description: Indica la ubicación de la página actual dentro de una jerarquía 
 
 Indica la ubicación de la página actual dentro de una jerarquía de navegación que agrega automáticamente separadores mediante CSS.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Ejemplo del componente Breadcrumb {#example}
 -------------------
@@ -151,3 +151,5 @@ $breadcrumb-divider:                quote("/");
 $breadcrumb-divider-flipped:        $breadcrumb-divider;
 $breadcrumb-border-radius:          null;
 ```
+
+{{< content-ads/bottom-banner >}}

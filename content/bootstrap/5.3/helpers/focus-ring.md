@@ -10,7 +10,7 @@ noindex: true
 
 Clases de utilidad que te permiten agregar y modificar estilos de anillos de enfoque personalizados a elementos y componentes.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 El asistente `.focus-ring` elimina el `outline` predeterminado en `:focus`, reemplazándolo con un `box-shadow` que se puede personalizar de forma más amplia. La nueva sombra se compone de una serie de variables CSS, heredadas del nivel `:root`, que se pueden modificar para cualquier elemento o componente.
 
@@ -95,6 +95,8 @@ Además de `.focus-ring`, tenemos varias utilidades `.focus-ring-*` para modific
 ```
 {{< /demo-iframe >}}
 
+{{< bootstrap/content-suggestion >}}
+
 Las utilidades de Focus Ring se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprenda a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 
 [scss/_utilities.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_utilities.scss)
@@ -108,4 +110,4 @@ Las utilidades de Focus Ring se declaran en nuestra API de utilidades en `scss/_
 ),
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

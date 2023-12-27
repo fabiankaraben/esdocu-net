@@ -9,7 +9,7 @@ description: Dale vida a Bootstrap con nuestros complementos de JavaScript opcio
 
 Dale vida a Bootstrap con nuestros complementos de JavaScript opcionales. Obtén más información sobre cada complemento, nuestras opciones de API programática y de datos, y más.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Individual o compilado {#individual-or-compiled}
 
@@ -353,3 +353,5 @@ $('#myTab a').on('shown.bs.tab', () => {
 ## JavaScript deshabilitado {#disabled-javascript}
 
 Los complementos de Bootstrap no tienen un respaldo especial cuando JavaScript está deshabilitado. Si te importa la experiencia del usuario en este caso, utiliza [`<noscript>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript) para explicar la situación (y cómo volver a habilitar JavaScript) a tus usuarios y/o agregar sus propias alternativas personalizadas.
+
+{{< content-ads/bottom-banner >}}

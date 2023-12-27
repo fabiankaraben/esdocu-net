@@ -9,7 +9,7 @@ description: Actualiza automáticamente la navegación de Bootstrap o enumera lo
 
 Actualiza automáticamente la navegación de Bootstrap o enumera los componentes del grupo según la posición de desplazamiento para indicar qué enlace está activo actualmente en el viewport.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Scrollspy {#how-it-works}
 -------------------------------
@@ -323,3 +323,5 @@ firstScrollSpyEl.addEventListener('activate.bs.scrollspy', () => {
     // do something...
 })
 ```
+
+{{< content-ads/bottom-banner >}}

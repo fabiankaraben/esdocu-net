@@ -9,7 +9,7 @@ description: Alterna la visibilidad del contenido en tu proyecto con algunas cla
 
 Alterna la visibilidad del contenido en tu proyecto con algunas clases y nuestros complementos de JavaScript.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Collapse {#how-it-works}
 -------------------------------
@@ -252,3 +252,5 @@ myCollapsible.addEventListener('hidden.bs.collapse', event => {
     // do something...
 })
 ```
+
+{{< content-ads/bottom-banner >}}

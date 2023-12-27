@@ -9,7 +9,7 @@ description: Dale a tus formularios cierta estructura, desde implementaciones en
 
 Dale a tus formularios cierta estructura, desde implementaciones en línea hasta horizontales y de cuadrícula personalizadas, con nuestras opciones de diseño de formulario.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Formularios {#forms}
 ---------------------
@@ -366,3 +366,5 @@ Usa las clases `.row-cols-*` para crear diseños horizontales responsive. Al agr
     </form>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/bottom-banner >}}

@@ -10,7 +10,7 @@ noindex: true
 
 Personaliza los `<select>`s nativos con CSS personalizado que cambia la apariencia inicial del elemento.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Predeterminado {#default}
 --------------------------
@@ -145,3 +145,5 @@ $form-select-border-radius-lg:    $input-border-radius-lg;
 
 $form-select-transition:          $input-transition;
 ```
+
+{{< content-ads/bottom-banner >}}

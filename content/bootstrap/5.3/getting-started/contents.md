@@ -10,7 +10,7 @@ noindex: true
 
 Descubre lo que se incluye en Bootstrap, incluidas nuestras versiones de código fuente y compilado.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 ## Bootstrap compilado {#compiled-bootstrap}
 
@@ -88,6 +88,8 @@ De manera similar, tenemos opciones para incluir parte o la totalidad de nuestro
 | `bootstrap.bundle.js`<br/>`bootstrap.bundle.min.js` | Incluido |
 | `bootstrap.js`<br/>`bootstrap.min.js`               | -        |
 
+{{< bootstrap/content-suggestion >}}
+
 ## Código fuente de Bootstrap {#bootstrap-source-code}
 
 La descarga del código fuente de Bootstrap incluye los assets CSS y JavaScript compilados, junto con el código fuente Sass, JavaScript y documentación. Más específicamente, incluye lo siguiente y más:
@@ -110,4 +112,4 @@ En `scss/` y `js/` se encuentran el código fuente de nuestro CSS y JavaScript. 
 
 Más allá de eso, cualquier otro archivo incluido brinda soporte para paquetes, información de licencia y desarrollo.
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}

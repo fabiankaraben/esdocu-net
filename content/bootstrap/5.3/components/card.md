@@ -9,7 +9,7 @@ description: Las tarjetas de Bootstrap proporcionan un contenedor de contenido f
 
 Las tarjetas de Bootstrap proporcionan un contenedor de contenido flexible y extensible con múltiples variantes y opciones.
 
-{{< bootstrap/main-banner >}}
+{{< content-ads/top-banner >}}
 
 Una **tarjeta** es un contenedor de contenido flexible y extensible. Incluye opciones para encabezados y pies de página, una amplia variedad de contenido, colores de fondo contextuales y potentes opciones de visualización. Si estás familiarizado con Bootstrap 3, las tarjetas reemplazan nuestros paneles, wells y thumbnails. Una funcionalidad similar a esos componentes está disponible como clases modificadoras para tarjetas.
 
@@ -1166,6 +1166,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las tarjetas
 --#{$prefix}card-group-margin: #{$card-group-margin};
 ```
 
+{{< bootstrap/content-suggestion >}}
+
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
@@ -1192,4 +1194,4 @@ $card-img-overlay-padding:          $spacer;
 $card-group-margin:                 $grid-gutter-width * .5;
 ```
 
-{{< bootstrap/content-suggestion >}}
+{{< content-ads/bottom-banner >}}
