@@ -9,4 +9,15 @@
 /bootstrap/5.3/helpers/ /bootstrap/5.3/helpers/clearfix/ 301
 /bootstrap/5.3/utilities/ /bootstrap/5.3/utilities/api/ 301
 /bootstrap/5.3/extend/ /bootstrap/5.3/extend/approach/ 301
+/bootstrap/5.1/ /bootstrap/5.1/getting-started/introduction/ 301
+/bootstrap/5.1/getting-started/ /bootstrap/5.1/getting-started/introduction/ 301
+/bootstrap/5.1/customize/ /bootstrap/5.1/customize/overview/ 301
+/bootstrap/5.1/layout/ /bootstrap/5.1/layout/breakpoints/ 301
+/bootstrap/5.1/content/ /bootstrap/5.1/content/reboot/ 301
+/bootstrap/5.1/forms/ /bootstrap/5.1/forms/overview/ 301
+/bootstrap/5.1/components/ /bootstrap/5.1/components/accordion/ 301
+/bootstrap/5.1/helpers/ /bootstrap/5.1/helpers/clearfix/ 301
+/bootstrap/5.1/utilities/ /bootstrap/5.1/utilities/api/ 301
+/bootstrap/5.1/extend/ /bootstrap/5.1/extend/approach/ 301
+/bootstrap/5.1/about/ /bootstrap/5.1/about/overview/ 301
 /momentjs/ /momentjs/use-it/ 301
