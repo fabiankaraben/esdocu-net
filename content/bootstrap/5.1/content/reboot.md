@@ -89,52 +89,14 @@ Esta `font-family` se aplica al `<body>` y se hereda automáticamente de forma g
 
 Todos los elementos de encabezado, por ejemplo `<h1>`, y párrafos `<p>` se restablecen para eliminar su `margin-top`. Los encabezados tienen `margin-bottom: .5rem` agregado y los párrafos `margin-bottom: 1rem` para facilitar el espaciado.
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Título</th>
-      <th>Ejemplo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h1></h1>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h1">h1. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h2></h2>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h2">h2. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h3></h3>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h3">h3. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h4></h4>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h4">h4. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h5></h5>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h5">h5. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h6></h6>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h6">h6. Encabezado Bootstrap</span></td>
-    </tr>
-  </tbody>
-</table>
+| Título      | Ejemplo                                                                            |
+| ----------- | ---------------------------------------------------------------------------------- |
+| `<h1></h1>` | <span style="font-size: 36.52px; font-weight: 500">h1. Título de Bootstrap</span>  |
+| `<h2></h2>` | <span style="font-size: 29.912px; font-weight: 500">h2. Título de Bootstrap</span> |
+| `<h3></h3>` | <span style="font-size: 26.608px; font-weight: 500">h3. Título de Bootstrap</span> |
+| `<h4></h4>` | <span style="font-size: 23.304px; font-weight: 500">h4. Título de Bootstrap</span> |
+| `<h5></h5>` | <span style="font-size: 20px; font-weight: 500">h5. Título de Bootstrap</span>     |
+| `<h6></h6>` | <span style="font-size: 19.2px; font-weight: 500">h6. Título de Bootstrap</span>   |
 
 ## Listas
 
@@ -268,6 +230,7 @@ Se han reiniciado varios elementos de formulario para estilos básicos más simp
 
 Estos cambios, y más, se muestran a continuación.
 
+{{< bootstrap/5-1/example show_markup="false" >}}
 <form class="bd-example">
   <fieldset>
     <legend>Ejemplo de legend</legend>
@@ -389,6 +352,7 @@ Estos cambios, y más, se muestran a continuación.
     </p>
   </fieldset>
 </form>
+{{< /bootstrap/5-1/example >}}
 
 {{< bootstrap/5-1/callout warning >}}
 {{< bootstrap/5-1/partial "callout-warning-input-support.md" >}}

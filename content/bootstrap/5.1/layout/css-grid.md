@@ -1,6 +1,6 @@
 ---
-weight: 
-linkTitle: 
+weight: 8
+linkTitle: Cuadrícula CSS
 title: Cuadrícula CSS · Bootstrap en Español v5.1
 description: Aprende a habilitar, usar y personalizar nuestro sistema de diseño alternativo basado en CSS Grid con ejemplos y fragmentos de código.
 next: /bootstrap/5.1/content/reboot

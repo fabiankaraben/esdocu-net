@@ -27,52 +27,15 @@ Estos estilos se pueden encontrar dentro de `_reboot.scss`, y las variables glob
 
 Todos los encabezados HTML, `<h1>` a `<h6>`, están disponibles.
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Encabezado</th>
-      <th>Ejemplo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h1></h1>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h1">h1. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h2></h2>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h2">h2. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h3></h3>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h3">h3. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h4></h4>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h4">h4. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h5></h5>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h5">h5. Encabezado Bootstrap</span></td>
-    </tr>
-    <tr>
-      <td>
-        {{< bootstrap/5-1/markdown >}}`<h6></h6>`{{< /bootstrap/5-1/markdown >}}
-      </td>
-      <td><span class="h6">h6. Encabezado Bootstrap</span></td>
-    </tr>
-  </tbody>
-</table>
+| Título      | Ejemplo                                                                             |
+| ----------- | ----------------------------------------------------------------------------------- |
+| `<h1></h1>` | <span style="font-size: 36.52px; font-weight: 500">h1. Encabezado Bootstrap</span>  |
+| `<h2></h2>` | <span style="font-size: 29.912px; font-weight: 500">h2. Encabezado Bootstrap</span> |
+| `<h3></h3>` | <span style="font-size: 26.608px; font-weight: 500">h3. Encabezado Bootstrap</span> |
+| `<h4></h4>` | <span style="font-size: 23.304px; font-weight: 500">h4. Encabezado Bootstrap</span> |
+| `<h5></h5>` | <span style="font-size: 20px; font-weight: 500">h5. Encabezado Bootstrap</span>     |
+| `<h6></h6>` | <span style="font-size: 19.2px; font-weight: 500">h6. Encabezado Bootstrap</span>   |
+
 
 ```html
 <h1>h1. Encabezado Bootstrap</h1>
@@ -111,7 +74,7 @@ Utiliza las clases de utilidad incluidas para recrear el pequeño texto de encab
 
 Los elementos de encabezado tradicionales están diseñados para funcionar mejor en el cuerpo del contenido de tu página. Cuando necesites que un título destaque, considera usar un **display heading**, un estilo de título más grande y un poco más obstinado.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <div class="display-1 pb-3 mb-3 border-bottom">Display 1</div>
   <div class="display-2 pb-3 mb-3 border-bottom">Display 2</div>
   <div class="display-3 pb-3 mb-3 border-bottom">Display 3</div>

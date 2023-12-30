@@ -139,14 +139,14 @@ Títulos {#headings}
 
 Todos los elementos de encabezado—`<h1>`—`<h6>` tienen su `margin-top` eliminado, `margin-bottom: .5rem` establecido y `line-height` ajustado. Aunque los encabezados heredan su `color` de forma predeterminada, también puedes sobrescribirlo mediante la variable CSS opcional, `--bs-heading-color`.
 
-| Título      | Ejemplo                                                                              |
-| ----------- | ------------------------------------------------------------------------------------ |
-| `<h1></h1>` | <span style={{fontSize: '36.52px', fontWeight: 500}}>h1. Título de Bootstrap</span>  |
-| `<h2></h2>` | <span style={{fontSize: '29.912px', fontWeight: 500}}>h2. Título de Bootstrap</span> |
-| `<h3></h3>` | <span style={{fontSize: '26.608px', fontWeight: 500}}>h3. Título de Bootstrap</span> |
-| `<h4></h4>` | <span style={{fontSize: '23.304px', fontWeight: 500}}>h4. Título de Bootstrap</span> |
-| `<h5></h5>` | <span style={{fontSize: '20px', fontWeight: 500}}>h5. Título de Bootstrap</span>     |
-| `<h6></h6>` | <span style={{fontSize: '19.2px', fontWeight: 500}}>h6. Título de Bootstrap</span>   |
+| Título      | Ejemplo                                                                            |
+| ----------- | ---------------------------------------------------------------------------------- |
+| `<h1></h1>` | <span style="font-size: 36.52px; font-weight: 500">h1. Título de Bootstrap</span>  |
+| `<h2></h2>` | <span style="font-size: 29.912px; font-weight: 500">h2. Título de Bootstrap</span> |
+| `<h3></h3>` | <span style="font-size: 26.608px; font-weight: 500">h3. Título de Bootstrap</span> |
+| `<h4></h4>` | <span style="font-size: 23.304px; font-weight: 500">h4. Título de Bootstrap</span> |
+| `<h5></h5>` | <span style="font-size: 20px; font-weight: 500">h5. Título de Bootstrap</span>     |
+| `<h6></h6>` | <span style="font-size: 19.2px; font-weight: 500">h6. Título de Bootstrap</span>   |
 
 Párrafos {#paragraphs}
 -----------------------
