@@ -60,6 +60,7 @@ Pasa el cursor sobre los enlaces a continuación para ver sus tooltips:
 Pasa el cursor sobre los botones a continuación para ver las cuatro direcciones de tooltips: top, right, bottom, y left. Las direcciones se reflejan cuando se usa Bootstrap en RTL.
 
 {{< bootstrap/5-1/example show_markup="false" class="tooltip-demo" >}}
+  <br>
   <div class="bd-example-tooltips">
     <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip superior">Tooltip superior</button>
     <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip derecho">Tooltip derecho</button>

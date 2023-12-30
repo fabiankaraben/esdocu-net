@@ -54,7 +54,7 @@ Usa los botones a continuación para mostrar y ocultar un elemento offcanvas a t
 
 Puedes usar un enlace con el atributo `href` o un botón con el atributo `data-bs-target`. En ambos casos, se requiere `data-bs-toggle="offcanvas"`.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
   Enlace con href
 </a>
@@ -83,7 +83,39 @@ Puedes usar un enlace con el atributo `href` o un botón con el atributo `data-b
     </div>
   </div>
 </div>
+<br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Enlace con href
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Botón con data-bs-target
+</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="">
+      Algo de texto placeholder. En la vida real puedes tener los elementos que hayas elegido. Como texto, imágenes, listas, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        Botón dropdown
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Acción</a></li>
+        <li><a class="dropdown-item" href="#">Otra acción</a></li>
+        <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
 
 {{< content-ads/middle-banner-1 >}}
 
@@ -98,7 +130,7 @@ No hay una ubicación predeterminada para los componentes offcanvas, por lo que 
 
 Prueba los ejemplos superior, derecho e inferior a continuación.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle offcanvas superior</button>
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
@@ -110,9 +142,24 @@ Prueba los ejemplos superior, derecho e inferior a continuación.
     ...
   </div>
 </div>
+<br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
-{{< bootstrap/5-1/example >}}
+```html
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle offcanvas superior</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas superior</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+```
+
+{{< bootstrap/5-1/example show_markup="false" >}}
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle offcanvas derecho</button>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -124,9 +171,24 @@ Prueba los ejemplos superior, derecho e inferior a continuación.
     ...
   </div>
 </div>
+<br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
-{{< bootstrap/5-1/example >}}
+```html
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle offcanvas derecho</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas derecho</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    ...
+  </div>
+</div>
+```
+
+{{< bootstrap/5-1/example show_markup="false" >}}
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle offcanvas inferior</button>
 
 <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
@@ -138,13 +200,28 @@ Prueba los ejemplos superior, derecho e inferior a continuación.
     ...
   </div>
 </div>
+<br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle offcanvas inferior</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas inferior</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
+```
 
 ## Backdrop
 
 Desplazar el elemento `<body>` está deshabilitado cuando un offcanvas y su fondo están visibles. Utiliza el atributo `data-bs-scroll` para alternar el desplazamiento `<body>` y `data-bs-backdrop` para alternar el fondo.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Habilitar el scrolling del body</button>
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Habilitar backdrop (default)</button>
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Habilitar ambos scrolling & backdrop</button>
@@ -176,7 +253,42 @@ Desplazar el elemento `<body>` está deshabilitado cuando un offcanvas y su fond
     <p>Intenta desplazarte por el resto de la página para ver esta opción en acción.</p>
   </div>
 </div>
+<br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Habilitar el scrolling del body</button>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Habilitar backdrop (default)</button>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Habilitar ambos scrolling & backdrop</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas con body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Intenta desplazarte por el resto de la página para ver esta opción en acción.</p>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas con backdrop</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>.....</p>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop con scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Intenta desplazarte por el resto de la página para ver esta opción en acción.</p>
+  </div>
+</div>
+```
 
 ## Accesibilidad
 

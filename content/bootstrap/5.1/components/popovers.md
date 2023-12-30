@@ -68,7 +68,8 @@ var popover = new bootstrap.Popover(document.querySelector('.example-popover'), 
 
 Hay cuatro opciones disponibles: alineación superior, derecha, inferior e izquierda. Las direcciones se reflejan cuando se usa Bootstrap en RTL.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<br><br><br>
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
   Popover superior
 </button>
@@ -81,7 +82,23 @@ Hay cuatro opciones disponibles: alineación superior, derecha, inferior e izqui
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
   Popover izquierdo
 </button>
+<br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+  Popover superior
+</button>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+  Popover derecho
+</button>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+  Popover inferior
+</button>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+  Popover izquierdo
+</button>
+```
 
 ### Descartar (cerrar) en el siguiente clic
 

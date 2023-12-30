@@ -57,22 +57,22 @@ Anteriormente, nuestros scripts agregaban dinámicamente la clase `.hide` para o
 
 Haz clic en el botón a continuación para mostrar un toast (ubicado con nuestras utilidades en la esquina inferior derecha) que se ha ocultado de forma predeterminada.
 
-<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-    <div class="toast-header">
-      {{< bootstrap/5-1/placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
-      <strong class="me-auto">Bootstrap</strong>
-      <small>Hace 11 minutos</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-    </div>
-    <div class="toast-body">
-      ¡Hola Mundo! Este es un mensaje de toast.
+{{< bootstrap/5-1/example show_markup="false" >}}
+  <button type="button" class="btn btn-primary" id="liveToastBtn">Mostrar el toast en vivo</button>
+
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        {{< bootstrap/5-1/placeholder width="20" height="20" background="#007aff" class="rounded me-2" text="false" title="false" >}}
+        <strong class="me-auto">Bootstrap</strong>
+        <small>Hace 11 minutos</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        ¡Hola Mundo! Este es un mensaje de toast.
+      </div>
     </div>
   </div>
-</div>
-
-{{< bootstrap/5-1/example >}}
-  <button type="button" class="btn btn-primary" id="liveToastBtn">Mostrar el toast en vivo</button>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -106,6 +106,7 @@ if (toastTrigger) {
   })
 }
 ```
+
 ### Translúcido
 
 Los toasts son ligeramente translúcidos para mezclarse con lo que hay debajo de ellos.

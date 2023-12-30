@@ -110,6 +110,7 @@ Lanza una demostración modal funcional haciendo clic en el botón a continuaci�
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLive">
     Lanzar demo de modal
   </button>
+  <br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -166,6 +167,7 @@ Cuando el fondo se establece en *static*, el modal no se cerrará al hacer clic 
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropLive">
     Lanzar modal de fondo estático
   </button>
+  <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -220,6 +222,7 @@ Cuando los modales se vuelven demasiado largos para el viewport o el dispositivo
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
     Lanzar demo de modal
   </button>
+  <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 También puedes crear un modal desplazable que permita desplazar el cuerpo modal agregando `.modal-dialog-scrollable` a `.modal-dialog`.
@@ -248,6 +251,7 @@ También puedes crear un modal desplazable que permita desplazar el cuerpo modal
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
     Lanzar demo de modal
   </button>
+  <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -307,6 +311,7 @@ Agrega `.modal-dialog-centered` a `.modal-dialog` para centrar verticalmente el 
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable">
     Modal desplazable centrado verticalmente
   </button>
+  <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -350,6 +355,8 @@ Agrega `.modal-dialog-centered` a `.modal-dialog` para centrar verticalmente el 
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">
     Lanzar demo de modal
   </button>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -412,6 +419,8 @@ Utiliza el sistema de cuadrícula Bootstrap dentro de un modal anidando `.contai
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gridSystemModal">
   Lanzar demo de modal
 </button>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -451,7 +460,7 @@ Utiliza el sistema de cuadrícula Bootstrap dentro de un modal anidando `.contai
 
 A continuación se muestra una demostración en vivo seguida de un ejemplo de HTML y JavaScript. Para obtener más información, [lee los documentos de eventos modales](#events) para obtener detalles sobre `relatedTarget`.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Abrir modal para @mdo</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Abrir modal para @fat</button>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Abrir modal para @getbootstrap</button>
@@ -482,7 +491,42 @@ A continuación se muestra una demostración en vivo seguida de un ejemplo de HT
     </div>
   </div>
 </div>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Abrir modal para @mdo</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Abrir modal para @fat</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Abrir modal para @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Destinatario:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Mensaje:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar mensaje</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
 
 ```js
 var exampleModal = document.getElementById('exampleModal')
@@ -509,7 +553,7 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
 
 Alterna entre múltiples modales con una colocación inteligente de los atributos `data-bs-target` y `data-bs-toggle`. Por ejemplo, podrías alternar un modal de restablecimiento de contraseña desde un modal de inicio de sesión ya abierto. **Ten en cuenta que no se pueden abrir múltiples modales al mismo tiempo**; este método simplemente alterna entre dos modales separados.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -543,7 +587,44 @@ Alterna entre múltiples modales con una colocación inteligente de los atributo
   </div>
 </div>
 <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Abrir el primer modal</a>
+  <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Muestra un segundo modal y oculta este con el botón de abajo.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Abrir segundo modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Oculta este modal y muestra el primero con el botón de abajo.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Volver al primero</button>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Abrir el primer modal</a>
+```
 
 ### Cambiar la animación
 
@@ -657,6 +738,7 @@ Nuestro modal predeterminado sin clase modificadora constituye el modal de tama�
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Extra large modal</button>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalLg">Large modal</button>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalSm">Small modal</button>
+  <br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html
@@ -813,6 +895,7 @@ Otra posible sobrescritura es la opción de mostrar un modal que cubra el viewpo
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenLg">Full screen debajo de lg</button>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXl">Full screen debajo de xl</button>
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalFullscreenXxl">Full screen debajo de xxl</button>
+  <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
 ```html

@@ -14,6 +14,7 @@ Una descripción general del equipo fundador y los principales contribuyentes de
 
 Bootstrap es mantenido por el equipo fundador y un pequeño grupo de valiosos colaboradores principales, con el apoyo masivo y la participación de nuestra comunidad.
 
+{{< bootstrap/5-1/example show_markup="false" >}}
 {{< team.inline >}}
 <div class="list-group mb-3">
   {{- range (index $.Site.Data "bootstrap_5_1_core-team") }}
@@ -26,6 +27,7 @@ Bootstrap es mantenido por el equipo fundador y un pequeño grupo de valiosos co
   {{ end -}}
 </div>
 {{< /team.inline >}}
+{{< /bootstrap/5-1/example >}}
 
 {{< content-ads/middle-banner-1 >}}
 

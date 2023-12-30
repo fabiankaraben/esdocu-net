@@ -261,7 +261,7 @@ Agrega menús desplegables con un poco de HTML adicional y el [complemento JavaS
 
 ### Tabs con dropdowns
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Activo</a>
@@ -283,11 +283,36 @@ Agrega menús desplegables con un poco de HTML adicional y el [complemento JavaS
     <a class="nav-link disabled">Deshabilitado</a>
   </li>
 </ul>
+<br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Activo</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Acción</a></li>
+      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Enlace</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Deshabilitado</a>
+  </li>
+</ul>
+```
 
 ### Pills con dropdowns
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 <ul class="nav nav-pills">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Activo</a>
@@ -309,7 +334,32 @@ Agrega menús desplegables con un poco de HTML adicional y el [complemento JavaS
     <a class="nav-link disabled">Deshabilitado</a>
   </li>
 </ul>
+<br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+```html
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Activo</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Acción</a></li>
+      <li><a class="dropdown-item" href="#">Otra acción</a></li>
+      <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Enlace</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Deshabilitado</a>
+  </li>
+</ul>
+```
 
 {{< content-ads/middle-banner-2 >}}
 
@@ -329,7 +379,7 @@ Interfaces con pestañas dinámicas, como se describe en las [Prácticas de crea
 Ten en cuenta que el complemento JavaScript de pestaña **no** admite interfaces con pestañas que contienen menús desplegables, ya que estos causan problemas de usabilidad y accesibilidad. Desde una perspectiva de usabilidad, el hecho de que el elemento activador de la pestaña que se muestra actualmente no sea visible de inmediato (ya que está dentro del menú desplegable cerrado) puede causar confusión. Desde el punto de vista de la accesibilidad, actualmente no existe una forma sensata de asignar este tipo de construcción a un patrón WAI ARIA estándar, lo que significa que no se puede hacer fácilmente comprensible para los usuarios de tecnologías de asistencia.
 {{< /bootstrap/5-1/callout >}}
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Inicio</button>
@@ -375,7 +425,7 @@ Ten en cuenta que el complemento JavaScript de pestaña **no** admite interfaces
 
 Para ayudar a satisfacer tus necesidades, esto funciona con el marcado basado en `<ul>`, como se muestra arriba, o con cualquier marcado arbitrario "Lanza el tuyo propio". Ten en cuenta que si estás utilizando `<nav>`, no debes agregar `role="tablist"` directamente, ya que esto sobrescribiría el rol nativo del elemento como punto de referencia de navegación. En su lugar, cambia a un elemento alternativo (en el ejemplo a continuación, un simple `<div>`) y envuélvelo con `<nav>`.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <nav>
     <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
       <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Inicio</button>
@@ -413,7 +463,7 @@ Para ayudar a satisfacer tus necesidades, esto funciona con el marcado basado en
 
 El complemento de pestañas (tabs) también funciona con pastillas (pills).
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Inicio</button>
@@ -459,7 +509,7 @@ El complemento de pestañas (tabs) también funciona con pastillas (pills).
 
 Y con pastillas verticales.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <div class="d-flex align-items-start">
     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</button>

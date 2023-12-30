@@ -189,7 +189,7 @@ Scrollspy también funciona con `.nav`s anidados. Si un `.nav` anidado es `.acti
 
 Scrollspy también funciona con `.list-group`s. Desplázate por el área junto al grupo de listas y observa cómo cambia la clase activa.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <div class="row">
     <div class="col-4">
       <div id="list-example" class="list-group">

@@ -329,7 +329,7 @@ Mezcla y combina con otros componentes y utilidades según sea necesario.
 
 Tematizar la barra de navegación nunca ha sido tan fácil gracias a la combinación de clases de temas y utilidades de `background-color`. Elije entre `.navbar-light` para usar con colores de fondo claros o `.navbar-dark` para colores de fondo oscuros. Luego, personaliza con las utilidades `.bg-*`.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>

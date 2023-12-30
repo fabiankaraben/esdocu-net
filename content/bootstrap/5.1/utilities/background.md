@@ -16,7 +16,7 @@ Transmite significado a través de `background-color` (color de fondo) y agrega 
 
 De forma similar a las clases de color de texto contextual, establece el fondo de un elemento en cualquier clase contextual. Las utilidades de fondo **no configuran `color`**, por lo que en algunos casos querrás usar `.text-*` [utilidades de color]({{< bootstrap/5-1/docsref "/utilities/colors" >}}).
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
 {{< colors.inline >}}
 {{- range (index $.Site.Data "bootstrap_5_1_theme-colors") }}
 <div class="p-3 mb-2 bg-{{ .name }}{{ if .contrast_color }} text-{{ .contrast_color }}{{ else }} text-white{{ end }}">.bg-{{ .name }}</div>
@@ -33,6 +33,7 @@ Al agregar una clase `.bg-gradient`, se agrega un degradado lineal como imagen d
 
 ¿Necesitas un degradado personalizado en tu CSS? Simplemente agrega `background-image: var(--bs-gradient);`.
 
+{{< bootstrap/5-1/example show_markup="false" >}}
 {{< bootstrap/5-1/markdown >}}
 {{< colors.inline >}}
 {{- range (index $.Site.Data "bootstrap_5_1_theme-colors") }}
@@ -40,6 +41,7 @@ Al agregar una clase `.bg-gradient`, se agrega un degradado lineal como imagen d
 {{- end -}}
 {{< /colors.inline >}}
 {{< /bootstrap/5-1/markdown >}}
+{{< /bootstrap/5-1/example >}}
 
 {{< content-ads/middle-banner-1 >}}
 

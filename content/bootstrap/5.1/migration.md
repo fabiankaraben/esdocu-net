@@ -97,25 +97,25 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - Hemos eliminado las fusiones de mapas de Sass predeterminadas para facilitar la eliminación de valores redundantes. Ten en cuenta que ahora debes definir todos los valores en los mapas de Sass como `$theme-colors`. Mira cómo lidiar con [Mapas Sass]({{< bootstrap/5-1/docsref "/customize/sass#maps-and-loops" >}}).
 
-- <span class="badge bg-danger">Breaking</span> Se cambió el nombre de la función `color-yiq()` y las variables relacionadas a `color-contrast()` ya que ya no está relacionado con el espacio de color YIQ. [Ver #30168.](https://github.com/twbs/bootstrap/pull/30168/)
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se cambió el nombre de la función `color-yiq()` y las variables relacionadas a `color-contrast()` ya que ya no está relacionado con el espacio de color YIQ. [Ver #30168.](https://github.com/twbs/bootstrap/pull/30168/)
   - Se cambia el nombre de `$yiq-contrasted-threshold` a `$min-contrast-ratio`.
   - `$yiq-text-dark` y `$yiq-text-light` se renombran respectivamente a `$color-contrast-dark` y `$color-contrast-light`.
 
-- <span class="badge bg-danger">Breaking</span> Los parámetros mixins de media queries han cambiado para un enfoque más lógico.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Los parámetros mixins de media queries han cambiado para un enfoque más lógico.
   - `media-breakpoint-down()` usa el propio breakpoint en lugar del siguiente breakpoint (p. ej., `media-breakpoint-down(lg)` en lugar de `media-breakpoint-down(md)` apunta a viewports más pequeños que `lg `).
   - De manera similar, el segundo parámetro en `media-breakpoint-between()` también usa el breakpoint en sí mismo en lugar del siguiente breakpoint (por ejemplo, `media-between(sm, lg)` en lugar de `media-breakpoint-between(sm, md)` apunta a viewports entre `sm` y `lg`).
 
-- <span class="badge bg-danger">Breaking</span> Se eliminaron los estilos de impresión y la variable `$enable-print-styles`. Las clases de visualización de impresión todavía existen. [Ver #28339](https://github.com/twbs/bootstrap/pull/28339).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminaron los estilos de impresión y la variable `$enable-print-styles`. Las clases de visualización de impresión todavía existen. [Ver #28339](https://github.com/twbs/bootstrap/pull/28339).
 
-- <span class="badge bg-danger">Breaking</span> Se eliminaron las funciones `color()`, `theme-color()` y `gray()` en favor de las variables. [Ver #29083](https://github.com/twbs/bootstrap/pull/29083).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminaron las funciones `color()`, `theme-color()` y `gray()` en favor de las variables. [Ver #29083](https://github.com/twbs/bootstrap/pull/29083).
 
-- <span class="badge bg-danger">Breaking</span> Se renombró la función `theme-color-level()` a `color-level()` y ahora acepta cualquier color que desees en lugar de solo colores `$theme-color`. [Ver #29083](https://github.com/twbs/bootstrap/pull/29083) **Cuidado:** `color-level()` se eliminó más tarde en `v5.0.0-alpha3`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se renombró la función `theme-color-level()` a `color-level()` y ahora acepta cualquier color que desees en lugar de solo colores `$theme-color`. [Ver #29083](https://github.com/twbs/bootstrap/pull/29083) **Cuidado:** `color-level()` se eliminó más tarde en `v5.0.0-alpha3`.
 
-- <span class="badge bg-danger">Breaking</span> Renombrado `$enable-prefers-reduced-motion-media-query` y `$enable-pointer-cursor-for-buttons` a `$enable-reduced-motion` y `$enable-button-pointers` por brevedad.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Renombrado `$enable-prefers-reduced-motion-media-query` y `$enable-pointer-cursor-for-buttons` a `$enable-reduced-motion` y `$enable-button-pointers` por brevedad.
 
-- <span class="badge bg-danger">Breaking</span> Eliminado el mixin `bg-gradient-variant()`. Utiliza la clase `.bg-gradient` para agregar degradados a los elementos en lugar de las clases `.bg-gradient-*` generadas.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Eliminado el mixin `bg-gradient-variant()`. Utiliza la clase `.bg-gradient` para agregar degradados a los elementos en lugar de las clases `.bg-gradient-*` generadas.
 
-- <span class="badge bg-danger">Breaking</span> **Se eliminaron los mixins anteriormente obsoletos:**
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> **Se eliminaron los mixins anteriormente obsoletos:**
   - `hover`, `hover-focus`, `plain-hover-focus`, and `hover-focus-active`
   - `float()`
   - `form-control-mixin()`
@@ -125,7 +125,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
   - `visibility()`
   - `form-control-focus()`
 
-- <span class="badge bg-danger">Breaking</span> Se cambió el nombre de la función `scale-color()` a `shift-color()` para evitar la colisión con la propia función de escalado de color de Sass.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se cambió el nombre de la función `scale-color()` a `shift-color()` para evitar la colisión con la propia función de escalado de color de Sass.
 
 - Los mixins `box-shadow` ahora permiten valores `null` y eliminan `none` de múltiples argumentos. [Ver #30394](https://github.com/twbs/bootstrap/pull/30394).
 
@@ -147,15 +147,15 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - **Gutters mejorados.** Los gutters ahora se configuran en rems, y son más angostas que v4 (`1.5rem`, o alrededor de `24px`, menos que `30px`). Esto alinea las gutters de nuestro sistema de cuadrícula con nuestras utilidades de espaciado.
   - Se agregó una nueva [clase de gutter]({{< bootstrap/5-1/docsref "/layout/gutters" >}}) (`.g-*`, `.gx-*` y `.gy-*`) para controlar gutters horizontal/vertical, gutters horizontales y gutters verticales.
-  - <span class="badge bg-danger">Breaking</span> Se cambió el nombre de `.no-gutters` a `.g-0` para que coincida con las nuevas utilidades de gutters.
+  - <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se cambió el nombre de `.no-gutters` a `.g-0` para que coincida con las nuevas utilidades de gutters.
 
 - Las columnas ya no tienen aplicada `position: relative`, por lo que es posible que debas agregar `position: relative` a algunos elementos para restaurar ese comportamiento.
 
-- <span class="badge bg-danger">Breaking</span> Se eliminaron varias clases `.order-*` que a menudo no se usaban. Ahora solo proporcionamos `.order-1` a `.order-5`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminaron varias clases `.order-*` que a menudo no se usaban. Ahora solo proporcionamos `.order-1` a `.order-5`.
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó el componente `.media` ya que se puede replicar fácilmente con utilidades. [Consulta #28265](https://github.com/twbs/bootstrap/pull/28265) y la [página de utilidades flexibles para ver un ejemplo]({{< bootstrap/5-1/docsref "/utilities/flex#media-object" >}}).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó el componente `.media` ya que se puede replicar fácilmente con utilidades. [Consulta #28265](https://github.com/twbs/bootstrap/pull/28265) y la [página de utilidades flexibles para ver un ejemplo]({{< bootstrap/5-1/docsref "/utilities/flex#media-object" >}}).
 
-- <span class="badge bg-danger">Breaking</span> `bootstrap-grid.css` ahora solo aplica `box-sizing: border-box` a la columna en lugar de restablecer el box-sizing global. De esta manera, nuestros estilos de cuadrícula se pueden usar en más lugares sin interferencias.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> `bootstrap-grid.css` ahora solo aplica `box-sizing: border-box` a la columna en lugar de restablecer el box-sizing global. De esta manera, nuestros estilos de cuadrícula se pueden usar en más lugares sin interferencias.
 
 - `$enable-grid-classes` ya no deshabilita la generación de clases contenedoras. [Ver #29146.](https://github.com/twbs/bootstrap/pull/29146)
 
@@ -165,7 +165,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - **[RFS]({{< bootstrap/5-1/docsref "/getting-started/rfs" >}}) ahora está habilitado de manera predeterminada.** Los encabezados que usan el mixin `font-size()` ajustarán automáticamente su `font-size` para escalar con el viewport. _Esta característica se incorporó previamente con v4._
 
-- <span class="badge bg-danger">Breaking</span> Revisamos nuestra tipografía de visualización para reemplazar nuestras variables `$display-*` y con un mapa Sass `$display-font-sizes`. También se eliminaron las variables `$display-*-weight` individuales para un único `$display-font-weight` y se ajustó el `font-size`s.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Revisamos nuestra tipografía de visualización para reemplazar nuestras variables `$display-*` y con un mapa Sass `$display-font-sizes`. También se eliminaron las variables `$display-*-weight` individuales para un único `$display-font-weight` y se ajustó el `font-size`s.
 
 - Se agregaron dos nuevos tamaños de encabezado `.display-*`, `.display-5` y `.display-6`.
 
@@ -173,21 +173,21 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - **Tablas rediseñadas** para actualizar sus estilos y reconstruirlas con variables CSS para un mayor control sobre el estilo.
 
-- <span class="badge bg-danger">Breaking</span> Las tablas anidadas ya no heredan estilos.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Las tablas anidadas ya no heredan estilos.
 
-- <span class="badge bg-danger">Breaking</span> `.thead-light` y `.thead-dark` se eliminan en favor de las clases variantes `.table-*` que se pueden usar para todos elementos de la tabla (`thead`, `tbody`, `tfoot`, `tr`, `th` y `td`).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> `.thead-light` y `.thead-dark` se eliminan en favor de las clases variantes `.table-*` que se pueden usar para todos elementos de la tabla (`thead`, `tbody`, `tfoot`, `tr`, `th` y `td`).
 
-- <span class="badge bg-danger">Breaking</span> El mixin `table-row-variant()` se renombra a `table-variant()` y acepta solo 2 parámetros: `$color` (color nombre) y `$value` (código de color). El color del borde y los colores de énfasis se calculan automáticamente en función de las variables de factor de la tabla.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> El mixin `table-row-variant()` se renombra a `table-variant()` y acepta solo 2 parámetros: `$color` (color nombre) y `$value` (código de color). El color del borde y los colores de énfasis se calculan automáticamente en función de las variables de factor de la tabla.
 
 - Dividimos las variables de padding de las celdas de la tabla en `-y` y `-x`.
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó la clase `.pre-scrollable`. [Ver #29135](https://github.com/twbs/bootstrap/pull/29135)
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó la clase `.pre-scrollable`. [Ver #29135](https://github.com/twbs/bootstrap/pull/29135)
 
-- <span class="badge bg-danger">Breaking</span> Las utilidades `.text-*` ya no agregan estados focus y hover a los enlaces. En su lugar, se pueden usar las clases auxiliares `.link-*`. [Ver #29267](https://github.com/twbs/bootstrap/pull/29267)
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Las utilidades `.text-*` ya no agregan estados focus y hover a los enlaces. En su lugar, se pueden usar las clases auxiliares `.link-*`. [Ver #29267](https://github.com/twbs/bootstrap/pull/29267)
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó la clase `.text-justify`. [Ver #29793](https://github.com/twbs/bootstrap/pull/29793)
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó la clase `.text-justify`. [Ver #29793](https://github.com/twbs/bootstrap/pull/29793)
 
-- <span class="badge bg-danger">Breaking</span> Los elementos `<hr>` ahora usan `height` en lugar de `border` para admitir mejor el atributo `size`. Esto también permite el uso de utilidades de relleno para crear divisores más gruesos (por ejemplo, `<hr class="py-1">`).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Los elementos `<hr>` ahora usan `height` en lugar de `border` para admitir mejor el atributo `size`. Esto también permite el uso de utilidades de relleno para crear divisores más gruesos (por ejemplo, `<hr class="py-1">`).
 
 - Se restablece el `padding-left` horizontal predeterminado en los elementos `<ul>` y `<ol>` del valor predeterminado del navegador `40px` a `2rem`.
 
@@ -201,7 +201,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - **¡Se agregaron nuevos formularios flotantes!** Hemos promovido el ejemplo de etiquetas flotantes a componentes de formulario totalmente compatibles. [Vea la nueva página de etiquetas flotantes.]({{< bootstrap/5-1/docsref "/forms/floating-labels" >}})
 
-- <span class="badge bg-danger">Breaking</span> **Elementos de formulario nativos y personalizados consolidados.** Se han consolidado casillas de verificación, radios, selecciones y otras entradas que tenían clases nativas y personalizadas en v4. Ahora, casi todos nuestros elementos de formulario son totalmente personalizados, la mayoría sin necesidad de HTML personalizado.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> **Elementos de formulario nativos y personalizados consolidados.** Se han consolidado casillas de verificación, radios, selecciones y otras entradas que tenían clases nativas y personalizadas en v4. Ahora, casi todos nuestros elementos de formulario son totalmente personalizados, la mayoría sin necesidad de HTML personalizado.
   - `.custom-control.custom-checkbox` ahora es `.form-check`.
   - `.custom-control.custom-custom-radio` ahora es `.form-check`.
   - `.custom-control.custom-switch` ahora es `.form-check.form-switch`.
@@ -210,15 +210,15 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
   - `.custom-range` ahora es `.form-range`.
   - Se eliminaron `.form-control-file` y `.form-control-range` nativos.
 
-- <span class="badge bg-danger">Breaking</span> Eliminado `.input-group-append` y `.input-group-prepend`. Ahora puede simplemente agregar botones y `.input-group-text` como elementos secundarios directos de los grupos de entrada.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Eliminado `.input-group-append` y `.input-group-prepend`. Ahora puede simplemente agregar botones y `.input-group-text` como elementos secundarios directos de los grupos de entrada.
 
 - El antiguo [Falta el radio del borde en el grupo de entrada con el error de retroalimentación de validación](https://github.com/twbs/bootstrap/issues/25110) finalmente se corrige al agregar una clase adicional `.has-validation` a los grupos de entrada con validación.
 
-- <span class="badge bg-danger">Breaking</span> **Clases de diseño específicas de formulario eliminadas para nuestro sistema de cuadrícula.** Use nuestra cuadrícula y utilidades en lugar de `.form-group`, `.form-row`, o `.form-inline`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> **Clases de diseño específicas de formulario eliminadas para nuestro sistema de cuadrícula.** Use nuestra cuadrícula y utilidades en lugar de `.form-group`, `.form-row`, o `.form-inline`.
 
-- <span class="badge bg-danger">Breaking</span> Las etiquetas de formulario ahora requieren `.form-label`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Las etiquetas de formulario ahora requieren `.form-label`.
 
-- <span class="badge bg-danger">Breaking</span> `.form-text` ya no establece `display`, lo que le permite crear texto de ayuda en línea o en bloque como desee simplemente cambiando el elemento HTML.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> `.form-text` ya no establece `display`, lo que le permite crear texto de ayuda en línea o en bloque como desee simplemente cambiando el elemento HTML.
 
 - Los íconos de validación ya no se aplican a `<select>`s con `multiple`.
 
@@ -242,11 +242,11 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Badges
 
-- <span class="badge bg-danger">Breaking</span> Se eliminaron todas las clases de color `.badge-*` para las utilidades de fondo (por ejemplo, use `.bg-primary` en lugar de `.badge-primary`).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminaron todas las clases de color `.badge-*` para las utilidades de fondo (por ejemplo, use `.bg-primary` en lugar de `.badge-primary`).
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó `.badge-pill`: use la utilidad `.rounded-pill` en su lugar.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó `.badge-pill`: use la utilidad `.rounded-pill` en su lugar.
 
-- <span class="badge bg-danger">Breaking</span> Se eliminaron los estilos de hover y focus para los elementos `<a>` y `<button>`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminaron los estilos de hover y focus para los elementos `<a>` y `<button>`.
 
 - Se aumentó el padding predeterminado para las insignias de `.25em`/`.5em` a `.35em`/`.65em`.
 
@@ -258,9 +258,9 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Buttons
 
-- <span class="badge bg-danger">Breaking</span> **[Botones de alternar]({{< bootstrap/5-1/docsref "/forms/checks-radios#toggle-buttons" >}}), con casillas de verificación o radios, ya no requiere JavaScript y tiene un nuevo marcado.** Ya no requerimos un elemento de ajuste, agregue `.btn-check` a `<input>` y empareje con cualquier clase `.btn` en `<label>`. [Ver #30650](https://github.com/twbs/bootstrap/pull/30650). _Los documentos para esto se han movido de nuestra página de Botones a la nueva sección de Formularios._
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> **[Botones de alternar]({{< bootstrap/5-1/docsref "/forms/checks-radios#toggle-buttons" >}}), con casillas de verificación o radios, ya no requiere JavaScript y tiene un nuevo marcado.** Ya no requerimos un elemento de ajuste, agregue `.btn-check` a `<input>` y empareje con cualquier clase `.btn` en `<label>`. [Ver #30650](https://github.com/twbs/bootstrap/pull/30650). _Los documentos para esto se han movido de nuestra página de Botones a la nueva sección de Formularios._
 
-- <span class="badge bg-danger">Breaking</span> **Eliminó `.btn-block` para utilidades.** En lugar de usar `.btn-block` en `.btn`, ajuste sus botones con `.d-grid` y una utilidad `.gap-*` para espaciarlos según sea necesario. Cambie a clases receptivas para tener aún más control sobre ellas. [Lea los documentos para ver algunos ejemplos.]({{< bootstrap/5-1/docsref "/components/buttons#block-buttons" >}})
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> **Eliminó `.btn-block` para utilidades.** En lugar de usar `.btn-block` en `.btn`, ajuste sus botones con `.d-grid` y una utilidad `.gap-*` para espaciarlos según sea necesario. Cambie a clases receptivas para tener aún más control sobre ellas. [Lea los documentos para ver algunos ejemplos.]({{< bootstrap/5-1/docsref "/components/buttons#block-buttons" >}})
 
 - Se actualizaron nuestros mixins `button-variant()` y `button-outline-variant()` para admitir parámetros adicionales.
 
@@ -270,11 +270,11 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Card
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó `.card-deck` a favor de nuestra cuadrícula. Envuelva sus cartas en clases de columnas y agregue un contenedor principal `.row-cols-*` para recrear mazos de cartas (pero con más control sobre la alineación responsive).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó `.card-deck` a favor de nuestra cuadrícula. Envuelva sus cartas en clases de columnas y agregue un contenedor principal `.row-cols-*` para recrear mazos de cartas (pero con más control sobre la alineación responsive).
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó `.card-columns` a favor de Masonry. [Ver #28922](https://github.com/twbs/bootstrap/pull/28922).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó `.card-columns` a favor de Masonry. [Ver #28922](https://github.com/twbs/bootstrap/pull/28922).
 
-- <span class="badge bg-danger">Breaking</span> Se reemplazó el acordeón basado en `.card` con un [nuevo componente Accordion]({{< bootstrap/5-1/docsref "/components/accordion" >}}).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se reemplazó el acordeón basado en `.card` con un [nuevo componente Accordion]({{< bootstrap/5-1/docsref "/components/accordion" >}}).
 
 ### Carousel
 
@@ -284,7 +284,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Close button
 
-- <span class="badge bg-danger">Breaking</span> Renombrado `.close` a `.btn-close` para un nombre menos genérico.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Renombrado `.close` a `.btn-close` para un nombre menos genérico.
 
 - Los botones de cierre ahora usan una `background-image` (SVG incrustado) en lugar de `&times;` en el HTML, lo que permite una personalización más sencilla sin necesidad de tocar el marcado.
 
@@ -302,11 +302,11 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - Se oscureció el divisor desplegable para mejorar el contraste.
 
-- <span class="badge bg-danger">Breaking</span> Todos los eventos del menú desplegable ahora se activan en el botón de alternancia del menú desplegable y luego se expanden al elemento principal.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Todos los eventos del menú desplegable ahora se activan en el botón de alternancia del menú desplegable y luego se expanden al elemento principal.
 
 - Los menús desplegables ahora tienen un atributo `data-bs-popper="static"` establecido cuando el posicionamiento del menú desplegable es estático, o el menú desplegable está en la barra de navegación. Esto lo agrega nuestro JavaScript y nos ayuda a usar estilos de posición personalizados sin interferir con el posicionamiento de Popper.
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó la opción `flip` para el complemento desplegable a favor de la configuración nativa de Popper. Ahora puede deshabilitar el comportamiento de volteo pasando una matriz vacía para la opción [`fallbackPlacements`](https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements) en [flip](https:// popper.js.org/docs/v2/modifiers/flip/) modificador.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó la opción `flip` para el complemento desplegable a favor de la configuración nativa de Popper. Ahora puede deshabilitar el comportamiento de volteo pasando una matriz vacía para la opción [`fallbackPlacements`](https://popper.js.org/docs/v2/modifiers/flip/#fallbackplacements) en [flip](https:// popper.js.org/docs/v2/modifiers/flip/) modificador.
 
 - Ahora se puede hacer clic en los menús desplegables con una nueva opción `autoClose` para manejar el [comportamiento de cierre automático]({{< bootstrap/5-1/docsref "/components/dropdowns#auto-close-behavior" >}}). Puede usar esta opción para aceptar el clic dentro o fuera del menú desplegable para hacerlo interactivo.
 
@@ -314,7 +314,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Jumbotron
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó el componente jumbotron, ya que se puede replicar con utilidades. [Vea nuestro nuevo ejemplo de Jumbotron para ver una demostración.](https://getbootstrap.com/docs/5.1/examples/jumbotron)
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó el componente jumbotron, ya que se puede replicar con utilidades. [Vea nuestro nuevo ejemplo de Jumbotron para ver una demostración.](https://getbootstrap.com/docs/5.1/examples/jumbotron)
 
 ### List group
 
@@ -326,7 +326,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Navbars
 
-- <span class="badge bg-danger">Breaking</span> Las barras de navegación ahora requieren un contenedor dentro (para simplificar drásticamente los requisitos de espacio y CSS requerido).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Las barras de navegación ahora requieren un contenedor dentro (para simplificar drásticamente los requisitos de espacio y CSS requerido).
 
 ### Offcanvas
 
@@ -340,7 +340,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Popovers
 
-- <span class="badge bg-danger">Breaking</span> Renombrado `.arrow` a `.popover-arrow` en nuestra plantilla de popover predeterminada.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Renombrado `.arrow` a `.popover-arrow` en nuestra plantilla de popover predeterminada.
 
 - Se renombró la opción `whiteList` a `allowList`.
 
@@ -360,15 +360,15 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ### Tooltips
 
-- <span class="badge bg-danger">Breaking</span> Renombrado `.arrow` a `.tooltip-arrow` en nuestra plantilla de tooltips predeterminada.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Renombrado `.arrow` a `.tooltip-arrow` en nuestra plantilla de tooltips predeterminada.
 
-- <span class="badge bg-danger">Breaking</span> El valor predeterminado para `fallbackPlacements` se cambió a `['top', 'right', 'bottom', 'left']` para una mejor ubicación de elementos popper.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> El valor predeterminado para `fallbackPlacements` se cambió a `['top', 'right', 'bottom', 'left']` para una mejor ubicación de elementos popper.
 
-- <span class="badge bg-danger">Breaking</span> Se cambió el nombre de la opción `whiteList` a `allowList`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se cambió el nombre de la opción `whiteList` a `allowList`.
 
 ## Utilidades
 
-- <span class="badge bg-danger">Breaking</span> Se cambiaron los nombres de varias utilidades para usar nombres de propiedades lógicas en lugar de nombres direccionales con la adición de compatibilidad con RTL:
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se cambiaron los nombres de varias utilidades para usar nombres de propiedades lógicas en lugar de nombres direccionales con la adición de compatibilidad con RTL:
   - Renombrado `.left-*` y `.right-*` a `.start-*` y `.end-*`.
   - Renombrado `.float-left` y `.float-right` a `.float-start` y `.float-end`.
   - Renombrado `.border-left` y `.border-right` a `.border-start` y `.border-end`.
@@ -377,7 +377,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
   - Renombrado `.pl-*` y `.pr-*` a `.ps-*` y `.pe-*`.
   - Renombrado `.text-left` y `.text-right` a `.text-start` y `.text-end`.
 
-- <span class="badge bg-danger">Breaking</span> Márgenes negativos deshabilitados de forma predeterminada.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Márgenes negativos deshabilitados de forma predeterminada.
 
 - Se agregó una nueva clase `.bg-body` para configurar rápidamente el fondo `<body>` en elementos adicionales.
 
@@ -387,19 +387,19 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - Se agregaron nuevas [utilidades `border-width`]({{< bootstrap/5-1/docsref "/utilities/borders#border-width" >}}).
 
-- <span class="badge bg-danger">Breaking</span> Renombrado `.text-monospace` a `.font-monospace`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Renombrado `.text-monospace` a `.font-monospace`.
 
-- <span class="badge bg-danger">Breaking</span> Se eliminó `.text-hide` ya que es un método anticuado para ocultar texto que ya no debería usarse.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminó `.text-hide` ya que es un método anticuado para ocultar texto que ya no debería usarse.
 
 - Se agregaron las utilidades `.fs-*` para las utilidades `font-size` (con RFS habilitado). Estos usan la misma escala que los encabezados predeterminados de HTML (1-6, de grande a pequeño) y se pueden modificar a través del mapa de Sass.
 
-- <span class="badge bg-danger">Breaking</span> Se cambió el nombre de las utilidades `.font-weight-*` a `.fw-*` por brevedad y consistencia.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se cambió el nombre de las utilidades `.font-weight-*` a `.fw-*` por brevedad y consistencia.
 
-- <span class="badge bg-danger">Breaking</span> Renombradas utilidades `.font-style-*` como `.fst-*` por brevedad y consistencia.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Renombradas utilidades `.font-style-*` como `.fst-*` por brevedad y consistencia.
 
 - Se agregó `.d-grid` para mostrar las utilidades y nuevas utilidades `gap` (`.gap`) para diseños CSS Grid y flexbox.
 
-- <span class="badge bg-danger">Breaking</span> Se eliminaron `.rounded-sm` y `rounded-lg`, y se introdujo una nueva escala de clases, `.rounded-0` a `.rounded- 3`. [Ver #31687](https://github.com/twbs/bootstrap/pull/31687).
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Se eliminaron `.rounded-sm` y `rounded-lg`, y se introdujo una nueva escala de clases, `.rounded-0` a `.rounded- 3`. [Ver #31687](https://github.com/twbs/bootstrap/pull/31687).
 
 - Se agregaron nuevas utilidades `line-height`: `.lh-1`, `.lh-sm`, `.lh-base` y `.lh-lg`. Consulta [aquí]({{< bootstrap/5-1/docsref "/utilities/text#line-height" >}}).
 
@@ -409,13 +409,13 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 ## Helpers
 
-- <span class="badge bg-danger">Breaking</span> **Se ha cambiado el nombre de los asistentes integrados responsive a [ayudantes de relación]({{< bootstrap/5-1/docsref "/helpers/ratio" >}})** con una nueva clase nombres y comportamientos mejorados, así como una útil variable CSS.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> **Se ha cambiado el nombre de los asistentes integrados responsive a [ayudantes de relación]({{< bootstrap/5-1/docsref "/helpers/ratio" >}})** con una nueva clase nombres y comportamientos mejorados, así como una útil variable CSS.
   - Se ha cambiado el nombre de las clases para cambiar `by` a `x` en la relación de aspecto. Por ejemplo, `.ratio-16by9` ahora es `.ratio-16x9`.
   - Eliminamos el selector `.embed-responsive-item` y el grupo de elementos en favor de un selector `.ratio > *` más simple. No se necesita más clase, y el ayudante de relación ahora funciona con cualquier elemento HTML.
   - Se cambió el nombre del mapa Sass `$embed-responsive-aspect-ratios` a `$aspect-ratios` y sus valores se simplificaron para incluir el nombre de la clase y el porcentaje como el par `key: value`.
   - Las variables CSS ahora se generan e incluyen para cada valor en el mapa Sass. Modifique la variable `--bs-aspect-ratio` en `.ratio` para crear cualquier [relación de aspecto personalizada]({{< bootstrap/5-1/docsref "/helpers/ratio#custom-ratios" >}}).
 
-- <span class="badge bg-danger">Breaking</span> **Las clases de "lector de pantalla" ahora son [clases "visualmente ocultas"]({{< bootstrap/5-1/docsref "/helpers/visually-hidden" >}}) .**
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> **Las clases de "lector de pantalla" ahora son [clases "visualmente ocultas"]({{< bootstrap/5-1/docsref "/helpers/visually-hidden" >}}) .**
   - Se cambió el archivo Sass de `scss/helpers/_screenreaders.scss` a `scss/helpers/_visually-hidden.scss`
   - Renombrado `.sr-only` y `.sr-only-focusable` a `.visually-hidden` y `.visually-hidden-focusable`
   - Se cambió el nombre de los mixins `sr-only()` y `sr-only-focusable()` a `visually-hidden()` y `visually-hidden-focusable()`.
@@ -426,7 +426,7 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - **Se eliminó la dependencia de jQuery** y se reescribieron los complementos para que estén en JavaScript normal.
 
-- <span class="badge bg-danger">Breaking</span> Los atributos de datos para todos los complementos de JavaScript ahora tienen un espacio de nombres para ayudar a distinguir la funcionalidad de Bootstrap de terceros y de su propio código. Por ejemplo, usamos `data-bs-toggle` en lugar de `data-toggle`.
+- <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Los atributos de datos para todos los complementos de JavaScript ahora tienen un espacio de nombres para ayudar a distinguir la funcionalidad de Bootstrap de terceros y de su propio código. Por ejemplo, usamos `data-bs-toggle` en lugar de `data-toggle`.
 
 - **Todos los complementos ahora pueden aceptar un selector CSS como primer argumento.** Puede pasar un elemento DOM o cualquier selector CSS válido para crear una nueva instancia del complemento:
 
