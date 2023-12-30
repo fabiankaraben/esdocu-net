@@ -153,7 +153,7 @@ Siéntete libre de mezclar grupos de inputs con grupos de botones en tus barras 
 
 En lugar de aplicar clases de tamaño de botón a cada botón en un grupo, simplemente agrega `.btn-group-*` a cada `.btn-group`, incluyendo a cada uno al anidar varios grupos.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
     <button type="button" class="btn btn-outline-dark">Izquierda</button>
     <button type="button" class="btn btn-outline-dark">Medio</button>
@@ -206,7 +206,7 @@ Coloca un `.btn-group` dentro de otro `.btn-group` cuando desees que los menús 
 
 Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de horizontalmente. **Los menús desplegables de botones divididos no son compatibles aquí.**
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
     <button type="button" class="btn btn-dark">Botón</button>
     <button type="button" class="btn btn-dark">Botón</button>
@@ -217,7 +217,7 @@ Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de hori
   </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
     <button type="button" class="btn btn-primary">Botón</button>
     <button type="button" class="btn btn-primary">Botón</button>
@@ -262,7 +262,7 @@ Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de hori
   </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
     <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
     <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
