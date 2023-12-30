@@ -3,6 +3,7 @@ weight: 14
 linkTitle: Espaciado
 title: Espaciado · Bootstrap en Español v5.1
 description: Bootstrap incluye una amplia gama de clases de utilidades de margin, padding y gap para modificar la apariencia de un elemento.
+type: docs
 ---
 
 # Espaciado

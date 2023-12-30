@@ -3,6 +3,7 @@ weight: 8
 linkTitle: Interacciones
 title: Interacciones · Bootstrap en Español v5.1
 description: Clases de utilidad que cambian la forma en la que los usuarios interactúan con los contenidos de un sitio web.
+type: docs
 ---
 
 # Interacciones

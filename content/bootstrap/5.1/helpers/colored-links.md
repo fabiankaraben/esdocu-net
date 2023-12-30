@@ -3,6 +3,7 @@ weight: 2
 linkTitle: Enlaces de colores
 title: Enlaces de colores · Bootstrap en Español v5.1
 description: Enlaces de colores con estados flotantes
+type: docs
 ---
 
 # Enlaces de colores

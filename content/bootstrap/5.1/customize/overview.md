@@ -4,6 +4,7 @@ linkTitle: Overview
 title: Personalizar · Bootstrap en Español v5.1
 description: Aprende a crear temas, personalizar y ampliar Bootstrap con Sass, un montón de opciones globales, un amplio sistema de colores y más.
 prev: /bootstrap/5.1/getting-started/contribute
+type: docs
 ---
 
 # Personalizar

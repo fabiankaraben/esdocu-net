@@ -4,6 +4,7 @@ linkTitle: Regla vertical
 title: Regla vertical · Bootstrap en Español v5.1
 description: Utiliza el asistente de regla vertical personalizado para crear divisores verticales como el elemento `<hr>`.
 next: /bootstrap/5.1/utilities/api
+type: docs
 ---
 
 # Regla vertical

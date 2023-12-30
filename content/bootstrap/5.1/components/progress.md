@@ -3,6 +3,7 @@ weight: 20
 linkTitle: Progress
 title: Progress · Bootstrap en Español v5.1
 description: Documentación y ejemplos para el uso de barras de progreso personalizadas de Bootstrap con soporte para barras apiladas, fondos animados y etiquetas de texto.
+type: docs
 ---
 
 # Progress

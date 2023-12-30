@@ -3,6 +3,7 @@ weight: 3
 linkTitle: Marca
 title: Directrices de la marca · Bootstrap en Español v5.1
 description: Documentación y ejemplos para el logotipo de Bootstrap y las pautas de uso de la marca.
+type: docs
 ---
 
 # Directrices de la marca

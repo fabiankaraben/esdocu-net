@@ -3,6 +3,7 @@ weight: 9
 linkTitle: RFS
 title: RFS · Bootstrap en Español v5.1
 description: El motor de cambio de tamaño de Bootstrap escala de manera responsive las propiedades CSS comunes para utilizar mejor el espacio disponible en viewports y los dispositivos.
+type: docs
 ---
 
 # RFS

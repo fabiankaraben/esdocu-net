@@ -3,6 +3,7 @@ weight: 6
 linkTitle: Webpack
 title: Webpack y bundlers · Bootstrap en Español v5.1
 description: Aprende a incluir Bootstrap en tu proyecto usando Webpack u otros paquetes.
+type: docs
 ---
 
 # Webpack y bundlers

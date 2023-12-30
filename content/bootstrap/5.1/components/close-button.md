@@ -3,6 +3,7 @@ weight: 9
 linkTitle: Close button
 title: Close button · Bootstrap en Español v5.1
 description: Un botón de cierre genérico para descartar contenido como modals y alerts.
+type: docs
 ---
 
 # Close button

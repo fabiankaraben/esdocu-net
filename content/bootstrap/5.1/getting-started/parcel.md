@@ -3,6 +3,7 @@ weight: 7
 linkTitle: Parcel
 title: Parcel · Bootstrap en Español v5.1
 description: Aprende a incluir Bootstrap en tu proyecto usando Parcel.
+type: docs
 ---
 
 # Parcel

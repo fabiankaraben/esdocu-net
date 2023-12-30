@@ -3,6 +3,7 @@ weight: 23
 linkTitle: Toasts
 title: Toasts · Bootstrap en Español v5.1
 description: Envía notificaciones a tus visitantes con un toast, un mensaje de alerta ligero y fácilmente personalizable.
+type: docs
 ---
 
 # Toasts

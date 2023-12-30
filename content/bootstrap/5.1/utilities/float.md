@@ -3,6 +3,7 @@ weight: 7
 linkTitle: Float
 title: Float · Bootstrap en Español v5.1
 description: Configura la flotabilidad en cualquier elemento, a través de cualquier breakpoint, utilizando nuestras utilidades flotantes responsive.
+type: docs
 ---
 
 # Float

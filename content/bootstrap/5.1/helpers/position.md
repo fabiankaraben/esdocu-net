@@ -3,6 +3,7 @@ weight: 4
 linkTitle: Posición
 title: Posición · Bootstrap en Español v5.1
 description: Utiliza estos helpers para configurar rápidamente la posición de un elemento.
+type: docs
 ---
 
 # Posición

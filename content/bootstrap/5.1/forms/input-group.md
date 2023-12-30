@@ -3,6 +3,7 @@ weight: 6
 linkTitle: Grupo de inputs
 title: Input group · Bootstrap en Español v5.1
 description: Amplía fácilmente los controles de formulario agregando texto, botones o grupos de botones a ambos lados de las entradas de texto, selecciones personalizadas y entradas de archivos personalizados.
+type: docs
 ---
 
 # Input group

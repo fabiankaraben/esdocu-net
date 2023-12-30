@@ -4,6 +4,7 @@ linkTitle: API
 title: API de utilidades · Bootstrap en Español v5.1
 description: La API de utilidad es una herramienta basada en Sass para generar clases de utilidad.
 prev: /bootstrap/5.1/helpers/vertical-rule
+type: docs
 ---
 
 # API de utilidades

@@ -3,6 +3,7 @@ weight: 12
 linkTitle: Sombras
 title: Sombras · Bootstrap en Español v5.1
 description: Agrega o elimina sombras a los elementos con las utilidades de box-shadow.
+type: docs
 ---
 
 # Sombras

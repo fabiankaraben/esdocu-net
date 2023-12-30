@@ -3,6 +3,7 @@ weight: 7
 linkTitle: Z-index
 title: Z-index · Bootstrap en Español v5.1
 description: Si bien no forman parte del sistema de cuadrícula de Bootstrap, los z-index juegan un papel importante en la forma en que nuestros componentes se superponen e interactúan entre sí.
+type: docs
 ---
 
 # Z-index

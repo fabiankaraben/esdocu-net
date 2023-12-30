@@ -3,6 +3,7 @@ weight: 4
 linkTitle: Licencia
 title: FAQs sobre la licencia · Bootstrap en Español v5.1
 description: Preguntas frecuentes sobre la licencia de código abierto de Bootstrap.
+type: docs
 ---
 
 # FAQs sobre la licencia

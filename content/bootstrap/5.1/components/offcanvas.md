@@ -3,6 +3,7 @@ weight: 16
 linkTitle: Offcanvas
 title: Offcanvas · Bootstrap en Español v5.1
 description: Crea barras de navegación laterales ocultas en tu proyecto, carritos de compras y más con algunas clases y nuestro complemento de JavaScript.
+type: docs
 ---
 
 # Offcanvas

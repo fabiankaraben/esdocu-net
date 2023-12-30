@@ -3,6 +3,7 @@ weight: 6
 linkTitle: Variables CSS
 title: Variables CSS · Bootstrap en Español v5.1
 description: Utiliza las propiedades personalizadas de CSS de Bootstrap para un diseño y desarrollo rápidos y con visión de futuro.
+type: docs
 ---
 
 # Variables CSS

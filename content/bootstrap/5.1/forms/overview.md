@@ -4,6 +4,7 @@ linkTitle: Overview
 title: Formularios · Bootstrap en Español v5.1
 description: Ejemplos y pautas de uso para los estilos de controles de formulario, opciones de diseño y componentes personalizados para crear una amplia variedad de formularios.
 prev: /bootstrap/5.1/content/figures
+type: docs
 ---
 
 # Formularios

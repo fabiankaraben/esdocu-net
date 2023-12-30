@@ -3,6 +3,7 @@ weight: 3
 linkTitle: Grid
 title: Sistema de cuadrícula (Grid) · Bootstrap en Español v5.1
 description: Utiliza nuestra potente cuadrícula flexbox mobile-first para crear diseños de todas las formas y tamaños gracias a un sistema de doce columnas, seis niveles responsive (breakpoints) predeterminados, variables Sass y mixins, y docenas de clases predefinidas.
+type: docs
 ---
 
 # Sistema de cuadrícula (Grid)

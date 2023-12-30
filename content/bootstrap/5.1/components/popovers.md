@@ -3,6 +3,7 @@ weight: 19
 linkTitle: Popovers
 title: Popovers · Bootstrap en Español v5.1
 description: Documentación y ejemplos para agregar popovers de Bootstrap, como los que se encuentran en iOS, a cualquier elemento de tu sitio.
+type: docs
 ---
 
 # Popovers

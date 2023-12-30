@@ -3,6 +3,7 @@ weight: 14
 linkTitle: Navs y tabs
 title: Navs and tabs · Bootstrap en Español v5.1
 description: Documentación y ejemplos sobre cómo usar los componentes de navegación incluidos de Bootstrap.
+type: docs
 ---
 
 # Navs and tabs

@@ -4,6 +4,7 @@ linkTitle: Validación
 title: Validación · Bootstrap en Español v5.1
 description: Proporciona comentarios valiosos a tus usuarios con la validación de formularios HTML5, a través de comportamientos predeterminados del navegador o estilos personalizados y JavaScript.
 next: /bootstrap/5.1/components/accordion
+type: docs
 ---
 
 # Validación

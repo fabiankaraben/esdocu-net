@@ -3,6 +3,7 @@ weight: 21
 linkTitle: Scrollspy
 title: Scrollspy · Bootstrap en Español v5.1
 description: Actualiza automáticamente la navegación de Bootstrap o enumera los componentes de un grupo en función de la posición de desplazamiento para indicar qué enlace está actualmente activo en el viewport.
+type: docs
 ---
 
 # Scrollspy

@@ -3,6 +3,7 @@ weight: 3
 linkTitle: Imágenes
 title: Imágenes · Bootstrap en Español v5.1
 description: Documentación y ejemplos para optar por que las imágenes tengan un comportamiento responsive (para que nunca se vuelvan más anchas que sus padres) y agregarles estilos livianos, todo a través de clases.
+type: docs
 ---
 
 # Imágenes

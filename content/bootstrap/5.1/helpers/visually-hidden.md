@@ -3,6 +3,7 @@ weight: 6
 linkTitle: Visualmente oculto
 title: Visualmente oculto · Bootstrap en Español v5.1
 description: Utiliza estos helpers para ocultar elementos visualmente, manteniéndolos accesibles para las tecnologías de asistencia.
+type: docs
 ---
 
 # Visualmente oculto

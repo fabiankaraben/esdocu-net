@@ -3,6 +3,7 @@ weight: 7
 linkTitle: Etiquetas flotantes
 title: Etiquetas flotantes · Bootstrap en Español v5.1
 description: Crea etiquetas de formulario hermosamente simples que floten sobre tus campos de entrada.
+type: docs
 ---
 
 # Etiquetas flotantes

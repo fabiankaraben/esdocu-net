@@ -3,6 +3,7 @@ weight: 4
 linkTitle: Colores
 title: Colores · Bootstrap en Español v5.1
 description: Transmite significado a través del `color` con un puñado de clases de utilidad de color. También incluye soporte para diseñar enlaces con estado hover.
+type: docs
 ---
 
 # Colores

@@ -4,6 +4,7 @@ linkTitle: Iconos
 title: Iconos · Bootstrap en Español v5.1
 description: Orientación y sugerencias para el uso de bibliotecas de iconos externos con Bootstrap.
 next: /bootstrap/5.1/about/overview
+type: docs
 ---
 
 # Iconos

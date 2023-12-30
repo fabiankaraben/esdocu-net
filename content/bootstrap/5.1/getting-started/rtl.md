@@ -3,6 +3,7 @@ weight: 10
 linkTitle: RTL
 title: RTL · Bootstrap en Español v5.1
 description: Aprende a habilitar la compatibilidad con texto de derecha a izquierda en Bootstrap en nuestro diseño, componentes y utilidades.
+type: docs
 ---
 
 # RTL

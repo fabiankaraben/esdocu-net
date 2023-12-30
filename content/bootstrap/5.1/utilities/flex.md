@@ -3,6 +3,7 @@ weight: 6
 linkTitle: Flex
 title: Flex · Bootstrap en Español v5.1
 description: Administra rápidamente el diseño, la alineación y el tamaño de las columnas de la cuadrícula, la navegación, los componentes y más con un conjunto completo de utilidades flexibles responsive. Para implementaciones más complejas, puede ser necesario un CSS personalizado.
+type: docs
 ---
 
 # Flex

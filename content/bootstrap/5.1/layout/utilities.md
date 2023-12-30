@@ -3,6 +3,7 @@ weight: 6
 linkTitle: Utilidades
 title: Utilidades para el diseño · Bootstrap en Español v5.1
 description: Para un desarrollo responsive y listo para dispositivos móviles, Bootstrap incluye docenas de clases de utilidades para mostrar, ocultar, alinear y espaciar el contenido.
+type: docs
 ---
 
 # Utilidades

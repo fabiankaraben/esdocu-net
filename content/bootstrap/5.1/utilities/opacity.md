@@ -3,6 +3,7 @@ weight: 9
 linkTitle: Opacidad
 title: Opacidad · Bootstrap en Español v5.1
 description: Controla la opacidad de los elementos.
+type: docs
 ---
 
 # Opacidad

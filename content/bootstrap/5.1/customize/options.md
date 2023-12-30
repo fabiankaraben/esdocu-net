@@ -3,6 +3,7 @@ weight: 3
 linkTitle: Opciones
 title: Opciones · Bootstrap en Español v5.1
 description: Personaliza rápidamente Bootstrap con variables integradas para alternar fácilmente las preferencias globales de CSS para controlar el estilo y el comportamiento.
+type: docs
 ---
 
 # Opciones

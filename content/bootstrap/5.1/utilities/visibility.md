@@ -4,6 +4,7 @@ linkTitle: Visibilidad
 title: Visibilidad · Bootstrap en Español v5.1
 description: Controla la visibilidad de los elementos, sin modificar su visualización, con las utilidades de visibilidad.
 next: /bootstrap/5.1/extend/approach
+type: docs
 ---
 
 # Visibilidad

@@ -4,6 +4,7 @@ linkTitle: Accordion
 title: Accordion · Bootstrap en Español v5.1
 description: Crea acordeones que se contraen verticalmente en combinación con nuestro complemento JavaScript Collapse.
 prev: /bootstrap/5.1/forms/validation
+type: docs
 ---
 
 # Accordion

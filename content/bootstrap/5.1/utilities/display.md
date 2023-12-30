@@ -3,6 +3,7 @@ weight: 5
 linkTitle: Display
 title: Propiedad display · Bootstrap en Español v5.1
 description: Alterna de manera rápida y responsive el valor de visualización de los componentes y más con nuestras utilidades de visualización. Incluye soporte para algunos de los valores más comunes, así como algunos extras para controlar la visualización al imprimir.
+type: docs
 ---
 
 # Propiedad display

@@ -3,6 +3,7 @@ weight: 2
 linkTitle: Controles de formulario
 title: Controles de formulario · Bootstrap en Español v5.1
 description: Proporciona a controles de formulario como `<input>`s y `<textarea>`s una actualización con estilos personalizados, tamaño, estados de enfoque y más.
+type: docs
 ---
 
 # Controles de formulario

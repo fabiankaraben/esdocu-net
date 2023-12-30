@@ -3,6 +3,7 @@ weight: 10
 linkTitle: Collapse
 title: Collapse · Bootstrap en Español v5.1
 description: Alterna la visibilidad del contenido en tu proyecto con algunas clases y nuestros complementos de JavaScript.
+type: docs
 ---
 
 # Collapse

@@ -3,6 +3,7 @@ weight: 15
 linkTitle: Texto
 title: Texto · Bootstrap en Español v5.1
 description: Documentación y ejemplos de utilidades de texto comunes para controlar la alineación, el ajuste, el peso y más.
+type: docs
 ---
 
 # Texto

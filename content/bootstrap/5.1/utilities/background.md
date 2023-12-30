@@ -3,6 +3,7 @@ weight: 2
 linkTitle: Color de fondo
 title: Color de fondo · Bootstrap en Español v5.1
 description: Transmite significado a través de `background-color` (color de fondo) y agrega decoración con degradados.
+type: docs
 ---
 
 # Color de fondo

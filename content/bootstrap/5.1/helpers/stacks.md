@@ -3,6 +3,7 @@ weight: 5
 linkTitle: Pilas
 title: Pilas · Bootstrap en Español v5.1
 description: Helpers que se basan en nuestras utilidades flexbox para hacer que el diseño de componentes sea más rápido y fácil que nunca.
+type: docs
 ---
 
 # Pilas

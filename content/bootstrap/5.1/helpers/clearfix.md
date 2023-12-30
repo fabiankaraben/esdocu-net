@@ -4,6 +4,7 @@ linkTitle: Clearfix
 title: Clearfix · Bootstrap en Español v5.1
 description: Borra rápida y fácilmente el contenido flotante dentro de un contenedor agregando una utilidad clearfix.
 prev: /bootstrap/5.1/components/tooltips
+type: docs
 ---
 
 # Clearfix

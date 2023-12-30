@@ -3,6 +3,7 @@ weight: 17
 linkTitle: Pagination
 title: Pagination · Bootstrap en Español v5.1
 description: Documentación y ejemplos de paginación para indicar que existe una serie de contenido relacionado en varias páginas.
+type: docs
 ---
 
 # Pagination

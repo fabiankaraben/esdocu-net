@@ -3,6 +3,7 @@ weight: 10
 linkTitle: Desbordamiento
 title: Desbordamiento · Bootstrap en Español v5.1
 description: Utiliza estas utilidades para configurar rápidamente cómo el contenido desborda un elemento.
+type: docs
 ---
 
 # Desbordamiento

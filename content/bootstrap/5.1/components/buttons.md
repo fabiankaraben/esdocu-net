@@ -3,6 +3,7 @@ weight: 5
 linkTitle: Buttons
 title: Buttons · Bootstrap en Español v5.1
 description: Usa los estilos de botones personalizados de Bootstrap para acciones en formularios, cuadros de diálogo y más con soporte para múltiples tamaños, estados y más.
+type: docs
 ---
 
 # Buttons

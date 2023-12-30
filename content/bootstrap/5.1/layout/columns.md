@@ -3,6 +3,7 @@ weight: 4
 linkTitle: Columnas
 title: Columnas · Bootstrap en Español v5.1
 description: Aprende a modificar columnas con un puñado de opciones de alineación, orden y compensación gracias a nuestro sistema de cuadrícula flexbox. Además, conoce cómo usar clases de columna para administrar anchos de elementos que no son de cuadrícula.
+type: docs
 ---
 
 # Columnas

@@ -3,6 +3,7 @@ weight: 8
 linkTitle: Accesibilidad
 title: Accesibilidad · Bootstrap en Español v5.1
 description: Una breve descripción de las características y limitaciones de Bootstrap para la creación de contenido accesible.
+type: docs
 ---
 
 # Accesibilidad

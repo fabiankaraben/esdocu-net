@@ -3,6 +3,7 @@ weight: 3
 linkTitle: Select
 title: Select · Bootstrap en Español v5.1
 description: Personaliza los `<select>` nativos con CSS personalizado que cambia la apariencia inicial del elemento.
+type: docs
 ---
 
 # Select

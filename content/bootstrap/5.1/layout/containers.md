@@ -3,6 +3,7 @@ weight: 2
 linkTitle: Contenedores
 title: Contenedores · Bootstrap en Español v5.1
 description: Los contenedores son un bloque de construcción fundamental de Bootstrap que contienen, rellenan y alinean tu contenido dentro de un dispositivo o viewport determinado.
+type: docs
 ---
 
 # Contenedores

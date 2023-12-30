@@ -3,6 +3,7 @@ weight: 12
 linkTitle: List group
 title: List group · Bootstrap en Español v5.1
 description: Los grupos de listas son un componente flexible y potente para mostrar una serie de contenidos. Modifícalos y amplíalos para que admitan prácticamente cualquier contenido.
+type: docs
 ---
 
 # List group

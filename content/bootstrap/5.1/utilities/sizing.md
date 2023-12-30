@@ -3,6 +3,7 @@ weight: 13
 linkTitle: Tamaño
 title: Tamaño · Bootstrap en Español v5.1
 description: Crea fácilmente un elemento del mismo ancho o alto con nuestras utilidades de ancho y alto.
+type: docs
 ---
 
 # Tamaño

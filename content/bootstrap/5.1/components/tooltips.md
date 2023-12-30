@@ -4,6 +4,7 @@ linkTitle: Tooltips
 title: Tooltips · Bootstrap en Español v5.1
 description: Documentación y ejemplos para agregar tooltips de Bootstrap personalizados con CSS y JavaScript usando CSS3 para animaciones y data-bs-attributes para el almacenamiento local de títulos.
 next: /bootstrap/5.1/helpers/clearfix
+type: docs
 ---
 
 # Tooltips
