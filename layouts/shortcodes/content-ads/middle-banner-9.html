@@ -1,3 +1,6 @@
+{{- $showAds := .Site.Params.showAds | default false -}}
+{{- if eq $showAds true }}
 <div class="my-5">
     
 </div>
+{{ end -}}

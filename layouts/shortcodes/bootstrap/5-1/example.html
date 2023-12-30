@@ -56,7 +56,7 @@
   `
   document.getElementById('{{ $iframeId }}').srcdoc = source
   document.addEventListener("DOMContentLoaded", function () {
-    // iFrameResize({ log: false }, '#{{ $iframeId }}');
+    iFrameResize({ log: true }, '#{{ $iframeId }}');
   });
 </script>
 {{- end -}}
