@@ -17,7 +17,37 @@ Debido al uso generalizado de elementos `<table>` en widgets de terceros como ca
 
 Usando el marcado de tabla más básico, así es como se ven las tablas basadas en `.table` en Bootstrap.
 
-{{< bootstrap/5-1/table class="table" simplified="false" >}}
+{{< bootstrap/5-1/example >}}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+{{< /bootstrap/5-1/example >}}
 
 ## Variantes
 
@@ -51,6 +81,8 @@ Usa clases contextuales para colorear tablas, filas de tablas o celdas individua
   </table>
 {{< /bootstrap/5-1/example >}}
 
+<div class="code-block relative mt-6 first:mt-0 group/code">
+  <div>
 {{< highlight html >}}
 <!-- En tablas -->{{< bootstrap/5-1/table.inline >}}
 {{- range (index $.Site.Data "bootstrap_5_1_theme-colors") }}
@@ -72,6 +104,17 @@ Usa clases contextuales para colorear tablas, filas de tablas o celdas individua
 {{< /bootstrap/5-1/table.inline >}}
 </tr>
 {{< /highlight >}}
+  </div>
+  <div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button
+      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
+      title="Copiar código"
+    >
+      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
+      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
+    </button>
+  </div>
+</div>
 
 {{< bootstrap/5-1/callout info >}}
 {{< bootstrap/5-1/partial "callout-warning-color-assistive-technologies.md" >}}
@@ -83,25 +126,244 @@ Usa clases contextuales para colorear tablas, filas de tablas o celdas individua
 
 Usa `.table-striped` para agregar rayas de cebra a cualquier fila de la tabla dentro de `<tbody>`.
 
-{{< bootstrap/5-1/table class="table table-striped" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-striped">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-striped">
+  ...
+</table>
+```
 
 Estas clases también se pueden agregar a las variantes de la tabla:
 
-{{< bootstrap/5-1/table class="table table-dark table-striped" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+{{< /bootstrap/5-1/example >}}
 
-{{< bootstrap/5-1/table class="table table-success table-striped" >}}
+```html
+<table class="table table-dark table-striped">
+  ...
+</table>
+```
+
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-success table-striped">
+  ...
+</table>
+```
 
 ### Filas con estado *hover*
 
 Agrega `.table-hover` para habilitar un estado *hover* en las filas de la tabla dentro de `<tbody>`.
 
-{{< bootstrap/5-1/table class="table table-hover" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-hover">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
 
-{{< bootstrap/5-1/table class="table table-dark table-hover" >}}
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-hover">
+  ...
+</table>
+```
+
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-dark table-hover">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-dark table-hover">
+  ...
+</table>
+```
 
 Estas filas hover también se pueden combinar con la variante a rayas (`.table-striped`):
 
-{{< bootstrap/5-1/table class="table table-striped table-hover" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-striped table-hover">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-striped table-hover">
+  ...
+</table>
+```
 
 ### Filas y celdas *active*
 
@@ -235,27 +497,249 @@ Detrás de escena se ve así:
 
 Agrega `.table-bordered` para mostrar bordes en todos los lados de la tabla y las celdas.
 
-{{< bootstrap/5-1/table class="table table-bordered" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-bordered">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-bordered">
+  ...
+</table>
+```
 
 Se pueden agregar [utilidades de color de borde]({{< bootstrap/5-1/docsref "/utilities/borders#border-color" >}}) para cambiar los colores:
 
-{{< bootstrap/5-1/table class="table table-bordered border-primary" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-bordered border-primary">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-bordered border-primary">
+  ...
+</table>
+```
 
 ### Tablas sin bordes
 
 Agrega `.table-borderless` para una tabla sin bordes.
 
-{{< bootstrap/5-1/table class="table table-borderless" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-borderless">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
 
-{{< bootstrap/5-1/table class="table table-dark table-borderless" >}}
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-borderless">
+  ...
+</table>
+```
+
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-dark table-borderless">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-dark table-borderless">
+  ...
+</table>
+```
 
 ## Tablas compactas
 
 Agrega `.table-sm` para hacer que cualquier `.table` sea más compacta cortando todo el `padding` de las celdas por la mitad.
 
-{{< bootstrap/5-1/table class="table table-sm" >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-sm">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
 
-{{< bootstrap/5-1/table class="table table-dark table-sm" >}}
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-sm">
+  ...
+</table>
+```
+
+{{< bootstrap/5-1/example show_markup="false" >}}
+<table class="table table-dark table-sm">
+      <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Primero</th>
+      <th scope="col">Último</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+
+  </table>
+{{< /bootstrap/5-1/example >}}
+
+```html
+<table class="table table-dark table-sm">
+  ...
+</table>
+```
 
 ## Alineamiento vertical
 
@@ -565,7 +1049,7 @@ De manera similar a las tablas y las tablas oscuras, usa las clases de modificad
 
 Un `<caption>` funciona como un encabezado para una tabla. Ayuda a los usuarios con lectores de pantalla a encontrar una tabla y entender de qué se trata y decidir si quieren leerla.
 
-{{< bootstrap/5-1/example >}}
+{{< bootstrap/5-1/example show_markup="false" >}}
   <table class="table">
     <caption>Lista de usuarios</caption>
     {{< bootstrap/5-1/partial "table-content" >}}
@@ -707,6 +1191,7 @@ Usa `.table-responsive{-sm|-md|-lg|-xl|-xxl}` según sea necesario para crear ta
 
 **Estas tablas pueden aparecer rotas hasta que sus estilos responsive se apliquen a anchos de viewports específicos.**
 
+{{< bootstrap/5-1/example show_markup="false" >}}
 {{< bootstrap/5-1/tables.inline >}}
 {{ range $.Site.Data.bootstrap_5_1_breakpoints }}
 {{ if not (eq . "xs") }}
@@ -767,7 +1252,10 @@ Usa `.table-responsive{-sm|-md|-lg|-xl|-xxl}` según sea necesario para crear ta
 {{ end -}}
 {{- end -}}
 {{< /bootstrap/5-1/tables.inline >}}
+{{< /bootstrap/5-1/example >}}
 
+<div class="code-block relative mt-6 first:mt-0 group/code">
+  <div>
 {{< highlight html >}}
 {{< bootstrap/5-1/tables.inline >}}
 {{- range $.Site.Data.bootstrap_5_1_breakpoints -}}
@@ -781,6 +1269,17 @@ Usa `.table-responsive{-sm|-md|-lg|-xl|-xxl}` según sea necesario para crear ta
 {{- end -}}
 {{< /bootstrap/5-1/tables.inline >}}
 {{< /highlight >}}
+  </div>
+  <div class="opacity-0 transition group-hover/code:opacity-100 flex gap-1 absolute m-[11px] right-0 top-0">
+    <button
+      class="code-copy-btn group/copybtn transition-all active:opacity-50 bg-primary-700/5 border border-black/5 text-gray-600 hover:text-gray-900 rounded-md p-1.5 dark:bg-primary-300/10 dark:border-white/10 dark:text-gray-400 dark:hover:text-gray-50"
+      title="Copiar código"
+    >
+      <div class="group-[.copied]/copybtn:hidden copy-icon pointer-events-none h-4 w-4"></div>
+      <div class="hidden group-[.copied]/copybtn:block success-icon pointer-events-none h-4 w-4"></div>
+    </button>
+  </div>
+</div>
 
 ## Sass
 
