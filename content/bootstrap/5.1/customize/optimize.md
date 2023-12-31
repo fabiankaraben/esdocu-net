@@ -1,13 +1,13 @@
 ---
 weight: 7
 linkTitle: Optimizar
-title: Optimizar · Bootstrap en Español v5.1
+title: Formas para optimizar Bootstrap · Bootstrap en Español v5.1
 description: Mantén tus proyectos ágiles, responsive y mantenibles para que puedas brindar la mejor experiencia y concentrarte en trabajos más importantes.
 next: /bootstrap/5.1/layout/breakpoints
 type: docs
 ---
 
-# Optimizar
+# Formas para optimizar Bootstrap
 
 Mantén tus proyectos ágiles, responsive y mantenibles para que puedas brindar la mejor experiencia y concentrarte en trabajos más importantes.
 

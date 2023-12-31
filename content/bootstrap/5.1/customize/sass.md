@@ -1,12 +1,12 @@
 ---
 weight: 2
 linkTitle: Sass
-title: Sass · Bootstrap en Español v5.1
+title: Personalizar Sass · Bootstrap en Español v5.1
 description: Utiliza nuestros archivos fuente Sass para aprovechar variables, mapas, mixins y funciones para ayudarte a construir más rápido y personalizar tu proyecto.
 type: docs
 ---
 
-# Sass
+# Personalizar Sass de Bootstrap
 
 Utiliza nuestros archivos fuente Sass para aprovechar variables, mapas, mixins y funciones para ayudarte a construir más rápido y personalizar tu proyecto.
 

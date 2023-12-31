@@ -6,7 +6,7 @@ description: Utiliza las propiedades personalizadas de CSS de Bootstrap para un 
 type: docs
 ---
 
-# Variables CSS
+# Variables CSS de Bootstrap
 
 Utiliza las propiedades personalizadas de CSS de Bootstrap para un diseño y desarrollo rápidos y con visión de futuro.
 

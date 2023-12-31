@@ -1,12 +1,12 @@
 ---
 weight: 4
 linkTitle: Color
-title: Color · Bootstrap en Español v5.1
+title: Uso y personalización de colores · Bootstrap en Español v5.1
 description: Bootstrap está respaldado por un extenso sistema de colores que tematiza nuestros estilos y componentes. Esto permite una personalización y extensión más completas para cualquier proyecto.
 type: docs
 ---
 
-# Color
+# Los colores de Bootstrap
 
 Bootstrap está respaldado por un extenso sistema de colores que tematiza nuestros estilos y componentes. Esto permite una personalización y extensión más completas para cualquier proyecto.
 

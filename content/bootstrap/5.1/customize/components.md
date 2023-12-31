@@ -1,12 +1,12 @@
 ---
 weight: 5
 linkTitle: Componentes
-title: Componentes · Bootstrap en Español v5.1
+title: Sobre los componentes · Bootstrap en Español v5.1
 description: Aprende cómo y por qué construimos casi todos nuestros componentes de forma responsive y con clases y modificadoras base.
 type: docs
 ---
 
-# Componentes
+# Sobre los componentes de Bootstrap
 
 Aprende cómo y por qué construimos casi todos nuestros componentes de forma responsive y con clases y modificadoras base.
 
