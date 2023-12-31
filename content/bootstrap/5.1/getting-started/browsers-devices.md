@@ -1,12 +1,12 @@
 ---
 weight: 4
 linkTitle: Navegadores y dispositivos
-title: Navegadores y dispositivos · Bootstrap en Español v5.1
+title: Navegadores y dispositivos compatibles · Bootstrap en Español v5.1
 description: Obtén información sobre los navegadores y dispositivos, desde modernos hasta antiguos, que son compatibles con Bootstrap, incluidas las peculiaridades y los errores conocidos de cada uno.
 type: docs
 ---
 
-# Navegadores y dispositivos
+# Navegadores y dispositivos compatibles con Bootstrap
 
 Obtén información sobre los navegadores y dispositivos, desde modernos hasta antiguos, que son compatibles con Bootstrap, incluidas las peculiaridades y los errores conocidos de cada uno.
 

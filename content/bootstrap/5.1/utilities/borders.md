@@ -1,12 +1,12 @@
 ---
 weight: 3
 linkTitle: Bordes
-title: Bordes · Bootstrap en Español v5.1
+title: Utilidades de Bordes · Bootstrap en Español v5.1
 description: Utiliza las utilidades de borde para diseñar rápidamente el borde y el radio del borde de un elemento. Ideal para imágenes, botones o cualquier otro elemento.
 type: docs
 ---
 
-# Bordes
+# Utilidades de Bordes de Bootstrap
 
 Utiliza las utilidades de borde para diseñar rápidamente el borde y el radio del borde de un elemento. Ideal para imágenes, botones o cualquier otro elemento.
 

@@ -1,12 +1,12 @@
 ---
 weight: 16
 linkTitle: Alineación vertical
-title: Alineación vertical · Bootstrap en Español v5.1
+title: Utilidades de Alineación vertical · Bootstrap en Español v5.1
 description: Cambia fácilmente la alineación vertical de los elementos en línea, de bloque en línea, de tabla en línea y de celda de tabla.
 type: docs
 ---
 
-# Alineación vertical
+# Utilidades de Alineación vertical de Bootstrap
 
 Cambia fácilmente la alineación vertical de los elementos en línea, de bloque en línea, de tabla en línea y de celda de tabla.
 

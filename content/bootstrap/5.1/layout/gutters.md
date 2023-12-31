@@ -1,12 +1,12 @@
 ---
 weight: 5
 linkTitle: Gutters
-title: Gutters · Bootstrap en Español v5.1
+title: Gutters, espaciados de diseño · Bootstrap en Español v5.1
 description: Los gutters son el padding entre las columnas, que se utilizan para espaciar y alinear de manera responsive el contenido en el sistema de cuadrícula de Bootstrap.
 type: docs
 ---
 
-# Gutters
+# Los Gutters para el diseño en Bootstrap
 
 Los gutters son el padding entre las columnas, que se utilizan para espaciar y alinear de manera responsive el contenido en el sistema de cuadrícula de Bootstrap.
 

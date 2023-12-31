@@ -1,12 +1,12 @@
 ---
 weight: 8
 linkTitle: Layout
-title: Layout · Bootstrap en Español v5.1
+title: Layout de Formularios · Bootstrap en Español v5.1
 description: Proporciona cierta estructura a tus formularios, desde implementaciones en línea hasta horizontales y cuadrículas personalizadas, con nuestras opciones de diseño de formularios.
 type: docs
 ---
 
-# Layout
+# Layout de Formularios en Bootstrap
 
 Proporciona cierta estructura a tus formularios, desde implementaciones en línea hasta horizontales y cuadrículas personalizadas, con nuestras opciones de diseño de formularios.
 

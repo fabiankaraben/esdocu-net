@@ -1,12 +1,12 @@
 ---
 weight: 3
 linkTitle: Relación de aspecto
-title: Relación de aspecto · Bootstrap en Español v5.1
+title: Ajuste con Relación de aspecto · Bootstrap en Español v5.1
 description: Usa pseudo elementos generados para hacer que un elemento mantenga la relación de aspecto de tu elección. Perfecto para manejar incrustaciones de video o presentación de diapositivas de manera responsive según el ancho del padre.
 type: docs
 ---
 
-# Relación de aspecto
+# Ajuste con Relación de aspecto en Bootstrap
 
 Usa pseudo elementos generados para hacer que un elemento mantenga la relación de aspecto de tu elección. Perfecto para manejar incrustaciones de video o presentación de diapositivas de manera responsive según el ancho del padre.
 

@@ -1,12 +1,13 @@
 ---
 weight: 3
 linkTitle: Contenido
-title: Contenido · Bootstrap en Español v5.1
+title: Contenido del proyecto · Bootstrap en Español v5.1
 description: Descubre lo que se incluye en Bootstrap, incluidos nuestros tipos de código fuente y precompilados.
 type: docs
+noindex: true
 ---
 
-# Contenido
+# Contenido del proyecto Bootstrap
 
 Descubre lo que se incluye en Bootstrap, incluidos nuestros tipos de código fuente y precompilados.
 

@@ -1,12 +1,12 @@
 ---
 weight: 5
 linkTitle: JavaScript
-title: JavaScript · Bootstrap en Español v5.1
+title: Uso de JavaScript · Bootstrap en Español v5.1
 description: Dale vida a Bootstrap con nuestros complementos de JavaScript opcionales. Obtén información sobre cada complemento, nuestras opciones de API programáticas y de datos, y más.
 type: docs
 ---
 
-# JavaScript
+# Uso de JavaScript en Bootstrap
 
 Dale vida a Bootstrap con nuestros complementos de JavaScript opcionales. Obtén información sobre cada complemento, nuestras opciones de API programáticas y de datos, y más.
 

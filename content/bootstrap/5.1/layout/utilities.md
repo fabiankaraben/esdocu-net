@@ -6,7 +6,7 @@ description: Para un desarrollo responsive y listo para dispositivos móviles, B
 type: docs
 ---
 
-# Utilidades
+# Utilidades para el diseño en Bootstrap
 
 Para un desarrollo responsive y listo para dispositivos móviles, Bootstrap incluye docenas de clases de utilidades para mostrar, ocultar, alinear y espaciar el contenido.
 

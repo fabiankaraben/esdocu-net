@@ -7,7 +7,7 @@ next: /bootstrap/5.1/content/reboot
 type: docs
 ---
 
-# Cuadrícula CSS
+# Cuadrícula CSS en Bootstrap
 
 Aprende a habilitar, usar y personalizar nuestro sistema de diseño alternativo basado en CSS Grid con ejemplos y fragmentos de código.
 

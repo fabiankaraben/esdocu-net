@@ -6,7 +6,7 @@ description: Proporciona a controles de formulario como `<input>`s y `<textarea>
 type: docs
 ---
 
-# Controles de formulario
+# Controles de formulario en Bootstrap
 
 Proporciona a controles de formulario como `<input>`s y `<textarea>`s una actualización con estilos personalizados, tamaño, estados de enfoque y más.
 

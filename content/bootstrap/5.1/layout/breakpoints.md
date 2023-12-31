@@ -1,13 +1,13 @@
 ---
 weight: 1
 linkTitle: Breakpoints
-title: Breakpoints · Bootstrap en Español v5.1
+title: Uso de Breakpoints · Bootstrap en Español v5.1
 description: Los breakpoints son anchos personalizables que determinan cómo se comporta tu diseño responsive en los tamaños de dispositivo o viewport en Bootstrap.
 prev: /bootstrap/5.1/customize/optimize
 type: docs
 ---
 
-# Breakpoints
+# Uso de los Breakpoints de Bootstrap
 
 Los breakpoints son anchos personalizables que determinan cómo se comporta tu diseño responsive en los tamaños de dispositivo o viewport en Bootstrap.
 

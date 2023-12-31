@@ -1,12 +1,12 @@
 ---
 weight: 4
 linkTitle: Checks y radios
-title: Checks y radios · Bootstrap en Español v5.1
+title: Uso de Checks y radios · Bootstrap en Español v5.1
 description: Crea casillas de verificación y radios consistentes entre navegadores y dispositivos con nuestro componente de checks completamente reescrito.
 type: docs
 ---
 
-# Checks y radios
+# Uso de Checks y radios en Bootstrap
 
 Crea casillas de verificación y radios consistentes entre navegadores y dispositivos con nuestro componente de checks completamente reescrito.
 

@@ -1,12 +1,13 @@
 ---
 weight: 8
 linkTitle: Texto truncado
-title: Texto truncado · Bootstrap en Español v5.1
+title: Uso de Texto truncado · Bootstrap en Español v5.1
 description: Trunca cadenas largas de texto con puntos suspensivos.
 type: docs
+noindex: true
 ---
 
-# Texto truncado
+# Texto truncado en Bootstrap
 
 Trunca cadenas largas de texto con puntos suspensivos.
 

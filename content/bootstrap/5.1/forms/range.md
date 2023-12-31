@@ -1,12 +1,12 @@
 ---
 weight: 5
 linkTitle: Rango
-title: Rango · Bootstrap en Español v5.1
+title: Uso de Range · Bootstrap en Español v5.1
 description: Utiliza nuestras entradas de rango personalizadas para obtener un estilo coherente entre navegadores y una personalización integrada.
 type: docs
 ---
 
-# Rango
+# Uso de Range en Bootstrap
 
 Utiliza nuestras entradas de rango personalizadas para obtener un estilo coherente entre navegadores y una personalización integrada.
 

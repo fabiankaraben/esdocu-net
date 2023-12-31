@@ -1,12 +1,12 @@
 ---
 weight: 4
 linkTitle: Posición
-title: Posición · Bootstrap en Español v5.1
+title: Ajuste de Posición · Bootstrap en Español v5.1
 description: Utiliza estos helpers para configurar rápidamente la posición de un elemento.
 type: docs
 ---
 
-# Posición
+# Ajuste de Posición en Bootstrap
 
 Utiliza estos helpers para configurar rápidamente la posición de un elemento.
 

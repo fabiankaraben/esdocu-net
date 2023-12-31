@@ -1,13 +1,13 @@
 ---
 weight: 1
 linkTitle: Enfoque
-title: Enfoque · Bootstrap en Español v5.1
+title: Enfoque del proyecto · Bootstrap en Español v5.1
 description: Conoce las principales directrices, las estrategias y las técnicas utilizadas para crear y mantener Bootstrap para que puedas personalizarlo y ampliarlo más fácilmente.
 prev: /bootstrap/5.1/utilities/visibility
 type: docs
 ---
 
-# Enfoque
+# Enfoque del proyecto Bootstrap
 
 Conoce las principales directrices, las estrategias y las técnicas utilizadas para crear y mantener Bootstrap para que puedas personalizarlo y ampliarlo más fácilmente.
 

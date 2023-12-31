@@ -1,12 +1,12 @@
 ---
 weight: 2
 linkTitle: Descargar
-title: Descargar · Bootstrap en Español v5.1
+title: Descargar Bootstrap · Bootstrap en Español v5.1
 description: Descarga Bootstrap para obtener el CSS y JavaScript compilados, el código fuente o inclúyelo con tus administradores de paquetes favoritos como npm, RubyGems y más.
 type: docs
 ---
 
-# Descargar
+# Opciones para descargar Bootstrap
 
 Descarga Bootstrap para obtener el CSS y JavaScript compilados, el código fuente o inclúyelo con tus administradores de paquetes favoritos como npm, RubyGems y más.
 

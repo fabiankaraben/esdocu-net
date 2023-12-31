@@ -7,7 +7,7 @@ prev: /bootstrap/5.1/helpers/vertical-rule
 type: docs
 ---
 
-# API de utilidades
+# API de utilidades de Bootstrap
 
 La API de utilidad es una herramienta basada en Sass para generar clases de utilidad.
 

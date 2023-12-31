@@ -1,12 +1,12 @@
 ---
 weight: 7
 linkTitle: Enlace estirado
-title: Enlace estirado · Bootstrap en Español v5.1
+title: Uso de Enlaces estirados · Bootstrap en Español v5.1
 description: Haz que se pueda hacer clic en cualquier elemento HTML o componente de Bootstrap "estirando" un enlace anidado usando CSS.
 type: docs
 ---
 
-# Enlace estirado
+# Uso de Enlaces estirados en Bootstrap
 
 Haz que se pueda hacer clic en cualquier elemento HTML o componente de Bootstrap "estirando" un enlace anidado usando CSS.
 

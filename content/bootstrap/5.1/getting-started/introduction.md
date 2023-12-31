@@ -1,12 +1,12 @@
 ---
 weight: 1
 linkTitle: Introducción
-title: Introducción · Bootstrap en Español v5.1
+title: Introducción a Bootstrap · Bootstrap en Español v5.1
 description: Comienza con Bootstrap, el framework más popular del mundo para crear sitios adaptables para dispositivos móviles, con jsDelivr y con una plantilla como página de inicio.
 type: docs
 ---
 
-# Introducción
+# Introducción a Bootstrap
 
 Comienza con Bootstrap, el framework más popular del mundo para crear sitios adaptables para dispositivos móviles, con jsDelivr y con una plantilla como página de inicio.
 

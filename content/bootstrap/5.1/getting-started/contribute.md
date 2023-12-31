@@ -1,13 +1,14 @@
 ---
 weight: 11
 linkTitle: Contribuir
-title: Contribuir · Bootstrap en Español v5.1
+title: Contribuir al proyecto · Bootstrap en Español v5.1
 description: Ayuda a desarrollar Bootstrap con nuestros scripts y pruebas de compilación de documentación.
 next: /bootstrap/5.1/customize/overview
 type: docs
+noindex: true
 ---
 
-# Contribuir
+# Contribuir al proyecto Bootstrap
 
 Ayuda a desarrollar Bootstrap con nuestros scripts y pruebas de compilación de documentación.
 
