@@ -1,12 +1,12 @@
 ---
 weight: 2
 linkTitle: Alerts
-title: Alerts · Bootstrap en Español v5.1
+title: El componente Alert · Bootstrap en Español v5.1
 description: Proporciona mensajes de retroalimentación contextuales para las acciones típicas de los usuarios con mensajes de alerta disponibles y flexibles.
 type: docs
 ---
 
-# Alerts
+# El componente Alert
 
 Proporciona mensajes de retroalimentación contextuales para las acciones típicas de los usuarios con mensajes de alerta disponibles y flexibles.
 

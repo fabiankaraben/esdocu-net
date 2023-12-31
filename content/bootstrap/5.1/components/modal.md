@@ -1,12 +1,12 @@
 ---
 weight: 13
 linkTitle: Modal
-title: Modal · Bootstrap en Español v5.1
+title: El componente Modal · Bootstrap en Español v5.1
 description: Usa el complemento modal de JavaScript de Bootstrap para agregar cuadros de diálogo a tu sitio para lightboxes, notificaciones de usuario o contenido completamente personalizado.
 type: docs
 ---
 
-# Modal
+# El componente Modal
 
 Usa el complemento modal de JavaScript de Bootstrap para agregar cuadros de diálogo a tu sitio para lightboxes, notificaciones de usuario o contenido completamente personalizado.
 

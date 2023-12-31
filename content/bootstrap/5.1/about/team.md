@@ -4,9 +4,10 @@ linkTitle: Equipo
 title: Equipo · Bootstrap en Español v5.1
 description: Una descripción general del equipo fundador y los principales contribuyentes de Bootstrap.
 type: docs
+noindex: true
 ---
 
-# Equipo
+# Equipo de Bootstrap
 
 Una descripción general del equipo fundador y los principales contribuyentes de Bootstrap.
 

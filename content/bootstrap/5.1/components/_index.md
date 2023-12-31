@@ -1,5 +1,5 @@
 ---
 weight: 6
-title: Componentes
+title: El componente Componentes
 noindex: true
 ---

@@ -1,12 +1,12 @@
 ---
 weight: 4
 linkTitle: Breadcrumb
-title: Breadcrumb · Bootstrap en Español v5.1
+title: El componente Breadcrumb · Bootstrap en Español v5.1
 description: Indica la ubicación de la página actual dentro de una jerarquía de navegación que agrega automáticamente separadores a través de CSS.
 type: docs
 ---
 
-# Breadcrumb
+# El componente Breadcrumb
 
 Indica la ubicación de la página actual dentro de una jerarquía de navegación que agrega automáticamente separadores a través de CSS.
 

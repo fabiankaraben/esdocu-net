@@ -1,13 +1,14 @@
 ---
 weight: 5
 linkTitle: Figuras
-title: Figuras · Bootstrap en Español v5.1
+title: Uso de Figures · Bootstrap en Español v5.1
 description: Documentación y ejemplos para mostrar imágenes y texto relacionados con el componente de figure en Bootstrap.
 next: /bootstrap/5.1/forms/overview
 type: docs
+noindex: true
 ---
 
-# Figuras
+# Uso de Figures en Bootstrap
 
 Documentación y ejemplos para mostrar imágenes y texto relacionados con el componente de figure en Bootstrap.
 

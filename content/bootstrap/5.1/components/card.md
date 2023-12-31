@@ -1,12 +1,12 @@
 ---
 weight: 7
 linkTitle: Card
-title: Cards · Bootstrap en Español v5.1
+title: El componente Card · Bootstrap en Español v5.1
 description: Las tarjetas de Bootstrap brindan un contenedor de contenido flexible y extensible con múltiples variantes y opciones.
 type: docs
 ---
 
-# Cards
+# El componente Card
 
 Las tarjetas de Bootstrap brindan un contenedor de contenido flexible y extensible con múltiples variantes y opciones.
 

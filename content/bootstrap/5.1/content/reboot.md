@@ -1,13 +1,13 @@
 ---
 weight: 1
 linkTitle: Reboot
-title: Reboot · Bootstrap en Español v5.1
+title: Uso de Reboot · Bootstrap en Español v5.1
 description: Reboot, una colección de cambios CSS a elementos específicos en un solo archivo, punto de partida de Bootstrap para proporcionar una base elegante, consistente y simple sobre la cual construir.
 prev: /bootstrap/5.1/layout/css-grid
 type: docs
 ---
 
-# Reboot
+# Uso de Reboot en Bootstrap
 
 Reboot, una colección de cambios CSS a elementos específicos en un solo archivo, punto de partida de Bootstrap para proporcionar una base elegante, consistente y simple sobre la cual construir.
 

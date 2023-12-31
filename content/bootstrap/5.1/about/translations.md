@@ -5,6 +5,7 @@ title: Traducciones · Bootstrap en Español v5.1
 description: Enlaces a sitios de documentación de Bootstrap traducidos por la comunidad.
 next: /bootstrap/5.1/migration
 type: docs
+noindex: true
 ---
 
 # Traducciones

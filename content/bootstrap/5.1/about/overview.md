@@ -5,6 +5,7 @@ title: Acerca de Bootstrap · Bootstrap en Español v5.1
 description: Obtén más información sobre el equipo que mantiene Bootstrap, cómo y por qué comenzó el proyecto y cómo participar.
 prev: /bootstrap/5.1/extend/icons
 type: docs
+noindex: true
 ---
 
 # Acerca de Bootstrap

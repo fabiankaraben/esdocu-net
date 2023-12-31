@@ -1,12 +1,12 @@
 ---
 weight: 2
 linkTitle: Tipografía
-title: Tipografía · Bootstrap en Español v5.1
+title: Uso de Tipografía · Bootstrap en Español v5.1
 description: Documentación y ejemplos de tipografía Bootstrap, incluidos ajustes globales, encabezados, texto del body, listas y más.
 type: docs
 ---
 
-# Tipografía
+# Uso de Tipografía en Bootstrap
 
 Documentación y ejemplos de tipografía Bootstrap, incluidos ajustes globales, encabezados, texto del body, listas y más.
 

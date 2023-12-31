@@ -1,12 +1,12 @@
 ---
 weight: 18
 linkTitle: Placeholders
-title: Placeholders · Bootstrap en Español v5.1
+title: El componente Placeholder · Bootstrap en Español v5.1
 description: Usa marcadores de posición (placeholders) de carga para tus componentes o páginas para indicar que algo aún se puede estar cargando.
 type: docs
 ---
 
-# Placeholders
+# El componente Placeholder
 
 Usa marcadores de posición (placeholders) de carga para tus componentes o páginas para indicar que algo aún se puede estar cargando.
 

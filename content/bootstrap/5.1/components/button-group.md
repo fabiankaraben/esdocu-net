@@ -1,12 +1,12 @@
 ---
 weight: 6
 linkTitle: Button group
-title: Button group · Bootstrap en Español v5.1
+title: El componente Button group · Bootstrap en Español v5.1
 description: Agrupa una serie de botones en una sola línea o apílalos en una columna vertical.
 type: docs
 ---
 
-# Button group
+# El componente Button group
 
 Agrupa una serie de botones en una sola línea o apílalos en una columna vertical.
 

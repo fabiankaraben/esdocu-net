@@ -1,12 +1,12 @@
 ---
 weight: 4
 linkTitle: Tablas
-title: Tablas · Bootstrap en Español v5.1
+title: Uso de Tablas · Bootstrap en Español v5.1
 description: Documentación y ejemplos para el estilo opcional de tablas (dado su uso frecuente en los complementos de JavaScript) con Bootstrap.
 type: docs
 ---
 
-# Tablas
+# Uso de Tablas en Bootstrap
 
 Documentación y ejemplos para el estilo opcional de tablas (dado su uso frecuente en los complementos de JavaScript) con Bootstrap.
 

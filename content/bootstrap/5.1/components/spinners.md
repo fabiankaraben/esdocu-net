@@ -1,12 +1,12 @@
 ---
 weight: 22
 linkTitle: Spinners
-title: Spinners · Bootstrap en Español v5.1
+title: El componente Spinner · Bootstrap en Español v5.1
 description: Indica el estado de carga de un componente o una página con los indicadores giratorios de Bootstrap, creados completamente con HTML, CSS y sin JavaScript.
 type: docs
 ---
 
-# Spinners
+# El componente Spinner
 
 Indica el estado de carga de un componente o una página con los indicadores giratorios de Bootstrap, creados completamente con HTML, CSS y sin JavaScript.
 

@@ -6,7 +6,7 @@ description: Preguntas frecuentes sobre la licencia de código abierto de Bootst
 type: docs
 ---
 
-# FAQs sobre la licencia
+# FAQs sobre la licencia de Bootstrap
 
 Preguntas frecuentes sobre la licencia de código abierto de Bootstrap.
 

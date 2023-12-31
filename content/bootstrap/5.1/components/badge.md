@@ -1,12 +1,12 @@
 ---
 weight: 3
 linkTitle: Badges
-title: Badges · Bootstrap en Español v5.1
+title: El componente Badge · Bootstrap en Español v5.1
 description: Documentación y ejemplos para insignias, nuestro pequeño componente de conteo y etiquetado.
 type: docs
 ---
 
-# Badges
+# El componente Badge
 
 Documentación y ejemplos para insignias, nuestro pequeño componente de conteo y etiquetado.
 

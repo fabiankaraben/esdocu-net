@@ -1,12 +1,12 @@
 ---
 weight: 11
 linkTitle: Dropdowns
-title: Dropdowns · Bootstrap en Español v5.1
+title: El componente Dropdown · Bootstrap en Español v5.1
 description: Alterna la visibilidad de superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable Bootstrap.
 type: docs
 ---
 
-# Dropdowns
+# El componente Dropdown
 
 Alterna la visibilidad de superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable Bootstrap.
 

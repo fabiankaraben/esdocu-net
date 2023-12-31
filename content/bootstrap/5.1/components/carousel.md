@@ -1,12 +1,12 @@
 ---
 weight: 8
 linkTitle: Carousel
-title: Carousel · Bootstrap en Español v5.1
+title: El componente Carousel · Bootstrap en Español v5.1
 description: Un componente de presentación de diapositivas para recorrer elementos (imágenes o diapositivas de texto) como un carrusel.
 type: docs
 ---
 
-# Carousel
+# El componente Carousel
 
 Un componente de presentación de diapositivas para recorrer elementos (imágenes o diapositivas de texto) como un carrusel.
 

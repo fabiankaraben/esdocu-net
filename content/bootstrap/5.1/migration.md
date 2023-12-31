@@ -7,7 +7,7 @@ prev: /bootstrap/5.1/about/translations
 type: docs
 ---
 
-# Migración a v5
+# Migración a Bootstrap v5
 
 Realiza un seguimiento y revisa los cambios en los archivos fuente, la documentación y los componentes de Bootstrap para ayudarte a migrar de la v4 a v5.
 

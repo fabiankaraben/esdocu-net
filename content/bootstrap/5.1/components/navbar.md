@@ -1,12 +1,12 @@
 ---
 weight: 15
 linkTitle: Navbar
-title: Navbar · Bootstrap en Español v5.1
+title: El componente Navbar · Bootstrap en Español v5.1
 description: Documentación y ejemplos para el potente encabezado de navegación sensible de Bootstrap, la barra de navegación. Incluye soporte para marca, navegación y más, incluido soporte para nuestro complemento Collapse.
 type: docs
 ---
 
-# Navbar
+# El componente Navbar
 
 Documentación y ejemplos para el potente encabezado de navegación sensible de Bootstrap, la barra de navegación. Incluye soporte para marca, navegación y más, incluido soporte para nuestro complemento Collapse.
 
