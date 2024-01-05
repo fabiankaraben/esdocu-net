@@ -215,7 +215,10 @@
 
   {{- $showAds := .Site.Params.showAds | default false -}}
   {{- if eq $showAds true }}
+  <!-- TheMoneytizer: IN TEXT -->
   <div id="120346-11"><script src="//ads.themoneytizer.com/s/gen.js?type=11"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=120346&formatId=11"></script></div>
+  <!-- TheMoneytizer: POP UNDER -->
+  <div id="120346-39"><script src="//ads.themoneytizer.com/s/gen.js?type=39"></script><script src="//ads.themoneytizer.com/s/requestform.js?siteId=120346&formatId=39"></script></div>
   {{ end -}}
 
   {{ partial "custom/head-end.html" . }}
