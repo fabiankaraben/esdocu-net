@@ -145,14 +145,14 @@ Importar Bootstrap a Parcel requiere dos importaciones, una a nuestro `styles.sc
     import { Tooltip, Toast, Popover } from 'bootstrap'
     ```
     
-{{< content-ads/middle-banner-4 >}}
-
     _[Lee nuestra documentación de JavaScript](/bootstrap/5.3/getting-started/javascript) para obtener más información sobre cómo usar los complementos de Bootstrap._
     
 3.  **¡Y listo! 🎉** Con el código fuente Sass y JS de Bootstrap completamente cargados, tu servidor de desarrollo local ahora debería verse así.
     
     ![Parcel dev server running with Bootstrap](/assets/bootstrap/5.3/assets/img/guides/parcel-dev-server-bootstrap.png)
     
+{{< content-ads/middle-banner-4 >}}
+
 Ahora puedes comenzar a agregar cualquier componente Bootstrap que quieras usar. Asegúrate de [consultar el proyecto de ejemplo de Parcel completo](https://github.com/twbs/examples/tree/main/parcel) para saber cómo incluir Sass personalizado adicional y optimizar tu compilación importando solo las partes de CSS y JS de Bootstrap que necesites.
     
 
