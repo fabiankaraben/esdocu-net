@@ -55,6 +55,8 @@ Consulta nuestros documentos de [mapas y bucles de Sass]({{< bootstrap/5-1/docsr
 
 Todos los colores de Bootstrap están disponibles como variables Sass y un mapa Sass en el archivo `scss/_variables.scss`. Para evitar aumentar el tamaño de los archivos, no creamos clases de color de texto o de fondo para cada una de estas variables. En su lugar, elegimos un subconjunto de estos colores para una [paleta de temas](#theme-colors).
 
+{{< content-ads/middle-banner-1 >}}
+
 Asegúrate de controlar las relaciones de contraste a medida que personalizas los colores. Como se muestra a continuación, hemos agregado tres proporciones de contraste a cada uno de los colores principales: una para los colores actuales de la muestra, una contra el blanco y otra contra el negro.
 
 <div class="mt-8 mb-2 p-3 rounded-md font-bold bg-[#0d6efd] text-white">
@@ -274,6 +276,8 @@ $yellow-800
 $yellow-900
 </div>
 
+{{< content-ads/middle-banner-2 >}}
+
 <div class="mt-8 mb-2 p-3 rounded-md font-bold bg-[#198754] text-white">
 <strong>green</strong> #198754
 </div>
@@ -367,7 +371,6 @@ $cyan-800
 $cyan-900
 </div>
 
-
 <div class="mt-8 mb-2 p-3 rounded-md font-bold bg-[#adb5bd] text-black">
 <strong>gray-500</strong> #adb5bd
 </div>
@@ -411,11 +414,11 @@ $gray-900
 
 Sass no puede generar variables programáticamente, por lo que creamos variables manualmente para cada tinte y sombreado nosotros mismos. Especificamos el valor del punto medio (por ejemplo, `$blue-500`) y usamos funciones de color personalizadas para teñir (aclarar) o sombrear (oscurecer) nuestros colores a través de la función de color `mix()` de Sass.
 
+{{< content-ads/middle-banner-3 >}}
+
 Usar `mix()` no es lo mismo que `lighten()` y `darken()`: el primero combina el color especificado con blanco o negro, mientras que el último solo ajusta el valor de luminosidad de cada color. El resultado es un conjunto de colores mucho más completo, como se muestra en esta [demostración de CodePen](https://codepen.io/emdeoh/pen/zYOQOPB).
 
 Nuestras funciones `tint-color()` y `shade-color()` usan `mix()` junto con nuestra variable `$theme-color-interval`, que especifica un valor porcentual escalonado para cada color mezclado que producimos. Consulta los archivos `scss/_functions.scss` y `scss/_variables.scss` para obtener el código fuente completo.
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Mapas Sass de colores
 
@@ -431,6 +434,8 @@ Dentro de `scss/_variables.scss`, encontrarás las variables de color de Bootstr
 
 Agrega, elimina o modifica valores dentro del mapa para actualizar cómo se usan en muchos otros componentes. Desafortunadamente, en este momento, no todos los componentes utilizan este mapa de Sass. Las actualizaciones futuras se esforzarán por mejorar esto. Hasta entonces, planea hacer uso de las variables `${color}` y este mapa de Sass.
 
+{{< content-ads/middle-banner-4 >}}
+
 ### Ejemplo
 
 Así es como puedes usarlos en tu Sass:
@@ -445,8 +450,6 @@ Así es como puedes usarlos en tu Sass:
 
 Las clases de utilidad [Color]({{< bootstrap/5-1/docsref "/utilities/colors" >}}) y [background]({{< bootstrap/5-1/docsref "/utilities/background" >}}) también están disponibles para configurar `color` y `background-color` utilizando los valores de color `500`.
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Generación de utilidades
 
 <small class="d-inline-flex px-2 py-1 font-monospace text-muted border rounded-3">Añadido en v5.1.0</small>
@@ -456,6 +459,8 @@ Bootstrap no incluye las utilidades `color` y `background-color` para cada varia
 1. Para comenzar, asegúrate de haber importado nuestras funciones, variables, mixins y utilidades.
 2. Utiliza nuestra función `map-merge-multiple()` para fusionar rápidamente múltiples mapas Sass en un nuevo mapa.
 3. Fusiona este nuevo mapa combinado para ampliar cualquier utilidad con un nombre de clase `{color}-{level}`.
+
+{{< content-ads/middle-banner-5 >}}
 
 Aquí hay un ejemplo que genera utilidades de color de texto (por ejemplo, `.text-purple-500`) siguiendo los pasos anteriores.
 

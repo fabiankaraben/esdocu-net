@@ -22,6 +22,8 @@ Muestra las clases de utilidad que se aplican a todos los [breakpoints]({{< boot
 
 Como tal, las clases se nombran usando el formato:
 
+{{< content-ads/middle-banner-1 >}}
+
 - `.d-{value}` para `xs`
 - `.d-{breakpoint}-{value}` para `sm`, `md`, `lg`, `xl`, y `xxl`.
 
@@ -42,6 +44,8 @@ Los valores de visualización se pueden modificar cambiando la variable `$displa
 
 Las media queries afectan los anchos de pantalla con el breakpoint dado *o mayor*. Por ejemplo, `.d-lg-none` establece `display: none;` en las pantallas `lg`, `xl` y `xxl`.
 
+{{< content-ads/middle-banner-2 >}}
+
 ## Ejemplos
 
 {{< bootstrap/5-1/example >}}
@@ -54,11 +58,11 @@ Las media queries afectan los anchos de pantalla con el breakpoint dado *o mayor
 <span class="d-block p-2 bg-dark text-white">d-block</span>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Ocultar elementos
 
 Para un desarrollo optimizado para dispositivos móviles más rápido, usa clases de visualización responsive para mostrar y ocultar elementos por dispositivo. Evita crear versiones completamente diferentes del mismo sitio; en su lugar, oculta los elementos de forma que respondan a cada tamaño de pantalla.
+
+{{< content-ads/middle-banner-3 >}}
 
 Para ocultar elementos, simplemente usa la clase `.d-none` o una de las clases `.d-{sm,md,lg,xl,xxl}-none` para cualquier variación de pantalla responsive.
 
@@ -136,9 +140,9 @@ Para mostrar un elemento solo en un intervalo dado de tamaños de pantalla, pued
 <div class="d-none d-lg-block">Oculto en pantallas más pequeñas que lg</div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Display al imprimir
+
+{{< content-ads/middle-banner-4 >}}
 
 Cambia el valor `display` de los elementos al imprimir con nuestras clases de utilidad de visualización de impresión. Incluye soporte para los mismos valores `display` que nuestras utilidades responsive `.d-*`.
 
@@ -162,6 +166,8 @@ Las clases de impresión y visualización se pueden combinar.
 {{< /bootstrap/5-1/example >}}
 
 ## Sass
+
+{{< content-ads/middle-banner-5 >}}
 
 ### API de utilidades
 

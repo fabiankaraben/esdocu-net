@@ -21,9 +21,9 @@ Cuando utilices Sass en tus assets, asegúrate de optimizar Bootstrap solo impor
 
 Si no estás utilizando un componente, coméntalo o elimínalo por completo. Por ejemplo, si no estás utilizando el *carousel*, elimina esa importación para ahorrar algo de tamaño de archivo en tu CSS compilado. Ten en cuenta que existen algunas dependencias en las importaciones de Sass que pueden dificultar la omisión de un archivo.
 
-{{< content-ads/middle-banner-1 >}}
-
 ## JavaScript ligero
+
+{{< content-ads/middle-banner-1 >}}
 
 El JavaScript de Bootstrap incluye todos los componentes de nuestros archivos de distribución principales (`bootstrap.js` y `bootstrap.min.js`), e incluso nuestra dependencia principal (Popper) con nuestros archivos de paquete (`bootstrap.bundle.js` y `bootstrap.bundle.min.js`). Mientras personalizas a través de Sass, asegúrate de eliminar el JavaScript relacionado.
 
@@ -60,6 +60,8 @@ const modal = new Modal(document.getElementById('myModal'))
 ```
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 ## Autoprefixer .browserslistrc
 
 Bootstrap depende de Autoprefixer para agregar automáticamente prefijos de navegador a ciertas propiedades de CSS. Los prefijos están dictados por nuestro archivo `.browserslistrc`, que se encuentra en la raíz del repositorio de Bootstrap. Personalizar esta lista de navegadores y volver a compilar el Sass eliminará automáticamente algunos CSS de tu CSS compilado si hay prefijos de proveedores exclusivos para ese navegador o versión.
@@ -70,6 +72,8 @@ _Se necesita ayuda con esta sección, considere abrir un PR. ¡Gracias!_
 
 Si bien no tenemos un ejemplo preconstruido para usar [PurgeCSS](https://github.com/FullHuman/purgecss) con Bootstrap, hay algunos artículos y tutoriales útiles que ha escrito la comunidad. Aquí hay algunas opciones:
 
+{{< content-ads/middle-banner-3 >}}
+
 - <https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772>
 - <https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/>
 
@@ -79,9 +83,9 @@ Por último, este artículo de [CSS Tricks sobre CSS sin usar](https://css-trick
 
 Siempre que sea posible, asegúrate de comprimir todo el código que ofreces a tus visitantes. Si estás utilizando archivos dist de Bootstrap, intenta inclinarte por las versiones minificadas (indicadas por las extensiones `.min.css` y `.min.js`). Si estás compilando Bootstrap desde la fuente con tu propio sistema de compilación, asegúrate de implementar tus propios minificadores para HTML, CSS y JS.
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Archivos sin bloqueo
+
+{{< content-ads/middle-banner-4 >}}
 
 Si bien minimizar y usar la compresión puede parecer suficiente, hacer que tus archivos no bloqueen también es un gran paso para que tu sitio esté bien optimizado y sea lo suficientemente rápido.
 
@@ -92,6 +96,8 @@ Puedes mejorar FCP aplazando JavaScript o CSS no críticos. ¿Qué significa eso
 Esto asegura que los recursos menos importantes se carguen más tarde y no bloqueen la primera pintura. Por otro lado, los recursos críticos se pueden incluir como scripts o estilos en línea.
 
 Si deseas obtener más información sobre esto, ya hay muchos artículos excelentes al respecto:
+
+{{< content-ads/middle-banner-5 >}}
 
 - <https://web.dev/render-blocking-resources/>
 - <https://web.dev/defer-non-critical-css/>

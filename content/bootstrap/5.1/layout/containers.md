@@ -22,6 +22,8 @@ Bootstrap viene con tres contenedores diferentes:
 - `.container-fluid`, que es `width: 100%` en todos los breakpoints
 - `.container-{breakpoint}`, que es `width: 100%` hasta el breakpoint especificado
 
+{{< content-ads/middle-banner-1 >}}
+
 La siguiente tabla ilustra cómo se compara el `max-width` de cada contenedor con el `.container` y el `.container-fluid` originales en cada breakpoint.
 
 Puedes verlo en acción y compararlos en nuestro [ejemplo de cuadrícula](https://getbootstrap.com/docs/5.1/examples/grid#containers).
@@ -125,6 +127,8 @@ Puedes verlo en acción y compararlos en nuestro [ejemplo de cuadrícula](https:
 
 ## Contenedor predeterminado
 
+{{< content-ads/middle-banner-2 >}}
+
 Nuestra clase `.container` predeterminada es un contenedor sensible de ancho fijo, lo que significa que su `max-width` cambia en cada breakpoint.
 
 ```html
@@ -133,11 +137,11 @@ Nuestra clase `.container` predeterminada es un contenedor sensible de ancho fij
 </div>
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Contenedores responsive
 
 Los contenedores responsive te permiten especificar una clase que tiene un 100% de ancho hasta que se alcanza el breakpoint especificado, después de lo cual aplicamos `max-width`s para cada uno de los breakpoints más altos. Por ejemplo, `.container-sm` tiene un 100% de ancho al principio hasta que se alcanza el breakpoint `sm`, donde se escalará con `md`, `lg`, `xl` y `xxl`.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```html
 <div class="container-sm">100% de ancho hasta el small breakpoint</div>
@@ -157,6 +161,8 @@ Usa `.container-fluid` para un contenedor de ancho completo, que abarque todo el
 </div>
 ```
 
+{{< content-ads/middle-banner-4 >}}
+
 ## Sass
 
 Como se muestra arriba, Bootstrap genera una serie de clases de contenedores predefinidas para ayudarte a crear los diseños que deseas. Puedes personalizar estas clases de contenedor predefinidas modificando el mapa de Sass (que se encuentra en `_variables.scss`):
@@ -164,6 +170,8 @@ Como se muestra arriba, Bootstrap genera una serie de clases de contenedores pre
 {{< bootstrap/5-1/scss-docs name="container-max-widths" file="scss/_variables.scss" >}}
 
 Además de personalizar el Sass, también puedes crear tus propios contenedores con nuestro mixin Sass.
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss
 // Source mixin
@@ -180,8 +188,6 @@ Además de personalizar el Sass, también puedes crear tus propios contenedores 
   @include make-container();
 }
 ```
-
-{{< content-ads/middle-banner-2 >}}
 
 Para obtener más información y ejemplos sobre cómo modificar nuestros mapas y variables Sass, consulta [la sección Sass de la documentación de Grid]({{< bootstrap/5-1/docsref "/layout/grid#sass" >}}).
 

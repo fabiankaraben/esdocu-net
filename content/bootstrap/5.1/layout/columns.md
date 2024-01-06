@@ -28,9 +28,9 @@ Aprende a modificar columnas con un puñado de opciones de alineación, orden y 
 
 Usa las utilidades de alineación de flexbox para alinear columnas vertical y horizontalmente.
 
-{{< content-ads/middle-banner-1 >}}
-
 ### Alineamiento vertical
+
+{{< content-ads/middle-banner-1 >}}
 
 {{< bootstrap/5-1/example class="bd-example-row bd-example-row-flex-cols" >}}
 <div class="container">
@@ -155,9 +155,9 @@ Si se colocan más de 12 columnas dentro de una sola fila, cada grupo de columna
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Saltos de columna
+
+{{< content-ads/middle-banner-2 >}}
 
 Dividir columnas en una nueva línea en flexbox requiere un pequeño truco: agrega un elemento con `width: 100%` donde quieras envolver tus columnas en una nueva línea. Normalmente esto se logra con múltiples `.row`s, pero no todos los métodos de implementación pueden dar cuenta de esto.
 
@@ -215,6 +215,8 @@ Usa las clases `.order-` para controlar el **orden visual** de tu contenido. Est
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 También hay clases responsive `.order-first` y `.order-last` que cambian el `order` de un elemento aplicando `order: -1` y `order: 6`, respectivamente. Estas clases también se pueden mezclar con las clases numeradas `.order-*` según sea necesario.
 
 {{< bootstrap/5-1/example class="bd-example-row" >}}
@@ -259,6 +261,8 @@ Mueve las columnas a la derecha usando las clases `.offset-md-*`. Estas clases a
 
 Además de borrar las columnas en los breakpoints responsive, es posible que debas restablecer las compensaciones. Observa esto en acción en [el ejemplo de cuadrícula](https://getbootstrap.com/docs/5.1/examples/grid).
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example class="bd-example-row" >}}
 <div class="container">
   <div class="row">
@@ -293,8 +297,6 @@ Con el cambio a flexbox en v4, puedes usar utilidades de margen como `.me-auto` 
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-3 >}}
-
 ## Clases de columna independientes
 
 Las clases `.col-*` también se pueden usar fuera de una `.row` para dar a un elemento un ancho específico. Siempre que las clases de columna se utilicen como elementos hijos no directos de una fila, se omiten los rellenos.
@@ -309,6 +311,8 @@ Las clases `.col-*` también se pueden usar fuera de una `.row` para dar a un el
 {{< /bootstrap/5-1/example >}}
 
 Las clases se pueden usar junto con las utilidades para crear imágenes flotantes responsive. Asegúrate de envolver el contenido en un envoltorio [`.clearfix`]({{< bootstrap/5-1/docsref "/helpers/clearfix" >}}) para borrar el flotante si el texto es más corto.
+
+{{< content-ads/middle-banner-5 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="clearfix">

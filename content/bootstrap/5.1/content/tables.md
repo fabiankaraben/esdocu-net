@@ -247,6 +247,8 @@ Estas clases también se pueden agregar a las variantes de la tabla:
 
 Agrega `.table-hover` para habilitar un estado *hover* en las filas de la tabla dentro de `<tbody>`.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example show_markup="false" >}}
 <table class="table table-hover">
       <thead>
@@ -476,8 +478,6 @@ Resalta una fila o celda de la tabla agregando una clase `.table-active`.
 </table>
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## ¿Cómo funcionan las variantes y las tablas acentuadas?
 
 Para las tablas acentuadas ([filas rayadas](#striped-rows), [filas hover](#hoverable-rows) y [tablas activas](#active-tables)), usamos algunas técnicas para hacer que estos efectos funcionen para todas nuestras [variantes de tabla](#variants):
@@ -497,6 +497,8 @@ Detrás de escena se ve así:
 ### Tablas bordeadas
 
 Agrega `.table-bordered` para mostrar bordes en todos los lados de la tabla y las celdas.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example show_markup="false" >}}
 <table class="table table-bordered">
@@ -807,6 +809,8 @@ Las celdas de la tabla de `<thead>` siempre están alineadas verticalmente hacia
 </div>
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Anidamiento
 
 Las tablas anidadas no heredan los estilos de borde, los estilos *active* y las variantes de tabla.
@@ -987,8 +991,6 @@ De manera similar a las tablas y las tablas oscuras, usa las clases de modificad
 </table>
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Pie de tabla
 
 {{< bootstrap/5-1/example show_markup="false" >}}
@@ -1068,6 +1070,8 @@ Un `<caption>` funciona como un encabezado para una tabla. Ayuda a los usuarios 
   </tbody>
 </table>
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 También puedes colocar `<caption>` en la parte superior de la tabla con `.caption-top`.
 
@@ -1283,8 +1287,6 @@ Usa `.table-responsive{-sm|-md|-lg|-xl|-xxl}` según sea necesario para crear ta
 </div>
 
 ## Sass
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Variables
 

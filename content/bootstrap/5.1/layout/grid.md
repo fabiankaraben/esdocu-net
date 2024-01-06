@@ -46,11 +46,9 @@ Desglosándolo, así es como se compone el sistema de cuadrícula:
 
 - **Los contenedores centran y rellenan horizontalmente su contenido.** Usa `.container` para un ancho de píxel responsive, `.container-fluid` para `width: 100%` en todos los viewports y dispositivos, o un contenedor responsive (p. ej., `.container-md`) para una combinación entre fluido y anchos en píxeles.
 
-
 - **Las filas son envoltorios para las columnas.** Cada columna tiene un `padding` horizontal (llamado *gutter*) para controlar el espacio entre ellas. Este `padding` luego se contrarresta en las filas con márgenes negativos para garantizar que el contenido de tus columnas esté alineado visualmente en el lado izquierdo. Las filas también admiten clases modificadoras para [aplicar uniformemente el tamaño de columna](#row-columns) y [clases de *gutter*]({{< bootstrap/5-1/docsref "/layout/gutters" >}}) para cambiar el espaciado de tu contenido.
 
 - **Las columnas son increíblemente flexibles.** Hay 12 columnas de plantilla disponibles por fila, lo que te permite crear diferentes combinaciones de elementos que abarcan cualquier número de columnas. Las clases de columna indican el número de columnas de plantilla que abarcan (por ejemplo, `col-4` abarca cuatro). `width`s se establecen en porcentajes para que siempre tengas el mismo tamaño relativo.
-
 
 - **Los gutters también son responsive y personalizables.** [Las clases *Gutter* están disponibles]({{< bootstrap/5-1/docsref "/layout/gutters" >}}) en todos los breakpoints, con los mismos tamaños que nuestro [espaciado de margin y padding]({{< bootstrap/5-1/docsref "/utilities/spacing" >}}). Cambia los gutters horizontales con las clases `.gx-*`, los gutters verticales con `.gy-*` o todos los gutters con las clases `.g-*`. `.g-0` también está disponible para eliminar gutters.
 
@@ -59,6 +57,8 @@ Desglosándolo, así es como se compone el sistema de cuadrícula:
 Ten en cuenta las limitaciones y los [errores relacionados con flexbox](https://github.com/philipwalton/flexbugs), como la [incapacidad de usar algunos elementos HTML como contenedores flexibles](https://github.com/philipwalton/flexbugs#flexbug-9).
 
 ## Opciones de cuadrícula
+
+{{< content-ads/middle-banner-1 >}}
 
 El sistema de cuadrícula de Bootstrap puede adaptarse a los seis breakpoints predeterminados y a cualquier breakpoint que personalices. Los seis niveles de cuadrícula predeterminados son los siguientes:
 
@@ -142,8 +142,6 @@ Como se indicó anteriormente, cada uno de estos breakpoints tienen su propio co
     </tr>
   </tbody>
 </table>
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Columnas con auto-layout
 
@@ -239,11 +237,11 @@ Usa las clases `col-{breakpoint}-auto` para dimensionar las columnas en función
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 ## Clases responsive
 
 La cuadrícula de Bootstrap incluye seis niveles de clases predefinidas para crear diseños responsive complejos. Personaliza el tamaño de tus columnas en dispositivos extra pequeños, pequeños, medianos, grandes o extra grandes como mejor te parezca.
-
-{{< content-ads/middle-banner-2 >}}
 
 ### Todos los breakpoints
 
@@ -325,6 +323,8 @@ Utiliza estas clases de filas y columnas para crear rápidamente diseños de cua
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< bootstrap/5-1/example class="bd-example-row" >}}
 <div class="container">
@@ -423,8 +423,6 @@ Para anidar tu contenido con la cuadrícula predeterminada, agrega un nuevo `.ro
 
 Al usar los archivos fuente Sass de Bootstrap, tienes la opción de usar variables Sass y mixins para crear diseños de página personalizados, semánticos y responsive. Nuestras clases de cuadrícula predefinidas utilizan estas mismas variables y mixins para proporcionar un conjunto completo de clases listas para usar para rápidos diseños responsive.
 
-{{< content-ads/middle-banner-3 >}}
-
 ### Variables
 
 Las variables y los mapas determinan el número de columnas, el ancho del gutter y el punto de media query en el que comienzan las columnas flotantes. Los usamos para generar las clases de cuadrícula predefinidas documentadas anteriormente, así como para los mixins personalizados que se enumeran a continuación.
@@ -433,6 +431,8 @@ Las variables y los mapas determinan el número de columnas, el ancho del gutter
 $grid-columns:      12;
 $grid-gutter-width: 1.5rem;
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< bootstrap/5-1/scss-docs name="grid-breakpoints" file="scss/_variables.scss" >}}
 
@@ -519,6 +519,8 @@ $grid-gutter-width: 1.5rem !default;
 ```
 
 ### Niveles de cuadrícula
+
+{{< content-ads/middle-banner-5 >}}
 
 Yendo más allá de las columnas en sí, también puedes personalizar la cantidad de niveles de cuadrícula. Si quisieras solo cuatro niveles de cuadrícula, actualizarías `$grid-breakpoints` y `$container-max-widths` a algo como esto:
 

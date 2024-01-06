@@ -135,9 +135,9 @@ Puedes personalizar la apariencia de los popovers usando [variables CSS](#variab
 ```
 {{< /demo-iframe >}}
 
-### Descartar en el siguiente clic {#dismiss-on-next-click}
-
 {{< content-ads/middle-banner-2 >}}
+
+### Descartar en el siguiente clic {#dismiss-on-next-click}
 
 Utiliza el disparador `focus` para descartar ventanas emergentes en el siguiente clic del usuario en un elemento que no sea el elemento de alternancia.
 
@@ -188,6 +188,8 @@ Personalización del CSS del componente {#css}
 
 Como parte del enfoque de variables CSS en evolución de Bootstrap, los popovers ahora usan variables CSS locales en `.popover` para una personalización mejorada en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
 
+{{< content-ads/middle-banner-3 >}}
+
 [scss/_popover.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_popover.scss)
 
 ```scss {filename="scss/_popover.scss"}
@@ -214,8 +216,6 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los popovers
 ```
 
 ### Variables Sass generales relacionadas {#sass-variables}
-
-{{< content-ads/middle-banner-3 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -265,13 +265,13 @@ Los popovers no administran el orden de enfoque del teclado y su ubicación pued
 
 ### Opciones {#options}
 
-{{< content-ads/middle-banner-4 >}}
-
 Como las opciones se pueden pasar a través de atributos de datos o JavaScript, puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
 
 A partir de Bootstrap 5.2.0, todos los componentes admiten un atributo de datos **experimental** reservado `data-bs-config` que puede albergar datos simples de configuración del componente como una cadena JSON. Cuando un elemento tiene los atributos `data-bs-config='{"delay":0, "title":123}'` y `data-bs-title="456"`, el valor final de `title` será `456` y los atributos de datos separados sobrescribirán los valores proporcionados en `data-bs-config`. Además, los atributos de datos existentes pueden albergar valores JSON como `data-bs-delay='{"show":0,"hide":150}'`.
 
 El objeto de configuración final es el resultado combinado de `data-bs-config`, `data-bs-` y `js object` donde el último valor-clave dado sobrescribe los demás.
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< callout type="warning" emoji="" >}}
 Ten en cuenta que, por motivos de seguridad, las opciones `sanitize`, `sanitizeFn` y `allowList` no se pueden proporcionar mediante atributos de datos.
@@ -317,8 +317,6 @@ const popover = new bootstrap.Popover(element, {
 ```
 
 ### Métodos {#methods}
-
-{{< content-ads/middle-banner-5 >}}
 
 {{< callout type="error" emoji="️" >}}
 **Todos los métodos API son asincrónicos e inician una transición.** Regresan al punto de la llamada tan pronto como se inicia la transición, pero antes de que finalice. Además, se ignorará una llamada a un método en un componente en transición. [Obtén más información en nuestra documentación de JavaScript.](/bootstrap/5.3/getting-started/javascript/#asynchronous-functions-and-transitions)

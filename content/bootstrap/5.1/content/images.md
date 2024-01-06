@@ -22,23 +22,24 @@ Las imágenes en Bootstrap se hacen responsive con `.img-fluid`. Esto aplica `ma
 
 ## Miniaturas de imágenes
 
+{{< content-ads/middle-banner-1 >}}
+
 Además de nuestras [utilidades border-radius]({{< bootstrap/5-1/docsref "/utilities/borders" >}}), puedes usar `.img-thumbnail` para darle a una imagen una apariencia de borde redondeado de 1px.
 
 {{< bootstrap/5-1/example >}}
 {{< bootstrap/5-1/placeholder width="200" height="200" class="img-thumbnail" title="Una imagen placeholder cuadrada genérica con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una cámara instantánea antigua" >}}
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Alinear imágenes
 
 Alinea las imágenes con las [clases flotantes auxiliares]({{< bootstrap/5-1/docsref "/utilities/float" >}}) o [clases de alineación de texto]({{< bootstrap/5-1/docsref "/utilities/text#text-alignment" >}}). Las imágenes a nivel de `block` se pueden centrar usando [la clase de utilidad de margen `.mx-auto`]({{< bootstrap/5-1/docsref "/utilities/spacing#horizontal-centering" >}}).
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 {{< bootstrap/5-1/placeholder width="200" height="200" class="rounded float-start" >}}
 {{< bootstrap/5-1/placeholder width="200" height="200" class="rounded float-end" >}}
 {{< /bootstrap/5-1/example >}}
-
 
 {{< bootstrap/5-1/example >}}
 {{< bootstrap/5-1/placeholder width="200" height="200" class="rounded mx-auto d-block" >}}
@@ -50,8 +51,9 @@ Alinea las imágenes con las [clases flotantes auxiliares]({{< bootstrap/5-1/doc
 </div>
 {{< /bootstrap/5-1/example >}}
 
-
 ## Picture
+
+{{< content-ads/middle-banner-3 >}}
 
 Si estás utilizando el elemento `<picture>` para especificar múltiples elementos `<source>` para un `<img>` específico, asegúrate de agregar las clases `.img-*` a `<img>` y no a la etiqueta `<picture>`.
 
@@ -64,9 +66,9 @@ Si estás utilizando el elemento `<picture>` para especificar múltiples element
 
 ## Sass
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Variables
+
+{{< content-ads/middle-banner-4 >}}
 
 Las variables están disponibles para las miniaturas de imágenes.
 

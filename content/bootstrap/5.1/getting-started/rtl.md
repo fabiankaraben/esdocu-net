@@ -34,6 +34,8 @@ Hay dos requisitos estrictos para habilitar RTL en páginas con tecnología Boot
 
 A partir de ahí, deberás incluir una versión RTL de nuestro CSS. Por ejemplo, aquí está la hoja de estilo para nuestro CSS compilado y minimizado con RTL habilitado:
 
+{{< content-ads/middle-banner-1 >}}
+
 ```html
 <link rel="stylesheet" href="{{< bootstrap/5-1/param "cdn.css_rtl" >}}" integrity="{{< bootstrap/5-1/param "cdn.css_rtl_hash" >}}" crossorigin="anonymous">
 ```
@@ -76,11 +78,11 @@ Puedes ver los requisitos anteriores reflejados en esta plantilla de inicio de R
 
 Comienza con uno de nuestros varios [ejemplos de RTL](https://getbootstrap.com/docs/5.1/examples/#rtl).
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Enfoque
 
 Nuestro enfoque para incorporar la compatibilidad con RTL en Bootstrap viene con dos decisiones importantes que afectan la forma en que escribimos y usamos nuestro CSS:
+
+{{< content-ads/middle-banner-2 >}}
 
 1. **Primero, decidimos construirlo con el proyecto [RTLCSS](https://rtlcss.com/).** Esto nos brinda algunas características poderosas para administrar cambios y sobrescrituras al pasar de LTR a RTL. También nos permite crear dos versiones de Bootstrap a partir de un código base.
 
@@ -97,6 +99,8 @@ Cuando se trata de [personalización]({{< bootstrap/5-1/docsref "/customize/sass
 ### Valores RTL personalizados
 
 Usando [directivas de valor RTLCSS](https://rtlcss.com/learn/usage-guide/value-directives/), puedes hacer que una variable genere un valor diferente para RTL. Por ejemplo, para disminuir el peso de `$font-weight-bold` en todo el código base, puedes usar la sintaxis `/*rtl: {value}*/`:
+
+{{< content-ads/middle-banner-3 >}}
 
 ```scss
 $font-weight-bold: 700 #{/* rtl:600 */} !default;
@@ -147,6 +151,8 @@ $font-family-sans-serif:
 
 ### LTR y RTL al mismo tiempo
 
+{{< content-ads/middle-banner-4 >}}
+
 ¿Necesitas LTR y RTL en la misma página? Gracias a [RTLCSS String Maps](https://rtlcss.com/learn/usage-guide/string-map/), esto es bastante sencillo. Envuelve tus `@import`s con una clase y establece una regla de cambio de nombre personalizada para RTLCSS:
 
 ```scss
@@ -184,8 +190,6 @@ Si bien este enfoque es comprensible, presta atención a lo siguiente:
 ## El caso de la miga de pan
 
 El [separador de migas de pan]({{< bootstrap/5-1/docsref "/components/breadcrumb" >}}/#changing-the-separator) es el único caso que requiere tu propia variable nueva, a saber, `$breadcrumb-divider-flipped`, que por defecto es `$breadcrumb-divider`.
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Recursos adicionales
 

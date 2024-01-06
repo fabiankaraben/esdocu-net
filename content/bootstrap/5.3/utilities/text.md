@@ -60,6 +60,8 @@ Evita que el texto se ajuste con una clase `.text-nowrap`.
 Salto de palabra {#word-break}
 -------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Evita que largas cadenas de texto rompan el diseño de tus componentes usando `.text-break` para configurar `word-wrap: break-word` y `word-break: break-word`. Usamos `word-wrap` en lugar del más común `overflow-wrap` para una mayor compatibilidad con el navegador, y agregamos el obsoleto `word-break: break-word` para evitar problemas con los contenedores flex.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/text/word-break.html" >}}
@@ -105,6 +107,8 @@ Cambia rápidamente el `font-size` del texto. Mientras que nuestras clases de en
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/content-suggestion >}}
 
 Personaliza tus `font-size` disponibles modificando el mapa `$font-sizes` de Sass.
@@ -147,6 +151,8 @@ Monospace {#monospace}
 
 Cambiar una selección a nuestra pila de fuentes monoespaciadas con `.font-monospace`.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/text/monospace.html" >}}
 ```html {filename="HTML"}
     <p class="font-monospace">Esto es en monoespacio.</p>
@@ -185,6 +191,8 @@ Personalización del CSS {#css}
 ### Variables Sass generales relacionadas {#sass-variables}
 
 Tipo predeterminado y variables Sass relacionadas con la fuente:
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< bootstrap/content-suggestion >}}
 
@@ -260,6 +268,8 @@ $theme-colors-text: (
 ```
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-5 >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
 

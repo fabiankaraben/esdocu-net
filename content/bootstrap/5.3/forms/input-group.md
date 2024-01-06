@@ -73,6 +73,8 @@ Los grupos de entradas se ajustan de forma predeterminada mediante `flex-wrap: w
 Tamaños {#sizing}
 ------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Agrega las clases de tamaño de formulario relativo al `.input-group` y el contenido dentro cambiará de tamaño automáticamente; no es necesario repetir las clases de tamaño de control de formulario en cada elemento.
 
 **No se admite el tamaño de los elementos individuales del grupo de entradas.**
@@ -122,6 +124,8 @@ Coloca cualquier casilla de verificación u opción de radio dentro del compleme
 Múltiples entradas {#multiple-inputs}
 --------------------------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 Si bien se admiten visualmente varios `<input>`, los estilos de validación solo están disponibles para grupos de entrada con un único `<input>`.
 
 {{< bootstrap/content-suggestion >}}
@@ -159,6 +163,8 @@ Se admiten múltiples complementos y se pueden combinar con versiones de casilla
 
 Complementos de botones {#button-addons}
 -----------------------------------------
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/input-group/button-addons.html" >}}
 ```html {filename="HTML"}
@@ -291,6 +297,8 @@ Botones segmentados {#segmented-buttons}
 Formularios personalizados {#custom-forms}
 -------------------------------------------
 
+{{< content-ads/middle-banner-4 >}}
+
 Los grupos de entradas incluyen soporte para selects personalizados y entradas de archivos personalizados. Las versiones predeterminadas del navegador de estos no son compatibles.
 
 ### Selects personalizada {#custom-select}
@@ -369,6 +377,8 @@ Personalización del CSS {#css}
 -----------
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-5 >}}
 
 ### Variables Sass generales relacionadas {#sass-variables}
 

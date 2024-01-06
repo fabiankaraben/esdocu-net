@@ -23,6 +23,8 @@ Vertical {#vertical}
 
 Usa `.vstack` para crear diseños verticales. Los elementos apilados tienen el ancho completo de forma predeterminada. Utiliza las utilidades `.gap-*` para agregar espacio entre elementos.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/stacks/vertical.html" >}}
 ```html {filename="HTML"}
     <div class="vstack gap-3">
@@ -47,6 +49,8 @@ Usa `.hstack` para diseños horizontales. Los elementos apilados están centrado
     </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 Usar utilidades de margen horizontal como `.ms-auto` como espaciadores:
 
@@ -73,6 +77,8 @@ Y con [reglas verticales](/bootstrap/5.3/helpers/vertical-rule):
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 Ejemplos {#examples}
 ---------------------
 
@@ -88,6 +94,8 @@ Usa `.vstack` para apilar botones y otros elementos:
 {{< /demo-iframe >}}
 
 Crea un formulario en línea con `.hstack`:
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/stacks/examples-2.html" >}}
 ```html {filename="HTML"}
@@ -107,6 +115,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 [scss/helpers/_stacks.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/helpers/_stacks.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="scss/helpers/_stacks.scss"}
 .hstack {

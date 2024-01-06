@@ -25,11 +25,11 @@ Si bien las sombras en los componentes están deshabilitadas de forma predetermi
 
 ## Sass
 
+{{< content-ads/middle-banner-1 >}}
+
 ### Variables
 
 {{< bootstrap/5-1/scss-docs name="box-shadow-variables" file="scss/_variables.scss" >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ### API de utilidades
 

@@ -28,9 +28,9 @@ Para cargar nuestro CSS, copia y pega el `<link>` a la hoja de estilo en tu `<he
 
 Muchos de nuestros componentes requieren el uso de JavaScript para funcionar. Específicamente, requieren nuestros propios complementos de JavaScript y [Popper](https://popper.js.org/). Coloca **uno de los siguientes `<script>`s** cerca del final de tus páginas, justo antes de la etiqueta de cierre `</body>`, para habilitarlos.
 
-{{< content-ads/middle-banner-1 >}}
-
 #### Bundle
+
+{{< content-ads/middle-banner-1 >}}
 
 Puedes añadir cada complemento y dependencia de JavaScript de Bootstrap con uno de nuestros dos paquetes. Tanto `bootstrap.bundle.js` como `bootstrap.bundle.min.js` incluyen [Popper](https://popper.js.org/) para nuestros tooltips (información emergente) y popovers (ventanas emergentes). Para obtener más información sobre lo que se incluye en Bootstrap, consulta nuestra sección [contenidos]({{< bootstrap/5-1/docsref "/getting-started/contents#precompiled-bootstrap" >}}).
 
@@ -52,6 +52,8 @@ Si decides optar por la solución de scripts separados, Popper debe ser lo prime
 Si usas `<script type="module">`, consulta nuestra sección [usando Bootstrap como módulo]({{< bootstrap/5-1/docsref "/getting-started/javascript#using-bootstrap-as-a-module" >}}).
 
 #### Componentes
+
+{{< content-ads/middle-banner-2 >}}
 
 ¿Tienes curiosidad por saber qué componentes requieren explícitamente nuestro JavaScript y Popper? Haz clic en el enlace Mostrar componentes a continuación. Si no estás seguro acerca de la estructura general de la página, sigue leyendo para ver una plantilla de página de ejemplo.
 
@@ -112,7 +114,7 @@ Para conocer los próximos pasos, visita [Layout docs]({{< bootstrap/5-1/docsref
 
 Bootstrap emplea un puñado de estilos y configuraciones globales importantes que deberás tener en cuenta al usarlo, todos los cuales están orientados casi exclusivamente a la *normalización* de estilos entre navegadores. Veámoslo.
 
-{{< content-ads/middle-banner-2 >}}
+{{< content-ads/middle-banner-3 >}}
 
 ### HTML5 doctype
 
@@ -138,6 +140,8 @@ Puedes ver un ejemplo de esto en acción en la [plantilla de inicio](#starter-te
 
 Para un dimensionamiento más sencillo en CSS, cambiamos el valor global `box-sizing` de `content-box` a `border-box`. Esto garantiza que el `padding` no afecte el ancho calculado final de un elemento, pero puede causar problemas con algunos software de terceros como Google Maps y Google Custom Search Engine.
 
+{{< content-ads/middle-banner-4 >}}
+
 En las raras ocasiones en que necesites anularlo, utiliza algo como lo siguiente:
 
 ```css
@@ -152,8 +156,6 @@ Obtén más información sobre el [modelo de caja y tamaño en CSS Tricks](https
 ### Reboot
 
 Para mejorar la compatibilidad entre navegadores, usamos [Reboot]({{< bootstrap/5-1/docsref "/content/reboot" >}}) para corregir las incoherencias entre navegadores.
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Comunidad
 

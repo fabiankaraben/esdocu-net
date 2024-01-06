@@ -28,6 +28,8 @@ Ajusta la propiedad `overflow` sobre la marcha con cuatro valores y clases prede
 
 ### `overflow-x` {#overflow-x}
 
+{{< content-ads/middle-banner-1 >}}
+
 Ajusta la propiedad `overflow-x` para afectar el desbordamiento del contenido horizontalmente.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/overflow/overflow-x.html" >}}
@@ -42,6 +44,8 @@ Ajusta la propiedad `overflow-x` para afectar el desbordamiento del contenido ho
 ### `overflow-y` {#overflow-y}
 
 Ajusta la propiedad `overflow-y` para afectar el desbordamiento del contenido verticalmente.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/overflow/overflow-y.html" >}}
 ```html {filename="HTML"}
@@ -58,6 +62,8 @@ Personalización del CSS {#css}
 -----------
 
 ### API de utilidades de Sass {#sass-utilities-api}
+
+{{< content-ads/middle-banner-3 >}}
 
 Las utilidades de desbordamiento se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 

@@ -61,8 +61,6 @@ El componente básico de una tarjeta es el `.card-body`. Úsalo siempre que nece
 
 ### Títulos, texto y enlaces {#titles-text-and-links}
 
-{{< content-ads/middle-banner-1 >}}
-
 Los títulos de las tarjetas se usan agregando `.card-title` a una etiqueta `<h*>`. De la misma manera, los enlaces se agregan y se colocan uno al lado del otro agregando `.card-link` a una etiqueta `<a>`.
 
 Los subtítulos se usan agregando un `.card-subtitle` a una etiqueta `<h*>`. Si los elementos `.card-title` y `.card-subtitle` se colocan en un elemento `.card-body`, el título y el subtítulo de la tarjeta se muy bien alineado.
@@ -120,6 +118,8 @@ Crea listas de contenido en una tarjeta con un grupo de listas de descarga.
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/card/list-groups-2.html" >}}
 ```html {filename="HTML"}
     <div class="card" style="width: 18rem;">
@@ -151,8 +151,6 @@ Crea listas de contenido en una tarjeta con un grupo de listas de descarga.
 {{< /demo-iframe >}}
 
 ### Fregadero de cocina {#kitchen-sink}
-
-{{< content-ads/middle-banner-2 >}}
 
 Mezcla y combina múltiples tipos de contenido para crear la tarjeta que necesitas, o agrega todo ahí. A continuación se muestran estilos de imagen, bloques, estilos de texto y un grupo de listas, todo ello envuelto en una tarjeta de ancho fijo.
 
@@ -258,8 +256,6 @@ Agrega un encabezado y/o pie de página opcional dentro de una tarjeta.
 Tamaños del componente Tarjeta {#sizing}
 ------------------
 
-{{< content-ads/middle-banner-3 >}}
-
 Las tarjetas no asumen ningún `width` específico para comenzar, por lo que tendrán un ancho 100% a menos que se indique lo contrario. Puede cambiar esto según sea necesario con CSS personalizado, clases de cuadrícula, mixins Sass de cuadrícula o utilidades.
 
 ### Usar el marcado de cuadrícula {#using-grid-markup}
@@ -323,6 +319,8 @@ Utiliza nuestras [utilidades de tamaño disponibles](/bootstrap/5.3/utilities/si
 
 ### Usar CSS personalizado {#using-custom-css}
 
+{{< content-ads/middle-banner-2 >}}
+
 Usa CSS personalizado en tus hojas de estilo o como estilos en línea para establecer un ancho.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/card/using-custom-css.html" >}}
@@ -340,8 +338,6 @@ Usa CSS personalizado en tus hojas de estilo o como estilos en línea para estab
 
 Alineación de texto del componente Tarjeta {#text-alignment}
 --------------------------------------
-
-{{< content-ads/middle-banner-4 >}}
 
 Puedes cambiar rápidamente la alineación del texto de cualquier tarjeta, en su totalidad o en partes específicas, con nuestras [clases de alineación de texto](/bootstrap/5.3/utilities/text/#text-alignment).
 
@@ -436,8 +432,6 @@ Agrega algo de navegación al encabezado (o bloque) de una tarjeta con los [comp
 Imágenes en el componente Tarjeta {#images-1}
 ---------------------
 
-{{< content-ads/middle-banner-5 >}}
-
 Las tarjetas incluyen algunas opciones para trabajar con imágenes. Elige entre agregar "caps de imagen" en cualquiera de los extremos de una tarjeta, superponer imágenes con el contenido de la tarjeta o simplemente incrustar la imagen en una tarjeta.
 
 {{< bootstrap/content-suggestion >}}
@@ -512,9 +506,9 @@ Ten en cuenta que el contenido no debe ser más grande que la altura de la image
 Tarjetas horizontales {#horizontal}
 -------------------------
 
-{{< content-ads/middle-banner-6 >}}
-
 Utilizando una combinación de clases de cuadrícula y utilidades, las tarjetas se pueden hacer horizontales de una manera responsive y compatible con dispositivos móviles. En el siguiente ejemplo, eliminamos los márgenes de la cuadrícula con `.g-0` y usamos las clases `.col-md-*` para hacer que la tarjeta sea horizontal en el punto de interrupción `md`. Es posible que se necesiten más ajustes dependiendo del contenido de tu tarjeta.
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/card/horizontal.html" >}}
 ```html {filename="HTML"}
@@ -632,8 +626,6 @@ Establece un `background-color` con un `color` de primer plano contrastante con 
 
 ### Bordes del componente Tarjeta {#border}
 
-{{< content-ads/middle-banner-7 >}}
-
 Usa [utilidades de borde](/bootstrap/5.3/utilities/borders) para cambiar solo el `border-color` de una tarjeta. Ten en cuenta que puedes colocar clases `.text-{color}` en la `.card` principal o en un subconjunto del contenido de la tarjeta como se muestra a continuación.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/card/border.html" >}}
@@ -706,8 +698,6 @@ Usa [utilidades de borde](/bootstrap/5.3/utilities/borders) para cambiar solo el
 {{< /demo-iframe >}}
 
 ### Utilidades de Mixins {#mixins-utilities}
-
-{{< content-ads/middle-banner-8 >}}
 
 También puedes cambiar los bordes en el encabezado y pie de página de la tarjeta según sea necesario, e incluso eliminar su `background-color` con `.bg-transparent`.
 
@@ -792,6 +782,8 @@ Utiliza grupos de tarjetas para representar las tarjetas como un único elemento
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 Cuando uses grupos de tarjetas con pies de página, su contenido se alineará automáticamente.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/card/card-groups-2.html" >}}
@@ -854,8 +846,6 @@ Cuando uses grupos de tarjetas con pies de página, su contenido se alineará au
 {{< /demo-iframe >}}
 
 ### Tarjetas de cuadrícula {#grid-cards}
-
-{{< content-ads/middle-banner-9 >}}
 
 Usa el sistema de grid de Bootstrap y sus [`.row-cols` (clases)](/bootstrap/5.3/layout/grid/#row-columns) para controlar cuántas columnas de la cuadrícula (envueltas alrededor de tus tarjetas) muestra por fila. Por ejemplo, aquí está `.row-cols-1` colocando las tarjetas en una columna y `.row-cols-md-2` dividiendo cuatro tarjetas para lograr el mismo ancho en varias filas, desde el punto de interrupción medio hacia arriba.
 
@@ -1183,6 +1173,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las tarjetas
 --#{$prefix}card-img-overlay-padding: #{$card-img-overlay-padding};
 --#{$prefix}card-group-margin: #{$card-group-margin};
 ```
+
+{{< content-ads/middle-banner-5 >}}
 
 {{< bootstrap/content-suggestion >}}
 

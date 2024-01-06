@@ -83,8 +83,6 @@ Los carruseles no normalizan automáticamente las dimensiones de las diapositiva
 
 ### Indicadores {#indicators}
 
-{{< content-ads/middle-banner-1 >}}
-
 Puedes agregar indicadores al carrusel, junto con los controles anterior/siguiente. Los indicadores permiten a los usuarios saltar directamente a una diapositiva en particular.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/carousel/indicators.html" >}}
@@ -141,9 +139,9 @@ Puedes agregar indicadores al carrusel, junto con los controles anterior/siguien
 ```
 {{< /demo-iframe >}}
 
-### Subtítulos {#captions}
+{{< content-ads/middle-banner-1 >}}
 
-{{< content-ads/middle-banner-2 >}}
+### Subtítulos {#captions}
 
 Puedes agregar títulos a tus diapositivas con el elemento `.carousel-caption` dentro de cualquier `.carousel-item`. Se pueden ocultar fácilmente en viewports más pequeñas, como se muestra a continuación, con [utilidades de visualización](/bootstrap/5.3/utilities/display) opcionales. Los ocultamos inicialmente con `.d-none` y los recuperamos en dispositivos de tamaño mediano con `.d-md-block`.
 
@@ -215,8 +213,6 @@ Puedes agregar títulos a tus diapositivas con el elemento `.carousel-caption` d
 
 ### Crossfade {#crossfade}
 
-{{< content-ads/middle-banner-3 >}}
-
 Agrega `.carousel-fade` a tu carrusel para animar diapositivas con una transición de desvanecimiento en lugar de un desplazamiento. Dependiendo del contenido de su carrusel (por ejemplo, diapositivas de solo texto), es posible que desees agregar `.bg-body` o algún CSS personalizado a los `.carousel-item` para lograr un fundido cruzado adecuado.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/carousel/crossfade.html" >}}
@@ -269,8 +265,6 @@ Agrega `.carousel-fade` a tu carrusel para animar diapositivas con una transici�
 
 Carruseles de reproducción automática {#autoplaying-carousels}
 ---------------------------------------------------------------
-
-{{< content-ads/middle-banner-4 >}}
 
 Puedes hacer que tus carruseles se reproduzcan automáticamente al cargar la página configurando la opción `ride` en `carousel`. Los carruseles de reproducción automática se detienen automáticamente mientras se pasa el mouse. Este comportamiento se puede controlar con la opción `pause`. En los navegadores que admiten la [API de visibilidad de página](https://www.w3.org/TR/page-visibility), el carrusel dejará de funcionar cuando la página web no sea visible para el usuario (como cuando la pestaña del navegador está inactiva o cuando la ventana del navegador está minimizada).
 
@@ -376,9 +370,9 @@ Cuando la opción `ride` está configurada en `true`, en lugar de `carousel`, el
 
 ### Intervalo `.carousel-item` individual {#individual-carousel-item-interval}
 
-{{< content-ads/middle-banner-5 >}}
-
 Agrega `data-bs-interval=""` a un `.carousel-item` para cambiar la cantidad de tiempo de retraso entre cada paso automático al siguiente elemento.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/carousel/individual-carousel-item-interval.html" >}}
 ```html {filename="HTML"}
@@ -430,8 +424,6 @@ Agrega `data-bs-interval=""` a un `.carousel-item` para cambiar la cantidad de t
 
 ### Carruseles de reproducción automática sin controles {#autoplaying-carousels-without-controls}
 
-{{< content-ads/middle-banner-6 >}}
-
 Aquí tienes un carrusel solo con diapositivas. Ten en cuenta la presencia de `.d-block` y `.w-100` en las imágenes del carrusel para evitar la alineación de imágenes predeterminada del navegador.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/carousel/autoplaying-carousels-without-controls.html" >}}
@@ -472,8 +464,6 @@ Aquí tienes un carrusel solo con diapositivas. Ten en cuenta la presencia de `.
 
 Desactivar el deslizamiento táctil {#disable-touch-swiping}
 ------------------------------------------------------------
-
-{{< content-ads/middle-banner-7 >}}
 
 Los carruseles admiten deslizar el dedo hacia la izquierda o hacia la derecha en dispositivos con pantalla táctil para pasar de una diapositiva a otra. Esto se puede desactivar configurando la opción `touch` en `false`.
 
@@ -528,8 +518,6 @@ Variante oscura del componente Carrusel {#dark-variant}
 
 <br/>
 <span class="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
-
-{{< content-ads/middle-banner-8 >}}
 
 Agrega `.carousel-dark` al `.carousel` para obtener controles, indicadores y subtítulos más oscuros. Los controles se invierten en comparación con su relleno blanco predeterminado con la propiedad CSS `filter`. Los títulos y controles tienen variables Sass adicionales que personalizan el `color` y el `background-color`.
 
@@ -608,14 +596,14 @@ Agrega `.carousel-dark` al `.carousel` para obtener controles, indicadores y sub
 Transición personalizada {#custom-transition}
 ----------------------------------------------
 
+{{< content-ads/middle-banner-3 >}}
+
 La duración de la transición de `.carousel-item` se puede cambiar con la variable Sass `$carousel-transition-duration` antes de compilar o estilos personalizados si estás utilizando el CSS compilado. Si se aplican varias transiciones, asegúrate de que la transición de transformación esté definida primero (por ejemplo, `transition: transform 2s ease, opacity .5s ease-out`).
 
 Personalización del CSS del componente {#css}
 -----------
 
 ### Variables Sass generales relacionadas {#sass-variables}
-
-{{< content-ads/middle-banner-9 >}}
 
 Variables para todos los carruseles:
 
@@ -675,6 +663,8 @@ Llama al carrusel manualmente con:
 ```javascript {filename="JavaScript"}
 const carousel = new bootstrap.Carousel('#myCarousel')
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Opciones {#options}
 

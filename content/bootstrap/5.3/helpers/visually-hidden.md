@@ -27,6 +27,8 @@ Oculta visualmente un elemento y al mismo tiempo permite que esté expuesto a te
 
 Tanto `visually-hidden` como `visually-hidden-focusable` también se pueden usar como mixins.
 
+{{< content-ads/middle-banner-1 >}}
+
 ```scss {filename="SCSS"}
 // Usage as a mixin
 

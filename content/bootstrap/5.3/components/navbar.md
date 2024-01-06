@@ -93,8 +93,6 @@ Este ejemplo usa las clases de utilidad [fondo](/bootstrap/5.3/utilities/backgro
 
 ### Marca {#brand}
 
-{{< content-ads/middle-banner-1 >}}
-
 El `.navbar-brand` se puede aplicar a la mayoría de los elementos, pero un ancla (enlace) funciona mejor, ya que algunos elementos pueden requerir clases de utilidad o estilos personalizados.
 
 {{< bootstrap/content-suggestion >}}
@@ -157,7 +155,7 @@ También puedes hacer uso de algunas utilidades adicionales para agregar una ima
 
 ### Nav {#nav}
 
-{{< content-ads/middle-banner-2 >}}
+{{< content-ads/middle-banner-1 >}}
 
 Los enlaces de navegación de la barra de navegación se basan en nuestras opciones `.nav` con su propia clase modificadora y requieren el uso de [clases de alternancia](#toggler) para un estilo responsive adecuado. **La navegación en las barras de navegación también crecerá para ocupar tanto espacio horizontal como sea posible** para mantener el contenido de la barra de navegación alineado de forma segura.
 
@@ -265,8 +263,6 @@ También puedes usar menús desplegables en tu barra de navegación. Los menús 
 
 ### Formularios {#forms}
 
-{{< content-ads/middle-banner-3 >}}
-
 Coloca varios controles y componentes de formulario dentro de una barra de navegación:
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navbar/forms-1.html" >}}
@@ -329,8 +325,6 @@ Varios botones también son compatibles como parte de estos formularios de la ba
 
 ### Texto {#text-1}
 
-{{< content-ads/middle-banner-4 >}}
-
 Las barras de navegación pueden contener fragmentos de texto con la ayuda de `.navbar-text`. Esta clase ajusta la alineación vertical y el espaciado horizontal de cadenas de texto.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navbar/text-1-1.html" >}}
@@ -377,12 +371,12 @@ Mezcla y combina con otros componentes y utilidades según sea necesario.
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/content-suggestion >}}
 
 Esquemas de colores del componente Barra de navegación {#color-schemes}
 -------------------------------------
-
-{{< content-ads/middle-banner-5 >}}
 
 {{< callout type="warning" emoji="" >}}
 **Nuevas barras de navegación oscuras en v5.3.0 —** Hemos dejado de usar `.navbar-dark` en favor del nuevo `data-bs-theme="dark"`. Agrega `data-bs-theme="dark"` al `.navbar` para habilitar un modo de color específico del componente. [Obtén más información sobre nuestros modos de color.](/bootstrap/5.3/customize/color-modes)
@@ -441,8 +435,6 @@ Usa cualquiera de los contenedores responsive para cambiar el ancho de presentac
 
 Ubicación del componente Barra de navegación {#placement}
 -----------------------
-
-{{< content-ads/middle-banner-6 >}}
 
 Utiliza nuestras [utilidades de posición](/bootstrap/5.3/utilities/position) para colocar barras de navegación en posiciones no estáticas. Elige entre fijo en la parte superior, fijo en la parte inferior, pegado en la parte superior (se desplaza con la página hasta que llega a la parte superior y luego permanece allí) o pegado en la parte inferior (se desplaza con la página hasta que llega al final y luego permanece allí).
 
@@ -552,12 +544,12 @@ Aquí tienes una barra de navegación de ejemplo que usa `.navbar-nav-scroll` co
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/content-suggestion >}}
 
 Comportamientos responsive {#responsive-behaviors}
 ---------------------------------------------------
-
-{{< content-ads/middle-banner-7 >}}
 
 Las barras de navegación pueden usar `.navbar-toggler`, `.navbar-collapse` y `.navbar-expand{-sm|-md|-lg|-xl|-xxl}` clases para determinar cuándo su contenido colapsa detrás de un botón. En combinación con otras utilidades, puedes elegir fácilmente cuándo mostrar u ocultar elementos concretos.
 
@@ -635,8 +627,6 @@ Con un nombre de marca que se muestra a la izquierda y un interruptor a la derec
 ```
 {{< /demo-iframe >}}
 
-{{< content-ads/middle-banner-8 >}}
-
 Con un interruptor a la izquierda y el nombre de la marca a la derecha:
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navbar/toggler-3.html" >}}
@@ -698,8 +688,6 @@ A veces quieres usar el complemento de colapso para activar un elemento contened
 Cuando hagas esto, te recomendamos incluir JavaScript adicional para mover el foco mediante programación al contenedor cuando se abra. De lo contrario, los usuarios de teclados y de tecnologías de asistencia probablemente tendrán dificultades para encontrar el contenido recién revelado, especialmente si el contenedor que se abrió aparece _antes_ del conmutador en la estructura del documento. También recomendamos asegurarse de que el conmutador tenga el atributo `aria-controls`, apuntando al `id` del contenedor de contenido. En teoría, esto permite a los usuarios de tecnología de asistencia saltar directamente desde el conmutador al contenedor que controla, pero actualmente la compatibilidad con esto es bastante irregular.
 
 ### Offcanvas {#offcanvas}
-
-{{< content-ads/middle-banner-9 >}}
 
 Transforma tu barra de navegación desplegable y contraíble en un cajón offcanvas con el [componente offcanvas](/bootstrap/5.3/components/offcanvas). Ampliamos los estilos predeterminados offcanvas y utilizamos nuestras clases `.navbar-expand-*` para crear una barra lateral de navegación dinámica y flexible.
 
@@ -769,6 +757,8 @@ Para crear una barra de navegación offcanvas que se expanda a una barra de nave
     </div>
 </nav>
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 Cuando uses offcanvas en una barra de navegación oscura, ten en cuenta que es posible que necesites tener un fondo oscuro en el contenido offcanvas para evitar que el texto se vuelva ilegible. En el siguiente ejemplo, agregamos `.navbar-dark` y `.bg-dark` a `.navbar`, `.text-bg-dark` al `.offcanvas`, `.dropdown-menu-dark` al `.dropdown-menu` y `.btn-close-white` a `.btn-close` para un estilo adecuado con un lienzo oscuro.
 
@@ -943,6 +933,8 @@ $navbar-dark-brand-hover-color:     $navbar-dark-active-color;
 {{< bootstrap/content-suggestion >}}
 
 ### Bucles Sass del componente {#sass-loops}
+
+{{< content-ads/middle-banner-5 >}}
 
 [Clases de expansión/contraer de la barra de navegación responsive](#responsive-behaviors) (por ejemplo, `.navbar-expand-lg`) se combinan con el mapa `$breakpoints` y se generan a través de un bucle en `scss/_navbar.scss`.
 

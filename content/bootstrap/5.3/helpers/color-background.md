@@ -34,6 +34,8 @@ Los ayudantes de color y fondo combinan el poder de nuestras [`.text-*` (utilida
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< callout type="info" emoji="" >}}
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 {{< /callout >}}
@@ -49,6 +51,8 @@ Con componentes {#with-components}
     <span class="badge text-bg-info">Info</span>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/content-suggestion >}}
 

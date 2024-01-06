@@ -28,6 +28,8 @@ Cambiar la forma en la que se selecciona el contenido cuando el usuario interact
 Eventos de puntero {#pointer-events}
 -------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Bootstrap proporciona las clases `.pe-none` y `.pe-auto` para evitar o agregar interacciones de elementos.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/interactions/pointer-events.html" >}}
@@ -42,6 +44,8 @@ La clase `.pe-none` (y la propiedad CSS `pointer-events` que establece) solo pre
 
 Si es posible, la solución más sencilla es:
 
+{{< content-ads/middle-banner-2 >}}
+
 * Para controles de formulario, agrega el atributo HTML `disabled`.
 * Para enlaces, elimina el atributo `href`, convirtiéndolo en un enlace ancla o marcador de posición no interactivo.
 
@@ -51,6 +55,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
+
+{{< content-ads/middle-banner-3 >}}
 
 Las utilidades de interacción se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 

@@ -22,6 +22,8 @@ Las relaciones de aspecto se declaran en un mapa de Sass y se incluyen en cada c
 **¡Pro-Tip!** No necesitas `frameborder="0"` en tus `<iframe>`s, ya que lo sobrescribimos en [Reboot]({{< bootstrap/5-1/docsref "/content/reboot" >}}).
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Ejemplo
 
 Envuelve cualquier inserción, como un `<iframe>`, en un elemento padre con una clase `.ratio` y una clase de relación de aspecto. El elemento secundario inmediato se dimensiona automáticamente gracias a nuestro selector universal `.ratio > *`.
@@ -33,6 +35,8 @@ Envuelve cualquier inserción, como un `<iframe>`, en un elemento padre con una 
 {{< /bootstrap/5-1/example >}}
 
 ## Relaciones de aspecto
+
+{{< content-ads/middle-banner-2 >}}
 
 Las relaciones de aspecto se pueden personalizar con clases modificadoras. De forma predeterminada, se proporcionan las siguientes clases de relación:
 
@@ -51,11 +55,11 @@ Las relaciones de aspecto se pueden personalizar con clases modificadoras. De fo
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Proporciones personalizadas
 
 Cada clase `.ratio-*` incluye una propiedad personalizada CSS (o variable CSS) en el selector. Puedes sobrescribir esta variable CSS para crear relaciones de aspecto personalizadas sobre la marcha con algunos cálculos rápidos de tu parte.
+
+{{< content-ads/middle-banner-3 >}}
 
 Por ejemplo, para crear una relación de aspecto de 2x1, establece `--bs-aspect-ratio: 50%` en `.ratio`.
 
@@ -75,13 +79,13 @@ Esta variable CSS facilita la modificación de la relación de aspecto en los br
 }
 ```
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example class="bd-example-ratios bd-example-ratios-breakpoint" >}}
 <div class="ratio ratio-4x3">
   <div>4x3, then 2x1</div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Sass map
 

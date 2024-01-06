@@ -23,6 +23,8 @@ Las reglas verticales están inspiradas en el elemento `<hr>` , lo que te permit
 
 Personalízalos con estilos adicionales según sea necesario.
 
+{{< content-ads/middle-banner-1 >}}
+
 Ejemplo {#example}
 -------------------
 
@@ -42,6 +44,8 @@ Las reglas verticales escalan su altura en diseños flex:
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 Con pilas {#with-stacks}
 -------------------------
 
@@ -60,6 +64,8 @@ También se pueden usar en [pilas](/bootstrap/5.3/helpers/stacks):
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 Personalización del CSS {#css}
 -----------
 
@@ -68,6 +74,8 @@ Personalización del CSS {#css}
 Personaliza la variable Sass de regla vertical para cambiar su ancho.
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $vr-border-width:             var(--#{$prefix}border-width);

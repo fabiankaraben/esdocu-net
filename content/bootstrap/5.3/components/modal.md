@@ -73,8 +73,6 @@ En el ejemplo estático anterior, usamos `<h5>`, para evitar problemas con la je
 
 ### Demostración en vivo {#live-demo}
 
-{{< content-ads/middle-banner-1 >}}
-
 Alterna una demostración modal funcional haciendo clic en el botón a continuación. Se deslizará hacia abajo y desaparecerá desde la parte superior de la página.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/modal/live-demo.html" >}}
@@ -138,14 +136,14 @@ Cuando el fondo está configurado como estático, el modal no se cerrará al hac
 
 ### Desplazarse por contenido extenso {#scrolling-long-content}
 
-{{< content-ads/middle-banner-2 >}}
-
 Cuando los modales se vuelven demasiado largos para la viewport o el dispositivo del usuario, se desplazan independientemente de la página misma. Pruebe la demostración a continuación para ver a qué nos referimos.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/modal/scrolling-long-content-1.html" >}}
 {{< /demo-iframe >}}
 
 También puedes crear un modal desplazable que permita desplazar el cuerpo del modal agregando `.modal-dialog-scrollable` a `.modal-dialog`.
+
+{{< content-ads/middle-banner-1 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/modal/scrolling-long-content-2.html" >}}
 ```html {filename="HTML"}
@@ -191,8 +189,6 @@ Agrega `.modal-dialog-centered` a `.modal-dialog` para centrar verticalmente el 
 {{< /demo-iframe >}}
 
 ### Usando la grilla {#using-the-grid}
-
-{{< content-ads/middle-banner-3 >}}
 
 Utiliza el sistema de cuadrícula Bootstrap dentro de un modal anidando `.container-fluid` dentro de `.modal-body`. Luego, utiliza las clases normales del sistema grid como lo harías en cualquier otro lugar.
 
@@ -297,8 +293,6 @@ if (exampleModal) {
 
 ### Alternar entre modales {#toggle-between-modals}
 
-{{< content-ads/middle-banner-4 >}}
-
 Alterna entre múltiples modales con una ubicación inteligente de los atributos `data-bs-target` y `data-bs-toggle`. Por ejemplo, puedes alternar un modal de restablecimiento de contraseña desde un modal de inicio de sesión ya abierto. **Ten en cuenta que no se pueden abrir varios modales al mismo tiempo**; este método simplemente alterna entre dos modales separados.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/modal/toggle-between-modals.html" >}}
@@ -343,6 +337,8 @@ Alterna entre múltiples modales con una ubicación inteligente de los atributos
 
 La variable `$modal-fade-transform` determina el estado de transformación de `.modal-dialog` antes de la animación de aparición gradual modal, la variable `$modal-show-transform` determina la transformación de `.modal-dialog` al final de la animación de aparición gradual del modal.
 
+{{< content-ads/middle-banner-2 >}}
+
 Si quieres, por ejemplo, una animación con zoom, puedes configurar `$modal-fade-transform: scale(.8)`.
 
 ### Quitar animación {#remove-animation}
@@ -356,8 +352,6 @@ Para los modales que simplemente aparecen en lugar de aparecer gradualmente, eli
 ```
 
 ### Alturas dinámicas {#dynamic-heights}
-
-{{< content-ads/middle-banner-5 >}}
 
 Si la altura de un modal cambia mientras está abierto, debes llamar a `myModal.handleUpdate()` para reajustar la posición del modal en caso de que aparezca una barra de desplazamiento.
 
@@ -421,6 +415,8 @@ Personalización del CSS del componente {#css}
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Variables Sass del componente {#variables}
 
 <br/>
@@ -463,8 +459,6 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los modales 
 ```
 
 ### Variables Sass generales relacionadas {#sass-variables}
-
-{{< content-ads/middle-banner-6 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -512,8 +506,6 @@ $modal-scale-transform:             scale(1.02);
 ```
 
 ### Bucles Sass del componente {#sass-loops}
-
-{{< content-ads/middle-banner-7 >}}
 
 [Los modales responsive de pantalla completa](#fullscreen-modal) se generan a través del mapa `$breakpoints` y un bucle en `scss/_modal.scss`.
 
@@ -568,6 +560,8 @@ Activar un modal sin escribir JavaScript. Establece `data-bs-toggle="modal"` en 
 ```
 
 #### Descartar {#dismiss}
+
+{{< content-ads/middle-banner-4 >}}
 
 El despido se puede lograr con el atributo `data-bs-dismiss` en un botón **dentro del modal** como se muestra a continuación:
 
@@ -638,8 +632,6 @@ const myModal = new bootstrap.Modal('#myModal', {
 {{< bootstrap/content-suggestion >}}
 
 ### Eventos {#events}
-
-{{< content-ads/middle-banner-8 >}}
 
 La clase modal de Bootstrap expone algunos eventos para conectarse a la funcionalidad modal. Todos los eventos modales se activan en el propio modal (es decir, en el `<div class="modal">`).
 

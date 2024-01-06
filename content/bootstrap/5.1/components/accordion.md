@@ -23,6 +23,8 @@ El acordeón usa [collapse]({{< bootstrap/5-1/docsref "/components/collapse" >}}
 
 ## Ejemplo
 
+{{< content-ads/middle-banner-1 >}}
+
 Haz clic en los acordeones a continuación para expandir/contraer el contenido del acordeón.
 
 {{< bootstrap/5-1/example >}}
@@ -66,11 +68,11 @@ Haz clic en los acordeones a continuación para expandir/contraer el contenido d
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ### Flush
 
 Agrega `.accordion-flush` para eliminar el `background-color` predeterminado, algunos bordes y algunas esquinas redondeadas para representar los acordeones de borde a borde con su contenedor padre.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example class="bg-light" >}}
 <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -152,7 +154,7 @@ Omite el atributo `data-bs-parent` en cada `.accordion-collapse` para que los el
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
+{{< content-ads/middle-banner-3 >}}
 
 ## Accesibilidad
 

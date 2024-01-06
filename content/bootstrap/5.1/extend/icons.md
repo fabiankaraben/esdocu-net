@@ -21,15 +21,17 @@ Si bien la mayoría de los conjuntos de íconos incluyen múltiples formatos de 
 
 Bootstrap Icons es una biblioteca en crecimiento de íconos SVG diseñados por [@mdo](https://github.com/mdo) y mantenidos por [el equipo de Bootstrap](https://github.com/orgs/twbs/people). Los inicios de este conjunto de íconos provienen de los propios componentes de Bootstrap: nuestros formularios, carruseles y más. Bootstrap tiene muy pocas necesidades de íconos listas para usar, por lo que no necesitábamos mucho. Sin embargo, una vez que nos pusimos en marcha, no pudimos dejar de hacer más.
 
+{{< content-ads/middle-banner-1 >}}
+
 Ah, ¿y mencionamos que son completamente de código abierto? Con licencia del MIT, al igual que Bootstrap, nuestro conjunto de iconos está disponible para todos.
 
 [Obtén más información sobre los íconos de Bootstrap]({{< bootstrap/5-1/param icons >}}), incluido cómo instalarlos y el uso recomendado.
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Alternativas
 
 Hemos probado y utilizado estos conjuntos de iconos como alternativas preferidas a los iconos de Bootstrap.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/markdown >}}
 {{< icons.inline >}}

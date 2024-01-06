@@ -25,6 +25,8 @@ Cuando hagas referencia a Bootstrap, usa nuestra marca de logotipo. No modifique
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Nuestra marca de logotipo también está disponible en blanco y negro. Todas las reglas para nuestro logotipo principal también se aplican a estos.
 
 {{< bootstrap/5-1/example show_markup="false" >}}
@@ -38,11 +40,11 @@ Nuestra marca de logotipo también está disponible en blanco y negro. Todas las
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Nombre
 
 Bootstrap siempre debe denominarse simplemente **Bootstrap**. Sin Twitter antes y sin mayúscula en la _s_.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example show_markup="false" >}}
 <div class="bd-brand-logos d-sm-flex text-center bg-light rounded-lg overflow-hidden w-100 mb-3">

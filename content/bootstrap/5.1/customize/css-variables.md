@@ -20,6 +20,8 @@ Bootstrap incluye muchas [propiedades personalizadas de CSS (variables)](https:/
 
 Estas son las variables que incluimos (ten en cuenta que se requiere `:root`), a las que se puede acceder desde cualquier lugar donde se cargue el CSS de Bootstrap. Están ubicados en nuestro archivo `_root.scss` e incluidos en nuestros archivos dist compilados.
 
+{{< content-ads/middle-banner-1 >}}
+
 ```css
 {{< root.inline >}}
 {{- $css := readFile "assets/bootstrap/5.1/dist/css/bootstrap.css" -}}
@@ -40,9 +42,9 @@ También estamos comenzando a utilizar propiedades personalizadas como variables
 
 Echa un vistazo a nuestra documentación de tabla para obtener algunos [conocimientos sobre cómo usamos las variables CSS]({{< bootstrap/5-1/docsref "/content/tables#how-do-the-variants-and-accented-tables-work" >}}).
 
-También estamos usando variables CSS en nuestras cuadrículas (grid), principalmente para gutters, con más uso de componentes en el futuro.
+{{< content-ads/middle-banner-2 >}}
 
-{{< content-ads/middle-banner-1 >}}
+También estamos usando variables CSS en nuestras cuadrículas (grid), principalmente para gutters, con más uso de componentes en el futuro.
 
 ## Ejemplos
 
@@ -56,6 +58,8 @@ a {
   color: var(--bs-blue);
 }
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 ## Grid breakpoints
 

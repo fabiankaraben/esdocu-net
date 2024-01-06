@@ -52,6 +52,8 @@ Usa los botones a continuación para mostrar y ocultar un elemento offcanvas a t
 - `.offcanvas` oculta el contenido (predeterminado)
 - `.offcanvas.show` muestra el contenido
 
+{{< content-ads/middle-banner-1 >}}
+
 Puedes usar un enlace con el atributo `href` o un botón con el atributo `data-bs-target`. En ambos casos, se requiere `data-bs-toggle="offcanvas"`.
 
 {{< bootstrap/5-1/example show_markup="false" >}}
@@ -116,8 +118,6 @@ Puedes usar un enlace con el atributo `href` o un botón con el atributo `data-b
   </div>
 </div>
 ```
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Colocación
 
@@ -202,6 +202,8 @@ Prueba los ejemplos superior, derecho e inferior a continuación.
 </div>
 <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 ```html
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle offcanvas inferior</button>
@@ -294,8 +296,6 @@ Desplazar el elemento `<body>` está deshabilitado cuando un offcanvas y su fond
 
 Dado que el panel offcanvas es conceptualmente un cuadro de diálogo modal, asegúrate de agregar `aria-labelledby="..."`, que hace referencia al título offcanvas, a `.offcanvas`. Ten en cuenta que no necesitas agregar `role="dialog"` ya que ya lo agregamos a través de JavaScript.
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Sass
 
 ### Variables
@@ -305,6 +305,8 @@ Dado que el panel offcanvas es conceptualmente un cuadro de diálogo modal, aseg
 ## Uso
 
 El complemento offcanvas utiliza algunas clases y atributos para manejar el trabajo pesado:
+
+{{< content-ads/middle-banner-3 >}}
 
 - `.offcanvas` oculta el contenido
 - `.offcanvas.show` muestra el contenido
@@ -342,6 +344,8 @@ var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
 
 ### Opciones
 
+{{< content-ads/middle-banner-4 >}}
+
 Las opciones se pueden pasar a través de atributos de datos o JavaScript. Para los atributos de datos, agrega el nombre de la opción a `data-bs-`, como en `data-bs-backdrop=""`.
 
 {{< bootstrap/5-1/bs-table "table" >}}
@@ -367,8 +371,6 @@ var myOffcanvas = document.getElementById('myOffcanvas')
 var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
 ```
 
-
-
 {{< bootstrap/5-1/bs-table "table" >}}
 | Método                | Descripción                                                                                                                                                                                                                                           |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -378,8 +380,6 @@ var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
 | `getInstance`         | Método *estático* que te permite obtener la instancia del offcanvas asociado con un elemento DOM                                                                                                                                                      |
 | `getOrCreateInstance` | Método *estático* que te permite obtener la instancia del offcanvas asociado con un elemento DOM, o crear una nueva en caso de que no se haya inicializado                                                                                            |
 {{< /bootstrap/5-1/bs-table >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Eventos
 

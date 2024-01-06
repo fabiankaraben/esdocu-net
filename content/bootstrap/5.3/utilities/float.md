@@ -27,6 +27,8 @@ Estas clases de utilidad hacen flotar un elemento hacia la izquierda o hacia la 
 
 Utiliza el [ayudante clearfix](/bootstrap/5.3/helpers/clearfix) en un elemento principal para borrar los elementos flotantes.
 
+{{< content-ads/middle-banner-1 >}}
+
 Responsive {#responsive}
 -------------------------
 
@@ -43,6 +45,8 @@ También existen variaciones responsive para cada valor `float`.
 {{< /demo-iframe >}}
 
 Aquí están todas las clases de apoyo:
+
+{{< content-ads/middle-banner-2 >}}
 
 * `.float-start`
 * `.float-end`
@@ -69,6 +73,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
+
+{{< content-ads/middle-banner-3 >}}
 
 Las utilidades flotantes se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 

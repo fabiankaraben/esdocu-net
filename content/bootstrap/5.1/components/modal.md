@@ -139,8 +139,6 @@ Lanza una demostración modal funcional haciendo clic en el botón a continuaci�
 </div>
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ### Backdrop estático
 
 Cuando el fondo se establece en *static*, el modal no se cerrará al hacer clic fuera de él. Haz clic en el botón de abajo para probarlo.
@@ -254,6 +252,8 @@ También puedes crear un modal desplazable que permita desplazar el cuerpo modal
   <br><br><br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ```html
 <!-- Scrollable modal -->
 <div class="modal-dialog modal-dialog-scrollable">
@@ -303,7 +303,6 @@ Agrega `.modal-dialog-centered` a `.modal-dialog` para centrar verticalmente el 
       </div>
     </div>
   </div>
-
 
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
     Modal centrado verticalmente
@@ -547,8 +546,6 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
 })
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Alternar entre modals
 
 Alterna entre múltiples modales con una colocación inteligente de los atributos `data-bs-target` y `data-bs-toggle`. Por ejemplo, podrías alternar un modal de restablecimiento de contraseña desde un modal de inicio de sesión ya abierto. **Ten en cuenta que no se pueden abrir múltiples modales al mismo tiempo**; este método simplemente alterna entre dos modales separados.
@@ -627,6 +624,8 @@ Alterna entre múltiples modales con una colocación inteligente de los atributo
 ```
 
 ### Cambiar la animación
+
+{{< content-ads/middle-banner-2 >}}
 
 La variable `$modal-fade-transform` determina el estado de transformación de `.modal-dialog` antes de la animación de aparición gradual del modal, la variable `$modal-show-transform` determina la transformación de `.modal-dialog` en el final de la animación fade-in del modal.
 
@@ -909,6 +908,8 @@ Otra posible sobrescritura es la opción de mostrar un modal que cubra el viewpo
 
 ### Variables
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/scss-docs name="modal-variables" file="scss/_variables.scss" >}}
 
 ### Loop
@@ -998,7 +999,7 @@ var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
 })
 ```
 
-{{< content-ads/middle-banner-3 >}}
+{{< content-ads/middle-banner-4 >}}
 
 #### toggle
 
@@ -1067,8 +1068,9 @@ var modal = bootstrap.Modal.getOrCreateInstance(myModalEl) // Returns a Bootstra
 
 ### Eventos
 
-La clase modal de Bootstrap expone algunos eventos para conectarse a la funcionalidad modal. Todos los eventos modales se activan en el propio modal (es decir, en `<div class="modal">`).
+{{< content-ads/middle-banner-5 >}}
 
+La clase modal de Bootstrap expone algunos eventos para conectarse a la funcionalidad modal. Todos los eventos modales se activan en el propio modal (es decir, en `<div class="modal">`).
 
 <table class="table">
   <thead>

@@ -73,6 +73,8 @@ El texto debajo de los inputs se puede estilizar con `.form-text`. Si se utiliza
 
 Textos en línea pueden usar cualquier elemento HTML en línea típico (ya sea `<span>`, `<small>` o cualquier otro) con nada más que la clase `.form-text`.
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="row g-3 align-items-center">
   <div class="col-auto">
@@ -101,6 +103,8 @@ Agrega el atributo `disabled` a un `<fieldset>` para deshabilitar todos los cont
 
 Sin embargo, si tu formulario también incluye elementos personalizados similares a botones como `<a class="btn btn-*">...</a>`, estos solo tendrán un estilo de `pointer-events: none` , lo que significa que aún se podrán enfocar y operar con el teclado. En este caso, debes modificar manualmente estos controles agregando `tabindex="-1"` para evitar que reciban atención y `aria-disabled="disabled"` para señalar su estado a las tecnologías de asistencia.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example >}}
 <form>
   <fieldset disabled>
@@ -128,8 +132,6 @@ Sin embargo, si tu formulario también incluye elementos personalizados similare
 </form>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Accesibilidad
 
 Asegúrate de que todos los controles de formulario tengan un nombre accesible adecuado para que su propósito pueda transmitirse a los usuarios de tecnologías de asistencia. La forma más sencilla de lograr esto es usar un elemento `<label>` o, en el caso de los botones, incluir texto suficientemente descriptivo como parte del contenido `<button>...</button>`.
@@ -143,9 +145,9 @@ Para situaciones en las que no es posible incluir una `<label>` visible o conten
 
 Si ninguno de estos están presentes, las tecnologías de asistencia pueden recurrir al uso del atributo `placeholder` como respaldo para el nombre accesible en los elementos `<input>` y `<textarea>`. Los ejemplos de esta sección proporcionan algunos enfoques sugeridos para casos específicos.
 
-Si bien el uso de contenido visualmente oculto (`.visually-hidden`, `aria-label` e incluso `placeholder`, que desaparece una vez que un campo de formulario tiene contenido) beneficiará a los usuarios de tecnología de asistencia, la falta de texto de etiqueta visible aún puede ser un problema. problemático para ciertos usuarios. Alguna forma de etiqueta visible es generalmente el mejor enfoque, tanto para la accesibilidad como para la usabilidad.
+{{< content-ads/middle-banner-4 >}}
 
-{{< content-ads/middle-banner-3 >}}
+Si bien el uso de contenido visualmente oculto (`.visually-hidden`, `aria-label` e incluso `placeholder`, que desaparece una vez que un campo de formulario tiene contenido) beneficiará a los usuarios de tecnología de asistencia, la falta de texto de etiqueta visible aún puede ser un problema. problemático para ciertos usuarios. Alguna forma de etiqueta visible es generalmente el mejor enfoque, tanto para la accesibilidad como para la usabilidad.
 
 ## Sass
 

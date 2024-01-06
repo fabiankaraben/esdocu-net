@@ -94,9 +94,9 @@ moment().dates(Number);
 moment().dates(); // Number
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 Obtiene o establece el día del mes.
+
+{{< content-ads/middle-banner-1 >}}
 
 Acepta números del `1` al `31`. Si se excede el rango aumentará los meses.
 
@@ -176,14 +176,14 @@ moment().isoWeekday(); // Number
 
 Obtiene o establece el [día de la semana ISO](https://en.wikipedia.org/wiki/ISO_week_date) siendo `1` lunes y `7` domingo.
 
-{{< content-ads/middle-banner-2 >}}
-
 Al igual que con `moment#day`, si se excede el rango, aumentará a la siguiente semana.
 
 ```javascript {filename="JavaScript"}
 moment().isoWeekday(1); // Monday
 moment().isoWeekday(7); // Sunday
 ```
+
+{{< content-ads/middle-banner-2 >}}
 
 También se admite un nombre de día. Esto se analiza en el locale actual del moment.
 
@@ -254,8 +254,6 @@ Acepta números del `0` al `11`. Si se excede el rango, aumentará el año.
 
 **Nota:** Los meses están indexados desde cero, por lo que enero es el mes `0`.
 
-{{< content-ads/middle-banner-3 >}}
-
 A partir de **2.1.0**, también se admite el nombre de un mes. Esto se analiza en el locale actual del moment.
 
 ```javascript {filename="JavaScript"}
@@ -264,6 +262,8 @@ moment().month("Feb");
 ```
 
 Antes de la versión **2.1.0**, si en un moment cambiaban los meses y el nuevo mes no tenía suficientes días para mantener el día actual del mes, se desbordaba al mes siguiente.
+
+{{< content-ads/middle-banner-3 >}}
 
 A partir de la versión **2.1.0**, esto se modificó para limitarse al final del mes objetivo.
 
@@ -344,8 +344,6 @@ Obtiene o establece el [ISO semana del año](https://en.wikipedia.org/wiki/ISO_w
 
 ## Obtener las semanas del año {#weeks-in-year}
 
-{{< content-ads/middle-banner-4 >}}
-
 ```javascript {filename="Firma del método"}
 moment().weeksInYear();
 ```
@@ -357,6 +355,8 @@ Obtiene el número de semanas según la ubicación (locale) en el año actual.
 ```javascript {filename="Firma del método"}
 moment().isoWeeksInYear();
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 Obtiene el número de semanas del año actual, según [semanas ISO](https://en.wikipedia.org/wiki/ISO_week_date).
 
@@ -445,8 +445,6 @@ moment.max([moment.invalid(), moment()]).isValid() === false
 moment.min(Moment[,Moment...]);
 moment.min(Moment[]);
 ```
-
-{{< content-ads/middle-banner-5 >}}
 
 Devuelve el mínimo (el pasado más lejano) de las instancias del moment dado.
 

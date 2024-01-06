@@ -49,6 +49,8 @@ Evita que el texto se ajuste con una clase `.text-nowrap`.
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Salto de palabra
 
 Evita que largas cadenas de texto rompan el diseño de tus componentes usando `.text-break` para configurar `word-wrap: break-word` y `word-break: break-word`. Usamos `word-wrap` en lugar del `overflow-wrap` más común para una mayor compatibilidad con los navegadores, y agregamos el obsoleto `word-break: break-word` para evitar problemas con los contenedores flexibles.
@@ -60,8 +62,6 @@ Evita que largas cadenas de texto rompan el diseño de tus componentes usando `.
 {{< bootstrap/5-1/callout warning >}}
 Ten en cuenta que [no es posible dividir palabras en árabe](https://rtlstyling.com/posts/rtl-styling#3.-line-break), que es el idioma RTL más utilizado. Por lo tanto, `.text-break` se elimina de nuestro CSS compilado RTL.
 {{< /bootstrap/5-1/callout >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Transformación de texto
 
@@ -76,6 +76,8 @@ Transforma texto en componentes con clases de capitalización de texto.
 Ten en cuenta que `.text-capitalize` solo cambia la primera letra de cada palabra, dejando intactas las mayúsculas y minúsculas de cualquier otra letra.
 
 ## Tamaño de fuente
+
+{{< content-ads/middle-banner-2 >}}
 
 Cambia rápidamente el `font-size` del texto. Mientras que nuestras clases de encabezado (p. ej., `.h1`–`.h6`) aplican `font-size`, `font-weight` y `line-height`, estas utilidades _solo_ aplican `font-size`. El tamaño de estas utilidades coincide con los elementos de encabezado de HTML, por lo que a medida que aumenta el número, su tamaño disminuye.
 
@@ -115,6 +117,8 @@ Cambia la altura de la línea con las utilidades `.lh-*`.
 <p class="lh-lg">Este es un párrafo largo escrito para mostrar cómo nuestras utilidades afectan la altura de línea de un elemento. Las clases se aplican al elemento mismo o, a veces, al elemento principal. Estas clases se pueden personalizar según sea necesario con nuestra API de utilidad.</p>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Monospace
 
 Cambie una selección a nuestra pila de fuentes monoespaciadas con `.font-monospace`.
@@ -143,7 +147,7 @@ Decora texto en componentes con clases de decoración de texto.
 <a href="#" class="text-decoration-none">Se ha quitado la decoración de texto de este enlace</a>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
+{{< content-ads/middle-banner-4 >}}
 
 ## Sass
 

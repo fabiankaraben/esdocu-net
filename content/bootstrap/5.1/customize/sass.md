@@ -39,8 +39,6 @@ your-project/
     └── scss
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Importación
 
 En tu `custom.scss`, importarás los archivos fuente Sass de Bootstrap. Tienes dos opciones: incluir todo Bootstrap o elegir las partes que necesitas. Recomendamos lo último, aunque ten en cuenta que existen algunos requisitos y dependencias entre nuestros componentes. También deberás incluir algo de JavaScript para nuestros complementos.
@@ -96,6 +94,8 @@ Con esta configuración, puedes comenzar a modificar cualquiera de las variables
 
 Cada variable de Sass en Bootstrap incluye el indicador `!default` que te permite sobrescribir el valor predeterminado de la variable en tu propio Sass sin modificar el código fuente de Bootstrap. Copia y pega las variables según sea necesario, modifica tus valores y elimina el indicador `!default`. Si ya se asignó una variable, no se reasignará con los valores predeterminados en Bootstrap.
 
+{{< content-ads/middle-banner-1 >}}
+
 Encontrarás la lista completa de variables de Bootstrap en `scss/_variables.scss`. Algunas variables se establecen en `null`, estas variables no generan la propiedad a menos que se sobrescriban en tu configuración.
 
 Las sobrescrituras de variables deben realizarse después de importar nuestras funciones, pero antes del resto de las importaciones.
@@ -134,8 +134,6 @@ Bootstrap incluye un puñado de mapas Sass, pares de clave valor que facilitan l
 
 Algunos de nuestros mapas Sass se fusionan en mapas vacíos de forma predeterminada. Esto se hace para permitir una fácil expansión de un mapa Sass determinado, pero tiene el costo de hacer _removing_ de elementos de un mapa sea un poco más difícil.
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Modificar mapa
 
 Todas las variables en el mapa `$theme-colors` se definen como variables independientes. Para modificar un color existente en nuestro mapa `$theme-colors`, agrega lo siguiente a tu archivo Sass personalizado:
@@ -146,6 +144,8 @@ $danger: #ff4136;
 ```
 
 Posteriormente, estas variables se configuran en el mapa `$theme-colors` de Bootstrap:
+
+{{< content-ads/middle-banner-2 >}}
 
 ```scss
 $theme-colors: (
@@ -200,6 +200,8 @@ Por ejemplo, usamos las teclas `primary`, `success` y `danger` de `$theme-colors
 
 Además de los [mapas Sass]({{< bootstrap/5-1/docsref "/customize/color#color-sass-maps" >}}) que tenemos, los colores del tema también se pueden usar como variables independientes, como `$primary`.
 
+{{< content-ads/middle-banner-3 >}}
+
 ```scss
 .custom-element {
   color: $gray-100;
@@ -248,6 +250,8 @@ También se puede utilizar para necesidades puntuales de contraste:
 ```
 
 También puedes especificar un color base con nuestras funciones de mapa de colores:
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss
 .custom-element {
@@ -301,11 +305,11 @@ $border-width: 0;
 
 Nuestro directorio `scss/mixins/` tiene una tonelada de mixins que potencian partes de Bootstrap y también se pueden usar en tu propio proyecto.
 
-{{< content-ads/middle-banner-3 >}}
-
 ### Esquemas de color
 
 Un mixin de atajo para la media query `prefers-color-scheme` está disponible con soporte para esquemas de color `light`, `dark` y personalizado.
+
+{{< content-ads/middle-banner-5 >}}
 
 {{< bootstrap/5-1/scss-docs name="mixin-color-scheme" file="scss/mixins/_color-scheme.scss" >}}
 

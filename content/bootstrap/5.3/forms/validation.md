@@ -134,6 +134,8 @@ Los estilos de comentarios personalizados aplican colores, bordes, estilos de en
 Valores predeterminados del navegador {#browser-defaults}
 ----------------------------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 ¿No te interesan los mensajes de validación personalizados o escribir JavaScript para cambiar el comportamiento de los formularios? Todo bien, puedes usar los valores predeterminados del navegador. Intenta enviar el formulario a continuación. Dependiendo de gu navegador y sistema operativo, verás un estilo de comentarios ligeramente diferente.
 
 Si bien estos estilos de comentarios no se pueden diseñar con CSS, aún puedes personalizar el texto de los comentarios a través de JavaScript.
@@ -277,6 +279,8 @@ Elementos soportados {#supported-elements}
 
 Los estilos de validación están disponibles para los siguientes controles y componentes de formulario:
 
+{{< content-ads/middle-banner-2 >}}
+
 * `<input>`s y `<textarea>`s con `.form-control` ( incluyendo hasta un `.form-control` en grupos de entrada)
 * `<select>`s con `.form-select`
 * `.form-check`s
@@ -409,6 +413,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los formular
 
 [scss/_root.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_root.scss)
 
+{{< content-ads/middle-banner-3 >}}
+
 ```scss {filename="scss/_root.scss"}
 --#{$prefix}form-valid-color: #{$form-valid-color};
 --#{$prefix}form-valid-border-color: #{$form-valid-border-color};
@@ -456,6 +462,8 @@ $form-invalid-border-color-dark:    $red-300;
 ### Sass mixins {#sass-mixins}
 
 Se combinan dos mixins, a través de nuestro [bucle](#sass-loops), para generar nuestros estilos de comentarios de validación de formulario.
+
+{{< content-ads/middle-banner-4 >}}
 
 [scss/mixins/_forms.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/mixins/_forms.scss)
 

@@ -30,9 +30,9 @@ Además, como es probable que las páginas tengan más de una de estas secciones
 </nav>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Trabajar con iconos
+
+{{< content-ads/middle-banner-1 >}}
 
 ¿Deseas utilizar un icono o símbolo en lugar de texto para algunos enlaces de paginación? Asegúrate de proporcionar la compatibilidad adecuada con el lector de pantalla con los atributos `aria`.
 
@@ -61,6 +61,8 @@ Además, como es probable que las páginas tengan más de una de estas secciones
 Los enlaces de paginación se pueden personalizar para diferentes circunstancias. Usa `.disabled` para los enlaces a los que no se puede hacer clic y `.active` para indicar la página actual.
 
 Mientras que la clase `.disabled` usa `pointer-events: none` para _intentar_ deshabilitar la funcionalidad de enlace de elementos `<a>`, esa propiedad CSS aún no está estandarizada y no tiene en cuenta la navegación con el teclado. Como tal, siempre debes agregar `tabindex="-1"` en los enlaces deshabilitados y usar JavaScript personalizado para deshabilitar completamente su funcionalidad.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <nav aria-label="...">
@@ -100,11 +102,11 @@ Opcionalmente, puedes cambiar los enlaces *active* o *disabled* por `<span>`, u 
 </nav>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Dimensionamiento
 
 ¿Te apetece una paginación más grande o más pequeña? Agrega `.pagination-lg` o `.pagination-sm` para tamaños adicionales.
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< bootstrap/5-1/example >}}
 <nav aria-label="...">
@@ -150,6 +152,8 @@ Cambia la alineación de los componentes de paginación con [utilidades flexbox]
 </nav>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example >}}
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
@@ -165,8 +169,6 @@ Cambia la alineación de los componentes de paginación con [utilidades flexbox]
   </ul>
 </nav>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Sass
 

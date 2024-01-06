@@ -37,7 +37,6 @@ Todos los encabezados HTML, `<h1>` a `<h6>`, están disponibles.
 | `<h5></h5>` | <span style="font-size: 20px; font-weight: 500">h5. Encabezado Bootstrap</span>     |
 | `<h6></h6>` | <span style="font-size: 19.2px; font-weight: 500">h6. Encabezado Bootstrap</span>   |
 
-
 ```html
 <h1>h1. Encabezado Bootstrap</h1>
 <h2>h2. Encabezado Bootstrap</h2>
@@ -58,8 +57,6 @@ Las clases `.h1` a `.h6` también están disponibles, para cuando deseas hacer c
 <p class="h6">h6. Encabezado Bootstrap</p>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ### Personalizar los encabezados
 
 Utiliza las clases de utilidad incluidas para recrear el pequeño texto de encabezado secundario de Bootstrap 3.
@@ -70,6 +67,8 @@ Utiliza las clases de utilidad incluidas para recrear el pequeño texto de encab
   <small class="text-muted">Con texto secundario desvanecido</small>
 </h3>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-1 >}}
 
 ## Display headings
 
@@ -124,6 +123,8 @@ Estilo para elementos HTML5 en línea comunes.
 
 Ten en cuenta que estas etiquetas deben usarse con fines semánticos:
 
+{{< content-ads/middle-banner-2 >}}
+
 - `<mark>` representa texto que está marcado o resaltado para fines de referencia o notación.
 - `<small>` representa comentarios secundarios y letra pequeña, como derechos de autor y texto legal.
 - `<s>` representa elementos que ya no son relevantes o ya no son precisos.
@@ -163,6 +164,8 @@ Para citar bloques de contenido de otra fuente dentro de tu documento. Envuelve 
 </blockquote>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Nombrar una fuente
 
 La especificación HTML requiere que la atribución de comillas en bloque se coloque fuera de `<blockquote>`. Al proporcionar la atribución, envuelve tu `<blockquote>` en una `<figure>` y usa un `<figcaption>` o un elemento de nivel de bloque (por ejemplo, `<p>`) con la clase `.blockquote-footer`. Asegúrate de envolver el nombre del trabajo fuente en `<cite>` también.
@@ -177,8 +180,6 @@ La especificación HTML requiere que la atribución de comillas en bloque se col
   </figcaption>
 </figure>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ### Alineación
 
@@ -233,6 +234,8 @@ Elimina el `list-style` predeterminado y el margen izquierdo en los elementos de
 
 Elimina las viñetas de una lista y aplica un `margin` ligero con una combinación de dos clases, `.list-inline` y `.list-inline-item`.
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example >}}
 <ul class="list-inline">
   <li class="list-inline-item">Este es un elemento de lista.</li>
@@ -277,8 +280,6 @@ Alinea términos y descripciones horizontalmente utilizando las clases predefini
 En Bootstrap 5, habilitamos tamaños de fuente responsive de forma predeterminada, lo que permite que el texto se escale de forma más natural según los tamaños de dispositivos y viewports. Echa un vistazo a la [página RFS]({{< bootstrap/5-1/docsref "/getting-started/rfs" >}}) para averiguar cómo funciona.
 
 ## Sass
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Variables
 

@@ -57,9 +57,9 @@ Si tu preferencia es utilizar Moment.js directamente en el navegador web, puedes
 </script>
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 *Moment.js* está disponible en [cdnjs.com](https://cdnjs.com/libraries/moment.js) y en [jsDelivr](https://www.jsdelivr.com/package/npm/moment).
+
+{{< content-ads/middle-banner-1 >}}
 
 ## Instalar Moment con Bower {#bower}
 
@@ -142,11 +142,11 @@ Si no especificas `noGlobal`, el `moment` exportado globalmente imprimirá una a
 
 Para la versión **2.5.x**, en caso de que utilices otros complementos que dependan de Moment pero que no sean compatibles con AMD, es posible que debas agregar [`wrapShim: true`](https://github.com/jrburke/r.js/blob/b8a6982d2923ae8389355edaa50d2b7f8065a01a/build/example.build.js#L68-L78) a tu configuración `r.js`.
 
-{{< content-ads/middle-banner-2 >}}
-
 __Nota:__ Para permitir que los complementos `moment.js` se carguen en entornos requirejs, moment se crea como un módulo con nombre. Debido a esto, moment __debe__ cargarse exactamente como `"moment"`, usando `paths` para determinar el directorio. Al solicitar un momento con una ruta como `"vendor\moment"`, se devolverá `undefined`.
 
 __Nota:__ A partir de la versión **2.9.0**, moment se exporta como un módulo anónimo, por lo que si usas solo el núcleo (sin configuraciones regionales ni complementos), no necesitas configuración si lo colocas en una ubicación no estándar.
+
+{{< content-ads/middle-banner-2 >}}
 
 ## Instalar Moment con NuGet {#nuget}
 
@@ -189,8 +189,6 @@ console.log(moment.locale()); // en
 
 Utiliza la siguiente solución
 
-{{< content-ads/middle-banner-3 >}}
-
 ```javascript {filename="JavaScript"}
 var moment = require('moment');
 require('moment/locale/cs');
@@ -205,6 +203,8 @@ require("moment/min/locales.min");
 moment.locale('cs');
 console.log(moment.locale()); // cs
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 ## Usar Moment con Webpack {#webpack}
 
@@ -255,8 +255,6 @@ npm install moment
 
 Importar y utilizar en tu archivo Typecript:
 
-{{< content-ads/middle-banner-4 >}}
-
 ```typescript {filename="TypeScript"}
 const moment = require('moment');
 
@@ -268,6 +266,8 @@ let now = moment().format('LLLL');
 Para _TypeScript 2.x_ intenta agregar `"moduleResolution": "node"` en `compilerOptions` en tu archivo `tsconfig.json`
 
 Para _TypeScript 1.x_ intenta agregar `"allowSyntheticDefaultImports": true` en `compilerOptions` en tu archivo `tsconfig.json` y luego usa la sintaxis:
+
+{{< content-ads/middle-banner-4 >}}
 
 ```typescript {filename="TypeScript"}
 import moment from 'moment';
@@ -329,8 +329,6 @@ System.config({
 ```
 
 ## Otras opciones de instalación {#other}
-
-{{< content-ads/middle-banner-5 >}}
 
 Para usarlo en **Java/Rhino**, consulta [estas instrucciones](https://gist.github.com/UnquietCode/5614860).
 

@@ -50,6 +50,8 @@ Aquí hay un carrusel solo con diapositivas. Ten en cuenta la presencia de `.d-b
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ### Con controles
 
 Agreguemos los controles anterior y siguiente. Recomendamos usar elementos `<button>`, pero también puedes usar elementos `<a>` con `role="button"`.
@@ -77,8 +79,6 @@ Agreguemos los controles anterior y siguiente. Recomendamos usar elementos `<but
   </button>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ### Con indicadores
 
@@ -161,6 +161,8 @@ Agrega subtítulos a tus diapositivas fácilmente con el elemento `.carousel-cap
 ### Transición de fundido
 
 Agrega `.carousel-fade` a tu carrusel para animar las diapositivas con una transición de fundido en lugar de una diapositiva. Dependiendo del contenido de tu carrusel (por ejemplo, diapositivas de solo texto), es posible que desees agregar `.bg-body` o algún CSS personalizado a los `.carousel-item`s para un fundido cruzado adecuado.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -287,9 +289,9 @@ Agrega `.carousel-dark` a `.carousel` para obtener controles, indicadores y subt
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Transición personalizada
+
+{{< content-ads/middle-banner-3 >}}
 
 La duración de la transición de `.carousel-item` se puede cambiar con la variable Sass `$carousel-transition-duration` antes de compilar o estilos personalizados si estás utilizando el CSS compilado. Si se aplican varias transiciones, asegúrate de definir primero la transición de transformación (p. ej., `transition: transform 2s ease, opacity .5s ease-out`).
 
@@ -315,6 +317,8 @@ Llama al carousel manualmente con:
 var myCarousel = document.querySelector('#myCarousel')
 var carousel = new bootstrap.Carousel(myCarousel)
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Opciones
 
@@ -442,8 +446,6 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   </tbody>
 </table>
 
-{{< content-ads/middle-banner-3 >}}
-
 ### Eventos
 
 La clase de carrusel de Bootstrap expone dos eventos para conectarse a la funcionalidad del carrusel. Ambos eventos tienen las siguientes propiedades adicionales:
@@ -452,6 +454,8 @@ La clase de carrusel de Bootstrap expone dos eventos para conectarse a la funcio
 - `relatedTarget`: el elemento DOM que se desliza en su lugar como el elemento activo.
 - `from`: el índice del elemento actual
 - `to`: el índice del siguiente elemento
+
+{{< content-ads/middle-banner-5 >}}
 
 Todos los eventos del carrusel se activan en el propio carrusel (es decir, en `<div class="carousel">`).
 

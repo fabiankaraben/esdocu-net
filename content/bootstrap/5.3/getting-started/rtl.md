@@ -31,6 +31,8 @@ Existen dos requisitos estrictos para habilitar RTL en páginas impulsadas por B
 
 A partir de ahí, deberás incluir una versión RTL de nuestro CSS. Por ejemplo, aquí está la hoja de estilo de nuestro CSS compilado y minimizado con RTL habilitado:
 
+{{< content-ads/middle-banner-1 >}}
+
 ```html {filename="HTML"}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
 ```
@@ -77,6 +79,8 @@ Empieza con uno de nuestros varios [ejemplos RTL](https://getbootstrap.com/docs/
 
 Nuestro enfoque para crear soporte RTL en Bootstrap viene con dos decisiones importantes que afectan la forma en que escribimos y usamos nuestro CSS:
 
+{{< content-ads/middle-banner-2 >}}
+
 1.  **Primero, decidimos construirlo con el proyecto [RTLCSS](https://rtlcss.com).** Esto nos brinda algunas características poderosas para administrar cambios y sobrescrituras al pasar de LTR a RTL. También nos permite crear dos versiones de Bootstrap a partir de una base de código.
     
 2.  **En segundo lugar, hemos cambiado el nombre de un puñado de clases direccionales para adoptar un enfoque de propiedades lógicas.** La mayoría de ustedes ya han interactuado con propiedades lógicas gracias a nuestras utilidades flex: reemplazan las propiedades de dirección como `left` y `right` a favor de `start` y `end`. Eso hace que los nombres y valores de las clases sean apropiados para LTR y RTL sin ningún costo adicional.
@@ -91,6 +95,8 @@ Trabajar con RTL, a través de nuestro Sass fuente o CSS compilado, no debería 
 Cuando se trata de [personalización](/bootstrap/5.3/customize/sass), la forma preferida es aprovechar variables, mapas, y mixins. Este enfoque funciona igual para RTL, incluso si se procesa posteriormente a partir de los archivos compilados, gracias a [cómo funciona RTLCSS](https://rtlcss.com/learn/getting-started/why-rtlcss).
 
 ### Valores RTL personalizados {#custom-rtl-values}
+
+{{< content-ads/middle-banner-3 >}}
 
 Usando la [directivas de valor RTLCSS](https://rtlcss.com/learn/usage-guide/value-directives), puedes hacer que una variable genere un valor diferente para RTL. Por ejemplo, para disminuir el peso de `$font-weight-bold` en todo el código base, puedes usar la sintaxis `/*rtl: {value}*/`:
 
@@ -119,6 +125,8 @@ dt {
 En el caso de que estés usando una fuente personalizada, ten en cuenta que no todas las fuentes admiten el alfabeto no latino. Para cambiar de la familia paneuropea a la árabe, es posible que necesites usar `/*rtl:insert: {value}*/` en tu pila de fuentes para modificar los nombres de las familias de fuentes.
 
 Por ejemplo, para cambiar de la fuente `Helvetica Neue` para LTR a `Helvetica Neue Arabic` para RTL, tu código Sass podría verse así:
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="SCSS"}
 $font-family-sans-serif:

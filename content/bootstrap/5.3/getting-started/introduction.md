@@ -56,6 +56,8 @@ Comienza incluyendo CSS y JavaScript listos para producción de Bootstrap a trav
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     ```
 
+{{< content-ads/middle-banner-1 >}}
+
 3. **¡Hola mundo!** Abre la página en el navegador de tu elección para ver tu página Bootstrapped. Ahora puedes empezar a construir con Bootstrap creando tu propio [layout](/bootstrap/5.3/layout/grid), agregando docenas de [componentes](/bootstrap/5.3/components/buttons) y utilizando [nuestros ejemplos oficiales](/bootstrap/5.3/getting-started/introduction/#:~:text=nuestros%20ejemplos%20oficiales).
 
 {{< bootstrap/content-suggestion >}}
@@ -77,6 +79,8 @@ También puedes usar la CDN para obtener cualquiera de nuestras [compilaciones a
 - Lee sobre lo que se incluye en Bootstrap en nuestra [sección de contenidos](/bootstrap/5.3/getting-started/contents) y la lista de [componentes que requieren JavaScript](/bootstrap/5.3/getting-started/introduction/#js-components) a continuación.
 - ¿Necesitas un poco más de potencia? Considera compilar con Bootstrap [incluidos los archivos fuente a través del administrador de paquetes](/bootstrap/5.3/getting-started/download/#package-managers).
 - ¿Quieres usar Bootstrap como módulo con `<script type="module">`? Consulta nuestra sección [uso de Bootstrap como módulo](/bootstrap/5.3/getting-started/javascript/#using-bootstrap-as-a-module).
+
+{{< content-ads/middle-banner-2 >}}
 
 ## Componentes JS {#js-components}
 
@@ -105,6 +109,8 @@ Bootstrap emplea un puñado de estilos y configuraciones globales importantes, t
 
 Bootstrap requiere el uso de HTML5 doctype. Sin él, verás un estilo original e incompleto.
 
+{{< content-ads/middle-banner-3 >}}
+
 ```html {filename="HTML"}
 <!doctype html>
 <html lang="en">
@@ -128,6 +134,8 @@ Para un dimensionado más sencillo en CSS, cambiamos el valor global `box-sizing
 
 En las raras ocasiones en que necesites sobrescribirlo, usa algo como lo siguiente:
 
+{{< content-ads/middle-banner-4 >}}
+
 ```css {filename="CSS"}
 .selector-for-some-widget {
   box-sizing: content-box;
@@ -147,6 +155,8 @@ Para mejorar el renderizado entre navegadores, utilizamos [Reboot](/bootstrap/5.
 ## Community {#community}
 
 Mantente actualizado sobre el desarrollo de Bootstrap y comunícate con la comunidad con estos útiles recursos.
+
+{{< content-ads/middle-banner-5 >}}
 
 - Lee y suscríbete a [El blog oficial de Bootstrap](https://blog.getbootstrap.com).
 - Haz preguntas y explora [nuestras discusiones de GitHub](https://github.com/twbs/bootstrap/discussions).

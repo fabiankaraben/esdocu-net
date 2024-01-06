@@ -183,9 +183,9 @@ moment("12-25-1995", "MM-DD-YYYY");
 moment("12/25/1995", "MM-DD-YYYY");
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 Es posible que obtengas resultados inesperados al analizar tanto la fecha como la hora. Es posible que el siguiente ejemplo no se analice como esperaba:
+
+{{< content-ads/middle-banner-1 >}}
 
 ```javascript {filename="JavaScript"}
 moment('24/12/2019 09:15:00', "DD MM YYYY hh:mm:ss");
@@ -352,13 +352,13 @@ moment('2012-05-25',       'YYYY-MM-DD', true).isValid(); // true
 moment('2012.05.25',       'YYYY-MM-DD', true).isValid(); // false
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 Puedes utilizar tanto la configuración regional (locale) como el modo estricto.
 
 ```javascript {filename="JavaScript"}
 moment('2012-10-14', 'YYYY-MM-DD', 'fr', true);
 ```
+
+{{< content-ads/middle-banner-2 >}}
 
 El análisis estricto suele ser la mejor opción de análisis. Para obtener más información sobre cómo elegir un análisis estricto o indulgente, consulta la [guía de análisis](https://momentjs.com/guides/#/parsing).
 
@@ -502,8 +502,6 @@ var day = moment.unix(1318781876);
 
 Esto se implementa como `moment(timestamp * 1000)`, por lo que se incluyen segundos parciales en la marca de tiempo de entrada.
 
-{{< content-ads/middle-banner-3 >}}
-
 ```javascript {filename="JavaScript"}
 var day = moment.unix(1318781876.721);
 ```
@@ -513,6 +511,8 @@ var day = moment.unix(1318781876.721);
 ```javascript {filename="JavaScript"}
 var day = moment.unix(1318781876).utc();
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 ## Pasar un objeto Date {#date}
 
@@ -661,8 +661,6 @@ Cualquier moment creado con `moment.utc()` estará en modo UTC, y cualquier mome
 
 Para cambiar de UTC a la hora local, puede utilizar [moment#utc](/momentjs/manipulating#utc) o [moment#local](/momentjs/manipulating#local).
 
-{{< content-ads/middle-banner-4 >}}
-
 ```javascript {filename="JavaScript"}
 var a = moment.utc([2011, 0, 1, 8]);
 a.hours(); // 8 UTC
@@ -682,6 +680,8 @@ moment.parseZone(String, String, String, Boolean)
 ```
 
 Las funciones de análisis de cadenas de Moment como `moment(string)` y `moment.utc(string)` aceptan información de desplazamiento si se proporciona, pero convierten el objeto Moment resultante a hora local o UTC. Por el contrario, `moment.parseZone()` analiza la cadena pero mantiene el objeto Moment resultante en una zona horaria con desplazamiento fijo con el desplazamiento proporcionado en la cadena.
+
+{{< content-ads/middle-banner-4 >}}
 
 ```javascript {filename="JavaScript"}
 moment.parseZone("2013-01-01T00:00:00-13:00").utcOffset(); // -780 ("-13:00" en minutos totales)
@@ -857,8 +857,6 @@ moment();  // fecha y hora actual
 ```
 
 Por defecto es hoy, cuando solo pasan horas, minutos, segundos y milisegundos:
-
-{{< content-ads/middle-banner-5 >}}
 
 ```javascript {filename="JavaScript"}
 moment(5, "HH");  // hoy, 5:00:00.000

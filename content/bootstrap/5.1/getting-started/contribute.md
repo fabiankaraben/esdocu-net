@@ -24,9 +24,9 @@ Para usar nuestro sistema de compilación y ejecutar nuestra documentación loca
 2. [Descarga las fuentes de Bootstrap]({{< bootstrap/5-1/param "download.source" >}}) o haz fork a [el repositorio de Bootstrap]({{< bootstrap/5-1/param repo >}}).
 3. Navega al directorio raíz `/bootstrap` y ejecuta `npm install` para instalar nuestras dependencias locales enumeradas en [package.json]({{< bootstrap/5-1/param repo >}}/blob/v{{< bootstrap/5-1/param current_version >}}/package.json).
 
-Cuando hayas terminado, podrás ejecutar los diversos comandos proporcionados desde la línea de comandos.
-
 {{< content-ads/middle-banner-1 >}}
+
+Cuando hayas terminado, podrás ejecutar los diversos comandos proporcionados desde la línea de comandos.
 
 ## Uso de los scripts npm
 
@@ -75,6 +75,8 @@ Nuestro [package.json]({{< bootstrap/5-1/param repo >}}/blob/v{{< bootstrap/5-1/
   </tbody>
 </table>
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/callout info >}}
 {{< bootstrap/5-1/partial "callout-info-npm-starter.md" >}}
 {{< /bootstrap/5-1/callout >}}
@@ -85,6 +87,8 @@ Bootstrap usa [Dart Sass](https://sass-lang.com/dart-sass) para compilar nuestro
 
 Dart Sass utiliza una precisión de redondeo de 10 y por razones de eficiencia no permite el ajuste de este valor. No bajamos esta precisión durante el procesamiento posterior de nuestro CSS generado, como durante la minificación, pero si eliges hacerlo, te recomendamos mantener una precisión de al menos 6 para evitar problemas con el redondeo del navegador.
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Autoprefixer
 
 Bootstrap usa [Autoprefixer][autoprefixer] (incluido en nuestro proceso de compilación) para agregar automáticamente prefijos de proveedores a algunas propiedades de CSS en el momento de la compilación. Hacerlo nos ahorra tiempo y código al permitirnos escribir partes clave de nuestro CSS una sola vez y eliminar la necesidad de combinaciones de proveedores como las que se encuentran en v3.
@@ -92,6 +96,8 @@ Bootstrap usa [Autoprefixer][autoprefixer] (incluido en nuestro proceso de compi
 Mantenemos la lista de navegadores admitidos a través de Autoprefixer en un archivo separado dentro de nuestro repositorio de GitHub. Consulta [.browserslistrc]({{< bootstrap/5-1/param repo >}}/blob/v{{< bootstrap/5-1/param current_version >}}/.browserslistrc) para obtener detalles.
 
 ## RTLCSS
+
+{{< content-ads/middle-banner-4 >}}
 
 Bootstrap usa [RTLCSS](https://rtlcss.com/) para procesar CSS compilado y convertirlo a RTL, básicamente reemplazando las propiedades conscientes de la dirección horizontal (por ejemplo, `padding-left`) con su opuesto. Nos permite escribir nuestro CSS una sola vez y hacer ajustes menores usando las directivas RTLCSS [control](https://rtlcss.com/learn/usage-guide/control-directives/) y [value](https://rtlcss.com/learn/usage-guide/value-directives/).
 
@@ -103,9 +109,9 @@ Ejecutar nuestra documentación localmente requiere el uso de Hugo, que se insta
 2. Desde el directorio raíz `/bootstrap`, ejecuta `npm run docs-serve` en la línea de comandos.
 3. Abre `http://localhost:9001/` en tu navegador y listo.
 
-Obtén más información sobre el uso de Hugo leyendo su [documentación](https://gohugo.io/documentation/).
+{{< content-ads/middle-banner-5 >}}
 
-{{< content-ads/middle-banner-2 >}}
+Obtén más información sobre el uso de Hugo leyendo su [documentación](https://gohugo.io/documentation/).
 
 ## Solución de problemas
 

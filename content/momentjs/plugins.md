@@ -33,11 +33,11 @@ moment().toOADate(); // un número de coma flotante
 
 O convierte una fecha OA en un `moment`:
 
-{{< content-ads/middle-banner-1 >}}
-
 ```javascript {filename="JavaScript"}
 moment.fromOADate(41493); // Wed Aug 07 2013 00:00:00 GMT-0600 (MDT)
 ```
+
+{{< content-ads/middle-banner-1 >}}
 
 Puedes encontrar más información y documentación detallada en GitHub en [http://markitondemand.github.io/moment-msdate/](http://markitondemand.github.io/moment-msdate).
 
@@ -60,13 +60,13 @@ El repositorio está ubicado en [github.com/MadMG/moment-jdateformatparser](http
 
 ## El complemento Date Ranges {#range}
 
-{{< content-ads/middle-banner-2 >}}
-
 ```javascript {filename="Firma del método"}
 npm install moment-range
 ```
 
 Si necesitas trabajar con rangos de fechas, puedes utilizar el complemento `moment-range` de Gianni Chiappetta.
+
+{{< content-ads/middle-banner-2 >}}
 
 La documentación se puede encontrar en la página de inicio [github.com/rotaready/moment-range](https://github.com/rotaready/moment-range).
 
@@ -90,8 +90,6 @@ t.format();  // 'Jan 25, 1982, 9:30 AM - 1:30 PM'
 t.simpleFormat("h:m"); // '9:30 - 1:30'
 ```
 
-{{< content-ads/middle-banner-3 >}}
-
 La documentación completa de todas las opciones y características se encuentra [aquí](http://icambron.github.io/twix.js).
 
 Está disponible en npm así:
@@ -99,6 +97,8 @@ Está disponible en npm así:
 ```
 npm install twix
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 O simplemente toma el archivo JS desde [aquí](https://raw.github.com/icambron/twix.js/master/dist/twix.js).
 
@@ -120,8 +120,6 @@ moment.preciseDiff("2014-01-01 12:00:00", "2014-04-20 12:00:00");
 // 3 months 19 days
 ```
 
-{{< content-ads/middle-banner-4 >}}
-
 Para obtener los valores numéricos sin formato en lugar de una cadena, pasa el valor `true` como tercer argumento del método:
 
 ```javascript {filename="JavaScript"}
@@ -135,6 +133,8 @@ moment.preciseDiff(m1, m2, true);
 npm install moment-isocalendar
 ```
 
+{{< content-ads/middle-banner-4 >}}
+
 Si estás buscando un método de isocalendario similar a Python, puedes usar el complemento de Rocky Meza
 
 `moment-isocalendar`
@@ -146,8 +146,6 @@ Llamar al método `isocalendar` en un moment devolverá un array como el siguien
 ```javascript {filename="JavaScript"}
 moment().isocalendar(); // [2012, 8, 5, 870]
 ```
-
-{{< content-ads/middle-banner-5 >}}
 
 También puedes reconstruir un moment a partir de un array isocalendaria.
 
@@ -163,6 +161,8 @@ El repositorio está ubicado en [github.com/fusionbox/moment-isocalendar](https:
 ```javascript {filename="Firma del método"}
 npm install moment-jalaali
 ```
+
+{{< content-ads/middle-banner-5 >}}
 
 Si deseas trabajar con el sistema de calendario Jalaali (Jalali, persa, Khorshidi o Shamsi), puedes utilizar el complemento `moment-jalaali` de Behrang Noruzi Niya.
 

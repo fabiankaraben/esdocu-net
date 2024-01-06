@@ -24,6 +24,8 @@ Uso en HTML:
 
 El código fuente del mixin:
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/scss-docs name="clearfix" file="scss/mixins/_clearfix.scss" >}}
 
 Uso del mixin en SCSS:
@@ -34,9 +36,9 @@ Uso del mixin en SCSS:
 }
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 El siguiente ejemplo muestra cómo se puede utilizar clearfix. Sin clearfix, el div envolvente no se extendería alrededor de los botones, lo que causaría un diseño roto.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="bg-info clearfix">

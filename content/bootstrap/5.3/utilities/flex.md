@@ -125,6 +125,8 @@ Utiliza las utilidades `justify-content` en contenedores flexbox para cambiar la
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/content-suggestion >}}
 
 También existen variaciones responsive para `justify-content`.
@@ -279,6 +281,8 @@ Usa la clase `.flex-fill` en una serie de elementos hermanos para forzarlos a te
 
 También existen variaciones responsive para `flex-fill`.
 
+{{< content-ads/middle-banner-2 >}}
+
 * `.flex-fill`
 * `.flex-sm-fill`
 * `.flex-md-fill`
@@ -380,6 +384,8 @@ Wrap {#wrap}
 -------------
 
 Cambia cómo se envuelven los elementos flexibles en un contenedor flex. Elige entre no ajustar nada (el valor predeterminado del navegador) con `.flex-nowrap`, ajusta con `.flex-wrap` o ajusta al revés con `.flex-wrap-reverse`.
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/flex/wrap-1.html" >}}
 ```html {filename="HTML"}
@@ -512,6 +518,8 @@ Utiliza las utilidades `align-content` en contenedores flexbox para alinear elem
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/flex/align-content-2.html" >}}
 ```html {filename="HTML"}
     <div class="d-flex align-content-end flex-wrap">...</div>
@@ -638,6 +646,8 @@ Personalización del CSS {#css}
 Las utilidades de Flexbox se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 
 [scss/_utilities.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_utilities.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="scss/_utilities.scss"}
 "flex": (

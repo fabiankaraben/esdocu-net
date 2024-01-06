@@ -51,6 +51,8 @@ Los estilos de validación de formularios también funcionan como se esperaba.
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Textareas {#textareas}
 -----------------------
 
@@ -80,6 +82,8 @@ Selects {#selects}
 -------------------
 
 Aparte de `.form-control`, las etiquetas flotantes solo están disponibles en `.form-select`. Funcionan de la misma manera, pero a diferencia de los `<input>`, siempre mostrarán el `<label>` en su estado flotante. **No se admiten selects con `size` y `multiple`.**
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/floating-labels/selects.html" >}}
 ```html {filename="HTML"}
@@ -133,6 +137,8 @@ Las etiquetas flotantes también admiten `.form-control-plaintext`, lo que puede
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/floating-labels/readonly-plaintext.html" >}}
 ```html {filename="HTML"}
     <div class="form-floating mb-3">
@@ -182,6 +188,8 @@ Cuando usas `.input-group` y `.form-floating` junto con la validación del formu
 
 Layout {#layout}
 -----------------
+
+{{< content-ads/middle-banner-4 >}}
 
 Cuando trabajes con el sistema de cuadrícula Bootstrap, asegúrate de colocar los elementos del formulario dentro de las clases de columnas.
 

@@ -174,6 +174,8 @@ Estas clases también se pueden agregar a las variantes de la tabla:
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/content/tables/striped-columns-4.html" >}}
 ```html {filename="HTML"}
     <table class="table table-success table-striped">
@@ -315,6 +317,8 @@ Detrás de escena se ve así:
 Bordes de tabla {#table-borders}
 ---------------------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 ### Tablas con borde {#bordered-tables}
 
 Agrega `.table-bordered` para los bordes en todos los lados de la tabla y las celdas.
@@ -451,6 +455,8 @@ Las celdas de la tabla de `<thead>` siempre están alineadas verticalmente hacia
     </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 Anidamiento {#nesting}
 -----------------------
@@ -597,6 +603,8 @@ También puedes poner el `<caption>` en la parte superior de la tabla con `.capt
 Tablas responsive {#responsive-tables}
 ---------------------------------------
 
+{{< content-ads/middle-banner-4 >}}
+
 Las tablas responsive permiten desplazarse horizontalmente con facilidad. Haz que cualquier tabla responda en todas las viewports envolviendo un `.table` con `.table-responsive`. O elige un punto de interrupción máximo con el cual tener una tabla responsive usando `.table-responsive{-sm|-md|-lg|-xl|-xxl}`.
 
 {{< callout type="warning" emoji="" >}}
@@ -735,6 +743,8 @@ $table-bg-scale:              -80%;
 ### Sass loops {#sass-loops}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $table-variants: (

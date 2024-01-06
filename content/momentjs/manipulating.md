@@ -37,9 +37,9 @@ Esta es una función bastante sólida para agregar tiempo a un momento existente
 moment().add(7, 'days');
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 También hay algunas claves de atajo si te gusta todo ese asunto de la brevedad.
+
+{{< content-ads/middle-banner-1 >}}
 
 ```javascript {filename="JavaScript"}
 moment().add(7, 'd');
@@ -75,8 +75,6 @@ moment().add(360, 'days'); // 360 días
 
 Si el día del mes en la fecha original es mayor que el número de días del mes final, el día del mes cambiará al último día del mes final.
 
-{{< content-ads/middle-banner-2 >}}
-
 ```javascript {filename="JavaScript"}
 moment([2010, 0, 31]);                  // January 31
 moment([2010, 0, 31]).add(1, 'months'); // February 28
@@ -84,6 +82,8 @@ moment([2010, 0, 31]).add(1, 'months'); // February 28
 
 También hay consideraciones especiales a tener en cuenta al agregar tiempo que cruza el horario de verano.
 Si agregas años, meses, semanas o días, la hora original siempre coincidirá con la hora agregada.
+
+{{< content-ads/middle-banner-2 >}}
 
 Agregar un mes agregará la cantidad especificada de meses a la fecha.
 
@@ -113,8 +113,6 @@ var duration = moment.duration({'days' : 1});
 moment([2012, 0, 31]).add(duration); // February 1
 ```
 
-{{< content-ads/middle-banner-3 >}}
-
 Antes de la versión **2.8.0**, también se admitía la sintaxis `moment#add(String, Number)`. Ha quedado obsoleto en favor de `moment#add(Number, String)`.
 
 ```javascript {filename="JavaScript"}
@@ -124,6 +122,8 @@ moment().add(1, 'seconds');
 
 A partir de **2.12.0**, cuando se pasan valores decimales para días y meses, se redondean al número entero más cercano.
 Las semanas, cuartos (trimestres) y años se convierten a días o meses y luego se redondean al número entero más cercano.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```javascript {filename="JavaScript"}
 moment().add(1.5, 'months') == moment().add(2, 'months')
@@ -146,8 +146,6 @@ Esto es exactamente lo mismo que `moment#add`, solo que en lugar de sumar tiempo
 moment().subtract(7, 'days');
 ```
 
-{{< content-ads/middle-banner-4 >}}
-
 Antes de la versión **2.8.0**, también se admitía la sintaxis `moment#subtract(String, Number)`. Ha quedado obsoleto en favor de `moment#subtract(Number, String)`.
 
 ```javascript {filename="JavaScript"}
@@ -162,6 +160,8 @@ Las semanas, cuartos (trimestres) y años se convierten a días o meses y luego 
 moment().subtract(1.5, 'months') == moment().subtract(2, 'months')
 moment().subtract(.7, 'years') == moment().subtract(8, 'months') // .7*12 = 8.4, redondeado a 8
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 Ten en cuenta que para que las operaciones `moment.add(-.5, 'days')` y `moment.subtract(.5, 'days')` sean equivalentes, `-.5`, `-1.5`, `-2.5`, etc. se redondean hacia abajo.
 
@@ -185,8 +185,6 @@ moment().startOf('hour');    // establecido a ahora, pero con 0 minutos, 0 segun
 moment().startOf('minute');  // establecido a ahora, pero con 0 segundos y 0 milisegundos
 moment().startOf('second');  // igual a moment().milliseconds(0);
 ```
-
-{{< content-ads/middle-banner-5 >}}
 
 Estos atajos son esencialmente los mismos que los siguientes.
 

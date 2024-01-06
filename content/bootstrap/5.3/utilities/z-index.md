@@ -32,6 +32,8 @@ A estas las llamamos utilidades `z-index` de “bajo nivel” debido a sus valor
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Superposiciones {#overlays}
 ----------------------------
 
@@ -42,6 +44,8 @@ Lee sobre ellos en la página de [`z-index` (sección layout)](/bootstrap/5.3/la
 Enfoque de componentes {#component-approach}
 ---------------------------------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 En algunos componentes, usamos nuestros valores `z-index` de bajo nivel para administrar elementos repetidos que se superponen entre sí (como botones en un grupo de botones o elementos en un grupo de lista).
 
 Más información sobre nuestro enfoque [`z-index`.](/bootstrap/5.3/extend/approach/#z-index-scales).
@@ -50,6 +54,8 @@ Personalización del CSS {#css}
 -----------
 
 ### Mapas de Sass {#sass-maps}
+
+{{< content-ads/middle-banner-3 >}}
 
 Personaliza este mapa de Sass para cambiar los valores disponibles y las utilidades generadas.
 
@@ -66,6 +72,8 @@ $zindex-levels: (
 ```
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-4 >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
 

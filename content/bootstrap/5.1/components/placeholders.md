@@ -48,6 +48,8 @@ En el siguiente ejemplo, tomamos un componente de tarjeta típico y lo recreamos
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ```html
 <div class="card">
   <img src="..." class="card-img-top" alt="...">
@@ -77,8 +79,6 @@ En el siguiente ejemplo, tomamos un componente de tarjeta típico y lo recreamos
 </div>
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## ¿Cómo funciona un placeholder?
 
 Crea marcadores de posición con la clase `.placeholder` y una clase de columna de cuadrícula (por ejemplo, `.col-6`) para establecer el `width`. Pueden reemplazar el texto dentro de un elemento o agregarse como una clase modificadora a un componente existente.
@@ -92,6 +92,8 @@ Aplicamos estilos adicionales a `.btn`s a través de `::before` para garantizar 
 
 <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/callout info >}}
 El uso de `aria-hidden="true"` solo indica que el elemento debe estar oculto para los lectores de pantalla. El comportamiento de *carga* del marcador de posición depende de cómo los autores realmente usarán los estilos de marcador de posición, cómo planean actualizar las cosas, etc. Es posible que se necesite algún código JavaScript para *cambiar* el estado del marcador de posición e informar a los usuarios de AT sobre la actualización .
@@ -108,6 +110,8 @@ Puedes cambiar el `width` a través de clases de columna de cuadrícula, utilida
 {{< /bootstrap/5-1/example >}}
 
 ### Color
+
+{{< content-ads/middle-banner-3 >}}
 
 De forma predeterminada, el `placeholder` usa `currentColor`. Esto se puede sobrescribir con un color personalizado o una clase de utilidad.
 
@@ -131,6 +135,8 @@ El tamaño de `.placeholder`s se basa en el estilo tipográfico del elemento pri
 <span class="placeholder col-12 placeholder-xs"></span>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 ### Animaciones
 
 Anima marcadores de posición con `.placeholder-glow` o `.placeholder-wave` para transmitir mejor la percepción de que algo se está cargando _activamente_.
@@ -144,8 +150,6 @@ Anima marcadores de posición con `.placeholder-glow` o `.placeholder-wave` para
   <span class="placeholder col-12"></span>
 </p>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Sass
 

@@ -29,6 +29,8 @@ Ejemplos del componente Scrollspy {#examples}
 
 ### Barra de navegación {#navbar}
 
+{{< content-ads/middle-banner-1 >}}
+
 Desplázate por el área debajo de la barra de navegación y observa cómo cambia la clase activa. Abre el menú desplegable y observa cómo se resaltan también los elementos desplegables.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/scrollspy/navbar.html" >}}
@@ -69,8 +71,6 @@ Desplázate por el área debajo de la barra de navegación y observa cómo cambi
 {{< /demo-iframe >}}
 
 ### Navegación anidada {#nested-nav}
-
-{{< content-ads/middle-banner-1 >}}
 
 Scrollspy también funciona con `.nav` anidados. Si un `.nav` anidado está `.active`, sus padres también estarán `.active`. Desplázate por el área junto a la barra de navegación y observa cómo cambia la clase activa.
 
@@ -135,9 +135,9 @@ Scrollspy también funciona con `.nav` anidados. Si un `.nav` anidado está `.ac
 
 ### Grupo de lista {#list-group}
 
-{{< content-ads/middle-banner-2 >}}
-
 Scrollspy también funciona con `.list-group`. Desplázate por el área junto al grupo de la lista y observa cómo cambia la clase activa.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/scrollspy/list-group.html" >}}
 ```html {filename="HTML"}
@@ -180,8 +180,6 @@ Scrollspy también funciona con `.list-group`. Desplázate por el área junto al
 {{< /demo-iframe >}}
 
 ### Anclajes simples {#simple-anchors}
-
-{{< content-ads/middle-banner-3 >}}
 
 Scrollspy no se limita a componentes de nav y grupos de listas, por lo que funcionará en cualquier elemento de anclaje `<a>` en el documento actual. Desplázate por el área y observa cómo cambia la clase `.active`.
 
@@ -237,8 +235,6 @@ Scrollspy no se limita a componentes de nav y grupos de listas, por lo que funci
 Elementos de destino no visibles {#non-visible-elements}
 ----------------------------------------------
 
-{{< content-ads/middle-banner-4 >}}
-
 Los elementos de destino que no son visibles se ignorarán y sus elementos de nav correspondientes no recibirán una clase `.active` .Las instancias de Scrollspy inicializadas en un contenedor no visible ignorarán todos los elementos de destino. Utiliza el método `refresh` para comprobar si hay elementos observables una vez que el contenedor se vuelva visible.
 
 ```javascript {filename="JavaScript"}
@@ -250,6 +246,8 @@ document.querySelectorAll('#nav-tab>[data-bs-toggle="tab"]').forEach(el => {
     })
 })
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 Uso del componente Scrollspy {#usage}
 -------------
@@ -282,6 +280,8 @@ const scrollSpy = new bootstrap.ScrollSpy(document.body, {
 
 Como las opciones se pueden pasar a través de atributos de datos o JavaScript, puedes agregar un nombre de opción a `data-bs-`, como en `data-bs-animation="{value}"`. Asegúrate de cambiar el tipo de caso del nombre de la opción de “_camelCase_” a “_kebab-case_” al pasar las opciones a través de atributos de datos. Por ejemplo, utiliza `data-bs-custom-class="beautifier"` en lugar de `data-bs-customClass="beautifier"`.
 
+{{< content-ads/middle-banner-4 >}}
+
 A partir de Bootstrap 5.2.0, todos los componentes admiten un atributo de datos **experimental** reservado `data-bs-config` que puede albergar datos simples de configuración del componente como una cadena JSON. Cuando un elemento tiene los atributos `data-bs-config='{"delay":0, "title":123}'` y `data-bs-title="456"`, el valor final de `title` será `456` y los atributos de datos separados sobrescribirán los valores proporcionados en `data-bs-config`. Además, los atributos de datos existentes pueden albergar valores JSON como `data-bs-delay='{"show":0,"hide":150}'`.
 
 El objeto de configuración final es el resultado combinado de `data-bs-config`, `data-bs-` y `js object` donde el último valor-clave dado sobrescribe los demás.
@@ -311,6 +311,8 @@ Hasta la versión 5.1.3 usábamos `offset` & Opciones de `method`, que ahora est
 | `refresh`             | Al agregar o eliminar elementos en el DOM, necesitarás llamar al método refresh.                                                                      |
 
 Aquí tienes un ejemplo que utiliza el método refresh:
+
+{{< content-ads/middle-banner-5 >}}
 
 ```javascript {filename="JavaScript"}
 const dataSpyList = document.querySelectorAll('[data-bs-spy="scroll"]')

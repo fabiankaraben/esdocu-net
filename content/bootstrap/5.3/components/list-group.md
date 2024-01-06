@@ -65,8 +65,6 @@ Agrega `.disabled` a un `.list-group-item` para que _parezca_ deshabilitado. Ten
 Enlaces y botones del componente Grupo de lista {#links-and-buttons}
 ---------------------------------------
 
-{{< content-ads/middle-banner-1 >}}
-
 Usa `<a>`s o `<button>`s para crear un grupo de lista de elementos _accionables_ con estados hover, disabled y active agregando `.list-group-item-action`. Separamos estas pseudoclases para garantizar que los grupos de listas formados por elementos no interactivos (como `<li>`s o `<div>`s) no proporcionen posibilidades un clic o toque.
 
 Asegúrate de **no usar las clases estándar `.btn` aquí**.
@@ -122,10 +120,10 @@ Agrega `.list-group-flush` para eliminar algunos bordes y esquinas redondeadas p
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Numerado en el componente Grupo de lista {#numbered}
 ---------------------
-
-{{< content-ads/middle-banner-2 >}}
 
 Agrega la clase modificadora `.list-group-numbered` (y opcionalmente usa un elemento `<ol>`) para optar por elementos de grupo de lista numerados. Los números se generan mediante CSS (a diferencia del estilo predeterminado del navegador `<ol>`) para una mejor ubicación dentro de los elementos del grupo de listas y para permitir una mejor personalización.
 
@@ -173,8 +171,6 @@ Estos también funcionan muy bien con contenido personalizado.
 
 Componente Grupo de lista horizontal {#horizontal}
 -------------------------
-
-{{< content-ads/middle-banner-3 >}}
 
 Agrega `.list-group-horizontal` para cambiar el diseño de los elementos del grupo de lista de vertical a horizontal en todos los puntos de interrupción. Alternativamente, elige una variante responsive `.list-group-horizontal-{sm|md|lg|xl|xxl}` para hacer un grupo de listas horizontal comenzando en el `min-width`. Actualmente **los grupos de listas horizontales no se pueden combinar con grupos de listas al ras.**
 
@@ -244,8 +240,6 @@ Usa clases contextuales para diseñar elementos de la lista con un fondo y color
 
 ### Para enlaces y botones {#for-links-and-buttons}
 
-{{< content-ads/middle-banner-4 >}}
-
 Las clases contextuales también funcionan con `.list-group-item-action` para elementos `<a>` y `<button>`. Ten en cuenta la adición de estilos de desplazamiento aquí que no están presentes en el ejemplo anterior. También se admite el estado `.active`; aplícalo para indicar una selección activa en un elemento de grupo de lista contextual.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/list-group/for-links-and-buttons.html" >}}
@@ -267,6 +261,8 @@ Las clases contextuales también funcionan con `.list-group-item-action` para el
 {{< callout type="info" emoji="" >}}
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 {{< /callout >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 Grupo de listas con insignias {#with-badges}
 -----------------------------
@@ -294,8 +290,6 @@ Agrega insignias a cualquier elemento del grupo de lista para mostrar recuentos 
 
 Contenido personalizado {#custom-content}
 ------------------------------------------
-
-{{< content-ads/middle-banner-5 >}}
 
 Agrega casi cualquier HTML incluido, incluso para grupos de listas vinculadas como el siguiente, con la ayuda de las [utilidades flexbox](/bootstrap/5.3/utilities/flex).
 
@@ -376,8 +370,6 @@ Coloca las casillas de verificación y los radios de Bootstrap dentro de los ele
 ```
 {{< /demo-iframe >}}
 
-{{< content-ads/middle-banner-6 >}}
-
 Puedes usar `.stretched-link` en `<label>`s para hacer que se pueda hacer clic en todo el elemento del grupo de la lista.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/list-group/checkboxes-and-radios-3.html" >}}
@@ -433,9 +425,9 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los grupos d
 --#{$prefix}list-group-active-border-color: #{$list-group-active-border-color};
 ```
 
-### Variables Sass generales relacionadas {#sass-variables}
+{{< content-ads/middle-banner-3 >}}
 
-{{< content-ads/middle-banner-7 >}}
+### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
@@ -474,8 +466,6 @@ $list-group-action-active-bg:       var(--#{$prefix}secondary-bg);
 
 <br/>
 <span class="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
-
-{{< content-ads/middle-banner-8 >}}
 
 Se usa en combinación con `$theme-colors` para generar las [clases variantes contextuales](#variants) para `.list-group-item`s.
 
@@ -534,8 +524,6 @@ Bucle que genera las clases modificadoras con una sobrescritura de variables CSS
 
 Comportamiento JavaScript del componente {#javascript-behavior}
 -------------------------------------------------------------------------------------
-
-{{< content-ads/middle-banner-9 >}}
 
 Utiliza el complemento JavaScript de pestañas (inclúyelo individualmente o mediante el archivo `bootstrap.js` compilado) para ampliar nuestro grupo de listas y crear paneles con pestañas de contenido local.
 
@@ -613,6 +601,8 @@ Puedes activar la navegación de un grupo de listas sin escribir ningún JavaScr
     </div>
 </div>
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Vía JavaScript {#via-javascript}
 

@@ -23,6 +23,8 @@ Para usar nuestro sistema de compilación y ejecutar nuestra documentación loca
 2.  Descarga las [fuentes de Bootstrap](https://github.com/twbs/bootstrap/archive/v5.3.2.zip) o bifurca y clona el [repositorio de Bootstrap](https://github.com/twbs/bootstrap).
 3.  Navega al directorio raíz `/bootstrap` y ejecuta `npm install` para instalar nuestras dependencias locales enumeradas en [package.json](https://github.com/twbs/bootstrap/blob/v5.3.2/package.json).
 
+{{< content-ads/middle-banner-1 >}}
+
 Cuando esté completo, podrás ejecutar los distintos comandos proporcionados desde la línea de comandos.
 
 ## Usar scripts npm {#using-npm-scripts}
@@ -36,6 +38,8 @@ Nuestro [package.json](https://github.com/twbs/bootstrap/blob/v5.3.2/package.jso
 | `npm test`           | Ejecuta tests localmente después de ejecutar `npm run dist`                                                                                                                                      |
 | `npm run docs-serve` | Compila y ejecuta la documentación localmente.                                                                                                                                                   |
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< callout type="info" emoji="" >}}
 **¡Empieza a usar Bootstrap a través de npm con nuestro proyecto inicial!** Dirígete al repositorio de ejemplo de [Sass y JS](https://github.com/twbs/examples/tree/main/sass-js) para ver cómo crear y personalizar Bootstrap en tu propio proyecto npm. Incluye el compilador Sass, Autoprefixer, Stylelint, PurgeCSS y Bootstrap Icons.
 {{< /callout >}}
@@ -46,6 +50,8 @@ Bootstrap usa [Dart Sass](https://sass-lang.com/dart-sass) para compilar nuestro
 
 Dart Sass utiliza una precisión de redondeo de 10 y por razones de eficiencia no permite ajustar este valor. No reducimos esta precisión durante el procesamiento posterior de nuestro CSS generado, como durante la minificación, pero si decides hacerlo, te recomendamos mantener una precisión de al menos 6 para evitar problemas con el redondeo del navegador.
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Autoprefixer {#autoprefixer}
 
 Bootstrap usa [Autoprefixer](https://github.com/postcss/autoprefixer) (incluido en nuestro proceso de compilación) para agregar automáticamente prefijos de proveedores a algunas propiedades CSS en el momento de la compilación. Hacerlo nos ahorra tiempo y código al permitirnos escribir partes clave de nuestro CSS una sola vez y al mismo tiempo eliminar la necesidad de mixins de proveedores como los que se encuentran en la versión 3.
@@ -54,6 +60,8 @@ Mantenemos la lista de navegadores compatibles con Autoprefixer en un archivo se
 
 ## RTLCSS {#rtlcss}
 
+{{< content-ads/middle-banner-4 >}}
+
 Bootstrap usa [RTLCSS](https://rtlcss.com) para procesar CSS compilado y convertirlos a RTL, básicamente reemplazando las propiedades que reconocen la dirección horizontal (por ejemplo `padding-left`) con su opuesto. Nos permite escribir nuestro CSS solo una vez y realizar ajustes menores usando las directivas de RTLCSS [control](https://rtlcss.com/learn/usage-guide/control-directives) y [value](https://rtlcss.com/learn/usage-guide/value-directives).
 
 {{< bootstrap/content-suggestion >}}
@@ -61,6 +69,8 @@ Bootstrap usa [RTLCSS](https://rtlcss.com) para procesar CSS compilado y convert
 ## Documentación local {#local-documentation}
 
 La ejecución de nuestra documentación localmente requiere el uso de Hugo, que se instala a través del paquete npm [hugo-bin](https://www.npmjs.com/package/hugo-bin). Hugo es un generador de sitios estáticos increíblemente rápido y bastante extensible que nos proporciona: inclusiones básicas, archivos basados en Markdown, plantillas y más. A continuación te indicamos cómo empezar:
+
+{{< content-ads/middle-banner-5 >}}
 
 1.  Ejecuta la [configuración de herramientas](#tooling-setup) anterior para instalar todas las dependencias.
 2.  Desde el directorio raíz `/bootstrap` ejecuta `npm run docs-serve` en la línea de comando.

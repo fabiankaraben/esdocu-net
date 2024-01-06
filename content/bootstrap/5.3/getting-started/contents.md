@@ -68,6 +68,8 @@ bootstrap/
 
 Esta es la forma más básica de Bootstrap: archivos compilados para un uso rápido en casi cualquier proyecto web. Proporcionamos CSS y JS compilados (`bootstrap.*`), así como CSS y JS compilados y minificados (`bootstrap.min.*`). [Mapas de fuente](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) están disponibles para su uso con las herramientas de desarrollo de ciertos navegadores. Los archivos JS incluidos (`bootstrap.bundle.js` y `bootstrap.bundle.min.js` minificados) incluyen [Popper](https://popper.js.org).
 
+{{< content-ads/middle-banner-1 >}}
+
 ### Archivos CSS {#css-files}
 
 Bootstrap incluye un puñado de opciones para incluir parte o la totalidad de nuestro CSS compilado.
@@ -81,6 +83,8 @@ Bootstrap incluye un puñado de opciones para incluir parte o la totalidad de nu
 
 ### Archivos JS {#js-files}
 
+{{< content-ads/middle-banner-2 >}}
+
 De manera similar, tenemos opciones para incluir parte o la totalidad de nuestro JavaScript compilado.
 
 | Archivos JS                                         | Popper   |
@@ -91,6 +95,8 @@ De manera similar, tenemos opciones para incluir parte o la totalidad de nuestro
 {{< bootstrap/content-suggestion >}}
 
 ## Código fuente de Bootstrap {#bootstrap-source-code}
+
+{{< content-ads/middle-banner-3 >}}
 
 La descarga del código fuente de Bootstrap incluye los assets CSS y JavaScript compilados, junto con el código fuente Sass, JavaScript y documentación. Más específicamente, incluye lo siguiente y más:
 

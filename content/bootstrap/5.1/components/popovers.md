@@ -68,6 +68,8 @@ var popover = new bootstrap.Popover(document.querySelector('.example-popover'), 
 
 Hay cuatro opciones disponibles: alineación superior, derecha, inferior e izquierda. Las direcciones se reflejan cuando se usa Bootstrap en RTL.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example show_markup="false" >}}
 <br><br><br>
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
@@ -142,6 +144,8 @@ Para activadores de popovers deshabilitados, también puedes preferir `data-bs-t
 
 Habilitar popovers a través de JavaScript:
 
+{{< content-ads/middle-banner-2 >}}
+
 ```js
 var exampleEl = document.getElementById('example')
 var popover = new bootstrap.Popover(exampleEl, options)
@@ -156,8 +160,6 @@ Si bien puedes insertar HTML enriquecido y estructurado en popovers con la opci�
 
 Además, si bien también es posible incluir controles interactivos (como elementos de formulario o enlaces) en tu ventana emergente (agregando estos elementos a la `allowList` de atributos y etiquetas permitidas), ten en cuenta que actualmente la ventana emergente no administra el enfoque del teclado. Cuando un usuario del teclado abre una ventana emergente, el foco permanece en el elemento activador y, como la ventana emergente generalmente no sigue inmediatamente al activador en la estructura del documento, no hay garantía de que presionando <kbd>TAB</kbd> se moverá un usuario de teclado en el propio popover. En resumen, es probable que el simple hecho de agregar controles interactivos a una ventana emergente haga que estos controles sean inalcanzables o inutilizables para los usuarios de teclados y usuarios de tecnologías de asistencia, o al menos generar un orden de enfoque general ilógico. En estos casos, considera usar un diálogo modal en su lugar.
 {{< /bootstrap/5-1/callout >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ### Opciones
 
@@ -325,8 +327,6 @@ Ten en cuenta que, por razones de seguridad, las opciones `sanitize`, `sanitizeF
 Las opciones para popovers individuales se pueden especificar alternativamente mediante el uso de atributos de datos, como se explicó anteriormente.
 {{< /bootstrap/5-1/callout >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 #### Uso de la función con `popperConfig`
 
 ```js
@@ -345,7 +345,6 @@ var popover = new bootstrap.Popover(element, {
 {{< bootstrap/5-1/partial "callout-danger-async-methods.md" >}}
 {{< /bootstrap/5-1/callout >}}
 
-
 #### show
 
 Revela el popover de un elemento. **Regresa al punte de la llamada antes de que se haya mostrado realmente el popover** (es decir, antes de que ocurra el evento `shown.bs.popover`). Esto se considera una activación "manual" del popover. Los popovers cuyo título y contenido son ambos de longitud cero nunca se muestran.
@@ -357,6 +356,8 @@ myPopover.show()
 #### hide
 
 Oculta el popover de un elemento. **Regresa al punte de la llamada antes de que se haya ocultado realmente el popover** (es decir, antes de que ocurra el evento `hidden.bs.popover`). Esto se considera una activación "manual" del popover.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```js
 myPopover.hide()
@@ -405,6 +406,8 @@ myPopover.setContent({
 })
 ```
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/callout info >}}
 El método `setContent` acepta un argumento `object`, donde cada clave de propiedad es un selector de `string` válido dentro del popover template, y cada valor de propiedad relacionado puede ser `string` | `element` | `function` | `null`
 {{< /bootstrap/5-1/callout >}}
@@ -442,8 +445,6 @@ Método *estático* que te permite obtener la instancia emergente asociada con u
 var exampleTriggerEl = document.getElementById('example')
 var popover = bootstrap.Popover.getOrCreateInstance(exampleTriggerEl) // Devuelve una instancia del popover de Bootstrap
 ```
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Eventos
 

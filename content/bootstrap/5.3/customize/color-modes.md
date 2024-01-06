@@ -9,10 +9,10 @@ description: Bootstrap ahora admite modos de color o temas a partir de la versi�
 
 Bootstrap ahora admite modos de color o temas a partir de la versión 5.3.0. Explora nuestro modo de color claro predeterminado y el nuevo modo oscuro, o crea el tuyo propio usando nuestros estilos como plantilla.
 
+{{< content-ads/top-banner >}}
+
 <br />
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.3.0</span>
-
-{{< content-ads/top-banner >}}
 
 {{< callout type="info" emoji="" >}}
 **¡Pruébalo tú mismo!** Descarga el código fuente y la demostración funcional para usar Bootstrap con Stylelint y los modos de color del repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/color-modes). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/color-modes?file=index).
@@ -82,6 +82,8 @@ Cómo funciona {#how-it-works}
   }
   ```
     
+{{< content-ads/middle-banner-1 >}}
+
 * Utilizamos un `_variables-dark.scss` personalizado para potenciar esas sobrescrituras de variables CSS globales compartidas para el modo oscuro. Este archivo no es necesario para tus propios modos de color personalizados, pero sí para nuestro modo oscuro por dos razones. En primer lugar, es mejor tener un único lugar para restablecer los colores globales. En segundo lugar, algunas variables de Sass tuvieron que ser anuladas para imágenes de fondo incrustadas en nuestro CSS para acordeones, componentes de formulario y más.
     
 
@@ -119,6 +121,8 @@ Nuestra nueva opción de modo oscuro está disponible para todos los usuarios de
 Utilizamos un mixin Sass personalizado, `color-mode()`, para ayudarte a controlar _cómo_ se aplican los modos de color. De forma predeterminada, utilizamos un enfoque de atributo `data`, lo que te permite crear experiencias más fáciles de usar donde tus visitantes pueden elegir tener un modo oscuro automático o controlar sus preferencias (como en nuestra propia documentación aquí). Esta también es una forma fácil y escalable de agregar diferentes temas y más modos de color personalizados más allá de claro y oscuro.
 
 En caso de que quieras usar media queries y solo hacer que los modos de color sean automáticos, puedes cambiar el tipo predeterminado del mixin a través de la variable Sass. Considera el siguiente fragmento y su salida CSS compilada.
+
+{{< content-ads/middle-banner-2 >}}
 
 ```scss {filename="SCSS"}
 $color-mode-type: data;
@@ -198,6 +202,8 @@ Por ejemplo, puedes crear un “tema blue” con el selector `data-bs-theme="blu
   }
 }
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/customize/color-modes/custom-color-modes.html" >}}
 ```html {filename="HTML"}
@@ -353,6 +359,8 @@ Personalización del CSS {#css}
 
 ### Variables Sass del componente {#variables}
 
+{{< content-ads/middle-banner-4 >}}
+
 Docenas de variables CSS de nivel raíz se repiten como sobrescrituras para el modo oscuro. Estos tienen como ámbito el selector de modo de color, que por defecto es `data-bs-theme` pero [se puede configurar](#building-with-sass) para usar un `prefers-color-scheme` media query. Utiliza estas variables como guía para generar tus propios modos de color nuevos.
 
 [scss/_root.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_root.scss)
@@ -458,7 +466,6 @@ $code-color-dark:                   tint-color($code-color, 40%);
 $mark-color-dark:                   $body-color-dark;
 $mark-bg-dark:                      $yellow-800;
 
-
 //
 // Forms
 //
@@ -473,7 +480,6 @@ $form-valid-color-dark:             $green-300;
 $form-valid-border-color-dark:      $green-300;
 $form-invalid-color-dark:           $red-300;
 $form-invalid-border-color-dark:    $red-300;
-
 
 //
 // Accordion

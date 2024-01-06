@@ -100,6 +100,8 @@ Agrega `.list-group-flush` para eliminar algunos bordes y esquinas redondeadas p
 </ul>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Numerado
 
 Agrega la clase modificadora `.list-group-numbered` (y, opcionalmente, usa un elemento `<ol>`) para optar por elementos del grupo de listas numeradas. Los números se generan a través de CSS (a diferencia del estilo de navegador predeterminado para `<ol>`) para una mejor ubicación dentro de los elementos del grupo de listas y para permitir una mejor personalización.
@@ -160,8 +162,6 @@ Agrega `.list-group-horizontal` para cambiar el diseño de los elementos del gru
 {{< /list-group.inline >}}
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Clases contextuales
 
 Utiliza clases contextuales para aplicar estilo a los elementos de la lista con un color de fondo y de texto.
@@ -197,6 +197,8 @@ Las clases contextuales también funcionan con `.list-group-item-action`. Ten en
 ## Con badges (insignias)
 
 Agrega insignias a cualquier elemento del grupo de listas para mostrar recuentos no leídos, actividad y más con la ayuda de algunas [utilidades]({{< bootstrap/5-1/docsref "/utilities/flex" >}}).
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <ul class="list-group">
@@ -322,6 +324,8 @@ Bucle que genera las clases modificadoras con el mixin `list-group-item-variant(
 
 {{< bootstrap/5-1/scss-docs name="list-group-modifiers" file="scss/_list-group.scss" >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Comportamiento de JavaScript
 
 Usa el complemento JavaScript, inclúyelo individualmente o a través del archivo `bootstrap.js` compilado, para ampliar nuestro grupo de listas y crear paneles con pestañas de contenido local.
@@ -400,8 +404,6 @@ Puedes activar la navegación de un grupo de listas sin escribir JavaScript simp
 </div>
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ### A través de JavaScript
 
 Habilita el elemento de la lista con pestañas a través de JavaScript (cada elemento de la lista debe activarse individualmente):
@@ -446,6 +448,8 @@ Para hacer que el panel de pestañas se desvanezca, agrega `.fade` a cada `.tab-
 #### constructor
 
 Activa un elemento de lista y un contenedor de contenido. La pestaña debe tener un `data-bs-target` o un `href` dirigido a un nodo contenedor en el DOM.
+
+{{< content-ads/middle-banner-4 >}}
 
 ```html
 <div class="list-group" id="myList" role="tablist">
@@ -502,8 +506,6 @@ Método *estático* que te permite obtener la instancia de pestaña asociada con
 var triggerEl = document.querySelector('#trigger')
 var tab = bootstrap.Tab.getOrCreateInstance(triggerEl) // Devuelve una instancia de pestaña Bootstrap
 ```
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Eventos
 

@@ -40,6 +40,8 @@ Usamos [Autoprefixer](https://github.com/postcss/autoprefixer) para manejar la c
 
 En términos generales, Bootstrap admite las últimas versiones de los navegadores predeterminados de cada plataforma principal. Ten en cuenta que los navegadores proxy (como Opera Mini, el modo Turbo de Opera Mobile, UC Browser Mini, Amazon Silk) no son compatibles.
 
+{{< content-ads/middle-banner-1 >}}
+
 |             | Chrome     | Firefox    | Safari     | Navegador Android y WebView |
 | ----------- | ---------- | ---------- | ---------- | --------------------------- |
 | **Android** | Compatible | Compatible | -          | v6.0+                       |
@@ -62,6 +64,8 @@ Extraoficialmente, Bootstrap debería verse y comportarse bastante bien en Chrom
 
 Internet Explorer no es compatible. **Si necesitas compatibilidad con Internet Explorer, utiliza Bootstrap v4.**
 
+{{< content-ads/middle-banner-2 >}}
+
 ## Modales y desplegables en el móvil {#modals-and-dropdowns-on-mobile}
 
 ### Desbordamiento y desplazamiento {#overflow-and-scrolling}
@@ -77,6 +81,8 @@ A partir de iOS 9.2, mientras un modal está abierto, si el toque inicial de un 
 El elemento `.dropdown-backdrop` no se usa en iOS en la navegación debido a la complejidad de la indexación z (z-index). Por lo tanto, para cerrar los menús desplegables en las barras de navegación, debes hacer clic directamente en el elemento desplegable (o [cualquier otro elemento que activará un evento de clic en iOS](https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event#Safari_Mobile)).
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 ## Zoom del navegador {#browser-zooming}
 

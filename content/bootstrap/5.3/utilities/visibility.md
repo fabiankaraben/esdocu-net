@@ -25,6 +25,8 @@ Aplica `.visible` o `.invisible` según sea necesario.
 <div class="invisible">...</div>
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 ```css {filename="CSS"}
 // Class
 .visible {
@@ -41,6 +43,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
+
+{{< content-ads/middle-banner-2 >}}
 
 Las utilidades de visibilidad se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 

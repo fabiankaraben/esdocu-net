@@ -23,6 +23,8 @@ Crea controles `<input type="range">` personalizados con `.form-range`. La pista
 
 ## Deshabilitado
 
+{{< content-ads/middle-banner-1 >}}
+
 Agrega el atributo booleano `disabled` en un input para darle una apariencia atenuada y eliminar los eventos de puntero.
 
 {{< bootstrap/5-1/example >}}
@@ -33,6 +35,8 @@ Agrega el atributo booleano `disabled` en un input para darle una apariencia ate
 ## Min y max
 
 Las entradas de rango tienen valores implícitos para `min` y `max`—`0` y `100`, respectivamente. Puedes especificar nuevos valores utilizando los atributos `min` y `max`.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <label for="customRange2" class="form-label">Ejemplo de rango</label>
@@ -48,7 +52,7 @@ De forma predeterminada, las entradas de rango se "ajustan" a valores enteros. P
 <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
+{{< content-ads/middle-banner-3 >}}
 
 ## Sass
 

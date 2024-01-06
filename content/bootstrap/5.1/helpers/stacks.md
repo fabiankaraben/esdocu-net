@@ -22,6 +22,8 @@ Las pilas ofrecen un atajo para aplicar una serie de propiedades de flexbox para
 
 Usa `.vstack` para crear diseños verticales. Los elementos apilados ocupan el ancho completo de forma predeterminada. Usa las utilidades `.gap-*` para agregar espacio entre elementos.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="vstack gap-3">
   <div class="bg-light border">Primer elemento</div>
@@ -29,8 +31,6 @@ Usa `.vstack` para crear diseños verticales. Los elementos apilados ocupan el a
   <div class="bg-light border">Tercer elemento</div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Horizontal
 
@@ -43,6 +43,8 @@ Usa `.hstack` para diseños horizontales. Los elementos apilados están centrado
   <div class="bg-light border">Tercer elemento</div>
 </div>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 Usando utilidades de margen horizontal como `.ms-auto` como espaciadores:
 
@@ -65,6 +67,8 @@ Y con [reglas verticales]({{< bootstrap/5-1/docsref "/helpers/vertical-rule" >}}
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Ejemplos
 
 Usa `.vstack` para apilar botones y otros elementos:
@@ -78,6 +82,8 @@ Usa `.vstack` para apilar botones y otros elementos:
 
 Crea un formulario en línea con `.hstack`:
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="hstack gap-3">
   <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
@@ -86,8 +92,6 @@ Crea un formulario en línea con `.hstack`:
   <button type="button" class="btn btn-outline-danger">Reiniciar</button>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Sass
 

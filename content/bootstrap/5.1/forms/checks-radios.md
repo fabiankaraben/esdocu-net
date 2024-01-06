@@ -50,6 +50,8 @@ Las casillas de verificación pueden utilizar la pseudoclase `:indeterminate` cu
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ### Deshabilitado
 
 Agrega el atributo `disabled` y las `<label>`s asociadas se diseñarán automáticamente para que coincidan con un color más claro para ayudar a indicar el estado de la entrada.
@@ -105,9 +107,9 @@ Agrega el atributo `disabled` y las `<label>`s asociadas se diseñarán automát
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Switches
+
+{{< content-ads/middle-banner-2 >}}
 
 Un switch tiene el marcado de una casilla de verificación personalizada, pero usa la clase `.form-switch` para representar un interruptor de palanca. Considera usar `role="switch"` para transmitir con mayor precisión la naturaleza del control a las tecnologías de asistencia que respaldan este rol. En las tecnologías de asistencia más antiguas, simplemente se anunciará como una casilla de verificación normal como alternativa. Los switches también admiten el atributo `disabled`.
 
@@ -170,8 +172,6 @@ De forma predeterminada, cualquier número de casillas de verificación y radios
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## En línea
 
 Agrupa casillas de verificación o radios en la misma fila horizontal agregando `.form-check-inline` a cualquier `.form-check`.
@@ -190,6 +190,8 @@ Agrupa casillas de verificación o radios en la misma fila horizontal agregando 
   <label class="form-check-label" for="inlineCheckbox3">3 (deshabilitado)</label>
 </div>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="form-check form-check-inline">
@@ -236,6 +238,8 @@ Crea casillas de verificación y botones de radio similares a botones usando est
 <label class="btn btn-primary" for="btn-check-2">Marcado</label>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example >}}
 <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off" disabled>
 <label class="btn btn-primary" for="btn-check-3">Deshabilitado</label>
@@ -278,8 +282,6 @@ Se admiten diferentes variantes de `.btn`, como los diversos estilos descritos.
 <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
 <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Sass
 

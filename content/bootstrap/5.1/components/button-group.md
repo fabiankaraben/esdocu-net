@@ -68,6 +68,8 @@ Estas clases también se pueden agregar a grupos de enlaces, como alternativa a 
 
 Combina botones similares a casillas de verificación y botones radio [botones toggle]({{< bootstrap/5-1/docsref "/forms/checks-radios" >}}) en un grupo de botones de apariencia perfecta.
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
@@ -119,6 +121,8 @@ Combina conjuntos de grupos de botones en barras de herramientas de botones para
 
 Siéntete libre de mezclar grupos de inputs con grupos de botones en tus barras de herramientas. Similar al ejemplo anterior, es probable que necesites algunas utilidades para espaciar las cosas correctamente.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">
@@ -146,8 +150,6 @@ Siéntete libre de mezclar grupos de inputs con grupos de botones en tus barras 
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Dimensionamiento
 
@@ -181,6 +183,8 @@ En lugar de aplicar clases de tamaño de botón a cada botón en un grupo, simpl
 
 ## Anidamiento
 
+{{< content-ads/middle-banner-4 >}}
+
 Coloca un `.btn-group` dentro de otro `.btn-group` cuando desees que los menús desplegables se mezclen con una serie de botones.
 
 {{< bootstrap/5-1/example >}}
@@ -199,8 +203,6 @@ Coloca un `.btn-group` dentro de otro `.btn-group` cuando desees que los menús 
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Variación vertical
 
@@ -261,6 +263,8 @@ Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de hori
     </div>
   </div>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-5 >}}
 
 {{< bootstrap/5-1/example show_markup="false" >}}
   <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">

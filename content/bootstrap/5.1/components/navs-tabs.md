@@ -52,8 +52,6 @@ Las clases se utilizan en todo momento, por lo que tu marcado puede ser súper f
 </nav>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Estilos disponibles
 
 Cambia el estilo del componente `.nav` con modificadores y utilidades. Mezcla y combina según sea necesario, o construye el tuyo propio.
@@ -131,6 +129,8 @@ Como siempre, la navegación vertical también es posible sin `<ul>`s.
   <a class="nav-link disabled">Deshabilitado</a>
 </nav>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-1 >}}
 
 ### Tabs
 
@@ -253,6 +253,8 @@ Si necesitas variaciones de navegación responsive, considera usar una serie de 
 
 Si estás utilizando navs para proporcionar una barra de navegación, asegúrate de agregar `role="navigation"` al contenedor principal más lógico de `<ul>`, o ajusta un elemento `<nav>` alrededor de toda la navegación. No agregues el rol al propio `<ul>`, ya que esto evitaría que las tecnologías de asistencia lo anuncien como una lista real.
 
+{{< content-ads/middle-banner-2 >}}
+
 Ten en cuenta que las barras de navegación, incluso si tienen un estilo visual como pestañas con la clase `.nav-tabs`, **no** deben recibir atributos `role="tablist"`, `role="tab"` o `role="tabpanel"`. Estos solo son apropiados para interfaces con pestañas dinámicas, como se describe en las [Prácticas de creación <abbr title="Iniciativa de accesibilidad web">WAI</abbr> <abbr title="Aplicaciones de Internet enriquecidas accesibles">ARIA</abbr>](https://www.w3.org/TR/wai-aria-practices/#tabpanel). Consulta [Comportamiento de JavaScript](#javascript-behavior) para conocer las interfaces con pestañas dinámicas en esta sección para ver un ejemplo. El atributo `aria-current` no es necesario en las interfaces con pestañas dinámicas ya que nuestro JavaScript maneja el estado seleccionado agregando `aria-selected="true"` en la pestaña activa.
 
 ## Uso de dropdowns
@@ -361,8 +363,6 @@ Agrega menús desplegables con un poco de HTML adicional y el [complemento JavaS
 </ul>
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Sass
 
 ### Variables
@@ -445,6 +445,8 @@ Para ayudar a satisfacer tus necesidades, esto funciona con el marcado basado en
     </div>
   </div>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 ```html
 <nav>
@@ -626,6 +628,8 @@ Para hacer que las pestañas aparezcan gradualmente, agrega `.fade` a cada `.tab
 {{< bootstrap/5-1/partial "callout-danger-async-methods.md" >}}
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 #### constructor
 
 Activa un elemento de pestaña y un contenedor de contenido. La pestaña debe tener un `data-bs-target` o, si usa un enlace, un atributo `href`, apuntando a un nodo contenedor en el DOM.
@@ -693,8 +697,6 @@ Método *estático* que te permite obtener la instancia de pestaña asociada con
 var triggerEl = document.querySelector('#trigger')
 var tab = bootstrap.Tab.getOrCreateInstance(triggerEl) // Devuelve una instancia de pestaña Bootstrap
 ```
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Eventos
 

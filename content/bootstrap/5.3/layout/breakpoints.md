@@ -27,6 +27,8 @@ Puntos de interrupción disponibles {#available-breakpoints}
 
 Bootstrap incluye seis puntos de interrupción predeterminados, a veces denominados _niveles de cuadrícula_, para crear de manera responsive. Estos puntos de interrupción se pueden personalizar si utilizas nuestros archivos fuente Sass.
 
+{{< content-ads/middle-banner-1 >}}
+
 | Punto de interrupción | Clase infix | Dimensiones |
 | --------------------- | ----------- | ----------- |
 | Extra pequeño         | _Ninguno_   | \<576px     |
@@ -57,6 +59,8 @@ Para obtener más información y ejemplos sobre cómo modificar nuestros mapas y
 
 Media queries {#media-queries}
 -------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Dado que Bootstrap está desarrollado para ser mobile-first, usamos un puñado de [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) para crear puntos de interrupción sensibles para nuestros diseños e interfaces. Estos puntos de interrupción se basan principalmente en anchos mínimos del viewport y nos permiten ampliar los elementos a medida que cambia el viewport.
 
@@ -111,6 +115,8 @@ Estos mixins de Sass se traducen en nuestro CSS compilado usando los valores dec
 @media (min-width: 1400px) { ... }
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Max-width {#max-width}
 
 Ocasionalmente usamos media queries que van en la otra dirección (el tamaño de pantalla dado _o menor_):
@@ -159,6 +165,8 @@ Estos mixins toman esos puntos de interrupción declarados, les restan `.02px` y
 
 ### Punto de interrupción único {#single-breakpoint}
 
+{{< content-ads/middle-banner-4 >}}
+
 También existen media queries y mixins para apuntar a un solo segmento de tamaños de pantalla utilizando los anchos de punto de interrupción mínimo y máximo.
 
 ```scss {filename="SCSS"}
@@ -181,6 +189,8 @@ Por ejemplo, `@include media-breakpoint-only(md) { ... }` dará como resultado:
 ### Entre puntos de interrupción {#between-breakpoints}
 
 De manera similar, las media queries pueden abarcar múltiples anchos de puntos de interrupción:
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="SCSS"}
 @include media-breakpoint-between(md, xl) { ... }

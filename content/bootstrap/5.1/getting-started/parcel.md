@@ -23,6 +23,8 @@ Instala [Parcel Bundler](https://en.parceljs.org/getting_started.html).
 Bootstrap depende de [Popper](https://popper.js.org/), que se especifica en la propiedad `peerDependencies`.
 Esto significa que deberás asegurarte de agregarlo a tu `package.json` usando `npm install @popperjs/core`.
 
+{{< content-ads/middle-banner-1 >}}
+
 Cuando todo esté completo, tu proyecto se estructurará de la siguiente manera:
 
 ```text
@@ -39,8 +41,6 @@ project-name/
 └── package.json
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Importación de JavaScript
 
 Importa el [JavaScript de Bootstrap]({{< bootstrap/5-1/docsref "/getting-started/javascript" >}}) en el punto de entrada de su aplicación (generalmente `src/index.js`). Puedes importar todos nuestros plugins en un archivo o por separado si necesitas solo un subconjunto de ellos.
@@ -56,6 +56,8 @@ import { Tooltip as Tooltip, Toast as Toast, Popover as Popover } from 'bootstra
 import Alert as Alert from '../node_modules/bootstrap/js/dist/alert';
 ```
 
+{{< content-ads/middle-banner-2 >}}
+
 ## Importación de CSS
 
 Para utilizar todo el potencial de Bootstrap y personalizarlo según tus necesidades, utiliza los archivos fuente como parte del proceso bundling (agrupación de todos los archivos) de tu proyecto.
@@ -65,6 +67,8 @@ Crea tu propio `scss/custom.scss` para [importar archivos Sass de Bootstrap]({{<
 ## Crear la aplicación
 
 Incluye `src/index.js` antes de la etiqueta de cierre `</body>`.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```html
 <!doctype html>
@@ -92,6 +96,8 @@ Agrega los scripts `dev` y `build` en tu archivo `package.json`.
 ```
 
 ### Ejecuta el script dev
+
+{{< content-ads/middle-banner-4 >}}
 
 Se podrá acceder a tu aplicación en `http://127.0.0.1:1234`.
 

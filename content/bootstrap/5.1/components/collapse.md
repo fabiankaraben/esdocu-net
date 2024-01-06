@@ -46,9 +46,9 @@ Generalmente, recomendamos usar un botón con el atributo `data-bs-target`. Si b
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Horizontal
+
+{{< content-ads/middle-banner-1 >}}
 
 El complemento de Collapse también admite el colapso horizontal. Agrega la clase modificadora `.collapse-horizontal` para cambiar el `width` en lugar de `height` y establece un `width` en el elemento secundario inmediato. Siéntete libre de escribir tu propio Sass personalizado, usar estilos en línea o usar nuestras [utilidades de ancho]({{< bootstrap/5-1/docsref "/utilities/sizing" >}}).
 
@@ -107,6 +107,8 @@ Asegúrate de agregar `aria-expanded` al elemento de control. Este atributo tran
 
 Si tu elemento de control apunta a un solo elemento contraíble, es decir, el atributo `data-bs-target` apunta a un selector `id`, debes agregar el atributo `aria-controls` al elemento de control, que contiene el `id` del elemento plegable. Los lectores de pantalla modernos y las tecnologías de asistencia similares hacen uso de este atributo para proporcionar a los usuarios accesos directos adicionales para navegar directamente al propio elemento contraíble.
 
+{{< content-ads/middle-banner-2 >}}
+
 Ten en cuenta que la implementación actual de Bootstrap no cubre las diversas interacciones de teclado *opcionales* descritas en el patrón de acordeón [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/#accordion), deberás incluirlos tú mismo con JavaScript personalizado.
 
 ## Sass
@@ -124,6 +126,8 @@ Las clases de transición de Collapse se pueden encontrar en `scss/_transitions.
 ## Uso
 
 El complemento Collapse utiliza algunas clases para manejar el trabajo pesado:
+
+{{< content-ads/middle-banner-3 >}}
 
 - `.collapse` oculta el contenido
 - `.collapse.show` muestra el contenido
@@ -148,9 +152,9 @@ var collapseList = collapseElementList.map(function (collapseEl) {
 })
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Opciones
+
+{{< content-ads/middle-banner-4 >}}
 
 Las opciones se pueden pasar a través de atributos de datos o JavaScript. Para los atributos de datos, agrega el nombre de la opción a `data-bs-`, como en `data-bs-parent=""`.
 
@@ -240,9 +244,9 @@ var bsCollapse = new bootstrap.Collapse(myCollapse, {
   </tbody>
 </table>
 
-{{< content-ads/middle-banner-3 >}}
-
 ### Eventos
+
+{{< content-ads/middle-banner-5 >}}
 
 La clase Collapse de Bootstrap expone algunos eventos para conectarse a la funcionalidad de Collapse.
 

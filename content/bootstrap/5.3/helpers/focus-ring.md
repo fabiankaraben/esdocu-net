@@ -30,6 +30,8 @@ Haz clic directamente en el siguiente enlace para ver el anillo de enfoque en ac
 Personalizar {#customize}
 --------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Modifica el estilo de un anillo de enfoque con nuestras variables CSS, variables Sass, utilidades o estilos personalizados.
 
 ### Variables CSS {#css-variables}
@@ -45,6 +47,8 @@ Modifica las variables CSS `--bs-focus-ring-*` según sea necesario para cambiar
 {{< /demo-iframe >}}
 
 `.focus-ring` establece estilos a través de variables CSS globales que se pueden sobrescribir en cualquier elemento principal, como se muestra arriba. Estas variables se generan a partir de sus contrapartes variables de Sass.
+
+{{< content-ads/middle-banner-2 >}}
 
 [scss/_root.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_root.scss)
 
@@ -66,6 +70,8 @@ Por defecto, no hay `--bs-focus-ring-x`, `--bs-focus-ring-y`, o `--bs-focus-ring
 
 ### Variables Sass generales relacionadas {#sass-variables}
 
+{{< content-ads/middle-banner-3 >}}
+
 Personaliza las variables Sass del anillo de enfoque para modificar todo el uso de los estilos del anillo de enfoque en tu proyecto impulsado por Bootstrap.
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
@@ -81,6 +87,8 @@ $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color
 ### API de utilidades de Sass {#sass-utilities-api}
 
 Además de `.focus-ring`, tenemos varias utilidades `.focus-ring-*` para modificar los valores predeterminados de la clase auxiliar. Modifica el color con cualquiera de nuestros [colores de tema](/bootstrap/5.3/customize/color/#theme-colors). Ten en cuenta que es posible que las variantes clara y oscura no sean visibles en todos los colores de fondo debido a la compatibilidad con el modo de color actual.
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/focus-ring/sass-utilities-api.html" >}}
 ```html {filename="HTML"}

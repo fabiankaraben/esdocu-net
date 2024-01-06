@@ -53,6 +53,8 @@ Se puede crear texto de formulario a nivel de bloque o a nivel de línea usando 
 El texto del formulario debe asociarse explícitamente con el control de formulario con el que se relaciona utilizando el atributo `aria-describedby`. Esto garantizará que las tecnologías de asistencia, como los lectores de pantalla, anuncien el texto de este formulario cuando el usuario se concentre o entre en control.
 {{< /callout >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 El texto del formulario debajo de las entradas se puede diseñar con `.form-text`. Si se utilizará un elemento a nivel de bloque, se agrega un margen superior para facilitar el espaciado de las entradas anteriores.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/form-control/form-text-1.html" >}}
@@ -102,6 +104,8 @@ Solo lectura {#readonly}
 -------------------------
 
 Agrega el atributo booleano `readonly` en una entrada para evitar la modificación del valor de la entrada. Las entradas `readonly` aún se pueden enfocar y seleccionar, mientras que las entradas `disabled` no.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/form-control/readonly.html" >}}
 ```html {filename="HTML"}
@@ -182,6 +186,8 @@ Entrada de archivo {#file-input}
 Color {#color}
 ---------------
 
+{{< content-ads/middle-banner-3 >}}
+
 Establece el `type="color"` y agrega `.form-control-color` al `<input>`. Usamos la clase modificadora para establecer `height` fijo y sobrescribir algunas inconsistencias entre navegadores.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/form-control/color.html" >}}
@@ -223,6 +229,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-4 >}}
 
 `$input-*` se comparten en la mayoría de nuestros controles de formulario (y no en los botones).
 
@@ -305,6 +313,8 @@ $form-text-font-style:                  null;
 $form-text-font-weight:                 null;
 $form-text-color:                       var(--#{$prefix}secondary-color);
 ```
+
+{{< content-ads/middle-banner-5 >}}
 
 `$form-file-*` son para entrada de archivos.
 

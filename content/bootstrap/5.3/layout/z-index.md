@@ -20,6 +20,8 @@ No fomentamos la personalización de estos valores individuales; si cambias uno,
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
 ```scss {filename="scss/_variables.scss"}

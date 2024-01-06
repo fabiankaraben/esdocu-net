@@ -31,6 +31,8 @@ Organiza elementos fácilmente con las utilidades de posicionamiento de bordes. 
 
 Donde _property_ es una de:
 
+{{< content-ads/middle-banner-1 >}}
+
 * `top` \- para la posición vertical `top`.
 * `start` \- para la posición horizontal `left` (en LTR).
 * `bottom` \- para la posición vertical `bottom`.
@@ -59,6 +61,8 @@ Donde _posición_ es una de:
 
 Centrar elementos {#center-elements}
 -------------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Además, también puedes centrar los elementos con la clase de utilidad de transformación `.translate-middle`.
 
@@ -100,6 +104,8 @@ Al agregar las clases `.translate-middle-x` o `.translate-middle-y`, los element
 
 Ejemplos {#examples}
 ---------------------
+
+{{< content-ads/middle-banner-3 >}}
 
 Aquí tienes algunos ejemplos de la vida real de estas clases:
 
@@ -154,6 +160,8 @@ Puedes usar estas clases con componentes existentes para crear otros nuevos. Rec
 Personalización del CSS {#css}
 -----------
 
+{{< content-ads/middle-banner-4 >}}
+
 ### Mapas de Sass {#sass-maps}
 
 Los valores de utilidad de posición predeterminados se declaran en un mapa Sass y luego se usan para generar nuestras utilidades.
@@ -171,6 +179,8 @@ $position-values: (
 ### API de utilidades de Sass {#sass-utilities-api}
 
 Las utilidades de posición se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
+
+{{< content-ads/middle-banner-5 >}}
 
 [scss/_utilities.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_utilities.scss)
 

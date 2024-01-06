@@ -83,6 +83,8 @@ El uso de `aria-hidden="true"` solo indica que el elemento debe estar oculto par
 
 ### Ancho {#width}
 
+{{< content-ads/middle-banner-2 >}}
+
 Puedes cambiar el `width` mediante clases de columnas de cuadrícula, utilidades de ancho o estilos en línea.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/placeholders/width.html" >}}
@@ -98,6 +100,8 @@ Puedes cambiar el `width` mediante clases de columnas de cuadrícula, utilidades
 ### Color {#color}
 
 De forma predeterminada, el `placeholder` usa `currentColor`. Esto se puede sobrescribir con un color personalizado o una clase de utilidad.
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/placeholders/color.html" >}}
 ```html {filename="HTML"}
@@ -115,8 +119,6 @@ De forma predeterminada, el `placeholder` usa `currentColor`. Esto se puede sobr
 
 ### Tamaños {#sizing}
 
-{{< content-ads/middle-banner-2 >}}
-
 El tamaño de los `.placeholder`se basa en el estilo tipográfico del elemento principal. Personalízalos con modificadores de tamaño: `.placeholder-lg`, `.placeholder-sm` o `.placeholder-xs`.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/placeholders/sizing.html" >}}
@@ -129,6 +131,8 @@ El tamaño de los `.placeholder`se basa en el estilo tipográfico del elemento p
 {{< /demo-iframe >}}
 
 ### Animación {#animation}
+
+{{< content-ads/middle-banner-4 >}}
 
 Anima marcadores de posición con `.placeholder-glow` o `.placeholder-wave` para transmitir mejor la percepción de que algo está _activamente_ cargado.
 
@@ -150,6 +154,8 @@ Personalización del CSS del componente {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-5 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

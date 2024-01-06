@@ -26,6 +26,8 @@ Proporciona una opción para descartar o cerrar un componente con `.btn-close`. 
 Estado deshabilitado del componente Botón cerrar {#disabled-state}
 ---------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Los botones de cierre deshabilitados cambian su `opacity`. También hemos aplicado `pointer-events: none` y `user-select: none` para evitar que se activen los estados assets y de desplazamiento.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/close-button/disabled-state.html" >}}
@@ -39,6 +41,8 @@ Variante oscura del componente Botón cerrar {#dark-variant}
 
 <br/>
 <span class="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< callout type="warning" emoji="" >}}
 **¡Atención!** A partir de la versión 5.3.0, la clase `.btn-close-white` está obsoleta. En su lugar, utiliza `data-bs-theme="dark"` para cambiar el modo de color del botón de cerrar.
@@ -58,16 +62,18 @@ Agrega `data-bs-theme="dark"` al `.btn-close`, o a su elemento padre, para inver
 Personalización del CSS del componente {#css}
 -----------
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Variables Sass del componente {#variables}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.3.0</span>
 
-{{< content-ads/middle-banner-1 >}}
-
 Como parte del enfoque de variables CSS en evolución de Bootstrap, el botón de cierre ahora usa variables CSS locales en `.btn-close` para una personalización mejorada en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
 
 [scss/_close.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_close.scss)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="scss/_close.scss"}
 --#{$prefix}btn-close-color: #{$btn-close-color};
@@ -85,6 +91,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, el botón de
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $btn-close-width:            1em;

@@ -35,9 +35,9 @@ Establece alturas usando clases como `.form-control-lg` y `.form-control-sm`.
 <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Deshabilitado
+
+{{< content-ads/middle-banner-1 >}}
 
 Agrega el atributo booleano `disabled` en un input para darle una apariencia atenuada y eliminar los eventos de puntero.
 
@@ -55,6 +55,8 @@ Agrega el atributo booleano `readonly` en un input para evitar la modificación 
 {{< /bootstrap/5-1/example >}}
 
 ## Solo lectura como texto plano
+
+{{< content-ads/middle-banner-2 >}}
 
 Si deseas tener elementos `<input readonly>` en tu formulario con estilo de texto sin formato, usa la clase `.form-control-plaintext` para eliminar el estilo de campo de formulario predeterminado y conservar el margen y padding correctos.
 
@@ -89,8 +91,6 @@ Si deseas tener elementos `<input readonly>` en tu formulario con estilo de text
 </form>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## File input
 
 {{< bootstrap/5-1/example >}}
@@ -118,6 +118,8 @@ Si deseas tener elementos `<input readonly>` en tu formulario con estilo de text
 
 ## Color
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example >}}
 <label for="exampleColorInput" class="form-label">Selector de color</label>
 <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
@@ -143,7 +145,7 @@ Obtén más información sobre [soporte para elementos datalist](https://caniuse
 
 ## Sass
 
-{{< content-ads/middle-banner-3 >}}
+{{< content-ads/middle-banner-4 >}}
 
 ### Variables
 

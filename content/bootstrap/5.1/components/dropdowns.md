@@ -279,8 +279,6 @@ Usamos esta clase adicional para reducir el `padding` horizontal a cada lado del
 </div>
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Dimensionamiento
 
 Los menús desplegables de botones funcionan con botones de todos los tamaños, incluidos los botones desplegables predeterminados y divididos.
@@ -313,6 +311,8 @@ Los menús desplegables de botones funcionan con botones de todos los tamaños, 
   </div>
   <br><br><br><br><br><br>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-1 >}}
 
 ```html
 <!-- Large button groups (default and split) -->
@@ -672,6 +672,8 @@ Puedes usar los elementos `<a>` o `<button>` como elementos desplegables.
 </div>
 ```
 
+{{< content-ads/middle-banner-2 >}}
+
 También puedes crear elementos desplegables no interactivos con `.dropdown-item-text`. Siéntete libre de diseñar más con CSS personalizado o utilidades de texto.
 
 {{< bootstrap/5-1/example >}}
@@ -972,6 +974,8 @@ Tomando la mayoría de las opciones que se muestran arriba, aquí hay una peque�
 </div>
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Contenido del menú
 
 ### Encabezados
@@ -985,8 +989,6 @@ Agrega un encabezado para etiquetar secciones de acciones en cualquier menú des
   <li><a class="dropdown-item" href="#">Otra acción</a></li>
 </ul>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ### Divisores
 
@@ -1238,6 +1240,8 @@ Variables para todos los menús desplegables:
 
 Variables para el [dark dropdown](#dark-dropdowns):
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/scss-docs name="dropdown-dark-variables" file="scss/_variables.scss" >}}
 
 Variables para los símbolos de despliegue (flecha) basados en CSS que indican la interactividad de un menú desplegable:
@@ -1429,8 +1433,6 @@ var dropdown = new bootstrap.Dropdown(element, {
     </tr>
   </tbody>
 </table>
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Eventos
 

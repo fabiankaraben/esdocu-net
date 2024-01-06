@@ -28,6 +28,8 @@ Las clases de posicionamiento rápido están disponibles, aunque no son responsi
 
 Organiza elementos fácilmente con las utilidades de posicionamiento de bordes. El formato es `{property}-{position}`.
 
+{{< content-ads/middle-banner-1 >}}
+
 Donde *property* es uno de:
 
 - `top` - para la posición vertical `top`
@@ -43,6 +45,8 @@ Donde *position* es uno de:
 
 (Puedes agregar más valores de posición agregando entradas a la variable de mapa Sass `$position-values`).
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/example class="bd-example-position-utils" >}}
 <div class="position-relative">
   <div class="position-absolute top-0 start-0"></div>
@@ -53,8 +57,6 @@ Donde *position* es uno de:
   <div class="position-absolute bottom-0 end-0"></div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Centrar elementos
 
@@ -75,6 +77,8 @@ Esta clase aplica las transformaciones `translateX(-50%)` y `translateY(-50%)` a
   <div class="position-absolute top-100 start-100 translate-middle"></div>
 </div>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 Al agregar las clases `.translate-middle-x` o `.translate-middle-y`, los elementos se pueden colocar solo en dirección horizontal o vertical.
 
@@ -110,6 +114,8 @@ Aquí hay algunos ejemplos de la vida real de estas clases:
 </button>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 Puedes usar estas clases con componentes existentes para crear otros nuevos. Recuerda que puedes extender su funcionalidad agregando entradas a la variable `$position-values`.
 
 {{< bootstrap/5-1/example class="bd-example-position-examples" >}}
@@ -129,9 +135,9 @@ Puedes usar estas clases con componentes existentes para crear otros nuevos. Rec
 
 Los valores de utilidad de posición predeterminados se declaran en un mapa Sass y luego se utilizan para generar nuestras utilidades.
 
-{{< bootstrap/5-1/scss-docs name="position-map" file="scss/_variables.scss" >}}
+{{< content-ads/middle-banner-5 >}}
 
-{{< content-ads/middle-banner-2 >}}
+{{< bootstrap/5-1/scss-docs name="position-map" file="scss/_variables.scss" >}}
 
 ### API de utilidades
 

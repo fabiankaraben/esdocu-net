@@ -33,6 +33,8 @@ Asegúrate de usar un atributo `type` apropiado en todas las entradas (por ejemp
 
 Aquí tienes un ejemplo rápido para demostrar los estilos de formulario de Bootstrap. Continúa leyendo para obtener documentación sobre las clases requeridas, el diseño de formularios y más.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/overview/overview.html" >}}
 ```html {filename="HTML"}
     <form>
@@ -64,6 +66,8 @@ Agrega el atributo booleano `disabled` en una entrada para evitar interacciones 
 ```
 
 Agrega el atributo `disabled` a un `<fieldset>` para deshabilitar todos los controles que contiene. Los navegadores tratan todos los controles de formulario nativos (elementos`<input>`, `<select>` y `<button>`) dentro de un `<fieldset disabled>` como deshabilitado, lo que impide la interacción con el teclado y el mouse.
+
+{{< content-ads/middle-banner-2 >}}
 
 Sin embargo, si tu formulario también incluye elementos personalizados tipo botón como `<a class="btn btn-*">...</a>`, a estos solo se les dará un estilo de `pointer-events: none`, lo que significa que aún se pueden enfocar y operar usando el teclado. En este caso, debes modificar manualmente estos controles agregando `tabindex="-1"` para evitar que reciban el foco y `aria-disabled="disabled"` para señalar su estado a las tecnologías de asistencia.
 
@@ -103,6 +107,8 @@ Asegúrate de que todos los controles de formulario tengan un nombre accesible a
 
 Para situaciones en las que no es posible incluir un `<label>` visible o contenido de texto apropiado, existen formas alternativas de proporcionar un nombre accesible, como como:
 
+{{< content-ads/middle-banner-3 >}}
+
 * `<label>` elementos ocultos usando `.visually-hidden` (clase)
 * Apuntar a un elemento existente que puede actuar como etiqueta usando `aria-labelledby`
 * Proporcionar un `title` (atributo)
@@ -116,6 +122,8 @@ Personalización del CSS {#css}
 -----------
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-4 >}}
 
 Muchas variables de formulario se configuran a nivel general para ser reutilizadas y ampliadas por componentes de formulario individuales. Los verás con mayor frecuencia como variables `$input-btn-*` y `$input-*`.
 

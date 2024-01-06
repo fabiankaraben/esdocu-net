@@ -20,9 +20,9 @@ Utiliza nuestras [utilidades de visualización]({{< bootstrap/5-1/docsref "/util
 
 Bootstrap está construido con flexbox, pero no se ha cambiado la propiedad `display` de todos los elementos a `display: flex`, ya que esto agregaría muchas sobrescrituras innecesarias y cambiaría inesperadamente los comportamientos clave del navegador. La mayoría de [nuestros componentes]({{< bootstrap/5-1/docsref "/components/alerts" >}}) están construidos con flexbox habilitado.
 
-Si necesitas agregar `display: flex` a un elemento, hazlo con `.d-flex` o una de las variantes responsive (por ejemplo, `.d-sm-flex`). Necesitarás esta clase o el valor `display` para permitir el uso de nuestras [utilidades flexbox]({{< bootstrap/5-1/docsref "/utilities/flex" >}}) adicionales para ajustar el tamaño, la alineación, el espaciado y más.
-
 {{< content-ads/middle-banner-1 >}}
+
+Si necesitas agregar `display: flex` a un elemento, hazlo con `.d-flex` o una de las variantes responsive (por ejemplo, `.d-sm-flex`). Necesitarás esta clase o el valor `display` para permitir el uso de nuestras [utilidades flexbox]({{< bootstrap/5-1/docsref "/utilities/flex" >}}) adicionales para ajustar el tamaño, la alineación, el espaciado y más.
 
 ## Margin y padding
 

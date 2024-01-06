@@ -22,6 +22,8 @@ Opciones de Flexbox {#flexbox-options}
 
 Bootstrap está construido con flexbox, pero no se ha cambiado el `display` de cada elemento a `display: flex` ya que esto agregaría muchos elementos innecesarios y sobrescribiría inesperadamente comportamientos clave del navegador. La mayoría de [nuestros componentes](/bootstrap/5.3/components/alerts) están construidos con flexbox habilitado.
 
+{{< content-ads/middle-banner-1 >}}
+
 Si necesitas agregar `display: flex` a un elemento, hazlo con `.d-flex` o uno de las variantes responsive (por ejemplo `.d-sm-flex`). Necesitarás esta clase o valor `display` para permitir el uso de nuestras [utilidades flexbox](/bootstrap/5.3/utilities/flex) adicionales para dimensionar, alinear, espaciar y más.
 
 {{< bootstrap/content-suggestion >}}
@@ -30,6 +32,8 @@ Margen y relleno {#margin-and-padding}
 ---------------------------------------
 
 Usa las utilidades `margin` y `padding` [de espaciado](/bootstrap/5.3/utilities/spacing) para controlar cómo se espacian y dimensionan los elementos y componentes. Bootstrap incluye una escala de seis niveles para utilidades de espaciado, basada en un valor predeterminado de `1rem` para la variable `$spacer`. Elige valores para todas los viewports (p. ej., `.me-3` para `margin-right: 1rem` en LTR) o elige variantes responsive para apuntar a viewports específicas (p. ej., `.me-md-3` para `margin-right: 1rem` —en LTR— comenzando en el punto de interrupción `md`).
+
+{{< content-ads/middle-banner-2 >}}
 
 Alterna `visibility` {#toggle-visibility}
 ------------------------------------------

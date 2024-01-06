@@ -25,6 +25,8 @@ Bootstrap viene con tres contenedores diferentes:
 
 La siguiente tabla ilustra cómo se compara el `max-width` de cada contenedor con el `.container` y el `.container-fluid` original en cada punto de interrupción.
 
+{{< content-ads/middle-banner-1 >}}
+
 Velos en acción y compáralos en nuestro [ejemplo de cuadrícula](https://getbootstrap.com/docs/5.3/examples/grid/#containers).
 
 |                    | Extra small<br />\<576px | Small<br />≥576px | Medium<br />≥768px | Large<br />≥992px | X-Large<br />≥1200px | XX-Large<br />≥1400px |
@@ -48,6 +50,8 @@ Nuestra clase `.container` predeterminada es un contenedor responsive de ancho f
 </div>
 ```
 
+{{< content-ads/middle-banner-2 >}}
+
 Contenedores responsive {#responsive-containers}
 -------------------------------------------------
 
@@ -66,6 +70,8 @@ Contenedores fluid {#fluid-containers}
 
 Usa `.container-fluid` para un contenedor de ancho completo, que abarque todo el ancho del viewport.
 
+{{< content-ads/middle-banner-3 >}}
+
 ```html {filename="HTML"}
 <div class="container-fluid">
   ...
@@ -80,6 +86,8 @@ Personalización del CSS {#css}
 Como se muestra arriba, Bootstrap genera una serie de clases contenedoras predefinidas para ayudarte a crear los diseños que deseas. Puedes personalizar estas clases de contenedores predefinidas modificando el mapa Sass (que se encuentra en `_variables.scss`) que las impulsa:
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $container-max-widths: (
@@ -98,6 +106,8 @@ Para obtener más información y ejemplos sobre cómo modificar nuestros mapas y
 ### Sass mixins {#sass-mixins}
 
 Además de personalizar el Sass, también puedes crear tus propios contenedores con nuestro mixin Sass.
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="SCSS"}
 // Source mixin

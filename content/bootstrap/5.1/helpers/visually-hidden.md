@@ -21,8 +21,6 @@ Oculta visualmente un elemento y, al mismo tiempo, permite que esté expuesto a 
 <div class="visually-hidden-focusable">Un contenedor con un <a href="#">elemento enfocable</a>.</div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 Ambos `visually-hidden` y `visually-hidden-focusable` pueden ser usados como mixins.
 
 ```scss

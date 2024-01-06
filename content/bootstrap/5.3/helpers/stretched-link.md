@@ -37,6 +37,8 @@ No se recomiendan múltiples enlaces y objetivos táctiles con enlaces extendido
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 La mayoría de los componentes personalizados no tienen `position: relative` de forma predeterminada, por lo que debemos agregar `.position-relative` aquí para evitar que el enlace se extienda fuera del elemento padre.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/stretched-link/index-2.html" >}}
@@ -83,6 +85,8 @@ La mayoría de los componentes personalizados no tienen `position: relative` de 
 
 Identificar el bloque contenedor {#identifying-the-containing-block}
 ---------------------------------------------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Si el enlace extendido no parece funcionar, el [bloque contenedor](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block) probablemente será la causa. Las siguientes propiedades CSS convertirán a un elemento en el bloque contenedor:
 

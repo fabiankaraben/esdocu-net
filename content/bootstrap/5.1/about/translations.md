@@ -24,8 +24,6 @@ Los miembros de la comunidad han traducido la documentación de Bootstrap a vari
 </ul>
 {{< /translations.inline >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 **No ayudamos a organizar ni a alojar traducciones, solo las vinculamos.**
 
 ¿Terminaste una traducción nueva o mejor? Abre un pull request para agregarla a nuestra lista.

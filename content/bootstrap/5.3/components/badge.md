@@ -33,6 +33,8 @@ Las insignias se escalan para que coincidan con el tamaño del elemento padre in
 
 Las insignias se pueden usar como parte de enlaces o botones para proporcionar un contador.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/badge/buttons.html" >}}
 ```html {filename="HTML"}
     <button type="button" class="btn btn-primary">
@@ -61,7 +63,7 @@ Usa utilidades para modificar un `.badge` y posicionarlo en la esquina de un enl
 ```
 {{< /demo-iframe >}}
 
-{{< content-ads/middle-banner-1 >}}
+{{< content-ads/middle-banner-2 >}}
 
 También puedes reemplazar la clase `.badge` con algunas utilidades más sin contar para un indicador más genérico.
 
@@ -87,6 +89,8 @@ Establece un `background-color` con un `color` de primer plano contrastante con 
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/badge/background-colors.html" >}}
 ```html {filename="HTML"}
     <span class="badge text-bg-primary">Primary</span>
@@ -107,8 +111,6 @@ Establece un `background-color` con un `color` de primer plano contrastante con 
 Insignias de pastillas {#pill-badges}
 --------------------------------------
 
-{{< content-ads/middle-banner-2 >}}
-
 Utiliza la clase de utilidad `.rounded-pill` para hacer insignias más redondeadas con un `border-radius` más grande.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/badge/pill-badges.html" >}}
@@ -126,6 +128,8 @@ Utiliza la clase de utilidad `.rounded-pill` para hacer insignias más redondead
 
 Personalización del CSS del componente {#css}
 -----------
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Variables Sass del componente {#variables}
 
@@ -147,7 +151,7 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las insignia
 
 ### Variables Sass generales relacionadas {#sass-variables}
 
-{{< content-ads/middle-banner-3 >}}
+{{< content-ads/middle-banner-5 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

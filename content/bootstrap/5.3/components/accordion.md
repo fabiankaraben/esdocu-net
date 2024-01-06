@@ -26,6 +26,8 @@ Ejemplo del componente Acordeón {#example}
 
 Haz clic en los acordeones a continuación para expandir/contraer el contenido del acordeón.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/accordion/example.html" >}}
 ```html {filename="HTML"}
 <div class="accordion" id="accordionExample">
@@ -86,8 +88,6 @@ Haz clic en los acordeones a continuación para expandir/contraer el contenido d
 
 ### Las clases Flush {#flush}
 
-{{< content-ads/middle-banner-1 >}}
-
 Agrega `.accordion-flush` para eliminar algunos bordes y esquinas redondeadas para representar los acordeones de borde a borde con su contenedor principal.
 
 {{< bootstrap/content-suggestion >}}
@@ -139,9 +139,9 @@ Agrega `.accordion-flush` para eliminar algunos bordes y esquinas redondeadas pa
 ```
 {{< /demo-iframe >}}
 
-### Acordeón siempre abierto {#always-open}
-
 {{< content-ads/middle-banner-2 >}}
+
+### Acordeón siempre abierto {#always-open}
 
 Omite el atributo `data-bs-parent` en cada `.accordion-collapse` para que los elementos del acordeón permanezcan abiertos cuando se abre otro elemento.
 
@@ -206,9 +206,9 @@ Omite el atributo `data-bs-parent` en cada `.accordion-collapse` para que los el
 Accesibilidad del componente Acordeón {#accessibility}
 -------------------------------
 
-{{< content-ads/middle-banner-3 >}}
-
 Lee la [sección de accesibilidad de collapse](/bootstrap/5.3/components/collapse/#accessibility) para obtener más información.
+
+{{< content-ads/middle-banner-3 >}}
 
 Personalización del CSS del componente {#css}
 -----------
@@ -221,6 +221,8 @@ Personalización del CSS del componente {#css}
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
 
 Como parte del enfoque de variables CSS en evolución de Bootstrap, los acordeones ahora usan variables CSS locales en `.accordion` para una personalización mejorada en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
+
+{{< content-ads/middle-banner-4 >}}
 
 [scss/_accordion.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_accordion.scss)
 
@@ -255,6 +257,8 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, los acordeon
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
+{{< content-ads/middle-banner-5 >}}
+
 ```scss {filename="scss/_variables.scss"}
 $accordion-padding-y:                     1rem;
 $accordion-padding-x:                     1.25rem;
@@ -288,6 +292,5 @@ $accordion-icon-transform:                rotate(-180deg);
 $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 ```
-
 
 {{< content-ads/bottom-banner >}}

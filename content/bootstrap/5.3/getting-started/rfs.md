@@ -20,6 +20,8 @@ El mecanismo calcula automáticamente los valores apropiados en función de las 
 
 ## Usando RFS {#using-rfs}
 
+{{< content-ads/middle-banner-1 >}}
+
 Los mixins están incluidos en Bootstrap y están disponibles una vez que incluyes el `scss`de Bootstrap. RFS también se puede [instalar de forma independiente](https://github.com/twbs/rfs/tree/v10.0.0#installation) si es necesario.
 
 ### Usando los mixins {#using-the-mixins}
@@ -31,6 +33,8 @@ El mixin `rfs()` tiene abreviaturas para `font-size`, `margin`, `margin-top`, `m
   @include font-size(4rem);
 }
 ```
+
+{{< content-ads/middle-banner-2 >}}
 
 ```css {filename="CSS"}
 .title {
@@ -54,6 +58,8 @@ Cualquier otra propiedad se puede pasar al mixin `rfs()` así:
 
 `!important` también se puede agregar al valor que quieras:
 
+{{< content-ads/middle-banner-3 >}}
+
 ```css {filename="CSS"}
 .selector {
   @include padding(2.5rem !important);
@@ -66,6 +72,8 @@ Cuando no quieras usar los includes, también hay dos funciones:
 
 * `rfs-value()` convierte a un valor `rem` si un valor en `px` es pasado, en otros casos devuelve el mismo resultado.
 * `rfs-fluid-value()` devuelve la versión fluida de un valor si es necesario cambiar la escala de la propiedad.
+
+{{< content-ads/middle-banner-4 >}}
 
 En este ejemplo, utilizamos uno de los [mixins de puntos de interrupción responsive](/bootstrap/5.3/layout/breakpoints) integrados en Bootstrap para aplicar solo estilo debajo del punto de interrupción `lg`.
 
@@ -88,6 +96,8 @@ En este ejemplo, utilizamos uno de los [mixins de puntos de interrupción respon
 ```
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-5 >}}
 
 ## Documentación extendida {#extended-documentation}
 

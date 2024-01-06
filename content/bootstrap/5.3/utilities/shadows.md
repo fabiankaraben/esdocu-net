@@ -29,6 +29,8 @@ Si bien las sombras en los componentes están deshabilitadas de forma predetermi
 Personalización del CSS {#css}
 -----------
 
+{{< content-ads/middle-banner-1 >}}
+
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
@@ -41,6 +43,8 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075);
 ```
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
 

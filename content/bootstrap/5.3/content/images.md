@@ -26,6 +26,8 @@ Las imágenes en Bootstrap responden con `.img-fluid`. Esto aplica `max-width: 1
 Miniaturas de imágenes {#image-thumbnails}
 -------------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Además de nuestras [utilidades de radio de borde](/bootstrap/5.3/utilities/borders), puedes usar `.img-thumbnail` para darle a una imagen una apariencia de borde redondeado de 1px.
 
 Una imagen genérica de marcador de posición cuadrado con un borde blanco alrededor, lo que la hace parecerse a una fotografía tomada con una vieja cámara instantánea.
@@ -38,6 +40,8 @@ Una imagen genérica de marcador de posición cuadrado con un borde blanco alred
 
 Alinear imágenes {#aligning-images}
 ------------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Alinear imágenes con las [clases flotantes auxiliares](/bootstrap/5.3/utilities/float) o [clases de alineación de texto](/bootstrap/5.3/utilities/text/#text-alignment). Las imágenes a nivel de `block` se pueden centrar usando [utilidad de margen `.mx-auto` (clase)](/bootstrap/5.3/utilities/spacing/#horizontal-centering) .
 
@@ -62,6 +66,8 @@ Alinear imágenes con las [clases flotantes auxiliares](/bootstrap/5.3/utilities
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 Picture {#picture}
 -------------------
 
@@ -77,6 +83,8 @@ Si estás usando el elemento `<picture>` para especificar múltiples elementos `
 Personalización del CSS {#css}
 -----------
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/content-suggestion >}}
 
 ### Variables Sass generales relacionadas {#sass-variables}
@@ -84,6 +92,8 @@ Personalización del CSS {#css}
 Hay variables disponibles para miniaturas de imágenes.
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $thumbnail-padding:                 .25rem;

@@ -43,6 +43,8 @@ Pon todo eso junto, y tienes los siguientes ejemplos.
 
 Bootstrap proporciona un puñado de [utilidades para configurar el ancho]({{< bootstrap/5-1/docsref "/utilities/sizing" >}}). Dependiendo de tus necesidades, estos pueden ayudar a configurar rápidamente el progreso.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="progress">
   <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
@@ -63,6 +65,8 @@ Agrega etiquetas a tus barras de progreso colocando texto dentro de `.progress-b
 
 Solo establecemos un valor de `height` en `.progress`, por lo que si cambias ese valor, la `.progress-bar` interna cambiará automáticamente de tamaño en consecuencia.
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="progress" style="height: 1px;">
   <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -71,8 +75,6 @@ Solo establecemos un valor de `height` en `.progress`, por lo que si cambias ese
   <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Fondos
 
@@ -96,6 +98,8 @@ Usa clases de utilidad de fondo para cambiar la apariencia de las barras de prog
 ## Múltiples barras
 
 Incluye múltiples barras de progreso en un componente de progreso si lo necesitas.
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="progress">
@@ -131,13 +135,13 @@ Agrega `.progress-bar-striped` a cualquier `.progress-bar` para aplicar una raya
 
 El degradado rayado también se puede animar. Agrega `.progress-bar-animated` a `.progress-bar` para animar las franjas de derecha a izquierda a través de animaciones CSS3.
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="progress">
   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Sass
 

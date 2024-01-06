@@ -43,6 +43,8 @@ Comparado con el sistema de cuadrícula predeterminado:
     
 * Los huecos reemplazan los gutters. La propiedad `gap` reemplaza el `padding` horizontal de nuestro sistema de cuadrícula predeterminado y funciona más como `margin`.
     
+{{< content-ads/middle-banner-1 >}}
+
 * Como tal, a diferencia de los `.row`, los `.grid` no tienen márgenes negativos y las utilidades de márgenes no se pueden utilizar para cambiar los márgenes de la cuadrícula. Los gaps de cuadrícula se aplican horizontal y verticalmente de forma predeterminada. Consulta la [sección de personalización](#customizing) para obtener más detalles.
     
 * Los estilos en línea y personalizados deben verse como reemplazos de las clases modificadoras (por ejemplo, `style="--bs-columns: 3;"` vs `class="row-cols-3"`).
@@ -94,6 +96,8 @@ Compáralo con este diseño de dos columnas en todos los viewports.
 
 Envoltura {#wrapping}
 ---------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Los elementos de la cuadrícula pasan automáticamente a la siguiente línea cuando no hay más espacio horizontalmente. Ten en cuenta que el `gap` se aplica a los espacios horizontales y verticales entre los elementos de la cuadrícula.
 
@@ -171,6 +175,8 @@ Anidamiento {#nesting}
 Al igual que nuestro sistema de cuadrícula predeterminado, nuestro CSS Grid permite anidar fácilmente `.grid`. Sin embargo, a diferencia del valor predeterminado, esta cuadrícula hereda los cambios en las filas, columnas y espacios. Considera el siguiente ejemplo:
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 * Sobrescribimos el número predeterminado de columnas con una variable CSS local: `--bs-columns: 3`.
 * En la primera columna automática, el recuento de columnas se hereda y cada columna tiene un tercio del ancho disponible.
@@ -250,6 +256,8 @@ Ajusta el número de columnas y el espacio.
     </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Agregar filas {#adding-rows}
 

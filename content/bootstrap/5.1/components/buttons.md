@@ -48,11 +48,11 @@ Al usar clases de botón en elementos `<a>` que se usan para activar alguna func
 <input class="btn btn-primary" type="reset" value="Reset">
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Botones de contorno
 
 ¿Necesitas un botón, pero no los fuertes colores de fondo que traen? Reemplaza las clases de modificador predeterminadas con `.btn-outline-*` para eliminar todas las imágenes y colores de fondo en cualquier botón.
+
+{{< content-ads/middle-banner-1 >}}
 
 {{< bootstrap/5-1/example >}}
 {{< buttons.inline >}}
@@ -97,6 +97,8 @@ Los botones deshabilitados que usan el elemento `<a>` se comportan un poco difer
 - Se incluyen algunos estilos amigables (para el futuro) para deshabilitar todos los `pointer-events` en los botones de `<a>`s.
 - Los botones deshabilitados que usan `<a>` deben incluir el atributo `aria-disabled="true"` para indicar el estado del elemento a las tecnologías de asistencia.
 - Los botones deshabilitados que usan `<a>` *no deben* incluir el atributo `href`.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <a class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Enlace primary</a>
@@ -143,14 +145,14 @@ Puedes ajustar el ancho de tus botones de bloque con clases de ancho de columna 
 
 Se pueden usar utilidades adicionales para ajustar la alineación de los botones cuando están en posición horizontal. Aquí tomamos nuestro ejemplo responsive anterior y agregamos algunas utilidades flex y una utilidad de margen en el botón para alinear a la derecha los botones cuando ya no están apilados.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
   <button class="btn btn-primary me-md-2" type="button">Botón</button>
   <button class="btn btn-primary" type="button">Botón</button>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Complemento de botón
 
@@ -229,6 +231,8 @@ var bsButton = new bootstrap.Button(button)
   </tbody>
 </table>
 
+{{< content-ads/middle-banner-4 >}}
+
 Por ejemplo, para alternar todos los botones
 
 ```js
@@ -254,8 +258,6 @@ Hay tres mixins para botones: mixins de botón y mixins de variante de contorno 
 {{< bootstrap/5-1/scss-docs name="btn-outline-variant-mixin" file="scss/mixins/_buttons.scss" >}}
 
 {{< bootstrap/5-1/scss-docs name="btn-size-mixin" file="scss/mixins/_buttons.scss" >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Loops
 

@@ -24,6 +24,8 @@ Cómo funcionan {#how-they-work}
 Gutters horizontales {#horizontal-gutters}
 -------------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 `.gx-*` (clases) se pueden usar para controlar el ancho del gutter horizontal. Es posible que sea necesario ajustar el padre `.container` o `.container-fluid` si también se utilizan gutters más grandes para evitar desbordamientos no deseados, utilizando una utilidad de relleno coincidente. Por ejemplo, en el siguiente ejemplo hemos aumentado el relleno con `.px-4`:
 
 {{< demo-iframe path="/demos/bootstrap/5.3/layout/gutters/horizontal-gutters-1.html" >}}
@@ -60,6 +62,8 @@ Una solución alternativa es agregar un contenedor alrededor del `.row` con la c
 
 Gutters verticales {#vertical-gutters}
 ---------------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 `.gy-*` (clases) se pueden usar para controlar el ancho del canal vertical dentro de una fila cuando las columnas se ajustan a nuevas líneas. Al igual que los márgenes horizontales, los márgenes verticales pueden provocar cierto desbordamiento debajo del `.row` al final de una página. Si esto ocurre, agrega un contenedor alrededor de `.row` con la clase `.overflow-hidden`:
 
@@ -111,6 +115,8 @@ Usa las clases `.g-*` para controlar los gutters horizontales y verticales de la
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 Gutters filas columnas {#row-columns-gutters}
 ----------------------------------------------
 
@@ -160,6 +166,8 @@ Sin gutters {#no-gutters}
 
 Los márgenes entre columnas en nuestras clases de cuadrícula predefinidas se pueden eliminar con `.g-0`. Esto elimina los `margin` negativos de `.row` y el `padding` horizontal de todas las columnas secundarias inmediatas.
 
+{{< content-ads/middle-banner-4 >}}
+
 **¿Necesitas un diseño de borde a borde?** Suelta el `.container` o `.container-fluid` principal y agrega `.mx-0` al `.row` para evitar el desbordamiento.
 
 En la práctica, así es como se ve. Ten en cuenta que puedes continuar usando esto con todas las demás clases de cuadrícula predefinidas (incluidos anchos de columna, niveles responsive, reordenamientos y más).
@@ -177,6 +185,8 @@ En la práctica, así es como se ve. Ten en cuenta que puedes continuar usando e
 
 Cambia los gutters {#change-the-gutters}
 -----------------------------------------
+
+{{< content-ads/middle-banner-5 >}}
 
 Las clases se construyen a partir del mapa Sass `$gutters` que se hereda del mapa Sass `$spacers`.
 

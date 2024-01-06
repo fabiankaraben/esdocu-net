@@ -31,6 +31,8 @@ Donde _property_ es una de:
 * `m` \- para clases que establecen `margin`
 * `p` \- para clases que configuran `padding`
 
+{{< content-ads/middle-banner-1 >}}
+
 Donde _sides_ es uno de:
 
 * `t` \- para clases que establecen `margin-top` o `padding-top`
@@ -76,6 +78,8 @@ Aquí tienes algunos ejemplos representativos de estas clases:
 }
 ```
 
+{{< content-ads/middle-banner-2 >}}
+
 ### Centrado horizontal {#horizontal-centering}
 
 Además, Bootstrap también incluye una clase `.mx-auto` para centrar horizontalmente contenido a nivel de bloque de ancho fijo, es decir, contenido que tiene `display: block` y un conjunto de `width`, estableciendo los márgenes horizontales en `auto`.
@@ -102,6 +106,8 @@ La sintaxis es casi la misma que la de las utilidades de margen positivo predete
   margin-top: -0.25rem !important;
 }
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 Gap {#gap}
 -----------
@@ -138,6 +144,8 @@ El soporte incluye opciones responsive para todos los puntos de interrupción de
 
 ### column-gap {#column-gap}
 
+{{< content-ads/middle-banner-4 >}}
+
 `column-gap` establece el espacio horizontal entre elementos secundarios en el contenedor especificado.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/spacing/column-gap.html" >}}
@@ -173,6 +181,8 @@ $spacers: (
 ```
 
 ### API de utilidades de Sass {#sass-utilities-api}
+
+{{< content-ads/middle-banner-5 >}}
 
 Las utilidades de espaciado se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 

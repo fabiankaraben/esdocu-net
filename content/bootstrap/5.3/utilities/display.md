@@ -27,6 +27,8 @@ Como tal, las clases se nombran usando el formato:
 * `.d-{value}` para `xs`
 * `.d-{breakpoint}-{value}` para `sm`, `md`, `lg`, `xl` y `xxl`.
 
+{{< content-ads/middle-banner-1 >}}
+
 Donde _valor_ es uno de:
 
 * `none`
@@ -55,6 +57,8 @@ Ejemplos {#examples}
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/display/examples-2.html" >}}
 ```html {filename="HTML"}
     <span class="d-block p-2 text-bg-primary">d-block</span>
@@ -72,6 +76,8 @@ Para ocultar elementos simplemente usa la clase `.d-none` o una de las clases `.
 {{< bootstrap/content-suggestion >}}
 
 Para mostrar un elemento solo en un intervalo determinado de tamaños de pantalla, puedes combinar una clase `.d-*-none` con una clase clase `.d-*-*`, por ejemplo `.d-none .d-md-block .d-xl-none .d-xxl-none` ocultará el elemento para todos los tamaños de pantalla excepto en dispositivos medianos y grandes.
+
+{{< content-ads/middle-banner-3 >}}
 
 | Tamaño de pantalla  | Clase                             |
 | ------------------- | --------------------------------- |
@@ -115,6 +121,8 @@ Cambia el valor `display` de los elementos al imprimir con nuestras clases de ut
 * `.d-print-inline-flex`
 
 Las clases print y display se pueden combinar.
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/display/display-in-print.html" >}}
 ```html {filename="HTML"}

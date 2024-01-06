@@ -42,6 +42,8 @@ Estas clases también se pueden agregar a grupos de enlaces, como alternativa al
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Estilos mixtos del componente Grupo de botones {#mixed-styles}
 -------------------------------
 
@@ -71,9 +73,9 @@ Estilos outlined del componente Grupo de botones {#outlined-styles}
 Grupos de casillas de verificación y botones de opción {#checkbox-and-radio-button-groups}
 -------------------------------------------------------------------------------------------
 
-{{< content-ads/middle-banner-1 >}}
-
 Combina botones de casilla de verificación y radio con forma de [botones de alternancia](/bootstrap/5.3/forms/checks-radios) en un grupo de botones de apariencia perfecta.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/checkbox-and-radio-button-groups-1.html" >}}
 ```html {filename="HTML"}
@@ -133,6 +135,8 @@ Combina conjuntos de grupos de botones en barras de herramientas de botones para
 
 Siéntete libre de mezclar grupos de entrada con grupos de botones en tus barras de herramientas. Al igual que en el ejemplo anterior, es probable que necesites algunas utilidades para espaciar las cosas correctamente.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/content-suggestion >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/button-toolbar-2.html" >}}
@@ -168,8 +172,6 @@ Siéntete libre de mezclar grupos de entrada con grupos de botones en tus barras
 Tamaños del componente Grupo de botones {#sizing}
 ------------------
 
-{{< content-ads/middle-banner-2 >}}
-
 En lugar de aplicar clases de tamaño de botones a cada botón de un grupo, simplemente agrega `.btn-group-*` a cada `.btn-group`, incluyendo cada uno cuando se anidan varios grupos.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/sizing.html" >}}
@@ -197,6 +199,8 @@ En lugar de aplicar clases de tamaño de botones a cada botón de un grupo, simp
 Anidamiento del componente Grupo de botones {#nesting}
 -----------------------
 
+{{< content-ads/middle-banner-4 >}}
+
 Coloca un `.btn-group` dentro de otro `.btn-group` cuando quieras menús desplegables mezclados con una serie de botones.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/nesting.html" >}}
@@ -222,8 +226,6 @@ Coloca un `.btn-group` dentro de otro `.btn-group` cuando quieras menús despleg
 Variación vertical del componente Grupo de botones {#vertical-variation}
 -----------------------------------------
 
-{{< content-ads/middle-banner-3 >}}
-
 Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de horizontalmente. **Aquí no se admiten menús desplegables de botones divididos.**
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/vertical-variation-1.html" >}}
@@ -238,6 +240,8 @@ Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de hori
 {{< /demo-iframe >}}
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-5 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/vertical-variation-2.html" >}}
 ```html {filename="HTML"}
@@ -283,8 +287,6 @@ Haz que un conjunto de botones aparezcan apilados verticalmente en lugar de hori
     </div>
 ```
 {{< /demo-iframe >}}
-
-{{< content-ads/middle-banner-4 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/button-group/vertical-variation-3.html" >}}
 ```html {filename="HTML"}

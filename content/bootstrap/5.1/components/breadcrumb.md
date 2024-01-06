@@ -39,9 +39,9 @@ Usa una lista ordenada o desordenada con elementos de lista vinculados para crea
 </nav>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Divisores
+
+{{< content-ads/middle-banner-1 >}}
 
 Los divisores se agregan automáticamente en CSS a través de [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) y [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content). Se pueden cambiar modificando una propiedad personalizada CSS local `--bs-breadcrumb-divider`, o a través de la variable Sass `$breadcrumb-divider` y `$breadcrumb-divider-flipped` para su contraparte RTL, si es necesario. Usamos de forma predeterminada nuestra variable Sass, que se establece como una alternativa (fallback) a la propiedad personalizada. De esta manera, obtienes un divisor global que puedes sobrescribir sin volver a compilar CSS en ningún momento.
 
@@ -60,6 +60,8 @@ Al modificar a través de Sass, se requiere la función [quote](https://sass-lan
 $breadcrumb-divider: quote(">");
 ```
 
+{{< content-ads/middle-banner-2 >}}
+
 También es posible usar un **icono SVG incrustado**. Aplícalo a través de nuestra propiedad personalizada CSS, o usa la variable Sass.
 
 {{< bootstrap/5-1/example >}}
@@ -77,6 +79,8 @@ $breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
 
 También puede eliminar la configuración del divisor `--bs-breadcrumb-divider: '';` (las cadenas vacías en las propiedades personalizadas de CSS cuentan como un valor), o configurar la variable Sass en `$breadcrumb-divider: none;`.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example >}}
 <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -86,7 +90,6 @@ También puede eliminar la configuración del divisor `--bs-breadcrumb-divider: 
 </nav>
 {{< /bootstrap/5-1/example >}}
 
-
 ```scss
 $breadcrumb-divider: none;
 ```
@@ -94,6 +97,8 @@ $breadcrumb-divider: none;
 ## Accesibilidad
 
 Dado que breadcrumbs proporciona una navegación, es una buena idea agregar una etiqueta significativa como `aria-label="breadcrumb"` para describir el tipo de navegación proporcionada en el elemento `<nav>`, así como aplicar un `aria-current="page"` al último elemento del conjunto para indicar que representa la página actual.
+
+{{< content-ads/middle-banner-4 >}}
 
 Para obtener más información, consulta las [Prácticas de creación de WAI-ARIA para el patrón de ruta de navegación](https://www.w3.org/TR/wai-aria-practices/#breadcrumb).
 

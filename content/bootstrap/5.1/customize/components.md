@@ -20,6 +20,8 @@ Para construir nuestras clases de modificadores, usamos los bucles `@each` de Sa
 
 Consulta nuestros documentos de [mapas y bucles de Sass]({{< bootstrap/5-1/docsref "/customize/sass#maps-and-loops" >}}) para saber cómo personalizar estos bucles y extender el enfoque modificador base de Bootstrap a tu propio código.
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Modificadores
 
 Muchos de los componentes de Bootstrap están construidos con un enfoque de clase de modificador base. Esto significa que la mayor parte del estilo está contenido en una clase base (p. ej., `.btn`), mientras que las variaciones de estilo se limitan a las clases de modificadores (p. ej., `.btn-danger`). Estas clases de modificadores se crean a partir del mapa `$theme-colors` para personalizar el número y el nombre de nuestras clases de modificadores.
@@ -28,9 +30,9 @@ Aquí hay dos ejemplos de cómo recorremos el mapa `$theme-colors` para generar 
 
 {{< bootstrap/5-1/scss-docs name="alert-modifiers" file="scss/_alert.scss" >}}
 
-{{< bootstrap/5-1/scss-docs name="list-group-modifiers" file="scss/_list-group.scss" >}}
+{{< content-ads/middle-banner-2 >}}
 
-{{< content-ads/middle-banner-1 >}}
+{{< bootstrap/5-1/scss-docs name="list-group-modifiers" file="scss/_list-group.scss" >}}
 
 ## Responsive
 
@@ -38,15 +40,17 @@ Estos bucles de Sass tampoco se limitan a mapas de colores. También puedes gene
 
 {{< bootstrap/5-1/scss-docs name="responsive-breakpoints" file="scss/_dropdown.scss" >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 Si modificas tus `$grid-breakpoints`, tus cambios se aplicarán a todos los bucles que iteren sobre ese mapa.
 
 {{< bootstrap/5-1/scss-docs name="grid-breakpoints" file="scss/_variables.scss" >}}
 
 Para obtener más información y ejemplos sobre cómo modificar nuestros mapas y variables Sass, consulta [la sección Sass de la documentación de Grid]({{< bootstrap/5-1/docsref "/layout/grid#sass" >}}).
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Creando el tuyo propio
+
+{{< content-ads/middle-banner-4 >}}
 
 Te alentamos a que adoptes estas pautas cuando construya con Bootstrap para crear tus propios componentes. Nosotros mismos hemos ampliado este enfoque a los componentes personalizados en nuestra documentación y ejemplos. Los componentes como nuestros *callouts* se construyen al igual que nuestros componentes provistos con clases base y modificadoras.
 
@@ -61,6 +65,8 @@ Te alentamos a que adoptes estas pautas cuando construya con Bootstrap para crea
 ```
 
 En tu CSS, tendrías algo como lo siguiente, donde la mayor parte del estilo se realiza a través de `.callout`. Luego, los estilos únicos entre cada variante se controlan a través de la clase modificadora.
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss
 // Clase base

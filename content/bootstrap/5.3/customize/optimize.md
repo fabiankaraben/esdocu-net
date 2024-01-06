@@ -73,6 +73,8 @@ Si no estás usando un componente, coméntalo o elimínalo por completo. Por eje
 JavaScript optimizado {#lean-javascript}
 --------------------------------------------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 El JavaScript de Bootstrap incluye todos los componentes de nuestros archivos dist primarios (`bootstrap.js` y `bootstrap.min.js`), e incluso nuestra dependencia principal (Popper) con nuestros archivos de paquete (`bootstrap.bundle.js` y `bootstrap.bundle.min.js`). Mientras personalizas a través de Sass, asegúrate de eliminar el JavaScript relacionado.
 
 Por ejemplo, suponiendo que estás usando tu propio paquete de JavaScript como Webpack, Parcel o Vite, solo importarás el JavaScript que planeas usar. En el siguiente ejemplo, mostramos cómo incluir simplemente nuestro JavaScript modal:
@@ -108,6 +110,8 @@ const modal = new Modal(document.getElementById('myModal'))
 Autoprefixer .browserslistrc {#autoprefixer-browserslistrc}
 ------------------------------------------------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 Bootstrap depende de Autoprefixer para agregar automáticamente prefijos del navegador a ciertas propiedades CSS. Los prefijos los dicta nuestro archivo `.browserslistrc`, que se encuentra en la raíz del repositorio de Bootstrap. Al personalizar esta lista de navegadores y volver a compilar Sass, se eliminará automáticamente parte del CSS del CSS compilado, si hay prefijos de proveedor exclusivos para ese navegador o versión.
 
 CSS no utilizado {#unused-css}
@@ -122,6 +126,8 @@ Si bien no tenemos un ejemplo prediseñado para usar [PurgeCSS](https://github.c
 
 Por último, este [artículo de CSS Tricks sobre CSS no utilizado](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site) muestra cómo utilizar PurgeCSS y otras herramientas similares.
 
+{{< content-ads/middle-banner-3 >}}
+
 Minify y gzip {#minify-and-gzip}
 ---------------------------------
 
@@ -135,6 +141,8 @@ Archivos sin bloqueo {#non-blocking-files}
 Si bien minimizar y usar compresión puede parecer suficiente, hacer que tus archivos no bloqueen también es un gran paso para que tu sitio esté bien optimizado y sea lo suficientemente rápido.
 
 Si estás utilizando un complemento [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) en Google Chrome, es posible que hayas tropezado con FCP. La métrica [First Contentful Paint](https://web.dev/fcp) mide el tiempo desde que la página comienza a cargarse hasta que cualquier parte del contenido de la página se muestra en la pantalla.
+
+{{< content-ads/middle-banner-4 >}}
 
 Puedes mejorar FCP posponiendo JavaScript o CSS no críticos. ¿Qué significa eso? Simplemente, JavaScript u hojas de estilo que no necesitan estar presentes en la primera pintura de tu página deben marcarse con los atributos `async` o `defer`.
 

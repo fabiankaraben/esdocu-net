@@ -80,6 +80,8 @@ Agrega el atributo `disabled` y los `<label>` asociados reciben un estilo autom�
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Radios {#radios}
 -----------------
 
@@ -154,6 +156,8 @@ Predeterminado (apilado) {#default-stacked}
 --------------------------------------------
 
 De forma predeterminada, cualquier número de casillas de verificación y radios que sean hermanos inmediatos se apilarán verticalmente y se espaciarán adecuadamente con `.form-check`.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/checks-radios/default-stacked-1.html" >}}
 ```html {filename="HTML"}
@@ -269,6 +273,8 @@ Pon tus casillas de verificación, radios e interruptores en el lado opuesto con
 Sin etiquetas {#without-labels}
 --------------------------------
 
+{{< content-ads/middle-banner-3 >}}
+
 Omite el ajuste `.form-check` para casillas de verificación y radios que no tienen texto de etiqueta. Recuerde proporcionar algún tipo de nombre accesible para las tecnologías de asistencia (por ejemplo, usando `aria-label`). Consulta la sección [accesibilidad general de formularios](/bootstrap/5.3/forms/overview/#accessibility) para obtener más detalles.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/checks-radios/without-labels.html" >}}
@@ -354,6 +360,8 @@ Visualmente, estos botones de alternancia de casillas de verificación son idén
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 ### Estilos outlined {#outlined-styles}
 
 Se admiten diferentes variantes de `.btn`, como los distintos estilos descritos.
@@ -425,6 +433,8 @@ $form-check-inline-margin-end:    1rem;
 Variables para interruptores:
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $form-switch-color:               rgba($black, .25);

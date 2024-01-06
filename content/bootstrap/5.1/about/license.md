@@ -20,6 +20,8 @@ Bootstrap se publica bajo la licencia MIT y tiene derechos de autor {{< bootstra
 
 ## Te permite:
 
+{{< content-ads/middle-banner-1 >}}
+
 - Descargues y uses Bootstrap gratuitamente, en su totalidad o en parte, para fines personales, privados, internos de la empresa o comerciales
 - Uses Bootstrap en paquetes o distribuciones que crees
 - Modificar el código fuente
@@ -34,6 +36,8 @@ Bootstrap se publica bajo la licencia MIT y tiene derechos de autor {{< bootstra
 - Usar cualquier marca propiedad de Twitter de cualquier manera que pueda indicar o implicar que creaste el software de Twitter en cuestión.
 
 ## No requiere que:
+
+{{< content-ads/middle-banner-2 >}}
 
 - Incluyas la fuente de Bootstrap en sí, o de cualquier modificación que le hayas hecho, en cualquier redistribución que puedas ensamblar que la incluya.
 - Envíes los cambios que realice en Bootstrap al proyecto Bootstrap (aunque se recomiendan dichos comentarios)

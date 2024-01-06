@@ -67,12 +67,12 @@ moment('2010-10-20').isSame('2011-01-01', 'year');  // false
 
 Al incluir un segundo parámetro, coincidirá con todas las unidades iguales o mayores. Al pasar `month`, se verificarán `month` y `year`. Al pasar `day`, se verificarán `day`, `month` y `year`.
 
-{{< content-ads/middle-banner-1 >}}
-
 ```javascript {filename="JavaScript"}
 moment('2010-01-01').isSame('2011-01-01', 'month'); // false, año diferente
 moment('2010-01-01').isSame('2010-02-01', 'day');   // false, mes diferente
 ```
+
+{{< content-ads/middle-banner-1 >}}
 
 Al igual que `moment#isAfter` y `moment#isBefore`, cualquiera de las unidades de tiempo admitidas para `moment#startOf` también lo son para `moment#isSame`.
 
@@ -126,14 +126,14 @@ moment().isAfter(); // false
 
 ## El método `isSameOrBefore` {#is-same-or-before}
 
-{{< content-ads/middle-banner-2 >}}
-
 ```javascript {filename="Firma del método"}
 moment().isSameOrBefore(Moment|String|Number|Date|Array);
 moment().isSameOrBefore(Moment|String|Number|Date|Array, String);
 ```
 
 Comprueba si un moment es anterior o igual a otro moment. El primer argumento se analizará como un moment, si no lo es ya.
+
+{{< content-ads/middle-banner-2 >}}
 
 ```javascript {filename="JavaScript"}
 moment('2010-10-20').isSameOrBefore('2010-10-21');  // true
@@ -190,8 +190,6 @@ year month week isoWeek day hour minute second
 
 ## El método `isBetween` {#is-between}
 
-{{< content-ads/middle-banner-3 >}}
-
 ```javascript {filename="Firma del método"}
 // Desde 2.13.0 en adelante
 moment().isBetween(moment-like, moment-like);
@@ -211,6 +209,8 @@ Compruebe si un moment está entre otros dos moments, opcionalmente mirando la e
 moment('2010-10-20').isBetween('2010-10-19', '2010-10-25'); // true
 moment('2010-10-20').isBetween('2010-10-19', undefined); // true, since moment(undefined) evaluates as moment()
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 Ten en cuenta que el orden de los dos argumentos es importante: la fecha "más pequeña" debe estar en el primer argumento.
 
@@ -259,8 +259,6 @@ moment().isDST();
 
 Moment actualmente verifica el horario de invierno y verano, y si el desplazamiento coincide con el desplazamiento de verano (y el horario de verano es diferente al de invierno), entonces informa el horario de verano. Esto funciona en la gran mayoría de los casos, pero como se mencionó anteriormente, no es "correcto" y no funcionará en todos los casos.
 
-{{< content-ads/middle-banner-4 >}}
-
 El evento moment-timezone (en el momento de escribir 0.5.37) no admite información DST (es decir, si el reloj está oficialmente en horario de verano en un momento determinado o no), por lo que para que las cosas mejoren, se han agregado algunas cosas nuevas (y el paquete tzdata) que tienen que suceder en moment-timezone.
 
 ```javascript {filename="JavaScript"}
@@ -274,6 +272,8 @@ moment([2011, 2, 14]).isDST(); // true, March 14 2011 is DST
 ```javascript {filename="Firma del método"}
 moment('2013-03-10 2:30', 'YYYY-MM-DD HH:mm').isDSTShifted()
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 **Nota:** A partir de la versión **2.14.0**, esta función está **obsoleta**. No da la respuesta correcta después de modificar el objeto de moment. Para obtener más información, consulta [moment/3160](https://github.com/moment/moment/pull/3160)
 
@@ -316,8 +316,6 @@ moment.isMoment(moment()) // true
 ```
 
 Desde la versión **2.11.0**, también puedes probar un objeto Moment mediante el operador `instanceof`:
-
-{{< content-ads/middle-banner-5 >}}
 
 ```javascript {filename="JavaScript"}
 moment() instanceof moment // true

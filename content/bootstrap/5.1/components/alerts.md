@@ -60,6 +60,8 @@ if (alertTrigger) {
 
 ### Color de enlace
 
+{{< content-ads/middle-banner-1 >}}
+
 Utiliza la clase de utilidad `.alert-link` para proporcionar rápidamente enlaces de colores coincidentes dentro de cualquier alerta.
 
 {{< bootstrap/5-1/example >}}
@@ -83,8 +85,6 @@ Las alertas también pueden contener elementos HTML adicionales como encabezados
   <p class="mb-0">Siempre que lo necesites, asegúrate de usar utilidades de margen para mantener las cosas ordenadas y ordenadas.</p>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ### Iconos
 
@@ -142,6 +142,8 @@ De manera similar, puedes usar [utilidades flexbox]({{< bootstrap/5-1/docsref "/
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 ### Descartar
 
 Con el complemento JavaScript de alerta, es posible descartar cualquier alerta. Así es cómo:
@@ -172,6 +174,8 @@ Cuando se descarta una alerta, el elemento se elimina por completo de la estruct
 
 Como parte del enfoque de variables CSS en evolución de Bootstrap, las alertas ahora usan variables CSS locales en `.alert` para mejorar la personalización en tiempo real. Los valores para las variables CSS se establecen a través de Sass, por lo que también se admite la personalización de Sass.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/scss-docs name="alert-css-vars" file="scss/_alert.scss" >}}
 
 ### Sass variables
@@ -190,9 +194,9 @@ Bucle que genera las clases modificadoras con el mixin `alert-variant()`.
 
 {{< bootstrap/5-1/scss-docs name="alert-modifiers" file="scss/_alert.scss" >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Comportamiento de JavaScript
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Inicializar
 
@@ -269,7 +273,7 @@ var alert = bootstrap.Alert.getInstance(alertNode)
 alert.close()
 ```
 
-{{< content-ads/middle-banner-3 >}}
+{{< content-ads/middle-banner-5 >}}
 
 ### Eventos
 

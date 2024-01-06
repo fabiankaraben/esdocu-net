@@ -38,6 +38,8 @@ Incluso puedes cambiar el nivel de opacidad al pasar el mouse.
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Enlace subrayado {#link-underlines}
 ------------------------------------
 
@@ -59,6 +61,8 @@ Cambia el color del subrayado independientemente del color del texto del enlace.
 {{< /demo-iframe >}}
 
 ### Desplazamiento del subrayado {#underline-offset}
+
+{{< content-ads/middle-banner-2 >}}
 
 Cambia la distancia del subrayado de tu texto. El desplazamiento se establece en unidades `em` para escalar automáticamente con el `font-size` actual del elemento.
 
@@ -86,6 +90,8 @@ Cambiar la opacidad del subrayado. Requiere agregar `.link-underline` para estab
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Variantes hover {#hover-variants}
 
 Al igual que las utilidades `.link-opacity-*-hover`, `.link-offset` y `.link-underline-opacity` incluyen variantes `:hover` de forma predeterminada. Mezcla y combina para crear estilos de enlaces únicos.
@@ -102,6 +108,8 @@ Enlaces de colores {#colored-links}
 ------------------------------------
 
 [Los ayudantes de enlaces de colores](/bootstrap/5.3/helpers/colored-links) se han actualizado para combinarlos con nuestras utilidades de enlaces. Utiliza las nuevas utilidades para modificar la opacidad del enlace, la opacidad del subrayado y el desplazamiento del subrayado.
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/link/colored-links.html" >}}
 ```html {filename="HTML"}
@@ -127,6 +135,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 Además de las siguientes funciones de Sass, considera leer sobre nuestras [propiedades personalizadas de CSS](/bootstrap/5.3/customize/css-variables) incluidas (también conocidas como variables CSS) para colores y más.
+
+{{< content-ads/middle-banner-5 >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
 

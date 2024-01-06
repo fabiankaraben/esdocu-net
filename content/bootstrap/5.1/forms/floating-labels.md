@@ -29,6 +29,8 @@ Envuelve un par de elementos `<input class="form-control">` y `<label>` en `.for
 
 Cuando ya hay un `value` definido, el `<label>` se ajustará automáticamente a su posición flotante.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example >}}
 <form class="form-floating">
   <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com" value="test@example.com">
@@ -45,9 +47,9 @@ Los estilos de validación de formularios también funcionan como se espera.
 </form>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Textareas
+
+{{< content-ads/middle-banner-2 >}}
 
 Por defecto, `<textarea>`s con `.form-control` tendrán la misma altura que `<input>`s.
 
@@ -67,6 +69,8 @@ Para establecer una altura personalizada en tu `<textarea>`, no uses el atributo
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Selects
 
 Aparte de `.form-control`, las etiquetas flotantes solo están disponibles en `.form-select`s. Funcionan de la misma manera, pero a diferencia de los `<input>`s, siempre mostrarán su `<label>` en su estado flotante. **Las selecciones con `size` y `multiple` no son compatibles.**
@@ -84,6 +88,8 @@ Aparte de `.form-control`, las etiquetas flotantes solo están disponibles en `.
 {{< /bootstrap/5-1/example >}}
 
 ## Layout
+
+{{< content-ads/middle-banner-4 >}}
 
 Cuando trabajes con el sistema de cuadrícula de Bootstrap, asegúrate de colocar elementos de formulario dentro de las clases de columna.
 
@@ -108,8 +114,6 @@ Cuando trabajes con el sistema de cuadrícula de Bootstrap, asegúrate de coloca
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Sass
 

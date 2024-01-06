@@ -63,8 +63,6 @@ Cambiar el estilo del componente `.nav` con modificadores y utilidades. Mezcla y
 
 ### Alineación horizontal {#horizontal-alignment}
 
-{{< content-ads/middle-banner-1 >}}
-
 Cambia la alineación horizontal de tu navegación con [utilidades flexbox](/bootstrap/5.3/utilities/flex/#justify-content). De forma predeterminada, los navegadores están alineados a la izquierda, pero puedes cambiarlos fácilmente al centro o a la derecha.
 
 Centrado con `.justify-content-center`:
@@ -113,8 +111,6 @@ Alineado a la derecha con `.justify-content-end`:
 
 ### Vertical {#vertical}
 
-{{< content-ads/middle-banner-2 >}}
-
 Apila tu navegación cambiando la dirección del elemento flexible con la utilidad `.flex-column`. ¿Necesitas apilarlos en algunas viewports pero no en otras? Utiliza las versiones responsive (por ejemplo, `.flex-sm-column`).
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navs-tabs/vertical-1.html" >}}
@@ -151,6 +147,8 @@ Como siempre, la navegación vertical también es posible sin `<ul>`s.
 
 ### Pestañas {#tabs}
 
+{{< content-ads/middle-banner-1 >}}
+
 Toma la navegación básica de arriba y agrega la clase `.nav-tabs` para generar una interfaz con pestañas. Utilízalos para crear regiones con pestañas con nuestro [complemento JavaScript para pestañas](#javascript-behavior).
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navs-tabs/tabs.html" >}}
@@ -173,8 +171,6 @@ Toma la navegación básica de arriba y agrega la clase `.nav-tabs` para generar
 {{< /demo-iframe >}}
 
 ### Pastillas {#pills}
-
-{{< content-ads/middle-banner-3 >}}
 
 Toma el mismo HTML, pero usa `.nav-pills` en su lugar:
 
@@ -223,8 +219,6 @@ Toma el mismo HTML, pero usa `.nav-underline` en su lugar:
 {{< /demo-iframe >}}
 
 ### Completar y justificar {#fill-and-justify}
-
-{{< content-ads/middle-banner-4 >}}
 
 Fuerza el contenido de tu `.nav` a extender todo el ancho disponible con una de dos clases de modificador. Para llenar proporcionalmente todo el espacio disponible con tus `.nav-item`, utiliza `.nav-fill`. Observa que todo el espacio horizontal está ocupado, pero no todos los elementos de navegación tienen el mismo ancho.
 
@@ -297,8 +291,6 @@ Similar al ejemplo de `.nav-fill` usando una navegación basada en `<nav>`.
 Trabajar con utilidades flexibles {#working-with-flex-utilities}
 -----------------------------------------------------------------
 
-{{< content-ads/middle-banner-5 >}}
-
 Si necesitas variaciones de nav responsive, considera usar una serie de [utilidades flexbox](/bootstrap/5.3/utilities/flex). Si bien son más detalladas, estas utilidades ofrecen una mayor personalización en los puntos de interrupción responsive. En el siguiente ejemplo, nuestra navegación se apilará en el punto de interrupción más bajo y luego se adaptará a un diseño horizontal que llena el ancho disponible a partir del punto de interrupción pequeño.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navs-tabs/working-with-flex-utilities.html" >}}
@@ -314,6 +306,8 @@ Si necesitas variaciones de nav responsive, considera usar una serie de [utilida
 
 Respecto a la accesibilidad {#regarding-accessibility}
 -------------------------------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Si estás usando navs para proporcionar una barra de navegación, asegúrate de agregar un `role="navigation"` al contenedor padre más lógico del `<ul>`, o envuelve un elemento `<nav>` alrededor de toda la navegación. No agregues el rol al `<ul>` en sí, ya que esto evitaría que las tecnologías de asistencia lo anuncien como una lista real.
 
@@ -358,8 +352,6 @@ Agrega menús desplegables con un poco más de HTML y el [complemento JavaScript
 {{< /demo-iframe >}}
 
 ### Pastillas con menús desplegables {#pills-with-dropdowns}
-
-{{< content-ads/middle-banner-6 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navs-tabs/pills-with-dropdowns.html" >}}
 ```html {filename="HTML"}
@@ -428,8 +420,6 @@ En la clase modificadora `.nav-tabs`:
 --#{$prefix}nav-tabs-link-active-border-color: #{$nav-tabs-link-active-border-color};
 ```
 
-{{< content-ads/middle-banner-7 >}}
-
 En la clase modificadora `.nav-pills`:
 
 [scss/_nav.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_nav.scss)
@@ -439,6 +429,8 @@ En la clase modificadora `.nav-pills`:
 --#{$prefix}nav-pills-link-active-color: #{$nav-pills-link-active-color};
 --#{$prefix}nav-pills-link-active-bg: #{$nav-pills-link-active-bg};
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.3.0</span>
@@ -538,8 +530,6 @@ Para ayudarte a satisfacer tus necesidades, esto funciona con el marcado basado 
 ```
 {{< /demo-iframe >}}
 
-{{< content-ads/middle-banner-8 >}}
-
 El complemento de pestañas también funciona con pastillas.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/navs-tabs/javascript-behavior-3.html" >}}
@@ -604,9 +594,9 @@ En general, para facilitar la navegación con el teclado, se recomienda hacer qu
 El complemento JavaScript con pestañas **no** admite interfaces con pestañas que contengan menús desplegables, ya que causan problemas de usabilidad y accesibilidad. Desde una perspectiva de usabilidad, el hecho de que el elemento desencadenante de la pestaña que se muestra actualmente no sea visible inmediatamente (ya que está dentro del menú desplegable cerrado) puede causar confusión. Desde el punto de vista de la accesibilidad, actualmente no existe una forma sensata de asignar este tipo de construcción a un patrón WAI ARIA estándar, lo que significa que no puede hacerse comprensible fácilmente para los usuarios de tecnologías de asistencia.
 {{< /callout >}}
 
-### Usar atributos de datos {#using-data-attributes}
+{{< content-ads/middle-banner-4 >}}
 
-{{< content-ads/middle-banner-9 >}}
+### Usar atributos de datos {#using-data-attributes}
 
 Puedes activar una pestaña o píldora de navegación sin escribir ningún JavaScript simplemente especificando `data-bs-toggle="tab"` o `data-bs-toggle="pill"` en un elemento. Utiliza estos atributos de datos en `.nav-tabs` o `.nav-pills`.
 

@@ -23,17 +23,19 @@ Proporciona una opción para descartar o cerrar un componente con `.btn-close`. 
 
 ## Estado deshabilitado
 
+{{< content-ads/middle-banner-1 >}}
+
 Los botones de cierre deshabilitados cambian su `opacity`. También hemos aplicado `pointer-events: none` y `user-select: none` para evitar que se activen los estados *active* y *hover*.
 
 {{< bootstrap/5-1/example >}}
 <button type="button" class="btn-close" disabled aria-label="Cerrar"></button>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Variante clara
 
 Cambia el `.btn-close` predeterminado para que sea blanco con la clase `.btn-close-white`. Esta clase usa la propiedad `filter` para invertir la `background-image`.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example class="bg-dark" >}}
 <button type="button" class="btn-close btn-close-white" aria-label="Cerrar"></button>

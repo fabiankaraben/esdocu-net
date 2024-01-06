@@ -28,6 +28,8 @@ Utiliza las clases `.figure`, `.figure-img` y `.figure-caption` incluidas para p
 
 Alinear el título de la figura es fácil con nuestras [utilidades de texto](/bootstrap/5.3/utilities/text/#text-alignment).
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/content/figures/index-2.html" >}}
 ```html {filename="HTML"}
     <figure class="figure">
@@ -43,6 +45,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-2 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

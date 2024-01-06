@@ -28,11 +28,11 @@ Nos sumergiremos más a fondo en cada uno de estos puntos, pero en general, esto
 - Siempre que sea posible, se usan utilidades sobre estilos personalizados
 - Siempre que sea posible, se evita aplicar requisitos HTML estrictos (selectores hijos)
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Responsive
 
 Los estilos responsive de Bootstrap están diseñados para ser responsive, un enfoque que a menudo se denomina _mobile-first_. Usamos este término en nuestros documentos y en gran parte estamos de acuerdo con él, pero a veces puede ser demasiado amplio. Si bien no todos los componentes _deben_ ser completamente responsive en Bootstrap, este enfoque responsive trata de reducir las sobrescrituras de CSS al presionarlo para agregar estilos a medida que el viewport se vuelve más grande.
+
+{{< content-ads/middle-banner-1 >}}
 
 En Bootstrap, verás esto más claramente en nuestras media queries. En la mayoría de los casos, usamos consultas `min-width` que comienzan a aplicarse en un breakpoint específico y continúan a través de los breakpoints más altos. Por ejemplo, un `.d-none` se aplica desde `min-width: 0` hasta el infinito. Por otro lado, un `.d-md-none` se aplica desde el breakpoint medium y hacia arriba.
 
@@ -47,6 +47,8 @@ Como tales, los componentes deben construirse con una clase base que albergue pa
 Las clases modificadoras solo deben usarse cuando hay múltiples propiedades o valores para cambiar en múltiples variantes. Los modificadores no siempre son necesarios, así que asegúrate de ahorrar líneas de código y evitar sobrescrituras innecesarias al crearlas. Buenos ejemplos de modificadores son nuestras clases de colores temáticos y variantes de tamaño.
 
 ## Escalas z-index
+
+{{< content-ads/middle-banner-2 >}}
 
 Hay dos escalas de `z-index` en Bootstrap: elementos dentro de un componente y componentes superpuestos.
 
@@ -65,6 +67,8 @@ Cada componente de superposición aumenta ligeramente su valor de `z-index` de t
 
 Obtén más información sobre esto en nuestra [página de diseño `z-index`]({{< bootstrap/5-1/docsref "/layout/z-index" >}}).
 
+{{< content-ads/middle-banner-3 >}}
+
 ## HTML y CSS sobre JS
 
 Siempre que sea posible, preferimos escribir HTML y CSS sobre JavaScript. En general, HTML y CSS son más prolíficos y accesibles para más personas de todos los niveles de experiencia. HTML y CSS también son más rápidos en tu navegador que JavaScript, y tu navegador generalmente te brinda una gran cantidad de funciones.
@@ -79,13 +83,13 @@ Lo mismo ocurre con los componentes más complejos. Si bien *podríamos* escribi
 
 Las clases de utilidad, anteriormente helpers en Bootstrap 3, son un poderoso aliado para combatir la sobrecarga de CSS y el bajo rendimiento de la página. Una clase de utilidad suele ser un par propiedad-valor único e inmutable expresado como una clase (por ejemplo, `.d-block` representa `display: block;`). Su atractivo principal es la velocidad de uso al escribir HTML y limitar la cantidad de CSS personalizado que tienes que escribir.
 
+{{< content-ads/middle-banner-4 >}}
+
 Específicamente en lo que respecta a CSS personalizado, las utilidades pueden ayudar a combatir el aumento del tamaño del archivo al reducir los pares de propiedad-valor que se repiten con más frecuencia en clases únicas. Esto puede tener un efecto dramático a escala en tus proyectos.
 
 ## HTML flexible
 
 Si bien no siempre es posible, nos esforzamos por evitar ser demasiado dogmáticos en nuestros requisitos HTML para los componentes. Por lo tanto, nos enfocamos en clases individuales en nuestros selectores CSS y tratamos de evitar los selectores hijos inmediatos (`>`). Esto te brinda más flexibilidad en tu implementación y ayuda a mantener nuestro CSS más simple y menos específico.
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Convenciones de código
 

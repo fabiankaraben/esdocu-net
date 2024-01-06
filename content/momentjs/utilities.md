@@ -63,8 +63,6 @@ var m = moment.invalid({invalidMonth: 'Actober'});
 m.parsingFlags().invalidMonth; // 'Actober'
 ```
 
-{{< content-ads/middle-banner-3 >}}
-
 No es necesario especificar indicadores de análisis reconocidos por Moment; No obstante, el Moment no será válido y las banderas de análisis serán devueltas por `parsingFlags()`.
 
 {{< content-ads/bottom-banner >}}

@@ -38,6 +38,8 @@ Para los mensajes de validación de formulario Bootstrap personalizados, deberá
 
 Los estilos de feedbacks personalizados aplican colores, bordes, estilos de enfoque e iconos de fondo personalizados para comunicar mejor los feedbacks. Los iconos de fondo para `<select>` solo están disponibles con `.form-select`, y no con `.form-control`.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example >}}
 <form class="row g-3 needs-validation" novalidate>
   <div class="col-md-4">
@@ -128,8 +130,6 @@ Los estilos de feedbacks personalizados aplican colores, bordes, estilos de enfo
 })()
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Valores predeterminados del navegador
 
 ¿No te interesan los mensajes feedback de validación personalizados o escribir JavaScript para cambiar los comportamientos de los formularios? Todo bien, puedes usar los valores predeterminados del navegador. Intenta enviar el formulario a continuación. Dependiendo de tu navegador y sistema operativo, verás un estilo de retroalimentación ligeramente diferente.
@@ -185,6 +185,8 @@ Si bien estos estilos de comentarios no se pueden diseñar con CSS, aún puedes 
 ## Lado del servidor
 
 Recomendamos utilizar la validación del lado del cliente, pero en caso de que necesites la validación del lado del servidor, puedes indicar campos de formulario válidos y no válidos con `.is-invalid` y `.is-valid`. Ten en cuenta que `.invalid-feedback` también es compatible con estas clases.
+
+{{< content-ads/middle-banner-2 >}}
 
 Para los campos no válidos, asegúrate de que el mensaje de error/feedback no válido esté asociado con el campo de formulario relevante utilizando `aria-describedby` (ten en cuenta que este atributo permite hacer referencia a más de un `id`, en caso de que el campo ya apunte a un texto de formulario adicional).
 
@@ -257,8 +259,6 @@ Para solucionar [problemas con los radios de los bordes](https://github.com/twbs
 </form>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Elementos compatibles
 
 Los estilos de validación están disponibles para los siguientes controles y componentes de formulario:
@@ -315,6 +315,8 @@ Los estilos de validación están disponibles para los siguientes controles y co
 {{< /bootstrap/5-1/example >}}
 
 ## Tooltips
+
+{{< content-ads/middle-banner-3 >}}
 
 Si el diseño de tu formulario lo permite, puedes intercambiar las clases `.{valid|invalid}-feedback` por clases `.{valid|invalid}-tooltip` para mostrar comentarios de validación en un tooltip con estilo. Asegúrate de tener un padre con `position: relative` en él para el posicionamiento del tooltip. En el siguiente ejemplo, nuestras clases de columnas ya tienen esto, pero tu proyecto puede requerir una configuración alternativa.
 
@@ -386,6 +388,8 @@ Dos mixins se combinan juntos, a través de nuestro [loop](#loop), para generar 
 
 {{< bootstrap/5-1/scss-docs name="form-validation-mixins" file="scss/mixins/_forms.scss" >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 ### Mapa
 
 Este es el mapa Sass de validación de `_variables.scss`. Sobrescribe o amplía esto para generar estados diferentes o adicionales.
@@ -393,8 +397,6 @@ Este es el mapa Sass de validación de `_variables.scss`. Sobrescribe o amplía 
 {{< bootstrap/5-1/scss-docs name="form-validation-states" file="scss/_variables.scss" >}}
 
 Los mapas de `$form-validation-states` pueden contener tres parámetros opcionales para sobrescribir los estilos de tooltips y de enfoque.
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Loop
 

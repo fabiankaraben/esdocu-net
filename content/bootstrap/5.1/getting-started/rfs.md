@@ -20,9 +20,9 @@ El mecanismo calcula automáticamente los valores apropiados en función de las 
 
 ## Uso de RFS
 
-Los mixins están incluidos en Bootstrap y están disponibles una vez que incluyes `scss` de Bootstrap. RFS también se puede [instalar de forma independiente](https://github.com/twbs/rfs/tree/{{< bootstrap/5-1/param "rfs_version" >}}#installation) si es necesario.
-
 {{< content-ads/middle-banner-1 >}}
+
+Los mixins están incluidos en Bootstrap y están disponibles una vez que incluyes `scss` de Bootstrap. RFS también se puede [instalar de forma independiente](https://github.com/twbs/rfs/tree/{{< bootstrap/5-1/param "rfs_version" >}}#installation) si es necesario.
 
 ### Uso de los mixins
 
@@ -33,6 +33,8 @@ El mixin `rfs()` tiene abreviaturas para `font-size`, `margin`, `margin-top`, `m
   @include font-size(4rem);
 }
 ```
+
+{{< content-ads/middle-banner-2 >}}
 
 ```css
 .title {
@@ -61,6 +63,8 @@ Cualquier otra propiedad se puede pasar al mixin `rfs()` de esta manera:
 }
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Uso de las funciones
 
 Cuando no deseas utilizar los incluidos, también hay dos funciones:
@@ -69,6 +73,8 @@ Cuando no deseas utilizar los incluidos, también hay dos funciones:
 - `rfs-fluid-value()` devuelve la versión fluida de un valor si la propiedad necesita un cambio de escala.
 
 En este ejemplo, usamos uno de los [mixins de breakpoint responsive]({{< bootstrap/5-1/docsref "/layout/breakpoints" >}}) integrados de Bootstrap para aplicar solo estilo debajo del breakpoint `lg`.
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss
 .selector {
@@ -87,8 +93,6 @@ En este ejemplo, usamos uno de los [mixins de breakpoint responsive]({{< bootstr
   }
 }
 ```
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Documentación extendida
 

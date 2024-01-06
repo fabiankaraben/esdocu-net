@@ -9,13 +9,13 @@ description: La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de 
 
 La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de Bootstrap en tu proyecto usando Vite.
 
+{{< content-ads/top-banner >}}
+
 ![Bootstrap y Vite](/assets/bootstrap/5.3/assets/img/guides/bootstrap-vite.png)
 
 {{< callout type="info" emoji="" >}}
 **¿Quieres ir hasta el final?** Descarga el código fuente y la demostración funcional de esta guía desde el repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/vite). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/vite?file=index) para editarlo en vivo.
 {{< /callout >}}
-
-{{< content-ads/top-banner >}}
 
 ## Configuración {#setup}
 
@@ -37,6 +37,8 @@ Estamos creando un proyecto Vite con Bootstrap desde cero, por lo que existen al
     npm i --save bootstrap @popperjs/core
     ```
     
+{{< content-ads/middle-banner-1 >}}
+
 4.  **Instala una dependencia adicional.** Además de Vite y Bootstrap, necesitamos otra dependencia (Sass) para importar y agrupar correctamente el CSS de Bootstrap.
     ```shell {filename="Terminal"}
     npm i --save-dev sass
@@ -67,6 +69,8 @@ my-project/
 ├── package.json
 └── vite.config.js
 ```
+
+{{< content-ads/middle-banner-2 >}}
 
 En este punto, todo está en el lugar correcto, pero Vite no funcionará porque aún no hemos completado nuestro `vite.config.js`.
 
@@ -122,6 +126,8 @@ Con las dependencias instaladas y nuestra carpeta de proyecto lista para que com
     }
     ```
     
+{{< content-ads/middle-banner-3 >}}
+
 4.  **Y finalmente, podemos iniciar Vite.** Desde la carpeta `my-project` en tu terminal, ejecuta el script npm recién agregado:
     ```shell {filename="Terminal"}
     npm start
@@ -143,6 +149,8 @@ En la siguiente y última sección de esta guía, importaremos todo el CSS y Jav
     
     _También puedes importar nuestras hojas de estilo individualmente si lo deseas. [Lee nuestra documentación de importación de Sass](/bootstrap/5.3/customize/sass/#importing) para obtener más detalles._
     
+{{< content-ads/middle-banner-4 >}}
+
 2.  **A continuación cargamos el CSS e importamos el JavaScript de Bootstrap.** Agrega lo siguiente a `src/js/main.js` para cargar el CSS e importa todo el JS de Bootstrap. Popper se importará automáticamente a través de Bootstrap.
     ```javascript {filename="JavaScript"}
     // Import our custom CSS

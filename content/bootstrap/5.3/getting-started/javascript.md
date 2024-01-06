@@ -62,6 +62,8 @@ Uncaught TypeError: Failed to resolve module specifier "@popperjs/core". Relativ
 
 Para solucionar este problema, puedes usar un `importmap` para resolver los nombres arbitrarios de los módulos para completar las rutas. Si tus [navegadores específicos](https://caniuse.com/?search=importmap) no admiten `importmap`, deberás utilizar el proyecto [es-module-shims](https://github.com/guybedford/es-module-shims). Así es como funciona para Bootstrap y Popper:
 
+{{< content-ads/middle-banner-1 >}}
+
 ```html {filename="HTML"}
 <!doctype html>
 <html lang="en">
@@ -129,6 +131,8 @@ myModal.addEventListener('show.bs.modal', event => {
 })
 ```    
 
+{{< content-ads/middle-banner-2 >}}
+
 ## API programática {#programmatic-api}
 
 Todos los constructores aceptan un objeto de opciones opcional o nada (lo que inicia un complemento con su comportamiento predeterminado):
@@ -181,6 +185,8 @@ myCollapseEl.addEventListener('shown.bs.collapse', event => {
 ```    
 
 Además, una llamada a un método en un **componente en transición será ignorada**.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```javascript {filename="JavaScript"}
 const myCarouselEl = document.querySelector('#myCarousel')
@@ -240,6 +246,8 @@ La información sobre herramientas y las ventanas emergentes utilizan nuestro sa
 El valor predeterminado de `allowList` es el siguiente:
 
 [js/src/util/sanitizer.js](https://github.com/twbs/bootstrap/blob/v5.3.2/js/src/util/sanitizer.js)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```javascript {filename="js/src/util/sanitizer.js"}
 const ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i

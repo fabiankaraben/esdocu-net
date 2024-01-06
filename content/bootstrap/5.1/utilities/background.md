@@ -43,9 +43,9 @@ Al agregar una clase `.bg-gradient`, se agrega un degradado lineal como imagen d
 {{< /bootstrap/5-1/markdown >}}
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Opacidad
+
+{{< content-ads/middle-banner-1 >}}
 
 <small class="d-inline-flex px-2 py-1 font-monospace text-muted border rounded-3">Añadido en v5.1.0</small>
 
@@ -67,6 +67,8 @@ Usamos una versión RGB de nuestra variable CSS `--bs-success` (con el valor de 
 ### Ejemplo
 
 Para cambiar esa opacidad, sobrescribe `--bs-bg-opacity` a través de estilos personalizados o estilos en línea.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="bg-success p-2 text-white">Este es el fondo de success predeterminado</div>
@@ -93,6 +95,8 @@ La mayoría de las utilidades de `background-color` son generadas por nuestros c
 
 {{< bootstrap/5-1/scss-docs name="color-variables" file="scss/_variables.scss" >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/scss-docs name="theme-color-variables" file="scss/_variables.scss" >}}
 
 {{< bootstrap/5-1/scss-docs name="variable-gradient" file="scss/_variables.scss" >}}
@@ -108,6 +112,8 @@ Luego, los colores del tema se colocan en un mapa de Sass para que podamos recor
 {{< bootstrap/5-1/scss-docs name="theme-colors-map" file="scss/_variables.scss" >}}
 
 Los colores en escala de grises también están disponibles como mapa Sass. **Este mapa no se usa para generar utilidades.**
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< bootstrap/5-1/scss-docs name="gray-colors-map" file="scss/_variables.scss" >}}
 
@@ -125,9 +131,9 @@ Y las opacidades del color de fondo se basan en esto con su propio mapa que cons
 
 {{< bootstrap/5-1/scss-docs name="gradient-bg-mixin" file="scss/mixins/_gradients.scss" >}}
 
-{{< bootstrap/5-1/scss-docs name="gradient-mixins" file="scss/mixins/_gradients.scss" >}}
+{{< content-ads/middle-banner-5 >}}
 
-{{< content-ads/middle-banner-2 >}}
+{{< bootstrap/5-1/scss-docs name="gradient-mixins" file="scss/mixins/_gradients.scss" >}}
 
 ### API de utilidades
 

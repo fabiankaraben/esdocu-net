@@ -20,6 +20,8 @@ Para centrar verticalmente el contenido que no está en línea (como `<div>`s y 
 
 Con elementos en línea:
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example >}}
 <span class="align-baseline">baseline</span>
 <span class="align-top">superior</span>
@@ -46,9 +48,9 @@ Con celdas de tabla:
 </table>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Sass
+
+{{< content-ads/middle-banner-2 >}}
 
 ### API de utilidades
 

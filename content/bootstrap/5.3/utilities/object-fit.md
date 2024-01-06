@@ -25,6 +25,8 @@ Las clases para el valor de `object-fit` se nombran usando el formato `.object-f
 * `scale` (para reducir la escala)
 * `none`
 
+{{< content-ads/middle-banner-1 >}}
+
 Ejemplos {#examples}
 ---------------------
 
@@ -43,6 +45,8 @@ Agrega la clase `object-fit-{value}` al [elemento reemplazado](https://developer
 Responsive {#responsive}
 -------------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 También existen variaciones responsive para cada valor de `object-fit` usando el formato `.object-fit-{breakpoint}-{value}`, para las siguientes abreviaturas de puntos de interrupción: `sm`, `md`, `lg`, `xl` y `xxl`. Las clases se pueden combinar para obtener varios efectos según sea necesario.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/object-fit/responsive.html" >}}
@@ -60,6 +64,8 @@ Video {#video}
 
 Las utilidades `.object-fit-{value}` y responsive `.object-fit-{breakpoint}-{value}` también funciona con elementos `<video>`.
 
+{{< content-ads/middle-banner-3 >}}
+
     ```html {filename="HTML"}
     <video src="..." class="object-fit-contain" autoplay></video>
     <video src="..." class="object-fit-cover" autoplay></video>
@@ -74,6 +80,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
+
+{{< content-ads/middle-banner-4 >}}
 
 Las utilidades de ajuste de objetos se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 

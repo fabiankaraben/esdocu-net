@@ -57,8 +57,6 @@ Anteriormente, nuestros scripts agregaban dinámicamente la clase `.hide` para o
 
 ### Ejemplo en vivo {#live-example}
 
-{{< content-ads/middle-banner-1 >}}
-
 Haz clic en el botón de abajo para mostrar un toast (ubicado con nuestras utilidades en la esquina inferior derecha) que ha estado oculto de forma predeterminada.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/toasts/live-example.html" >}}
@@ -86,6 +84,8 @@ Haz clic en el botón de abajo para mostrar un toast (ubicado con nuestras utili
 Utilizamos el siguiente JavaScript para activar nuestra demostración de toast en vivo:
 
 [site/assets/js/snippets.js](https://github.com/twbs/bootstrap/blob/v5.3.2/site/assets/js/snippets.js)
+
+{{< content-ads/middle-banner-1 >}}
 
 ```scss {filename="site/assets/js/snippets.js"}
 const toastTrigger = document.getElementById('liveToastBtn')
@@ -123,8 +123,6 @@ Los toasts son ligeramente translúcidas para mezclarse con lo que hay debajo de
 {{< /demo-iframe >}}
 
 ### Apilar {#stacking}
-
-{{< content-ads/middle-banner-2 >}}
 
 Puedes apilar toasts envolviéndolos en un recipiente para toasts, lo que agregará algo de espacio verticalmente.
 
@@ -201,8 +199,6 @@ Alternativamente, también puedes agregar controles y componentes adicionales a 
 
 ### Esquemas de colores {#color-schemes}
 
-{{< content-ads/middle-banner-3 >}}
-
 A partir del ejemplo anterior, puedes crear diferentes combinaciones de colores de toasts con nuestras utilidades de [color](/bootstrap/5.3/utilities/colors) y [fondo](/bootstrap/5.3/utilities/background). Aquí agregamos `.text-bg-primary` a `.toast` y luego agregamos `.btn-close-white` a nuestro botón de cerrar. Para obtener un borde nítido, eliminamos el borde predeterminado con `.border-0`.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/toasts/color-schemes.html" >}}
@@ -219,6 +215,8 @@ A partir del ejemplo anterior, puedes crear diferentes combinaciones de colores 
 </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 Ubicación del componente Toast {#placement}
 -----------------------
@@ -266,8 +264,6 @@ Coloca toast con CSS personalizado cuando los necesites. La parte superior derec
 </div>
 ```
 {{< /demo-iframe >}}
-
-{{< content-ads/middle-banner-4 >}}
 
 Para los sistemas que generan más notificaciones, considera usar un elemento envolvente para que se puedan apilar fácilmente.
 
@@ -346,8 +342,6 @@ También puedes usar las utilidades de Flexbox para alinear las tostadas horizon
 Accesibilidad del componente Toast {#accessibility}
 -------------------------------
 
-{{< content-ads/middle-banner-5 >}}
-
 Los toast están destinados a ser pequeñas interrupciones para tus visitantes o usuarios, por lo que, para ayudar a aquellos con lectores de pantalla y tecnologías de asistencia similares, debes envolver tus toast en un [`aria-live` (región)](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions). Los lectores de pantalla anuncian automáticamente los cambios en las regiones activas (como la inyección/actualización de un componente del sistema) sin necesidad de mover el enfoque del usuario ni interrumpirlo de otro modo. Además, incluye `aria-atomic="true"` para garantizar que todo el toast se anuncie siempre como una única unidad (atómica), en lugar de simplemente anunciar lo que se cambió (lo que podría generar problemas si solo actualizas parte del contenido del toast, o si se muestras el mismo contenido del toast en un momento posterior). Si la información necesaria es importante para el proceso, p.e. para obtener una lista de errores en un formulario, utiliza el [componente de alerta](/bootstrap/5.3/components/alerts) en lugar de toast.
 
 Ten en cuenta que la región en vivo debe estar presente en el marcado _antes_ de que se genere o actualice el toast. Si generas dinámicamente ambos al mismo tiempo y los inyectas en la página, generalmente no serán anunciados por las tecnologías de asistencia.
@@ -363,6 +357,8 @@ A medida que cambia el contenido que estás mostrando, asegúrate de actualizar 
 ```
 
 Cuando uses `autohide: false`, debes agregar un botón de cierre para permitir a los usuarios descartar el toast.
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/toasts/accessibility.html" >}}
 ```html {filename="HTML"}
@@ -394,8 +390,6 @@ Personalización del CSS del componente {#css}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
-
-{{< content-ads/middle-banner-6 >}}
 
 Como parte del enfoque de variables CSS en evolución de Bootstrap, los toast ahora usan variables CSS locales en `.toast` para una personalización mejorada en tiempo real. Los valores de las variables CSS se establecen a través de Sass, por lo que la personalización de Sass también es compatible.
 
@@ -453,7 +447,7 @@ const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, o
 
 ### Desencadenantes {#triggers}
 
-{{< content-ads/middle-banner-7 >}}
+{{< content-ads/middle-banner-4 >}}
 
 El despido se puede lograr con el atributo `data-bs-dismiss` en un botón **dentro del toast** como se muestra a continuación:
 
@@ -513,6 +507,5 @@ myToastEl.addEventListener('hidden.bs.toast', () => {
     // do something...
 })
 ```
-
 
 {{< content-ads/bottom-banner >}}

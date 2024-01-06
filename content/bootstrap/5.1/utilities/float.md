@@ -24,6 +24,8 @@ Estas clases de utilidad hacen flotar un elemento a la izquierda o a la derecha,
 
 ## Responsive
 
+{{< content-ads/middle-banner-1 >}}
+
 También existen variaciones responsive para cada valor `float`.
 
 {{< bootstrap/5-1/example >}}
@@ -45,7 +47,7 @@ Aquí están todas las clases soportadas:
 {{< /float.inline >}}
 {{< /bootstrap/5-1/markdown >}}
 
-{{< content-ads/middle-banner-1 >}}
+{{< content-ads/middle-banner-2 >}}
 
 ## Sass
 

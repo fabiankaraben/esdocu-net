@@ -36,6 +36,8 @@ Utiliza los spinners de borde para un indicador de carga ligero.
 
 El spinner de borde usa `currentColor` para su `border-color`, lo que significa que puedes personalizar el color con [utilidades de color de texto][color]. Puedes usar cualquiera de nuestras utilidades de color de texto en el spinner estándar.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example >}}
 {{< spinner.inline >}}
 {{- range (index $.Site.Data "bootstrap_5_1_theme-colors") }}
@@ -49,8 +51,6 @@ El spinner de borde usa `currentColor` para su `border-color`, lo que significa 
 {{< bootstrap/5-1/callout info >}}
 **¿Por qué no usar las utilidades `border-color`?** Cada marcador giratorio de borde especifica un borde `transparent` para al menos un lado, por lo que las utilidades `.border-{color}` sobrescribirían eso.
 {{< /bootstrap/5-1/callout >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Spinner creciente
 
@@ -77,6 +77,8 @@ Una vez más, este spinner está construido con `currentColor`, por lo que puede
 ## Alineación
 
 Los spinners en Bootstrap están construidos con `rem`s, `currentColor` y `display: inline-flex`. Esto significa que se pueden cambiar de tamaño, cambiar de color y alinear rápidamente.
+
+{{< content-ads/middle-banner-2 >}}
 
 ### Margen
 
@@ -111,6 +113,8 @@ Utiliza las [utilidades flexbox][flex], [utilidades float][float] o [alineación
 
 #### Floats
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="clearfix">
   <div class="spinner-border float-end" role="status">
@@ -128,8 +132,6 @@ Utiliza las [utilidades flexbox][flex], [utilidades float][float] o [alineación
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Tamaño
 
@@ -156,6 +158,8 @@ O bien, usa CSS personalizado o estilos en línea para cambiar las dimensiones s
 {{< /bootstrap/5-1/example >}}
 
 ## Botones
+
+{{< content-ads/middle-banner-4 >}}
 
 Usa los spinners dentro de botones para indicar que una acción se está procesando o está teniendo lugar actualmente. También puedes cambiar el texto fuera del elemento spinner y utilizar el texto del botón según sea necesario.
 
@@ -193,8 +197,9 @@ Usado para crear las animaciones CSS para nuestros spinners. Incluido en `scss/_
 
 {{< bootstrap/5-1/scss-docs name="spinner-border-keyframes" file="scss/_spinners.scss" >}}
 
-{{< bootstrap/5-1/scss-docs name="spinner-grow-keyframes" file="scss/_spinners.scss" >}}
+{{< content-ads/middle-banner-5 >}}
 
+{{< bootstrap/5-1/scss-docs name="spinner-grow-keyframes" file="scss/_spinners.scss" >}}
 
 [color]:   {{< bootstrap/5-1/docsref "/utilities/colors" >}}
 [display]: {{< bootstrap/5-1/docsref "/utilities/display" >}}

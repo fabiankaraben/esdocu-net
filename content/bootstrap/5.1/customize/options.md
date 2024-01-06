@@ -17,8 +17,6 @@ Personaliza Bootstrap con nuestro archivo de variables personalizadas incorporad
 
 Puedes encontrar y personalizar estas variables para opciones globales clave en el archivo `scss/_variables.scss` de Bootstrap.
 
-{{< content-ads/middle-banner-1 >}}
-
 {{< bootstrap/5-1/bs-table "table text-start" >}}
 | Variable                       | Values                                  | Description                                                                                                                                                                                                                                                 |
 | ------------------------------ | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

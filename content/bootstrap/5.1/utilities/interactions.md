@@ -24,6 +24,8 @@ Cambiar la forma en que se selecciona el contenido cuando el usuario interactúa
 
 ## Eventos de puntero
 
+{{< content-ads/middle-banner-1 >}}
+
 Bootstrap proporciona las clases `.pe-none` y `.pe-auto` para evitar o agregar interacciones de elementos.
 
 {{< bootstrap/5-1/example >}}
@@ -36,10 +38,10 @@ La clase `.pe-none` (y la propiedad CSS `pointer-events` que establece) solo evi
 
 Si es posible, la solución más simple es:
 
+{{< content-ads/middle-banner-2 >}}
+
 - Para los controles de formulario, agrega el atributo HTML `disabled`.
 * Para los enlaces, elimina el atributo `href`, convirtiéndolo en un enlace no interactivo o enlace placeholder.
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Sass
 

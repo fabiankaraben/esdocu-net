@@ -41,9 +41,9 @@ Colorea el texto con utilidades de color. Si deseas colorear los enlaces, puedes
 
 <small class="d-inline-flex px-2 py-1 font-monospace text-muted border rounded-3">Añadido en v5.1.0</small>
 
-A partir de v5.1.0, las utilidades de color de texto se generan con Sass usando variables CSS. Esto permite cambios de color en tiempo real sin compilación y cambios dinámicos de transparencia alfa.
-
 {{< content-ads/middle-banner-1 >}}
+
+A partir de v5.1.0, las utilidades de color de texto se generan con Sass usando variables CSS. Esto permite cambios de color en tiempo real sin compilación y cambios dinámicos de transparencia alfa.
 
 ### ¿Cómo funcionan los colores?
 
@@ -61,6 +61,8 @@ Usamos una versión RGB de nuestra variable CSS `--bs-primary` (con el valor de 
 ### Ejemplo
 
 Para cambiar la opacidad, sobrescribe `--bs-text-opacity` a través de estilos personalizados o estilos en línea.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="text-primary">Este es el texto primary predeterminado</div>
@@ -84,6 +86,8 @@ A veces, las clases contextuales no se pueden aplicar debido a la especificidad 
 
 Además de la siguiente funcionalidad de Sass, considera leer sobre nuestras [propiedades personalizadas CSS]({{< bootstrap/5-1/docsref "/customize/css-variables" >}}) (también conocidas como variables CSS) para colores y más.
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Variables
 
 La mayoría de las utilidades de `color` son generadas por nuestros colores de tema, reasignados desde nuestras variables genéricas de paleta de colores.
@@ -97,6 +101,8 @@ Los colores en escala de grises también están disponibles, pero solo se usa un
 {{< bootstrap/5-1/scss-docs name="gray-color-variables" file="scss/_variables.scss" >}}
 
 ### Mapa
+
+{{< content-ads/middle-banner-4 >}}
 
 Luego, los colores del tema se colocan en un mapa de Sass para que podamos recorrerlos para generar nuestras utilidades, modificadores de componentes y más.
 
@@ -112,9 +118,9 @@ Los colores RGB se generan a partir de un mapa Sass separado:
 
 Y las opacidades de color se basan en esto con su propio mapa que consume la API de utilidades:
 
-{{< bootstrap/5-1/scss-docs name="utilities-text-colors" file="scss/_maps.scss" >}}
+{{< content-ads/middle-banner-5 >}}
 
-{{< content-ads/middle-banner-2 >}}
+{{< bootstrap/5-1/scss-docs name="utilities-text-colors" file="scss/_maps.scss" >}}
 
 ### API de utilidades
 

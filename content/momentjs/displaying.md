@@ -102,9 +102,9 @@ moment('gibberish').format('YYYY MM DD');         // "Invalid date"
 
 ### Formatos regionales (según locale)
 
-{{< content-ads/middle-banner-1 >}}
-
 Debido a que el formato preferido difiere según la ubicación, existen algunos tokens que se pueden usar para formatear un moment según su ubicación.
+
+{{< content-ads/middle-banner-1 >}}
 
 Hay variaciones de mayúsculas y minúsculas en los mismos formatos. La versión en minúscula pretende ser la versión abreviada de su contraparte en mayúscula.
 
@@ -139,11 +139,11 @@ moment().format('[today] dddd'); // 'today Sunday'
 
 Para obtener un desglose de algunos tokens de formato de fecha diferentes en diferentes configuraciones regionales, consulta [este cuadro de tokens de formato de fecha.](https://docs.google.com/spreadsheet/ccc?key=0AtgZluze7WMJdDBOLUZfSFIzenIwOHNjaWZoeGFqbWc&amp;hl=en_US#gid=0)
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Otros tokens
 
 Si te sientes más cómodo trabajando con strftime en lugar de tokens de análisis similares a LDML, puedes utilizar el complemento de Ben Oakes. [benjaminoakes/moment-strftime](https://github.com/benjaminoakes/moment-strftime).
+
+{{< content-ads/middle-banner-2 >}}
 
 ### Formato predeterminado
 
@@ -172,8 +172,6 @@ moment().fromNow(Boolean);
 
 Una forma común de mostrar el tiempo es manejada por `moment#fromNow`. A esto a veces se le llama tiempo atrás o tiempo relativo.
 
-{{< content-ads/middle-banner-3 >}}
-
 ```javascript {filename="JavaScript"}
 moment([2007, 0, 29]).fromNow(); // 4 years ago
 ```
@@ -184,6 +182,8 @@ Si pasas `true`, puedes obtener el valor sin el sufijo.
 moment([2007, 0, 29]).fromNow();     // 4 years ago
 moment([2007, 0, 29]).fromNow(true); // 4 years
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 Las cadenas base están [personalizadas según la configuración regional actual](/momentjs/customization#relative-time). El tiempo se redondea al segundo más cercano.
 
@@ -217,8 +217,6 @@ moment().from(Moment|String|Number|Date|Array, Boolean);
 
 Es posible que desees mostrar un moment en relación con un tiempo distinto al actual. En ese caso, puedes usar `moment#from`.
 
-{{< content-ads/middle-banner-4 >}}
-
 ```javascript {filename="JavaScript"}
 var a = moment([2007, 0, 28]);
 var b = moment([2007, 0, 29]);
@@ -237,6 +235,8 @@ a.from("2007-01-29");          // "a day ago"
 ```
 
 Al igual que `moment#fromNow`, pasar `true` como segundo parámetro devuelve un valor sin el sufijo. Esto es útil siempre que necesites tener un período de tiempo legible por humanos.
+
+{{< content-ads/middle-banner-4 >}}
 
 ```javascript {filename="JavaScript"}
 var start = moment([2007, 0, 5]);
@@ -260,8 +260,6 @@ Esto es similar a [`moment.fromNow`](/momentjs/displaying#fromnow), pero proporc
 
 Esto es similar a [`moment.to`](/momentjs/displaying#to), pero está en mayúsculas y minúsculas especiales para el moment actual. Utiliza `moment.to`, si deseas controlar los dos puntos finales del intervalo.
 
-{{< content-ads/middle-banner-5 >}}
-
 ```javascript {filename="JavaScript"}
 moment([2007, 0, 29]).toNow(); // in 4 years
 ```
@@ -276,6 +274,8 @@ moment([2007, 0, 29]).toNow(true); // 4 years
 Las cadenas base están [personalizadas según la configuración regional actual](/momentjs/customization#relative-time).
 
 El desglose de qué cadena se muestra para cada período de tiempo se describe en la siguiente tabla.
+
+{{< content-ads/middle-banner-5 >}}
 
 | Rango                     | Clave | Salida de muestra              |
 | ------------------------- | ----- | ------------------------------ |

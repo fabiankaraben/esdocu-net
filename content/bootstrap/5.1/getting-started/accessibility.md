@@ -20,6 +20,8 @@ La accesibilidad general de cualquier proyecto creado con Bootstrap depende en g
 
 ### Marcado estructural
 
+{{< content-ads/middle-banner-1 >}}
+
 El estilo y el diseño de Bootstrap se pueden aplicar a una amplia gama de estructuras de marcado. Esta documentación tiene como objetivo proporcionar a los desarrolladores ejemplos de mejores prácticas para demostrar el uso de Bootstrap e ilustrar el marcado semántico apropiado, incluidas las formas en que se pueden abordar los posibles problemas de accesibilidad.
 
 ### Componentes interactivos
@@ -28,7 +30,7 @@ Los componentes interactivos de Bootstrap, como los cuadros de diálogo modales,
 
 Debido a que los componentes de Bootstrap están diseñados a propósito para ser bastante genéricos, es posible que los autores deban incluir más funciones y atributos de <abbr title="Accessible Rich Internet Applications">ARIA</abbr>, así como el comportamiento de JavaScript, para transmitir con mayor precisión la naturaleza precisa y funcionalidad de su componente. Esto generalmente se indica en la documentación.
 
-{{< content-ads/middle-banner-1 >}}
+{{< content-ads/middle-banner-2 >}}
 
 ### Contraste de color
 
@@ -37,6 +39,8 @@ Algunas combinaciones de colores que actualmente conforman la paleta predetermin
 ### Contenido oculto visualmente
 
 El contenido que debería ocultarse visualmente, pero permanecer accesible para las tecnologías de asistencia, como los lectores de pantalla, se puede diseñar con la clase `.visually-hidden`. Esto puede ser útil en situaciones en las que también es necesario transmitir información o pistas visuales adicionales (como el significado denotado mediante el uso de colores) a usuarios no visuales.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```html
 <p class="text-danger">
@@ -52,6 +56,8 @@ Para los controles interactivos ocultos visualmente, como los enlaces "saltar" t
 ```
 
 ### Movimiento reducido
+
+{{< content-ads/middle-banner-4 >}}
 
 Bootstrap incluye soporte para la función de medios [`prefers-reduced-motion`](https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion). En los navegadores/entornos que permiten al usuario especificar su preferencia por el movimiento reducido, la mayoría de los efectos de transición CSS en Bootstrap (por ejemplo, cuando se abre o cierra un cuadro de diálogo modal, o la animación deslizante en carruseles) se desactivarán y las animaciones significativas ( como los hilanderos) se ralentizarán.
 

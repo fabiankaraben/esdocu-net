@@ -9,9 +9,9 @@ description: Utiliza nuestros archivos fuente Sass para aprovechar variables, ma
 
 Utiliza nuestros archivos fuente Sass para aprovechar variables, mapas, mixins y funciones que te ayudarán a construir más rápido y personalizar tu proyecto.
 
-Utiliza nuestros archivos fuente Sass para aprovechar variables, mapas, mixins y más.
-
 {{< content-ads/top-banner >}}
+
+Utiliza nuestros archivos fuente Sass para aprovechar variables, mapas, mixins y más.
 
 Estructura de archivos {#file-structure}
 -----------------------------------------
@@ -111,6 +111,8 @@ sass --watch ./scss/custom.scss ./css/custom.css
 
 Obtén más información sobre tus opciones en [sass-lang.com/install](https://sass-lang.com/install) y [compilando con VS Code](https://code.visualstudio.com/docs/languages/css#_transpiling-sass-and-less-into-css).
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< callout type="info" emoji="" >}}
 **¿Utilizas Bootstrap con otra herramienta de compilación?** Considera leer nuestras guías para compilar con [Webpack](/bootstrap/5.3/getting-started/webpack), [Parcel](/bootstrap/5.3/getting-started/parcel) o [Vite](/bootstrap/5.3/getting-started/vite). También tenemos demostraciones listas para producción en [nuestro repositorio de ejemplos en GitHub](https://github.com/twbs/examples).
 {{< /callout >}}
@@ -182,6 +184,8 @@ Bootstrap incluye un puñado de mapas Sass, pares clave-valor que facilitan la g
 
 Algunos de nuestros mapas Sass se fusionan en mapas vacíos de forma predeterminada. Esto se hace para permitir una fácil expansión de un mapa de Sass determinado, pero tiene el costo de hacer que _eliminar_ elementos de un mapa sea un poco más difícil.
 
+{{< content-ads/middle-banner-2 >}}
+
 ### Modificar mapa {#modify-map}
 
 Todas las variables en el mapa `$theme-colors` se definen como variables independientes. Para modificar un color existente en nuestro mapa `$theme-colors`, agrega lo siguiente a tu archivo Sass personalizado:
@@ -247,6 +251,8 @@ Funciones {#functions}
 -----------------------
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 ### Colores {#colors}
 
@@ -318,6 +324,8 @@ También se puede utilizar para necesidades puntuales de contraste:
 
 También puedes especificar un color base con nuestras funciones de mapa de colores:
 
+{{< content-ads/middle-banner-4 >}}
+
 ```scss {filename="SCSS"}
 .custom-element {
   color: color-contrast($dark); // returns `color: #fff`
@@ -379,6 +387,8 @@ Nuestro directorio `scss/mixins/` tiene un montón de mixins que potencian parte
 Hay disponible una combinación abreviada para la media query `prefers-color-scheme` compatible con `light`, `dark` y esquemas de color personalizados. Consulta [la documentación de modos de color](/bootstrap/5.3/customize/color-modes) para obtener información sobre nuestra combinación de modos de color.
 
 [scss/mixins/_color-scheme.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/mixins/_color-scheme.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="SCSS"}
 @mixin color-scheme($name) {

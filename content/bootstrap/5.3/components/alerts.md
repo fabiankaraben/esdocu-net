@@ -55,8 +55,6 @@ Las alertas están disponibles para cualquier longitud de texto, así como un bo
 
 ### Ejemplo en vivo del componente {#live-example}
 
-{{< content-ads/middle-banner-1 >}}
-
 Haz clic en el botón a continuación para mostrar una alerta (inicialmente oculta con estilos en línea), luego deséchala (y destrúyela) con el botón de cierre incorporado.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/alerts/live-example.html" >}}
@@ -98,6 +96,8 @@ Utiliza la clase de utilidad `.alert-link` para proporcionar rápidamente enlace
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/alerts/link-color.html" >}}
 ```html {filename="HTML"}
     <div class="alert alert-primary" role="alert">
@@ -136,8 +136,6 @@ Utiliza la clase de utilidad `.alert-link` para proporcionar rápidamente enlace
 {{< /demo-iframe >}}
 
 ### Agregar contenido adicional {#additional-content}
-
-{{< content-ads/middle-banner-2 >}}
 
 Las alertas también pueden contener elementos HTML adicionales como encabezados, párrafos y divisores.
 
@@ -235,8 +233,6 @@ Del mismo modo, puedes usar [utilidades flexbox](/bootstrap/5.3/utilities/flex) 
 
 ### Cómo cerrar (descargar) un Alert {#dismissing}
 
-{{< content-ads/middle-banner-3 >}}
-
 Usando el complemento JavaScript de alerta, es posible descartar cualquier alerta en línea. Así es cómo:
 
 * Asegúrate de haber cargado el complemento de alerta o el JavaScript Bootstrap compilado.
@@ -245,6 +241,8 @@ Usando el complemento JavaScript de alerta, es posible descartar cualquier alert
 * Para animar las alertas cuando las descartes, asegúrate de agregar las clases `.fade` y `.show`.
 
 Puedes ver esto en acción con una demostración en vivo:
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/alerts/dismissing.html" >}}
 ```html {filename="HTML"}
@@ -285,8 +283,6 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las alertas 
 
 ### Variables Sass generales relacionadas {#sass-variables}
 
-{{< content-ads/middle-banner-4 >}}
-
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
 ```scss {filename="scss/_variables.scss"}
@@ -305,6 +301,8 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3; // 3x covers width of x pl
 <span class="py-1 px-3 text-yellow-600 border border-yellow-600 rounded-md">Obsoleto en v5.3.0</span>
 
 Se usa en combinación con `$theme-colors` para crear clases de modificadores contextuales para nuestras alertas.
+
+{{< content-ads/middle-banner-3 >}}
 
 [scss/mixins/_alert.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/mixins/_alert.scss)
 
@@ -348,8 +346,6 @@ Bucle que genera las clases modificadoras con el mixin `alert-variant()`.
 Comportamiento JavaScript del componente {#javascript-behavior}
 -------------------------------------------------------------------------------------
 
-{{< content-ads/middle-banner-5 >}}
-
 ### Inicializar {#initialize}
 
 Inicializar elementos como alertas
@@ -364,6 +360,8 @@ Con el único propósito de descartar una alerta, no es necesario inicializar el
 Consulta la sección [desencadenantes](#triggers) para obtener más detalles.
 
 ### Desencadenantes {#triggers}
+
+{{< content-ads/middle-banner-4 >}}
 
 El despido (cierre) se puede lograr con el atributo `data-bs-dismiss` en un botón **dentro de la alerta** como se muestra a continuación:
 
@@ -407,7 +405,7 @@ alert.close()
 
 ### Eventos {#events}
 
-{{< content-ads/middle-banner-6 >}}
+{{< content-ads/middle-banner-5 >}}
 
 El complemento de alerta de Bootstrap expone algunos eventos para conectarse a la funcionalidad de alerta.
 

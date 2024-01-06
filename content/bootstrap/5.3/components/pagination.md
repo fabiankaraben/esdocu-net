@@ -167,9 +167,9 @@ Cambiar la alineación de los componentes de paginación con [utilidades flexbox
 ```
 {{< /demo-iframe >}}
 
-{{< content-ads/middle-banner-3 >}}
-
 O con `.justify-content-end`:
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/pagination/alignment-2.html" >}}
 ```html {filename="HTML"}
@@ -224,9 +224,9 @@ Como parte del enfoque en evolución de variables CSS de Bootstrap, la paginaci�
 --#{$prefix}pagination-disabled-border-color: #{$pagination-disabled-border-color};
 ```
 
-### Variables Sass generales relacionadas {#sass-variables}
-
 {{< content-ads/middle-banner-4 >}}
+
+### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

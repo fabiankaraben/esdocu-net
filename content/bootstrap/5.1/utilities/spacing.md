@@ -26,6 +26,8 @@ Las clases se nombran usando el formato `{property}{sides}-{size}` para `xs` y `
 
 Donde *property* es uno de:
 
+{{< content-ads/middle-banner-1 >}}
+
 - `m` - para clases que establecen `margin`
 - `p` - para clases que establecen `padding`
 
@@ -51,9 +53,9 @@ Donde *size* es uno de:
 
 (Puedes agregar más tamaños agregando entradas a la variable de mapa Sass `$spacers`).
 
-{{< content-ads/middle-banner-1 >}}
-
 ### Ejemplos
+
+{{< content-ads/middle-banner-2 >}}
 
 Estos son algunos ejemplos representativos de estas clases:
 
@@ -94,6 +96,8 @@ Además, Bootstrap también incluye una clase `.mx-auto` para centrar horizontal
 
 ## Margen negativo
 
+{{< content-ads/middle-banner-3 >}}
+
 En CSS, las propiedades `margin` pueden utilizar valores negativos (`padding` no). Estos márgenes negativos están **deshabilitados de forma predeterminada**, pero se pueden habilitar en Sass configurando `$enable-negative-margins: true`.
 
 La sintaxis es casi la misma que las utilidades de margen positivo predeterminadas, pero con la adición de `n` antes del tamaño solicitado. Aquí hay una clase de ejemplo que es lo opuesto a `.mt-1`:
@@ -118,7 +122,7 @@ Al usar `display: grid`, puede utilizar las utilidades `gap` en el contenedor de
 
 El soporte incluye opciones responsive para todos los puntos de interrupción de la cuadrícula de Bootstrap, así como seis tamaños del mapa `$spacers` (`0`–`5`). No hay clase de utilidad `.gap-auto` ya que es efectivamente lo mismo que `.gap-0`.
 
-{{< content-ads/middle-banner-2 >}}
+{{< content-ads/middle-banner-4 >}}
 
 ## Sass
 

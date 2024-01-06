@@ -30,8 +30,6 @@ Bootstrap es mantenido por el equipo fundador y un pequeño grupo de valiosos co
 {{< /team.inline >}}
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 Participa en el desarrollo de Bootstrap [abriendo un issue]({{< bootstrap/5-1/param repo >}}/issues/new) o enviando un pull request. Lee nuestras [directrices de contribución]({{< bootstrap/5-1/param repo >}}/blob/v{{< bootstrap/5-1/param current_version >}}/.github/CONTRIBUTING.md) para obtener información sobre cómo desarrollamos.
 
 {{< content-ads/bottom-banner >}}

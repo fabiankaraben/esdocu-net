@@ -24,8 +24,6 @@ Estas son nuestras pautas y razones para elegir qué sobrescribir en Reboot:
 - Para escalar más fácilmente entre tamaños de dispositivos, los elementos de bloque deben usar `rem`s para `margin`s.
 - Mantener al mínimo las declaraciones de propiedades relacionadas con `font`, usando `inherit` siempre que sea posible.
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Variables CSS
 
 <small class="d-inline-flex px-2 py-1 font-monospace text-muted border rounded-3">Añadido en v5.1.1</small>
@@ -49,6 +47,8 @@ Lo que te permite hacer personalizaciones en tiempo real como quieras:
 ```
 
 ## Valores de página predeterminados
+
+{{< content-ads/middle-banner-1 >}}
 
 Los elementos `<html>` y `<body>` se actualizan para proporcionar mejores valores predeterminados para toda la página. Más específicamente:
 
@@ -121,6 +121,8 @@ Todas las listas, `<ul>`, `<ol>` y `<dl>`, tienen su `margin-top` eliminado y un
 
 Para un estilo más simple, una jerarquía clara y un mejor espaciado, las listas de descripción han actualizado sus `margin`s. `<dd>`s restablece `margin-left` a `0` y agrega `margin-bottom: .5rem`. Los `<dt>` están **en negrita**.
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/example >}}
   <dl>
     <dt>Listas de descripción</dt>
@@ -170,6 +172,8 @@ Para editar la configuración, presiona <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd
 
 ## Salida de muestra
 
+{{< content-ads/middle-banner-3 >}}
+
 Para indicar la salida de texto de un programa, usa la etiqueta `<samp>`.
 
 {{< bootstrap/5-1/example >}}
@@ -215,8 +219,6 @@ Las tablas se ajustan ligeramente al estilo `<caption>`s, colapsan los bordes y 
     </tbody>
   </table>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Formularios
 
@@ -367,6 +369,8 @@ Reboot incluye una mejora para `role="button"` para cambiar el cursor predetermi
 <span role="button" tabindex="0">Botón que no es un elemento button</span>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 ## Elementos misceláneos
 
 ### Direcciones
@@ -422,12 +426,11 @@ El `cursor` predeterminado en `<summary>` es `text`, por lo que lo restablecemos
   </details>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-3 >}}
-
 ## Atributo HTML5 `[hidden]`
 
-HTML5 agrega [un nuevo atributo global llamado `[hidden]`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden), que tiene el estilo `display: none` por defecto. Tomando prestada una idea de [PureCSS](https://purecss.io/), mejoramos este valor predeterminado haciendo `[hidden] { display: none !important; }` para ayudar a evitar que su `display` se sobrescriba accidentalmente.
+{{< content-ads/middle-banner-5 >}}
 
+HTML5 agrega [un nuevo atributo global llamado `[hidden]`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden), que tiene el estilo `display: none` por defecto. Tomando prestada una idea de [PureCSS](https://purecss.io/), mejoramos este valor predeterminado haciendo `[hidden] { display: none !important; }` para ayudar a evitar que su `display` se sobrescriba accidentalmente.
 
 ```html
 <input type="text" hidden>

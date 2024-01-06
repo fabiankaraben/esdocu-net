@@ -33,6 +33,8 @@ Si necesitas nuestro conjunto completo de [herramientas de compilación](/bootst
 
 [Descargar fuente](https://github.com/twbs/bootstrap/archive/v5.3.2.zip)
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Ejemplos {#examples}
 
 Si deseas descargar y examinar nuestros [ejemplos](https://getbootstrap.com/docs/5.3/examples), puedes tomar los ejemplos ya creados:
@@ -58,6 +60,8 @@ Si estás usando nuestro JavaScript compilado y prefieres incluir Popper por sep
 ### CDN alternativas {#alternative-cdns}
 
 Recomendamos [jsDelivr](https://www.jsdelivr.com) y lo usamos nosotros mismos en nuestra documentación. Sin embargo, en algunos casos, como en algunos países o entornos específicos, es posible que necesites utilizar otros proveedores de CDN como [cdnjs](https://cdnjs.com) o [unpkg](https://unpkg.com).
+
+{{< content-ads/middle-banner-2 >}}
 
 Encontrarás los mismos archivos en estos proveedores de CDN, aunque con diferentes URL. Con cdnjs, puedes [usar este enlace directo al paquete Bootstrap](https://cdnjs.com/libraries/bootstrap) para copiar y pegar fragmentos HTML listos para usar para cada archivo dist desde cualquier versión de Bootstrap.
 
@@ -85,6 +89,8 @@ Instala Bootstrap en tus aplicaciones con tecnología Node.js con el [paquete np
 npm install bootstrap@5.3.2
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 `const bootstrap = require('bootstrap')` o `import bootstrap from 'bootstrap'` cargará todos los complementos de Bootstrap en un objeto `bootstrap`. El módulo `bootstrap` exporta todos nuestros complementos. Puedes cargar manualmente los complementos de Bootstrap individualmente cargando los archivos `/js/dist/*.js` en el directorio de nivel superior del paquete.
 
 El `package.json` de Bootstrap contiene algunos metadatos adicionales bajo las siguientes claves:
@@ -111,6 +117,8 @@ Instala Bootstrap en tus aplicaciones Ruby usando [Bundler](https://bundler.io) 
 ```ruby {filename="Ruby"}
 gem 'bootstrap', '~> 5.3.2'
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 Alternativamente, si no estás usando Bundler, puedes instalar la gema ejecutando este comando:
 

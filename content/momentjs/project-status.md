@@ -42,13 +42,13 @@ También nos gustaría promover la adición de [`Temporal`](/momentjs/project-st
 
 En la práctica, esto significa:
 
-{{< content-ads/middle-banner-1 >}}
-
 - No agregaremos nuevas funciones o capacidades.
 - No cambiaremos la API de Moment para que sea inmutable.
 - No abordaremos problemas con tree shaking o el tamaño de los paquetes.
 - No haremos *ningún* cambio importante (sin versión 3).
 - Es posible que optemos por no corregir errores o peculiaridades de comportamiento, especialmente si se trata de problemas conocidos desde hace mucho tiempo.
+
+{{< content-ads/middle-banner-1 >}}
 
 Con respecto específicamente a los archivos locales de internacionalización de Moment:
 
@@ -71,11 +71,11 @@ Moment funciona bien en Internet Explorer 8 y superior. Por el contrario, Luxon 
 
 Otras bibliotecas también han tenido problemas con Safari, especialmente en dispositivos móviles. Si tienes un fuerte requisito de admitir navegadores más antiguos, es posible que desees seguir con Moment por un poco más de tiempo.
 
-{{< content-ads/middle-banner-2 >}}
-
 Sin embargo, [Day.js informa compatibilidad con IE8 y superior](https://day.js.org/docs/en/installation/installation), por lo que es posible que desees considerar esa alternativa.
 
 ### Dependencia de otras bibliotecas
+
+{{< content-ads/middle-banner-2 >}}
 
 Varias otras bibliotecas, especialmente las bibliotecas de selección de fechas y de gráficos, toman Moment como una dependencia. Si estás utilizando dicho componente y no puedes encontrar una alternativa, entonces ya estás incluyendo Moment en tu proyecto.
 Por lo tanto, podría tener sentido seguir usando Moment en todo el proyecto en lugar de incluir otra biblioteca de fechas y horas.
@@ -96,8 +96,6 @@ Al elegir, considera que:
 
 **Aquí están las alternativas que recomendamos:**
 
-{{< content-ads/middle-banner-3 >}}
-
 ### [Luxon](https://moment.github.io/luxon)
 
 Se puede considerar a Luxon como la evolución de Moment. Su autor es [Isaac Cambron](https://github.com/icambron), colaborador de Moment desde hace mucho tiempo.
@@ -105,6 +103,8 @@ Lee las páginas [*¿Por qué existe Luxon?*](https://moment.github.io/luxon/#/w
 
 - Configuraciones regionales: `Intl` proporcionadas
 - Zonas horarias: `Intl` proporcionadas
+
+{{< content-ads/middle-banner-3 >}}
 
 ### [Day.js](https://day.js.org)
 
@@ -123,8 +123,6 @@ Date-fns ofrece una serie de funciones para manipular objetos JavaScript [`Date`
 
 ### [js-Joda](https://js-joda.github.io/js-joda)
 
-{{< content-ads/middle-banner-4 >}}
-
 js-Joda es un port a JavaScript de [Three-Ten Backport](https://www.threeten.org/threetenbp) de Java, que es la base para la implementación JSR-310 del paquete Java SE 8 `java.time`.
 Si estás familiarizado con [`java.time`](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html), [Joda-Time](https://www.joda.org/joda-time), o [Noda Time](https://nodatime.org), encontrarás js-Joda comparable.
 
@@ -134,6 +132,8 @@ Si estás familiarizado con [`java.time`](https://docs.oracle.com/javase/8/docs/
 ### Sin biblioteca
 
 JavaScript siempre ha tenido un objeto [`Date`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date), especificación ECMAScript (ECMA-262) definida [aquí](https://www.ecma-international.org/ecma-262/11.0/index.html#sec-date-objects).
+
+{{< content-ads/middle-banner-4 >}}
 
 Al utilizar objetos `Date`, ten en cuenta lo siguiente:
 
@@ -148,8 +148,6 @@ Al utilizar el objeto `Intl`, ten en cuenta lo siguiente:
 - No todos los entornos implementarán la especificación completa. En particular, los entornos Node.js requieren soporte de internacionalización proporcionado por ICU. Consulta [la documentación de Node.js](https://nodejs.org/docs/latest-v12.x/api/intl.html) para obtener más detalles.
 - La [tabla de compatibilidad ECMAScript Intl (por kangax)](http://kangax.github.io/compat-table/esintl) puede ser útil para determinar qué funciones son compatibles y cuáles no.
 - La mayoría de los entornos más nuevos brindan soporte para la zona horaria de la IANA a través de la opción `timeZone` en el constructor `Intl.DateTimeFormat` (y en `Date.toLocaleString`, `Date.toLocaleDateString` y `Date.toLocaleTimeString`). Esta opción se puede utilizar para tomar la marca de tiempo interna basada en UTC de un objeto `Date` y obtener una *cadena* que se ha convertido a una zona horaria con nombre. Sin embargo, *no* puede usarse para convertir un objeto `Date` a una zona horaria diferente.
-
-{{< content-ads/middle-banner-5 >}}
 
 Si los objetos `Date` e `Intl` satisfacen tus necesidades y comprendes completamente sus limitaciones, entonces podrías considerar usarlos directamente.
 

@@ -9,11 +9,11 @@ description: Documentación y ejemplos para usar barras de progreso personalizad
 
 Documentación y ejemplos para usar barras de progreso personalizadas de Bootstrap que admiten barras apiladas, fondos animados y etiquetas de texto.
 
+{{< content-ads/top-banner >}}
+
 {{< callout type="info" emoji="" >}}
 **Nuevo marcado en v5.3.0:** Hemos dejado de utilizar la estructura HTML anterior para las barras de progreso y la reemplazamos por una más accesible. La estructura anterior seguirá funcionando hasta la v6. [Mira los cambios en nuestra guía de migración.](https://getbootstrap.com/docs/5.3/migration/#improved-markup-for-progress-bars)
 {{< /callout >}}
-
-{{< content-ads/top-banner >}}
 
 Cómo funciona el componente Progress {#how-it-works}
 -------------------------------
@@ -63,9 +63,9 @@ Bootstrap proporciona un puñado de [utilidades para configurar el ancho](/boots
 ```
 {{< /demo-iframe >}}
 
-### Altura {#height}
-
 {{< content-ads/middle-banner-1 >}}
+
+### Altura {#height}
 
 Solo estableces un valor de `height` en el contenedor `.progress`, por lo que si cambias ese valor, el `.progress-bar` cambiará automáticamente de tamaño en consecuencia.
 
@@ -110,6 +110,8 @@ Ten en cuenta que, de forma predeterminada, el contenido dentro de `.progress-ba
 Personalizar el fondo del componente Progress {#backgrounds}
 ----------------------
 
+{{< content-ads/middle-banner-2 >}}
+
 Usa clases de utilidades en segundo plano para cambiar la apariencia de las barras de progreso individuales.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/progress/backgrounds-1.html" >}}
@@ -132,8 +134,6 @@ Usa clases de utilidades en segundo plano para cambiar la apariencia de las barr
 {{< callout type="info" emoji="" >}}
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 {{< /callout >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 Si agregas etiquetas a las barras de progreso con un color de fondo personalizado, asegúrate de establecer también un [color del texto](/bootstrap/5.3/utilities/colors/#colors), para que las etiquetas sigan siendo legibles y tengan suficiente contraste.
 
@@ -185,12 +185,12 @@ Puedes incluir múltiples componentes de progreso dentro de un contenedor con `.
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/content-suggestion >}}
 
 Estilo rayado en el componente Progress {#striped}
 ------------------
-
-{{< content-ads/middle-banner-3 >}}
 
 Agrega `.progress-bar-striped` a cualquier `.progress-bar` para aplicar una franja mediante un degradado CSS sobre el color de fondo de la barra de progreso.
 

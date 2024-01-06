@@ -59,8 +59,6 @@ Si no quieres que el texto del botón se ajuste, puedes agregar la clase `.text-
 Otras etiquetas con estilos de botones {#button-tags}
 ------------------------------------
 
-{{< content-ads/middle-banner-1 >}}
-
 Las clases `.btn` están diseñadas para usarse con el elemento `<button>`. Sin embargo, también puedes utilizar estas clases en elementos `<a>` o `<input>` (aunque algunos navegadores pueden aplicar una representación ligeramente diferente).
 
 Cuando usas clases de botones en elementos `<a>` que se usan para activar la funcionalidad en la página (como contraer contenido), en lugar de vincular a páginas nuevas o secciones dentro de la página actual, a estos enlaces se les debe asignar un `role="button"` para transmitir adecuadamente su propósito a tecnologías de asistencia como lectores de pantalla.
@@ -79,6 +77,8 @@ Botones con estilo de contorno {#outline-buttons}
 ---------------------------------------
 
 ¿Necesitas un botón, pero no los fuertes colores de fondo que traen? Reemplaza las clases modificadoras predeterminadas con las `.btn-outline-*` para eliminar todas las imágenes de fondo y colores en cualquier botón.
+
+{{< content-ads/middle-banner-1 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/buttons/outline-buttons.html" >}}
 ```html {filename="HTML"}
@@ -131,8 +131,6 @@ Incluso puedes crear tu propio tamaño personalizado con variables CSS:
 Estado deshabilitado de Botones {#disabled-state}
 ---------------------------------------
 
-{{< content-ads/middle-banner-2 >}}
-
 Haz que los botones parezcan inactivos agregando el atributo booleano `disabled` a cualquier elemento `<button>`. Los botones deshabilitados tienen `pointer-events: none` aplicados, lo que evita que se activen los estados active y hover.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/buttons/disabled-state-1.html" >}}
@@ -161,6 +159,8 @@ Los botones deshabilitados que usan el elemento `<a>` se comportan un poco difer
 ### Advertencia sobre la funcionalidad del enlace {#link-functionality-caveat}
 
 Para cubrir casos en los que tienes que mantener el atributo `href` en un enlace deshabilitado, la clase `.disabled` usa `pointer-events: none` para intentar deshabilitar la funcionalidad de enlace de `<a>`s. Ten en cuenta que esta propiedad CSS aún no está estandarizada para HTML, pero todos los navegadores modernos la admiten. Además, incluso en los navegadores que admiten `pointer-events: none`, la navegación con el teclado no se ve afectada, lo que significa que los usuarios de teclados videntes y los usuarios de tecnologías de asistencia aún podrán activar estos enlaces. Por lo tanto, para estar seguro, además de `aria-disabled="true"`, incluya también un atributo `tabindex="-1"` en estos enlaces para evitar que reciban el foco del teclado y utiliza JavaScript personalizado para desactivar su funcionalidad por completo.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/buttons/link-functionality-caveat.html" >}}
 ```html {filename="HTML"}
@@ -219,8 +219,6 @@ Se pueden usar utilidades adicionales para ajustar la alineación de los botones
 Complemento de botón {#button-plugin}
 --------------------------------------
 
-{{< content-ads/middle-banner-3 >}}
-
 El complemento de botones te permite crear botones simples de activación/desactivación.
 
 {{< callout type="info" emoji="" >}}
@@ -248,6 +246,8 @@ Agrega `data-bs-toggle="button"` para alternar el estado `active` de un botón. 
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/buttons/toggle-states-2.html" >}}
 ```html {filename="HTML"}
     <p class="d-inline-flex gap-1">
@@ -264,8 +264,6 @@ Agrega `data-bs-toggle="button"` para alternar el estado `active` de un botón. 
 {{< /demo-iframe >}}
 
 ### Métodos {#methods}
-
-{{< content-ads/middle-banner-4 >}}
 
 Puedes crear una instancia de botón con el constructor de botones, por ejemplo:
 
@@ -326,9 +324,9 @@ Aquí tienes un ejemplo de cómo crear una clase modificadora `.btn-*` personali
 {{< demo-iframe path="/demos/bootstrap/5.3/components/buttons/variables.html" >}}
 {{< /demo-iframe >}}
 
-{{< content-ads/middle-banner-5 >}}
-
 [site/assets/scss/_buttons.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/site/assets/scss/_buttons.scss)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="site/assets/scss/_buttons.scss"}
 .btn-bd-primary {
@@ -401,8 +399,6 @@ $btn-active-border-tint-amount:   10%;
 ```
 
 ### Mixins Sass del componente {#sass-mixins}
-
-{{< content-ads/middle-banner-6 >}}
 
 Hay tres combinaciones para botones: combinación de botón y variante de contorno de botón (ambas basadas en `$theme-colors`), además de una combinación de tamaño de botón.
 
@@ -482,11 +478,11 @@ Hay tres combinaciones para botones: combinación de botón y variante de contor
 
 ### Bucles Sass del componente {#sass-loops}
 
-{{< content-ads/middle-banner-7 >}}
-
 Las variantes de botones (para botones regulares y de contorno) usan sus respectivos mixins con nuestro mapa `$theme-colors` para generar las clases modificadoras en `scss/_buttons.scss`.
 
 [scss/_buttons.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_buttons.scss)
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss {filename="scss/_buttons.scss"}
 @each $color, $value in $theme-colors {

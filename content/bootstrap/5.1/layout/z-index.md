@@ -17,8 +17,6 @@ Varios componentes de Bootstrap utilizan `z-index`, la propiedad CSS que ayuda a
 
 Estos valores más altos comienzan en un número arbitrario, lo suficientemente alto y específico para evitar idealmente conflictos. Necesitamos un conjunto estándar de estos en todos nuestros componentes en capas (tooltips, popovers, navbars, dropdowns, modals) para que podamos ser razonablemente consistentes en los comportamientos. No hay razón por la que no pudiéramos haber usado `100`+ o `500`+.
 
-{{< content-ads/middle-banner-1 >}}
-
 No fomentamos la personalización de estos valores individuales; si cambias uno, es probable que necesites cambiarlos todos.
 
 {{< bootstrap/5-1/scss-docs name="zindex-stack" file="scss/_variables.scss" >}}

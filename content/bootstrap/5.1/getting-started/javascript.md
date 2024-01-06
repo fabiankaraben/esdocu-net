@@ -88,6 +88,8 @@ $('#myTab a').on('shown.bs.tab', function () {
 ```
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 ## API programática
 
 Todos los constructores aceptan un objeto de opciones opcionales o nada (lo cual inicia un complemento con su comportamiento predeterminado):
@@ -110,13 +112,13 @@ var modal = new bootstrap.Modal('#myModal')
 var dropdown = new bootstrap.Dropdown('[data-bs-toggle="dropdown"]')
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Funciones asíncronas y transiciones
 
 Todos los métodos programáticos de la API son **asíncronos** y regresan al de la llamada una vez que se inicia la transición, pero **antes de que finalice**.
 
 Para ejecutar una acción una vez completada la transición, puedes escuchar el evento correspondiente.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```js
 var myCollapseEl = document.getElementById('myCollapse')
@@ -160,6 +162,8 @@ $.fn.bootstrapBtn = bootstrapButton // dar $().bootstrapBtn la funcionalidad Boo
 
 ## Números de versión
 
+{{< content-ads/middle-banner-4 >}}
+
 Se puede acceder a la versión de cada uno de los complementos de Bootstrap a través de la propiedad `VERSION` del constructor del complemento. Por ejemplo, para el complemento tooltip:
 
 ```js
@@ -175,8 +179,6 @@ Los complementos de Bootstrap no se recuperan de manera particularmente elegante
 
 **Bootstrap no admite oficialmente bibliotecas de JavaScript de terceros** como Prototype o jQuery UI. A pesar de `.noConflict` y los eventos con espacio de nombres, puede haber problemas de compatibilidad que debas solucionar por su cuenta.
 {{< /bootstrap/5-1/callout >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Sanitizer
 
@@ -222,6 +224,8 @@ var DefaultAllowlist = {
 ```
 
 Si deseas agregar nuevos valores a esta `allowList` predeterminada, puedes hacer lo siguiente:
+
+{{< content-ads/middle-banner-5 >}}
 
 ```js
 var myDefaultAllowList = bootstrap.Tooltip.Default.allowList

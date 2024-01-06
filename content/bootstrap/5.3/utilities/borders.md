@@ -78,6 +78,8 @@ Cambia el color del borde usando utilidades integradas en los colores de nuestro
 
 O modificar el `border-color` predeterminado de un componente:
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/utilities/borders/color-2.html" >}}
 ```html {filename="HTML"}
     <div class="mb-4">
@@ -138,6 +140,8 @@ O elige cualquiera de las utilidades `.border-opacity`:
     <div class="border border-success p-2 border-opacity-10">Este es un borde de éxito con una opacidad del 10%</div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 Ancho {#width}
 ---------------
@@ -203,6 +207,8 @@ Personalización del CSS {#css}
 
 <br/>
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.2.0</span>
+
+{{< content-ads/middle-banner-3 >}}
 
 [scss/_root.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_root.scss)
 
@@ -279,6 +285,8 @@ $dark-border-subtle-dark:           $gray-800;
 ```
 
 ### Mapas de Sass {#sass-maps}
+
+{{< content-ads/middle-banner-4 >}}
 
 Los colores de borde adaptativo del modo de color también están disponibles como mapa Sass:
 
@@ -455,6 +463,8 @@ Las utilidades de borde se declaran en nuestra API de utilidades en `scss/_utili
   )
 ),
 ```
+
+{{< content-ads/middle-banner-5 >}}
 
 {{< bootstrap/content-suggestion >}}
 

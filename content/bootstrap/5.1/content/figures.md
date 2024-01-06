@@ -27,6 +27,8 @@ Utiliza las clases incluidas `.figure`, `.figure-img` y `.figure-caption` para p
 
 Alinear el título de la figura es fácil con nuestras [utilidades de texto]({{< bootstrap/5-1/docsref "/utilities/text#text-alignment" >}}).
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example >}}
 <figure class="figure">
   {{< bootstrap/5-1/placeholder width="400" height="300" class="figure-img img-fluid rounded" >}}
@@ -35,8 +37,6 @@ Alinear el título de la figura es fácil con nuestras [utilidades de texto]({{<
 {{< /bootstrap/5-1/example >}}
 
 ## Sass
-
-{{< content-ads/middle-banner-1 >}}
 
 ### Variables
 

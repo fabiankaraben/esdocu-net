@@ -20,16 +20,15 @@ Los navegadores alternativos que utilizan la última versión de WebKit, Blink o
 
 Puedes encontrar nuestra gama de navegadores compatibles y sus versiones [en nuestro archivo `.browserslistrc`]({{< bootstrap/5-1/param repo >}}/blob/v{{< bootstrap/5-1/param current_version >}}/.browserslistrc):
 
-
 ```text
 {{< rf.inline >}}
 {{- readFile "assets/bootstrap/5.1/.browserslistrc" | chomp | htmlEscape -}}
 {{< /rf.inline >}}
 ```
 
-Usamos [Autoprefixer](https://github.com/postcss/autoprefixer) para manejar la compatibilidad prevista del navegador a través de prefijos CSS, que usa [Browserslist](https://github.com/browserslist/browserslist) para administrar estas versiones del navegador. Consulta su documentación para saber cómo integrar estas herramientas en tus proyectos.
-
 {{< content-ads/middle-banner-1 >}}
+
+Usamos [Autoprefixer](https://github.com/postcss/autoprefixer) para manejar la compatibilidad prevista del navegador a través de prefijos CSS, que usa [Browserslist](https://github.com/browserslist/browserslist) para administrar estas versiones del navegador. Consulta su documentación para saber cómo integrar estas herramientas en tus proyectos.
 
 ### Dispositivos móviles
 
@@ -64,6 +63,8 @@ En términos generales, Bootstrap admite las últimas versiones de los navegador
 </table>
 
 ### Navegadores de escritorio
+
+{{< content-ads/middle-banner-2 >}}
 
 Del mismo modo, se admiten las últimas versiones de la mayoría de los navegadores de escritorio.
 
@@ -104,6 +105,8 @@ Extraoficialmente, Bootstrap debería verse y comportarse lo suficientemente bie
 
 ## Internet Explorer
 
+{{< content-ads/middle-banner-3 >}}
+
 Internet Explorer no es compatible. **Si necesitas compatibilidad con Internet Explorer, usa Bootstrap v4.**
 
 ## Modals y dropdowns en móviles
@@ -113,6 +116,8 @@ Internet Explorer no es compatible. **Si necesitas compatibilidad con Internet E
 El soporte para `overflow: hidden;` en el elemento `<body>` es bastante limitado en iOS y Android. Con ese fin, cuando te desplazas más allá de la parte superior o inferior de un modal en cualquiera de los navegadores de esos dispositivos, el contenido `<body>` comenzará a desplazarse. Consulta [Error de Chrome n.° 175502](https://bugs.chromium.org/p/chromium/issues/detail?id=175502) (corregido en Chrome v40) y [Error de WebKit n.° 153852](https://bugs.webkit.org/show_bug.cgi?id=153852).
 
 ### iOS text fields y scrolling
+
+{{< content-ads/middle-banner-4 >}}
 
 A partir de iOS 9.2, mientras un modal está abierto, si el toque inicial de un gesto de desplazamiento está dentro de los límites de un textual `<input>` o un `<textarea>`, el contenido `<body>` debajo del modal se desplazará en lugar del propio modal. Consulta el [error de WebKit n.° 153856](https://bugs.webkit.org/show_bug.cgi?id=153856).
 
@@ -124,7 +129,7 @@ El elemento `.dropdown-backdrop` no se usa en iOS en la navegación debido a la 
 
 El zoom de página inevitablemente presenta artefactos de representación en algunos componentes, tanto en Bootstrap como en el resto de la web. Dependiendo del problema, es posible que podamos solucionarlo (busca primero y luego abre un problema si es necesario). Sin embargo, tendemos a ignorarlos, ya que a menudo no tienen una solución directa más que soluciones alternativas.
 
-{{< content-ads/middle-banner-2 >}}
+{{< content-ads/middle-banner-5 >}}
 
 ## Validadores
 

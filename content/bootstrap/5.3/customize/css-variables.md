@@ -24,6 +24,8 @@ Aquí están las variables que incluimos (ten en cuenta que `:root` es obligator
 
 Estas variables CSS están disponibles en todas partes, independientemente del modo de color.
 
+{{< content-ads/middle-banner-1 >}}
+
 ```scss {filename="SCSS"}
 :root,
 [data-bs-theme=light] {
@@ -214,6 +216,8 @@ Variables de componentes {#component-variables}
 
 Bootstrap 5 utiliza cada vez más propiedades personalizadas como variables locales para varios componentes. De esta manera reducimos nuestro CSS compilado, garantizamos que los estilos no se hereden en lugares como tablas anidadas y permitimos algunos cambios básicos de estilo y extensión de los componentes Bootstrap después de la compilación de Sass.
 
+{{< content-ads/middle-banner-2 >}}
+
 Echa un vistazo a nuestra documentación de tablas para ver la [visión de cómo utilizamos las variables CSS](/bootstrap/5.3/content/tables/#how-do-the-variants-and-accented-tables-work). Nuestras [barras de navegación también utilizan variables CSS](/bootstrap/5.3/components/navbar/#css) a partir de v5.2.0. También estamos usando variables CSS en nuestras cuadrículas, principalmente para los gutters, la [nueva cuadrícula CSS opcional](/bootstrap/5.3/layout/css-grid), con un mayor uso de componentes en camino.
 
 {{< bootstrap/content-suggestion >}}
@@ -226,6 +230,8 @@ Prefijo {#prefix}
 La mayoría de las variables CSS usan un prefijo para evitar colisiones con tu propio código base. Este prefijo se suma al `--` que se requiere en cada variable CSS.
 
 Personaliza el prefijo mediante la variable Sass `$prefix`. De forma predeterminada, está configurado en `bs-` (ten en cuenta el guión final).
+
+{{< content-ads/middle-banner-3 >}}
 
 Ejemplos {#examples}
 ---------------------
@@ -249,6 +255,8 @@ Variables de enfoque {#focus-variables}
 Bootstrap proporciona estilos `:focus` personalizados usando una combinación de variables Sass y CSS que se pueden agregar opcionalmente a componentes y elementos específicos. Todavía no sobrescribimos globalmente todos los estilos `:focus`.
 
 En nuestro Sass, configuramos valores predeterminados que se pueden personalizar antes de compilar.
+
+{{< content-ads/middle-banner-4 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

@@ -23,6 +23,8 @@ Usar en HTML:
 
 El código fuente del mixin:
 
+{{< content-ads/middle-banner-1 >}}
+
 [scss/mixins/_clearfix.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/mixins/_clearfix.scss)
 
 ```scss {filename="scss/mixins/_clearfix.scss"}
@@ -38,6 +40,8 @@ El código fuente del mixin:
 {{< bootstrap/content-suggestion >}}
 
 Usa el mixin en SCSS:
+
+{{< content-ads/middle-banner-2 >}}
 
 ```scss {filename="SCSS"}
 .element {

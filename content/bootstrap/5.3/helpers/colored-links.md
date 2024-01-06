@@ -35,6 +35,8 @@ Puedes usar las clases `.link-*` para colorear enlaces. A diferencia de las [`.t
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< callout type="info" emoji="" >}}
 **Consejo de accesibilidad:** El uso de colores para agregar significado solo proporciona una indicación visual, que no se transmitirá a los usuarios de tecnologías de asistencia como lectores de pantalla. Asegúrate de que el significado sea obvio a partir del contenido mismo (por ejemplo, el texto visible con un [_suficiente_ contraste de color](/bootstrap/5.3/getting-started/accessibility#color-contrast)) o se incluye a través de medios alternativos, como texto adicional oculto con la clase `.visually-hidden`.
 {{< /callout >}}
@@ -46,6 +48,8 @@ Utilidades de enlace {#link-utilities}
 <span class="py-1 px-3 text-green-700 border border-green-700 rounded-md">Agregado en v5.3.0</span>
 
 Los enlaces de colores también pueden modificarse mediante nuestras [utilidades de enlaces](/bootstrap/5.3/utilities/link).
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/content-suggestion >}}
 

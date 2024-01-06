@@ -28,6 +28,8 @@ Utilidades {#utilities}
 
 Siéntete libre de crear tus formularios como quieras, con `<fieldset>`s, `<div>`s, o casi cualquier otro elemento.
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/layout/utilities.html" >}}
 ```html {filename="HTML"}
     <div class="mb-3">
@@ -76,6 +78,8 @@ Al agregar [clases modificadoras de gutter](/bootstrap/5.3/layout/gutters), pued
     </div>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 También se pueden crear diseños más complejos con el sistema de cuadrícula.
 
@@ -192,6 +196,8 @@ A veces, tal vez necesites usar utilidades de margen o relleno para crear la ali
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Tamaño de etiqueta de formulario horizontal {#horizontal-form-label-sizing}
 
 Asegúrate de usar `.col-form-label-sm` o `.col-form-label-lg` en tu `<label>`s o `<legend>`s para seguir correctamente el tamaño de `.form-control-lg` y `.form-control-sm`.
@@ -242,6 +248,8 @@ Como se muestra en los ejemplos anteriores, nuestro sistema de cuadrícula te pe
 
 Autodimensionamiento {#auto-sizing}
 ------------------------------------
+
+{{< content-ads/middle-banner-4 >}}
 
 El siguiente ejemplo utiliza una utilidad flexbox para centrar verticalmente el contenido y cambia `.col` a `.col-auto` para que tus columnas solo ocupen tanto espacio como sea necesario. Dicho de otra manera, el tamaño de la columna se basa en el contenido.
 
@@ -329,6 +337,8 @@ Formularios en línea {#inline-forms}
 -------------------------------------
 
 Usa las clases `.row-cols-*` para crear diseños horizontales responsive. Al agregar [clases modificadoras de gutters](/bootstrap/5.3/layout/gutters), tendremos gutters en direcciones horizontales y verticales. En viewports móviles estrechos, `.col-12` ayuda a apilar los controles del formulario y más. `.align-items-center` alinea los elementos del formulario en el medio, haciendo que `.form-check` se alinee correctamente.
+
+{{< content-ads/middle-banner-5 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/layout/inline-forms.html" >}}
 ```html {filename="HTML"}

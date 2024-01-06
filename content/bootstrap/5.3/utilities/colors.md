@@ -75,6 +75,8 @@ A partir de v5.1.0, las utilidades de color de texto se generan con Sass usando 
 
 Considera nuestra utilidad `.text-primary` predeterminada.
 
+{{< content-ads/middle-banner-1 >}}
+
 ```css {filename="CSS"}
 .text-primary {
   --bs-text-opacity: 1;
@@ -117,6 +119,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 Además de las siguientes funciones de Sass, considera leer sobre nuestras [propiedades personalizadas de CSS](/bootstrap/5.3/customize/css-variables) incluidas (también conocidas como variables CSS) para colores y más.
+
+{{< content-ads/middle-banner-2 >}}
 
 ### Variables Sass generales relacionadas {#sass-variables}
 
@@ -185,6 +189,8 @@ $theme-colors-text: (
 
 Variables para configurar colores en utilidades `.text-*-emphasis` en modo claro y oscuro:
 
+{{< content-ads/middle-banner-3 >}}
+
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 
 ```scss {filename="scss/_variables.scss"}
@@ -249,6 +255,8 @@ $grays: (
 ```
 
 Los colores RGB se generan a partir de un mapa Sass separado:
+
+{{< content-ads/middle-banner-4 >}}
 
 [scss/_maps.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_maps.scss)
 
@@ -318,6 +326,8 @@ $theme-colors-text-dark: (
 ```
 
 ### API de utilidades de Sass {#sass-utilities-api}
+
+{{< content-ads/middle-banner-5 >}}
 
 Las utilidades de color se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprende a utilizar la API de utilidades.](/bootstrap/5.3/utilities/api/#using-the-api)
 

@@ -71,6 +71,8 @@ A partir de v5.1.0, las utilidades `background-color` se generan con Sass usando
 
 ### Cómo funciona {#how-it-works}
 
+{{< content-ads/middle-banner-1 >}}
+
 Considera nuestra utilidad `.bg-success` predeterminada.
 
 ```css {filename="CSS"}
@@ -115,6 +117,8 @@ Además de las siguientes funciones de Sass, considera leer sobre nuestras [prop
 La mayoría de las utilidades `background-color` se generan a partir de los colores de nuestro tema, reasignados a partir de las variables genéricas de nuestra paleta de colores.
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-2 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $blue:    #0d6efd;
@@ -185,6 +189,8 @@ $dark-bg-subtle:          $gray-400;
 
 [scss/_variables-dark.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables-dark.scss)
 
+{{< content-ads/middle-banner-3 >}}
+
 ```scss {filename="scss/_variables-dark.scss"}
 $primary-bg-subtle-dark:            shade-color($primary, 80%);
 $secondary-bg-subtle-dark:          shade-color($secondary, 80%);
@@ -244,6 +250,8 @@ $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
 Las opacidades del color de fondo se basan en eso con su propio mapa que es consumido por la API de utilidades:
 
 [scss/_maps.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_maps.scss)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="scss/_maps.scss"}
 $utilities-bg: map-merge(
@@ -355,6 +363,8 @@ $theme-colors-bg-subtle-dark: (
   background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
 }
 ```
+
+{{< content-ads/middle-banner-5 >}}
 
 ### API de utilidades de Sass {#sass-utilities-api}
 

@@ -103,6 +103,8 @@ values: (
 )
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 Como una variable Sass que establece la lista o mapa, como en nuestra [`position` (utilidades)](/bootstrap/5.3/utilities/position):
 
 ```scss {filename="SCSS"}
@@ -195,6 +197,8 @@ Salida:
 ```
 
 ### Variables CSS locales {#local-css-variables}
+
+{{< content-ads/middle-banner-2 >}}
 
 Usa la opción `local-vars` para especificar un mapa Sass que generará variables CSS locales dentro del conjunto de reglas de la clase de utilidad. Ten en cuenta que puede requerir trabajo adicional consumir esas variables CSS locales en las reglas CSS generadas. Por ejemplo, considera nuestras utilidades `.bg-*`:
 
@@ -350,6 +354,8 @@ $utilities: (
 );
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 Salida:
 
 ```css {filename="CSS"}
@@ -474,6 +480,8 @@ $utilities: map-merge(
 ```
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-4 >}}
 
 Esto ahora generará variaciones responsive de `.border` y `.border-0` para cada punto de interrupción. El CSS generado se verá así:
 

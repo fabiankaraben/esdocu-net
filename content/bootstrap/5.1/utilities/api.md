@@ -92,6 +92,8 @@ Como lista, como con las [utilidades `text-decoration`]({{< bootstrap/5-1/docsre
 values: none underline line-through
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 Como mapa, como con las [utilidades `opacity`]({{< bootstrap/5-1/docsref "/utilities/opacity" >}}):
 
 ```scss
@@ -109,8 +111,6 @@ Como una variable de Sass que establece la lista o el mapa, como en nuestras [ut
 ```scss
 values: $position-values
 ```
-
-{{< content-ads/middle-banner-1 >}}
 
 ### Class
 
@@ -184,6 +184,8 @@ $utilities: (
 ```
 
 Salida:
+
+{{< content-ads/middle-banner-2 >}}
 
 ```css
 .text-opacity-25 { --bs-text-opacity: .25; }
@@ -326,6 +328,8 @@ Salida:
 }
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Print
 
 Habilitar la opción `print` **también** generará clases de utilidad para imprimir, que solo se aplican dentro de la media query `@media print { ... }`.
@@ -372,8 +376,6 @@ Todas las utilidades generadas por la API incluyen `!important` para garantizar 
 
 Ahora que estás familiarizado con el funcionamiento de la API de utilidades, aprende cómo agregar tus propias clases personalizadas y modificar nuestras utilidades predeterminadas.
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Sobrescribir utilidades
 
 Sobrescribe las utilidades existentes utilizando la misma clave. Por ejemplo, si deseas clases de utilidad de desbordamiento responsive adicionales, puedes hacer esto:
@@ -416,6 +418,8 @@ $utilities: map-merge(
 ### Modificar utilidades
 
 Modifica las utilidades existentes en el mapa `$utilities` predeterminado con las funciones `map-get` y `map-merge`. En el siguiente ejemplo, estamos agregando un valor adicional a las utilidades `width`. Comienza con un `map-merge` inicial y luego especifica qué utilidad deseas modificar. A partir de ahí, busca el mapa `"width"` anidado con `map-get` para acceder y modificar las opciones y valores de la utilidad.
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss
 @import "bootstrap/scss/functions";
@@ -536,8 +540,6 @@ $utilities: map-merge(
   )
 );
 ```
-
-{{< content-ads/middle-banner-3 >}}
 
 #### Eliminar utilidad en RTL
 

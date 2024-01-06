@@ -27,6 +27,4 @@ Puedes usar las clases `.link-*` para colorear los enlaces. A diferencia de las 
 Algunos de los estilos de enlace usan un color de primer plano relativamente claro y solo deben usarse sobre un fondo oscuro para tener suficiente contraste.
 {{< /bootstrap/5-1/callout >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 {{< content-ads/bottom-banner >}}

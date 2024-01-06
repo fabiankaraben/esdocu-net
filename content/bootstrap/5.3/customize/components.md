@@ -23,6 +23,8 @@ Consulta [nuestra documentación de mapas y bucles de Sass](/bootstrap/5.3/custo
 Modificadores {#modifiers}
 ---------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Muchos de los componentes de Bootstrap están construidos con un enfoque de clase modificadora de base. Esto significa que la mayor parte del estilo está contenido en una clase base (por ejemplo, `.btn`), mientras que las variaciones de estilo se limitan a clases modificadoras (por ejemplo, `.btn-danger`). Estas clases modificadoras se crean a partir del mapa `$theme-colors` para personalizar el número y el nombre de nuestras clases modificadoras.
 
 Aquí hay dos ejemplos de cómo recorremos el mapa `$theme-colors` para generar modificadores para los componentes `.alert` y `.list-group`.
@@ -42,6 +44,8 @@ Aquí hay dos ejemplos de cómo recorremos el mapa `$theme-colors` para generar 
 ```
 
 [scss/_list-group.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_list-group.scss)
+
+{{< content-ads/middle-banner-2 >}}
 
 ```scss {filename="scss/_list-group.scss"}
 // List group contextual variants
@@ -73,6 +77,8 @@ Responsive {#responsive}
 Estos bucles de Sass tampoco se limitan a mapas de colores. También puedes generar variaciones responsive de tus componentes. Tomemos, por ejemplo, nuestra alineación responsive de los menús desplegables donde mezclamos un bucle `@each` para el mapa Sass `$grid-breakpoints` con una media query include.
 
 [scss/_dropdown.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_dropdown.scss)
+
+{{< content-ads/middle-banner-3 >}}
 
 ```scss {filename="scss/_dropdown.scss"}
 // We deliberately hardcode the `bs-` prefix because we check
@@ -120,6 +126,8 @@ $grid-breakpoints: (
 
 Para obtener más información y ejemplos sobre cómo modificar nuestros mapas y variables de Sass, consulta [la sección CSS de la documentación de Grid](/bootstrap/5.3/layout/grid/#css).
 
+{{< content-ads/middle-banner-4 >}}
+
 Crear el tuyo propio {#creating-your-own}
 ------------------------------------------
 
@@ -145,6 +153,8 @@ En tu CSS, tendrías algo como lo siguiente donde la mayor parte del estilo se r
 .callout-warning {}
 .callout-danger {}
 ```
+
+{{< content-ads/middle-banner-5 >}}
 
 Para las leyendas, ese estilo único es solo un `border-left-color`. Cuando combinas esa clase base con una de esas clases modificadoras, obtienes tu familia completa de componentes:
 

@@ -69,9 +69,9 @@ bootstrap/
     └── bootstrap.min.js.map
 ```
 
-Esta es la forma más básica de Bootstrap: archivos precompilados para un uso rápido en casi cualquier proyecto web. Proporcionamos CSS y JS compilados (`bootstrap.*`), así como CSS y JS compilados y minimizados (`bootstrap.min.*`). Los [mapas de origen](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) están disponibles para su uso con las herramientas de desarrollo de ciertos navegadores. Los archivos JS incluidos (`bootstrap.bundle.js` y `bootstrap.bundle.min.js` minificado) incluyen [Popper](https://popper.js.org/).
-
 {{< content-ads/middle-banner-1 >}}
+
+Esta es la forma más básica de Bootstrap: archivos precompilados para un uso rápido en casi cualquier proyecto web. Proporcionamos CSS y JS compilados (`bootstrap.*`), así como CSS y JS compilados y minimizados (`bootstrap.min.*`). Los [mapas de origen](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) están disponibles para su uso con las herramientas de desarrollo de ciertos navegadores. Los archivos JS incluidos (`bootstrap.bundle.js` y `bootstrap.bundle.min.js` minificado) incluyen [Popper](https://popper.js.org/).
 
 ## Archivos CSS
 
@@ -139,6 +139,8 @@ Bootstrap incluye un puñado de opciones para incluir solo partes o la totalidad
   </tbody>
 </table>
 
+{{< content-ads/middle-banner-2 >}}
+
 ## Archivos JS
 
 Del mismo modo, tenemos opciones para incluir solo partes o la totalidad de nuestro JavaScript compilado.
@@ -169,6 +171,8 @@ Del mismo modo, tenemos opciones para incluir solo partes o la totalidad de nues
 </table>
 
 ## Código fuente de Bootstrap
+
+{{< content-ads/middle-banner-3 >}}
 
 La descarga del código fuente de Bootstrap incluye los activos CSS y JavaScript precompilados, junto con las fuentes en Sass, JavaScript y documentación. Más específicamente, incluye lo siguiente y más:
 

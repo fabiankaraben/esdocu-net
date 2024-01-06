@@ -87,6 +87,8 @@ Primary
 Secondary
 </div>
 
+{{< content-ads/middle-banner-1 >}}
+
 <div class="my-5 p-3 rounded-md font-bold bg-[#198754] text-white">
 Success
 </div>
@@ -133,6 +135,8 @@ Consulta [nuestra documentación de mapas y bucles de Sass](/bootstrap/5.3/custo
 ### Todos los colores {#all-colors}
 
 Todos los colores de Bootstrap están disponibles como variables Sass y un mapa Sass en el archivo `scss/_variables.scss`. Para evitar un aumento en el tamaño de los archivos, no creamos clases de texto o color de fondo para cada una de estas variables. En su lugar, elegimos un subconjunto de estos colores para una [paleta de tema](#theme-colors).
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/content-suggestion >}}
 
@@ -448,6 +452,7 @@ $cyan-800
 $cyan-900
 </div>
 
+{{< content-ads/middle-banner-3 >}}
 
 <div class="mt-8 mb-2 p-3 rounded-md font-bold bg-[#adb5bd] text-black">
 <strong>gray-500</strong> #adb5bd
@@ -488,7 +493,6 @@ $gray-900
 <strong>white</strong> #fff
 </div>
 
-
 ### Notas sobre Sass {#notes-on-sass}
 
 Sass no puede generar variables mediante programación, por lo que nosotros mismos creamos variables manualmente para cada tinte y tono. Especificamos el valor del punto medio (por ejemplo, `$blue-500`) y utilizamos funciones de color personalizadas para teñir (aclarar) o sombrear (oscurecer) nuestros colores a través de la función de color `mix()` de Sass.
@@ -509,6 +513,8 @@ Los archivos fuente Sass de Bootstrap incluyen tres mapas para ayudarte a recorr
 Dentro de `scss/_variables.scss`, encontrarás las variables de color de Bootstrap y el mapa Sass. Aquí hay un ejemplo del mapa `$colors` de Sass:
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $colors: (

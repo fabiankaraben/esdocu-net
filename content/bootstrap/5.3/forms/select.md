@@ -31,6 +31,8 @@ Los menús `<select>` personalizados solo necesitan una clase personalizada, `.f
 Tamaños {#sizing}
 ------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 También puedes elegir entre selects personalizados pequeños y grandes para que coincidan con nuestras entradas de texto de tamaño similar.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/select/sizing-1.html" >}}
@@ -64,6 +66,8 @@ El atributo `multiple` también es compatible:
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 Cómo es el atributo `size`:
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/select/sizing-3.html" >}}
@@ -82,6 +86,8 @@ Deshabilitado {#disabled}
 
 Agrega el atributo booleano `disabled` en una selección para darle una apariencia atenuada y eliminar eventos de puntero.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/select/disabled.html" >}}
 ```html {filename="HTML"}
     <select class="form-select" aria-label="Ejemplo de select deshabilitado" disabled="">
@@ -99,6 +105,8 @@ Personalización del CSS {#css}
 {{< bootstrap/content-suggestion >}}
 
 ### Variables Sass generales relacionadas {#sass-variables}
+
+{{< content-ads/middle-banner-4 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

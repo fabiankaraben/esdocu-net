@@ -27,6 +27,8 @@ Hay varias formas de personalizar Bootstrap. Tu mejor camino puede depender de t
 
 Nuestros dos métodos preferidos son:
 
+{{< content-ads/middle-banner-1 >}}
+
 1. Usar Bootstrap a través del [administrador de paquetes]({{< bootstrap/5-1/docsref "/getting-started/download#package-managers" >}}) para que puedas usar y ampliar nuestros archivos fuente.
 2. Usar los archivos de distribución compilados de Bootstrap o [jsDelivr]({{< bootstrap/5-1/docsref "/getting-started/download#cdn-via-jsdelivr" >}}) para que puedas agregar o sobrescribir los estilos de Bootstrap.
 
@@ -36,7 +38,7 @@ Para aquellos que quieran usar los archivos de distribución, revisen la [págin
 
 A medida que te familiarices con Bootstrap, continúa explorando esta sección para obtener más detalles sobre cómo utilizar nuestras opciones globales, cómo cambiar nuestro sistema de color, cómo construimos nuestros componentes, cómo usar nuestra creciente lista de propiedades personalizadas de CSS y cómo optimizar tu código al construir con Bootstrap.
 
-{{< content-ads/middle-banner-1 >}}
+{{< content-ads/middle-banner-2 >}}
 
 ## CSP y SVG integrados
 

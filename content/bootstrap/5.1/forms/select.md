@@ -27,6 +27,8 @@ Los menús `<select>` personalizados solo necesitan una clase personalizada, `.f
 
 ## Dimensionamiento
 
+{{< content-ads/middle-banner-1 >}}
+
 También puedes elegir entre selects pequeñas y grandes para que coincidan con nuestras entradas de texto de tamaño similar.
 
 {{< bootstrap/5-1/example >}}
@@ -56,6 +58,8 @@ El atributo `multiple` también es compatible:
 </select>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 Al igual que el atributo `size`:
 
 {{< bootstrap/5-1/example >}}
@@ -71,6 +75,8 @@ Al igual que el atributo `size`:
 
 Agrega el atributo booleano `disabled` en un select para darle una apariencia atenuada y eliminar los eventos de puntero.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example >}}
 <select class="form-select" aria-label="Ejemplo de select deshabilitado" disabled>
   <option selected>Abre este menú select</option>
@@ -79,8 +85,6 @@ Agrega el atributo booleano `disabled` en un select para darle una apariencia at
   <option value="3">Tres</option>
 </select>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Sass
 

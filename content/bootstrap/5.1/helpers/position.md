@@ -22,6 +22,8 @@ Coloca un elemento en la parte superior del viewport, de borde a borde. Asegúra
 
 ## Fijo en la parte inferior
 
+{{< content-ads/middle-banner-1 >}}
+
 Coloca un elemento en la parte inferior del viewport, de borde a borde. Asegúrate de comprender las ramificaciones de la posición fija en tu proyecto; es posible que deba agregar CSS adicional.
 
 ```html
@@ -31,6 +33,8 @@ Coloca un elemento en la parte inferior del viewport, de borde a borde. Asegúra
 ## Pegajoso en la parte superior
 
 Coloca un elemento en la parte superior del viewport, de borde a borde, pero solo después de que el scroll lo pase.
+
+{{< content-ads/middle-banner-2 >}}
 
 ```html
 <div class="sticky-top">...</div>
@@ -48,7 +52,7 @@ También existen variaciones responsive para la utilidad `.sticky-top`.
 <div class="sticky-xxl-top">Pegajoso en la parte superior de viewports tamaño XXL (extra-extra-large) o más ancho</div>
 ```
 
-{{< content-ads/middle-banner-1 >}}
+{{< content-ads/middle-banner-3 >}}
 
 ## Pegajoso en la parte inferior
 
@@ -59,6 +63,8 @@ Coloca un elemento en la parte inferior del viewport, de borde a borde, pero sol
 ```
 
 ## Responsive y pegajoso en la parte inferior
+
+{{< content-ads/middle-banner-4 >}}
 
 También existen variaciones responsive para la utilidad `.sticky-bottom`.
 

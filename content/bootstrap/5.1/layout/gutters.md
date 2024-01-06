@@ -22,6 +22,8 @@ Los gutters son el padding entre las columnas, que se utilizan para espaciar y a
 
 ## Gutters horizontales
 
+{{< content-ads/middle-banner-1 >}}
+
 Las clases `.gx-*` se pueden usar para controlar los anchos de los gutters horizontales. Es posible que sea necesario ajustar el `.container` o `.container-fluid` padre si también se usan gutters más grandes para evitar el desbordamiento no deseado, usando una utilidad de padding coincidente. Por ejemplo, en el siguiente ejemplo hemos aumentado el padding con `.px-4`:
 
 {{< bootstrap/5-1/example >}}
@@ -52,9 +54,9 @@ Una solución alternativa es agregar un contenedor alrededor de `.row` con la cl
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Gutters verticales
+
+{{< content-ads/middle-banner-2 >}}
 
 Las clases `.gy-*` se pueden usar para controlar los anchos de los gutters verticales. Al igual que los gutters horizontales, los gutters verticales pueden provocar un desbordamiento debajo de la `.row` al final de una página. Si esto ocurre, agrega un contenedor alrededor de `.row` con la clase `.overflow-hidden`:
 
@@ -100,6 +102,8 @@ Las clases `.g-*` se pueden usar para controlar los anchos de los gutters horizo
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Gutters columnas de filas
 
 Las clases de gutters también se pueden agregar a [columnas de fila]({{< bootstrap/5-1/docsref "/layout/grid#row-columns" >}}). En el siguiente ejemplo, usamos columnas de fila responsive y clases de gutters responsive.
@@ -141,11 +145,11 @@ Las clases de gutters también se pueden agregar a [columnas de fila]({{< bootst
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Sin gutters
 
 Los gutters entre columnas en nuestras clases de cuadrícula predefinidas se pueden eliminar con `.g-0`. Esto elimina los `margin`s negativos de `.row` y el `padding` horizontal de todas las columnas secundarias inmediatas.
+
+{{< content-ads/middle-banner-4 >}}
 
 **¿Necesitas un diseño de borde a borde?** Deja el `.container` o `.container-fluid` principal y agrega `.mx-0` a `.row` para evitar el desbordamiento.
 
@@ -161,6 +165,8 @@ En la práctica, así es como se ve. Ten en cuenta que puedes continuar usándol
 ## Cambiar los gutters
 
 Las clases se crean a partir del mapa Sass `$gutters` que se hereda del mapa Sass `$spacers`.
+
+{{< content-ads/middle-banner-5 >}}
 
 ```scss
 $grid-gutter-width: 1.5rem;

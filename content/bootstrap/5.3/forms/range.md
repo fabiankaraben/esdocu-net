@@ -27,6 +27,8 @@ Crea controles `<input type="range">` personalizados con `.form-range`. La pista
 Deshabilitado {#disabled}
 --------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Agrega el atributo booleano `disabled` en una entrada para darle una apariencia atenuada, eliminar eventos de puntero y evitar el enfoque.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/range/disabled.html" >}}
@@ -40,6 +42,8 @@ Min y max {#min-and-max}
 -------------------------
 
 Las entradas de rango tienen valores implícitos para `min` y `max`—`0` y `100`, respectivamente. Puedes especificar nuevos valores para aquellos que usan los atributos `min` y `max`.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/forms/range/min-and-max.html" >}}
 ```html {filename="HTML"}
@@ -60,6 +64,8 @@ De forma predeterminada, las entradas de rango se “ajustan” a valores entero
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 Personalización del CSS {#css}
 -----------
 
@@ -68,6 +74,8 @@ Personalización del CSS {#css}
 ### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
+
+{{< content-ads/middle-banner-4 >}}
 
 ```scss {filename="scss/_variables.scss"}
 $form-range-track-width:          100%;

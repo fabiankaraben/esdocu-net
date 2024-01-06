@@ -28,6 +28,8 @@ Utiliza las utilidades de borde para agregar o eliminar los bordes de un element
 
 ### Sustractivo
 
+{{< content-ads/middle-banner-1 >}}
+
 {{< bootstrap/5-1/example class="bd-example-border-utils bd-example-border-utils-0" >}}
 <span class="border-0"></span>
 <span class="border-top-0"></span>
@@ -51,6 +53,8 @@ Cambia el color del borde usando utilidades basadas en nuestros colores temátic
 
 ## Ancho del borde
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/example class="bd-example-border-utils" >}}
 <span class="border border-1"></span>
 <span class="border border-2"></span>
@@ -58,8 +62,6 @@ Cambia el color del borde usando utilidades basadas en nuestros colores temátic
 <span class="border border-4"></span>
 <span class="border border-5"></span>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Radio del borde
 
@@ -77,6 +79,8 @@ Agrega clases a un elemento para redondear fácilmente tus esquinas.
 
 ### Tamaños
 
+{{< content-ads/middle-banner-3 >}}
+
 Utiliza las clases de escala para esquinas redondeadas más grandes o más pequeñas. Los tamaños varían de `0` a `3` y se pueden configurar modificando la API de utilidades.
 
 {{< bootstrap/5-1/example class="bd-example-rounded-utils" >}}
@@ -92,13 +96,13 @@ Utiliza las clases de escala para esquinas redondeadas más grandes o más peque
 
 {{< bootstrap/5-1/scss-docs name="border-variables" file="scss/_variables.scss" >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/scss-docs name="border-radius-variables" file="scss/_variables.scss" >}}
 
 ### Mixins
 
 {{< bootstrap/5-1/scss-docs name="border-radius-mixins" file="scss/mixins/_border-radius.scss" >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ### API de utilidades
 

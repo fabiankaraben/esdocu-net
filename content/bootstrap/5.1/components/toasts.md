@@ -75,6 +75,8 @@ Haz clic en el botón a continuación para mostrar un toast (ubicado con nuestra
   </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ```html
 <button type="button" class="btn btn-primary" id="liveToastBtn">Mostrar el toast en vivo</button>
 
@@ -186,9 +188,9 @@ Alternativamente, también puedes agregar controles y componentes adicionales a 
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ### Esquemas de color
+
+{{< content-ads/middle-banner-2 >}}
 
 Sobre la base del ejemplo anterior, puedes crear diferentes esquemas de colores con nuestras utilidades de [color]({{< bootstrap/5-1/docsref "/utilities/colors" >}}) y [background]({{< bootstrap/5-1/docsref "/utilities/background" >}}). Aquí hemos agregado `.bg-primary` y `.text-white` a `.toast`, y luego agregamos `.btn-close-white` a nuestro botón de cierre. Para un borde nítido, eliminamos el borde predeterminado con `.border-0`.
 
@@ -317,6 +319,8 @@ A medida que cambias el contenido que estás mostrando, asegúrate de actualizar
 ```
 Al usar `autohide: false`, debes agregar un botón de cierre para permitir que los usuarios descarten el toast.
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< bootstrap/5-1/example class="bg-light" >}}
 <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-bs-autohide="false">
   <div class="toast-header">
@@ -332,8 +336,6 @@ Al usar `autohide: false`, debes agregar un botón de cierre para permitir que l
 {{< /bootstrap/5-1/example >}}
 
 Si bien técnicamente es posible agregar controles enfocables/accionables (como botones o enlaces adicionales) en tu toast, debes evitar hacer esto para ocultar automáticamente los toasts. Incluso si das al toast un largo [tiempo de espera `delay`](#options), los usuarios de tecnología de asistencia y teclado pueden tener dificultades para llegar al toast a tiempo para tomar medidas (ya que los toasts no reciben atención cuando se muestran) . Si es absolutamente necesario tener controles adicionales, te recomendamos usar un toast con `autohide: false`.
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Sass
 
@@ -399,6 +401,8 @@ Las opciones se pueden pasar a través de atributos de datos o JavaScript. Para 
 {{< bootstrap/5-1/partial "callout-danger-async-methods.md" >}}
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 #### show
 
 Revela el toast de un elemento. **Regresa al punto de la llamada antes de que se muestre realmente el toast** (es decir, antes de que ocurra el evento `shown.bs.toast`).
@@ -442,7 +446,7 @@ var myToastEl = document.getElementById('myToastEl')
 var myToast = bootstrap.Toast.getOrCreateInstance(myToastEl) // Devuelve una instancia de toast Bootstrap
 ```
 
-{{< content-ads/middle-banner-3 >}}
+{{< content-ads/middle-banner-5 >}}
 
 ### Eventos
 

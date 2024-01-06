@@ -30,6 +30,8 @@ Compila Bootstrap con tus propios assets descargando nuestros archivos fuente Sa
 - [Compilador Sass]({{< bootstrap/5-1/docsref "/getting-started/contribute#sass" >}}) para compilar archivos fuente Sass en archivos CSS
 - [Autoprefixer](https://github.com/postcss/autoprefixer) para prefijos CSS
 
+{{< content-ads/middle-banner-1 >}}
+
 Si necesitas nuestro conjunto completo de [herramientas de compilación]({{< bootstrap/5-1/docsref "/getting-started/contribute#tooling-setup" >}}), estas se incluyen para desarrollar Bootstrap junto a su documentación, pero es probable que no sean adecuadas para tus propósitos, tus proyectos.
 
 <a href="{{< bootstrap/5-1/param "download.source" >}}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download source');">Descargar archivos fuente</a>
@@ -40,8 +42,6 @@ Si deseas descargar y examinar nuestros [ejemplos](https://getbootstrap.com/docs
 
 <a href="{{< bootstrap/5-1/param "download.dist_examples" >}}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Examples');">Descargar ejemplos</a>
 
-{{< content-ads/middle-banner-1 >}}
-
 ## CDN via jsDelivr
 
 Omite la descarga con [jsDelivr](https://www.jsdelivr.com/) para entregar la versión en caché del CSS y JS compilados de Bootstrap a tu proyecto.
@@ -50,6 +50,8 @@ Omite la descarga con [jsDelivr](https://www.jsdelivr.com/) para entregar la ver
 <link href="{{< bootstrap/5-1/param "cdn.css" >}}" rel="stylesheet" integrity="{{< bootstrap/5-1/param "cdn.css_hash" >}}" crossorigin="anonymous">
 <script src="{{< bootstrap/5-1/param "cdn.js_bundle" >}}" integrity="{{< bootstrap/5-1/param "cdn.js_bundle_hash" >}}" crossorigin="anonymous"></script>
 ```
+
+{{< content-ads/middle-banner-2 >}}
 
 Si estás utilizando nuestro JavaScript compilado y prefieres incluir Popper por separado, agrega Popper antes de nuestro JS, preferiblemente a través de un CDN.
 
@@ -73,6 +75,8 @@ npm install bootstrap
 `const bootstrap = require('bootstrap')` o `import bootstrap from 'bootstrap'` cargarán todos los complementos de Bootstrap en un objeto `bootstrap`.
 El propio módulo `bootstrap` exporta todos nuestros complementos. Puedes cargar manualmente los complementos de Bootstrap individualmente cargando los archivos `/js/dist/*.js` en el directorio de nivel superior del paquete.
 
+{{< content-ads/middle-banner-3 >}}
+
 El `package.json` de Bootstrap contiene algunos metadatos adicionales bajo las siguientes claves:
 
 - `sass` - ruta al archivo fuente principal [Sass](https://sass-lang.com/) de Bootstrap
@@ -94,6 +98,8 @@ yarn add bootstrap
 
 Instala Bootstrap en tus aplicaciones Ruby usando [Bundler](https://bundler.io/) (**recomendado**) y [RubyGems](https://rubygems.org/) agregando la siguiente línea a tu [`Gemfile`](https://bundler.io/gemfile.html):
 
+{{< content-ads/middle-banner-4 >}}
+
 ```ruby
 gem 'bootstrap', '~> {{< bootstrap/5-1/param current_ruby_version >}}'
 ```
@@ -106,8 +112,6 @@ gem install bootstrap -v {{< bootstrap/5-1/param current_ruby_version >}}
 
 [Consulta el README de la gema](https://github.com/twbs/bootstrap-rubygem/blob/master/README.md) para obtener más detalles.
 
-{{< content-ads/middle-banner-2 >}}
-
 ### Composer
 
 También puedes instalar y administrar Sass y JavaScript de Bootstrap usando [Composer](https://getcomposer.org/):
@@ -117,6 +121,8 @@ composer require twbs/bootstrap:{{< bootstrap/5-1/param current_version >}}
 ```
 
 ### NuGet
+
+{{< content-ads/middle-banner-5 >}}
 
 Si desarrollas en .NET Framework, también puedes instalar y administrar [CSS](https://www.nuget.org/packages/bootstrap/) de Bootstrap o [Sass](https://www.nuget.org/packages/bootstrap.sass/) y JavaScript mediante [NuGet](https://www.nuget.org/). Los proyectos más nuevos deben usar [libman](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/) u otro método, ya que NuGet está diseñado para código compilado, no para recursos de interfaz.
 

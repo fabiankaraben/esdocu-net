@@ -34,6 +34,8 @@ Las utilidades de ancho y alto se generan a partir de la API de utilidades en `_
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 También puedes usar las utilidades `max-width: 100%;` y `max-height: 100%;` según sea necesario.
 
 {{< bootstrap/5-1/example >}}
@@ -48,6 +50,8 @@ También puedes usar las utilidades `max-width: 100%;` y `max-height: 100%;` seg
 
 ## Relativo al viewport
 
+{{< content-ads/middle-banner-2 >}}
+
 También puedes usar utilidades para establecer el ancho y la altura en relación con el viewport.
 
 ```html
@@ -57,11 +61,11 @@ También puedes usar utilidades para establecer el ancho y la altura en relació
 <div class="vh-100">Height 100vh</div>
 ```
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Sass
 
 ### API de utilidades
+
+{{< content-ads/middle-banner-3 >}}
 
 Las utilidades de dimensionamiento se declaran en nuestra API de utilidades en `scss/_utilities.scss`. [Aprenda a usar la API de utilidades.]({{< bootstrap/5-1/docsref "/utilities/api#using-the-api" >}})
 

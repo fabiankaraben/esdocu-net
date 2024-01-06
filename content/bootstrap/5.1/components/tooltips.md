@@ -85,6 +85,8 @@ Pasa el cursor sobre los botones a continuación para ver las cuatro direcciones
 </button>
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 Y con HTML personalizado:
 
 ```html
@@ -103,8 +105,6 @@ Con un SVG:
     </svg>
   </a>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Sass
 
@@ -146,6 +146,8 @@ El marcado requerido para un tooltip es solo un atributo `data` y un `title` en 
 Solo debes agregar el tooltip a los elementos HTML que tradicionalmente se pueden enfocar con el teclado y son interactivos (como enlaces o controles de formulario). Aunque los elementos HTML arbitrarios (como `<span>`s) se pueden enfocar agregando el atributo `tabindex="0"`, esto agregará tabulaciones potencialmente molestas y confusas en elementos no interactivos para usuarios de teclado, y actualmente la mayoría de las tecnologías de asistencia no anuncian el tooltip en esta situación. Además, no confíes únicamente en `hover` como el disparador de tu tooltip, ya que esto hará que tu tooltip sea imposible de activar para los usuarios del teclado.
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 ```html
 <!-- HTML a escribir -->
 <a href="#" data-bs-toggle="tooltip" title="Algo de texto tooltip!">Pasa el puntero de mouse aquí</a>
@@ -170,8 +172,6 @@ Los elementos con el atributo `disabled` no son interactivos, lo que significa q
 </span>
 {{< /bootstrap/5-1/example >}}
 </div>
-
-{{< content-ads/middle-banner-2 >}}
 
 ### Opciones
 
@@ -359,6 +359,8 @@ var tooltip = new bootstrap.Tooltip(element, {
 
 Revela el tooltip de un elemento. **Regresa al punto de la llamada antes de que se haya mostrado realmente la tooltip** (es decir, antes de que ocurra el evento `shown.bs.tooltip`). Esto se considera una activación "manual" del tooltip. El tooltip con títulos de longitud cero nunca se muestra.
 
+{{< content-ads/middle-banner-3 >}}
+
 ```js
 tooltip.show()
 ```
@@ -398,6 +400,8 @@ tooltip.enable()
 #### disable
 
 Elimina la capacidad de mostrar el tooltip de un elemento. El tooltip solo se podrá mostrar si se vuelve a habilitar.
+
+{{< content-ads/middle-banner-4 >}}
 
 ```js
 tooltip.disable()
@@ -443,12 +447,12 @@ var tooltip = bootstrap.Tooltip.getInstance(exampleTriggerEl) // Devuelve una in
 
 Método *estático* que te permite obtener la instancia de tooltip asociado con un elemento DOM, o crear uno nuevo en caso de que no se haya inicializado
 
+{{< content-ads/middle-banner-5 >}}
+
 ```js
 var exampleTriggerEl = document.getElementById('example')
 var tooltip = bootstrap.Tooltip.getOrCreateInstance(exampleTriggerEl) // Devuelve una instancia del tooltip de Bootstrap
 ```
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Eventos
 

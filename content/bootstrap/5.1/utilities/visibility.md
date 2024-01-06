@@ -26,6 +26,8 @@ Aplica `.visible` o `.invisible` según sea necesario.
 <div class="invisible">...</div>
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 ```scss
 // Class
 .visible {
@@ -35,8 +37,6 @@ Aplica `.visible` o `.invisible` según sea necesario.
   visibility: hidden !important;
 }
 ```
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Sass
 

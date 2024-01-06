@@ -82,6 +82,8 @@ Los subtítulos se usan agregando un `.card-subtitle` a una etiqueta `<h*>`. Si 
 
 ### List groups
 
+{{< content-ads/middle-banner-1 >}}
+
 Crea listas de contenido en una tarjeta con un grupo de listas flush.
 
 {{< bootstrap/5-1/example >}}
@@ -119,8 +121,6 @@ Crea listas de contenido en una tarjeta con un grupo de listas flush.
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ### Kitchen sink
 
@@ -235,6 +235,8 @@ Usando la cuadrícula, envuelve las tarjetas en columnas y filas según sea nece
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-2 >}}
 
 ### Uso de utilidades
 
@@ -381,6 +383,8 @@ De forma similar a los encabezados y pies de página, las tarjetas pueden inclui
 
 ### Superposición de imágenes
 
+{{< content-ads/middle-banner-3 >}}
+
 Convierte una imagen en un fondo de tarjeta y superpon el texto de tu tarjeta. Dependiendo de la imagen, es posible que necesites o no estilos o utilidades adicionales.
 
 {{< bootstrap/5-1/example >}}
@@ -397,8 +401,6 @@ Convierte una imagen en un fondo de tarjeta y superpon el texto de tu tarjeta. D
 {{< bootstrap/5-1/callout info >}}
 Ten en cuenta que el contenido no debe ser más grande que la altura de la imagen. Si el contenido es más grande que la imagen, el contenido se mostrará fuera de la imagen.
 {{< /bootstrap/5-1/callout >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Horizontal
 
@@ -481,6 +483,8 @@ También puedes cambiar los bordes en el encabezado y pie de página de la tarje
 {{< /bootstrap/5-1/example >}}
 
 ## Layout de tarjeta
+
+{{< content-ads/middle-banner-4 >}}
 
 Además de diseñar el contenido dentro de las tarjetas, Bootstrap incluye algunas opciones para diseñar series de tarjetas. Por el momento, **estas opciones de diseño aún no son responsive**.
 
@@ -727,8 +731,6 @@ Al igual que con los grupos de tarjetas, los pies de página de las tarjetas se 
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Masonry
 

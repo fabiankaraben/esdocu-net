@@ -9,13 +9,13 @@ description: La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de 
 
 La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de Bootstrap en tu proyecto usando Parcel.
 
+{{< content-ads/top-banner >}}
+
 ![](/assets/bootstrap/5.3/assets/img/guides/bootstrap-parcel.png)
 
 {{< callout type="info" emoji="" >}}
 **¿Quieres ir hasta el final?** Descarga el código fuente y la demostración funcional de esta guía desde el repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/parcel). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/parcel?file=index) pero no ejecutarlo porque Parcel actualmente no es compatible allí.
 {{< /callout >}}
-
-{{< content-ads/top-banner >}}
 
 ## Configuración {#setup}
 
@@ -38,6 +38,8 @@ Estamos creando un proyecto de Parcel con Bootstrap desde cero, por lo que exist
 Ahora que tenemos todas las dependencias necesarias instaladas, podemos comenzar a trabajar creando los archivos del proyecto e importando Bootstrap.
 
 ## Estructura del proyecto. {#project-structure}
+
+{{< content-ads/middle-banner-1 >}}
 
 Ya creamos la carpeta `my-project` e inicializamos npm. Ahora también crearemos nuestra carpeta `src`, hoja de estilo y archivo JavaScript para completar la estructura del proyecto. Ejecuta lo siguiente desde `my-project` o crea manualmente la carpeta y la estructura de archivos que se muestran a continuación.
 
@@ -65,6 +67,8 @@ En este punto, todo está en el lugar correcto, pero Parcel necesita una página
 ## Configurar Parcel {#configure-parcel}
 
 Con las dependencias instaladas y nuestra carpeta de proyecto lista para que comencemos a codificar, ahora podemos configurar Parcel y ejecutar nuestro proyecto localmente. Parcel en sí no requiere ningún archivo de configuración por diseño, pero sí necesitamos un script npm y un archivo HTML para iniciar nuestro servidor.
+
+{{< content-ads/middle-banner-2 >}}
 
 1.  **Rellena el archivo `src/index.html`.** Parcel necesita una página para renderizar, así que usamos nuestro `index.html` para configurar HTML básico, incluidos nuestros archivos CSS y JavaScript.
     ```html {filename="HTML"}
@@ -112,6 +116,8 @@ En la siguiente y última sección de esta guía, importaremos todo el CSS y Jav
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ## Importar Bootstrap {#import-bootstrap}
 
 Importar Bootstrap a Parcel requiere dos importaciones, una a nuestro `styles.scss` y otra a nuestro `main.js`.
@@ -139,6 +145,8 @@ Importar Bootstrap a Parcel requiere dos importaciones, una a nuestro `styles.sc
     import { Tooltip, Toast, Popover } from 'bootstrap'
     ```
     
+{{< content-ads/middle-banner-4 >}}
+
     _[Lee nuestra documentación de JavaScript](/bootstrap/5.3/getting-started/javascript) para obtener más información sobre cómo usar los complementos de Bootstrap._
     
 3.  **¡Y listo! 🎉** Con el código fuente Sass y JS de Bootstrap completamente cargados, tu servidor de desarrollo local ahora debería verse así.

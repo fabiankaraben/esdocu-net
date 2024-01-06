@@ -25,6 +25,8 @@ Los breakpoints son anchos personalizables que determinan cómo se comporta tu d
 
 Bootstrap incluye seis breakpoints predeterminados, a veces denominados _niveles de cuadrícula_, para compilar de forma responsive. Estos breakpoints se pueden personalizar si estás utilizando nuestros archivos fuente Sass.
 
+{{< content-ads/middle-banner-1 >}}
+
 <table class="table">
   <thead>
     <tr>
@@ -75,9 +77,9 @@ Estos breakpoints se pueden personalizar a través de Sass; los encontrarás en 
 
 Para obtener más información y ejemplos sobre cómo modificar nuestros mapas y variables Sass, consulta la sección Sass de la [documentación de Grid]({{< bootstrap/5-1/docsref "/layout/grid#sass" >}}).
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Media queries
+
+{{< content-ads/middle-banner-2 >}}
 
 Dado que Bootstrap está desarrollado para ser Mobile first, usamos un puñado de [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) para crear breakpoints sensibles para nuestros diseños e interfaces. Estos breakpoints se basan principalmente en anchos mínimos de viewports y nos permiten aumentar la escala de los elementos a medida que cambia la ventana gráfica.
 
@@ -130,7 +132,7 @@ Estos mixins de Sass se traducen en nuestro CSS compilado utilizando los valores
 @media (min-width: 1400px) { ... }
 ```
 
-{{< content-ads/middle-banner-2 >}}
+{{< content-ads/middle-banner-3 >}}
 
 ### Max-width
 
@@ -178,6 +180,8 @@ Estos mixins toman esos breakpoints declarados, restan `.02px` de ellos y los us
 {{< bootstrap/5-1/partial "callout-info-mediaqueries-breakpoints.md" >}}
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 ### Single breakpoint
 
 También hay media queries y mixins para apuntar a un solo segmento de tamaños de pantalla utilizando los anchos de breakpoint mínimo y máximo.
@@ -197,9 +201,9 @@ Por ejemplo, `@include media-breakpoint-only(md) { ... }` dará como resultado:
 @media (min-width: 768px) and (max-width: 991.98px) { ... }
 ```
 
-{{< content-ads/middle-banner-3 >}}
-
 ### Entre breakpoints
+
+{{< content-ads/middle-banner-5 >}}
 
 De manera similar, las media queries pueden abarcar múltiples anchos de breakpoint:
 

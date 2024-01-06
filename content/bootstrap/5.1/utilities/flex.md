@@ -128,6 +128,8 @@ Usa las utilidades `justify-content` en los contenedores de flexbox para cambiar
 <div class="d-flex justify-content-evenly">...</div>
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 También existen variaciones responsive para `justify-content`.
 
 {{< bootstrap/5-1/markdown >}}
@@ -142,8 +144,6 @@ También existen variaciones responsive para `justify-content`.
 {{- end -}}
 {{< /flex.inline >}}
 {{< /bootstrap/5-1/markdown >}}
-
-{{< content-ads/middle-banner-1 >}}
 
 ## Alinear elementos
 
@@ -267,6 +267,8 @@ Utiliza la clase `.flex-fill` en una serie de elementos hermanos para obligarlos
 
 También existen variaciones responsive para `flex-fill`.
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/markdown >}}
 {{< flex.inline >}}
 {{- range $.Site.Data.bootstrap_5_1_breakpoints }}
@@ -349,8 +351,6 @@ Mueve verticalmente un elemento flexible a la parte superior o inferior de un co
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Envoltura
 
 Cambia la forma en que los elementos flexibles se envuelven en un contenedor flexible. Elije entre no envolver en absoluto (el valor predeterminado del navegador) con `.flex-nowrap`, envolver con `.flex-wrap` o envolver en reversa con `.flex-wrap-reverse`.
@@ -370,6 +370,8 @@ Cambia la forma en que los elementos flexibles se envuelven en un contenedor fle
   ...
 </div>
 ```
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< bootstrap/5-1/example >}}
   <div class="d-flex flex-wrap bd-highlight">
@@ -502,6 +504,8 @@ Usa las utilidades `align-content` en contenedores flexbox para alinear los elem
   ...
 </div>
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< bootstrap/5-1/example >}}
   <div class="d-flex align-content-end flex-wrap bd-highlight mb-3" style="height: 200px">
@@ -665,8 +669,6 @@ Y digamos que quieres centrar verticalmente el contenido al lado de la imagen:
   </div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Sass
 

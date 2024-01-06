@@ -34,6 +34,8 @@ Responsive {#responsive}
 
 Los estilos responsive de Bootstrap están diseñados para ser responsive, un enfoque que a menudo se conoce como _mobile-first_. Usamos este término en nuestra documentación y en gran medida estamos de acuerdo con él, pero a veces puede ser demasiado amplio. Si bien no todos los componentes _deben_ ser completamente responsive en Bootstrap, este enfoque responsive consiste en reducir las sobrescrituras de CSS al obligarlo a agregar estilos a medida que el viewport se hace más grande.
 
+{{< content-ads/middle-banner-1 >}}
+
 En Bootstrap, verás esto más claramente en nuestras media queries. En la mayoría de los casos, utilizamos consultas `min-width` que comienzan a aplicarse en un punto de interrupción específico y continúan hasta los puntos de interrupción más altos. Por ejemplo, un `.d-none` se aplica desde `min-width: 0` hasta el infinito. Por otro lado, se aplica un `.d-md-none` desde el punto de interrupción medio en adelante.
 
 A veces usamos `max-width` cuando la complejidad inherente de un componente lo requiere. En ocasiones, estas sobrescrituras son funcional y mentalmente más claras de implementar y respaldar que reescribir la funcionalidad principal de nuestros componentes. Nos esforzamos por limitar este enfoque, pero lo usaremos de vez en cuando.
@@ -49,6 +51,8 @@ Las clases modificadoras solo deben usarse cuando hay múltiples propiedades o v
 
 Escalas z-index {#z-index-scales}
 ----------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Hay dos escalas `z-index` en Bootstrap: elementos dentro de un componente y componentes superpuestos.
 
@@ -67,6 +71,8 @@ Cada componente superpuesto aumenta ligeramente su valor `z-index` de tal manera
 
 Obtén más información sobre esto en nuestra [`z-index` página de diseño](/bootstrap/5.3/layout/z-index).
 
+{{< content-ads/middle-banner-3 >}}
+
 HTML y CSS sobre JS {#html-and-css-over-js}
 --------------------------------------------
 
@@ -82,6 +88,8 @@ Utilidades {#utilities}
 ------------------------
 
 Las clases de utilidad (anteriormente ayudantes en Bootstrap 3) son un poderoso aliado para combatir la sobrecarga de CSS y el bajo rendimiento de la página. Una clase de utilidad suele ser un par propiedad-valor único e inmutable expresado como una clase (por ejemplo, `.d-block` representa `display: block;`). Su principal atractivo es la velocidad de uso al escribir HTML y limitar la cantidad de CSS personalizado que tienes que escribir.
+
+{{< content-ads/middle-banner-4 >}}
 
 Específicamente con respecto a CSS personalizado, las utilidades pueden ayudar a combatir el aumento del tamaño de los archivos al reducir los pares propiedad-valor que se repiten con más frecuencia en clases únicas. Esto puede tener un efecto dramático a escala en sus proyectos.
 

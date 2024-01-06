@@ -76,6 +76,8 @@ Usa las clases de utilidad incluidas para recrear el pequeño texto del encabeza
 Mostrar encabezados {#display-headings}
 ----------------------------------------
 
+{{< content-ads/middle-banner-1 >}}
+
 Los elementos de encabezado tradicionales están diseñados para funcionar mejor en el contenido principal de tu página. Cuando necesites que un título destaque, considera la posibilidad de utilizar un **título de visualización**: un estilo de título más grande y un poco más obstinado.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/content/typography/display-headings.html" >}}
@@ -146,6 +148,8 @@ Estilo para elementos HTML5 en línea comunes.
 
 Ten en cuenta que esas etiquetas deben usarse con fines semánticos:
 
+{{< content-ads/middle-banner-2 >}}
+
 * `<mark>` representa texto que está marcado o resaltado con fines de referencia o notación.
 * `<small>` representa comentarios secundarios y letra pequeña, como derechos de autor y texto legal.
 * `<s>` representa elementos que ya no son relevantes o que ya no son precisos.
@@ -193,6 +197,8 @@ Para citar bloques de contenido de otra fuente dentro de tu documento. Envuelve 
 {{< /demo-iframe >}}
 
 ### Nombrar una fuente {#naming-a-source}
+
+{{< content-ads/middle-banner-3 >}}
 
 La especificación HTML requiere que la atribución de cita en bloque se coloque fuera del `<blockquote>`. Al proporcionar atribución, incluye tu `<blockquote>` en un `<figure>` y usa un `<figcaption>` o un elemento de nivel de bloque (por ejemplo, `<p>`) con la clase `.blockquote-footer`. Asegúrate de incluir también el nombre del trabajo fuente en `<cite>`.
 
@@ -277,6 +283,8 @@ Elimina las viñetas de una lista y aplica un poco de `margin` con una combinaci
     </ul>
 ```
 {{< /demo-iframe >}}
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Alineación de la lista de descripciones {#description-list-alignment}
 

@@ -233,9 +233,9 @@ Scrollspy también funciona con `.list-group`s. Desplázate por el área junto a
 </div>
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Uso
+
+{{< content-ads/middle-banner-2 >}}
 
 ### A través de atributos de datos
 
@@ -281,6 +281,8 @@ Los enlaces de la barra de navegación deben tener IDs objetivos resolubles. Por
 Los elementos de destino que no sean visibles se ignorarán y sus elementos de navegación correspondientes nunca se resaltarán.
 {{< /bootstrap/5-1/callout >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Métodos
 
 #### refresh
@@ -307,6 +309,8 @@ Método *estático* que te permite obtener la instancia de scrollspy asociada co
 var scrollSpyContentEl = document.getElementById('content')
 var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl) // Returns a Bootstrap scrollspy instance
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 #### getOrCreateInstance
 
@@ -351,8 +355,6 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
     </tr>
   </tbody>
 </table>
-
-{{< content-ads/middle-banner-3 >}}
 
 ### Eventos
 

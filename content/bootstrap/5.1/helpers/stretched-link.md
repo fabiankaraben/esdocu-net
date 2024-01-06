@@ -29,6 +29,8 @@ No se recomiendan múltiples enlaces y objetivos táctiles con enlaces extendido
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 La mayoría de los componentes personalizados no tienen `position: relative` de forma predeterminada, por lo que debemos agregar `.position-relative` aquí para evitar que el enlace se extienda fuera del elemento padre.
 
 {{< bootstrap/5-1/example >}}
@@ -55,9 +57,9 @@ La mayoría de los componentes personalizados no tienen `position: relative` de 
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Identificando el bloque contenedor
+
+{{< content-ads/middle-banner-2 >}}
 
 Si el enlace ampliado no parece funcionar, el [bloque contenedor](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block) probablemente sea la causa. Las siguientes propiedades CSS harán que un elemento sea el bloque contenedor:
 

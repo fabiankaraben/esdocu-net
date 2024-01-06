@@ -24,6 +24,8 @@ Las reglas verticales están inspiradas en el elemento `<hr>`, lo que te permite
 
 Personalízalos con estilos adicionales según sea necesario.
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Ejemplo
 
 {{< bootstrap/5-1/example >}}
@@ -38,7 +40,7 @@ Las reglas verticales escalan su altura en diseños flexibles:
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
+{{< content-ads/middle-banner-2 >}}
 
 ## Con pilas (stacks)
 

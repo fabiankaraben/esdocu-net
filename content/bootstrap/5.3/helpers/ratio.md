@@ -23,6 +23,8 @@ Las relaciones de aspecto se declaran en un mapa Sass y se incluyen en cada clas
 **¡Consejo profesional!** No necesitas `frameborder="0"` en tus `<iframe>`s, ya que lo sobrescribimos en [Reboot](/bootstrap/5.3/content/reboot).
 {{< /callout >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 Ejemplo {#example}
 -------------------
 
@@ -39,6 +41,8 @@ Envuelve cualquier incrustación, como un `<iframe>`, en un elemento padre con `
 
 Relaciones de aspecto {#aspect-ratios}
 ---------------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 Las relaciones de aspecto se pueden personalizar con clases de modificadores. De forma predeterminada, se proporcionan las siguientes clases de relación:
 
@@ -64,6 +68,8 @@ Proporciones personalizadas {#custom-ratios}
 
 Cada clase `.ratio-*` incluye una propiedad personalizada CSS (o variable CSS) en el selector. Puedes sobrescribir esta variable CSS para crear relaciones de aspecto personalizadas sobre la marcha con algunos cálculos rápidos de tu parte.
 
+{{< content-ads/middle-banner-3 >}}
+
 Por ejemplo, para crear una relación de aspecto de 2x1, establece `--bs-aspect-ratio: 50%` en `.ratio`.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/ratio/custom-ratios-1.html" >}}
@@ -84,6 +90,8 @@ Esta variable CSS facilita la modificación de la relación de aspecto entre pun
 }
 ```
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/helpers/ratio/custom-ratios-2.html" >}}
 ```html {filename="HTML"}
     <div class="ratio ratio-4x3">
@@ -98,6 +106,8 @@ Mapas de Sass {#sass-maps}
 {{< bootstrap/content-suggestion >}}
 
 Dentro de `_variables.scss`, puedes cambiar las relaciones de aspecto que deseas usar. Aquí está nuestro mapa `$ratio-aspect-ratios` predeterminado. Modifica el mapa como quieras y vuelve a compilar tu Sass para usarlo.
+
+{{< content-ads/middle-banner-5 >}}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

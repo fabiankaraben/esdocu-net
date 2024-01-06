@@ -65,6 +65,8 @@ Opciones de grilla {#grid-options}
 
 El sistema de cuadrícula de Bootstrap puede adaptarse a los seis puntos de interrupción predeterminados y a cualquier punto de interrupción que personalices. Los seis niveles de cuadrícula predeterminados son los siguientes:
 
+{{< content-ads/middle-banner-1 >}}
+
 * Extra pequeño (xs)
 * Pequeño (sm)
 * Mediano (md)
@@ -191,6 +193,8 @@ Clases responsive {#responsive-classes}
 ----------------------------------------
 
 La cuadrícula de Bootstrap incluye seis niveles de clases predefinidas para crear diseños responsive complejos. Personaliza el tamaño de tus columnas en dispositivos extra pequeños, pequeños, medianos, grandes o extra grandes como mejor te parezca.
+
+{{< content-ads/middle-banner-2 >}}
 
 ### Todos los puntos de interrupción {#all-breakpoints}
 
@@ -322,6 +326,8 @@ Usa estas clases de columnas de fila para crear rápidamente diseños de cuadrí
 ```
 {{< /demo-iframe >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/layout/grid/row-columns-5.html" >}}
 ```html {filename="HTML"}
     <div class="container text-center">
@@ -430,6 +436,8 @@ $container-max-widths: (
     xxl: 1320px
 );
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Sass mixins {#sass-mixins}
 

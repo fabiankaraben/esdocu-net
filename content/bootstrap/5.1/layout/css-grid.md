@@ -25,7 +25,6 @@ Con Bootstrap 5, agregamos la opción para habilitar un sistema de cuadrícula s
 
 - **CSS Grid es opcional.** Desactiva el sistema de cuadrícula predeterminado configurando `$enable-grid-classes: false` y habilita CSS Grid configurando `$enable-cssgrid: true`. Luego, vuelve a compilar tu Sass.
 
-
 - **Reemplaza las instancias de `.row` con `.grid`.** La clase `.grid` establece `display: grid` y crea un `grid-template` que se construye con tu HTML.
 
 - **Reemplaza las clases `.col-*` con las clases `.g-col-*`.** Esto se debe a que nuestras columnas CSS Grid usan la propiedad `grid-column` en lugar de `width`.
@@ -42,6 +41,8 @@ En comparación con el sistema de cuadrícula predeterminado:
 
 - Los huecos (gaps) reemplazan a los gutters. La propiedad `gap` reemplaza el `padding` horizontal de nuestro sistema de cuadrícula predeterminado y funciona más como `margin`.
 
+{{< content-ads/middle-banner-1 >}}
+
 - Como tal, a diferencia de `.row`s, `.grid`s no tienen márgenes negativos y las utilidades de margen no se pueden usar para cambiar los gutters de la cuadrícula. Los espacios de cuadrícula (gaps) se aplican horizontal y verticalmente de forma predeterminada. Consulta la [sección de personalización](#customizing) para obtener más detalles.
 
 - Los estilos en línea y personalizados deben verse como reemplazos de las clases de modificadores (por ejemplo, `style="--bs-columns: 3;"` vs `class="row-cols-3"`).
@@ -49,8 +50,6 @@ En comparación con el sistema de cuadrícula predeterminado:
 - El anidamiento funciona de manera similar, pero puede requerir que restablezcas los recuentos de columnas en cada instancia de un `.grid` anidado. Consulta la [sección de anidamiento](#nesting) para obtener más información.
 
 ## Ejemplos
-
-{{< content-ads/middle-banner-1 >}}
 
 ### Tres columnas
 
@@ -87,6 +86,8 @@ Compara eso con este diseño de dos columnas en todas los viewports.
 
 ## Wrapping
 
+{{< content-ads/middle-banner-2 >}}
+
 Los elementos de la cuadrícula se ajustan automáticamente a la siguiente línea cuando no hay más espacio horizontalmente. Ten en cuenta que el `gap` se aplica a los espacios horizontales y verticales entre los elementos de la cuadrícula.
 
 {{< bootstrap/5-1/example class="bd-example-cssgrid" >}}
@@ -109,8 +110,6 @@ Las clases *start* tienen como objetivo reemplazar las clases de desplazamiento 
   <div class="g-col-4 g-start-6">.g-col-4 .g-start-6</div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-2 >}}
 
 ## Auto columnas
 
@@ -155,6 +154,8 @@ Similar a nuestro sistema de cuadrícula predeterminado, nuestra CSS Grid permit
 - En la primera columna automática, el recuento de columnas se hereda y cada columna es un tercio del ancho disponible.
 - En la segunda columna automática, hemos restablecido el recuento de columnas en el `.grid` anidado a 12 (nuestro valor predeterminado).
 - La tercera columna automática no tiene contenido anidado.
+
+{{< content-ads/middle-banner-3 >}}
 
 En la práctica, esto permite diseños más complejos y personalizados en comparación con nuestro sistema de cuadrícula predeterminado.
 
@@ -223,6 +224,8 @@ Ajusta el número de columnas y el espacio.
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-4 >}}
+
 ### Agregar filas
 
 Agregar más filas y cambiar la ubicación de las columnas:
@@ -260,8 +263,6 @@ Por eso, puedes tener diferentes `gap`s verticales y horizontales, que pueden to
   <div class="g-col-6">.g-col-6</div>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Sass
 

@@ -260,6 +260,8 @@ Los elementos secundarios inmediatos de `.navbar` usan un diseño *flex* y tendr
 
 Los input groups también funcionan. Si tu barra de navegación es un formulario completo, o principalmente un formulario, puedes usar el elemento `<form>` como contenedor y ahorrar algo de HTML.
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< bootstrap/5-1/example >}}
 <nav class="navbar navbar-light bg-light">
   <form class="container-fluid">
@@ -432,8 +434,6 @@ Tematizar la barra de navegación nunca ha sido tan fácil gracias a la combinac
 </nav>
 ```
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Contenedores
 
 Aunque no es obligatorio, puedes envolver una barra de navegación en un `.container` para centrarla en una página, aunque ten en cuenta que aún se requiere un contenedor interno. O puedes agregar un contenedor dentro de `.navbar` para centrar solo el contenido de una [barra de navegación superior fija o estática](#placement).
@@ -459,6 +459,8 @@ Usa cualquiera de los contenedores responsive para cambiar la amplitud de presen
 {{< /bootstrap/5-1/example >}}
 
 ## Colocación
+
+{{< content-ads/middle-banner-3 >}}
 
 Utiliza nuestras [utilidades de posición]({{< bootstrap/5-1/docsref "/utilities/position" >}}) para colocar barras de navegación en posiciones no estáticas. Elije entre fijo en la parte superior, fijo en la parte inferior, fijo en la parte superior (se desplaza con la página hasta que llega a la parte superior y luego permanece allí) o fijo en la parte inferior (se desplaza con la página hasta que llega al final y luego permanece allí).
 
@@ -562,6 +564,8 @@ Para las barras de navegación que nunca colapsan, agrega la clase `.navbar-expa
 Los togglers de la barra de navegación están alineados a la izquierda de forma predeterminada, pero si siguen a un elemento hermano como `.navbar-brand`, se alinearán automáticamente en el extremo derecho. Al invertir el marcado, se invertirá la ubicación del toggler. A continuación se muestran ejemplos de diferentes estilos de toggle.
 
 Sin mostrar `.navbar-brand` en el breakpoint más pequeño:
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< bootstrap/5-1/example >}}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -736,8 +740,6 @@ Para crear una barra de navegación fuera del lienzo que se expanda a una barra 
   </div>
 </nav>
 ```
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Sass
 

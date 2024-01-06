@@ -44,9 +44,9 @@ Usa una lista ordenada o desordenada con elementos de lista vinculados para crea
 Divisores entre elementos del Breadcrumb {#dividers}
 ----------------------
 
-{{< content-ads/middle-banner-1 >}}
-
 Los divisores se agregan automáticamente en CSS a través de [`::before`](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) y [`content`](https://developer.mozilla.org/en-US/docs/Web/CSS/content). Se pueden cambiar modificando una propiedad personalizada CSS local `--bs-breadcrumb-divider`, o mediante la variable Sass `$breadcrumb-divider` y `$breadcrumb-divider-flipped` para su contraparte RTL, si es necesario. Utilizamos de forma predeterminada nuestra variable Sass, que se establece como alternativa a la propiedad personalizada. De esta manera, obtienes un divisor global que puedes sobrescribir sin tener que volver a compilar CSS en ningún momento.
+
+{{< content-ads/middle-banner-1 >}}
 
 {{< demo-iframe path="/demos/bootstrap/5.3/components/breadcrumb/dividers-1.html" >}}
 ```html {filename="HTML"}
@@ -71,6 +71,8 @@ También es posible usar un **icono SVG incrustado**. Aplícalo a través de nue
 **El SVG incorporado requiere caracteres con escape adecuado.** Algunos caracteres reservados, como `<`, `>` y `#`, deben estar codificado en URL o con formato de escape. Hacemos esto con la variable `$breadcrumb-divider` usando nuestro [`escape-svg()` (función Sass)](/bootstrap/5.3/customize/sass/#escape-svg). Al personalizar la variable CSS, debes manejarlo tú mismo. Lee las [explicaciones de Kevin Weber sobre CodePen](https://codepen.io/kevinweber/pen/dXWoRw) para obtener más información.
 {{< /callout >}}
 
+{{< content-ads/middle-banner-2 >}}
+
 {{< demo-iframe path="/demos/bootstrap/5.3/components/breadcrumb/dividers-2.html" >}}
 ```html {filename="HTML"}
     <nav style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);" aria-label="breadcrumb">
@@ -85,8 +87,6 @@ También es posible usar un **icono SVG incrustado**. Aplícalo a través de nue
 ```scss {filename="SCSS"}
 $breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");
 ```
-
-{{< content-ads/middle-banner-2 >}}
 
 También puedes eliminar la configuración del divisor `--bs-breadcrumb-divider: '';` (las cadenas vacías en las propiedades personalizadas de CSS cuentan como un valor), o estableciendo la variable Sass en `$breadcrumb-divider: none;`.
 
@@ -105,6 +105,8 @@ También puedes eliminar la configuración del divisor `--bs-breadcrumb-divider:
 $breadcrumb-divider: none;
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 Accesibilidad del componente Breadcrumb {#accessibility}
 -------------------------------
 
@@ -116,6 +118,8 @@ Personalización del CSS del componente {#css}
 -----------
 
 {{< bootstrap/content-suggestion >}}
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Variables Sass del componente {#variables}
 
@@ -138,9 +142,9 @@ Como parte del enfoque de variables CSS en evolución de Bootstrap, las rutas de
 --#{$prefix}breadcrumb-item-active-color: #{$breadcrumb-active-color};
 ```
 
-### Variables Sass generales relacionadas {#sass-variables}
+{{< content-ads/middle-banner-5 >}}
 
-{{< content-ads/middle-banner-3 >}}
+### Variables Sass generales relacionadas {#sass-variables}
 
 [scss/_variables.scss](https://github.com/twbs/bootstrap/blob/v5.3.2/scss/_variables.scss)
 

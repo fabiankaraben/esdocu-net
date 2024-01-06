@@ -62,6 +62,8 @@ Los grupos de inputs se ajustan de forma predeterminada a través de `flex-wrap:
 </div>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Dimensionamiento
 
 Agrega las clases de tamaño de formulario relativo al propio `.input-group` y el contenido en su interior cambiará de tamaño automáticamente, sin necesidad de repetir las clases de tamaño de control de formulario en cada elemento.
@@ -85,11 +87,11 @@ Agrega las clases de tamaño de formulario relativo al propio `.input-group` y e
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Checkboxes y radios
 
 Coloca cualquier casilla de verificación u opción de radio dentro de un complemento de grupo de inputs en lugar de texto. Recomendamos agregar `.mt-0` a `.form-check-input` cuando no haya texto visible junto a la entrada.
+
+{{< content-ads/middle-banner-2 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="input-group mb-3">
@@ -122,6 +124,8 @@ Si bien se admiten visualmente varios `<input>`, los estilos de validación solo
 ## Múltiples complementos
 
 Se admiten múltiples complementos y se pueden combinar con versiones de casilla de verificación y radio.
+
+{{< content-ads/middle-banner-3 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="input-group mb-3">
@@ -211,9 +215,9 @@ Se admiten múltiples complementos y se pueden combinar con versiones de casilla
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Botones segmentados
+
+{{< content-ads/middle-banner-4 >}}
 
 {{< bootstrap/5-1/example >}}
 <div class="input-group mb-3">
@@ -297,6 +301,8 @@ Los grupos de inputs incluyen soporte para selects personalizadas y entradas de 
 
 ### Entrada de archivo personalizado
 
+{{< content-ads/middle-banner-5 >}}
+
 {{< bootstrap/5-1/example >}}
 <div class="input-group mb-3">
   <label class="input-group-text" for="inputGroupFile01">Subir</label>
@@ -318,8 +324,6 @@ Los grupos de inputs incluyen soporte para selects personalizadas y entradas de 
   <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Botón</button>
 </div>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Sass
 

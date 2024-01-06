@@ -141,6 +141,8 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - Para soportar nuestro sistema de color, hemos agregamos nuevas funciones personalizadas `tint-color()` y `shade-color()` para mezclar nuestros colores apropiadamente.
 
+{{< content-ads/middle-banner-1 >}}
+
 ## Actualizaciones de cuadrícula
 
 - **¡Nuevo breakpoint!** Se agregó un nuevo breakpoint `xxl` para `1400px` y superiores. No hay cambios en todos los demás breakpoints.
@@ -218,6 +220,8 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Las etiquetas de formulario ahora requieren `.form-label`.
 
+{{< content-ads/middle-banner-2 >}}
+
 - <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> `.form-text` ya no establece `display`, lo que le permite crear texto de ayuda en línea o en bloque como desee simplemente cambiando el elemento HTML.
 
 - Los íconos de validación ya no se aplican a `<select>`s con `multiple`.
@@ -286,6 +290,8 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 
 - <span class="bg-red-100 text-red-800 text-xs font-medium me-2 p-1 rounded dark:bg-red-900 dark:text-red-300">Breaking</span> Renombrado `.close` a `.btn-close` para un nombre menos genérico.
 
+{{< content-ads/middle-banner-3 >}}
+
 - Los botones de cierre ahora usan una `background-image` (SVG incrustado) en lugar de `&times;` en el HTML, lo que permite una personalización más sencilla sin necesidad de tocar el marcado.
 
 - Se agregó la nueva variante `.btn-close-white` que usa `filter: invert(1)` para habilitar íconos de descarte de mayor contraste contra fondos más oscuros.
@@ -353,6 +359,8 @@ Tus compilaciones personalizadas de Bootstrap CSS ahora deberían verse así con
 ### Toasts
 
 - Los toast ahora se pueden posicionar [positioned]({{< bootstrap/5-1/docsref "/components/toasts#placement" >}}) en un `.toast-container` con la ayuda de [posicionamiento de utilidades]({{< bootstrap/5-1/docsref "/utilities/position" >}}).
+
+{{< content-ads/middle-banner-4 >}}
 
 - Se cambió la duración predeterminada del toast a 5 segundos.
 

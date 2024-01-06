@@ -105,6 +105,8 @@ Pila de fuentes nativas {#native-font-stack}
 
 Bootstrap utiliza una “pila de fuentes nativa” o una “pila de fuentes del sistema” para una representación óptima del texto en cada dispositivo y sistema operativo. Estas fuentes del sistema se han diseñado específicamente teniendo en cuenta los dispositivos actuales, con representación mejorada en las pantallas, compatibilidad con fuentes variables y más. Lee más sobre [pilas de fuentes nativas en esta _Smashing Magazine_ (artículo)](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide).
 
+{{< content-ads/middle-banner-1 >}}
+
 ```css {filename="SCSS"}
 $font-family-sans-serif:
     // Cross-platform generic font family (default user interface font)
@@ -188,6 +190,8 @@ Los enlaces de marcador de posición (aquellos sin un `href`) están orientados 
 
 Reglas horizontales {#horizontal-rules}
 ----------------------------------------
+
+{{< content-ads/middle-banner-2 >}}
 
 El elemento `<hr>` ha sido simplificado. De manera similar a los valores predeterminados del navegador, los `<hr>` tienen estilo mediante `border-top`, tienen una `opacity: .25` y heredan automáticamente su `border-color` a través de `color`, incluso cuando `color` se establece a través del padre. Se pueden modificar con utilidades de texto, bordes y opacidad.
 
@@ -287,6 +291,8 @@ Entrada del usuario {#user-input}
 
 {{< bootstrap/content-suggestion >}}
 
+{{< content-ads/middle-banner-3 >}}
+
 Utiliza `<kbd>` para indicar la entrada que normalmente se ingresa mediante el teclado.
 
 {{< demo-iframe path="/demos/bootstrap/5.3/content/reboot/user-input.html" >}}
@@ -383,6 +389,8 @@ Reboot incluye una mejora para que `role="button"` cambie el cursor predetermina
 
 Elementos varios {#misc-elements}
 ----------------------------------
+
+{{< content-ads/middle-banner-4 >}}
 
 ### Dirección {#address}
 

@@ -26,6 +26,8 @@ Dado que Bootstrap aplica `display: block` y `width: 100%` a casi todos nuestros
 
 Las [utilidades de margen]({{< bootstrap/5-1/docsref "/utilities/spacing" >}}) son la forma más fácil de agregar algo de estructura a los formularios. Proporcionan una agrupación básica de etiquetas, controles, texto de formulario opcional y mensajes de validación de formulario. Recomendamos apegarse a las utilidades de `margin-bottom` y usar una sola dirección en todo el formulario para mantener la coherencia.
 
+{{< content-ads/middle-banner-1 >}}
+
 Siéntete libre de construir tus formularios como quieras, con `<fieldset>`s, `<div>`s, o casi cualquier otro elemento.
 
 {{< bootstrap/5-1/example >}}
@@ -55,6 +57,8 @@ Se pueden construir formularios más complejos utilizando nuestras clases de cua
 {{< /bootstrap/5-1/example >}}
 
 ## Gutters
+
+{{< content-ads/middle-banner-2 >}}
 
 Al agregar [clases de modificador de gutter]({{< bootstrap/5-1/docsref "/layout/gutters" >}}), puede tener control sobre el ancho del gutter, así como la dirección en línea y del bloque. **También requiere que la variable Sass `$enable-grid-classes` esté habilitada** (activada de manera predeterminada).
 
@@ -118,11 +122,11 @@ También se pueden crear diseños más complejos con el sistema de cuadrícula.
 </form>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-1 >}}
-
 ## Formularios horizontales
 
 Crea formularios horizontales con la cuadrícula agregando la clase `.row` para formar grupos y usando las clases `.col-*-*` para especificar el ancho de tus etiquetas y controles. Asegúrate de agregar `.col-form-label` a tus `<label>`s también para que estén centrados verticalmente con tus controles de formulario asociados.
+
+{{< content-ads/middle-banner-3 >}}
 
 A veces, es posible que necesites utilizar utilidades de margen o padding para crear la alineación perfecta que necesitas. Por ejemplo, hemos eliminado el `padding-top` en nuestra etiqueta de entradas de radio apiladas para alinear mejor la línea de base del texto.
 
@@ -202,9 +206,9 @@ Asegúrate de usar `.col-form-label-sm` o `.col-form-label-lg` en tus `<label>`s
 </div>
 {{< /bootstrap/5-1/example >}}
 
-{{< content-ads/middle-banner-2 >}}
-
 ## Tamaño de columna
+
+{{< content-ads/middle-banner-4 >}}
 
 Como se muestra en los ejemplos anteriores, nuestro sistema de cuadrícula te permite colocar cualquier cantidad de `.col`s dentro de una `.row`. Dividirán el ancho disponible en partes iguales entre ellos. También puedes elegir un subconjunto de tus columnas para que ocupe más o menos espacio, mientras que los `.col`s restantes dividen el resto por igual, con clases de columnas específicas como `.col-sm-7`.
 
@@ -264,6 +268,8 @@ The example below uses a flexbox utility to vertically center the contents and c
 
 Luego puedes mezclar esto una vez más con clases de columna de tamaño específico.
 
+{{< content-ads/middle-banner-5 >}}
+
 {{< bootstrap/5-1/example >}}
 <form class="row gx-3 gy-2 align-items-center">
   <div class="col-sm-3">
@@ -299,8 +305,6 @@ Luego puedes mezclar esto una vez más con clases de columna de tamaño específ
   </div>
 </form>
 {{< /bootstrap/5-1/example >}}
-
-{{< content-ads/middle-banner-3 >}}
 
 ## Formularios en línea
 

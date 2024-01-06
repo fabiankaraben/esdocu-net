@@ -9,13 +9,13 @@ description: La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de 
 
 La guía oficial sobre cómo incluir y agrupar CSS y JavaScript de Bootstrap en tu proyecto usando Webpack.
 
+{{< content-ads/top-banner >}}
+
 ![Bootstrap y Webpack](/assets/bootstrap/5.3/assets/img/guides/bootstrap-webpack.png)
 
 {{< callout type="info" emoji="" >}}
 **¿Quieres ir hasta el final?** Descarga el código fuente y la demostración funcional de esta guía desde el repositorio [twbs/examples](https://github.com/twbs/examples/tree/main/webpack). También puedes [abrir el ejemplo en StackBlitz](https://stackblitz.com/github/twbs/examples/tree/main/webpack?file=index) para editarlo en vivo.
 {{< /callout >}}
-
-{{< content-ads/top-banner >}}
 
 ## Configuración {#setup}
 
@@ -49,6 +49,8 @@ Ya creamos la carpeta `my-project` e inicializamos npm. Ahora también crearemos
 mkdir {src,src/js,src/scss}
 touch src/index.html src/js/main.js src/scss/styles.scss webpack.config.js
 ```    
+
+{{< content-ads/middle-banner-1 >}}
 
 Cuando hayas terminado, tu proyecto completo debería verse así:
 
@@ -134,6 +136,8 @@ Con las dependencias instaladas y nuestra carpeta de proyecto lista para que com
     ![Webpack dev server running](/assets/bootstrap/5.3/assets/img/guides/webpack-dev-server.png)
 
 En la siguiente y última sección de esta guía, configuraremos los cargadores de paquetes web e importaremos todo el CSS y JavaScript de Bootstrap.
+
+{{< content-ads/middle-banner-2 >}}
 
 ## Importar Bootstrap {#import-bootstrap}
 
@@ -232,6 +236,8 @@ Importar Bootstrap a Webpack requiere los cargadores que instalamos en la primer
 
 Dependiendo de tu configuración, es posible que desees implementar algunas optimizaciones adicionales de seguridad y velocidad útiles para ejecutar el proyecto en producción. Ten en cuenta que estas optimizaciones no se aplican en [el proyecto de ejemplo de Webpack](https://github.com/twbs/examples/tree/main/webpack) y su implementación depende de ti.
 
+{{< content-ads/middle-banner-3 >}}
+
 ### Extrayendo CSS {#extracting-css}
 
 El `style-loader` que configuramos anteriormente emite CSS convenientemente en el paquete bundle para que cargar manualmente un archivo CSS en `dist/index.html` no sea necesario. Sin embargo, es posible que este enfoque no funcione con una política de seguridad de contenido estricta y puede convertirse en un cuello de botella en tu aplicación debido al gran tamaño del paquete.
@@ -282,6 +288,8 @@ Luego crea una instancia y usa el complemento en la configuración de Webpack:
 ```
 
 Después de ejecutar `npm run build` nuevamente, habrá un nuevo archivo `dist/main.css`, que contendrá todo el CSS importado por `src/js/main.js`. Si ves `dist/index.html` en tu navegador ahora, faltará el estilo, ya que ahora está en `dist/main.css`. Puedes incluir el CSS generado en `dist/index.html` así:
+
+{{< content-ads/middle-banner-4 >}}
 
 ```diff {filename="Diff"}
 --- a/dist/index.html

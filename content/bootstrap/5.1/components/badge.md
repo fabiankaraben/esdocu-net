@@ -27,6 +27,8 @@ Las insignias se escalan para coincidir con el tamaño del elemento padre inmedi
 <h6>Encabezado de ejemplo <span class="badge bg-secondary">Nuevo</span></h6>
 {{< /bootstrap/5-1/example >}}
 
+{{< content-ads/middle-banner-1 >}}
+
 ### Botones
 
 Las insignias se pueden usar como parte de enlaces o botones para proporcionar un contador.
@@ -39,9 +41,9 @@ Las insignias se pueden usar como parte de enlaces o botones para proporcionar u
 
 Ten en cuenta que, dependiendo de cómo se utilicen, las insignias pueden resultar confusas para los usuarios de lectores de pantalla y tecnologías de asistencia similares. Si bien el estilo de las insignias proporciona una indicación visual de su propósito, a estos usuarios simplemente se les presentará el contenido de la insignia. Dependiendo de la situación específica, estas insignias pueden parecer palabras o números adicionales aleatorios al final de una oración, enlace o botón.
 
-A menos que el contexto sea claro (como en el ejemplo de "Notificaciones", donde se entiende que el "4" es el número de notificaciones), considera incluir un contexto adicional con un texto adicional oculto visualmente.
+{{< content-ads/middle-banner-2 >}}
 
-{{< content-ads/middle-banner-1 >}}
+A menos que el contexto sea claro (como en el ejemplo de "Notificaciones", donde se entiende que el "4" es el número de notificaciones), considera incluir un contexto adicional con un texto adicional oculto visualmente.
 
 ### Posicionado
 
@@ -56,6 +58,8 @@ Usa las utilidades para modificar un `.badge` y colócalo en la esquina de un en
   </span>
 </button>
 {{< /bootstrap/5-1/example >}}
+
+{{< content-ads/middle-banner-3 >}}
 
 También puedes reemplazar la clase `.badge` con algunas utilidades más sin contar para un indicador más genérico.
 
@@ -72,6 +76,8 @@ También puedes reemplazar la clase `.badge` con algunas utilidades más sin con
 
 Utiliza nuestras clases de utilidad de fondo para cambiar rápidamente la apariencia de una insignia. Ten en cuenta que cuando usas el `.bg-light` predeterminado de Bootstrap, es probable que necesites una utilidad de color de texto como `.text-dark` para un estilo adecuado. Esto se debe a que las utilidades de fondo no configuran nada más que `background-color`.
 
+{{< content-ads/middle-banner-4 >}}
+
 {{< bootstrap/5-1/example >}}
 {{< badge.inline >}}
 {{- range (index $.Site.Data "bootstrap_5_1_theme-colors") }}
@@ -87,6 +93,8 @@ Utiliza nuestras clases de utilidad de fondo para cambiar rápidamente la aparie
 
 Usa la clase de utilidad `.rounded-pill` para hacer que las insignias sean más redondeadas con un `border-radius` más grande.
 
+{{< content-ads/middle-banner-5 >}}
+
 {{< bootstrap/5-1/example >}}
 {{< badge.inline >}}
 {{- range (index $.Site.Data "bootstrap_5_1_theme-colors") }}
@@ -95,8 +103,6 @@ Usa la clase de utilidad `.rounded-pill` para hacer que las insignias sean más 
 {{< /bootstrap/5-1/example >}}
 
 ## Sass
-
-{{< content-ads/middle-banner-2 >}}
 
 ### Variables
 
