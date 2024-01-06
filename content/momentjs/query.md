@@ -9,6 +9,8 @@ description: Para consultar a un objeto Moment para conocer su estado o comparar
 
 En ocasiones necesitaremos realizar consultas a un objeto `Moment` para conocer su estado o comparar su valor con otro objeto `Moment`, para estos casos Moment.js cuenta con una serie de métodos útiles.
 
+{{< content-ads/top-banner >}}
+
 ## El método `isBefore` {#is-before}
 
 ```javascript {filename="Firma del método"}
@@ -64,6 +66,8 @@ moment('2010-10-20').isSame('2011-01-01', 'year');  // false
 ```
 
 Al incluir un segundo parámetro, coincidirá con todas las unidades iguales o mayores. Al pasar `month`, se verificarán `month` y `year`. Al pasar `day`, se verificarán `day`, `month` y `year`.
+
+{{< content-ads/middle-banner-1 >}}
 
 ```javascript {filename="JavaScript"}
 moment('2010-01-01').isSame('2011-01-01', 'month'); // false, año diferente
@@ -121,6 +125,8 @@ moment().isAfter(); // false
 ```
 
 ## El método `isSameOrBefore` {#is-same-or-before}
+
+{{< content-ads/middle-banner-2 >}}
 
 ```javascript {filename="Firma del método"}
 moment().isSameOrBefore(Moment|String|Number|Date|Array);
@@ -184,6 +190,8 @@ year month week isoWeek day hour minute second
 
 ## El método `isBetween` {#is-between}
 
+{{< content-ads/middle-banner-3 >}}
+
 ```javascript {filename="Firma del método"}
 // Desde 2.13.0 en adelante
 moment().isBetween(moment-like, moment-like);
@@ -223,7 +231,6 @@ Al igual que `moment#isSame`, `moment#isBefore`, `moment#isAfter`, cualquiera de
 La versión **2.13.0** introduce la inclusión. Un `[` indica la inclusión de un valor. Un `(` indica exclusión.
 Si se utilizas el parámetro de inclusión, se deben pasar ambos indicadores.
 
-
 ```javascript {filename="JavaScript"}
 moment('2016-10-30').isBetween('2016-10-30', '2016-12-30', undefined, '()'); //false
 moment('2016-10-30').isBetween('2016-10-30', '2016-12-30', undefined, '[)'); //true
@@ -252,8 +259,9 @@ moment().isDST();
 
 Moment actualmente verifica el horario de invierno y verano, y si el desplazamiento coincide con el desplazamiento de verano (y el horario de verano es diferente al de invierno), entonces informa el horario de verano. Esto funciona en la gran mayoría de los casos, pero como se mencionó anteriormente, no es "correcto" y no funcionará en todos los casos.
 
-El evento moment-timezone (en el momento de escribir 0.5.37) no admite información DST (es decir, si el reloj está oficialmente en horario de verano en un momento determinado o no), por lo que para que las cosas mejoren, se han agregado algunas cosas nuevas (y el paquete tzdata) que tienen que suceder en moment-timezone.
+{{< content-ads/middle-banner-4 >}}
 
+El evento moment-timezone (en el momento de escribir 0.5.37) no admite información DST (es decir, si el reloj está oficialmente en horario de verano en un momento determinado o no), por lo que para que las cosas mejoren, se han agregado algunas cosas nuevas (y el paquete tzdata) que tienen que suceder en moment-timezone.
 
 ```javascript {filename="JavaScript"}
 moment([2011, 2, 12]).isDST(); // false, March 12 2011 is not DST
@@ -309,6 +317,8 @@ moment.isMoment(moment()) // true
 
 Desde la versión **2.11.0**, también puedes probar un objeto Moment mediante el operador `instanceof`:
 
+{{< content-ads/middle-banner-5 >}}
+
 ```javascript {filename="JavaScript"}
 moment() instanceof moment // true
 ```
@@ -326,3 +336,5 @@ moment.isDate(); // false
 moment.isDate(new Date()); // true
 moment.isDate(moment()); // false
 ```
+
+{{< content-ads/bottom-banner >}}

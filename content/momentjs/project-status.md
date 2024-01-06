@@ -9,6 +9,8 @@ description: Estado actual del proyecto Moment.js, issues, futuras features y pr
 
 **Moment.js** se ha utilizado con éxito en millones de proyectos y estamos felices de haber contribuido a mejorar la fecha y la hora en la web.
 
+{{< content-ads/top-banner >}}
+
 ¡A partir de septiembre de 2020, Moment obtiene más de **12 millones de descargas** por semana! Sin embargo, Moment se creó para la era anterior del ecosistema JavaScript.
 La web moderna se ve muy diferente hoy en día. Moment ha evolucionado un poco a lo largo de los años, pero tiene esencialmente el mismo diseño que cuando se creó en 2011.
 Dado que muchos proyectos dependen de ello, *elegimos **priorizar la estabilidad** sobre las nuevas funciones*.
@@ -40,6 +42,8 @@ También nos gustaría promover la adición de [`Temporal`](/momentjs/project-st
 
 En la práctica, esto significa:
 
+{{< content-ads/middle-banner-1 >}}
+
 - No agregaremos nuevas funciones o capacidades.
 - No cambiaremos la API de Moment para que sea inmutable.
 - No abordaremos problemas con tree shaking o el tamaño de los paquetes.
@@ -67,6 +71,8 @@ Moment funciona bien en Internet Explorer 8 y superior. Por el contrario, Luxon 
 
 Otras bibliotecas también han tenido problemas con Safari, especialmente en dispositivos móviles. Si tienes un fuerte requisito de admitir navegadores más antiguos, es posible que desees seguir con Moment por un poco más de tiempo.
 
+{{< content-ads/middle-banner-2 >}}
+
 Sin embargo, [Day.js informa compatibilidad con IE8 y superior](https://day.js.org/docs/en/installation/installation), por lo que es posible que desees considerar esa alternativa.
 
 ### Dependencia de otras bibliotecas
@@ -89,6 +95,8 @@ Al elegir, considera que:
 - Algunas bibliotecas todavía proporcionan sus propios archivos de configuración regional y zona horaria, como lo hacen Moment y Moment-Timezone.
 
 **Aquí están las alternativas que recomendamos:**
+
+{{< content-ads/middle-banner-3 >}}
 
 ### [Luxon](https://moment.github.io/luxon)
 
@@ -115,6 +123,8 @@ Date-fns ofrece una serie de funciones para manipular objetos JavaScript [`Date`
 
 ### [js-Joda](https://js-joda.github.io/js-joda)
 
+{{< content-ads/middle-banner-4 >}}
+
 js-Joda es un port a JavaScript de [Three-Ten Backport](https://www.threeten.org/threetenbp) de Java, que es la base para la implementación JSR-310 del paquete Java SE 8 `java.time`.
 Si estás familiarizado con [`java.time`](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html), [Joda-Time](https://www.joda.org/joda-time), o [Noda Time](https://nodatime.org), encontrarás js-Joda comparable.
 
@@ -139,6 +149,8 @@ Al utilizar el objeto `Intl`, ten en cuenta lo siguiente:
 - La [tabla de compatibilidad ECMAScript Intl (por kangax)](http://kangax.github.io/compat-table/esintl) puede ser útil para determinar qué funciones son compatibles y cuáles no.
 - La mayoría de los entornos más nuevos brindan soporte para la zona horaria de la IANA a través de la opción `timeZone` en el constructor `Intl.DateTimeFormat` (y en `Date.toLocaleString`, `Date.toLocaleDateString` y `Date.toLocaleTimeString`). Esta opción se puede utilizar para tomar la marca de tiempo interna basada en UTC de un objeto `Date` y obtener una *cadena* que se ha convertido a una zona horaria con nombre. Sin embargo, *no* puede usarse para convertir un objeto `Date` a una zona horaria diferente.
 
+{{< content-ads/middle-banner-5 >}}
+
 Si los objetos `Date` e `Intl` satisfacen tus necesidades y comprendes completamente sus limitaciones, entonces podrías considerar usarlos directamente.
 
 ## El futuro {#future}
@@ -156,3 +168,5 @@ Actualmente se encuentra en la Etapa 3 del [proceso TC39](https://tc39.es/proces
 Puedes probar Temporal hoy, a través de [un polyfill que no es de producción](https://github.com/tc39/proposal-temporal/tree/main/polyfill). ¡Pruébalo, pero no lo uses en producción (todavía)!
 
 Envía tus comentarios y considera contribuir a este esfuerzo, ¡especialmente si tienes experiencia en el uso de Moment u otras bibliotecas de fecha y hora!
+
+{{< content-ads/bottom-banner >}}

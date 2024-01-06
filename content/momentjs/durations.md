@@ -9,6 +9,8 @@ description: Moment.js también tiene objetos de duración. Una duración se def
 
 Moment.js también tiene objetos de duración. Mientras que un moment se define como un único punto en el tiempo, una duración se define como un período de tiempo.
 
+{{< content-ads/top-banner >}}
+
 Las duraciones no tienen fecha de inicio y fin definida. No tienen contexto.
 
 Una duración es conceptualmente más similar a "2 horas" que a "entre las 2 y las 4 de la tarde de hoy". Como tales, no son una buena solución para convertir entre unidades que dependen del contexto.
@@ -75,6 +77,8 @@ moment.duration({
 
 A partir de **2.1.0**, moment admite el análisis de períodos de tiempo de estilo ASP.NET. Se admiten los siguientes formatos.
 
+{{< content-ads/middle-banner-1 >}}
+
 El formato es una cadena de hora, minuto y segundo separada por dos puntos, como `23:59:59`. El número de días puede ir precedido de un separador de puntos como `7.23:59:59`. También se admiten segundos parciales `23:59:59.999`.
 
 ```javascript {filename="JavaScript"}
@@ -128,6 +132,8 @@ d1.add(1, 'second');
 d1.asMilliseconds() !== d2.asMilliseconds();
 ```
 
+{{< content-ads/middle-banner-2 >}}
+
 ## Humanizar duraciones {#humanize}
 
 ```javascript {filename="Firma del método"}
@@ -176,6 +182,8 @@ moment.duration(-1, 'week').humanize({d: 7, w: 4}); // a week
 **Nota**: Pasar los umbrales en humanizar se agregó en **2.25.0**.
 
 ## Milisegundos en una duración {#milliseconds}
+
+{{< content-ads/middle-banner-3 >}}
 
 ```javascript {filename="Firma del método"}
 moment.duration().milliseconds();
@@ -232,6 +240,8 @@ moment.duration().minutes();
 moment.duration().asMinutes();
 ```
 
+{{< content-ads/middle-banner-4 >}}
+
 Al igual que con los otros getters de duraciones, `moment.duration().minutes()` obtiene los minutos (`0` - `59`).
 
 `moment.duration().asMinutes()` obtiene la duración en minutos.
@@ -271,6 +281,8 @@ Al igual que con los otros getters de duraciones, `moment.duration().weeks()` ob
 
 Presta atención a que, a diferencia de otros getters de duración, las semanas se cuentan como un subconjunto de los días y no se eliminan del recuento de días.
 
+{{< content-ads/middle-banner-5 >}}
+
 **Nota:** La longitud de una duración en semanas se define como 7 días.
 
 ## Meses en una duración {#months}
@@ -294,3 +306,5 @@ moment.duration().asYears();
 Al igual que con los otros getters de duraciones, `moment.duration().years()` obtiene los años.
 
 `moment.duration().asYears()` obtiene la duración en años.
+
+{{< content-ads/bottom-banner >}}

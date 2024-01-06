@@ -9,6 +9,8 @@ description: Una vez que tengas un Moment, es posible que desees manipularlo de 
 
 Una vez que tengas un `Moment`, es posible que desees manipularlo de alguna manera. Hay varios métodos para ayudar con esto.
 
+{{< content-ads/top-banner >}}
+
 Moment.js utiliza el [patrón de interfaz fluido](https://en.wikipedia.org/wiki/Fluent_interface), también conocido como [encadenamiento de métodos](https://en.wikipedia.org/wiki/Method_chaining). Esto te permite hacer locuras como las siguientes.
 
 ```javascript {filename="JavaScript"}
@@ -18,7 +20,6 @@ moment().add(7, 'days').subtract(1, 'months').year(2009).hours(0).minutes(0).sec
 **Nota:** Cabe señalar que los moments son mutables. Llamar a cualquiera de los métodos de manipulación cambiará el moment original.
 
 Si deseas crear una copia y manipularla, debes usar `moment#clone` antes de manipular el moment. [Más información sobre la clonación.](/momentjs/parsing#moment-clone)
-
 
 ## El método `add` {#add}
 
@@ -32,10 +33,11 @@ Muta el moment original añadiendo tiempo.
 
 Esta es una función bastante sólida para agregar tiempo a un momento existente. Para agregar tiempo, pasa la clave de a qué tiempo deseas agregar y la cantidad que deseas agregar.
 
-
 ```javascript {filename="JavaScript"}
 moment().add(7, 'days');
 ```
+
+{{< content-ads/middle-banner-1 >}}
 
 También hay algunas claves de atajo si te gusta todo ese asunto de la brevedad.
 
@@ -73,6 +75,7 @@ moment().add(360, 'days'); // 360 días
 
 Si el día del mes en la fecha original es mayor que el número de días del mes final, el día del mes cambiará al último día del mes final.
 
+{{< content-ads/middle-banner-2 >}}
 
 ```javascript {filename="JavaScript"}
 moment([2010, 0, 31]);                  // January 31
@@ -110,6 +113,8 @@ var duration = moment.duration({'days' : 1});
 moment([2012, 0, 31]).add(duration); // February 1
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 Antes de la versión **2.8.0**, también se admitía la sintaxis `moment#add(String, Number)`. Ha quedado obsoleto en favor de `moment#add(Number, String)`.
 
 ```javascript {filename="JavaScript"}
@@ -119,7 +124,6 @@ moment().add(1, 'seconds');
 
 A partir de **2.12.0**, cuando se pasan valores decimales para días y meses, se redondean al número entero más cercano.
 Las semanas, cuartos (trimestres) y años se convierten a días o meses y luego se redondean al número entero más cercano.
-
 
 ```javascript {filename="JavaScript"}
 moment().add(1.5, 'months') == moment().add(2, 'months')
@@ -138,10 +142,11 @@ Muta el moment original restando tiempo.
 
 Esto es exactamente lo mismo que `moment#add`, solo que en lugar de sumar tiempo, lo resta.
 
-
 ```javascript {filename="JavaScript"}
 moment().subtract(7, 'days');
 ```
+
+{{< content-ads/middle-banner-4 >}}
 
 Antes de la versión **2.8.0**, también se admitía la sintaxis `moment#subtract(String, Number)`. Ha quedado obsoleto en favor de `moment#subtract(Number, String)`.
 
@@ -181,6 +186,8 @@ moment().startOf('minute');  // establecido a ahora, pero con 0 segundos y 0 mil
 moment().startOf('second');  // igual a moment().milliseconds(0);
 ```
 
+{{< content-ads/middle-banner-5 >}}
+
 Estos atajos son esencialmente los mismos que los siguientes.
 
 ```javascript {filename="JavaScript"}
@@ -202,3 +209,5 @@ A partir de la versión **2.1.0**, `moment#startOf('week')` utiliza el día de i
 **Nota:** `moment#startOf('isoWeek')` se agregó en la versión **2.2.0**.
 
 **Nota:** `moment#startOf('date')` se agregó como alias para el día en **2.13.0**
+
+{{< content-ads/bottom-banner >}}

@@ -10,6 +10,8 @@ noindex: true
 
 Moment expone algunos métodos que pueden ser útiles para las personas que amplían la biblioteca o escriben parsers personalizados.
 
+{{< content-ads/top-banner >}}
+
 ## Normalizar unidades {#normalize-units}
 
 ```javascript {filename="Firma del método"}
@@ -24,6 +26,8 @@ m.get('y');
 m.get('year');
 m.get('years');
 ```
+
+{{< content-ads/middle-banner-1 >}}
 
 Si estás ampliando la biblioteca, es posible que desees acceder a las instalaciones de Moment para alinear mejor tu funcionalidad con la de Moment.
 
@@ -41,6 +45,8 @@ moment.normalizeUnits('YeARS');  // 'year'
 moment.invalid(Object);
 ```
 
+{{< content-ads/middle-banner-2 >}}
+
 Puedes crear tus propios objetos Moment no válidos, lo cual resulta útil para crear tu propio analizador (parser).
 
 ```javascript {filename="JavaScript"}
@@ -57,4 +63,8 @@ var m = moment.invalid({invalidMonth: 'Actober'});
 m.parsingFlags().invalidMonth; // 'Actober'
 ```
 
+{{< content-ads/middle-banner-3 >}}
+
 No es necesario especificar indicadores de análisis reconocidos por Moment; No obstante, el Moment no será válido y las banderas de análisis serán devueltas por `parsingFlags()`.
+
+{{< content-ads/bottom-banner >}}

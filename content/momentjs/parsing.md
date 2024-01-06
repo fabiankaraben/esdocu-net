@@ -9,11 +9,14 @@ description: Moment.js crea un contenedor para el objeto Date. Para obtener este
 
 En lugar de modificar el `Date.prototype` nativo, Moment.js crea un contenedor para el objeto `Date`. Para obtener este objeto contenedor, simplemente llama a `moment()` con uno de los tipos de entrada admitidos.
 
+{{< content-ads/top-banner >}}
+
 El prototipo `Moment` se expone a través de `moment.fn`. Si deseas agregar tus propias funciones, ahí es donde las colocarás.
 
 Para facilitar la referencia, se hará referencia a cualquier método en `Moment.prototype` en la documentación como `moment#method`. Entonces `Moment.prototype.format` == `moment.fn.format` == `moment#format`.
 
 **Por favor lee:**
+
 * `moment(...)` es el modo local. Se supone que la entrada ambigua (sin offset) es la hora local. La entrada inequívoca (con offset) se ajusta a la hora local.
 * `moment.utc(...)` es el modo utc. Se supone que la entrada ambigua es UTC. La entrada inequívoca se ajusta a UTC.
 * `moment.parseZone()` mantiene la zona de entrada pasada. Se supone que la entrada ambigua es UTC.
@@ -180,6 +183,8 @@ moment("12-25-1995", "MM-DD-YYYY");
 moment("12/25/1995", "MM-DD-YYYY");
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 Es posible que obtengas resultados inesperados al analizar tanto la fecha como la hora. Es posible que el siguiente ejemplo no se analice como esperaba:
 
 ```javascript {filename="JavaScript"}
@@ -335,6 +340,7 @@ Antes de **2.13.0**, el analizador mostraba el siguiente comportamiento. Esto ha
 
 ```javascript {filename="JavaScript"}
 moment('I am spartacus', 'h:hh A').isValid();     // true - 'am' se toma como una 'A' flag.
+
 ```
 
 A partir de la versión **2.3.0**, puedes especificar un valor booleano para el último argumento para que Moment utilice un análisis estricto. El análisis estricto requiere que el formato y la entrada coincidan exactamente, *incluidos los delimitadores*.
@@ -345,6 +351,8 @@ moment('It is 2012-05-25', 'YYYY-MM-DD', true).isValid(); // false
 moment('2012-05-25',       'YYYY-MM-DD', true).isValid(); // true
 moment('2012.05.25',       'YYYY-MM-DD', true).isValid(); // false
 ```
+
+{{< content-ads/middle-banner-2 >}}
 
 Puedes utilizar tanto la configuración regional (locale) como el modo estricto.
 
@@ -493,6 +501,8 @@ var day = moment.unix(1318781876);
 ```
 
 Esto se implementa como `moment(timestamp * 1000)`, por lo que se incluyen segundos parciales en la marca de tiempo de entrada.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```javascript {filename="JavaScript"}
 var day = moment.unix(1318781876.721);
@@ -651,6 +661,7 @@ Cualquier moment creado con `moment.utc()` estará en modo UTC, y cualquier mome
 
 Para cambiar de UTC a la hora local, puede utilizar [moment#utc](/momentjs/manipulating#utc) o [moment#local](/momentjs/manipulating#local).
 
+{{< content-ads/middle-banner-4 >}}
 
 ```javascript {filename="JavaScript"}
 var a = moment.utc([2011, 0, 1, 8]);
@@ -821,8 +832,6 @@ moment().creationData();
 
 Después de crear un objeto moment, se puede acceder a todas las entradas con el método `creationData()`:
 
-
-
 ```javascript {filename="JavaScript"}
 moment("2013-01-02", "YYYY-MM-DD", true).creationData() === {
     input: "2013-01-02",
@@ -849,6 +858,8 @@ moment();  // fecha y hora actual
 
 Por defecto es hoy, cuando solo pasan horas, minutos, segundos y milisegundos:
 
+{{< content-ads/middle-banner-5 >}}
+
 ```javascript {filename="JavaScript"}
 moment(5, "HH");  // hoy, 5:00:00.000
 moment({hour: 5});  // hoy, 5:00:00.000
@@ -870,3 +881,5 @@ Valores por defecto para año, si no se especifica el año:
 moment(3, "MM");  // este año, tercer mes (marzo)
 moment("Apr 4 05:06:07", "MMM DD hh:mm:ss");  // este año, 4 de abril, 05:06:07.000
 ```
+
+{{< content-ads/bottom-banner >}}

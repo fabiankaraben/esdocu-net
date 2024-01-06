@@ -9,6 +9,8 @@ description: Moment.js es muy fácil de personalizar. En general, debes crear un
 
 Moment.js es muy fácil de personalizar. En general, debes crear una configuración regional con tus personalizaciones.
 
+{{< content-ads/top-banner >}}
+
 ```javascript {filename="JavaScript"}
 moment.locale('en-my-settings', {
     // customizations.
@@ -36,6 +38,8 @@ moment.defineLocale('en-foo', {
 
 Las propiedades que no se especifican en la configuración regional se heredarán de la configuración regional padre.
 
+{{< content-ads/middle-banner-1 >}}
+
 A partir de **2.16.0** es posible definir una configuración regional con un padre que no se ha definido ni cargado.
 
 ```javascript {filename="JavaScript"}
@@ -53,6 +57,8 @@ moment.updateLocale('en', {
 ```
 
 Todas las propiedades especificadas se actualizarán, mientras que otras permanecerán iguales. Esta función no afecta a los moments que ya existen. Ten en cuenta que llamar a `updateLocale` también cambia la configuración regional global actual a la configuración regional que se actualiza; consulta [este issue de GitHub](https://github.com/moment/moment/issues/5410) para obtener más información.
+
+{{< content-ads/middle-banner-2 >}}
 
 Para revertir una actualización utiliza:
 
@@ -104,6 +110,8 @@ moment.lang('en', {
 
 `Locale#months` debe ser un array de los nombres de los meses.
 
+{{< content-ads/middle-banner-3 >}}
+
 ```javascript {filename="JavaScript"}
 moment.updateLocale('en', {
     months : [
@@ -142,6 +150,8 @@ moment.updateLocale('en', {
 ```
 
 ## Abreviaturas de meses {#month-abbreviations}
+
+{{< content-ads/middle-banner-4 >}}
 
 ```javascript {filename="Firma del método"}
 // From 2.12.0 en adelante
@@ -207,6 +217,8 @@ moment.updateLocale('en', {
 ```
 
 **Nota:** A partir de la versión **2.11.0**, al igual que `Locale#months`, `Locale#monthsShort` puede ser un objeto con casos `standalone` y `format`.
+
+{{< content-ads/middle-banner-5 >}}
 
 ```javascript {filename="JavaScript"}
 moment.updateLocale('en', {
@@ -290,3 +302,5 @@ moment.updateLocale('en', {
     }
 });
 ```
+
+{{< content-ads/bottom-banner >}}

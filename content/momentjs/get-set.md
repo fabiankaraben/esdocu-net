@@ -9,10 +9,11 @@ description: Moment.js utiliza getters y setters sobrecargados. Llamar a estos m
 
 Moment.js utiliza getters y setters sobrecargados. Es posible que estés familiarizado con este patrón por su uso en jQuery.
 
+{{< content-ads/top-banner >}}
+
 Llamar a estos métodos sin parámetros actúa como un getter y llamarlos con un parámetro actúa como un setter.
 
 Estos se asignan a la función correspondiente en el objeto nativo `Date`.
-
 
 ```javascript {filename="JavaScript"}
 moment().seconds(30).valueOf() === new Date().setSeconds(30);
@@ -45,7 +46,6 @@ Obtiene o establece los milisegundos.
 
 Acepta números del `0` al `999`. Si se excede el rango aumentará los segundos.
 
-
 ## Obtener o configurar los segundos {#second}
 
 ```javascript {filename="Firma del método"}
@@ -68,11 +68,9 @@ moment().minutes(Number);
 moment().minutes(); // Number
 ```
 
-
 Obtiene o establece los minutos.
 
 Acepta números del `0` al `59`. Si se excede el rango aumentará las horas.
-
 
 ## Obtener o configurar las horas {#hour}
 
@@ -95,6 +93,8 @@ moment().date(); // Number
 moment().dates(Number);
 moment().dates(); // Number
 ```
+
+{{< content-ads/middle-banner-1 >}}
 
 Obtiene o establece el día del mes.
 
@@ -176,6 +176,8 @@ moment().isoWeekday(); // Number
 
 Obtiene o establece el [día de la semana ISO](https://en.wikipedia.org/wiki/ISO_week_date) siendo `1` lunes y `7` domingo.
 
+{{< content-ads/middle-banner-2 >}}
+
 Al igual que con `moment#day`, si se excede el rango, aumentará a la siguiente semana.
 
 ```javascript {filename="JavaScript"}
@@ -251,6 +253,8 @@ Obtiene o establece el mes.
 Acepta números del `0` al `11`. Si se excede el rango, aumentará el año.
 
 **Nota:** Los meses están indexados desde cero, por lo que enero es el mes `0`.
+
+{{< content-ads/middle-banner-3 >}}
 
 A partir de **2.1.0**, también se admite el nombre de un mes. Esto se analiza en el locale actual del moment.
 
@@ -339,6 +343,8 @@ moment().isoWeekYear(); // Number
 Obtiene o establece el [ISO semana del año](https://en.wikipedia.org/wiki/ISO_week_date).
 
 ## Obtener las semanas del año {#weeks-in-year}
+
+{{< content-ads/middle-banner-4 >}}
 
 ```javascript {filename="Firma del método"}
 moment().weeksInYear();
@@ -440,6 +446,8 @@ moment.min(Moment[,Moment...]);
 moment.min(Moment[]);
 ```
 
+{{< content-ads/middle-banner-5 >}}
+
 Devuelve el mínimo (el pasado más lejano) de las instancias del moment dado.
 
 Por ejemplo:
@@ -461,3 +469,5 @@ moment.min(moment.invalid(), moment()).isValid() === false
 moment.min([moment(), moment.invalid()]).isValid() === false
 moment.min([moment.invalid(), moment()]).isValid() === false
 ```
+
+{{< content-ads/bottom-banner >}}

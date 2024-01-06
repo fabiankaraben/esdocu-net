@@ -9,6 +9,8 @@ description: Una vez finalizados el análisis (parsing) y la manipulación, nece
 
 Una vez finalizados el análisis (parsing) y la manipulación, necesitas alguna forma de mostrar el moment.
 
+{{< content-ads/top-banner >}}
+
 ## Opciones de Formato {#format}
 
 ```javascript {filename="Firma del método"}
@@ -100,6 +102,8 @@ moment('gibberish').format('YYYY MM DD');         // "Invalid date"
 
 ### Formatos regionales (según locale)
 
+{{< content-ads/middle-banner-1 >}}
+
 Debido a que el formato preferido difiere según la ubicación, existen algunos tokens que se pueden usar para formatear un moment según su ubicación.
 
 Hay variaciones de mayúsculas y minúsculas en los mismos formatos. La versión en minúscula pretende ser la versión abreviada de su contraparte en mayúscula.
@@ -135,6 +139,8 @@ moment().format('[today] dddd'); // 'today Sunday'
 
 Para obtener un desglose de algunos tokens de formato de fecha diferentes en diferentes configuraciones regionales, consulta [este cuadro de tokens de formato de fecha.](https://docs.google.com/spreadsheet/ccc?key=0AtgZluze7WMJdDBOLUZfSFIzenIwOHNjaWZoeGFqbWc&amp;hl=en_US#gid=0)
 
+{{< content-ads/middle-banner-2 >}}
+
 ### Otros tokens
 
 Si te sientes más cómodo trabajando con strftime en lugar de tokens de análisis similares a LDML, puedes utilizar el complemento de Ben Oakes. [benjaminoakes/moment-strftime](https://github.com/benjaminoakes/moment-strftime).
@@ -165,6 +171,8 @@ moment().fromNow(Boolean);
 ```
 
 Una forma común de mostrar el tiempo es manejada por `moment#fromNow`. A esto a veces se le llama tiempo atrás o tiempo relativo.
+
+{{< content-ads/middle-banner-3 >}}
 
 ```javascript {filename="JavaScript"}
 moment([2007, 0, 29]).fromNow(); // 4 years ago
@@ -209,6 +217,8 @@ moment().from(Moment|String|Number|Date|Array, Boolean);
 
 Es posible que desees mostrar un moment en relación con un tiempo distinto al actual. En ese caso, puedes usar `moment#from`.
 
+{{< content-ads/middle-banner-4 >}}
+
 ```javascript {filename="JavaScript"}
 var a = moment([2007, 0, 28]);
 var b = moment([2007, 0, 29]);
@@ -250,6 +260,7 @@ Esto es similar a [`moment.fromNow`](/momentjs/displaying#fromnow), pero proporc
 
 Esto es similar a [`moment.to`](/momentjs/displaying#to), pero está en mayúsculas y minúsculas especiales para el moment actual. Utiliza `moment.to`, si deseas controlar los dos puntos finales del intervalo.
 
+{{< content-ads/middle-banner-5 >}}
 
 ```javascript {filename="JavaScript"}
 moment([2007, 0, 29]).toNow(); // in 4 years
@@ -281,3 +292,5 @@ El desglose de qué cadena se muestra para cada período de tiempo se describe e
 | 548 días+                 | yy    | in 2 years ... in 20 years     |
 
 A partir de la versión **2.10.3**, si el objeto moment objetivo no es válido, el resultado es la cadena `'Invalid date'` localizada.
+
+{{< content-ads/bottom-banner >}}

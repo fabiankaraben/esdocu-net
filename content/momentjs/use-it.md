@@ -9,6 +9,8 @@ description: Moment fue diseñado para funcionar tanto en el navegador como en N
 
 *Moment* fue diseñado para funcionar tanto en el navegador como en Node.js.
 
+{{< content-ads/top-banner >}}
+
 Todo el código debería funcionar en ambos entornos y todas las pruebas unitarias se ejecutan en ambos entornos.
 
 ![Moment.js](/assets/momentjs/use-it/momentjs-01.jpg)
@@ -55,6 +57,8 @@ Si tu preferencia es utilizar Moment.js directamente en el navegador web, puedes
 </script>
 ```
 
+{{< content-ads/middle-banner-1 >}}
+
 *Moment.js* está disponible en [cdnjs.com](https://cdnjs.com/libraries/moment.js) y en [jsDelivr](https://www.jsdelivr.com/package/npm/moment).
 
 ## Instalar Moment con Bower {#bower}
@@ -73,8 +77,6 @@ Recomendamos encarecidamente leer [esto](https://github.com/requirejs/requirejs/
 
 Para empezar, es posible que hayas adquirido *moment* a través de *bower* o *node_modules* o cualquier otra cosa que coloque *moment.js* junto con un directorio local en una carpeta base. Entonces deberías usar una herramienta como [adapt-pkg-main](https://github.com/jrburke/adapt-pkg-main), o manualmente, usando [packages config](http://requirejs.org/docs/api.html#packages).
 
-
-
 ```javascript {filename="JavaScript"}
 requirejs.config({
   packages: [{
@@ -88,8 +90,6 @@ requirejs.config({
 ```
 
 Con la configuración anterior, puedes requerir el núcleo con `moment` y el locale `de` con `moment/locale/de`.
-
-
 
 ```javascript {filename="JavaScript"}
 // Solo necesita el core o núcleo.
@@ -128,8 +128,6 @@ Para casos de uso más complicados, lee la [excelente explicación de @jrburke](
 
 Moment seguirá creando un `moment` global, que es útil para complementos y otros códigos de terceros. Si deseas evitar ese global, usa la opción `noGlobal` en la configuración del módulo.
 
-
-
 ```javascript {filename="JavaScript"}
 require.config({
     config: {
@@ -143,6 +141,8 @@ require.config({
 Si no especificas `noGlobal`, el `moment` exportado globalmente imprimirá una advertencia de obsolescencia. A partir de la próxima versión importante, tendrás que exportarlo tú mismo si deseas ese comportamiento.
 
 Para la versión **2.5.x**, en caso de que utilices otros complementos que dependan de Moment pero que no sean compatibles con AMD, es posible que debas agregar [`wrapShim: true`](https://github.com/jrburke/r.js/blob/b8a6982d2923ae8389355edaa50d2b7f8065a01a/build/example.build.js#L68-L78) a tu configuración `r.js`.
+
+{{< content-ads/middle-banner-2 >}}
 
 __Nota:__ Para permitir que los complementos `moment.js` se carguen en entornos requirejs, moment se crea como un módulo con nombre. Debido a esto, moment __debe__ cargarse exactamente como `"moment"`, usando `paths` para determinar el directorio. Al solicitar un momento con una ruta como `"vendor\moment"`, se devolverá `undefined`.
 
@@ -189,6 +189,8 @@ console.log(moment.locale()); // en
 
 Utiliza la siguiente solución
 
+{{< content-ads/middle-banner-3 >}}
+
 ```javascript {filename="JavaScript"}
 var moment = require('moment');
 require('moment/locale/cs');
@@ -220,8 +222,6 @@ moment().format();
 ```
 
 **Nota:** De forma predeterminada, el paquete web incluye _todas_ las configuraciones regionales de Moment.js (en Moment.js 2.18.1, son 160 KB minificados). Para eliminar las configuraciones regionales innecesarias y agrupar solo las usadas, agrega [`moment-locales-webpack-plugin`](https://www.npmjs.com/package/moment-locales-webpack-plugin):
-
-
 
 ```javascript {filename="JavaScript"}
 // webpack.config.js
@@ -255,7 +255,7 @@ npm install moment
 
 Importar y utilizar en tu archivo Typecript:
 
-
+{{< content-ads/middle-banner-4 >}}
 
 ```typescript {filename="TypeScript"}
 const moment = require('moment');
@@ -269,8 +269,6 @@ Para _TypeScript 2.x_ intenta agregar `"moduleResolution": "node"` en `compilerO
 
 Para _TypeScript 1.x_ intenta agregar `"allowSyntheticDefaultImports": true` en `compilerOptions` en tu archivo `tsconfig.json` y luego usa la sintaxis:
 
-
-
 ```typescript {filename="TypeScript"}
 import moment from 'moment';
 ```
@@ -278,8 +276,6 @@ import moment from 'moment';
 **Importar Locale**
 
 Para utilizar `moment.locale`, primero debes importar el idioma al que se dirige.
-
-
 
 ```typescript {filename="TypeScript"}
 import * as moment from 'moment';
@@ -297,8 +293,6 @@ console.log(moment.locale()); // pt-br
 Para cargar moment, colócalo en la ruta especificada por tu `System.config` en la configuración de `baseURL`.
 Luego impórtalo a tu página.
 
-
-
 ```html {filename="HTML"}
 <script src="system.js"></script>
 <script>
@@ -312,8 +306,6 @@ Luego impórtalo a tu página.
 
 Si necesitas que moment se cargue como global, puedes hacerlo con la configuración en `meta`:
 
-
-
 ```javascript {filename="JavaScript"}
 System.config({
   meta: {
@@ -323,8 +315,6 @@ System.config({
 ```
 
 Alternativamente, para proporcionar Moment como global solo para una dependencia específica, puedes hacer esto:
-
-
 
 ```javascript {filename="JavaScript"}
 System.config({
@@ -339,6 +329,8 @@ System.config({
 ```
 
 ## Otras opciones de instalación {#other}
+
+{{< content-ads/middle-banner-5 >}}
 
 Para usarlo en **Java/Rhino**, consulta [estas instrucciones](https://gist.github.com/UnquietCode/5614860).
 
@@ -358,3 +350,5 @@ Además, Moment tiene un [Gitter](https://gitter.im/moment/moment) donde el equi
 
 Para obtener ayuda general para la resolución de problemas, [Stack Overflow](https://stackoverflow.com/questions/tagged/momentjs) es el foro preferido.
 Los mantenedores de Moment son muy activos en Stack Overflow, al igual que otros usuarios expertos. La respuesta más rápida estará ahí.
+
+{{< content-ads/bottom-banner >}}
